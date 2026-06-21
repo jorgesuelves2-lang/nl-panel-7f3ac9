@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dashboard NatschoLibre</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--bd:#e6e8ec;--tx:#1d2025;--mut:#6b7280;--blue:#378ADD;--teal:#1D9E75;--amber:#BA7517;--red:#E24B4A;}
+*{box-sizing:border-box;} body{margin:0;background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 18px 60px;}
+h1{font-size:22px;font-weight:600;margin:0;} .sub{color:var(--mut);font-size:13px;margin-top:2px;}
+.tabs{display:flex;gap:8px;margin:20px 0 18px;border-bottom:1px solid var(--bd);}
+.tab{padding:10px 16px;cursor:pointer;border:none;background:none;font-size:15px;color:var(--mut);border-bottom:2px solid transparent;margin-bottom:-1px;}
+.tab.on{color:var(--tx);border-bottom-color:var(--blue);font-weight:500;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:22px;}
+.kc{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;}
+.kc .l{font-size:12px;color:var(--mut);} .kc .v{font-size:24px;font-weight:600;margin-top:3px;} .kc .h{font-size:11px;color:var(--mut);margin-top:2px;}
+.panel{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px 18px;margin-bottom:18px;}
+.panel h3{font-size:14px;font-weight:500;color:var(--mut);margin:0 0 12px;}
+table{width:100%;border-collapse:collapse;font-size:13px;} th,td{padding:7px 6px;text-align:right;} th{color:var(--mut);font-weight:500;} td:first-child,th:first-child{text-align:left;}
+tbody tr{border-top:1px solid var(--bd);}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--mut);margin-bottom:8px;}
+.legend i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:4px;vertical-align:-1px;}
+.insight{background:#E6F1FB;border-radius:10px;padding:10px 14px;font-size:13px;color:#185FA5;margin-bottom:18px;}
+.pill{padding:3px 10px;border-radius:8px;font-size:12px;margin-right:6px;display:inline-block;}
+.hide{display:none;}
+.chartbox{position:relative;height:240px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Dashboard de NatschoLibre</h1>
+  <div class="sub" id="sub"></div>
+  <div class="tabs">
+    <button class="tab on" data-t="setting">Setting</button>
+    <button class="tab" data-t="triage">Triaje</button>
+  </div>
+
+  <section id="setting">
+    <div class="cards" id="s_cards"></div>
+    <div class="insight" id="s_insight"></div>
+    <div class="panel"><h3>Embudo de la semana</h3><div id="funnel"></div></div>
+    <div class="panel"><h3>Evolución por día</h3>
+      <div class="legend"><span><i style="background:var(--blue)"></i>Nuevas</span><span><i style="background:var(--teal)"></i>Propuestas</span><span><i style="background:var(--amber)"></i>Agendas</span></div>
+      <div class="chartbox"><canvas id="s_trend"></canvas></div></div>
+    <div class="panel"><h3>Tiempo medio de 1ª respuesta (min) por día</h3><div class="chartbox"><canvas id="s_resp"></canvas></div></div>
+    <div class="panel"><h3>Detalle por día</h3><table id="s_table"></table></div>
+  </section>
+
+  <section id="triage" class="hide">
+    <div class="cards" id="t_cards"></div>
+    <div class="panel"><h3>Triajes por día y estado</h3>
+      <div class="legend"><span><i style="background:var(--teal)"></i>Asistió</span><span><i style="background:var(--blue)"></i>Confirmado</span><span><i style="background:var(--amber)"></i>No-show</span><span><i style="background:var(--red)"></i>Cancelado</span></div>
+      <div class="chartbox"><canvas id="t_trend"></canvas></div></div>
+    <div class="panel"><h3>Detalle por día</h3><table id="t_table"></table></div>
+  </section>
+</div>
+
+<script>const DATA = {
+ "generado": "2026-06-21 16:09",
+ "rango": "2026-06-08 a 2026-06-21",
+ "setting": [
+  {
+   "dia": "2026-06-08",
+   "inb": 3,
+   "out": 9,
+   "nuevas": 12,
+   "total": 18,
+   "fups": 13,
+   "prop": 0,
+   "agendas": 1,
+   "resp_min": 161
+  },
+  {
+   "dia": "2026-06-09",
+   "inb": 3,
+   "out": 82,
+   "nuevas": 85,
+   "total": 107,
+   "fups": 21,
+   "prop": 1,
+   "agendas": 1,
+   "resp_min": null
+  },
+  {
+   "dia": "2026-06-10",
+   "inb": 7,
+   "out": 42,
+   "nuevas": 49,
+   "total": 76,
+   "fups": 37,
+   "prop": 1,
+   "agendas": 0,
+   "resp_min": 361
+  },
+  {
+   "dia": "2026-06-11",
+   "inb": 8,
+   "out": 36,
+   "nuevas": 44,
+   "total": 80,
+   "fups": 38,
+   "prop": 0,
+   "agendas": 2,
+   "resp_min": 902
+  },
+  {
+   "dia": "2026-06-12",
+   "inb": 9,
+   "out": 11,
+   "nuevas": 20,
+   "total": 28,
+   "fups": 21,
+   "prop": 1,
+   "agendas": 2,
+   "resp_min": 157
+  },
+  {
+   "dia": "2026-06-13",
+   "inb": 9,
+   "out": 52,
+   "nuevas": 61,
+   "total": 87,
+   "fups": 21,
+   "prop": 0,
+   "agendas": 1,
+   "resp_min": 429
+  },
+  {
+   "dia": "2026-06-14",
+   "inb": 18,
+   "out": 12,
+   "nuevas": 30,
+   "total": 50,
+   "fups": 10,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": 90
+  },
+  {
+   "dia": "2026-06-15",
+   "inb": 4,
+   "out": 19,
+   "nuevas": 23,
+   "total": 73,
+   "fups": 71,
+   "prop": 5,
+   "agendas": 1,
+   "resp_min": 459
+  },
+  {
+   "dia": "2026-06-16",
+   "inb": 6,
+   "out": 51,
+   "nuevas": 57,
+   "total": 86,
+   "fups": 41,
+   "prop": 1,
+   "agendas": 2,
+   "resp_min": 120
+  },
+  {
+   "dia": "2026-06-17",
+   "inb": 7,
+   "out": 27,
+   "nuevas": 34,
+   "total": 79,
+   "fups": 62,
+   "prop": 4,
+   "agendas": 1,
+   "resp_min": 131
+  },
+  {
+   "dia": "2026-06-18",
+   "inb": 9,
+   "out": 69,
+   "nuevas": 78,
+   "total": 155,
+   "fups": 138,
+   "prop": 3,
+   "agendas": 3,
+   "resp_min": 21
+  },
+  {
+   "dia": "2026-06-19",
+   "inb": 9,
+   "out": 50,
+   "nuevas": 59,
+   "total": 101,
+   "fups": 72,
+   "prop": 2,
+   "agendas": 0,
+   "resp_min": 217
+  },
+  {
+   "dia": "2026-06-20",
+   "inb": 6,
+   "out": 45,
+   "nuevas": 51,
+   "total": 104,
+   "fups": 79,
+   "prop": 3,
+   "agendas": 1,
+   "resp_min": 412
+  },
+  {
+   "dia": "2026-06-21",
+   "inb": 1,
+   "out": 1,
+   "nuevas": 2,
+   "total": 7,
+   "fups": 0,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": null
+  }
+ ],
+ "triage": [
+  {
+   "dia": "2026-06-08",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 1
+  },
+  {
+   "dia": "2026-06-09",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 1
+  },
+  {
+   "dia": "2026-06-10",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0
+  },
+  {
+   "dia": "2026-06-11",
+   "agendados": 2,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 2
+  },
+  {
+   "dia": "2026-06-12",
+   "agendados": 2,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 2
+  },
+  {
+   "dia": "2026-06-13",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 1,
+   "confirmed": 0
+  },
+  {
+   "dia": "2026-06-14",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0
+  },
+  {
+   "dia": "2026-06-15",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 1
+  },
+  {
+   "dia": "2026-06-16",
+   "agendados": 2,
+   "showed": 0,
+   "noshow": 1,
+   "cancelled": 0,
+   "confirmed": 1
+  },
+  {
+   "dia": "2026-06-17",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 1,
+   "confirmed": 0
+  },
+  {
+   "dia": "2026-06-18",
+   "agendados": 3,
+   "showed": 2,
+   "noshow": 0,
+   "cancelled": 1,
+   "confirmed": 0
+  },
+  {
+   "dia": "2026-06-19",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0
+  },
+  {
+   "dia": "2026-06-20",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 1
+  },
+  {
+   "dia": "2026-06-21",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0
+  }
+ ]
+};</script>
+<script>
+(function(){
+ var S=DATA.setting, T=DATA.triage;
+ document.getElementById('sub').textContent='Rango: '+DATA.rango+' · actualizado '+DATA.generado+' · IG + Facebook';
+ var sum=function(a,k){return a.reduce(function(x,r){return x+(r[k]||0);},0);};
+ // SETTING cards
+ var inb=sum(S,'inb'),out=sum(S,'out'),nuev=sum(S,'nuevas'),fu=sum(S,'fups'),pr=sum(S,'prop'),ag=sum(S,'agendas');
+ var resps=S.filter(function(r){return r.resp_min!=null;}).map(function(r){return r.resp_min;});
+ var rtavg=resps.length?Math.round(resps.reduce(function(a,b){return a+b;},0)/resps.length):null;
+ var card=function(l,v,h){return '<div class="kc"><div class="l">'+l+'</div><div class="v">'+v+'</div>'+(h?'<div class="h">'+h+'</div>':'')+'</div>';};
+ document.getElementById('s_cards').innerHTML=
+   card('Conv. nuevas',nuev,inb+' in · '+out+' out')+card('Follow-ups',fu)+
+   card('Propuestas',pr,(nuev?Math.round(100*pr/nuev):0)+'% de nuevas')+
+   card('Agendas',ag,(pr?Math.round(100*ag/pr):0)+'% de propuestas')+
+   card('T. resp. medio',rtavg!=null?rtavg+' min':'—','1ª respuesta');
+ // insight: días con más agendas y su tiempo de respuesta
+ var maxag=Math.max.apply(null,S.map(function(r){return r.agendas;}));
+ var top=S.filter(function(r){return r.agendas===maxag&&maxag>0;});
+ if(top.length){var rs=top.filter(function(r){return r.resp_min!=null;}).map(function(r){return r.resp_min;});
+   var rtxt=rs.length?Math.round(rs.reduce(function(a,b){return a+b;},0)/rs.length)+' min':'s/d';
+   document.getElementById('s_insight').innerHTML='Los días con más agendas ('+maxag+'/día) tuvieron un tiempo medio de respuesta de <b>'+rtxt+'</b>. Media general: <b>'+(rtavg!=null?rtavg+' min':'s/d')+'</b>.';
+ } else {document.getElementById('s_insight').classList.add('hide');}
+ // funnel
+ document.getElementById('funnel').innerHTML=
+  fbar('Nuevas',nuev,nuev,'var(--blue)')+fbar('Propuestas',pr,nuev,'var(--teal)',Math.round(100*pr/(nuev||1))+'%')+fbar('Agendas',ag,nuev,'var(--amber)',Math.round(100*ag/(nuev||1))+'%');
+ function fbar(lbl,val,max,col,pct){var w=Math.max(2,Math.round(100*val/(max||1)));
+  return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;"><span style="width:90px;font-size:13px;color:var(--mut)">'+lbl+'</span><div style="flex:1;background:#eef1f5;border-radius:8px;height:28px"><div style="width:'+w+'%;background:'+col+';height:28px;border-radius:8px"></div></div><span style="width:80px;text-align:right;font-weight:500;font-size:13px">'+val+(pct?' · '+pct:'')+'</span></div>';}
+ // setting table
+ var th='<thead><tr><th>Día</th><th>In</th><th>Out</th><th>Nuevas</th><th>Total</th><th>F-up</th><th>Prop</th><th>Agnd</th><th>T.resp</th></tr></thead>';
+ var tb=S.map(function(r){return '<tr><td>'+r.dia.slice(5)+'</td><td>'+r.inb+'</td><td>'+r.out+'</td><td><b>'+r.nuevas+'</b></td><td>'+r.total+'</td><td>'+r.fups+'</td><td>'+r.prop+'</td><td><b>'+r.agendas+'</b></td><td>'+(r.resp_min!=null?r.resp_min+'m':'—')+'</td></tr>';}).join('');
+ document.getElementById('s_table').innerHTML=th+'<tbody>'+tb+'</tbody>';
+ // TRIAGE cards
+ var tag=sum(T,'agendados'),tsh=sum(T,'showed'),tns=sum(T,'noshow'),tc=sum(T,'cancelled'),tcf=sum(T,'confirmed');
+ var sup=(tsh+tns)?Math.round(100*tsh/(tsh+tns)):0;
+ document.getElementById('t_cards').innerHTML=
+   card('Agendados',tag)+card('Asistió',tsh)+card('No-show',tns)+card('Cancelados',tc)+card('Show-up',sup+'%','de los celebrados');
+ var tth='<thead><tr><th>Día</th><th>Agendados</th><th>Asistió</th><th>Confirm.</th><th>No-show</th><th>Cancel.</th></tr></thead>';
+ var ttb=T.map(function(r){return '<tr><td>'+r.dia.slice(5)+'</td><td><b>'+r.agendados+'</b></td><td>'+r.showed+'</td><td>'+r.confirmed+'</td><td>'+r.noshow+'</td><td>'+r.cancelled+'</td></tr>';}).join('');
+ document.getElementById('t_table').innerHTML=tth+'<tbody>'+ttb+'</tbody>';
+ // tabs
+ document.querySelectorAll('.tab').forEach(function(b){b.onclick=function(){
+   document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');
+   document.getElementById('setting').classList.toggle('hide',b.dataset.t!=='setting');
+   document.getElementById('triage').classList.toggle('hide',b.dataset.t!=='triage');};});
+ // charts
+ var labels=S.map(function(r){return r.dia.slice(5);});
+ new Chart(document.getElementById('s_trend'),{data:{labels:labels,datasets:[
+   {type:'bar',label:'Nuevas',data:S.map(function(r){return r.nuevas;}),backgroundColor:'#378ADD',order:3},
+   {type:'line',label:'Propuestas',data:S.map(function(r){return r.prop;}),borderColor:'#1D9E75',backgroundColor:'#1D9E75',tension:.3},
+   {type:'line',label:'Agendas',data:S.map(function(r){return r.agendas;}),borderColor:'#BA7517',backgroundColor:'#BA7517',borderDash:[5,4],tension:.3}
+ ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{autoSkip:false}},y:{beginAtZero:true}}}});
+ new Chart(document.getElementById('s_resp'),{type:'line',data:{labels:labels,datasets:[
+   {label:'Min',data:S.map(function(r){return r.resp_min;}),borderColor:'#534AB7',backgroundColor:'#534AB7',tension:.3,spanGaps:true}
+ ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,title:{display:true,text:'min'}}}}});
+ new Chart(document.getElementById('t_trend'),{type:'bar',data:{labels:labels,datasets:[
+   {label:'Asistió',data:T.map(function(r){return r.showed;}),backgroundColor:'#1D9E75'},
+   {label:'Confirmado',data:T.map(function(r){return r.confirmed;}),backgroundColor:'#378ADD'},
+   {label:'No-show',data:T.map(function(r){return r.noshow;}),backgroundColor:'#BA7517'},
+   {label:'Cancelado',data:T.map(function(r){return r.cancelled;}),backgroundColor:'#E24B4A'}
+ ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{stacked:true,ticks:{autoSkip:false}},y:{stacked:true,beginAtZero:true}}}});
+})();
+</script>
+</body>
+</html>
