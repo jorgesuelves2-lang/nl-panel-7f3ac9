@@ -46,6 +46,10 @@ tbody tr{border-top:1px solid var(--bd);} tr.media td{border-top:2px solid var(-
   <div class="tabs">
     <button class="tab on" data-t="setting">Setting</button>
     <button class="tab" data-t="triage">Triaje</button>
+    <button class="tab" data-t="closing">Closing</button>
+    <button class="tab" data-t="leads">Camino leads</button>
+    <button class="tab" data-t="clientes">Clientes</button>
+    <button class="tab" data-t="cash">Cash</button>
   </div>
 
   <section id="setting">
@@ -67,9 +71,30 @@ tbody tr{border-top:1px solid var(--bd);} tr.media td{border-top:2px solid var(-
     <div class="panel"><h3>Detalle por día</h3><table id="t_table"></table></div>
     <div class="panel"><h3>Análisis — qué mejorar en el triaje</h3><div id="t_analisis"></div></div>
   </section>
+
+  <section id="closing" class="hide">
+    <div class="cards" id="c_cards"></div>
+    <div class="panel"><h3>Llamadas de closing (últimos 30 días)</h3><table id="c_table"></table></div>
+    <div class="panel" style="border-left:3px solid var(--amber);border-radius:0"><div style="font-size:13px;color:var(--mut)"><b style="color:var(--tx)">Faltan datos:</b> # ventas, cash collected, ingresos y "resultado del closing" no se capturan aún de forma sistemática. Para llenar esta pestaña hace falta el formulario de cierre (que rellena Natalie) + el workflow WF07.</div></div>
+  </section>
+
+  <section id="leads" class="hide">
+    <div class="sub" style="margin-bottom:10px">Una fila por lead que llegó al triaje/closing (últimos 30 días). "Ficha" abre el lead en Funnel Up.</div>
+    <div class="panel"><table id="l_table"></table></div>
+  </section>
+
+  <section id="clientes" class="hide">
+    <div class="panel" style="border-left:3px solid var(--amber);border-radius:0"><h3>Clientes — pendiente de datos</h3>
+    <div style="font-size:13px;color:var(--mut)">Para controlar <b style="color:var(--tx)">pagos y progreso en la mentoría</b> (clase actual, cuotas, próximo pago, estado) hay que capturar esos datos: hoy no existen en el sistema. Propuesta: campos en GHL (plan · cuotas pagadas · próximo pago · clase actual · estado) que el equipo/mentor actualiza, o un formulario de pago. En cuanto se capturen, esta pestaña se llena sola.</div></div>
+  </section>
+
+  <section id="cash" class="hide">
+    <div class="panel" style="border-left:3px solid var(--amber);border-radius:0"><h3>Cash collected por mes — pendiente de datos</h3>
+    <div style="font-size:13px;color:var(--mut)">Necesita el registro de <b style="color:var(--tx)">cada pago</b> (cliente · fecha · importe). Una vez se capturen los pagos en GHL, monto la vista mensual (como tu pestaña "Mayo 2026").</div></div>
+  </section>
 </div>
 
-<script>const DATA = {"generado": "2026-06-21 17:17", "rango": "2026-06-08 a 2026-06-21", "setting": [{"dia": "2026-06-08", "inb": 5, "out": 26, "nuevas": 31, "total": 49, "fups": 28, "prop": 0, "agendas": 1, "resp_min": 84}, {"dia": "2026-06-09", "inb": 2, "out": 101, "nuevas": 103, "total": 124, "fups": 17, "prop": 1, "agendas": 1, "resp_min": null}, {"dia": "2026-06-10", "inb": 8, "out": 40, "nuevas": 48, "total": 75, "fups": 42, "prop": 1, "agendas": 0, "resp_min": 194}, {"dia": "2026-06-11", "inb": 7, "out": 41, "nuevas": 48, "total": 95, "fups": 54, "prop": 1, "agendas": 2, "resp_min": 623}, {"dia": "2026-06-12", "inb": 13, "out": 31, "nuevas": 44, "total": 61, "fups": 34, "prop": 2, "agendas": 2, "resp_min": 95}, {"dia": "2026-06-13", "inb": 10, "out": 58, "nuevas": 68, "total": 92, "fups": 21, "prop": 0, "agendas": 1, "resp_min": 697}, {"dia": "2026-06-14", "inb": 13, "out": 14, "nuevas": 27, "total": 49, "fups": 23, "prop": 1, "agendas": 0, "resp_min": 200}, {"dia": "2026-06-15", "inb": 8, "out": 46, "nuevas": 54, "total": 144, "fups": 136, "prop": 6, "agendas": 1, "resp_min": 81}, {"dia": "2026-06-16", "inb": 6, "out": 52, "nuevas": 58, "total": 88, "fups": 57, "prop": 2, "agendas": 2, "resp_min": 60}, {"dia": "2026-06-17", "inb": 3, "out": 7, "nuevas": 10, "total": 49, "fups": 57, "prop": 4, "agendas": 1, "resp_min": 1267}, {"dia": "2026-06-18", "inb": 3, "out": 28, "nuevas": 31, "total": 114, "fups": 97, "prop": 2, "agendas": 3, "resp_min": 224}, {"dia": "2026-06-19", "inb": 5, "out": 5, "nuevas": 10, "total": 17, "fups": 12, "prop": 1, "agendas": 0, "resp_min": 1180}, {"dia": "2026-06-20", "inb": 5, "out": 33, "nuevas": 38, "total": 69, "fups": 46, "prop": 1, "agendas": 1, "resp_min": 308}, {"dia": "2026-06-21", "inb": 1, "out": 20, "nuevas": 21, "total": 33, "fups": 7, "prop": 0, "agendas": 0, "resp_min": null}], "triage": [{"dia": "2026-06-08", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 1, "cualifica": 0}, {"dia": "2026-06-09", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 1, "cualifica": 1}, {"dia": "2026-06-10", "agendados": 0, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 0, "cualifica": 0}, {"dia": "2026-06-11", "agendados": 2, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 2, "cualifica": 1}, {"dia": "2026-06-12", "agendados": 2, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 2, "cualifica": 0}, {"dia": "2026-06-13", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 1, "confirmed": 0, "cualifica": 0}, {"dia": "2026-06-14", "agendados": 0, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 0, "cualifica": 0}, {"dia": "2026-06-15", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 1, "cualifica": 1}, {"dia": "2026-06-16", "agendados": 2, "showed": 0, "noshow": 1, "cancelled": 0, "confirmed": 1, "cualifica": 0}, {"dia": "2026-06-17", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 1, "confirmed": 0, "cualifica": 0}, {"dia": "2026-06-18", "agendados": 3, "showed": 2, "noshow": 0, "cancelled": 1, "confirmed": 0, "cualifica": 1}, {"dia": "2026-06-19", "agendados": 0, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 0, "cualifica": 0}, {"dia": "2026-06-20", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 1, "cualifica": 0}, {"dia": "2026-06-21", "agendados": 0, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 0, "cualifica": 0}]};</script>
+<script>const DATA = {"generado": "2026-06-21 17:35", "rango": "2026-06-08 a 2026-06-21", "setting": [{"dia": "2026-06-08", "inb": 4, "out": 28, "nuevas": 32, "total": 53, "fups": 32, "prop": 1, "agendas": 1, "resp_min": 6}, {"dia": "2026-06-09", "inb": 0, "out": 32, "nuevas": 32, "total": 46, "fups": 11, "prop": 1, "agendas": 1, "resp_min": null}, {"dia": "2026-06-10", "inb": 5, "out": 36, "nuevas": 41, "total": 65, "fups": 36, "prop": 1, "agendas": 0, "resp_min": 548}, {"dia": "2026-06-11", "inb": 3, "out": 41, "nuevas": 44, "total": 90, "fups": 66, "prop": 1, "agendas": 2, "resp_min": 344}, {"dia": "2026-06-12", "inb": 5, "out": 4, "nuevas": 9, "total": 18, "fups": 21, "prop": 0, "agendas": 2, "resp_min": 148}, {"dia": "2026-06-13", "inb": 4, "out": 10, "nuevas": 14, "total": 42, "fups": 28, "prop": 0, "agendas": 1, "resp_min": 429}, {"dia": "2026-06-14", "inb": 15, "out": 21, "nuevas": 36, "total": 58, "fups": 23, "prop": 1, "agendas": 0, "resp_min": 390}, {"dia": "2026-06-15", "inb": 4, "out": 40, "nuevas": 44, "total": 128, "fups": 90, "prop": 2, "agendas": 1, "resp_min": 97}, {"dia": "2026-06-16", "inb": 1, "out": 2, "nuevas": 3, "total": 11, "fups": 9, "prop": 0, "agendas": 2, "resp_min": 120}, {"dia": "2026-06-17", "inb": 7, "out": 44, "nuevas": 51, "total": 112, "fups": 65, "prop": 2, "agendas": 1, "resp_min": 131}, {"dia": "2026-06-18", "inb": 5, "out": 38, "nuevas": 43, "total": 125, "fups": 122, "prop": 1, "agendas": 3, "resp_min": 214}, {"dia": "2026-06-19", "inb": 6, "out": 6, "nuevas": 12, "total": 24, "fups": 18, "prop": 1, "agendas": 0, "resp_min": 1177}, {"dia": "2026-06-20", "inb": 5, "out": 32, "nuevas": 37, "total": 68, "fups": 43, "prop": 1, "agendas": 1, "resp_min": 308}, {"dia": "2026-06-21", "inb": 1, "out": 20, "nuevas": 21, "total": 35, "fups": 7, "prop": 0, "agendas": 0, "resp_min": null}], "triage": [{"dia": "2026-06-08", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 1, "cualifica": 0}, {"dia": "2026-06-09", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 1, "cualifica": 1}, {"dia": "2026-06-10", "agendados": 0, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 0, "cualifica": 0}, {"dia": "2026-06-11", "agendados": 2, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 2, "cualifica": 1}, {"dia": "2026-06-12", "agendados": 2, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 2, "cualifica": 0}, {"dia": "2026-06-13", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 1, "confirmed": 0, "cualifica": 0}, {"dia": "2026-06-14", "agendados": 0, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 0, "cualifica": 0}, {"dia": "2026-06-15", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 1, "cualifica": 1}, {"dia": "2026-06-16", "agendados": 2, "showed": 0, "noshow": 1, "cancelled": 0, "confirmed": 1, "cualifica": 0}, {"dia": "2026-06-17", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 1, "confirmed": 0, "cualifica": 0}, {"dia": "2026-06-18", "agendados": 3, "showed": 2, "noshow": 0, "cancelled": 1, "confirmed": 0, "cualifica": 1}, {"dia": "2026-06-19", "agendados": 0, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 0, "cualifica": 0}, {"dia": "2026-06-20", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 1, "cualifica": 0}, {"dia": "2026-06-21", "agendados": 0, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 0, "cualifica": 0}], "leads": [], "closing": []};</script>
 <script>
 (function(){
  var S=DATA.setting, T=DATA.triage, charts={};
@@ -163,8 +188,22 @@ tbody tr{border-top:1px solid var(--bd);} tr.media td{border-top:2px solid var(-
  function anItem(t,why,fix){return '<div class="an"><div class="t">'+t+'</div><div class="r"><b>Por qué:</b> '+why+'</div><div class="r fix"><b>Cómo corregirlo:</b> '+fix+'</div></div>';}
  fromEl.onchange=toEl.onchange=function(){document.querySelectorAll('.qb').forEach(function(b){b.classList.remove('on');});render();};
  document.querySelectorAll('.qb').forEach(function(b){b.onclick=function(){document.querySelectorAll('.qb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');setRange(+b.dataset.d);render();};});
- document.querySelectorAll('.tab').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');document.getElementById('setting').classList.toggle('hide',b.dataset.t!=='setting');document.getElementById('triage').classList.toggle('hide',b.dataset.t!=='triage');};});
- render();
+ var SECTIONS=['setting','triage','closing','leads','clientes','cash'];
+ document.querySelectorAll('.tab').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');SECTIONS.forEach(function(s){document.getElementById(s).classList.toggle('hide',s!==b.dataset.t);});};});
+ function num(v){return parseFloat(String(v||'').replace(/[^0-9.]/g,''))||0;}
+ function renderStatic(){
+   var CL=DATA.closing||[],LD=DATA.leads||[];
+   var cVend=CL.filter(function(r){return r.resclo==='Vendido';}).length;
+   var cCash=CL.reduce(function(a,r){return a+num(r.cash);},0);
+   document.getElementById('c_cards').innerHTML=card('Closings (30d)',CL.length)+card('Vendidos',cVend)+card('Cash collected','$'+Math.round(cCash))+card('Cualifica→closing','ver Triaje','');
+   var cth='<thead><tr><th>Nombre</th><th>Fecha</th><th>Estado</th><th>Resultado</th><th>S.Cl</th><th>Cash</th><th>Ficha</th></tr></thead>';
+   var cb=CL.map(function(r){return '<tr><td>'+r.nombre+'</td><td>'+(r.fecha||'').slice(5)+'</td><td>'+(r.estado||'')+'</td><td>'+(r.resclo||'—')+'</td><td>'+(r.sc!=null?r.sc:'—')+'</td><td>'+(r.cash||'—')+'</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>';}).join('');
+   document.getElementById('c_table').innerHTML=cth+'<tbody>'+(cb||'<tr><td>Sin closings</td></tr>')+'</tbody>';
+   var lth='<thead><tr><th>Nombre</th><th>Profesión</th><th>Setter</th><th>S.Form</th><th>S.Tri</th><th>Res.Triaje</th><th>S.Cl</th><th>Res.Closing</th><th>Ficha</th></tr></thead>';
+   var lb=LD.map(function(r){return '<tr><td>'+r.nombre+'</td><td style="text-align:left">'+(r.prof||'').slice(0,26)+'</td><td>'+(r.setter||'—')+'</td><td>'+(r.sf!=null?r.sf:'—')+'</td><td>'+(r.st!=null?r.st:'—')+'</td><td>'+(r.restri||'—')+'</td><td>'+(r.sc!=null?r.sc:'—')+'</td><td>'+(r.resclo||'—')+'</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>';}).join('');
+   document.getElementById('l_table').innerHTML=lth+'<tbody>'+(lb||'<tr><td>Sin leads</td></tr>')+'</tbody>';
+ }
+ render(); renderStatic();
 })();
 </script>
 </body>
