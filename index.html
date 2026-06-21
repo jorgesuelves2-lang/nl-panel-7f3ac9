@@ -6,32 +6,44 @@
 <title>Dashboard NatschoLibre</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
-:root{--bg:#f6f7f9;--card:#fff;--bd:#e6e8ec;--tx:#1d2025;--mut:#6b7280;--blue:#378ADD;--teal:#1D9E75;--amber:#BA7517;--red:#E24B4A;}
+:root{--bg:#f6f7f9;--card:#fff;--bd:#e6e8ec;--tx:#1d2025;--mut:#6b7280;--blue:#378ADD;--teal:#1D9E75;--amber:#BA7517;--red:#E24B4A;--purple:#534AB7;}
 *{box-sizing:border-box;} body{margin:0;background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
-.wrap{max-width:1000px;margin:0 auto;padding:24px 18px 60px;}
+.wrap{max-width:1040px;margin:0 auto;padding:24px 18px 60px;}
 h1{font-size:22px;font-weight:600;margin:0;} .sub{color:var(--mut);font-size:13px;margin-top:2px;}
-.tabs{display:flex;gap:8px;margin:20px 0 18px;border-bottom:1px solid var(--bd);}
+.ctrl{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:16px 0 8px;}
+.ctrl input[type=date]{padding:6px 8px;border:1px solid var(--bd);border-radius:8px;font-size:13px;}
+.qb{padding:6px 12px;border:1px solid var(--bd);background:#fff;border-radius:8px;cursor:pointer;font-size:13px;color:var(--mut);}
+.qb.on{border-color:var(--blue);color:var(--blue);font-weight:500;}
+.tabs{display:flex;gap:8px;margin:16px 0 18px;border-bottom:1px solid var(--bd);}
 .tab{padding:10px 16px;cursor:pointer;border:none;background:none;font-size:15px;color:var(--mut);border-bottom:2px solid transparent;margin-bottom:-1px;}
 .tab.on{color:var(--tx);border-bottom-color:var(--blue);font-weight:500;}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:22px;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:22px;}
 .kc{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;}
 .kc .l{font-size:12px;color:var(--mut);} .kc .v{font-size:24px;font-weight:600;margin-top:3px;} .kc .h{font-size:11px;color:var(--mut);margin-top:2px;}
 .panel{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px 18px;margin-bottom:18px;}
 .panel h3{font-size:14px;font-weight:500;color:var(--mut);margin:0 0 12px;}
 table{width:100%;border-collapse:collapse;font-size:13px;} th,td{padding:7px 6px;text-align:right;} th{color:var(--mut);font-weight:500;} td:first-child,th:first-child{text-align:left;}
-tbody tr{border-top:1px solid var(--bd);}
+tbody tr{border-top:1px solid var(--bd);} tr.media td{border-top:2px solid var(--bd);font-weight:500;background:#fafbfc;} tr.total td{font-weight:600;}
 .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--mut);margin-bottom:8px;}
 .legend i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:4px;vertical-align:-1px;}
-.insight{background:#E6F1FB;border-radius:10px;padding:10px 14px;font-size:13px;color:#185FA5;margin-bottom:18px;}
-.pill{padding:3px 10px;border-radius:8px;font-size:12px;margin-right:6px;display:inline-block;}
+.chartbox{position:relative;height:250px;}
 .hide{display:none;}
-.chartbox{position:relative;height:240px;}
+.an{border-left:3px solid var(--red);border-radius:0;padding:10px 14px;margin-bottom:12px;background:#fff;border-top:1px solid var(--bd);border-right:1px solid var(--bd);border-bottom:1px solid var(--bd);}
+.an .t{font-weight:500;font-size:14px;margin-bottom:4px;} .an .r{font-size:13px;color:var(--mut);margin:3px 0;}
+.an .r b{color:var(--tx);font-weight:500;} .an .fix{color:var(--teal);}
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Dashboard de NatschoLibre</h1>
   <div class="sub" id="sub"></div>
+  <div class="ctrl">
+    <span style="font-size:13px;color:var(--mut)">Rango:</span>
+    <input type="date" id="from"><span style="color:var(--mut)">→</span><input type="date" id="to">
+    <button class="qb" data-d="7">7 días</button>
+    <button class="qb on" data-d="14">14 días</button>
+    <button class="qb" data-d="30">30 días</button>
+  </div>
   <div class="tabs">
     <button class="tab on" data-t="setting">Setting</button>
     <button class="tab" data-t="triage">Triaje</button>
@@ -39,13 +51,13 @@ tbody tr{border-top:1px solid var(--bd);}
 
   <section id="setting">
     <div class="cards" id="s_cards"></div>
-    <div class="insight" id="s_insight"></div>
-    <div class="panel"><h3>Embudo de la semana</h3><div id="funnel"></div></div>
+    <div class="panel"><h3>Embudo del rango</h3><div id="funnel"></div></div>
     <div class="panel"><h3>Evolución por día</h3>
-      <div class="legend"><span><i style="background:var(--blue)"></i>Nuevas</span><span><i style="background:var(--teal)"></i>Propuestas</span><span><i style="background:var(--amber)"></i>Agendas</span></div>
+      <div class="legend"><span><i style="background:var(--blue)"></i>Conversaciones totales</span><span><i style="background:var(--teal)"></i>Propuestas (eje der.)</span><span><i style="background:var(--amber)"></i>Agendas (eje der.)</span></div>
       <div class="chartbox"><canvas id="s_trend"></canvas></div></div>
     <div class="panel"><h3>Tiempo medio de 1ª respuesta (min) por día</h3><div class="chartbox"><canvas id="s_resp"></canvas></div></div>
     <div class="panel"><h3>Detalle por día</h3><table id="s_table"></table></div>
+    <div class="panel"><h3>Análisis — qué mejorar en el setting</h3><div id="s_analisis"></div></div>
   </section>
 
   <section id="triage" class="hide">
@@ -54,343 +66,106 @@ tbody tr{border-top:1px solid var(--bd);}
       <div class="legend"><span><i style="background:var(--teal)"></i>Asistió</span><span><i style="background:var(--blue)"></i>Confirmado</span><span><i style="background:var(--amber)"></i>No-show</span><span><i style="background:var(--red)"></i>Cancelado</span></div>
       <div class="chartbox"><canvas id="t_trend"></canvas></div></div>
     <div class="panel"><h3>Detalle por día</h3><table id="t_table"></table></div>
+    <div class="panel"><h3>Análisis — qué mejorar en el triaje</h3><div id="t_analisis"></div></div>
   </section>
 </div>
 
-<script>const DATA = {
- "generado": "2026-06-21 16:09",
- "rango": "2026-06-08 a 2026-06-21",
- "setting": [
-  {
-   "dia": "2026-06-08",
-   "inb": 3,
-   "out": 9,
-   "nuevas": 12,
-   "total": 18,
-   "fups": 13,
-   "prop": 0,
-   "agendas": 1,
-   "resp_min": 161
-  },
-  {
-   "dia": "2026-06-09",
-   "inb": 3,
-   "out": 82,
-   "nuevas": 85,
-   "total": 107,
-   "fups": 21,
-   "prop": 1,
-   "agendas": 1,
-   "resp_min": null
-  },
-  {
-   "dia": "2026-06-10",
-   "inb": 7,
-   "out": 42,
-   "nuevas": 49,
-   "total": 76,
-   "fups": 37,
-   "prop": 1,
-   "agendas": 0,
-   "resp_min": 361
-  },
-  {
-   "dia": "2026-06-11",
-   "inb": 8,
-   "out": 36,
-   "nuevas": 44,
-   "total": 80,
-   "fups": 38,
-   "prop": 0,
-   "agendas": 2,
-   "resp_min": 902
-  },
-  {
-   "dia": "2026-06-12",
-   "inb": 9,
-   "out": 11,
-   "nuevas": 20,
-   "total": 28,
-   "fups": 21,
-   "prop": 1,
-   "agendas": 2,
-   "resp_min": 157
-  },
-  {
-   "dia": "2026-06-13",
-   "inb": 9,
-   "out": 52,
-   "nuevas": 61,
-   "total": 87,
-   "fups": 21,
-   "prop": 0,
-   "agendas": 1,
-   "resp_min": 429
-  },
-  {
-   "dia": "2026-06-14",
-   "inb": 18,
-   "out": 12,
-   "nuevas": 30,
-   "total": 50,
-   "fups": 10,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": 90
-  },
-  {
-   "dia": "2026-06-15",
-   "inb": 4,
-   "out": 19,
-   "nuevas": 23,
-   "total": 73,
-   "fups": 71,
-   "prop": 5,
-   "agendas": 1,
-   "resp_min": 459
-  },
-  {
-   "dia": "2026-06-16",
-   "inb": 6,
-   "out": 51,
-   "nuevas": 57,
-   "total": 86,
-   "fups": 41,
-   "prop": 1,
-   "agendas": 2,
-   "resp_min": 120
-  },
-  {
-   "dia": "2026-06-17",
-   "inb": 7,
-   "out": 27,
-   "nuevas": 34,
-   "total": 79,
-   "fups": 62,
-   "prop": 4,
-   "agendas": 1,
-   "resp_min": 131
-  },
-  {
-   "dia": "2026-06-18",
-   "inb": 9,
-   "out": 69,
-   "nuevas": 78,
-   "total": 155,
-   "fups": 138,
-   "prop": 3,
-   "agendas": 3,
-   "resp_min": 21
-  },
-  {
-   "dia": "2026-06-19",
-   "inb": 9,
-   "out": 50,
-   "nuevas": 59,
-   "total": 101,
-   "fups": 72,
-   "prop": 2,
-   "agendas": 0,
-   "resp_min": 217
-  },
-  {
-   "dia": "2026-06-20",
-   "inb": 6,
-   "out": 45,
-   "nuevas": 51,
-   "total": 104,
-   "fups": 79,
-   "prop": 3,
-   "agendas": 1,
-   "resp_min": 412
-  },
-  {
-   "dia": "2026-06-21",
-   "inb": 1,
-   "out": 1,
-   "nuevas": 2,
-   "total": 7,
-   "fups": 0,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": null
-  }
- ],
- "triage": [
-  {
-   "dia": "2026-06-08",
-   "agendados": 1,
-   "showed": 0,
-   "noshow": 0,
-   "cancelled": 0,
-   "confirmed": 1
-  },
-  {
-   "dia": "2026-06-09",
-   "agendados": 1,
-   "showed": 0,
-   "noshow": 0,
-   "cancelled": 0,
-   "confirmed": 1
-  },
-  {
-   "dia": "2026-06-10",
-   "agendados": 0,
-   "showed": 0,
-   "noshow": 0,
-   "cancelled": 0,
-   "confirmed": 0
-  },
-  {
-   "dia": "2026-06-11",
-   "agendados": 2,
-   "showed": 0,
-   "noshow": 0,
-   "cancelled": 0,
-   "confirmed": 2
-  },
-  {
-   "dia": "2026-06-12",
-   "agendados": 2,
-   "showed": 0,
-   "noshow": 0,
-   "cancelled": 0,
-   "confirmed": 2
-  },
-  {
-   "dia": "2026-06-13",
-   "agendados": 1,
-   "showed": 0,
-   "noshow": 0,
-   "cancelled": 1,
-   "confirmed": 0
-  },
-  {
-   "dia": "2026-06-14",
-   "agendados": 0,
-   "showed": 0,
-   "noshow": 0,
-   "cancelled": 0,
-   "confirmed": 0
-  },
-  {
-   "dia": "2026-06-15",
-   "agendados": 1,
-   "showed": 0,
-   "noshow": 0,
-   "cancelled": 0,
-   "confirmed": 1
-  },
-  {
-   "dia": "2026-06-16",
-   "agendados": 2,
-   "showed": 0,
-   "noshow": 1,
-   "cancelled": 0,
-   "confirmed": 1
-  },
-  {
-   "dia": "2026-06-17",
-   "agendados": 1,
-   "showed": 0,
-   "noshow": 0,
-   "cancelled": 1,
-   "confirmed": 0
-  },
-  {
-   "dia": "2026-06-18",
-   "agendados": 3,
-   "showed": 2,
-   "noshow": 0,
-   "cancelled": 1,
-   "confirmed": 0
-  },
-  {
-   "dia": "2026-06-19",
-   "agendados": 0,
-   "showed": 0,
-   "noshow": 0,
-   "cancelled": 0,
-   "confirmed": 0
-  },
-  {
-   "dia": "2026-06-20",
-   "agendados": 1,
-   "showed": 0,
-   "noshow": 0,
-   "cancelled": 0,
-   "confirmed": 1
-  },
-  {
-   "dia": "2026-06-21",
-   "agendados": 0,
-   "showed": 0,
-   "noshow": 0,
-   "cancelled": 0,
-   "confirmed": 0
-  }
- ]
-};</script>
+<script>const DATA = {"generado": "2026-06-21 16:53", "rango": "2026-05-23 a 2026-06-21", "setting": [{"dia": "2026-05-23", "inb": 0, "out": 0, "nuevas": 0, "total": 0, "fups": 0, "prop": 0, "agendas": 7, "resp_min": null}, {"dia": "2026-05-24", "inb": 0, "out": 0, "nuevas": 0, "total": 0, "fups": 0, "prop": 0, "agendas": 4, "resp_min": null}, {"dia": "2026-05-25", "inb": 0, "out": 0, "nuevas": 0, "total": 0, "fups": 0, "prop": 0, "agendas": 5, "resp_min": null}, {"dia": "2026-05-26", "inb": 0, "out": 0, "nuevas": 0, "total": 0, "fups": 0, "prop": 0, "agendas": 4, "resp_min": null}, {"dia": "2026-05-27", "inb": 0, "out": 0, "nuevas": 0, "total": 0, "fups": 0, "prop": 0, "agendas": 12, "resp_min": null}, {"dia": "2026-05-28", "inb": 0, "out": 0, "nuevas": 0, "total": 0, "fups": 0, "prop": 0, "agendas": 7, "resp_min": null}, {"dia": "2026-05-29", "inb": 0, "out": 0, "nuevas": 0, "total": 0, "fups": 0, "prop": 0, "agendas": 9, "resp_min": null}, {"dia": "2026-05-30", "inb": 0, "out": 0, "nuevas": 0, "total": 0, "fups": 0, "prop": 0, "agendas": 5, "resp_min": null}, {"dia": "2026-05-31", "inb": 0, "out": 0, "nuevas": 0, "total": 0, "fups": 0, "prop": 0, "agendas": 7, "resp_min": null}, {"dia": "2026-06-01", "inb": 0, "out": 0, "nuevas": 0, "total": 0, "fups": 0, "prop": 0, "agendas": 4, "resp_min": null}, {"dia": "2026-06-02", "inb": 0, "out": 0, "nuevas": 0, "total": 0, "fups": 0, "prop": 0, "agendas": 6, "resp_min": null}, {"dia": "2026-06-03", "inb": 0, "out": 0, "nuevas": 0, "total": 0, "fups": 0, "prop": 0, "agendas": 6, "resp_min": null}, {"dia": "2026-06-04", "inb": 2, "out": 16, "nuevas": 18, "total": 26, "fups": 22, "prop": 2, "agendas": 5, "resp_min": 10}, {"dia": "2026-06-05", "inb": 5, "out": 44, "nuevas": 49, "total": 58, "fups": 13, "prop": 0, "agendas": 2, "resp_min": 86}, {"dia": "2026-06-06", "inb": 1, "out": 8, "nuevas": 9, "total": 20, "fups": 16, "prop": 0, "agendas": 1, "resp_min": 223}, {"dia": "2026-06-07", "inb": 6, "out": 6, "nuevas": 12, "total": 37, "fups": 8, "prop": 0, "agendas": 0, "resp_min": 252}, {"dia": "2026-06-08", "inb": 5, "out": 30, "nuevas": 35, "total": 50, "fups": 34, "prop": 1, "agendas": 1, "resp_min": 6}, {"dia": "2026-06-09", "inb": 2, "out": 104, "nuevas": 106, "total": 127, "fups": 19, "prop": 1, "agendas": 1, "resp_min": null}, {"dia": "2026-06-10", "inb": 8, "out": 88, "nuevas": 96, "total": 127, "fups": 40, "prop": 0, "agendas": 0, "resp_min": 318}, {"dia": "2026-06-11", "inb": 1, "out": 9, "nuevas": 10, "total": 35, "fups": 39, "prop": 1, "agendas": 2, "resp_min": null}, {"dia": "2026-06-12", "inb": 10, "out": 15, "nuevas": 25, "total": 40, "fups": 41, "prop": 2, "agendas": 2, "resp_min": 85}, {"dia": "2026-06-13", "inb": 9, "out": 57, "nuevas": 66, "total": 102, "fups": 32, "prop": 0, "agendas": 1, "resp_min": 697}, {"dia": "2026-06-14", "inb": 9, "out": 19, "nuevas": 28, "total": 47, "fups": 19, "prop": 2, "agendas": 0, "resp_min": 309}, {"dia": "2026-06-15", "inb": 2, "out": 23, "nuevas": 25, "total": 79, "fups": 83, "prop": 3, "agendas": 1, "resp_min": 98}, {"dia": "2026-06-16", "inb": 3, "out": 30, "nuevas": 33, "total": 52, "fups": 34, "prop": 1, "agendas": 2, "resp_min": 60}, {"dia": "2026-06-17", "inb": 3, "out": 15, "nuevas": 18, "total": 104, "fups": 102, "prop": 4, "agendas": 1, "resp_min": 1267}, {"dia": "2026-06-18", "inb": 4, "out": 29, "nuevas": 33, "total": 115, "fups": 111, "prop": 2, "agendas": 3, "resp_min": 224}, {"dia": "2026-06-19", "inb": 5, "out": 6, "nuevas": 11, "total": 18, "fups": 12, "prop": 1, "agendas": 0, "resp_min": 1180}, {"dia": "2026-06-20", "inb": 5, "out": 36, "nuevas": 41, "total": 73, "fups": 45, "prop": 1, "agendas": 1, "resp_min": 308}, {"dia": "2026-06-21", "inb": 1, "out": 20, "nuevas": 21, "total": 32, "fups": 6, "prop": 0, "agendas": 0, "resp_min": null}], "triage": [{"dia": "2026-05-23", "agendados": 7, "showed": 0, "noshow": 0, "cancelled": 3, "confirmed": 4}, {"dia": "2026-05-24", "agendados": 4, "showed": 0, "noshow": 1, "cancelled": 2, "confirmed": 1}, {"dia": "2026-05-25", "agendados": 5, "showed": 0, "noshow": 0, "cancelled": 3, "confirmed": 2}, {"dia": "2026-05-26", "agendados": 4, "showed": 1, "noshow": 2, "cancelled": 1, "confirmed": 0}, {"dia": "2026-05-27", "agendados": 12, "showed": 6, "noshow": 1, "cancelled": 4, "confirmed": 1}, {"dia": "2026-05-28", "agendados": 7, "showed": 1, "noshow": 1, "cancelled": 4, "confirmed": 1}, {"dia": "2026-05-29", "agendados": 9, "showed": 0, "noshow": 2, "cancelled": 5, "confirmed": 2}, {"dia": "2026-05-30", "agendados": 5, "showed": 2, "noshow": 0, "cancelled": 3, "confirmed": 0}, {"dia": "2026-05-31", "agendados": 7, "showed": 2, "noshow": 0, "cancelled": 5, "confirmed": 0}, {"dia": "2026-06-01", "agendados": 4, "showed": 2, "noshow": 0, "cancelled": 1, "confirmed": 1}, {"dia": "2026-06-02", "agendados": 6, "showed": 1, "noshow": 2, "cancelled": 3, "confirmed": 0}, {"dia": "2026-06-03", "agendados": 6, "showed": 2, "noshow": 1, "cancelled": 2, "confirmed": 1}, {"dia": "2026-06-04", "agendados": 5, "showed": 1, "noshow": 0, "cancelled": 3, "confirmed": 1}, {"dia": "2026-06-05", "agendados": 2, "showed": 0, "noshow": 0, "cancelled": 1, "confirmed": 1}, {"dia": "2026-06-06", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 1}, {"dia": "2026-06-07", "agendados": 0, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 0}, {"dia": "2026-06-08", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 1}, {"dia": "2026-06-09", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 1}, {"dia": "2026-06-10", "agendados": 0, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 0}, {"dia": "2026-06-11", "agendados": 2, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 2}, {"dia": "2026-06-12", "agendados": 2, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 2}, {"dia": "2026-06-13", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 1, "confirmed": 0}, {"dia": "2026-06-14", "agendados": 0, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 0}, {"dia": "2026-06-15", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 1}, {"dia": "2026-06-16", "agendados": 2, "showed": 0, "noshow": 1, "cancelled": 0, "confirmed": 1}, {"dia": "2026-06-17", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 1, "confirmed": 0}, {"dia": "2026-06-18", "agendados": 3, "showed": 2, "noshow": 0, "cancelled": 1, "confirmed": 0}, {"dia": "2026-06-19", "agendados": 0, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 0}, {"dia": "2026-06-20", "agendados": 1, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 1}, {"dia": "2026-06-21", "agendados": 0, "showed": 0, "noshow": 0, "cancelled": 0, "confirmed": 0}]};</script>
 <script>
 (function(){
- var S=DATA.setting, T=DATA.triage;
- document.getElementById('sub').textContent='Rango: '+DATA.rango+' · actualizado '+DATA.generado+' · IG + Facebook';
- var sum=function(a,k){return a.reduce(function(x,r){return x+(r[k]||0);},0);};
- // SETTING cards
- var inb=sum(S,'inb'),out=sum(S,'out'),nuev=sum(S,'nuevas'),fu=sum(S,'fups'),pr=sum(S,'prop'),ag=sum(S,'agendas');
- var resps=S.filter(function(r){return r.resp_min!=null;}).map(function(r){return r.resp_min;});
- var rtavg=resps.length?Math.round(resps.reduce(function(a,b){return a+b;},0)/resps.length):null;
- var card=function(l,v,h){return '<div class="kc"><div class="l">'+l+'</div><div class="v">'+v+'</div>'+(h?'<div class="h">'+h+'</div>':'')+'</div>';};
- document.getElementById('s_cards').innerHTML=
-   card('Conv. nuevas',nuev,inb+' in · '+out+' out')+card('Follow-ups',fu)+
-   card('Propuestas',pr,(nuev?Math.round(100*pr/nuev):0)+'% de nuevas')+
-   card('Agendas',ag,(pr?Math.round(100*ag/pr):0)+'% de propuestas')+
-   card('T. resp. medio',rtavg!=null?rtavg+' min':'—','1ª respuesta');
- // insight: días con más agendas y su tiempo de respuesta
- var maxag=Math.max.apply(null,S.map(function(r){return r.agendas;}));
- var top=S.filter(function(r){return r.agendas===maxag&&maxag>0;});
- if(top.length){var rs=top.filter(function(r){return r.resp_min!=null;}).map(function(r){return r.resp_min;});
-   var rtxt=rs.length?Math.round(rs.reduce(function(a,b){return a+b;},0)/rs.length)+' min':'s/d';
-   document.getElementById('s_insight').innerHTML='Los días con más agendas ('+maxag+'/día) tuvieron un tiempo medio de respuesta de <b>'+rtxt+'</b>. Media general: <b>'+(rtavg!=null?rtavg+' min':'s/d')+'</b>.';
- } else {document.getElementById('s_insight').classList.add('hide');}
- // funnel
- document.getElementById('funnel').innerHTML=
-  fbar('Nuevas',nuev,nuev,'var(--blue)')+fbar('Propuestas',pr,nuev,'var(--teal)',Math.round(100*pr/(nuev||1))+'%')+fbar('Agendas',ag,nuev,'var(--amber)',Math.round(100*ag/(nuev||1))+'%');
- function fbar(lbl,val,max,col,pct){var w=Math.max(2,Math.round(100*val/(max||1)));
-  return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;"><span style="width:90px;font-size:13px;color:var(--mut)">'+lbl+'</span><div style="flex:1;background:#eef1f5;border-radius:8px;height:28px"><div style="width:'+w+'%;background:'+col+';height:28px;border-radius:8px"></div></div><span style="width:80px;text-align:right;font-weight:500;font-size:13px">'+val+(pct?' · '+pct:'')+'</span></div>';}
- // setting table
- var th='<thead><tr><th>Día</th><th>In</th><th>Out</th><th>Nuevas</th><th>Total</th><th>F-up</th><th>Prop</th><th>Agnd</th><th>T.resp</th></tr></thead>';
- var tb=S.map(function(r){return '<tr><td>'+r.dia.slice(5)+'</td><td>'+r.inb+'</td><td>'+r.out+'</td><td><b>'+r.nuevas+'</b></td><td>'+r.total+'</td><td>'+r.fups+'</td><td>'+r.prop+'</td><td><b>'+r.agendas+'</b></td><td>'+(r.resp_min!=null?r.resp_min+'m':'—')+'</td></tr>';}).join('');
- document.getElementById('s_table').innerHTML=th+'<tbody>'+tb+'</tbody>';
- // TRIAGE cards
- var tag=sum(T,'agendados'),tsh=sum(T,'showed'),tns=sum(T,'noshow'),tc=sum(T,'cancelled'),tcf=sum(T,'confirmed');
- var sup=(tsh+tns)?Math.round(100*tsh/(tsh+tns)):0;
- document.getElementById('t_cards').innerHTML=
-   card('Agendados',tag)+card('Asistió',tsh)+card('No-show',tns)+card('Cancelados',tc)+card('Show-up',sup+'%','de los celebrados');
- var tth='<thead><tr><th>Día</th><th>Agendados</th><th>Asistió</th><th>Confirm.</th><th>No-show</th><th>Cancel.</th></tr></thead>';
- var ttb=T.map(function(r){return '<tr><td>'+r.dia.slice(5)+'</td><td><b>'+r.agendados+'</b></td><td>'+r.showed+'</td><td>'+r.confirmed+'</td><td>'+r.noshow+'</td><td>'+r.cancelled+'</td></tr>';}).join('');
- document.getElementById('t_table').innerHTML=tth+'<tbody>'+ttb+'</tbody>';
- // tabs
- document.querySelectorAll('.tab').forEach(function(b){b.onclick=function(){
-   document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');
-   document.getElementById('setting').classList.toggle('hide',b.dataset.t!=='setting');
-   document.getElementById('triage').classList.toggle('hide',b.dataset.t!=='triage');};});
- // charts
- var labels=S.map(function(r){return r.dia.slice(5);});
- new Chart(document.getElementById('s_trend'),{data:{labels:labels,datasets:[
-   {type:'bar',label:'Nuevas',data:S.map(function(r){return r.nuevas;}),backgroundColor:'#378ADD',order:3},
-   {type:'line',label:'Propuestas',data:S.map(function(r){return r.prop;}),borderColor:'#1D9E75',backgroundColor:'#1D9E75',tension:.3},
-   {type:'line',label:'Agendas',data:S.map(function(r){return r.agendas;}),borderColor:'#BA7517',backgroundColor:'#BA7517',borderDash:[5,4],tension:.3}
- ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{autoSkip:false}},y:{beginAtZero:true}}}});
- new Chart(document.getElementById('s_resp'),{type:'line',data:{labels:labels,datasets:[
-   {label:'Min',data:S.map(function(r){return r.resp_min;}),borderColor:'#534AB7',backgroundColor:'#534AB7',tension:.3,spanGaps:true}
- ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,title:{display:true,text:'min'}}}}});
- new Chart(document.getElementById('t_trend'),{type:'bar',data:{labels:labels,datasets:[
-   {label:'Asistió',data:T.map(function(r){return r.showed;}),backgroundColor:'#1D9E75'},
-   {label:'Confirmado',data:T.map(function(r){return r.confirmed;}),backgroundColor:'#378ADD'},
-   {label:'No-show',data:T.map(function(r){return r.noshow;}),backgroundColor:'#BA7517'},
-   {label:'Cancelado',data:T.map(function(r){return r.cancelled;}),backgroundColor:'#E24B4A'}
- ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{stacked:true,ticks:{autoSkip:false}},y:{stacked:true,beginAtZero:true}}}});
+ var S=DATA.setting, T=DATA.triage, charts={};
+ document.getElementById('sub').textContent='Datos actualizados '+DATA.generado+' · IG + Facebook';
+ var allDays=S.map(function(r){return r.dia;});
+ var fromEl=document.getElementById('from'), toEl=document.getElementById('to');
+ fromEl.min=toEl.min=allDays[0]; fromEl.max=toEl.max=allDays[allDays.length-1];
+ function setRange(d){var to=allDays[allDays.length-1]; var from=allDays[Math.max(0,allDays.length-d)]; fromEl.value=from; toEl.value=to;}
+ setRange(14);
+ function sum(a,k){return a.reduce(function(x,r){return x+(r[k]||0);},0);}
+ function avg(a,k){return a.length?Math.round(sum(a,k)/a.length):0;}
+ function pct(n,d){return d?Math.round(100*n/d)+'%':'—';}
+ function card(l,v,h){return '<div class="kc"><div class="l">'+l+'</div><div class="v">'+v+'</div>'+(h?'<div class="h">'+h+'</div>':'')+'</div>';}
+ function fbar(lbl,val,max,col,extra){var w=Math.max(2,Math.round(100*val/(max||1)));
+  return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;"><span style="width:100px;font-size:13px;color:var(--mut)">'+lbl+'</span><div style="flex:1;background:#eef1f5;border-radius:8px;height:28px"><div style="width:'+w+'%;background:'+col+';height:28px;border-radius:8px"></div></div><span style="width:90px;text-align:right;font-weight:500;font-size:13px">'+val+(extra?' · '+extra:'')+'</span></div>';}
+
+ function render(){
+   var from=fromEl.value, to=toEl.value;
+   var Sf=S.filter(function(r){return r.dia>=from&&r.dia<=to;});
+   var Tf=T.filter(function(r){return r.dia>=from&&r.dia<=to;});
+   // SETTING cards (totales + media/día)
+   var nuev=sum(Sf,'nuevas'),tot=sum(Sf,'total'),fu=sum(Sf,'fups'),pr=sum(Sf,'prop'),ag=sum(Sf,'agendas');
+   var resps=Sf.filter(function(r){return r.resp_min!=null;}).map(function(r){return r.resp_min;});
+   var rtavg=resps.length?Math.round(resps.reduce(function(a,b){return a+b;},0)/resps.length):null;
+   document.getElementById('s_cards').innerHTML=
+     card('Conv. nuevas',nuev,'media '+avg(Sf,'nuevas')+'/día')+
+     card('Conv. totales',tot,'media '+avg(Sf,'total')+'/día')+
+     card('Follow-ups',fu,'media '+avg(Sf,'fups')+'/día')+
+     card('Propuestas',pr,pct(pr,nuev)+' de nuevas')+
+     card('Agendas',ag,pct(ag,pr)+' de propuestas')+
+     card('T. resp. medio',rtavg!=null?rtavg+' min':'—','1ª respuesta');
+   document.getElementById('funnel').innerHTML=
+     fbar('Conv. totales',tot,tot,'var(--blue)')+fbar('Propuestas',pr,tot,'var(--teal)',pct(pr,tot))+fbar('Agendas',ag,tot,'var(--amber)',pct(ag,tot));
+   // setting table
+   var th='<thead><tr><th>Día</th><th>In</th><th>Out</th><th>Nuevas</th><th>Total</th><th>F-up</th><th>Prop</th><th>Agnd</th><th>T.resp</th></tr></thead>';
+   var tb=Sf.map(function(r){return '<tr><td>'+r.dia.slice(5)+'</td><td>'+r.inb+'</td><td>'+r.out+'</td><td>'+r.nuevas+'</td><td><b>'+r.total+'</b></td><td>'+r.fups+'</td><td>'+r.prop+'</td><td><b>'+r.agendas+'</b></td><td>'+(r.resp_min!=null?r.resp_min+'m':'—')+'</td></tr>';}).join('');
+   var media='<tr class="media"><td>Media/día</td><td>'+avg(Sf,'inb')+'</td><td>'+avg(Sf,'out')+'</td><td>'+avg(Sf,'nuevas')+'</td><td>'+avg(Sf,'total')+'</td><td>'+avg(Sf,'fups')+'</td><td>'+avg(Sf,'prop')+'</td><td>'+avg(Sf,'agendas')+'</td><td>'+(rtavg!=null?rtavg+'m':'—')+'</td></tr>';
+   var total='<tr class="total"><td>Total</td><td>'+sum(Sf,'inb')+'</td><td>'+sum(Sf,'out')+'</td><td>'+nuev+'</td><td>'+tot+'</td><td>'+fu+'</td><td>'+pr+'</td><td>'+ag+'</td><td>—</td></tr>';
+   document.getElementById('s_table').innerHTML=th+'<tbody>'+tb+media+total+'</tbody>';
+   // TRIAGE cards
+   var tag=sum(Tf,'agendados'),tsh=sum(Tf,'showed'),tns=sum(Tf,'noshow'),tc=sum(Tf,'cancelled');
+   var sup=(tsh+tns)?Math.round(100*tsh/(tsh+tns)):0;
+   document.getElementById('t_cards').innerHTML=
+     card('Agendados',tag,'media '+avg(Tf,'agendados')+'/día')+card('Asistió',tsh)+card('No-show',tns)+card('Cancelados',tc)+card('Show-up',sup+'%','de los celebrados');
+   var tth='<thead><tr><th>Día</th><th>Agendados</th><th>Asistió</th><th>Confirm.</th><th>No-show</th><th>Cancel.</th></tr></thead>';
+   var ttb=Tf.map(function(r){return '<tr><td>'+r.dia.slice(5)+'</td><td><b>'+r.agendados+'</b></td><td>'+r.showed+'</td><td>'+r.confirmed+'</td><td>'+r.noshow+'</td><td>'+r.cancelled+'</td></tr>';}).join('');
+   var ttot='<tr class="total"><td>Total</td><td>'+tag+'</td><td>'+tsh+'</td><td>'+sum(Tf,'confirmed')+'</td><td>'+tns+'</td><td>'+tc+'</td></tr>';
+   document.getElementById('t_table').innerHTML=tth+'<tbody>'+ttb+ttot+'</tbody>';
+   // ANÁLISIS (dinámico en cifras, fijo en diagnóstico)
+   document.getElementById('s_analisis').innerHTML=anItem(
+     'Tasa de agenda muy baja ('+pct(pr,nuev)+' propuestas · '+pct(ag,nuev)+' agendas de las nuevas)',
+     'La mayoría de conversaciones son outbound en frío y se va directo al link sin cualificar ni crear deseo.',
+     'Cualificar profesión + nivel + meta en el DM y crear deseo ANTES de proponer. Una sola pregunta por mensaje.')
+   +anItem('Tiempo de respuesta alto ('+(rtavg!=null?rtavg+' min':'s/d')+' de media)',
+     'Se tarda en contestar; el lead frío se enfría y deja de responder.',
+     'Responder en menos de 15 min. La velocidad es el factor nº1 de conversión.')
+   +anItem('Muchos follow-ups, poca conversión ('+fu+' follow-ups → '+pr+' propuestas)',
+     'Se persigue al lead sin engancharlo primero.',
+     'Mejor apertura + validar a la persona, no solo insistir. Si no responde tras 2 intentos, a nutrición.')
+   +anItem('Pocas propuestas de agenda',
+     'No se propone la llamada de forma proactiva al final.',
+     'Cerrar SIEMPRE proponiendo la agenda (con el link contact_id, sin duplicar contacto).');
+   document.getElementById('t_analisis').innerHTML=anItem(
+     'Caídas altas: '+tns+' no-show + '+tc+' cancelados (show-up '+sup+'%)',
+     'No se confirma ni se recuerda la cita entre el agendado y la llamada.',
+     'Emails + WhatsApp de confirmación y recordatorio (anti no-show) antes del triaje.')
+   +anItem('Se revela el precio en el triaje',
+     'El triager responde a la pregunta del lead y "quema" la oferta del closer.',
+     'Solo dar un RANGO para tantear capacidad; el detalle y el precio, en el closing.')
+   +anItem('No se fija la expectativa del closing',
+     'El lead llega al closing pensando que es informativo, no de decisión.',
+     'Cerrar el triaje con: "Natalie te presenta el plan y la inversión, y ahí, si lo ves claro, reservas tu plaza".');
+   // charts
+   Object.values(charts).forEach(function(c){c.destroy();});
+   var labels=Sf.map(function(r){return r.dia.slice(5);});
+   charts.t1=new Chart(document.getElementById('s_trend'),{data:{labels:labels,datasets:[
+     {type:'bar',label:'Totales',data:Sf.map(function(r){return r.total;}),backgroundColor:'#378ADD',yAxisID:'y',order:3},
+     {type:'line',label:'Propuestas',data:Sf.map(function(r){return r.prop;}),borderColor:'#1D9E75',backgroundColor:'#1D9E75',yAxisID:'y2',tension:.3},
+     {type:'line',label:'Agendas',data:Sf.map(function(r){return r.agendas;}),borderColor:'#BA7517',backgroundColor:'#BA7517',borderDash:[5,4],yAxisID:'y2',tension:.3}
+   ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{autoSkip:true,maxRotation:0}},y:{beginAtZero:true,position:'left',title:{display:true,text:'totales'}},y2:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'prop / agendas'}}}}});
+   charts.t2=new Chart(document.getElementById('s_resp'),{type:'line',data:{labels:labels,datasets:[
+     {label:'Min',data:Sf.map(function(r){return r.resp_min;}),borderColor:'#534AB7',backgroundColor:'#534AB7',tension:.3,spanGaps:true}
+   ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
+   charts.t3=new Chart(document.getElementById('t_trend'),{type:'bar',data:{labels:labels,datasets:[
+     {label:'Asistió',data:Tf.map(function(r){return r.showed;}),backgroundColor:'#1D9E75'},
+     {label:'Confirmado',data:Tf.map(function(r){return r.confirmed;}),backgroundColor:'#378ADD'},
+     {label:'No-show',data:Tf.map(function(r){return r.noshow;}),backgroundColor:'#BA7517'},
+     {label:'Cancelado',data:Tf.map(function(r){return r.cancelled;}),backgroundColor:'#E24B4A'}
+   ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{stacked:true,ticks:{autoSkip:true,maxRotation:0}},y:{stacked:true,beginAtZero:true}}}});
+ }
+ function anItem(t,why,fix){return '<div class="an"><div class="t">'+t+'</div><div class="r"><b>Por qué:</b> '+why+'</div><div class="r fix"><b>Cómo corregirlo:</b> '+fix+'</div></div>';}
+ fromEl.onchange=toEl.onchange=function(){document.querySelectorAll('.qb').forEach(function(b){b.classList.remove('on');});render();};
+ document.querySelectorAll('.qb').forEach(function(b){b.onclick=function(){document.querySelectorAll('.qb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');setRange(+b.dataset.d);render();};});
+ document.querySelectorAll('.tab').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');document.getElementById('setting').classList.toggle('hide',b.dataset.t!=='setting');document.getElementById('triage').classList.toggle('hide',b.dataset.t!=='triage');};});
+ render();
 })();
 </script>
 </body>
