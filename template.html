@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dashboard NatschoLibre</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--bd:#e6e8ec;--tx:#1d2025;--mut:#6b7280;--blue:#378ADD;--teal:#1D9E75;--amber:#BA7517;--red:#E24B4A;--purple:#534AB7;}
+*{box-sizing:border-box;} body{margin:0;background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:24px 18px 60px;}
+h1{font-size:22px;font-weight:600;margin:0;} .sub{color:var(--mut);font-size:13px;margin-top:2px;}
+.ctrl{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:16px 0 8px;}
+.ctrl input[type=date]{padding:6px 8px;border:1px solid var(--bd);border-radius:8px;font-size:13px;}
+.qb{padding:6px 12px;border:1px solid var(--bd);background:#fff;border-radius:8px;cursor:pointer;font-size:13px;color:var(--mut);}
+.qb.on{border-color:var(--blue);color:var(--blue);font-weight:500;}
+.tabs{display:flex;gap:8px;margin:16px 0 18px;border-bottom:1px solid var(--bd);}
+.tab{padding:10px 16px;cursor:pointer;border:none;background:none;font-size:15px;color:var(--mut);border-bottom:2px solid transparent;margin-bottom:-1px;}
+.tab.on{color:var(--tx);border-bottom-color:var(--blue);font-weight:500;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:22px;}
+.kc{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;}
+.kc .l{font-size:12px;color:var(--mut);} .kc .v{font-size:24px;font-weight:600;margin-top:3px;} .kc .h{font-size:11px;color:var(--mut);margin-top:2px;}
+.panel{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px 18px;margin-bottom:18px;}
+.panel h3{font-size:14px;font-weight:500;color:var(--mut);margin:0 0 12px;}
+table{width:100%;border-collapse:collapse;font-size:13px;} th,td{padding:7px 6px;text-align:right;} th{color:var(--mut);font-weight:500;} td:first-child,th:first-child{text-align:left;}
+tbody tr{border-top:1px solid var(--bd);} tr.media td{border-top:2px solid var(--bd);font-weight:500;background:#fafbfc;} tr.total td{font-weight:600;}
+tr.nd td{color:var(--mut);font-style:italic;background:repeating-linear-gradient(45deg,#f4f5f7,#f4f5f7 6px,#eef0f3 6px,#eef0f3 12px);}
+.bhctrl{display:flex;flex-wrap:wrap;gap:14px;align-items:center;font-size:13px;color:var(--mut);margin-bottom:10px;}
+.bhctrl select,.bhctrl input[type=number]{font-size:13px;padding:2px 4px;border:1px solid var(--bd);border-radius:6px;}
+.bhctrl input[type=number]{width:48px;}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--mut);margin-bottom:8px;}
+.legend i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:4px;vertical-align:-1px;}
+.chartbox{position:relative;height:250px;}
+.hide{display:none;}
+.an{border-left:3px solid var(--red);border-radius:0;padding:10px 14px;margin-bottom:12px;background:#fff;border-top:1px solid var(--bd);border-right:1px solid var(--bd);border-bottom:1px solid var(--bd);}
+.an .t{font-weight:500;font-size:14px;margin-bottom:4px;} .an .r{font-size:13px;color:var(--mut);margin:3px 0;}
+.an .r b{color:var(--tx);font-weight:500;} .an .fix{color:var(--teal);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Dashboard de NatschoLibre</h1>
+  <div class="sub" id="sub"></div>
+  <div class="ctrl">
+    <span style="font-size:13px;color:var(--mut)">Rango:</span>
+    <input type="date" id="from"><span style="color:var(--mut)">→</span><input type="date" id="to">
+    <button class="qb" data-d="7">7 días</button>
+    <button class="qb on" data-d="14">14 días</button>
+    <button class="qb" data-d="30">30 días</button>
+    <button class="qb" data-d="90">90 días</button>
+    <button class="qb" data-d="9999">Todo</button>
+  </div>
+  <div class="tabs">
+    <button class="tab on" data-t="setting">Setting</button>
+    <button class="tab" data-t="triage">Triaje</button>
+    <button class="tab" data-t="closing">Closing</button>
+    <button class="tab" data-t="global">Global</button>
+    <button class="tab" data-t="leads">Camino leads</button>
+    <button class="tab" data-t="clientes">Clientes</button>
+    <button class="tab" data-t="cash">Cash</button>
+  </div>
+
+  <section id="setting">
+    <div class="cards" id="s_cards"></div>
+    <div class="panel"><h3>Embudo del rango</h3><div id="funnel"></div></div>
+    <div class="panel"><h3>Evolución por día</h3>
+      <div class="legend"><span><i style="background:var(--blue)"></i>Conversaciones totales</span><span><i style="background:var(--teal)"></i>Propuestas (eje der.)</span><span><i style="background:var(--amber)"></i>Agendas (eje der.)</span></div>
+      <div class="chartbox"><canvas id="s_trend"></canvas></div>
+      <div id="s_gapnote" style="font-size:12px;color:var(--mut);margin-top:8px"></div></div>
+    <div class="panel"><h3>Tiempo de 1ª respuesta (mediana, min) por día</h3>
+      <div class="bhctrl">
+        <label><input type="checkbox" id="bh_on" checked> Descontar horas de sueño</label>
+        <span>Huso:
+          <select id="bh_tz"><option value="-4">Venezuela (UTC-4)</option><option value="2">España (UTC+2)</option><option value="-6">México (UTC-6)</option><option value="-5">Colombia/Perú (UTC-5)</option></select>
+        </span>
+        <span>Activo de <input id="bh_a" type="number" min="0" max="23" value="8"> a <input id="bh_b" type="number" min="1" max="24" value="22"> h</span>
+      </div>
+      <div class="chartbox"><canvas id="s_resp"></canvas></div></div>
+    <div class="panel"><h3>Detalle por día</h3><table id="s_table"></table></div>
+    <div class="panel"><h3>Análisis — qué mejorar en el setting</h3><div id="s_analisis"></div></div>
+  </section>
+
+  <section id="triage" class="hide">
+    <div class="cards" id="t_cards"></div>
+    <div class="panel"><h3>Triajes por día y estado</h3>
+      <div class="legend"><span><i style="background:var(--blue)"></i>Agendados</span><span><i style="background:var(--teal)"></i>Asistió</span><span><i style="background:var(--purple)"></i>Cualifica → closing</span></div>
+      <div class="chartbox"><canvas id="t_trend"></canvas></div></div>
+    <div class="panel"><h3>Detalle por día</h3><table id="t_table"></table></div>
+    <div class="panel"><h3>Análisis — qué mejorar en el triaje</h3><div id="t_analisis"></div></div>
+  </section>
+
+  <section id="closing" class="hide">
+    <div class="cards" id="c_cards"></div>
+    <div class="panel"><h3>Closings por día y estado</h3>
+      <div class="legend"><span><i style="background:var(--teal)"></i>Asistió</span><span><i style="background:var(--blue)"></i>Confirmado</span><span><i style="background:var(--amber)"></i>No-show</span><span><i style="background:var(--red)"></i>Cancelado</span></div>
+      <div class="chartbox"><canvas id="c_estado"></canvas></div></div>
+    <div class="panel"><h3>Facturación y cash collected por día (€)</h3>
+      <div class="legend"><span><i style="background:var(--teal)"></i>Facturación</span><span><i style="background:var(--blue)"></i>Cash collected</span></div>
+      <div class="chartbox"><canvas id="c_fact"></canvas></div></div>
+    <div class="panel"><h3>Llamadas de closing (desde febrero)</h3><table id="c_table"></table></div>
+    <div class="panel" style="border-left:3px solid var(--amber);border-radius:0"><div style="font-size:13px;color:var(--mut)"><b style="color:var(--tx)">Faltan datos:</b> # ventas, cash collected, ingresos y "resultado del closing" no se capturan aún de forma sistemática. Para llenar esta pestaña hace falta el formulario de cierre (que rellena Natalie) + el workflow WF07.</div></div>
+  </section>
+
+  <section id="global" class="hide">
+    <div class="sub" style="margin-bottom:10px">Visión global del embudo en el rango seleccionado (selector de fechas arriba).</div>
+    <div class="cards" id="g_cards"></div>
+    <div class="panel"><h3>Embudo completo</h3><div id="g_funnel"></div></div>
+    <div class="panel"><h3>Facturación y cash collected por día (€)</h3>
+      <div class="legend"><span><i style="background:var(--teal)"></i>Facturación</span><span><i style="background:var(--blue)"></i>Cash</span></div>
+      <div class="chartbox"><canvas id="g_fact"></canvas></div></div>
+  </section>
+
+  <section id="leads" class="hide">
+    <div class="sub" style="margin-bottom:10px">Una fila por lead que llegó al triaje/closing (desde febrero). "Ficha" abre el lead en Funnel Up.</div>
+    <div class="panel"><table id="l_table"></table></div>
+  </section>
+
+  <section id="clientes" class="hide">
+    <div class="panel" style="border-left:3px solid var(--amber);border-radius:0"><h3>Clientes — pendiente de datos</h3>
+    <div style="font-size:13px;color:var(--mut)">Para controlar <b style="color:var(--tx)">pagos y progreso en la mentoría</b> (clase actual, cuotas, próximo pago, estado) hay que capturar esos datos: hoy no existen en el sistema. Propuesta: campos en GHL (plan · cuotas pagadas · próximo pago · clase actual · estado) que el equipo/mentor actualiza, o un formulario de pago. En cuanto se capturen, esta pestaña se llena sola.</div></div>
+  </section>
+
+  <section id="cash" class="hide">
+    <div class="panel" style="border-left:3px solid var(--amber);border-radius:0"><h3>Cash collected por mes — pendiente de datos</h3>
+    <div style="font-size:13px;color:var(--mut)">Necesita el registro de <b style="color:var(--tx)">cada pago</b> (cliente · fecha · importe). Una vez se capturen los pagos en GHL, monto la vista mensual (como tu pestaña "Mayo 2026").</div></div>
+  </section>
+</div>
+
+<script>/*DATA*/</script>
+<script>
+(function(){
+ var S=DATA.setting, T=DATA.triage, charts={};
+ document.getElementById('sub').textContent='Datos actualizados '+DATA.generado+' · IG + Facebook';
+ var allDays=S.map(function(r){return r.dia;});
+ var fromEl=document.getElementById('from'), toEl=document.getElementById('to');
+ var firstDay=allDays[0], lastDay=allDays[allDays.length-1];
+ fromEl.max=toEl.max=lastDay; // no se puede elegir futuro; cualquier fecha pasada sí
+ function setRange(d){var to=lastDay; var from=(d>=9999)?firstDay:allDays[Math.max(0,allDays.length-d)]; fromEl.value=from; toEl.value=to;}
+ setRange(14);
+ var bhOn=document.getElementById('bh_on'),bhTz=document.getElementById('bh_tz'),bhA=document.getElementById('bh_a'),bhB=document.getElementById('bh_b');
+ function sum(a,k){return a.reduce(function(x,r){return x+(r[k]||0);},0);}
+ function avg(a,k){return a.length?Math.round(sum(a,k)/a.length):0;}
+ function pct(n,d){return d?Math.round(100*n/d)+'%':'—';}
+ function median(arr){if(!arr.length)return null;arr=arr.slice().sort(function(x,y){return x-y;});var m=Math.floor(arr.length/2);return arr.length%2?arr[m]:(arr[m-1]+arr[m])/2;}
+ // minutos de respuesta contando SOLO la franja activa [a,b) en el huso tz (descuenta horas de sueño)
+ function bizMin(inS,repS,tz,a,b){
+   if(b<=a)b=a+1;
+   var s=inS+tz*3600, e=repS+tz*3600; if(e<=s)return 0;
+   var tot=0, d0=Math.floor(s/86400)*86400;
+   for(var d=d0; d<e; d+=86400){
+     var ws=d+a*3600, we=d+b*3600, lo=Math.max(s,ws), hi=Math.min(e,we);
+     if(hi>lo) tot+=(hi-lo);
+   }
+   return tot/60;
+ }
+ function card(l,v,h){return '<div class="kc"><div class="l">'+l+'</div><div class="v">'+v+'</div>'+(h?'<div class="h">'+h+'</div>':'')+'</div>';}
+ function fbar(lbl,val,max,col,extra){var w=Math.max(2,Math.round(100*val/(max||1)));
+  return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;"><span style="width:100px;font-size:13px;color:var(--mut)">'+lbl+'</span><div style="flex:1;background:#eef1f5;border-radius:8px;height:28px"><div style="width:'+w+'%;background:'+col+';height:28px;border-radius:8px"></div></div><span style="width:90px;text-align:right;font-weight:500;font-size:13px">'+val+(extra?' · '+extra:'')+'</span></div>';}
+
+ function render(){
+   var from=fromEl.value, to=toEl.value;
+   var Sf=S.filter(function(r){return r.dia>=from&&r.dia<=to;});
+   var Sd=Sf.filter(function(r){return !r.nodata;}); // días CON datos de setting (excluye huecos de sync)
+   var gapsIn=(DATA.gaps||[]).filter(function(g){return g.to>=from&&g.from<=to;});
+   var gn=document.getElementById('s_gapnote');
+   if(gn) gn.innerHTML=gapsIn.length?('⚠️ Tramo sin datos de setting (la sincronización GHL↔Instagram no registró DMs): '+gapsIn.map(function(g){return g.from+' → '+g.to;}).join(', ')+'. Las medias y totales de setting excluyen esos días. Las agendas sí son reales (vienen del calendario).'):'';
+   var Tf=T.filter(function(r){return r.dia>=from&&r.dia<=to;});
+   // SETTING cards (totales + media/día sobre días con datos)
+   var nuev=sum(Sd,'nuevas'),tot=sum(Sd,'total'),fu=sum(Sd,'fups'),pr=sum(Sd,'prop'),ag=sum(Sf,'agendas');
+   // tiempo de respuesta: descontando horas de sueño según los controles (mediana)
+   var on=bhOn.checked, tz=+bhTz.value, ha=+bhA.value, hb=+bhB.value;
+   var P=(DATA.resp_pairs||[]).filter(function(p){return p.dia>=from&&p.dia<=to;});
+   function adj(p){return on?bizMin(p['in'],p.rep,tz,ha,hb):(p.rep-p['in'])/60;}
+   var byDay={};
+   P.forEach(function(p){(byDay[p.dia]=byDay[p.dia]||[]).push(adj(p));});
+   var dayResp={}; for(var dk in byDay) dayResp[dk]=Math.round(median(byDay[dk]));
+   var allAdj=P.map(adj); var rtavg=allAdj.length?Math.round(median(allAdj)):null;
+   var rtraw=P.length?Math.round(median(P.map(function(p){return (p.rep-p['in'])/60;}))):null;
+   document.getElementById('s_cards').innerHTML=
+     card('Conv. nuevas',nuev,'media '+avg(Sd,'nuevas')+'/día')+
+     card('Conv. totales',tot,'media '+avg(Sd,'total')+'/día')+
+     card('Follow-ups',fu,'media '+avg(Sd,'fups')+'/día')+
+     card('Propuestas',pr,pct(pr,nuev)+' de nuevas')+
+     card('Agendas',ag,pct(ag,pr)+' de propuestas')+
+     card('T. resp. (mediana)',rtavg!=null?(rtavg<60?rtavg+' min':(rtavg/60).toFixed(1)+' h'):'—',on&&rtraw!=null?('sin filtrar: '+(rtraw<60?rtraw+' min':(rtraw/60).toFixed(1)+' h')):'1ª respuesta');
+   document.getElementById('funnel').innerHTML=
+     fbar('Conv. totales',tot,tot,'var(--blue)')+fbar('Propuestas',pr,tot,'var(--teal)',pct(pr,tot))+fbar('Agendas',ag,tot,'var(--amber)',pct(ag,tot));
+   // setting table
+   var th='<thead><tr><th>Día</th><th>In</th><th>Out</th><th>Nuevas</th><th>Total</th><th>F-up</th><th>Prop</th><th>%Pr</th><th>Agnd</th><th>%Ag</th><th>T.resp</th></tr></thead>';
+   var tb=Sf.map(function(r){
+     if(r.nodata) return '<tr class="nd"><td>'+r.dia.slice(5)+'</td><td colspan="6">sin datos · sync GHL↔Instagram caída</td><td></td><td><b>'+r.agendas+'</b></td><td></td><td></td></tr>';
+     return '<tr><td>'+r.dia.slice(5)+'</td><td>'+r.inb+'</td><td>'+r.out+'</td><td>'+r.nuevas+'</td><td><b>'+r.total+'</b></td><td>'+r.fups+'</td><td>'+r.prop+'</td><td>'+pct(r.prop,r.nuevas)+'</td><td><b>'+r.agendas+'</b></td><td>'+pct(r.agendas,r.prop)+'</td><td>'+(dayResp[r.dia]!=null?dayResp[r.dia]+'m':'—')+'</td></tr>';}).join('');
+   var media='<tr class="media"><td>Media/día</td><td>'+avg(Sd,'inb')+'</td><td>'+avg(Sd,'out')+'</td><td>'+avg(Sd,'nuevas')+'</td><td>'+avg(Sd,'total')+'</td><td>'+avg(Sd,'fups')+'</td><td>'+avg(Sd,'prop')+'</td><td>—</td><td>'+avg(Sf,'agendas')+'</td><td>—</td><td>'+(rtavg!=null?rtavg+'m':'—')+'</td></tr>';
+   var total='<tr class="total"><td>Total</td><td>'+sum(Sf,'inb')+'</td><td>'+sum(Sf,'out')+'</td><td>'+nuev+'</td><td>'+tot+'</td><td>'+fu+'</td><td>'+pr+'</td><td>'+pct(pr,nuev)+'</td><td>'+ag+'</td><td>'+pct(ag,pr)+'</td><td>—</td></tr>';
+   document.getElementById('s_table').innerHTML=th+'<tbody>'+tb+media+total+'</tbody>';
+   // TRIAGE cards
+   var tag=sum(Tf,'agendados'),tsh=sum(Tf,'showed'),tns=sum(Tf,'noshow'),tc=sum(Tf,'cancelled'),tcu=sum(Tf,'cualifica'),tconf=sum(Tf,'confirmed');
+   var sup=(tsh+tns)?Math.round(100*tsh/(tsh+tns)):0;
+   document.getElementById('t_cards').innerHTML=
+     card('Agendados',tag,'media '+avg(Tf,'agendados')+'/día')+card('Asistió',tsh,pct(tsh,tag)+' de agend.')+card('Cualifica → closing',tcu,pct(tcu,tag)+' de agend.')+card('No-show',tns)+card('Cancelados',tc)+card('Show-up',sup+'%','de los celebrados');
+   var tth='<thead><tr><th>Día</th><th>Agend.</th><th>Asistió</th><th>Confirm.</th><th>No-show</th><th>Cancel.</th><th>Cualifica</th></tr></thead>';
+   var ttb=Tf.map(function(r){return '<tr><td>'+r.dia.slice(5)+'</td><td><b>'+r.agendados+'</b></td><td>'+r.showed+'</td><td>'+r.confirmed+'</td><td>'+r.noshow+'</td><td>'+r.cancelled+'</td><td><b>'+r.cualifica+'</b></td></tr>';}).join('');
+   var ttot='<tr class="total"><td>Total</td><td>'+tag+'</td><td>'+tsh+'</td><td>'+tconf+'</td><td>'+tns+'</td><td>'+tc+'</td><td>'+tcu+'</td></tr>';
+   var tpct='<tr class="media"><td>% de agend.</td><td>—</td><td>'+pct(tsh,tag)+'</td><td>'+pct(tconf,tag)+'</td><td>'+pct(tns,tag)+'</td><td>'+pct(tc,tag)+'</td><td>'+pct(tcu,tag)+'</td></tr>';
+   document.getElementById('t_table').innerHTML=tth+'<tbody>'+ttb+ttot+tpct+'</tbody>';
+   // ANÁLISIS (dinámico en cifras, fijo en diagnóstico)
+   document.getElementById('s_analisis').innerHTML=anItem(
+     'Tasa de agenda muy baja ('+pct(pr,nuev)+' propuestas · '+pct(ag,nuev)+' agendas de las nuevas)',
+     'La mayoría de conversaciones son outbound en frío y se va directo al link sin cualificar ni crear deseo.',
+     'Cualificar profesión + nivel + meta en el DM y crear deseo ANTES de proponer. Una sola pregunta por mensaje.')
+   +anItem('Tiempo de 1ª respuesta: '+(rtavg!=null?(rtavg<60?rtavg+' min':(rtavg/60).toFixed(1)+' h'):'s/d')+(on?' (en horario activo'+(rtraw!=null?'; '+(rtraw<60?rtraw+' min':(rtraw/60).toFixed(1)+' h')+' contando 24h':'')+')':' (contando 24h)'),
+     on?'Ya se descuentan las horas de sueño. Si aun así es alto, hay demora real dentro del turno; si el valor de 24h es muy superior, gran parte eran mensajes nocturnos.':'Cuenta todas las horas, incluida la madrugada: actívalo "Descontar horas de sueño" para ver el tiempo real dentro del turno.',
+     'Responder en menos de 15 min dentro del horario activo. La velocidad es el factor nº1 de conversión.')
+   +anItem('Muchos follow-ups, poca conversión ('+fu+' follow-ups → '+pr+' propuestas)',
+     'Se persigue al lead sin engancharlo primero.',
+     'Mejor apertura + validar a la persona, no solo insistir. Si no responde tras 2 intentos, a nutrición.')
+   +anItem('Pocas propuestas de agenda',
+     'No se propone la llamada de forma proactiva al final.',
+     'Cerrar SIEMPRE proponiendo la agenda (con el link contact_id, sin duplicar contacto).');
+   document.getElementById('t_analisis').innerHTML=anItem(
+     'Caídas altas: '+tns+' no-show + '+tc+' cancelados (show-up '+sup+'%)',
+     'No se confirma ni se recuerda la cita entre el agendado y la llamada.',
+     'Emails + WhatsApp de confirmación y recordatorio (anti no-show) antes del triaje.')
+   +anItem('Se revela el precio en el triaje',
+     'El triager responde a la pregunta del lead y "quema" la oferta del closer.',
+     'Solo dar un RANGO para tantear capacidad; el detalle y el precio, en el closing.')
+   +anItem('No se fija la expectativa del closing',
+     'El lead llega al closing pensando que es informativo, no de decisión.',
+     'Cerrar el triaje con: "Natalie te presenta el plan y la inversión, y ahí, si lo ves claro, reservas tu plaza".');
+   // charts
+   Object.values(charts).forEach(function(c){c.destroy();});
+   var labels=Sf.map(function(r){return r.dia.slice(5);});
+   var FULLDAYS=Sf.map(function(r){return r.dia;});
+   // plugin: sombrea los tramos SIN DATOS de setting (sync GHL↔Instagram caída)
+   var gapPlugin={id:'gaps',beforeDatasetsDraw:function(ch){
+     var G=DATA.gaps||[]; if(!G.length)return;
+     var x=ch.scales.x,a=ch.chartArea,ctx=ch.ctx,n=FULLDAYS.length; if(n<2)return;
+     var step=Math.abs(x.getPixelForValue(1)-x.getPixelForValue(0));
+     ctx.save();
+     G.forEach(function(g){
+       var s=-1,e=-1;
+       for(var i=0;i<n;i++){ if(FULLDAYS[i]>=g.from&&FULLDAYS[i]<=g.to){ if(s<0)s=i; e=i; } }
+       if(s<0)return;
+       var p0=x.getPixelForValue(s)-step/2, p1=x.getPixelForValue(e)+step/2;
+       ctx.fillStyle='rgba(130,140,150,0.13)'; ctx.fillRect(p0,a.top,p1-p0,a.bottom-a.top);
+       ctx.fillStyle='#7b8590'; ctx.font='11px Arial'; ctx.textAlign='center';
+       ctx.fillText('sin datos (sync GHL)',(p0+p1)/2,a.top+14);
+     });
+     ctx.restore();
+   }};
+   charts.t1=new Chart(document.getElementById('s_trend'),{type:'bar',plugins:[gapPlugin],data:{labels:labels,datasets:[
+     {label:'Totales',data:Sf.map(function(r){return r.nodata?null:r.total;}),backgroundColor:'#378ADD',yAxisID:'y',grouped:false,barPercentage:0.9,categoryPercentage:0.7,order:3},
+     {label:'Propuestas',data:Sf.map(function(r){return r.nodata?null:r.prop;}),backgroundColor:'#1D9E75',yAxisID:'y2',grouped:false,barPercentage:0.5,categoryPercentage:0.7,order:2},
+     {label:'Agendas',data:Sf.map(function(r){return r.agendas;}),backgroundColor:'#BA7517',yAxisID:'y2',grouped:false,barPercentage:0.28,categoryPercentage:0.7,order:1}
+   ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{autoSkip:true,maxRotation:0}},y:{beginAtZero:true,position:'left',title:{display:true,text:'totales'}},y2:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'prop / agendas'}}}}});
+   charts.t2=new Chart(document.getElementById('s_resp'),{type:'line',plugins:[gapPlugin],data:{labels:labels,datasets:[
+     {label:'Min',data:Sf.map(function(r){return r.nodata?null:(dayResp[r.dia]!=null?dayResp[r.dia]:null);}),borderColor:'#534AB7',backgroundColor:'#534AB7',tension:.3,spanGaps:false}
+   ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
+   charts.t3=new Chart(document.getElementById('t_trend'),{type:'bar',data:{labels:labels,datasets:[
+     {label:'Agendados',data:Tf.map(function(r){return r.agendados;}),backgroundColor:'#378ADD',grouped:false,barPercentage:0.9,categoryPercentage:0.7,order:3},
+     {label:'Asistió',data:Tf.map(function(r){return r.showed;}),backgroundColor:'#1D9E75',grouped:false,barPercentage:0.55,categoryPercentage:0.7,order:2},
+     {label:'Cualifica',data:Tf.map(function(r){return r.cualifica;}),backgroundColor:'#534AB7',grouped:false,barPercentage:0.3,categoryPercentage:0.7,order:1}
+   ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{autoSkip:true,maxRotation:0}},y:{beginAtZero:true}}}});
+   // ===== CLOSING (tarjetas + gráficas, filtrado por fecha) =====
+   var CDf=(DATA.closing_daily||[]).filter(function(r){return r.dia>=from&&r.dia<=to;});
+   var cAg=sum(CDf,'agendados'),cSh=sum(CDf,'showed'),cVe=sum(CDf,'vendido'),cFa=sum(CDf,'facturacion'),cCa=sum(CDf,'cash');
+   document.getElementById('c_cards').innerHTML=
+     card('Closings',cAg,'media '+avg(CDf,'agendados')+'/día')+card('Asistió',cSh,pct(cSh,cAg)+' de closings')+card('Vendidos',cVe,pct(cVe,cSh)+' de asistidos')+card('Facturación','€'+Math.round(cFa).toLocaleString('es-ES'))+card('Cash collected','€'+Math.round(cCa).toLocaleString('es-ES'));
+   charts.c1=new Chart(document.getElementById('c_estado'),{type:'bar',data:{labels:labels,datasets:[
+     {label:'Asistió',data:CDf.map(function(r){return r.showed;}),backgroundColor:'#1D9E75'},
+     {label:'Confirmado',data:CDf.map(function(r){return r.confirmed;}),backgroundColor:'#378ADD'},
+     {label:'No-show',data:CDf.map(function(r){return r.noshow;}),backgroundColor:'#BA7517'},
+     {label:'Cancelado',data:CDf.map(function(r){return r.cancelled;}),backgroundColor:'#E24B4A'}
+   ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{stacked:true,ticks:{autoSkip:true,maxRotation:0}},y:{stacked:true,beginAtZero:true}}}});
+   var factOpts={responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom'}},scales:{x:{ticks:{autoSkip:true,maxRotation:0}},y:{beginAtZero:true}}};
+   function factDS(){return {labels:labels,datasets:[{label:'Facturación',data:CDf.map(function(r){return r.facturacion;}),backgroundColor:'#1D9E75'},{label:'Cash collected',data:CDf.map(function(r){return r.cash;}),backgroundColor:'#378ADD'}]};}
+   charts.c2=new Chart(document.getElementById('c_fact'),{type:'bar',data:factDS(),options:factOpts});
+   // ===== GLOBAL (embudo completo + dinero) =====
+   document.getElementById('g_cards').innerHTML=
+     card('Conv. totales',tot)+card('Propuestas',pr,pct(pr,tot)+' de conv.')+card('Agendas triaje',ag,pct(ag,pr)+' de prop.')+card('Asistió triaje',tsh,pct(tsh,tag)+' de agend.')+card('Cualifica',tcu,pct(tcu,tsh)+' de asistidos')+card('Vendidos',cVe,pct(cVe,cSh)+' de closings asist.')+card('Facturación','€'+Math.round(cFa).toLocaleString('es-ES'))+card('Cash collected','€'+Math.round(cCa).toLocaleString('es-ES'));
+   document.getElementById('g_funnel').innerHTML=
+     fbar('Conversaciones',tot,tot,'var(--blue)')+fbar('Propuestas de agenda',pr,tot,'var(--teal)',pct(pr,tot))+fbar('Agendas de triaje',ag,tot,'var(--amber)',pct(ag,tot))+fbar('Asistió al triaje',tsh,tot,'var(--purple)',pct(tsh,tot))+fbar('Cualifica → closing',tcu,tot,'#0F6E56',pct(tcu,tot))+fbar('Vendido',cVe,tot,'var(--red)',pct(cVe,tot));
+   charts.g1=new Chart(document.getElementById('g_fact'),{type:'bar',data:factDS(),options:factOpts});
+ }
+ function anItem(t,why,fix){return '<div class="an"><div class="t">'+t+'</div><div class="r"><b>Por qué:</b> '+why+'</div><div class="r fix"><b>Cómo corregirlo:</b> '+fix+'</div></div>';}
+ fromEl.onchange=toEl.onchange=function(){document.querySelectorAll('.qb').forEach(function(b){b.classList.remove('on');});render();};
+ bhOn.onchange=bhTz.onchange=bhA.onchange=bhB.onchange=function(){render();};
+ document.querySelectorAll('.qb').forEach(function(b){b.onclick=function(){document.querySelectorAll('.qb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');setRange(+b.dataset.d);render();};});
+ var SECTIONS=['setting','triage','closing','global','leads','clientes','cash'];
+ document.querySelectorAll('.tab').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');SECTIONS.forEach(function(s){document.getElementById(s).classList.toggle('hide',s!==b.dataset.t);});};});
+ function num(v){return parseFloat(String(v||'').replace(/[^0-9.]/g,''))||0;}
+ function renderStatic(){
+   var CL=DATA.closing||[],LD=DATA.leads||[];
+   // c_cards se renderiza en render() (filtrado por fecha); aquí solo la tabla-log de 30 días
+   var _ignore=card('Cualifica→closing','ver Triaje','');
+   var cth='<thead><tr><th>Nombre</th><th>Fecha</th><th>Estado</th><th>Resultado</th><th>S.Cl</th><th>Cash</th><th>Ficha</th></tr></thead>';
+   var cb=CL.map(function(r){return '<tr><td>'+r.nombre+'</td><td>'+(r.fecha||'').slice(5)+'</td><td>'+(r.estado||'')+'</td><td>'+(r.resclo||'—')+'</td><td>'+(r.sc!=null?r.sc:'—')+'</td><td>'+(r.cash||'—')+'</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>';}).join('');
+   document.getElementById('c_table').innerHTML=cth+'<tbody>'+(cb||'<tr><td>Sin closings</td></tr>')+'</tbody>';
+   var lth='<thead><tr><th>Nombre</th><th>Profesión</th><th>Setter</th><th>S.Form</th><th>S.Tri</th><th>Res.Triaje</th><th>S.Cl</th><th>Res.Closing</th><th>Ficha</th></tr></thead>';
+   var lb=LD.map(function(r){return '<tr><td>'+r.nombre+'</td><td style="text-align:left">'+(r.prof||'').slice(0,26)+'</td><td>'+(r.setter||'—')+'</td><td>'+(r.sf!=null?r.sf:'—')+'</td><td>'+(r.st!=null?r.st:'—')+'</td><td>'+(r.restri||'—')+'</td><td>'+(r.sc!=null?r.sc:'—')+'</td><td>'+(r.resclo||'—')+'</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>';}).join('');
+   document.getElementById('l_table').innerHTML=lth+'<tbody>'+(lb||'<tr><td>Sin leads</td></tr>')+'</tbody>';
+ }
+ render(); renderStatic();
+})();
+</script>
+</body>
+</html>
