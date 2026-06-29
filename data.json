@@ -1,555 +1,555 @@
 {
- "generado": "2026-06-29 19:24",
+ "generado": "2026-06-29 22:20",
  "rango": "2026-02-01 a 2026-06-29",
  "setting": [
   {
    "dia": "2026-02-01",
-   "inb": 6,
+   "inb": 4,
    "out": 0,
-   "nuevas": 6,
-   "total": 9,
+   "nuevas": 4,
+   "total": 7,
    "fups": 5,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 230,
+   "resp_min": 81,
    "nodata": false
   },
   {
    "dia": "2026-02-02",
-   "inb": 5,
-   "out": 1,
-   "nuevas": 6,
-   "total": 11,
-   "fups": 3,
+   "inb": 3,
+   "out": 0,
+   "nuevas": 3,
+   "total": 9,
+   "fups": 12,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 64,
+   "resp_min": 28,
    "nodata": false
   },
   {
    "dia": "2026-02-03",
-   "inb": 8,
-   "out": 0,
-   "nuevas": 8,
-   "total": 18,
-   "fups": 11,
+   "inb": 3,
+   "out": 1,
+   "nuevas": 4,
+   "total": 16,
+   "fups": 15,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 337,
+   "resp_min": 13,
    "nodata": false
   },
   {
    "dia": "2026-02-04",
-   "inb": 2,
-   "out": 3,
-   "nuevas": 5,
+   "inb": 1,
+   "out": 5,
+   "nuevas": 6,
    "total": 13,
-   "fups": 10,
+   "fups": 6,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 34,
+   "resp_min": 3,
    "nodata": false
   },
   {
    "dia": "2026-02-05",
-   "inb": 1,
+   "inb": 0,
    "out": 2,
-   "nuevas": 3,
-   "total": 16,
-   "fups": 31,
-   "prop": 2,
+   "nuevas": 2,
+   "total": 10,
+   "fups": 20,
+   "prop": 1,
    "agendas": 1,
-   "resp_min": 1017,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-02-06",
-   "inb": 3,
-   "out": 7,
-   "nuevas": 10,
-   "total": 23,
-   "fups": 29,
-   "prop": 5,
+   "inb": 0,
+   "out": 5,
+   "nuevas": 5,
+   "total": 14,
+   "fups": 19,
+   "prop": 4,
    "agendas": 0,
-   "resp_min": 93,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-02-07",
-   "inb": 4,
-   "out": 4,
-   "nuevas": 8,
-   "total": 20,
-   "fups": 18,
+   "inb": 1,
+   "out": 9,
+   "nuevas": 10,
+   "total": 23,
+   "fups": 14,
    "prop": 0,
    "agendas": 4,
-   "resp_min": 145,
+   "resp_min": 19,
    "nodata": false
   },
   {
    "dia": "2026-02-08",
-   "inb": 6,
-   "out": 12,
-   "nuevas": 18,
-   "total": 30,
-   "fups": 20,
-   "prop": 1,
+   "inb": 5,
+   "out": 16,
+   "nuevas": 21,
+   "total": 33,
+   "fups": 23,
+   "prop": 0,
    "agendas": 0,
    "resp_min": 95,
    "nodata": false
   },
   {
    "dia": "2026-02-09",
-   "inb": 8,
-   "out": 21,
-   "nuevas": 29,
-   "total": 60,
-   "fups": 45,
-   "prop": 1,
+   "inb": 4,
+   "out": 20,
+   "nuevas": 24,
+   "total": 48,
+   "fups": 42,
+   "prop": 0,
    "agendas": 1,
-   "resp_min": 139,
+   "resp_min": 17,
    "nodata": false
   },
   {
    "dia": "2026-02-10",
-   "inb": 8,
+   "inb": 3,
    "out": 2,
-   "nuevas": 10,
-   "total": 33,
-   "fups": 45,
+   "nuevas": 5,
+   "total": 21,
+   "fups": 35,
    "prop": 3,
    "agendas": 4,
-   "resp_min": 40,
+   "resp_min": 39,
    "nodata": false
   },
   {
    "dia": "2026-02-11",
-   "inb": 7,
-   "out": 7,
-   "nuevas": 14,
-   "total": 26,
-   "fups": 32,
-   "prop": 1,
+   "inb": 2,
+   "out": 9,
+   "nuevas": 11,
+   "total": 23,
+   "fups": 36,
+   "prop": 2,
    "agendas": 2,
-   "resp_min": 411,
+   "resp_min": 167,
    "nodata": false
   },
   {
    "dia": "2026-02-12",
-   "inb": 6,
-   "out": 18,
-   "nuevas": 24,
-   "total": 52,
-   "fups": 47,
-   "prop": 3,
+   "inb": 1,
+   "out": 4,
+   "nuevas": 5,
+   "total": 20,
+   "fups": 33,
+   "prop": 2,
    "agendas": 0,
-   "resp_min": 55,
+   "resp_min": 51,
    "nodata": false
   },
   {
    "dia": "2026-02-13",
    "inb": 3,
-   "out": 8,
-   "nuevas": 11,
-   "total": 87,
-   "fups": 67,
+   "out": 9,
+   "nuevas": 12,
+   "total": 108,
+   "fups": 91,
    "prop": 2,
    "agendas": 2,
-   "resp_min": 241,
+   "resp_min": 129,
    "nodata": false
   },
   {
    "dia": "2026-02-14",
-   "inb": 3,
-   "out": 1,
-   "nuevas": 4,
-   "total": 12,
-   "fups": 9,
-   "prop": 1,
+   "inb": 0,
+   "out": 3,
+   "nuevas": 3,
+   "total": 11,
+   "fups": 12,
+   "prop": 0,
    "agendas": 1,
-   "resp_min": 694,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-02-15",
-   "inb": 1,
-   "out": 1,
-   "nuevas": 2,
-   "total": 9,
+   "inb": 2,
+   "out": 2,
+   "nuevas": 4,
+   "total": 7,
    "fups": 4,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 32,
+   "resp_min": 112,
    "nodata": false
   },
   {
    "dia": "2026-02-16",
-   "inb": 2,
-   "out": 3,
-   "nuevas": 5,
-   "total": 13,
-   "fups": 10,
+   "inb": 0,
+   "out": 2,
+   "nuevas": 2,
+   "total": 9,
+   "fups": 15,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 888,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-02-17",
    "inb": 1,
-   "out": 1,
-   "nuevas": 2,
+   "out": 0,
+   "nuevas": 1,
    "total": 7,
-   "fups": 9,
-   "prop": 0,
+   "fups": 20,
+   "prop": 1,
    "agendas": 5,
-   "resp_min": 89,
+   "resp_min": 507,
    "nodata": false
   },
   {
    "dia": "2026-02-18",
-   "inb": 1,
-   "out": 0,
+   "inb": 0,
+   "out": 1,
    "nuevas": 1,
    "total": 6,
-   "fups": 4,
+   "fups": 5,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 184,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-02-19",
-   "inb": 2,
+   "inb": 3,
    "out": 0,
-   "nuevas": 2,
-   "total": 18,
-   "fups": 21,
+   "nuevas": 3,
+   "total": 14,
+   "fups": 23,
    "prop": 1,
    "agendas": 1,
-   "resp_min": 193,
+   "resp_min": 60,
    "nodata": false
   },
   {
    "dia": "2026-02-20",
-   "inb": 4,
-   "out": 4,
-   "nuevas": 8,
-   "total": 13,
-   "fups": 22,
-   "prop": 1,
+   "inb": 2,
+   "out": 1,
+   "nuevas": 3,
+   "total": 7,
+   "fups": 17,
+   "prop": 2,
    "agendas": 0,
-   "resp_min": 9,
+   "resp_min": 40,
    "nodata": false
   },
   {
    "dia": "2026-02-21",
-   "inb": 0,
-   "out": 4,
-   "nuevas": 4,
-   "total": 7,
-   "fups": 4,
+   "inb": 1,
+   "out": 2,
+   "nuevas": 3,
+   "total": 10,
+   "fups": 11,
    "prop": 0,
    "agendas": 4,
-   "resp_min": null,
+   "resp_min": 37,
    "nodata": false
   },
   {
    "dia": "2026-02-22",
-   "inb": 7,
-   "out": 2,
-   "nuevas": 9,
-   "total": 14,
-   "fups": 7,
+   "inb": 4,
+   "out": 0,
+   "nuevas": 4,
+   "total": 6,
+   "fups": 5,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 29,
+   "resp_min": 14,
    "nodata": false
   },
   {
    "dia": "2026-02-23",
-   "inb": 4,
-   "out": 2,
-   "nuevas": 6,
-   "total": 22,
-   "fups": 19,
+   "inb": 1,
+   "out": 1,
+   "nuevas": 2,
+   "total": 10,
+   "fups": 8,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 62,
+   "resp_min": 124,
    "nodata": false
   },
   {
    "dia": "2026-02-24",
-   "inb": 0,
+   "inb": 2,
    "out": 1,
-   "nuevas": 1,
-   "total": 12,
-   "fups": 21,
-   "prop": 1,
+   "nuevas": 3,
+   "total": 10,
+   "fups": 18,
+   "prop": 0,
    "agendas": 2,
-   "resp_min": null,
+   "resp_min": 11,
    "nodata": false
   },
   {
    "dia": "2026-02-25",
-   "inb": 1,
+   "inb": 3,
    "out": 0,
-   "nuevas": 1,
-   "total": 7,
-   "fups": 6,
-   "prop": 0,
+   "nuevas": 3,
+   "total": 10,
+   "fups": 17,
+   "prop": 1,
    "agendas": 2,
-   "resp_min": 1110,
+   "resp_min": 24,
    "nodata": false
   },
   {
    "dia": "2026-02-26",
-   "inb": 5,
+   "inb": 3,
    "out": 1,
-   "nuevas": 6,
-   "total": 10,
-   "fups": 5,
-   "prop": 1,
+   "nuevas": 4,
+   "total": 6,
+   "fups": 4,
+   "prop": 0,
    "agendas": 2,
-   "resp_min": 239,
+   "resp_min": 2,
    "nodata": false
   },
   {
    "dia": "2026-02-27",
-   "inb": 3,
-   "out": 1,
+   "inb": 4,
+   "out": 0,
    "nuevas": 4,
-   "total": 16,
-   "fups": 17,
-   "prop": 0,
-   "agendas": 2,
-   "resp_min": 886,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-28",
-   "inb": 1,
-   "out": 1,
-   "nuevas": 2,
-   "total": 9,
-   "fups": 5,
-   "prop": 0,
-   "agendas": 1,
-   "resp_min": 683,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-01",
-   "inb": 3,
-   "out": 5,
-   "nuevas": 8,
-   "total": 30,
-   "fups": 30,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": 42,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-02",
-   "inb": 8,
-   "out": 10,
-   "nuevas": 18,
-   "total": 37,
-   "fups": 22,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": 5,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-03",
-   "inb": 5,
-   "out": 37,
-   "nuevas": 42,
-   "total": 64,
-   "fups": 31,
-   "prop": 0,
-   "agendas": 2,
-   "resp_min": 16,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-04",
-   "inb": 1,
-   "out": 6,
-   "nuevas": 7,
-   "total": 46,
-   "fups": 42,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": 6,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-05",
-   "inb": 1,
-   "out": 2,
-   "nuevas": 3,
-   "total": 11,
-   "fups": 30,
-   "prop": 1,
-   "agendas": 0,
-   "resp_min": 1,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-06",
-   "inb": 2,
-   "out": 2,
-   "nuevas": 4,
-   "total": 14,
-   "fups": 20,
-   "prop": 1,
-   "agendas": 0,
-   "resp_min": 20,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-07",
-   "inb": 1,
-   "out": 2,
-   "nuevas": 3,
-   "total": 12,
-   "fups": 16,
-   "prop": 0,
-   "agendas": 1,
-   "resp_min": null,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-08",
-   "inb": 1,
-   "out": 31,
-   "nuevas": 32,
-   "total": 47,
-   "fups": 19,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": null,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-09",
-   "inb": 2,
-   "out": 52,
-   "nuevas": 54,
-   "total": 82,
-   "fups": 45,
-   "prop": 2,
-   "agendas": 2,
-   "resp_min": 1,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-10",
-   "inb": 5,
-   "out": 10,
-   "nuevas": 15,
-   "total": 104,
-   "fups": 105,
+   "total": 15,
+   "fups": 18,
    "prop": 1,
    "agendas": 2,
    "resp_min": 19,
    "nodata": false
   },
   {
-   "dia": "2026-03-11",
-   "inb": 6,
-   "out": 26,
-   "nuevas": 32,
-   "total": 75,
-   "fups": 96,
+   "dia": "2026-02-28",
+   "inb": 1,
+   "out": 3,
+   "nuevas": 4,
+   "total": 10,
+   "fups": 12,
    "prop": 1,
    "agendas": 1,
-   "resp_min": 101,
+   "resp_min": 410,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-01",
+   "inb": 1,
+   "out": 7,
+   "nuevas": 8,
+   "total": 13,
+   "fups": 7,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-02",
+   "inb": 7,
+   "out": 2,
+   "nuevas": 9,
+   "total": 19,
+   "fups": 29,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": 257,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-03",
+   "inb": 1,
+   "out": 1,
+   "nuevas": 2,
+   "total": 14,
+   "fups": 18,
+   "prop": 0,
+   "agendas": 2,
+   "resp_min": 1,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-04",
+   "inb": 6,
+   "out": 10,
+   "nuevas": 16,
+   "total": 65,
+   "fups": 76,
+   "prop": 4,
+   "agendas": 0,
+   "resp_min": 2,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-05",
+   "inb": 8,
+   "out": 39,
+   "nuevas": 47,
+   "total": 72,
+   "fups": 51,
+   "prop": 3,
+   "agendas": 0,
+   "resp_min": 43,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-06",
+   "inb": 0,
+   "out": 6,
+   "nuevas": 6,
+   "total": 16,
+   "fups": 20,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-07",
+   "inb": 2,
+   "out": 3,
+   "nuevas": 5,
+   "total": 13,
+   "fups": 11,
+   "prop": 0,
+   "agendas": 1,
+   "resp_min": 12,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-08",
+   "inb": 1,
+   "out": 4,
+   "nuevas": 5,
+   "total": 12,
+   "fups": 9,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": 9,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-09",
+   "inb": 0,
+   "out": 5,
+   "nuevas": 5,
+   "total": 15,
+   "fups": 32,
+   "prop": 1,
+   "agendas": 2,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-10",
+   "inb": 0,
+   "out": 3,
+   "nuevas": 3,
+   "total": 19,
+   "fups": 44,
+   "prop": 0,
+   "agendas": 2,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-11",
+   "inb": 4,
+   "out": 20,
+   "nuevas": 24,
+   "total": 48,
+   "fups": 64,
+   "prop": 1,
+   "agendas": 1,
+   "resp_min": 13,
    "nodata": false
   },
   {
    "dia": "2026-03-12",
-   "inb": 5,
-   "out": 46,
-   "nuevas": 51,
-   "total": 101,
-   "fups": 106,
+   "inb": 3,
+   "out": 35,
+   "nuevas": 38,
+   "total": 81,
+   "fups": 84,
    "prop": 0,
    "agendas": 3,
-   "resp_min": 143,
+   "resp_min": 7,
    "nodata": false
   },
   {
    "dia": "2026-03-13",
-   "inb": 4,
-   "out": 50,
-   "nuevas": 54,
-   "total": 88,
-   "fups": 94,
-   "prop": 4,
+   "inb": 1,
+   "out": 7,
+   "nuevas": 8,
+   "total": 19,
+   "fups": 20,
+   "prop": 0,
    "agendas": 0,
-   "resp_min": 5,
+   "resp_min": 71,
    "nodata": false
   },
   {
    "dia": "2026-03-14",
-   "inb": 2,
-   "out": 6,
-   "nuevas": 8,
-   "total": 17,
-   "fups": 12,
-   "prop": 0,
+   "inb": 1,
+   "out": 1,
+   "nuevas": 2,
+   "total": 6,
+   "fups": 11,
+   "prop": 1,
    "agendas": 1,
-   "resp_min": 30,
+   "resp_min": 690,
    "nodata": false
   },
   {
    "dia": "2026-03-15",
-   "inb": 3,
-   "out": 49,
-   "nuevas": 52,
-   "total": 96,
-   "fups": 77,
-   "prop": 1,
+   "inb": 4,
+   "out": 6,
+   "nuevas": 10,
+   "total": 23,
+   "fups": 28,
+   "prop": 0,
    "agendas": 0,
-   "resp_min": 61,
+   "resp_min": 128,
    "nodata": false
   },
   {
    "dia": "2026-03-16",
    "inb": 2,
-   "out": 39,
-   "nuevas": 41,
-   "total": 63,
-   "fups": 71,
-   "prop": 3,
+   "out": 3,
+   "nuevas": 5,
+   "total": 24,
+   "fups": 51,
+   "prop": 1,
    "agendas": 3,
-   "resp_min": null,
+   "resp_min": 157,
    "nodata": false
   },
   {
    "dia": "2026-03-17",
-   "inb": 4,
-   "out": 35,
-   "nuevas": 39,
-   "total": 62,
-   "fups": 37,
-   "prop": 0,
+   "inb": 3,
+   "out": 4,
+   "nuevas": 7,
+   "total": 33,
+   "fups": 69,
+   "prop": 2,
    "agendas": 1,
-   "resp_min": 171,
+   "resp_min": 12,
    "nodata": false
   },
   {
    "dia": "2026-03-18",
    "inb": 0,
-   "out": 8,
-   "nuevas": 8,
-   "total": 16,
-   "fups": 21,
-   "prop": 0,
+   "out": 11,
+   "nuevas": 11,
+   "total": 26,
+   "fups": 42,
+   "prop": 1,
    "agendas": 1,
    "resp_min": null,
    "nodata": false
@@ -557,118 +557,118 @@
   {
    "dia": "2026-03-19",
    "inb": 2,
-   "out": 79,
-   "nuevas": 81,
-   "total": 111,
-   "fups": 52,
-   "prop": 4,
+   "out": 53,
+   "nuevas": 55,
+   "total": 96,
+   "fups": 117,
+   "prop": 5,
    "agendas": 0,
-   "resp_min": 1,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-03-20",
-   "inb": 0,
-   "out": 6,
-   "nuevas": 6,
-   "total": 9,
-   "fups": 1,
-   "prop": 0,
+   "inb": 3,
+   "out": 36,
+   "nuevas": 39,
+   "total": 74,
+   "fups": 60,
+   "prop": 4,
    "agendas": 2,
-   "resp_min": null,
+   "resp_min": 96,
    "nodata": false
   },
   {
    "dia": "2026-03-21",
-   "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 8,
-   "fups": 24,
-   "prop": 0,
+   "inb": 8,
+   "out": 49,
+   "nuevas": 57,
+   "total": 89,
+   "fups": 70,
+   "prop": 1,
    "agendas": 2,
-   "resp_min": null,
+   "resp_min": 111,
    "nodata": false
   },
   {
    "dia": "2026-03-22",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 0,
-   "fups": 0,
-   "prop": 0,
+   "inb": 3,
+   "out": 32,
+   "nuevas": 35,
+   "total": 60,
+   "fups": 42,
+   "prop": 2,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-03-23",
-   "inb": 0,
-   "out": 4,
-   "nuevas": 4,
-   "total": 5,
-   "fups": 4,
-   "prop": 0,
+   "inb": 1,
+   "out": 57,
+   "nuevas": 58,
+   "total": 93,
+   "fups": 90,
+   "prop": 2,
    "agendas": 3,
-   "resp_min": null,
+   "resp_min": 220,
    "nodata": false
   },
   {
    "dia": "2026-03-24",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 10,
-   "fups": 7,
-   "prop": 0,
+   "inb": 4,
+   "out": 36,
+   "nuevas": 40,
+   "total": 83,
+   "fups": 56,
+   "prop": 4,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 37,
    "nodata": false
   },
   {
    "dia": "2026-03-25",
-   "inb": 0,
-   "out": 57,
-   "nuevas": 57,
-   "total": 94,
-   "fups": 44,
-   "prop": 1,
+   "inb": 3,
+   "out": 69,
+   "nuevas": 72,
+   "total": 135,
+   "fups": 85,
+   "prop": 2,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 250,
    "nodata": false
   },
   {
    "dia": "2026-03-26",
-   "inb": 2,
-   "out": 5,
-   "nuevas": 7,
-   "total": 14,
-   "fups": 23,
+   "inb": 4,
+   "out": 23,
+   "nuevas": 27,
+   "total": 39,
+   "fups": 21,
    "prop": 1,
    "agendas": 3,
-   "resp_min": null,
+   "resp_min": 342,
    "nodata": false
   },
   {
    "dia": "2026-03-27",
-   "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 6,
-   "fups": 7,
-   "prop": 0,
+   "inb": 2,
+   "out": 57,
+   "nuevas": 59,
+   "total": 80,
+   "fups": 53,
+   "prop": 3,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 128,
    "nodata": false
   },
   {
    "dia": "2026-03-28",
    "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 2,
-   "fups": 3,
+   "out": 1,
+   "nuevas": 1,
+   "total": 4,
+   "fups": 5,
    "prop": 0,
    "agendas": 4,
    "resp_min": null,
@@ -677,10 +677,10 @@
   {
    "dia": "2026-03-29",
    "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 4,
-   "fups": 3,
+   "out": 0,
+   "nuevas": 0,
+   "total": 3,
+   "fups": 8,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
@@ -691,8 +691,8 @@
    "inb": 0,
    "out": 0,
    "nuevas": 0,
-   "total": 4,
-   "fups": 12,
+   "total": 3,
+   "fups": 5,
    "prop": 0,
    "agendas": 3,
    "resp_min": null,
@@ -700,14 +700,14 @@
   },
   {
    "dia": "2026-03-31",
-   "inb": 1,
-   "out": 2,
-   "nuevas": 3,
-   "total": 4,
-   "fups": 0,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 2,
+   "fups": 1,
    "prop": 0,
    "agendas": 2,
-   "resp_min": 414,
+   "resp_min": null,
    "nodata": false
   },
   {
@@ -715,8 +715,8 @@
    "inb": 0,
    "out": 1,
    "nuevas": 1,
-   "total": 2,
-   "fups": 7,
+   "total": 3,
+   "fups": 0,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -724,23 +724,23 @@
   },
   {
    "dia": "2026-04-02",
-   "inb": 1,
-   "out": 1,
-   "nuevas": 2,
-   "total": 4,
-   "fups": 5,
-   "prop": 1,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 1,
+   "fups": 1,
+   "prop": 0,
    "agendas": 3,
-   "resp_min": 16,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-03",
    "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 4,
-   "fups": 1,
+   "out": 0,
+   "nuevas": 0,
+   "total": 1,
+   "fups": 0,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
@@ -749,10 +749,10 @@
   {
    "dia": "2026-04-04",
    "inb": 0,
-   "out": 4,
-   "nuevas": 4,
-   "total": 5,
-   "fups": 5,
+   "out": 1,
+   "nuevas": 1,
+   "total": 4,
+   "fups": 20,
    "prop": 0,
    "agendas": 2,
    "resp_min": null,
@@ -761,59 +761,59 @@
   {
    "dia": "2026-04-05",
    "inb": 0,
-   "out": 5,
-   "nuevas": 5,
-   "total": 10,
-   "fups": 20,
-   "prop": 1,
+   "out": 0,
+   "nuevas": 0,
+   "total": 3,
+   "fups": 2,
+   "prop": 0,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-06",
-   "inb": 2,
-   "out": 7,
-   "nuevas": 9,
-   "total": 27,
-   "fups": 73,
-   "prop": 2,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 3,
+   "fups": 1,
+   "prop": 0,
    "agendas": 0,
-   "resp_min": 2,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-07",
-   "inb": 1,
-   "out": 12,
-   "nuevas": 13,
-   "total": 24,
-   "fups": 16,
-   "prop": 2,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 4,
+   "fups": 5,
+   "prop": 0,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-08",
-   "inb": 3,
-   "out": 6,
-   "nuevas": 9,
-   "total": 38,
-   "fups": 60,
-   "prop": 0,
+   "inb": 2,
+   "out": 0,
+   "nuevas": 2,
+   "total": 9,
+   "fups": 12,
+   "prop": 1,
    "agendas": 0,
-   "resp_min": 325,
+   "resp_min": 139,
    "nodata": false
   },
   {
    "dia": "2026-04-09",
-   "inb": 1,
-   "out": 23,
-   "nuevas": 24,
-   "total": 39,
-   "fups": 43,
-   "prop": 3,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 1,
+   "fups": 1,
+   "prop": 0,
    "agendas": 3,
    "resp_min": null,
    "nodata": false
@@ -821,10 +821,10 @@
   {
    "dia": "2026-04-10",
    "inb": 0,
-   "out": 14,
-   "nuevas": 14,
-   "total": 20,
-   "fups": 13,
+   "out": 1,
+   "nuevas": 1,
+   "total": 5,
+   "fups": 11,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -835,8 +835,8 @@
    "inb": 0,
    "out": 1,
    "nuevas": 1,
-   "total": 1,
-   "fups": 0,
+   "total": 5,
+   "fups": 7,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
@@ -844,47 +844,47 @@
   },
   {
    "dia": "2026-04-12",
-   "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 2,
-   "fups": 1,
-   "prop": 0,
+   "inb": 1,
+   "out": 3,
+   "nuevas": 4,
+   "total": 11,
+   "fups": 20,
+   "prop": 1,
    "agendas": 2,
-   "resp_min": null,
+   "resp_min": 84,
    "nodata": false
   },
   {
    "dia": "2026-04-13",
-   "inb": 1,
-   "out": 0,
-   "nuevas": 1,
-   "total": 4,
-   "fups": 10,
+   "inb": 5,
+   "out": 59,
+   "nuevas": 64,
+   "total": 76,
+   "fups": 16,
    "prop": 0,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 147,
    "nodata": false
   },
   {
    "dia": "2026-04-14",
-   "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 3,
+   "inb": 2,
+   "out": 23,
+   "nuevas": 25,
+   "total": 35,
    "fups": 9,
    "prop": 0,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 456,
    "nodata": false
   },
   {
    "dia": "2026-04-15",
    "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 2,
-   "fups": 2,
+   "out": 1,
+   "nuevas": 1,
+   "total": 6,
+   "fups": 13,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -893,82 +893,82 @@
   {
    "dia": "2026-04-16",
    "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 7,
-   "fups": 11,
-   "prop": 1,
+   "out": 2,
+   "nuevas": 2,
+   "total": 11,
+   "fups": 8,
+   "prop": 0,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-17",
-   "inb": 2,
-   "out": 2,
-   "nuevas": 4,
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
    "total": 7,
-   "fups": 5,
-   "prop": 1,
+   "fups": 13,
+   "prop": 0,
    "agendas": 2,
-   "resp_min": 166,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-18",
-   "inb": 1,
-   "out": 5,
-   "nuevas": 6,
-   "total": 12,
-   "fups": 11,
-   "prop": 1,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 1,
+   "fups": 0,
+   "prop": 0,
    "agendas": 1,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-19",
-   "inb": 2,
-   "out": 5,
-   "nuevas": 7,
-   "total": 16,
-   "fups": 30,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 3,
+   "fups": 1,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 1063,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-20",
-   "inb": 3,
-   "out": 40,
-   "nuevas": 43,
-   "total": 65,
-   "fups": 23,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 4,
+   "fups": 5,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 135,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-21",
-   "inb": 5,
-   "out": 17,
-   "nuevas": 22,
-   "total": 38,
-   "fups": 19,
-   "prop": 2,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 3,
+   "fups": 2,
+   "prop": 0,
    "agendas": 1,
-   "resp_min": 168,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-22",
    "inb": 0,
-   "out": 3,
-   "nuevas": 3,
-   "total": 6,
-   "fups": 2,
+   "out": 0,
+   "nuevas": 0,
+   "total": 4,
+   "fups": 5,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -976,191 +976,191 @@
   },
   {
    "dia": "2026-04-23",
-   "inb": 0,
+   "inb": 1,
    "out": 1,
-   "nuevas": 1,
-   "total": 2,
-   "fups": 6,
-   "prop": 1,
+   "nuevas": 2,
+   "total": 7,
+   "fups": 2,
+   "prop": 0,
    "agendas": 2,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-24",
-   "inb": 0,
-   "out": 5,
-   "nuevas": 5,
-   "total": 5,
-   "fups": 5,
-   "prop": 0,
+   "inb": 2,
+   "out": 47,
+   "nuevas": 49,
+   "total": 54,
+   "fups": 49,
+   "prop": 1,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 458,
    "nodata": false
   },
   {
    "dia": "2026-04-25",
-   "inb": 1,
-   "out": 11,
-   "nuevas": 12,
-   "total": 17,
-   "fups": 34,
+   "inb": 2,
+   "out": 47,
+   "nuevas": 49,
+   "total": 60,
+   "fups": 23,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 87,
+   "resp_min": 32,
    "nodata": false
   },
   {
    "dia": "2026-04-26",
-   "inb": 0,
-   "out": 5,
-   "nuevas": 5,
-   "total": 10,
-   "fups": 14,
-   "prop": 3,
+   "inb": 2,
+   "out": 1,
+   "nuevas": 3,
+   "total": 8,
+   "fups": 12,
+   "prop": 0,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 229,
    "nodata": false
   },
   {
    "dia": "2026-04-27",
-   "inb": 0,
-   "out": 6,
-   "nuevas": 6,
-   "total": 11,
-   "fups": 19,
+   "inb": 1,
+   "out": 2,
+   "nuevas": 3,
+   "total": 7,
+   "fups": 1,
    "prop": 0,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 774,
    "nodata": false
   },
   {
    "dia": "2026-04-28",
    "inb": 1,
-   "out": 7,
-   "nuevas": 8,
-   "total": 18,
-   "fups": 18,
-   "prop": 0,
+   "out": 1,
+   "nuevas": 2,
+   "total": 9,
+   "fups": 8,
+   "prop": 1,
    "agendas": 3,
-   "resp_min": 1,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-29",
-   "inb": 0,
-   "out": 20,
-   "nuevas": 20,
-   "total": 32,
-   "fups": 24,
-   "prop": 1,
+   "inb": 1,
+   "out": 1,
+   "nuevas": 2,
+   "total": 8,
+   "fups": 10,
+   "prop": 0,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 838,
    "nodata": false
   },
   {
    "dia": "2026-04-30",
    "inb": 0,
-   "out": 42,
-   "nuevas": 42,
-   "total": 83,
-   "fups": 61,
-   "prop": 1,
+   "out": 1,
+   "nuevas": 1,
+   "total": 9,
+   "fups": 13,
+   "prop": 0,
    "agendas": 1,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-05-01",
-   "inb": 1,
-   "out": 0,
+   "inb": 0,
+   "out": 1,
    "nuevas": 1,
-   "total": 1,
-   "fups": 5,
+   "total": 6,
+   "fups": 3,
    "prop": 0,
    "agendas": 2,
-   "resp_min": 16,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-05-02",
    "inb": 1,
-   "out": 0,
-   "nuevas": 1,
-   "total": 3,
-   "fups": 1,
-   "prop": 1,
+   "out": 1,
+   "nuevas": 2,
+   "total": 7,
+   "fups": 15,
+   "prop": 0,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 10,
    "nodata": false
   },
   {
    "dia": "2026-05-03",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 0,
-   "fups": 0,
-   "prop": 0,
+   "inb": 1,
+   "out": 2,
+   "nuevas": 3,
+   "total": 9,
+   "fups": 4,
+   "prop": 1,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 844,
    "nodata": false
   },
   {
    "dia": "2026-05-04",
-   "inb": 1,
-   "out": 0,
-   "nuevas": 1,
-   "total": 2,
-   "fups": 1,
-   "prop": 0,
+   "inb": 0,
+   "out": 5,
+   "nuevas": 5,
+   "total": 25,
+   "fups": 41,
+   "prop": 4,
    "agendas": 1,
-   "resp_min": 139,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-05-05",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 1,
-   "fups": 0,
-   "prop": 0,
+   "inb": 10,
+   "out": 38,
+   "nuevas": 48,
+   "total": 87,
+   "fups": 51,
+   "prop": 2,
    "agendas": 2,
-   "resp_min": null,
+   "resp_min": 214,
    "nodata": false
   },
   {
    "dia": "2026-05-06",
    "inb": 1,
-   "out": 0,
-   "nuevas": 1,
-   "total": 3,
-   "fups": 3,
+   "out": 4,
+   "nuevas": 5,
+   "total": 7,
+   "fups": 0,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 918,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-05-07",
-   "inb": 0,
+   "inb": 1,
    "out": 0,
-   "nuevas": 0,
-   "total": 2,
-   "fups": 16,
+   "nuevas": 1,
+   "total": 3,
+   "fups": 9,
    "prop": 0,
    "agendas": 3,
-   "resp_min": null,
+   "resp_min": 601,
    "nodata": false
   },
   {
    "dia": "2026-05-08",
    "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 3,
-   "fups": 2,
+   "out": 0,
+   "nuevas": 0,
+   "total": 2,
+   "fups": 1,
    "prop": 0,
    "agendas": 3,
    "resp_min": null,
@@ -1481,11 +1481,11 @@
   {
    "dia": "2026-06-04",
    "inb": 0,
-   "out": 14,
-   "nuevas": 14,
-   "total": 21,
-   "fups": 20,
-   "prop": 2,
+   "out": 3,
+   "nuevas": 3,
+   "total": 3,
+   "fups": 1,
+   "prop": 0,
    "agendas": 5,
    "resp_min": null,
    "nodata": false
@@ -1493,10 +1493,10 @@
   {
    "dia": "2026-06-05",
    "inb": 0,
-   "out": 5,
-   "nuevas": 5,
-   "total": 9,
-   "fups": 7,
+   "out": 2,
+   "nuevas": 2,
+   "total": 5,
+   "fups": 1,
    "prop": 0,
    "agendas": 2,
    "resp_min": null,
@@ -1505,10 +1505,10 @@
   {
    "dia": "2026-06-06",
    "inb": 0,
-   "out": 0,
-   "nuevas": 0,
+   "out": 2,
+   "nuevas": 2,
    "total": 3,
-   "fups": 9,
+   "fups": 1,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
@@ -1519,8 +1519,8 @@
    "inb": 0,
    "out": 0,
    "nuevas": 0,
-   "total": 2,
-   "fups": 1,
+   "total": 9,
+   "fups": 13,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -1529,70 +1529,70 @@
   {
    "dia": "2026-06-08",
    "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 3,
-   "fups": 3,
-   "prop": 1,
+   "out": 4,
+   "nuevas": 4,
+   "total": 9,
+   "fups": 13,
+   "prop": 0,
    "agendas": 1,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-09",
-   "inb": 1,
+   "inb": 0,
    "out": 2,
-   "nuevas": 3,
-   "total": 6,
-   "fups": 1,
-   "prop": 0,
+   "nuevas": 2,
+   "total": 10,
+   "fups": 8,
+   "prop": 1,
    "agendas": 1,
-   "resp_min": 565,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-10",
-   "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 4,
-   "fups": 2,
+   "inb": 4,
+   "out": 46,
+   "nuevas": 50,
+   "total": 62,
+   "fups": 17,
    "prop": 0,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 388,
    "nodata": false
   },
   {
    "dia": "2026-06-11",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 9,
-   "fups": 16,
+   "inb": 2,
+   "out": 24,
+   "nuevas": 26,
+   "total": 50,
+   "fups": 24,
    "prop": 0,
    "agendas": 2,
-   "resp_min": null,
+   "resp_min": 344,
    "nodata": false
   },
   {
    "dia": "2026-06-12",
-   "inb": 2,
-   "out": 3,
-   "nuevas": 5,
-   "total": 12,
-   "fups": 20,
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 3,
+   "fups": 1,
    "prop": 0,
    "agendas": 2,
-   "resp_min": 132,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-13",
    "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 13,
-   "fups": 9,
+   "out": 0,
+   "nuevas": 0,
+   "total": 0,
+   "fups": 0,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
@@ -1600,60 +1600,60 @@
   },
   {
    "dia": "2026-06-14",
-   "inb": 1,
-   "out": 10,
-   "nuevas": 11,
-   "total": 17,
-   "fups": 6,
+   "inb": 2,
+   "out": 1,
+   "nuevas": 3,
+   "total": 5,
+   "fups": 8,
    "prop": 1,
    "agendas": 0,
-   "resp_min": 90,
+   "resp_min": 236,
    "nodata": false
   },
   {
    "dia": "2026-06-15",
-   "inb": 0,
-   "out": 9,
-   "nuevas": 9,
-   "total": 29,
-   "fups": 23,
+   "inb": 2,
+   "out": 3,
+   "nuevas": 5,
+   "total": 10,
+   "fups": 27,
    "prop": 1,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 412,
    "nodata": false
   },
   {
    "dia": "2026-06-16",
-   "inb": 3,
-   "out": 33,
-   "nuevas": 36,
-   "total": 45,
-   "fups": 19,
+   "inb": 1,
+   "out": 2,
+   "nuevas": 3,
+   "total": 7,
+   "fups": 22,
    "prop": 0,
    "agendas": 2,
-   "resp_min": 16,
+   "resp_min": 575,
    "nodata": false
   },
   {
    "dia": "2026-06-17",
-   "inb": 2,
-   "out": 17,
-   "nuevas": 19,
-   "total": 75,
-   "fups": 60,
-   "prop": 1,
+   "inb": 1,
+   "out": 0,
+   "nuevas": 1,
+   "total": 9,
+   "fups": 12,
+   "prop": 0,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 24,
    "nodata": false
   },
   {
    "dia": "2026-06-18",
    "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 2,
-   "fups": 4,
-   "prop": 0,
+   "out": 7,
+   "nuevas": 7,
+   "total": 22,
+   "fups": 40,
+   "prop": 2,
    "agendas": 3,
    "resp_min": null,
    "nodata": false
@@ -1661,10 +1661,10 @@
   {
    "dia": "2026-06-19",
    "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 3,
-   "fups": 5,
+   "out": 3,
+   "nuevas": 3,
+   "total": 8,
+   "fups": 10,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -1672,50 +1672,50 @@
   },
   {
    "dia": "2026-06-20",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 1,
-   "fups": 1,
-   "prop": 0,
+   "inb": 1,
+   "out": 8,
+   "nuevas": 9,
+   "total": 22,
+   "fups": 28,
+   "prop": 1,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 499,
    "nodata": false
   },
   {
    "dia": "2026-06-21",
-   "inb": 2,
-   "out": 4,
-   "nuevas": 6,
-   "total": 10,
-   "fups": 6,
-   "prop": 0,
+   "inb": 1,
+   "out": 36,
+   "nuevas": 37,
+   "total": 89,
+   "fups": 62,
+   "prop": 3,
    "agendas": 0,
-   "resp_min": 555,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-22",
    "inb": 1,
-   "out": 7,
-   "nuevas": 8,
-   "total": 15,
-   "fups": 20,
-   "prop": 1,
+   "out": 13,
+   "nuevas": 14,
+   "total": 31,
+   "fups": 10,
+   "prop": 0,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-23",
-   "inb": 5,
-   "out": 54,
-   "nuevas": 59,
-   "total": 99,
-   "fups": 73,
-   "prop": 3,
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 5,
+   "fups": 5,
+   "prop": 0,
    "agendas": 2,
-   "resp_min": 169,
+   "resp_min": null,
    "nodata": false
   },
   {
@@ -1723,8 +1723,8 @@
    "inb": 0,
    "out": 0,
    "nuevas": 0,
-   "total": 0,
-   "fups": 0,
+   "total": 4,
+   "fups": 2,
    "prop": 0,
    "agendas": 2,
    "resp_min": null,
@@ -1733,9 +1733,9 @@
   {
    "dia": "2026-06-25",
    "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 0,
+   "out": 2,
+   "nuevas": 2,
+   "total": 4,
    "fups": 0,
    "prop": 0,
    "agendas": 0,
@@ -1745,10 +1745,10 @@
   {
    "dia": "2026-06-26",
    "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 0,
-   "fups": 0,
+   "out": 2,
+   "nuevas": 2,
+   "total": 4,
+   "fups": 3,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -1756,38 +1756,38 @@
   },
   {
    "dia": "2026-06-27",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 0,
-   "fups": 0,
-   "prop": 0,
+   "inb": 1,
+   "out": 3,
+   "nuevas": 4,
+   "total": 8,
+   "fups": 7,
+   "prop": 1,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-28",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 0,
-   "fups": 0,
+   "inb": 4,
+   "out": 4,
+   "nuevas": 8,
+   "total": 18,
+   "fups": 7,
    "prop": 0,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 601,
    "nodata": false
   },
   {
    "dia": "2026-06-29",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 0,
-   "fups": 0,
-   "prop": 0,
+   "inb": 2,
+   "out": 33,
+   "nuevas": 35,
+   "total": 62,
+   "fups": 51,
+   "prop": 4,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 165,
    "nodata": false
   }
  ],
@@ -3157,7 +3157,175 @@
    "restri": "",
    "resclo": "",
    "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/YP7oYkCXBx5Uy3Mf5hPU"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Hv7lPL57NWG3lcIYlqHn"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/zxpK6qZ92CPAgEowRZWb"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/n9Ii99BxzND486hqtYqr"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/pzzvlnhf5EbTgEyUarbv"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Kr7MUolFO4Rx8tuDXEsX"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/brxREUrlEyBDEaHgDXVL"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/93QZ6jZJY4agzOIpe3LG"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/IMVZvmnPiQc1g826ffMf"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VytGKUut9QYd5hFT77RK"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Aj0arZWsEQgUhTLQDrBD"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/H0iYC6dkXNPEjUfiKhCc"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/DI3m1p12wbtzdDtZnDQz"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/XrGhjuT2WA0JmqtwXFUH"
+  },
+  {
+   "nombre": "(sin nombre)",
+   "prof": "",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/nT7kReDEVmWZnSWthHBz"
   },
   {
    "nombre": "(sin nombre)",
@@ -4477,18 +4645,6 @@
    "restri": "",
    "resclo": "",
    "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VHTsaKZVijr7zqDVebHU"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/srGX1JsisUCCY57aCLF3"
   },
   {
@@ -4537,131 +4693,11 @@
    "restri": "",
    "resclo": "",
    "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/TWrms10EDCmCDUibKZfp"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/3PTcbU0dRpaFzeQbVh7L"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/mHE6rjwg0lY1VHJnDRzc"
   },
   {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/f2yZvQkjP6jAQ9Qn2Qc5"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/aKMgbCIpbyFjdNuzCTSF"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/gyxWIhAW5Kk2nSDkGeFn"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/6ZBBdgRzmGISzN4Rh9Xz"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/qUNGDDlQ59EJ1i70q364"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/I8zJrqOUvWNABRJGxDsT"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/WBE5NnXUNLHXazoQ0qPh"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Ph6KcCA016ytVCNb4FiX"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
+   "nombre": "Adriana Torres",
+   "prof": "Médica general ",
    "setter": "",
    "sf": null,
    "st": null,
@@ -4672,128 +4708,20 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ybHZmQs2hc6Y59lQAKND"
   },
   {
-   "nombre": "(sin nombre)",
-   "prof": "",
+   "nombre": "Adriel Eduardo Martinez Fonseca",
+   "prof": "Supervisor de Seguridad Industrial ",
    "setter": "",
    "sf": null,
    "st": null,
    "sc": null,
-   "restri": "",
+   "restri": "No cualifica",
    "resclo": "",
    "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/vPJGiPH51NP2GCbK2Sgv"
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ruPmeSQdyeNkNkMgI0rG"
   },
   {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VrEG7u85oJ9cnxszDqjG"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ptlVxUgodibwvVRolJjP"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/oDKbtiZ5XLTR65MAwU2J"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/QQZGBJTiQjFFmPp0zNrO"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/i4bRuGS50FKpfGJDusK0"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/tDmPeGqbiQxHlu4JilPe"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/KpqkUSCglbXLNvFuz9QV"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/evJ4pWjTdTeJMpYBQ1Wd"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/DcxtB4q8maFzv9DyrjqC"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
+   "nombre": "Alfonso Lenes",
+   "prof": "Médico ",
    "setter": "",
    "sf": null,
    "st": null,
@@ -4802,150 +4730,6 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/V7VMTebL491NzmUUe8qv"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/QAdnl2D6jT4TkTDi3wou"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/3soAwneKxrRFVhudKPhg"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/iwk0yXjIzSdzZzoISmvN"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Y2qCHRM766vefUOKYARX"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ruPmeSQdyeNkNkMgI0rG"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/42iwrZRtZ4MUS9g5LgEe"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/1rGl2FRWhtY3faimaoaA"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/34XsNyh4yhU5jgs4kS0J"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rDUwGEh1RKKTzxyIttJH"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/fX8SlPv9a6BKzxCHJuXP"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/zGlkgGDs0WSgMdiTKtAF"
-  },
-  {
-   "nombre": "(sin nombre)",
-   "prof": "",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/e4PrzxrGMTIxp83IkkyF"
   },
   {
    "nombre": "Alfredo Martinez",
@@ -4984,18 +4768,6 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/30o6oZ21opXH4EN2R0oq"
   },
   {
-   "nombre": "Ana Giraldo",
-   "prof": "Médica",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/zxpK6qZ92CPAgEowRZWb"
-  },
-  {
    "nombre": "Andrea Marcela Velez Alvarez",
    "prof": "Medico ",
    "setter": "",
@@ -5032,6 +4804,42 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/CFfQxqbjgoMXcj9ladXV"
   },
   {
+   "nombre": "Angela Luque reyes",
+   "prof": "Estudiante sexto medicina",
+   "setter": "Sary",
+   "sf": null,
+   "st": 80,
+   "sc": 75,
+   "restri": "Cualifica",
+   "resclo": "Seguimiento",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Y2qCHRM766vefUOKYARX"
+  },
+  {
+   "nombre": "Argenis salazar jaspe",
+   "prof": "Soy ing civil , pero me dedico actualmente a la en refrigeracion comercial / industrial y electricidad ",
+   "setter": "",
+   "sf": null,
+   "st": 35,
+   "sc": null,
+   "restri": "No cualifica",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/3soAwneKxrRFVhudKPhg"
+  },
+  {
+   "nombre": "Aurora Andrade Farias",
+   "prof": "Obstetra (midwifery)",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/qUNGDDlQ59EJ1i70q364"
+  },
+  {
    "nombre": "Brayan Felipe Alvarez Carrero",
    "prof": "Trabajo y estudió ",
    "setter": "",
@@ -5042,6 +4850,30 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/BWW4ZAdkcuOQzDXC8OrZ"
+  },
+  {
+   "nombre": "Bruce Mendez",
+   "prof": "Estudiante",
+   "setter": "",
+   "sf": null,
+   "st": 45,
+   "sc": null,
+   "restri": "No cualifica",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/1rGl2FRWhtY3faimaoaA"
+  },
+  {
+   "nombre": "Carla Patinez",
+   "prof": "Médico Estético ",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/tDmPeGqbiQxHlu4JilPe"
   },
   {
    "nombre": "Carla Velez Velez",
@@ -5080,6 +4912,30 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/uVIzGbg2CKcH2sKGd8F6"
   },
   {
+   "nombre": "Carlos Martin",
+   "prof": "Ingeniero",
+   "setter": "Natalie",
+   "sf": null,
+   "st": 75,
+   "sc": null,
+   "restri": "Cualifica",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/evJ4pWjTdTeJMpYBQ1Wd"
+  },
+  {
+   "nombre": "Carlota Molina Padilla",
+   "prof": "Médico Residente ",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/TWrms10EDCmCDUibKZfp"
+  },
+  {
    "nombre": "Carolina Hidalgo",
    "prof": "Médico veterinario y zootecnia ",
    "setter": "",
@@ -5090,6 +4946,18 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/7MbJO1mSzDjG3NixtRjk"
+  },
+  {
+   "nombre": "Carolina Paola Guzzo",
+   "prof": "Pflegeassistentin ",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/34XsNyh4yhU5jgs4kS0J"
   },
   {
    "nombre": "Charlie Martinez Villarreal",
@@ -5140,6 +5008,18 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/eyDyDQTLW3qlmUNUAJ7V"
   },
   {
+   "nombre": "Cristian Fernández",
+   "prof": "Médico  atención prioritaria ",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/QQZGBJTiQjFFmPp0zNrO"
+  },
+  {
    "nombre": "Daphne BUHLER",
    "prof": "Bademasterin",
    "setter": "",
@@ -5152,6 +5032,18 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/6cTHxfKSQOYjNQ8SLmhE"
   },
   {
+   "nombre": "David Gómez Posada",
+   "prof": "Médico general",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": 65,
+   "restri": "",
+   "resclo": "Seguimiento",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VrEG7u85oJ9cnxszDqjG"
+  },
+  {
    "nombre": "Dulce Cuandon",
    "prof": "Médico ",
    "setter": "",
@@ -5162,6 +5054,18 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/iEV36U06P4LrTtItXnsW"
+  },
+  {
+   "nombre": "Egmar Junior Alava Cielo",
+   "prof": "Medico general",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/I8zJrqOUvWNABRJGxDsT"
   },
   {
    "nombre": "Elisabel Caraballo",
@@ -5188,6 +5092,30 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/bklKoAC2r7CEKj3opn9l"
   },
   {
+   "nombre": "Fausto Carrión",
+   "prof": "Médico especialista en cirugía general y cirugía cardiovascular congénita ",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/oDKbtiZ5XLTR65MAwU2J"
+  },
+  {
+   "nombre": "Francisco Cavanzo",
+   "prof": "Psiquiatra ",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Ph6KcCA016ytVCNb4FiX"
+  },
+  {
    "nombre": "Francisco Ramos Guerrero",
    "prof": "Actuario trabajo en un Banco",
    "setter": "",
@@ -5198,6 +5126,18 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/71pt8ywsy2xOSQvR35DB"
+  },
+  {
+   "nombre": "Frank Fernández",
+   "prof": "Cirujano cardiovascular ",
+   "setter": "Sara",
+   "sf": null,
+   "st": 80,
+   "sc": null,
+   "restri": "Cualifica",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/fX8SlPv9a6BKzxCHJuXP"
   },
   {
    "nombre": "Fredy Ariza",
@@ -5296,16 +5236,16 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/V0AGTLQ2S35CkQYtri61"
   },
   {
-   "nombre": "Grazzie Machado Machado",
-   "prof": "Asistente deantal",
+   "nombre": "Heber Hualpa",
+   "prof": "Ingeniero Electrónico y Electricista, trabajo  como especialista senior de comunicaciones en el rubro de infraestructura civil DE edificaciones ",
    "setter": "",
    "sf": null,
-   "st": null,
+   "st": 60,
    "sc": null,
-   "restri": "",
+   "restri": "Cualifica",
    "resclo": "",
    "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/pzzvlnhf5EbTgEyUarbv"
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rDUwGEh1RKKTzxyIttJH"
   },
   {
    "nombre": "Heidi Blanco",
@@ -5318,18 +5258,6 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/M7Vb7BFp6TVlVOOF7fk4"
-  },
-  {
-   "nombre": "Henry Soberanis Chí",
-   "prof": "Me dedico a la creación de proyectos a clientes, trabajo como auxiliar de proyectos para una empresa de consultoría local en mis país y estado, Yucatán, México ",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/IMVZvmnPiQc1g826ffMf"
   },
   {
    "nombre": "Heriberto Zetina",
@@ -5356,8 +5284,8 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/CwkApvdHXfsZmUDROwnn"
   },
   {
-   "nombre": "Jason Niola",
-   "prof": "Ingeniero Eléctrico ",
+   "nombre": "Ian Amezcua",
+   "prof": "Médico General",
    "setter": "",
    "sf": null,
    "st": null,
@@ -5365,7 +5293,7 @@
    "restri": "",
    "resclo": "",
    "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/H0iYC6dkXNPEjUfiKhCc"
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/iwk0yXjIzSdzZzoISmvN"
   },
   {
    "nombre": "Jennie Mayaute Allca",
@@ -5380,6 +5308,18 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/EpdSTcwCtvE4vSC6Ni57"
   },
   {
+   "nombre": "Jesús De La Cruz",
+   "prof": "Médico General",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ptlVxUgodibwvVRolJjP"
+  },
+  {
    "nombre": "Joha Barrios",
    "prof": "trabajo basico",
    "setter": "",
@@ -5390,18 +5330,6 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/iMhiv5R29mHulC9QrSRL"
-  },
-  {
-   "nombre": "Jonathan Mercado",
-   "prof": "Contador",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/93QZ6jZJY4agzOIpe3LG"
   },
   {
    "nombre": "Jorge Armando Brito Pedrero",
@@ -5416,8 +5344,8 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/f9PvidyvRyEaDeOJXe0R"
   },
   {
-   "nombre": "Jorge Sequeira",
-   "prof": "Medico cirujano ",
+   "nombre": "JORGE LOPEZ",
+   "prof": "Cybersecurity",
    "setter": "",
    "sf": null,
    "st": null,
@@ -5425,7 +5353,7 @@
    "restri": "",
    "resclo": "",
    "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Aj0arZWsEQgUhTLQDrBD"
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/aKMgbCIpbyFjdNuzCTSF"
   },
   {
    "nombre": "Jose David Velez M.",
@@ -5438,6 +5366,18 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/wtre2kIU39XS9ws6VL5B"
+  },
+  {
+   "nombre": "Jose Marín",
+   "prof": "Odontologo",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VHTsaKZVijr7zqDVebHU"
   },
   {
    "nombre": "José Luis Ornelas Auyón",
@@ -5548,6 +5488,30 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Ee4VaIgIQDrZHNlbTBNs"
   },
   {
+   "nombre": "Lorena Castillo",
+   "prof": "Médico general",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/KpqkUSCglbXLNvFuz9QV"
+  },
+  {
+   "nombre": "LUIS AGUILAR",
+   "prof": "Informatico",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/QAdnl2D6jT4TkTDi3wou"
+  },
+  {
    "nombre": "Luis Anduquia",
    "prof": "Sistemas",
    "setter": "",
@@ -5570,30 +5534,6 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/snQfYibgxVM702pzQms1"
-  },
-  {
-   "nombre": "Luis Pablo Rodriguez",
-   "prof": "Truck Driver",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/nT7kReDEVmWZnSWthHBz"
-  },
-  {
-   "nombre": "Mabel Nuñez Celis",
-   "prof": "Enfermera",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Kr7MUolFO4Rx8tuDXEsX"
   },
   {
    "nombre": "Manfred Torrez",
@@ -5632,6 +5572,30 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/UHTSL5sNL5Xay6PrRp5X"
   },
   {
+   "nombre": "Maria marias",
+   "prof": "Médico General",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/e4PrzxrGMTIxp83IkkyF"
+  },
+  {
+   "nombre": "Maria Paula Guevara Valdivieso",
+   "prof": "Médico General",
+   "setter": "",
+   "sf": null,
+   "st": 0,
+   "sc": null,
+   "restri": "Cualifica",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/zGlkgGDs0WSgMdiTKtAF"
+  },
+  {
    "nombre": "Maria Pia Franco",
    "prof": "Estudiante medicina ",
    "setter": "",
@@ -5642,6 +5606,18 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/SwB1h4pEGlO3dK5x4sSk"
+  },
+  {
+   "nombre": "Mark Anthony Safranic",
+   "prof": "Medico general",
+   "setter": "",
+   "sf": null,
+   "st": 80,
+   "sc": null,
+   "restri": "Cualifica",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/42iwrZRtZ4MUS9g5LgEe"
   },
   {
    "nombre": "Mathias Ballesteros Escorcia",
@@ -5680,6 +5656,18 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/KBuBxb8uZRSRoxg48kPI"
   },
   {
+   "nombre": "Michelle Diaz",
+   "prof": "Arquitecta y administración de empresas ",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/6ZBBdgRzmGISzN4Rh9Xz"
+  },
+  {
    "nombre": "Miguel Rivera",
    "prof": "Buyer",
    "setter": "",
@@ -5716,18 +5704,6 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/cpG4dZaHUdhiSzbSeHvq"
   },
   {
-   "nombre": "Milka Alvarez IX",
-   "prof": "Enfermera ",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/n9Ii99BxzND486hqtYqr"
-  },
-  {
    "nombre": "Moira Schneider Rivera",
    "prof": "Médico ",
    "setter": "",
@@ -5750,18 +5726,6 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ZJ1loPlv1FfFhQSMOPv7"
-  },
-  {
-   "nombre": "Natalia Cifuentes",
-   "prof": "Childcare Educator",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Hv7lPL57NWG3lcIYlqHn"
   },
   {
    "nombre": "Natalia Jaramillo Trespalacio",
@@ -5800,18 +5764,6 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/05ewbaB7i5K7cwW5jCAk"
   },
   {
-   "nombre": "NenaGallardo Gallardo",
-   "prof": "Ing civil",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VytGKUut9QYd5hFT77RK"
-  },
-  {
    "nombre": "Nicole Toledo",
    "prof": "Arquitectura ",
    "setter": "",
@@ -5836,6 +5788,30 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/JdcT9mngi1yg5CmklH29"
   },
   {
+   "nombre": "Paola Mora",
+   "prof": "Medico",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/3PTcbU0dRpaFzeQbVh7L"
+  },
+  {
+   "nombre": "Paul Solano Diaz",
+   "prof": "Medico Ocupacional",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/vPJGiPH51NP2GCbK2Sgv"
+  },
+  {
    "nombre": "Paula torres",
    "prof": "Doctora",
    "setter": "",
@@ -5848,8 +5824,8 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/TnJQQiTKvXzwlJDmtySI"
   },
   {
-   "nombre": "Rafael Rivas Rojas",
-   "prof": "Farmacéutico",
+   "nombre": "Pedro Del Pozo López",
+   "prof": "Médico General y especialista ",
    "setter": "",
    "sf": null,
    "st": null,
@@ -5857,7 +5833,7 @@
    "restri": "",
    "resclo": "",
    "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/YP7oYkCXBx5Uy3Mf5hPU"
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/gyxWIhAW5Kk2nSDkGeFn"
   },
   {
    "nombre": "Raisa Severino Lazo",
@@ -5870,6 +5846,18 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/OSUcNf9Utr0oZtuYY3EJ"
+  },
+  {
+   "nombre": "Renzo Enrique Sayan Bernal",
+   "prof": "Logistica y comercio exterior ",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/i4bRuGS50FKpfGJDusK0"
   },
   {
    "nombre": "Richard",
@@ -5896,6 +5884,30 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/XpqEfn3Y3p75bk3BpUG9"
   },
   {
+   "nombre": "Rocca Luis",
+   "prof": "Ingeniero Mecánico ",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/WBE5NnXUNLHXazoQ0qPh"
+  },
+  {
+   "nombre": "Roxaly Arismendi",
+   "prof": "Medico general",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/DcxtB4q8maFzv9DyrjqC"
+  },
+  {
    "nombre": "Samuel Ramirez Reyes",
    "prof": "Medicina ",
    "setter": "",
@@ -5918,6 +5930,18 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/pZajEDtA5YP4mZAFYnFk"
+  },
+  {
+   "nombre": "Santiago Avella",
+   "prof": "Médico general ",
+   "setter": "",
+   "sf": null,
+   "st": null,
+   "sc": null,
+   "restri": "",
+   "resclo": "",
+   "cash": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/f2yZvQkjP6jAQ9Qn2Qc5"
   },
   {
    "nombre": "Scarlett Cid",
@@ -5954,18 +5978,6 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/41WRRtidG30oQFMzXzvy"
-  },
-  {
-   "nombre": "Siumara Turcott",
-   "prof": "Mercadotecnia ",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/XrGhjuT2WA0JmqtwXFUH"
   },
   {
    "nombre": "Susana maria Osorio",
@@ -6038,18 +6050,6 @@
    "resclo": "",
    "cash": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/qUcx14MvFPx3v4wbXJ55"
-  },
-  {
-   "nombre": "Victor Acevedo",
-   "prof": "Medico",
-   "setter": "",
-   "sf": null,
-   "st": null,
-   "sc": null,
-   "restri": "",
-   "resclo": "",
-   "cash": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/brxREUrlEyBDEaHgDXVL"
   },
   {
    "nombre": "Victor quintero",
@@ -6126,7 +6126,7 @@
  ],
  "closing": [
   {
-   "nombre": "(sin nombre)",
+   "nombre": "Frank Fernández",
    "fecha": "2026-06-27",
    "estado": "confirmed",
    "resclo": "",
@@ -6137,7 +6137,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/fX8SlPv9a6BKzxCHJuXP"
   },
   {
-   "nombre": "(sin nombre)",
+   "nombre": "Maria Paula Guevara Valdivieso",
    "fecha": "2026-06-27",
    "estado": "confirmed",
    "resclo": "",
@@ -6148,7 +6148,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/zGlkgGDs0WSgMdiTKtAF"
   },
   {
-   "nombre": "(sin nombre)",
+   "nombre": "Mark Anthony Safranic",
    "fecha": "2026-06-26",
    "estado": "confirmed",
    "resclo": "",
@@ -6159,7 +6159,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/42iwrZRtZ4MUS9g5LgEe"
   },
   {
-   "nombre": "(sin nombre)",
+   "nombre": "Heber Hualpa",
    "fecha": "2026-06-25",
    "estado": "confirmed",
    "resclo": "",
@@ -6170,18 +6170,18 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rDUwGEh1RKKTzxyIttJH"
   },
   {
-   "nombre": "(sin nombre)",
+   "nombre": "Angela Luque reyes",
    "fecha": "2026-06-20",
    "estado": "confirmed",
-   "resclo": "",
-   "sc": null,
+   "resclo": "Seguimiento",
+   "sc": 75,
    "cash": "",
    "ticket": "",
    "pagado": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Y2qCHRM766vefUOKYARX"
   },
   {
-   "nombre": "(sin nombre)",
+   "nombre": "Carlos Martin",
    "fecha": "2026-06-19",
    "estado": "noshow",
    "resclo": "",
@@ -6192,11 +6192,11 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/evJ4pWjTdTeJMpYBQ1Wd"
   },
   {
-   "nombre": "(sin nombre)",
+   "nombre": "David Gómez Posada",
    "fecha": "2026-06-18",
    "estado": "confirmed",
-   "resclo": "",
-   "sc": null,
+   "resclo": "Seguimiento",
+   "sc": 65,
    "cash": "",
    "ticket": "",
    "pagado": "",
@@ -6214,7 +6214,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/EWnMZMZ9sPajTXH7RfWs"
   },
   {
-   "nombre": "(sin nombre)",
+   "nombre": "Egmar Junior Alava Cielo",
    "fecha": "2026-06-13",
    "estado": "confirmed",
    "resclo": "",
@@ -6225,7 +6225,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/I8zJrqOUvWNABRJGxDsT"
   },
   {
-   "nombre": "(sin nombre)",
+   "nombre": "Adriana Torres",
    "fecha": "2026-06-11",
    "estado": "confirmed",
    "resclo": "",
@@ -6236,7 +6236,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ybHZmQs2hc6Y59lQAKND"
   },
   {
-   "nombre": "(sin nombre)",
+   "nombre": "Fausto Carrión",
    "fecha": "2026-06-10",
    "estado": "cancelled",
    "resclo": "",
@@ -6247,7 +6247,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/oDKbtiZ5XLTR65MAwU2J"
   },
   {
-   "nombre": "(sin nombre)",
+   "nombre": "Santiago Avella",
    "fecha": "2026-06-04",
    "estado": "confirmed",
    "resclo": "",
@@ -6258,7 +6258,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/f2yZvQkjP6jAQ9Qn2Qc5"
   },
   {
-   "nombre": "(sin nombre)",
+   "nombre": "Michelle Diaz",
    "fecha": "2026-06-04",
    "estado": "confirmed",
    "resclo": "",
@@ -6291,7 +6291,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/FCqBdLtcxmL1TyCnrJMN"
   },
   {
-   "nombre": "(sin nombre)",
+   "nombre": "Jose Marín",
    "fecha": "2026-06-01",
    "estado": "cancelled",
    "resclo": "",
@@ -6335,7 +6335,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/0te0eu4thsIwqgXQKOi4"
   },
   {
-   "nombre": "(sin nombre)",
+   "nombre": "Maria marias",
    "fecha": "2026-05-17",
    "estado": "cancelled",
    "resclo": "",
@@ -7995,239 +7995,364 @@
  ],
  "resp_pairs": [
   {
-   "dia": "2025-09-12",
-   "in": 1757689669,
-   "rep": 1757690624
+   "dia": "2026-06-28",
+   "in": 1782690285,
+   "rep": 1782726359
   },
   {
-   "dia": "2026-06-21",
-   "in": 1782069650,
-   "rep": 1782135031
+   "dia": "2026-06-27",
+   "in": 1782565191,
+   "rep": 1782758510
   },
   {
-   "dia": "2026-06-12",
-   "in": 1781298290,
-   "rep": 1781549190
+   "dia": "2026-06-28",
+   "in": 1782632361,
+   "rep": 1782758476
   },
   {
-   "dia": "2026-06-23",
-   "in": 1782243200,
-   "rep": 1782253330
+   "dia": "2026-06-28",
+   "in": 1782679210,
+   "rep": 1782758368
   },
   {
-   "dia": "2026-06-21",
-   "in": 1782037431,
-   "rep": 1782038702
+   "dia": "2026-04-26",
+   "in": 1777200317,
+   "rep": 1777219932
   },
   {
-   "dia": "2025-10-10",
-   "in": 1760103247,
-   "rep": 1760109850
+   "dia": "2025-03-29",
+   "in": 1743285562,
+   "rep": 1743306634
   },
   {
-   "dia": "2026-06-23",
-   "in": 1782223918,
-   "rep": 1782233408
+   "dia": "2026-03-01",
+   "in": 1772359637,
+   "rep": 1772447006
   },
   {
-   "dia": "2024-09-27",
-   "in": 1727400862,
-   "rep": 1727401205
+   "dia": "2026-06-28",
+   "in": 1782645160,
+   "rep": 1782655721
   },
   {
-   "dia": "2026-06-16",
-   "in": 1781602983,
-   "rep": 1781603915
+   "dia": "2026-06-29",
+   "in": 1782717300,
+   "rep": 1782727227
   },
   {
-   "dia": "2026-05-01",
-   "in": 1777612953,
-   "rep": 1777613908
+   "dia": "2025-02-11",
+   "in": 1739310576,
+   "rep": 1739313021
   },
   {
-   "dia": "2025-10-01",
-   "in": 1759282986,
-   "rep": 1759317986
+   "dia": "2026-06-17",
+   "in": 1781713003,
+   "rep": 1781714431
   },
   {
-   "dia": "2025-11-21",
-   "in": 1763738338,
-   "rep": 1763738355
+   "dia": "2026-06-15",
+   "in": 1781539499,
+   "rep": 1781588805
   },
   {
-   "dia": "2025-07-04",
-   "in": 1751659704,
-   "rep": 1751670626
+   "dia": "2025-02-26",
+   "in": 1740590393,
+   "rep": 1740596415
   },
   {
-   "dia": "2026-06-23",
-   "in": 1782196994,
-   "rep": 1782208826
-  },
-  {
-   "dia": "2026-05-06",
-   "in": 1778042968,
-   "rep": 1778098072
-  },
-  {
-   "dia": "2026-06-09",
-   "in": 1781005938,
-   "rep": 1781039817
-  },
-  {
-   "dia": "2026-05-04",
-   "in": 1777877933,
-   "rep": 1777886292
-  },
-  {
-   "dia": "2025-10-10",
-   "in": 1760115397,
-   "rep": 1760115743
-  },
-  {
-   "dia": "2026-06-14",
-   "in": 1781468861,
-   "rep": 1781474285
-  },
-  {
-   "dia": "2026-06-12",
-   "in": 1781280321,
-   "rep": 1781288261
-  },
-  {
-   "dia": "2025-03-04",
-   "in": 1741056923,
-   "rep": 1741062878
-  },
-  {
-   "dia": "2025-03-14",
-   "in": 1741982341,
-   "rep": 1741989611
-  },
-  {
-   "dia": "2026-04-28",
-   "in": 1777395914,
-   "rep": 1777395952
+   "dia": "2025-07-06",
+   "in": 1751831908,
+   "rep": 1751834757
   },
   {
    "dia": "2026-04-25",
-   "in": 1777128090,
-   "rep": 1777133296
+   "in": 1777108887,
+   "rep": 1777110798
   },
   {
-   "dia": "2026-04-21",
-   "in": 1776753598,
-   "rep": 1776763692
+   "dia": "2026-05-02",
+   "in": 1777714102,
+   "rep": 1777714673
   },
   {
-   "dia": "2025-05-02",
-   "in": 1746226679,
-   "rep": 1746229540
+   "dia": "2026-06-16",
+   "in": 1781571078,
+   "rep": 1781605602
   },
   {
-   "dia": "2026-04-17",
-   "in": 1776458246,
-   "rep": 1776468185
+   "dia": "2026-05-07",
+   "in": 1778112198,
+   "rep": 1778148253
   },
   {
-   "dia": "2026-02-06",
-   "in": 1770403533,
-   "rep": 1770404846
+   "dia": "2025-08-07",
+   "in": 1754604188,
+   "rep": 1754608640
   },
   {
-   "dia": "2026-04-21",
-   "in": 1776776925,
-   "rep": 1776784965
+   "dia": "2026-01-21",
+   "in": 1768955493,
+   "rep": 1768991957
   },
   {
-   "dia": "2026-04-20",
-   "in": 1776669888,
-   "rep": 1776677774
+   "dia": "2026-06-15",
+   "in": 1781519034,
+   "rep": 1781519149
   },
   {
-   "dia": "2026-04-18",
-   "in": 1776552158,
-   "rep": 1776690313
+   "dia": "2026-06-14",
+   "in": 1781424979,
+   "rep": 1781425001
   },
   {
-   "dia": "2026-04-21",
-   "in": 1776774313,
-   "rep": 1776784945
+   "dia": "2026-01-09",
+   "in": 1767988323,
+   "rep": 1767990974
   },
   {
-   "dia": "2026-04-21",
-   "in": 1776755401,
-   "rep": 1776763673
+   "dia": "2026-06-14",
+   "in": 1781400666,
+   "rep": 1781428933
   },
   {
-   "dia": "2026-04-21",
-   "in": 1776742299,
-   "rep": 1776763668
+   "dia": "2026-06-20",
+   "in": 1781919965,
+   "rep": 1781949912
   },
   {
-   "dia": "2026-04-19",
-   "in": 1776616943,
-   "rep": 1776680710
+   "dia": "2026-06-10",
+   "in": 1781127058,
+   "rep": 1781150320
   },
   {
-   "dia": "2026-04-20",
-   "in": 1776670963,
-   "rep": 1776679059
+   "dia": "2025-05-19",
+   "in": 1747669268,
+   "rep": 1747669290
   },
   {
-   "dia": "2026-04-19",
-   "in": 1776627784,
-   "rep": 1776763533
+   "dia": "2026-06-10",
+   "in": 1781123372,
+   "rep": 1781173201
   },
   {
-   "dia": "2026-04-20",
-   "in": 1776655862,
-   "rep": 1776680722
+   "dia": "2026-06-11",
+   "in": 1781152564,
+   "rep": 1781173213
   },
   {
-   "dia": "2026-04-02",
-   "in": 1775158990,
-   "rep": 1775159970
+   "dia": "2026-06-10",
+   "in": 1781112062,
+   "rep": 1781116237
   },
   {
-   "dia": "2025-08-16",
-   "in": 1755318624,
-   "rep": 1755337980
+   "dia": "2026-05-05",
+   "in": 1777993154,
+   "rep": 1778006021
   },
   {
-   "dia": "2026-04-06",
-   "in": 1775518068,
-   "rep": 1775518213
+   "dia": "2026-04-27",
+   "in": 1777250687,
+   "rep": 1777297142
   },
   {
-   "dia": "2026-03-31",
-   "in": 1774926712,
-   "rep": 1774951554
+   "dia": "2026-04-29",
+   "in": 1777438562,
+   "rep": 1777488865
   },
   {
-   "dia": "2025-09-28",
-   "in": 1759066003,
-   "rep": 1759068556
+   "dia": "2026-05-05",
+   "in": 1778001375,
+   "rep": 1778006418
   },
   {
-   "dia": "2025-06-12",
-   "in": 1749732250,
-   "rep": 1749732330
+   "dia": "2026-03-07",
+   "in": 1772907727,
+   "rep": 1772908503
+  },
+  {
+   "dia": "2025-01-05",
+   "in": 1736082454,
+   "rep": 1736082882
+  },
+  {
+   "dia": "2026-05-05",
+   "in": 1777939858,
+   "rep": 1777989472
+  },
+  {
+   "dia": "2026-04-28",
+   "in": 1777403423,
+   "rep": 1777558477
+  },
+  {
+   "dia": "2026-04-24",
+   "in": 1777024110,
+   "rep": 1777051589
+  },
+  {
+   "dia": "2026-02-27",
+   "in": 1772226159,
+   "rep": 1772294627
+  },
+  {
+   "dia": "2026-01-05",
+   "in": 1767626064,
+   "rep": 1767654162
+  },
+  {
+   "dia": "2025-06-14",
+   "in": 1749865426,
+   "rep": 1749874487
+  },
+  {
+   "dia": "2025-12-24",
+   "in": 1766591373,
+   "rep": 1766659906
+  },
+  {
+   "dia": "2026-03-16",
+   "in": 1773633686,
+   "rep": 1773652330
+  },
+  {
+   "dia": "2026-03-13",
+   "in": 1773438805,
+   "rep": 1773443090
+  },
+  {
+   "dia": "2026-03-11",
+   "in": 1773232971,
+   "rep": 1773233779
+  },
+  {
+   "dia": "2026-03-08",
+   "in": 1772969794,
+   "rep": 1772970346
+  },
+  {
+   "dia": "2026-03-07",
+   "in": 1772906934,
+   "rep": 1772907597
+  },
+  {
+   "dia": "2026-04-26",
+   "in": 1777187971,
+   "rep": 1777195883
+  },
+  {
+   "dia": "2026-03-04",
+   "in": 1772635949,
+   "rep": 1772636263
+  },
+  {
+   "dia": "2024-10-07",
+   "in": 1728281746,
+   "rep": 1728307384
+  },
+  {
+   "dia": "2026-05-03",
+   "in": 1777836644,
+   "rep": 1777887295
   },
   {
    "dia": "2026-04-08",
-   "in": 1775621713,
-   "rep": 1775641216
+   "in": 1775661537,
+   "rep": 1775665203
   },
   {
-   "dia": "2025-09-25",
-   "in": 1758795843,
-   "rep": 1758829283
+   "dia": "2026-01-04",
+   "in": 1767554633,
+   "rep": 1767696214
   },
   {
-   "dia": "2024-10-04",
-   "in": 1728004279,
-   "rep": 1728004318
+   "dia": "2026-04-08",
+   "in": 1775622926,
+   "rep": 1775635986
+  },
+  {
+   "dia": "2026-04-14",
+   "in": 1776161658,
+   "rep": 1776189009
+  },
+  {
+   "dia": "2026-04-13",
+   "in": 1776092923,
+   "rep": 1776101757
+  },
+  {
+   "dia": "2026-04-12",
+   "in": 1776002897,
+   "rep": 1776007911
+  },
+  {
+   "dia": "2025-02-13",
+   "in": 1739461479,
+   "rep": 1739463324
+  },
+  {
+   "dia": "2026-03-14",
+   "in": 1773467632,
+   "rep": 1773509028
+  },
+  {
+   "dia": "2026-03-22",
+   "in": 1774142793,
+   "rep": 1774289137
+  },
+  {
+   "dia": "2026-03-27",
+   "in": 1774624066,
+   "rep": 1774631737
+  },
+  {
+   "dia": "2026-01-31",
+   "in": 1769867918,
+   "rep": 1769872724
+  },
+  {
+   "dia": "2025-07-21",
+   "in": 1753111688,
+   "rep": 1753112448
+  },
+  {
+   "dia": "2026-03-26",
+   "in": 1774496124,
+   "rep": 1774516624
+  },
+  {
+   "dia": "2025-09-04",
+   "in": 1757024905,
+   "rep": 1757025894
+  },
+  {
+   "dia": "2025-12-31",
+   "in": 1767194654,
+   "rep": 1767199837
+  },
+  {
+   "dia": "2026-03-24",
+   "in": 1774386270,
+   "rep": 1774386467
+  },
+  {
+   "dia": "2026-03-26",
+   "in": 1774487598,
+   "rep": 1774516176
+  },
+  {
+   "dia": "2026-03-16",
+   "in": 1773692577,
+   "rep": 1773692824
+  },
+  {
+   "dia": "2026-03-26",
+   "in": 1774565401,
+   "rep": 1774565813
+  },
+  {
+   "dia": "2026-01-09",
+   "in": 1767957136,
+   "rep": 1767983457
   },
   {
    "dia": "2025-05-05",
@@ -8270,9 +8395,179 @@
    "rep": 1773737806
   },
   {
+   "dia": "2026-03-17",
+   "in": 1773787410,
+   "rep": 1773788127
+  },
+  {
+   "dia": "2026-02-27",
+   "in": 1772194393,
+   "rep": 1772195504
+  },
+  {
+   "dia": "2026-03-24",
+   "in": 1774370828,
+   "rep": 1774373042
+  },
+  {
+   "dia": "2026-03-25",
+   "in": 1774430397,
+   "rep": 1774432014
+  },
+  {
+   "dia": "2026-03-25",
+   "in": 1774416562,
+   "rep": 1774431537
+  },
+  {
+   "dia": "2026-03-25",
+   "in": 1774416376,
+   "rep": 1774431522
+  },
+  {
+   "dia": "2025-03-21",
+   "in": 1742579940,
+   "rep": 1742583440
+  },
+  {
+   "dia": "2026-01-07",
+   "in": 1767829561,
+   "rep": 1767863006
+  },
+  {
+   "dia": "2026-03-15",
+   "in": 1773596154,
+   "rep": 1773607247
+  },
+  {
+   "dia": "2026-02-09",
+   "in": 1770623981,
+   "rep": 1770624430
+  },
+  {
+   "dia": "2025-04-10",
+   "in": 1744300550,
+   "rep": 1744300799
+  },
+  {
+   "dia": "2026-03-24",
+   "in": 1774351717,
+   "rep": 1774355603
+  },
+  {
+   "dia": "2025-12-30",
+   "in": 1767127681,
+   "rep": 1767133012
+  },
+  {
+   "dia": "2026-03-15",
+   "in": 1773572092,
+   "rep": 1773656295
+  },
+  {
+   "dia": "2026-03-21",
+   "in": 1774114693,
+   "rep": 1774115070
+  },
+  {
+   "dia": "2026-03-21",
+   "in": 1774097878,
+   "rep": 1774104540
+  },
+  {
+   "dia": "2026-03-21",
+   "in": 1774130700,
+   "rep": 1774137146
+  },
+  {
+   "dia": "2026-03-23",
+   "in": 1774242822,
+   "rep": 1774256029
+  },
+  {
+   "dia": "2025-03-26",
+   "in": 1742999998,
+   "rep": 1743000107
+  },
+  {
+   "dia": "2026-02-23",
+   "in": 1771825189,
+   "rep": 1771832637
+  },
+  {
+   "dia": "2026-03-21",
+   "in": 1774051232,
+   "rep": 1774084647
+  },
+  {
+   "dia": "2026-03-21",
+   "in": 1774131286,
+   "rep": 1774137138
+  },
+  {
+   "dia": "2026-03-20",
+   "in": 1774041283,
+   "rep": 1774047059
+  },
+  {
+   "dia": "2026-03-21",
+   "in": 1774125305,
+   "rep": 1774137358
+  },
+  {
+   "dia": "2025-02-12",
+   "in": 1739377456,
+   "rep": 1739391499
+  },
+  {
+   "dia": "2025-09-21",
+   "in": 1758467753,
+   "rep": 1758470047
+  },
+  {
+   "dia": "2025-12-19",
+   "in": 1766120579,
+   "rep": 1766136796
+  },
+  {
+   "dia": "2026-03-21",
+   "in": 1774056913,
+   "rep": 1774084631
+  },
+  {
+   "dia": "2026-02-17",
+   "in": 1771292403,
+   "rep": 1771322816
+  },
+  {
+   "dia": "2025-01-10",
+   "in": 1736510165,
+   "rep": 1736510302
+  },
+  {
+   "dia": "2025-07-04",
+   "in": 1751623368,
+   "rep": 1751635528
+  },
+  {
+   "dia": "2026-03-17",
+   "in": 1773742691,
+   "rep": 1773743319
+  },
+  {
+   "dia": "2026-01-19",
+   "in": 1768789420,
+   "rep": 1768817846
+  },
+  {
    "dia": "2026-03-15",
    "in": 1773615585,
    "rep": 1773618629
+  },
+  {
+   "dia": "2026-01-27",
+   "in": 1769508442,
+   "rep": 1769508708
   },
   {
    "dia": "2025-08-15",
@@ -8280,109 +8575,9 @@
    "rep": 1755284645
   },
   {
-   "dia": "2026-03-19",
-   "in": 1773937214,
-   "rep": 1773937266
-  },
-  {
-   "dia": "2026-03-06",
-   "in": 1772805274,
-   "rep": 1772806493
-  },
-  {
-   "dia": "2026-01-12",
-   "in": 1768207016,
-   "rep": 1768214706
-  },
-  {
-   "dia": "2025-07-21",
-   "in": 1753107269,
-   "rep": 1753107334
-  },
-  {
-   "dia": "2026-03-12",
-   "in": 1773280574,
-   "rep": 1773297279
-  },
-  {
-   "dia": "2025-03-09",
-   "in": 1741547326,
-   "rep": 1741560061
-  },
-  {
-   "dia": "2025-07-29",
-   "in": 1753751693,
-   "rep": 1753782806
-  },
-  {
-   "dia": "2026-02-13",
-   "in": 1771018369,
-   "rep": 1771022498
-  },
-  {
-   "dia": "2026-03-10",
-   "in": 1773103339,
-   "rep": 1773103682
-  },
-  {
-   "dia": "2026-01-06",
-   "in": 1767722317,
-   "rep": 1767728026
-  },
-  {
-   "dia": "2026-03-10",
-   "in": 1773169262,
-   "rep": 1773171209
-  },
-  {
-   "dia": "2026-03-13",
-   "in": 1773443940,
-   "rep": 1773444500
-  },
-  {
-   "dia": "2026-03-13",
-   "in": 1773432288,
-   "rep": 1773432300
-  },
-  {
-   "dia": "2026-03-14",
-   "in": 1773502299,
-   "rep": 1773504122
-  },
-  {
-   "dia": "2024-11-24",
-   "in": 1732443772,
-   "rep": 1732443777
-  },
-  {
-   "dia": "2025-02-18",
-   "in": 1739838723,
-   "rep": 1739846750
-  },
-  {
-   "dia": "2026-03-13",
-   "in": 1773428078,
-   "rep": 1773428149
-  },
-  {
-   "dia": "2026-03-13",
-   "in": 1773415701,
-   "rep": 1773417209
-  },
-  {
    "dia": "2026-02-15",
    "in": 1771160231,
    "rep": 1771162150
-  },
-  {
-   "dia": "2026-03-05",
-   "in": 1772755132,
-   "rep": 1772755211
-  },
-  {
-   "dia": "2026-02-03",
-   "in": 1770127271,
-   "rep": 1770136569
   },
   {
    "dia": "2026-02-10",
@@ -8435,11 +8630,6 @@
    "rep": 1753783355
   },
   {
-   "dia": "2026-03-11",
-   "in": 1773263358,
-   "rep": 1773274084
-  },
-  {
    "dia": "2026-02-22",
    "in": 1771798241,
    "rep": 1771799977
@@ -8465,584 +8655,244 @@
    "rep": 1765374918
   },
   {
-   "dia": "2026-01-19",
-   "in": 1768797138,
-   "rep": 1768817765
-  },
-  {
-   "dia": "2024-11-02",
-   "in": 1730560111,
-   "rep": 1730604771
-  },
-  {
-   "dia": "2025-09-11",
-   "in": 1757628202,
-   "rep": 1757628332
-  },
-  {
-   "dia": "2025-10-29",
-   "in": 1761746577,
-   "rep": 1761746615
-  },
-  {
-   "dia": "2025-08-08",
-   "in": 1754682743,
-   "rep": 1754682913
-  },
-  {
-   "dia": "2025-06-21",
-   "in": 1750477786,
-   "rep": 1750478905
-  },
-  {
-   "dia": "2025-03-28",
-   "in": 1743177578,
-   "rep": 1743290747
-  },
-  {
-   "dia": "2025-02-11",
-   "in": 1739308248,
-   "rep": 1739308391
-  },
-  {
-   "dia": "2024-10-27",
-   "in": 1730021350,
-   "rep": 1730039016
-  },
-  {
-   "dia": "2026-03-10",
-   "in": 1773167362,
-   "rep": 1773171184
-  },
-  {
-   "dia": "2026-03-11",
-   "in": 1773211476,
-   "rep": 1773212909
-  },
-  {
-   "dia": "2025-04-10",
-   "in": 1744250298,
-   "rep": 1744252792
-  },
-  {
-   "dia": "2026-03-10",
-   "in": 1773183594,
-   "rep": 1773183716
-  },
-  {
-   "dia": "2026-01-27",
-   "in": 1769540303,
-   "rep": 1769547678
-  },
-  {
-   "dia": "2026-01-28",
-   "in": 1769560920,
-   "rep": 1769628278
-  },
-  {
-   "dia": "2026-01-29",
-   "in": 1769694800,
-   "rep": 1769715897
-  },
-  {
-   "dia": "2026-01-29",
-   "in": 1769730289,
-   "rep": 1769790206
-  },
-  {
-   "dia": "2026-01-29",
-   "in": 1769665646,
-   "rep": 1769715911
-  },
-  {
-   "dia": "2026-01-29",
-   "in": 1769729357,
-   "rep": 1769790136
-  },
-  {
-   "dia": "2026-01-31",
-   "in": 1769887852,
-   "rep": 1769887921
-  },
-  {
-   "dia": "2026-01-28",
-   "in": 1769617336,
-   "rep": 1769627960
-  },
-  {
-   "dia": "2026-02-01",
-   "in": 1769904710,
-   "rep": 1769939607
-  },
-  {
-   "dia": "2026-02-01",
-   "in": 1769955677,
-   "rep": 1769969479
-  },
-  {
-   "dia": "2026-02-01",
-   "in": 1769923296,
-   "rep": 1769939598
-  },
-  {
-   "dia": "2026-02-01",
-   "in": 1769974942,
-   "rep": 1770068339
-  },
-  {
-   "dia": "2026-02-02",
-   "in": 1770060534,
-   "rep": 1770068021
-  },
-  {
-   "dia": "2026-02-03",
-   "in": 1770116657,
-   "rep": 1770147746
-  },
-  {
-   "dia": "2026-02-03",
-   "in": 1770088726,
-   "rep": 1770147766
-  },
-  {
-   "dia": "2025-12-24",
-   "in": 1766561366,
-   "rep": 1766775614
-  },
-  {
-   "dia": "2025-12-30",
-   "in": 1767075000,
-   "rep": 1767109612
-  },
-  {
-   "dia": "2026-02-06",
-   "in": 1770394874,
-   "rep": 1770400472
-  },
-  {
-   "dia": "2026-02-03",
-   "in": 1770087628,
-   "rep": 1770147789
-  },
-  {
-   "dia": "2026-02-06",
-   "in": 1770338234,
-   "rep": 1770400505
-  },
-  {
-   "dia": "2026-02-04",
-   "in": 1770214749,
-   "rep": 1770218624
-  },
-  {
-   "dia": "2026-02-05",
-   "in": 1770260243,
-   "rep": 1770321242
-  },
-  {
-   "dia": "2026-02-07",
-   "in": 1770469505,
-   "rep": 1770482137
-  },
-  {
-   "dia": "2026-02-09",
-   "in": 1770596789,
-   "rep": 1770647925
-  },
-  {
-   "dia": "2026-01-31",
-   "in": 1769894912,
-   "rep": 1769939618
-  },
-  {
-   "dia": "2026-02-10",
-   "in": 1770737621,
-   "rep": 1770750795
-  },
-  {
-   "dia": "2026-02-09",
-   "in": 1770649295,
-   "rep": 1770663059
-  },
-  {
-   "dia": "2026-02-07",
-   "in": 1770473501,
-   "rep": 1770482199
-  },
-  {
-   "dia": "2026-02-07",
-   "in": 1770488839,
-   "rep": 1770663403
-  },
-  {
-   "dia": "2026-02-08",
-   "in": 1770557258,
-   "rep": 1770648029
-  },
-  {
-   "dia": "2026-02-09",
-   "in": 1770660243,
-   "rep": 1770663131
-  },
-  {
-   "dia": "2026-02-09",
-   "in": 1770645510,
-   "rep": 1770647835
-  },
-  {
-   "dia": "2026-02-03",
-   "in": 1770091129,
-   "rep": 1770147590
-  },
-  {
-   "dia": "2026-02-10",
-   "in": 1770734348,
-   "rep": 1770735526
-  },
-  {
-   "dia": "2026-02-09",
-   "in": 1770600335,
-   "rep": 1770647907
-  },
-  {
-   "dia": "2026-02-11",
-   "in": 1770793599,
-   "rep": 1770823454
-  },
-  {
-   "dia": "2026-02-11",
-   "in": 1770789049,
-   "rep": 1770823464
-  },
-  {
-   "dia": "2026-02-11",
-   "in": 1770813065,
-   "rep": 1770823446
-  },
-  {
-   "dia": "2026-02-13",
-   "in": 1771003807,
-   "rep": 1771086610
-  },
-  {
-   "dia": "2026-02-17",
-   "in": 1771335727,
-   "rep": 1771341078
-  },
-  {
-   "dia": "2026-02-18",
-   "in": 1771433192,
-   "rep": 1771444211
-  },
-  {
-   "dia": "2026-02-22",
-   "in": 1771756684,
-   "rep": 1771777871
-  },
-  {
-   "dia": "2026-01-18",
-   "in": 1768770603,
-   "rep": 1768770607
-  },
-  {
-   "dia": "2026-02-23",
-   "in": 1771879043,
-   "rep": 1771879417
-  },
-  {
-   "dia": "2026-02-22",
-   "in": 1771776207,
-   "rep": 1771777876
-  },
-  {
-   "dia": "2026-02-23",
-   "in": 1771869487,
-   "rep": 1771874233
-  },
-  {
-   "dia": "2026-02-26",
-   "in": 1772125448,
-   "rep": 1772133211
-  },
-  {
-   "dia": "2026-02-26",
-   "in": 1772128038,
-   "rep": 1772142381
-  },
-  {
-   "dia": "2026-02-16",
-   "in": 1771280722,
-   "rep": 1771341062
-  },
-  {
-   "dia": "2026-02-10",
-   "in": 1770688322,
-   "rep": 1770733451
-  },
-  {
-   "dia": "2026-02-12",
-   "in": 1770938997,
-   "rep": 1770998008
-  },
-  {
-   "dia": "2026-02-11",
-   "in": 1770818148,
-   "rep": 1770931784
-  },
-  {
-   "dia": "2026-02-14",
-   "in": 1771083088,
-   "rep": 1771086594
-  },
-  {
    "dia": "2026-02-19",
-   "in": 1771506146,
-   "rep": 1771528885
+   "in": 1771520962,
+   "rep": 1771528987
   },
   {
-   "dia": "2026-02-14",
-   "in": 1771104653,
-   "rep": 1771146282
+   "dia": "2026-02-20",
+   "in": 1771613296,
+   "rep": 1771616624
   },
   {
-   "dia": "2026-02-16",
-   "in": 1771207082,
-   "rep": 1771253308
+   "dia": "2026-02-21",
+   "in": 1771635961,
+   "rep": 1771638164
   },
   {
-   "dia": "2026-02-14",
-   "in": 1771101295,
-   "rep": 1771146254
+   "dia": "2026-03-05",
+   "in": 1772736691,
+   "rep": 1772736788
   },
   {
-   "dia": "2026-02-12",
-   "in": 1770928154,
-   "rep": 1770931704
+   "dia": "2026-03-05",
+   "in": 1772730482,
+   "rep": 1772733485
   },
   {
-   "dia": "2026-02-19",
-   "in": 1771529917,
-   "rep": 1771530375
+   "dia": "2026-01-12",
+   "in": 1768234881,
+   "rep": 1768256567
   },
   {
-   "dia": "2026-02-23",
-   "in": 1771867340,
-   "rep": 1771874229
+   "dia": "2025-12-27",
+   "in": 1766876449,
+   "rep": 1766921152
   },
   {
-   "dia": "2026-01-21",
-   "in": 1769000342,
-   "rep": 1769107720
+   "dia": "2026-02-24",
+   "in": 1771893615,
+   "rep": 1771894236
   },
   {
-   "dia": "2026-02-26",
-   "in": 1772083252,
-   "rep": 1772117985
+   "dia": "2026-03-02",
+   "in": 1772477605,
+   "rep": 1772478598
   },
   {
-   "dia": "2026-02-22",
-   "in": 1771787708,
-   "rep": 1771858005
+   "dia": "2026-03-05",
+   "in": 1772696516,
+   "rep": 1772703461
   },
   {
-   "dia": "2026-02-27",
-   "in": 1772156395,
-   "rep": 1772209571
+   "dia": "2025-03-27",
+   "in": 1743037845,
+   "rep": 1743038678
   },
   {
-   "dia": "2026-02-27",
-   "in": 1772151921,
-   "rep": 1772209699
+   "dia": "2026-03-05",
+   "in": 1772672063,
+   "rep": 1772674234
+  },
+  {
+   "dia": "2026-03-02",
+   "in": 1772478770,
+   "rep": 1772481687
   },
   {
    "dia": "2026-02-25",
-   "in": 1771988858,
-   "rep": 1772055429
+   "in": 1772034738,
+   "rep": 1772036201
   },
   {
-   "dia": "2026-02-27",
-   "in": 1772214756,
-   "rep": 1772215421
+   "dia": "2026-03-04",
+   "in": 1772666284,
+   "rep": 1772666386
+  },
+  {
+   "dia": "2026-03-02",
+   "in": 1772431504,
+   "rep": 1772446910
+  },
+  {
+   "dia": "2025-11-18",
+   "in": 1763506263,
+   "rep": 1763511411
   },
   {
    "dia": "2026-02-26",
-   "in": 1772149073,
-   "rep": 1772209710
-  },
-  {
-   "dia": "2026-03-09",
-   "in": 1773085677,
-   "rep": 1773085722
-  },
-  {
-   "dia": "2026-03-02",
-   "in": 1772464471,
-   "rep": 1772464569
-  },
-  {
-   "dia": "2026-02-20",
-   "in": 1771611829,
-   "rep": 1771612060
-  },
-  {
-   "dia": "2026-03-07",
-   "in": 1772917599,
-   "rep": 1773047813
-  },
-  {
-   "dia": "2025-07-31",
-   "in": 1753920943,
-   "rep": 1753969915
-  },
-  {
-   "dia": "2025-07-21",
-   "in": 1753099636,
-   "rep": 1753104356
-  },
-  {
-   "dia": "2025-03-18",
-   "in": 1742315639,
-   "rep": 1742316416
-  },
-  {
-   "dia": "2025-03-15",
-   "in": 1742014299,
-   "rep": 1742014566
-  },
-  {
-   "dia": "2025-11-11",
-   "in": 1762902402,
-   "rep": 1762904705
-  },
-  {
-   "dia": "2025-03-03",
-   "in": 1740962871,
-   "rep": 1740966034
-  },
-  {
-   "dia": "2026-03-03",
-   "in": 1772516368,
-   "rep": 1772523690
-  },
-  {
-   "dia": "2026-03-02",
-   "in": 1772495212,
-   "rep": 1772495849
-  },
-  {
-   "dia": "2026-03-03",
-   "in": 1772571080,
-   "rep": 1772571151
-  },
-  {
-   "dia": "2026-03-03",
-   "in": 1772576325,
-   "rep": 1772608152
-  },
-  {
-   "dia": "2026-03-03",
-   "in": 1772575173,
-   "rep": 1772575373
-  },
-  {
-   "dia": "2026-01-03",
-   "in": 1767455524,
-   "rep": 1767520758
-  },
-  {
-   "dia": "2026-03-02",
-   "in": 1772492563,
-   "rep": 1772492714
-  },
-  {
-   "dia": "2026-03-03",
-   "in": 1772501250,
-   "rep": 1772502204
+   "in": 1772132355,
+   "rep": 1772132497
   },
   {
    "dia": "2026-02-28",
-   "in": 1772309446,
-   "rep": 1772350441
-  },
-  {
-   "dia": "2025-03-03",
-   "in": 1741041914,
-   "rep": 1741043276
-  },
-  {
-   "dia": "2026-02-23",
-   "in": 1771873507,
-   "rep": 1771876184
-  },
-  {
-   "dia": "2025-04-08",
-   "in": 1744082959,
-   "rep": 1744083287
-  },
-  {
-   "dia": "2026-01-16",
-   "in": 1768570369,
-   "rep": 1768588407
-  },
-  {
-   "dia": "2026-02-20",
-   "in": 1771616074,
-   "rep": 1771616590
-  },
-  {
-   "dia": "2026-02-20",
-   "in": 1771627362,
-   "rep": 1771627973
+   "in": 1772240714,
+   "rep": 1772265303
   },
   {
    "dia": "2026-03-02",
-   "in": 1772480156,
-   "rep": 1772480545
+   "in": 1772422788,
+   "rep": 1772446287
   },
   {
-   "dia": "2025-11-24",
-   "in": 1763957950,
-   "rep": 1763977891
+   "dia": "2026-03-02",
+   "in": 1772422747,
+   "rep": 1772446305
   },
   {
-   "dia": "2026-03-01",
-   "in": 1772387521,
-   "rep": 1772390044
+   "dia": "2025-06-18",
+   "in": 1750211737,
+   "rep": 1750221376
+  },
+  {
+   "dia": "2026-03-04",
+   "in": 1772662723,
+   "rep": 1772662740
+  },
+  {
+   "dia": "2026-03-02",
+   "in": 1772420639,
+   "rep": 1772482156
+  },
+  {
+   "dia": "2026-02-25",
+   "in": 1771988388,
+   "rep": 1772000237
+  },
+  {
+   "dia": "2026-03-04",
+   "in": 1772660861,
+   "rep": 1772660864
+  },
+  {
+   "dia": "2025-03-16",
+   "in": 1742151724,
+   "rep": 1742159934
+  },
+  {
+   "dia": "2026-02-25",
+   "in": 1772058325,
+   "rep": 1772059503
+  },
+  {
+   "dia": "2025-07-03",
+   "in": 1751569226,
+   "rep": 1751582754
+  },
+  {
+   "dia": "2026-03-02",
+   "in": 1772471092,
+   "rep": 1772472890
+  },
+  {
+   "dia": "2026-03-03",
+   "in": 1772567335,
+   "rep": 1772567390
+  },
+  {
+   "dia": "2026-01-05",
+   "in": 1767655811,
+   "rep": 1767656399
   },
   {
    "dia": "2026-02-22",
-   "in": 1771778575,
-   "rep": 1771778767
+   "in": 1771784350,
+   "rep": 1771785472
+  },
+  {
+   "dia": "2026-02-24",
+   "in": 1771898126,
+   "rep": 1771898782
+  },
+  {
+   "dia": "2026-02-20",
+   "in": 1771600195,
+   "rep": 1771601656
   },
   {
    "dia": "2026-02-22",
-   "in": 1771795489,
-   "rep": 1771797481
+   "in": 1771788159,
+   "rep": 1771788764
   },
   {
-   "dia": "2026-01-21",
-   "in": 1768964276,
-   "rep": 1768992794
+   "dia": "2026-02-15",
+   "in": 1771195212,
+   "rep": 1771206747
   },
   {
-   "dia": "2024-11-23",
-   "in": 1732336739,
-   "rep": 1732336760
+   "dia": "2026-01-02",
+   "in": 1767360998,
+   "rep": 1767385288
   },
   {
-   "dia": "2025-09-24",
-   "in": 1758756621,
-   "rep": 1758756826
+   "dia": "2026-02-27",
+   "in": 1772219117,
+   "rep": 1772219293
   },
   {
-   "dia": "2025-03-05",
-   "in": 1741171973,
-   "rep": 1741180468
+   "dia": "2026-02-27",
+   "in": 1772200017,
+   "rep": 1772201228
+  },
+  {
+   "dia": "2026-02-26",
+   "in": 1772133882,
+   "rep": 1772133887
+  },
+  {
+   "dia": "2026-02-19",
+   "in": 1771532973,
+   "rep": 1771533381
+  },
+  {
+   "dia": "2026-02-13",
+   "in": 1771014992,
+   "rep": 1771016006
+  },
+  {
+   "dia": "2026-02-19",
+   "in": 1771517670,
+   "rep": 1771521286
+  },
+  {
+   "dia": "2026-02-01",
+   "in": 1769964841,
+   "rep": 1769965132
+  },
+  {
+   "dia": "2026-02-01",
+   "in": 1769952344,
+   "rep": 1769960795
   },
   {
    "dia": "2026-02-10",
    "in": 1770750805,
    "rep": 1770750884
+  },
+  {
+   "dia": "2025-08-16",
+   "in": 1755384608,
+   "rep": 1755384681
   },
   {
    "dia": "2026-02-11",
@@ -9183,46 +9033,6 @@
    "dia": "2026-02-03",
    "in": 1770079052,
    "rep": 1770079849
-  },
-  {
-   "dia": "2026-02-10",
-   "in": 1770692113,
-   "rep": 1770704657
-  },
-  {
-   "dia": "2025-07-03",
-   "in": 1751528282,
-   "rep": 1751548868
-  },
-  {
-   "dia": "2026-02-02",
-   "in": 1770048481,
-   "rep": 1770052295
-  },
-  {
-   "dia": "2026-02-12",
-   "in": 1770918312,
-   "rep": 1770919578
-  },
-  {
-   "dia": "2026-02-12",
-   "in": 1770916038,
-   "rep": 1770916197
-  },
-  {
-   "dia": "2026-02-10",
-   "in": 1770740682,
-   "rep": 1770741035
-  },
-  {
-   "dia": "2026-02-11",
-   "in": 1770826949,
-   "rep": 1770892955
-  },
-  {
-   "dia": "2026-02-12",
-   "in": 1770893222,
-   "rep": 1770905194
   }
  ]
 }
