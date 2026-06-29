@@ -1,0 +1,34 @@
+name: refresh-dashboard
+on:
+  schedule:
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: refresh-dashboard
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Generate dashboard
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+          GHL_LOCATION_ID: ${{ secrets.GHL_LOCATION_ID }}
+          OUTDIR: ${{ github.workspace }}
+          SKIP_DEPLOY: '1'
+        run: python3 dashboard_pipeline.py
+      - name: Publish to Pages
+        run: |
+          cp dashboard.html index.html
+          git config user.name "nl-bot"
+          git config user.email "bot@natscholibre"
+          git add index.html data.json
+          git commit -m "auto-refresh dashboard" || echo "sin cambios"
+          git push
