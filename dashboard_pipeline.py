@@ -71,6 +71,15 @@ for e in evs(TRIAGE_CAL,LJcut,now):
 for cal in ["VRaGr4KGSZNiuDamyV4q","ODbNZytVDUxJxry4QzmX"]:
     for e in evs(cal,LJcut,endf):
         if e.get("contactId"): cids.setdefault(e["contactId"],{})["clo"]=e
+def ev_name(info):
+    # el titulo del evento del calendario trae "Nombre Lead - Reunion ..."; nombre fiable sin depender de la ficha
+    for k in ("tri","clo"):
+        t=((info.get(k) or {}).get("title") or "").strip()
+        if not t: continue
+        n=re.split(r'\s+-\s+',t)[0].strip()
+        if n and not re.search(r'reuni|planificaci|validaci|introducci|estrateg|mensual|onboarding|asesor|mentor|entrevista',n,re.I):
+            return n
+    return ""
 def fc(cid):
     for a in range(4):  # reintenta si viene vacia (429/throttle de GHL devuelve JSON sin 'contact')
         c=cg(f"https://services.leadconnectorhq.com/contacts/{cid}",headers=H21).get("contact",{})
@@ -102,7 +111,7 @@ for cid,info in cids.items():
     c=cmap.get(cid) or {}
     cm={x.get("id"):x.get("value") for x in c.get("customFields",[])}
     tags=c.get("tags",[]) or []
-    nombre=c.get("contactName") or ((c.get("firstName") or "")+" "+(c.get("lastName") or "")).strip() or "(sin nombre)"
+    nombre=c.get("contactName") or ((c.get("firstName") or "")+" "+(c.get("lastName") or "")).strip() or ev_name(info) or "(sin nombre)"
     ficha=f"https://app.funnelup.io/v2/location/{LOC}/contacts/detail/{cid}"
     utm=((c.get("lastAttributionSource") or {}).get("utmSource") or (c.get("attributionSource") or {}).get("utmSource") or "").strip().lower()
     if utm in ("sara","sary"):
