@@ -71,9 +71,14 @@ for e in evs(TRIAGE_CAL,LJcut,now):
 for cal in ["VRaGr4KGSZNiuDamyV4q","ODbNZytVDUxJxry4QzmX"]:
     for e in evs(cal,LJcut,endf):
         if e.get("contactId"): cids.setdefault(e["contactId"],{})["clo"]=e
-def fc(cid): return cid, cg(f"https://services.leadconnectorhq.com/contacts/{cid}",headers=H21).get("contact",{})
+def fc(cid):
+    for a in range(4):  # reintenta si viene vacia (429/throttle de GHL devuelve JSON sin 'contact')
+        c=cg(f"https://services.leadconnectorhq.com/contacts/{cid}",headers=H21).get("contact",{})
+        if c: return cid,c
+        time.sleep(0.6*(a+1))
+    return cid,{}
 cmap={}
-with ThreadPoolExecutor(max_workers=8) as ex:
+with ThreadPoolExecutor(max_workers=4) as ex:
     for cid,c in ex.map(fc,list(cids)): cmap[cid]=c
 F={"prof":"I3MgyLftSnsPLPShebZH","setter":"lcFBOFN6VjZhvTgMFvuf","sf":"m7Sypf2v0DsMUl5EDv9D",
    "st":"BAdbcKq3A7Ks4kiaE9Vf","sc":"Gw71M4thYl2f0qTewdnV","rc":"dQQq7OBT7if2KbQv3mrx","cash":"fjnYS3QQDnOAhwa1je51",
