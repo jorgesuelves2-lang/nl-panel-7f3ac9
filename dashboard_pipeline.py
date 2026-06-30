@@ -99,7 +99,11 @@ for cid,info in cids.items():
     tags=c.get("tags",[]) or []
     nombre=c.get("contactName") or ((c.get("firstName") or "")+" "+(c.get("lastName") or "")).strip() or "(sin nombre)"
     ficha=f"https://app.funnelup.io/v2/location/{LOC}/contacts/detail/{cid}"
-    setter="Sara" if "Sara" in tags else ("Sary" if "Sary" in tags else (cm.get(F["setter"]) or ""))
+    utm=((c.get("lastAttributionSource") or {}).get("utmSource") or (c.get("attributionSource") or {}).get("utmSource") or "").strip().lower()
+    if utm in ("sara","sary"):
+        setter=utm.capitalize()  # utm_source del link de agenda = fuente principal y fiable
+    else:
+        setter="Sara" if "Sara" in tags else ("Sary" if "Sary" in tags else (cm.get(F["setter"]) or ""))
     fagenda=str((info.get("tri") or {}).get("startTime") or (info.get("clo") or {}).get("startTime") or "")[:10]
     leads.append({"nombre":nombre,"setter":setter,"prof":cm.get(F["prof"]) or "",
         "nivel":cm.get(F["nivel"]) or "","presup":cm.get(F["presup"]) or "","ingresos":cm.get(F["ingresos"]) or "",
