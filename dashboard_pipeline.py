@@ -105,7 +105,10 @@ for cid,info in cids.items():
     else:
         setter="Sara" if "Sara" in tags else ("Sary" if "Sary" in tags else (cm.get(F["setter"]) or ""))
     fagenda=str((info.get("tri") or {}).get("startTime") or (info.get("clo") or {}).get("startTime") or "")[:10]
-    leads.append({"nombre":nombre,"setter":setter,"prof":cm.get(F["prof"]) or "",
+    # solo leads REALES en la tabla (fichas fantasma/duplicadas sin nombre ni datos => fuera)
+    es_real=(nombre and nombre!="(sin nombre)") or c.get("email") or c.get("phone") or cm.get(F["prof"])
+    if es_real:
+      leads.append({"nombre":nombre,"setter":setter,"prof":cm.get(F["prof"]) or "",
         "nivel":cm.get(F["nivel"]) or "","presup":cm.get(F["presup"]) or "","ingresos":cm.get(F["ingresos"]) or "",
         "univ":cm.get(F["univ"]) or "","urg":cm.get(F["urg"]) or "","comp":cm.get(F["comp"]) or "",
         "obst":cm.get(F["obst"]) or "","canal":cm.get(F["canal"]) or "","ig":cm.get(F["ig"]) or "",
