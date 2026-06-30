@@ -77,7 +77,13 @@ with ThreadPoolExecutor(max_workers=8) as ex:
     for cid,c in ex.map(fc,list(cids)): cmap[cid]=c
 F={"prof":"I3MgyLftSnsPLPShebZH","setter":"lcFBOFN6VjZhvTgMFvuf","sf":"m7Sypf2v0DsMUl5EDv9D",
    "st":"BAdbcKq3A7Ks4kiaE9Vf","sc":"Gw71M4thYl2f0qTewdnV","rc":"dQQq7OBT7if2KbQv3mrx","cash":"fjnYS3QQDnOAhwa1je51",
-   "ticket":"qSSpqvVhQqBMd01jwaiB","pagado":"Atuyg9PkXzUA0Na2OOxQ"}
+   "ticket":"qSSpqvVhQqBMd01jwaiB","pagado":"Atuyg9PkXzUA0Na2OOxQ",
+   "ss":"pmdl73DA4oYGPByvNdPE","nivel":"Jf5rP3LxylCANhTb4My9","obst":"JLP6SgW6EzLqwbP1rJjm",
+   "presup":"Z7mdrH4OMIVxHoqSHMSC","ingresos":"R0ynaNT06KP0b8tggdZB","univ":"ihnDuK4eZxzSubfdRFcj",
+   "urg":"fFb774tASOa5l3sjN6lV","comp":"cA3DiOdTpyG5dJi8hMb3","ig":"mA0HbCszoRU4syOjXAHQ",
+   "canal":"eSHxDJMExlEXqP5tiBGn","closer":"X1bI7LUkc6wxJGuvMHrB","infocloser":"N4HJDy9VFhKhGCpwJoAk",
+   "infolead":"FoBSAwhN7pZ9bRVk9h3o","objtri":"3adftx5fU0SS60Z9HfL7","objclo":"irbogxFInHAcRdPZuEPM",
+   "estado":"3se8LQQqUMP1wp6CwXSZ","linktri":"EC5k5nHjjV9E5Vj6kkgp","linkclo":"EZqcLopGWnk2nUfMR5Yz"}
 def _num(v):
     try: return float(re.sub(r'[^0-9.]','',str(v))) if v not in (None,'') else 0.0
     except: return 0.0
@@ -93,9 +99,18 @@ for cid,info in cids.items():
     tags=c.get("tags",[]) or []
     nombre=c.get("contactName") or ((c.get("firstName") or "")+" "+(c.get("lastName") or "")).strip() or "(sin nombre)"
     ficha=f"https://app.funnelup.io/v2/location/{LOC}/contacts/detail/{cid}"
-    leads.append({"nombre":nombre,"prof":cm.get(F["prof"]) or "","setter":cm.get(F["setter"]) or "",
-        "sf":cm.get(F["sf"]),"st":cm.get(F["st"]),"sc":cm.get(F["sc"]),
-        "restri":restri(tags),"resclo":cm.get(F["rc"]) or "","cash":cm.get(F["cash"]) or "","ficha":ficha})
+    setter="Sara" if "Sara" in tags else ("Sary" if "Sary" in tags else (cm.get(F["setter"]) or ""))
+    fagenda=str((info.get("tri") or {}).get("startTime") or (info.get("clo") or {}).get("startTime") or "")[:10]
+    leads.append({"nombre":nombre,"setter":setter,"prof":cm.get(F["prof"]) or "",
+        "nivel":cm.get(F["nivel"]) or "","presup":cm.get(F["presup"]) or "","ingresos":cm.get(F["ingresos"]) or "",
+        "univ":cm.get(F["univ"]) or "","urg":cm.get(F["urg"]) or "","comp":cm.get(F["comp"]) or "",
+        "obst":cm.get(F["obst"]) or "","canal":cm.get(F["canal"]) or "","ig":cm.get(F["ig"]) or "",
+        "email":c.get("email") or "","tf":c.get("phone") or "","fagenda":fagenda,
+        "closer":cm.get(F["closer"]) or "","restri":restri(tags),"resclo":cm.get(F["rc"]) or "",
+        "estado":cm.get(F["estado"]) or "","ss":cm.get(F["ss"]),"stri":cm.get(F["st"]),"sclo":cm.get(F["sc"]),
+        "ticket":cm.get(F["ticket"]) or "","pagado":cm.get(F["pagado"]) or "",
+        "objtri":cm.get(F["objtri"]) or "","objclo":cm.get(F["objclo"]) or "",
+        "infocloser":cm.get(F["infocloser"]) or "","ficha":ficha})
     if "clo" in info:
         e=info["clo"]
         closing.append({"nombre":nombre,"fecha":str(e.get("startTime"))[:10],"estado":e.get("appointmentStatus",""),
