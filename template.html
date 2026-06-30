@@ -28,6 +28,7 @@ tr.nd td{color:var(--mut);font-style:italic;background:repeating-linear-gradient
 .bhctrl{display:flex;flex-wrap:wrap;gap:14px;align-items:center;font-size:13px;color:var(--mut);margin-bottom:10px;}
 .bhctrl select,.bhctrl input[type=number]{font-size:13px;padding:2px 4px;border:1px solid var(--bd);border-radius:6px;}
 .bhctrl input[type=number]{width:48px;}
+table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowrap;position:sticky;top:0;background:#fafbfc;} table.leadtbl td{white-space:nowrap;max-width:220px;overflow:hidden;text-overflow:ellipsis;}
 .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--mut);margin-bottom:8px;}
 .legend i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:4px;vertical-align:-1px;}
 .chartbox{position:relative;height:250px;}
@@ -111,8 +112,15 @@ tr.nd td{color:var(--mut);font-style:italic;background:repeating-linear-gradient
   </section>
 
   <section id="leads" class="hide">
-    <div class="sub" style="margin-bottom:10px">Una fila por lead que llegó al triaje/closing (desde febrero). "Ficha" abre el lead en Funnel Up.</div>
-    <div class="panel"><table id="l_table"></table></div>
+    <div class="sub" style="margin-bottom:10px">Una fila por lead que llegó al triaje/closing (desde febrero). Filtra por setter y busca por nombre. Click en cabeceras para ordenar. "Ficha" abre el lead en Funnel Up.</div>
+    <div class="bhctrl">
+      <span>Setter:
+        <select id="lf_setter"><option value="">Todos</option><option value="Sara">Sara</option><option value="Sary">Sary</option><option value="__none">Sin asignar</option></select>
+      </span>
+      <span>Buscar: <input id="lf_q" type="text" placeholder="nombre, profesión…" style="width:160px"></span>
+      <span id="l_resumen" style="color:var(--mut)"></span>
+    </div>
+    <div class="panel" style="overflow-x:auto"><table id="l_table" class="leadtbl"></table></div>
   </section>
 
   <section id="clientes" class="hide">
@@ -296,10 +304,30 @@ tr.nd td{color:var(--mut);font-style:italic;background:repeating-linear-gradient
    var cth='<thead><tr><th>Nombre</th><th>Fecha</th><th>Estado</th><th>Resultado</th><th>S.Cl</th><th>Cash</th><th>Ficha</th></tr></thead>';
    var cb=CL.map(function(r){return '<tr><td>'+r.nombre+'</td><td>'+(r.fecha||'').slice(5)+'</td><td>'+(r.estado||'')+'</td><td>'+(r.resclo||'—')+'</td><td>'+(r.sc!=null?r.sc:'—')+'</td><td>'+(r.cash||'—')+'</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>';}).join('');
    document.getElementById('c_table').innerHTML=cth+'<tbody>'+(cb||'<tr><td>Sin closings</td></tr>')+'</tbody>';
-   var lth='<thead><tr><th>Nombre</th><th>Profesión</th><th>Setter</th><th>S.Form</th><th>S.Tri</th><th>Res.Triaje</th><th>S.Cl</th><th>Res.Closing</th><th>Ficha</th></tr></thead>';
-   var lb=LD.map(function(r){return '<tr><td>'+r.nombre+'</td><td style="text-align:left">'+(r.prof||'').slice(0,26)+'</td><td>'+(r.setter||'—')+'</td><td>'+(r.sf!=null?r.sf:'—')+'</td><td>'+(r.st!=null?r.st:'—')+'</td><td>'+(r.restri||'—')+'</td><td>'+(r.sc!=null?r.sc:'—')+'</td><td>'+(r.resclo||'—')+'</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>';}).join('');
-   document.getElementById('l_table').innerHTML=lth+'<tbody>'+(lb||'<tr><td>Sin leads</td></tr>')+'</tbody>';
+   renderLeads();
  }
+ var LCOLS=[{k:'nombre',l:'Nombre'},{k:'setter',l:'Setter'},{k:'prof',l:'Profesión'},{k:'nivel',l:'Nivel'},{k:'presup',l:'Presupuesto'},{k:'ingresos',l:'Ingresos'},{k:'univ',l:'Universidad'},{k:'urg',l:'Urgencia'},{k:'comp',l:'Compromiso'},{k:'canal',l:'Canal'},{k:'fagenda',l:'Fecha agenda'},{k:'restri',l:'Res.Triaje'},{k:'stri',l:'S.Tri'},{k:'closer',l:'Closer'},{k:'resclo',l:'Res.Closing'},{k:'estado',l:'Estado'},{k:'sclo',l:'S.Cl'},{k:'ticket',l:'Ticket'},{k:'pagado',l:'Pagado'},{k:'ig',l:'IG'}];
+ var lSort={k:'fagenda',dir:-1};
+ function renderLeads(){
+   var LD=DATA.leads||[];
+   var st=document.getElementById('lf_setter').value, q=(document.getElementById('lf_q').value||'').toLowerCase();
+   var rows=LD.filter(function(r){
+     if(st==='__none'){ if(r.setter) return false; } else if(st){ if(r.setter!==st) return false; }
+     if(q){ if((((r.nombre||'')+' '+(r.prof||'')+' '+(r.email||'')).toLowerCase()).indexOf(q)<0) return false; }
+     return true;
+   });
+   rows.sort(function(a,b){ var k=lSort.k,va=a[k]==null?'':a[k],vb=b[k]==null?'':b[k],na=parseFloat(va),nb=parseFloat(vb);
+     if(!isNaN(na)&&!isNaN(nb)&&va!==''&&vb!=='') return (na-nb)*lSort.dir;
+     return String(va).localeCompare(String(vb))*lSort.dir; });
+   var bs={Sara:0,Sary:0,none:0};
+   LD.forEach(function(r){ r.setter==='Sara'?bs.Sara++:(r.setter==='Sary'?bs.Sary++:bs.none++); });
+   document.getElementById('l_resumen').innerHTML='Agendas: <b>'+LD.length+'</b> · Sara <b>'+bs.Sara+'</b> · Sary <b>'+bs.Sary+'</b> · sin asignar '+bs.none+' · (mostrando '+rows.length+')';
+   var th='<thead><tr>'+LCOLS.map(function(c){return '<th data-k="'+c.k+'">'+c.l+(lSort.k===c.k?(lSort.dir>0?' ▲':' ▼'):'')+'</th>';}).join('')+'<th>Ficha</th></tr></thead>';
+   var body=rows.map(function(r){ return '<tr>'+LCOLS.map(function(c){var v=r[c.k]; v=(v==null||v==='')?'—':String(v); var sh=v.replace(/"/g,"'"); return '<td title="'+sh+'">'+v+'</td>';}).join('')+'<td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>'; }).join('');
+   document.getElementById('l_table').innerHTML=th+'<tbody>'+(body||'<tr><td>Sin leads</td></tr>')+'</tbody>';
+   document.querySelectorAll('#l_table th[data-k]').forEach(function(h){h.onclick=function(){var k=h.dataset.k; if(lSort.k===k)lSort.dir=-lSort.dir; else {lSort.k=k;lSort.dir=1;} renderLeads();};});
+ }
+ document.getElementById('lf_setter').onchange=document.getElementById('lf_q').oninput=renderLeads;
  render(); renderStatic();
 })();
 </script>
