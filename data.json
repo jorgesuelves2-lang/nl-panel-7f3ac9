@@ -1,531 +1,531 @@
 {
- "generado": "2026-07-02 14:25",
+ "generado": "2026-07-02 16:04",
  "rango": "2026-02-01 a 2026-07-02",
  "setting": [
   {
    "dia": "2026-02-01",
-   "inb": 9,
-   "out": 1,
-   "nuevas": 10,
-   "total": 18,
-   "fups": 10,
-   "prop": 0,
+   "inb": 10,
+   "out": 8,
+   "nuevas": 18,
+   "total": 38,
+   "fups": 41,
+   "prop": 2,
    "agendas": 0,
-   "resp_min": 146,
+   "resp_min": 115,
    "nodata": false
   },
   {
    "dia": "2026-02-02",
-   "inb": 6,
-   "out": 13,
-   "nuevas": 19,
-   "total": 40,
-   "fups": 47,
-   "prop": 2,
+   "inb": 12,
+   "out": 24,
+   "nuevas": 36,
+   "total": 64,
+   "fups": 73,
+   "prop": 3,
    "agendas": 0,
-   "resp_min": 7,
+   "resp_min": 23,
    "nodata": false
   },
   {
    "dia": "2026-02-03",
-   "inb": 8,
-   "out": 22,
-   "nuevas": 30,
-   "total": 71,
-   "fups": 80,
-   "prop": 1,
+   "inb": 17,
+   "out": 33,
+   "nuevas": 50,
+   "total": 115,
+   "fups": 157,
+   "prop": 2,
    "agendas": 1,
-   "resp_min": 730,
+   "resp_min": 13,
    "nodata": false
   },
   {
    "dia": "2026-02-04",
-   "inb": 6,
-   "out": 21,
-   "nuevas": 27,
-   "total": 49,
-   "fups": 31,
-   "prop": 1,
-   "agendas": 0,
-   "resp_min": 150,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-05",
-   "inb": 1,
-   "out": 2,
-   "nuevas": 3,
-   "total": 17,
-   "fups": 26,
-   "prop": 0,
-   "agendas": 1,
-   "resp_min": 1017,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-06",
-   "inb": 2,
-   "out": 4,
-   "nuevas": 6,
-   "total": 15,
-   "fups": 20,
-   "prop": 4,
-   "agendas": 0,
-   "resp_min": 566,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-07",
-   "inb": 4,
-   "out": 4,
-   "nuevas": 8,
-   "total": 11,
-   "fups": 4,
-   "prop": 0,
-   "agendas": 4,
-   "resp_min": 145,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-08",
-   "inb": 3,
-   "out": 1,
-   "nuevas": 4,
-   "total": 9,
-   "fups": 7,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": 60,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-09",
-   "inb": 7,
-   "out": 7,
-   "nuevas": 14,
-   "total": 26,
-   "fups": 15,
-   "prop": 0,
-   "agendas": 1,
-   "resp_min": 214,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-10",
-   "inb": 6,
-   "out": 0,
-   "nuevas": 6,
-   "total": 14,
-   "fups": 8,
-   "prop": 0,
-   "agendas": 4,
-   "resp_min": 40,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-11",
-   "inb": 4,
-   "out": 5,
-   "nuevas": 9,
-   "total": 16,
-   "fups": 21,
-   "prop": 1,
-   "agendas": 2,
-   "resp_min": 498,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-12",
-   "inb": 3,
-   "out": 1,
-   "nuevas": 4,
-   "total": 11,
-   "fups": 6,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": 59,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-13",
-   "inb": 6,
-   "out": 3,
-   "nuevas": 9,
-   "total": 36,
-   "fups": 26,
-   "prop": 2,
-   "agendas": 2,
-   "resp_min": 165,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-14",
-   "inb": 5,
-   "out": 1,
-   "nuevas": 6,
-   "total": 21,
-   "fups": 17,
-   "prop": 2,
-   "agendas": 1,
-   "resp_min": 683,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-15",
-   "inb": 5,
-   "out": 3,
-   "nuevas": 8,
-   "total": 23,
-   "fups": 26,
-   "prop": 1,
-   "agendas": 0,
-   "resp_min": 32,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-16",
-   "inb": 2,
-   "out": 3,
-   "nuevas": 5,
-   "total": 25,
-   "fups": 19,
-   "prop": 1,
-   "agendas": 0,
-   "resp_min": 888,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-17",
-   "inb": 5,
-   "out": 2,
-   "nuevas": 7,
-   "total": 19,
-   "fups": 19,
-   "prop": 0,
-   "agendas": 5,
-   "resp_min": 89,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-18",
-   "inb": 6,
-   "out": 0,
-   "nuevas": 6,
-   "total": 24,
-   "fups": 18,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": 138,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-19",
-   "inb": 9,
-   "out": 7,
-   "nuevas": 16,
-   "total": 80,
-   "fups": 110,
-   "prop": 4,
-   "agendas": 1,
-   "resp_min": 60,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-20",
-   "inb": 9,
-   "out": 18,
-   "nuevas": 27,
-   "total": 58,
-   "fups": 55,
-   "prop": 1,
-   "agendas": 0,
-   "resp_min": 24,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-21",
-   "inb": 3,
-   "out": 18,
-   "nuevas": 21,
-   "total": 42,
-   "fups": 21,
-   "prop": 0,
-   "agendas": 4,
-   "resp_min": 312,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-22",
-   "inb": 8,
-   "out": 2,
-   "nuevas": 10,
-   "total": 13,
-   "fups": 5,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": 30,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-23",
-   "inb": 4,
-   "out": 2,
-   "nuevas": 6,
-   "total": 19,
-   "fups": 18,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": 43,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-24",
-   "inb": 2,
-   "out": 0,
-   "nuevas": 2,
-   "total": 10,
-   "fups": 24,
-   "prop": 1,
-   "agendas": 2,
-   "resp_min": 11,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-25",
-   "inb": 6,
-   "out": 1,
-   "nuevas": 7,
-   "total": 16,
-   "fups": 15,
-   "prop": 1,
-   "agendas": 2,
-   "resp_min": 22,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-26",
-   "inb": 8,
-   "out": 1,
-   "nuevas": 9,
-   "total": 13,
-   "fups": 6,
-   "prop": 0,
-   "agendas": 2,
-   "resp_min": 158,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-27",
-   "inb": 5,
-   "out": 1,
-   "nuevas": 6,
-   "total": 19,
-   "fups": 20,
-   "prop": 0,
-   "agendas": 2,
-   "resp_min": 20,
-   "nodata": false
-  },
-  {
-   "dia": "2026-02-28",
-   "inb": 1,
-   "out": 3,
-   "nuevas": 4,
-   "total": 12,
-   "fups": 15,
-   "prop": 2,
-   "agendas": 1,
-   "resp_min": 410,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-01",
-   "inb": 0,
-   "out": 7,
-   "nuevas": 7,
-   "total": 14,
-   "fups": 11,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": null,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-02",
-   "inb": 9,
-   "out": 1,
-   "nuevas": 10,
-   "total": 18,
-   "fups": 20,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": 153,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-03",
-   "inb": 1,
-   "out": 2,
-   "nuevas": 3,
-   "total": 20,
-   "fups": 28,
-   "prop": 1,
-   "agendas": 2,
-   "resp_min": 33,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-04",
-   "inb": 6,
-   "out": 5,
-   "nuevas": 11,
-   "total": 70,
-   "fups": 94,
-   "prop": 2,
-   "agendas": 0,
-   "resp_min": 2,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-05",
-   "inb": 11,
-   "out": 37,
-   "nuevas": 48,
-   "total": 73,
-   "fups": 64,
-   "prop": 2,
-   "agendas": 0,
-   "resp_min": 43,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-06",
-   "inb": 2,
-   "out": 6,
-   "nuevas": 8,
-   "total": 26,
-   "fups": 36,
-   "prop": 1,
-   "agendas": 0,
-   "resp_min": 14,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-07",
-   "inb": 4,
-   "out": 4,
-   "nuevas": 8,
-   "total": 19,
-   "fups": 37,
-   "prop": 1,
-   "agendas": 1,
-   "resp_min": 34,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-08",
-   "inb": 2,
-   "out": 26,
-   "nuevas": 28,
-   "total": 41,
-   "fups": 39,
+   "inb": 12,
+   "out": 29,
+   "nuevas": 41,
+   "total": 74,
+   "fups": 48,
    "prop": 1,
    "agendas": 0,
    "resp_min": 58,
    "nodata": false
   },
   {
-   "dia": "2026-03-09",
-   "inb": 3,
-   "out": 57,
-   "nuevas": 60,
-   "total": 103,
-   "fups": 74,
+   "dia": "2026-02-05",
+   "inb": 10,
+   "out": 37,
+   "nuevas": 47,
+   "total": 96,
+   "fups": 136,
+   "prop": 7,
+   "agendas": 1,
+   "resp_min": 104,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-06",
+   "inb": 8,
+   "out": 45,
+   "nuevas": 53,
+   "total": 90,
+   "fups": 59,
+   "prop": 1,
+   "agendas": 0,
+   "resp_min": 22,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-07",
+   "inb": 7,
+   "out": 21,
+   "nuevas": 28,
+   "total": 97,
+   "fups": 98,
+   "prop": 2,
+   "agendas": 4,
+   "resp_min": 71,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-08",
+   "inb": 10,
+   "out": 31,
+   "nuevas": 41,
+   "total": 56,
+   "fups": 24,
+   "prop": 1,
+   "agendas": 0,
+   "resp_min": 190,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-09",
+   "inb": 7,
+   "out": 42,
+   "nuevas": 49,
+   "total": 90,
+   "fups": 95,
    "prop": 3,
+   "agendas": 1,
+   "resp_min": 247,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-10",
+   "inb": 6,
+   "out": 19,
+   "nuevas": 25,
+   "total": 59,
+   "fups": 65,
+   "prop": 5,
+   "agendas": 4,
+   "resp_min": 409,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-11",
+   "inb": 4,
+   "out": 25,
+   "nuevas": 29,
+   "total": 56,
+   "fups": 81,
+   "prop": 2,
    "agendas": 2,
-   "resp_min": 4,
+   "resp_min": 199,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-12",
+   "inb": 4,
+   "out": 36,
+   "nuevas": 40,
+   "total": 75,
+   "fups": 71,
+   "prop": 6,
+   "agendas": 0,
+   "resp_min": 36,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-13",
+   "inb": 2,
+   "out": 18,
+   "nuevas": 20,
+   "total": 111,
+   "fups": 110,
+   "prop": 1,
+   "agendas": 2,
+   "resp_min": 328,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-14",
+   "inb": 0,
+   "out": 12,
+   "nuevas": 12,
+   "total": 27,
+   "fups": 30,
+   "prop": 1,
+   "agendas": 1,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-15",
+   "inb": 0,
+   "out": 3,
+   "nuevas": 3,
+   "total": 15,
+   "fups": 20,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-16",
+   "inb": 1,
+   "out": 18,
+   "nuevas": 19,
+   "total": 29,
+   "fups": 7,
+   "prop": 1,
+   "agendas": 0,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-17",
+   "inb": 5,
+   "out": 9,
+   "nuevas": 14,
+   "total": 26,
+   "fups": 14,
+   "prop": 1,
+   "agendas": 5,
+   "resp_min": 37,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-18",
+   "inb": 7,
+   "out": 1,
+   "nuevas": 8,
+   "total": 26,
+   "fups": 21,
+   "prop": 1,
+   "agendas": 0,
+   "resp_min": 162,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-19",
+   "inb": 5,
+   "out": 8,
+   "nuevas": 13,
+   "total": 44,
+   "fups": 58,
+   "prop": 2,
+   "agendas": 1,
+   "resp_min": 413,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-20",
+   "inb": 9,
+   "out": 20,
+   "nuevas": 29,
+   "total": 57,
+   "fups": 45,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": 9,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-21",
+   "inb": 3,
+   "out": 20,
+   "nuevas": 23,
+   "total": 41,
+   "fups": 28,
+   "prop": 0,
+   "agendas": 4,
+   "resp_min": 52,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-22",
+   "inb": 2,
+   "out": 8,
+   "nuevas": 10,
+   "total": 18,
+   "fups": 4,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": 18,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-23",
+   "inb": 2,
+   "out": 3,
+   "nuevas": 5,
+   "total": 17,
+   "fups": 20,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": 54,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-24",
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 8,
+   "fups": 19,
+   "prop": 2,
+   "agendas": 2,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-25",
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 6,
+   "fups": 6,
+   "prop": 0,
+   "agendas": 2,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-26",
+   "inb": 1,
+   "out": 1,
+   "nuevas": 2,
+   "total": 6,
+   "fups": 6,
+   "prop": 1,
+   "agendas": 2,
+   "resp_min": 117,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-27",
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 5,
+   "fups": 10,
+   "prop": 0,
+   "agendas": 2,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-02-28",
+   "inb": 1,
+   "out": 0,
+   "nuevas": 1,
+   "total": 3,
+   "fups": 1,
+   "prop": 0,
+   "agendas": 1,
+   "resp_min": 683,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-01",
+   "inb": 3,
+   "out": 28,
+   "nuevas": 31,
+   "total": 53,
+   "fups": 37,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": 42,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-02",
+   "inb": 7,
+   "out": 7,
+   "nuevas": 14,
+   "total": 29,
+   "fups": 16,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": 3,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-03",
+   "inb": 2,
+   "out": 17,
+   "nuevas": 19,
+   "total": 33,
+   "fups": 19,
+   "prop": 0,
+   "agendas": 2,
+   "resp_min": 10,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-04",
+   "inb": 0,
+   "out": 5,
+   "nuevas": 5,
+   "total": 16,
+   "fups": 21,
+   "prop": 1,
+   "agendas": 0,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-05",
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 3,
+   "fups": 6,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-06",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 11,
+   "fups": 10,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-07",
+   "inb": 1,
+   "out": 3,
+   "nuevas": 4,
+   "total": 9,
+   "fups": 16,
+   "prop": 1,
+   "agendas": 1,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-08",
+   "inb": 1,
+   "out": 12,
+   "nuevas": 13,
+   "total": 22,
+   "fups": 12,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-09",
+   "inb": 2,
+   "out": 52,
+   "nuevas": 54,
+   "total": 83,
+   "fups": 50,
+   "prop": 1,
+   "agendas": 2,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-03-10",
-   "inb": 12,
-   "out": 86,
-   "nuevas": 98,
-   "total": 205,
-   "fups": 129,
-   "prop": 1,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 1,
+   "fups": 0,
+   "prop": 0,
    "agendas": 2,
-   "resp_min": 48,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-03-11",
-   "inb": 6,
-   "out": 24,
-   "nuevas": 30,
-   "total": 75,
-   "fups": 82,
-   "prop": 1,
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 6,
+   "fups": 11,
+   "prop": 0,
    "agendas": 1,
-   "resp_min": 101,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-03-12",
-   "inb": 6,
-   "out": 44,
-   "nuevas": 50,
-   "total": 95,
-   "fups": 79,
+   "inb": 2,
+   "out": 1,
+   "nuevas": 3,
+   "total": 4,
+   "fups": 4,
    "prop": 0,
    "agendas": 3,
-   "resp_min": 143,
+   "resp_min": 291,
    "nodata": false
   },
   {
    "dia": "2026-03-13",
-   "inb": 4,
-   "out": 50,
-   "nuevas": 54,
-   "total": 83,
-   "fups": 72,
-   "prop": 2,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 6,
+   "fups": 7,
+   "prop": 0,
    "agendas": 0,
-   "resp_min": 5,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-03-14",
-   "inb": 3,
-   "out": 5,
-   "nuevas": 8,
-   "total": 17,
-   "fups": 12,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 3,
+   "fups": 1,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 360,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-03-15",
-   "inb": 2,
-   "out": 46,
-   "nuevas": 48,
-   "total": 82,
-   "fups": 51,
-   "prop": 1,
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 2,
+   "fups": 3,
+   "prop": 0,
    "agendas": 0,
-   "resp_min": 51,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-03-16",
-   "inb": 3,
-   "out": 40,
-   "nuevas": 43,
-   "total": 64,
-   "fups": 93,
-   "prop": 2,
+   "inb": 1,
+   "out": 6,
+   "nuevas": 7,
+   "total": 9,
+   "fups": 32,
+   "prop": 0,
    "agendas": 3,
    "resp_min": 4,
    "nodata": false
@@ -533,11 +533,11 @@
   {
    "dia": "2026-03-17",
    "inb": 9,
-   "out": 58,
-   "nuevas": 67,
-   "total": 85,
-   "fups": 47,
-   "prop": 2,
+   "out": 46,
+   "nuevas": 55,
+   "total": 71,
+   "fups": 50,
+   "prop": 1,
    "agendas": 1,
    "resp_min": 58,
    "nodata": false
@@ -545,35 +545,35 @@
   {
    "dia": "2026-03-18",
    "inb": 0,
-   "out": 10,
-   "nuevas": 10,
-   "total": 18,
-   "fups": 15,
-   "prop": 0,
+   "out": 19,
+   "nuevas": 19,
+   "total": 30,
+   "fups": 33,
+   "prop": 1,
    "agendas": 1,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-03-19",
-   "inb": 2,
-   "out": 52,
-   "nuevas": 54,
-   "total": 73,
-   "fups": 63,
-   "prop": 3,
+   "inb": 0,
+   "out": 9,
+   "nuevas": 9,
+   "total": 21,
+   "fups": 14,
+   "prop": 0,
    "agendas": 0,
-   "resp_min": 1,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-03-20",
    "inb": 0,
-   "out": 29,
-   "nuevas": 29,
-   "total": 38,
-   "fups": 18,
-   "prop": 1,
+   "out": 0,
+   "nuevas": 0,
+   "total": 2,
+   "fups": 1,
+   "prop": 0,
    "agendas": 2,
    "resp_min": null,
    "nodata": false
@@ -581,9 +581,9 @@
   {
    "dia": "2026-03-21",
    "inb": 0,
-   "out": 4,
-   "nuevas": 4,
-   "total": 4,
+   "out": 0,
+   "nuevas": 0,
+   "total": 1,
    "fups": 0,
    "prop": 0,
    "agendas": 2,
@@ -592,11 +592,11 @@
   },
   {
    "dia": "2026-03-22",
-   "inb": 1,
+   "inb": 0,
    "out": 0,
-   "nuevas": 1,
+   "nuevas": 0,
    "total": 3,
-   "fups": 2,
+   "fups": 7,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -607,8 +607,8 @@
    "inb": 0,
    "out": 0,
    "nuevas": 0,
-   "total": 3,
-   "fups": 7,
+   "total": 1,
+   "fups": 0,
    "prop": 0,
    "agendas": 3,
    "resp_min": null,
@@ -616,50 +616,50 @@
   },
   {
    "dia": "2026-03-24",
-   "inb": 1,
-   "out": 3,
-   "nuevas": 4,
-   "total": 8,
-   "fups": 5,
-   "prop": 1,
-   "agendas": 1,
-   "resp_min": 3,
-   "nodata": false
-  },
-  {
-   "dia": "2026-03-25",
    "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 9,
-   "fups": 10,
+   "out": 2,
+   "nuevas": 2,
+   "total": 7,
+   "fups": 4,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
    "nodata": false
   },
   {
-   "dia": "2026-03-26",
-   "inb": 3,
-   "out": 24,
-   "nuevas": 27,
-   "total": 34,
-   "fups": 20,
+   "dia": "2026-03-25",
+   "inb": 2,
+   "out": 6,
+   "nuevas": 8,
+   "total": 16,
+   "fups": 43,
    "prop": 1,
+   "agendas": 1,
+   "resp_min": 72,
+   "nodata": false
+  },
+  {
+   "dia": "2026-03-26",
+   "inb": 1,
+   "out": 65,
+   "nuevas": 66,
+   "total": 87,
+   "fups": 50,
+   "prop": 2,
    "agendas": 3,
-   "resp_min": 342,
+   "resp_min": 7,
    "nodata": false
   },
   {
    "dia": "2026-03-27",
-   "inb": 2,
-   "out": 53,
-   "nuevas": 55,
-   "total": 79,
-   "fups": 62,
-   "prop": 3,
+   "inb": 0,
+   "out": 12,
+   "nuevas": 12,
+   "total": 18,
+   "fups": 9,
+   "prop": 0,
    "agendas": 1,
-   "resp_min": 128,
+   "resp_min": null,
    "nodata": false
   },
   {
@@ -668,7 +668,7 @@
    "out": 0,
    "nuevas": 0,
    "total": 1,
-   "fups": 1,
+   "fups": 3,
    "prop": 0,
    "agendas": 4,
    "resp_min": null,
@@ -676,50 +676,50 @@
   },
   {
    "dia": "2026-03-29",
-   "inb": 1,
-   "out": 1,
-   "nuevas": 2,
-   "total": 3,
-   "fups": 0,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 2,
+   "fups": 1,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 106,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-03-30",
-   "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 5,
-   "fups": 5,
+   "inb": 1,
+   "out": 3,
+   "nuevas": 4,
+   "total": 6,
+   "fups": 2,
    "prop": 0,
    "agendas": 3,
-   "resp_min": null,
+   "resp_min": 182,
    "nodata": false
   },
   {
    "dia": "2026-03-31",
-   "inb": 0,
-   "out": 2,
+   "inb": 1,
+   "out": 1,
    "nuevas": 2,
-   "total": 5,
-   "fups": 2,
+   "total": 2,
+   "fups": 0,
    "prop": 0,
    "agendas": 2,
-   "resp_min": null,
+   "resp_min": 31,
    "nodata": false
   },
   {
    "dia": "2026-04-01",
-   "inb": 1,
+   "inb": 0,
    "out": 0,
-   "nuevas": 1,
+   "nuevas": 0,
    "total": 3,
-   "fups": 7,
+   "fups": 5,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 0,
+   "resp_min": null,
    "nodata": false
   },
   {
@@ -727,32 +727,32 @@
    "inb": 1,
    "out": 1,
    "nuevas": 2,
-   "total": 2,
+   "total": 3,
    "fups": 1,
    "prop": 0,
    "agendas": 3,
-   "resp_min": 192,
+   "resp_min": 16,
    "nodata": false
   },
   {
    "dia": "2026-04-03",
-   "inb": 2,
-   "out": 0,
-   "nuevas": 2,
-   "total": 7,
-   "fups": 3,
+   "inb": 0,
+   "out": 5,
+   "nuevas": 5,
+   "total": 5,
+   "fups": 4,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 67,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-04",
-   "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 2,
-   "fups": 0,
+   "inb": 1,
+   "out": 3,
+   "nuevas": 4,
+   "total": 6,
+   "fups": 5,
    "prop": 0,
    "agendas": 2,
    "resp_min": null,
@@ -760,60 +760,60 @@
   },
   {
    "dia": "2026-04-05",
-   "inb": 1,
-   "out": 0,
-   "nuevas": 1,
-   "total": 2,
-   "fups": 7,
-   "prop": 0,
-   "agendas": 0,
-   "resp_min": 8,
-   "nodata": false
-  },
-  {
-   "dia": "2026-04-06",
    "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 2,
-   "fups": 6,
-   "prop": 0,
+   "out": 5,
+   "nuevas": 5,
+   "total": 10,
+   "fups": 15,
+   "prop": 1,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
+   "dia": "2026-04-06",
+   "inb": 1,
+   "out": 4,
+   "nuevas": 5,
+   "total": 17,
+   "fups": 49,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": 2,
+   "nodata": false
+  },
+  {
    "dia": "2026-04-07",
    "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 1,
-   "fups": 1,
-   "prop": 0,
+   "out": 3,
+   "nuevas": 3,
+   "total": 8,
+   "fups": 8,
+   "prop": 1,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-08",
-   "inb": 1,
+   "inb": 0,
    "out": 3,
-   "nuevas": 4,
-   "total": 13,
-   "fups": 11,
+   "nuevas": 3,
+   "total": 33,
+   "fups": 61,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 31,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-09",
-   "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 5,
-   "fups": 12,
-   "prop": 0,
+   "inb": 1,
+   "out": 15,
+   "nuevas": 16,
+   "total": 29,
+   "fups": 27,
+   "prop": 2,
    "agendas": 3,
    "resp_min": null,
    "nodata": false
@@ -821,22 +821,22 @@
   {
    "dia": "2026-04-10",
    "inb": 0,
-   "out": 5,
-   "nuevas": 5,
-   "total": 14,
-   "fups": 22,
-   "prop": 0,
+   "out": 52,
+   "nuevas": 52,
+   "total": 78,
+   "fups": 35,
+   "prop": 1,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-11",
-   "inb": 1,
-   "out": 25,
-   "nuevas": 26,
-   "total": 32,
-   "fups": 10,
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 4,
+   "fups": 5,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
@@ -844,35 +844,35 @@
   },
   {
    "dia": "2026-04-12",
-   "inb": 3,
-   "out": 11,
-   "nuevas": 14,
-   "total": 20,
-   "fups": 21,
-   "prop": 1,
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 4,
+   "fups": 4,
+   "prop": 0,
    "agendas": 2,
-   "resp_min": 84,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-13",
    "inb": 1,
-   "out": 49,
-   "nuevas": 50,
-   "total": 56,
-   "fups": 4,
+   "out": 0,
+   "nuevas": 1,
+   "total": 2,
+   "fups": 0,
    "prop": 0,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 202,
    "nodata": false
   },
   {
    "dia": "2026-04-14",
    "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 1,
-   "fups": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 4,
+   "fups": 4,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
@@ -880,60 +880,60 @@
   },
   {
    "dia": "2026-04-15",
-   "inb": 1,
+   "inb": 0,
    "out": 1,
-   "nuevas": 2,
-   "total": 2,
-   "fups": 0,
+   "nuevas": 1,
+   "total": 5,
+   "fups": 9,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 353,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-16",
-   "inb": 0,
+   "inb": 1,
    "out": 0,
-   "nuevas": 0,
-   "total": 9,
-   "fups": 8,
-   "prop": 0,
+   "nuevas": 1,
+   "total": 15,
+   "fups": 33,
+   "prop": 2,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-17",
-   "inb": 1,
-   "out": 1,
-   "nuevas": 2,
-   "total": 4,
-   "fups": 1,
-   "prop": 0,
+   "inb": 2,
+   "out": 2,
+   "nuevas": 4,
+   "total": 26,
+   "fups": 77,
+   "prop": 1,
    "agendas": 2,
-   "resp_min": 0,
+   "resp_min": 92,
    "nodata": false
   },
   {
    "dia": "2026-04-18",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 2,
-   "fups": 1,
-   "prop": 0,
+   "inb": 2,
+   "out": 7,
+   "nuevas": 9,
+   "total": 21,
+   "fups": 21,
+   "prop": 2,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 9,
    "nodata": false
   },
   {
    "dia": "2026-04-19",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 2,
-   "fups": 12,
-   "prop": 1,
+   "inb": 2,
+   "out": 45,
+   "nuevas": 47,
+   "total": 60,
+   "fups": 7,
+   "prop": 0,
    "agendas": 1,
    "resp_min": null,
    "nodata": false
@@ -941,25 +941,25 @@
   {
    "dia": "2026-04-20",
    "inb": 1,
-   "out": 3,
-   "nuevas": 4,
-   "total": 5,
-   "fups": 4,
+   "out": 13,
+   "nuevas": 14,
+   "total": 25,
+   "fups": 5,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 535,
+   "resp_min": 414,
    "nodata": false
   },
   {
    "dia": "2026-04-21",
-   "inb": 1,
-   "out": 0,
+   "inb": 0,
+   "out": 1,
    "nuevas": 1,
-   "total": 6,
-   "fups": 20,
-   "prop": 1,
+   "total": 5,
+   "fups": 10,
+   "prop": 0,
    "agendas": 1,
-   "resp_min": 9,
+   "resp_min": null,
    "nodata": false
   },
   {
@@ -967,83 +967,83 @@
    "inb": 1,
    "out": 1,
    "nuevas": 2,
-   "total": 8,
-   "fups": 16,
-   "prop": 1,
+   "total": 5,
+   "fups": 3,
+   "prop": 0,
    "agendas": 0,
-   "resp_min": 59,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-23",
    "inb": 0,
-   "out": 36,
-   "nuevas": 36,
-   "total": 72,
-   "fups": 49,
-   "prop": 2,
+   "out": 2,
+   "nuevas": 2,
+   "total": 8,
+   "fups": 5,
+   "prop": 1,
    "agendas": 2,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-24",
-   "inb": 2,
-   "out": 33,
-   "nuevas": 35,
-   "total": 42,
-   "fups": 7,
+   "inb": 0,
+   "out": 5,
+   "nuevas": 5,
+   "total": 8,
+   "fups": 4,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 753,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-25",
-   "inb": 4,
-   "out": 0,
+   "inb": 1,
+   "out": 3,
    "nuevas": 4,
-   "total": 5,
-   "fups": 16,
-   "prop": 1,
+   "total": 10,
+   "fups": 11,
+   "prop": 0,
    "agendas": 0,
-   "resp_min": 639,
+   "resp_min": 1367,
    "nodata": false
   },
   {
    "dia": "2026-04-26",
-   "inb": 3,
-   "out": 0,
-   "nuevas": 3,
-   "total": 8,
-   "fups": 0,
-   "prop": 0,
+   "inb": 2,
+   "out": 8,
+   "nuevas": 10,
+   "total": 19,
+   "fups": 36,
+   "prop": 3,
    "agendas": 0,
-   "resp_min": 138,
+   "resp_min": 195,
    "nodata": false
   },
   {
    "dia": "2026-04-27",
-   "inb": 3,
-   "out": 4,
-   "nuevas": 7,
-   "total": 10,
-   "fups": 6,
+   "inb": 1,
+   "out": 13,
+   "nuevas": 14,
+   "total": 30,
+   "fups": 36,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 415,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-28",
-   "inb": 5,
-   "out": 1,
-   "nuevas": 6,
-   "total": 9,
-   "fups": 1,
-   "prop": 0,
+   "inb": 4,
+   "out": 48,
+   "nuevas": 52,
+   "total": 79,
+   "fups": 18,
+   "prop": 1,
    "agendas": 3,
-   "resp_min": 208,
+   "resp_min": 146,
    "nodata": false
   },
   {
@@ -1051,20 +1051,20 @@
    "inb": 1,
    "out": 1,
    "nuevas": 2,
-   "total": 2,
-   "fups": 0,
+   "total": 10,
+   "fups": 12,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 639,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-30",
-   "inb": 1,
+   "inb": 0,
    "out": 0,
-   "nuevas": 1,
-   "total": 4,
-   "fups": 1,
+   "nuevas": 0,
+   "total": 5,
+   "fups": 5,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
@@ -1072,11 +1072,11 @@
   },
   {
    "dia": "2026-05-01",
-   "inb": 0,
+   "inb": 2,
    "out": 2,
-   "nuevas": 2,
-   "total": 6,
-   "fups": 6,
+   "nuevas": 4,
+   "total": 10,
+   "fups": 10,
    "prop": 0,
    "agendas": 2,
    "resp_min": null,
@@ -1085,57 +1085,9 @@
   {
    "dia": "2026-05-02",
    "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 5,
-   "fups": 15,
-   "prop": 1,
-   "agendas": 1,
-   "resp_min": null,
-   "nodata": false
-  },
-  {
-   "dia": "2026-05-03",
-   "inb": 8,
-   "out": 30,
-   "nuevas": 38,
-   "total": 45,
-   "fups": 18,
-   "prop": 2,
-   "agendas": 0,
-   "resp_min": 39,
-   "nodata": false
-  },
-  {
-   "dia": "2026-05-04",
-   "inb": 4,
-   "out": 26,
-   "nuevas": 30,
-   "total": 62,
-   "fups": 41,
-   "prop": 2,
-   "agendas": 1,
-   "resp_min": 217,
-   "nodata": false
-  },
-  {
-   "dia": "2026-05-05",
-   "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 5,
-   "fups": 4,
-   "prop": 0,
-   "agendas": 2,
-   "resp_min": null,
-   "nodata": false
-  },
-  {
-   "dia": "2026-05-06",
-   "inb": 0,
    "out": 0,
    "nuevas": 0,
-   "total": 1,
+   "total": 4,
    "fups": 1,
    "prop": 0,
    "agendas": 1,
@@ -1143,11 +1095,59 @@
    "nodata": false
   },
   {
+   "dia": "2026-05-03",
+   "inb": 2,
+   "out": 2,
+   "nuevas": 4,
+   "total": 7,
+   "fups": 4,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": 706,
+   "nodata": false
+  },
+  {
+   "dia": "2026-05-04",
+   "inb": 2,
+   "out": 3,
+   "nuevas": 5,
+   "total": 17,
+   "fups": 20,
+   "prop": 2,
+   "agendas": 1,
+   "resp_min": 38,
+   "nodata": false
+  },
+  {
+   "dia": "2026-05-05",
+   "inb": 1,
+   "out": 5,
+   "nuevas": 6,
+   "total": 21,
+   "fups": 28,
+   "prop": 0,
+   "agendas": 2,
+   "resp_min": 217,
+   "nodata": false
+  },
+  {
+   "dia": "2026-05-06",
+   "inb": 5,
+   "out": 66,
+   "nuevas": 71,
+   "total": 104,
+   "fups": 59,
+   "prop": 2,
+   "agendas": 1,
+   "resp_min": 293,
+   "nodata": false
+  },
+  {
    "dia": "2026-05-07",
    "inb": 0,
    "out": 0,
    "nuevas": 0,
-   "total": 0,
+   "total": 1,
    "fups": 0,
    "prop": 0,
    "agendas": 3,
@@ -1159,8 +1159,8 @@
    "inb": 0,
    "out": 0,
    "nuevas": 0,
-   "total": 2,
-   "fups": 2,
+   "total": 3,
+   "fups": 3,
    "prop": 0,
    "agendas": 3,
    "resp_min": null,
@@ -1480,35 +1480,35 @@
   },
   {
    "dia": "2026-06-04",
-   "inb": 1,
-   "out": 1,
+   "inb": 0,
+   "out": 2,
    "nuevas": 2,
    "total": 2,
-   "fups": 0,
+   "fups": 2,
    "prop": 0,
    "agendas": 5,
-   "resp_min": 19,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-05",
    "inb": 1,
-   "out": 6,
-   "nuevas": 7,
-   "total": 7,
+   "out": 3,
+   "nuevas": 4,
+   "total": 6,
    "fups": 1,
    "prop": 0,
    "agendas": 2,
-   "resp_min": 22,
+   "resp_min": 844,
    "nodata": false
   },
   {
    "dia": "2026-06-06",
    "inb": 0,
-   "out": 5,
-   "nuevas": 5,
-   "total": 9,
-   "fups": 4,
+   "out": 1,
+   "nuevas": 1,
+   "total": 5,
+   "fups": 1,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
@@ -1516,71 +1516,71 @@
   },
   {
    "dia": "2026-06-07",
-   "inb": 5,
-   "out": 6,
-   "nuevas": 11,
-   "total": 31,
-   "fups": 5,
+   "inb": 1,
+   "out": 1,
+   "nuevas": 2,
+   "total": 5,
+   "fups": 1,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 252,
+   "resp_min": 209,
    "nodata": false
   },
   {
    "dia": "2026-06-08",
-   "inb": 2,
-   "out": 20,
-   "nuevas": 22,
-   "total": 35,
-   "fups": 28,
+   "inb": 0,
+   "out": 5,
+   "nuevas": 5,
+   "total": 8,
+   "fups": 21,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 395,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-09",
-   "inb": 1,
-   "out": 42,
-   "nuevas": 43,
-   "total": 46,
-   "fups": 5,
-   "prop": 0,
+   "inb": 0,
+   "out": 5,
+   "nuevas": 5,
+   "total": 11,
+   "fups": 6,
+   "prop": 1,
    "agendas": 1,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-10",
-   "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 5,
-   "fups": 3,
+   "inb": 3,
+   "out": 73,
+   "nuevas": 76,
+   "total": 91,
+   "fups": 17,
    "prop": 0,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 35,
    "nodata": false
   },
   {
    "dia": "2026-06-11",
    "inb": 1,
-   "out": 0,
-   "nuevas": 1,
-   "total": 9,
-   "fups": 11,
+   "out": 7,
+   "nuevas": 8,
+   "total": 15,
+   "fups": 7,
    "prop": 0,
    "agendas": 2,
-   "resp_min": null,
+   "resp_min": 344,
    "nodata": false
   },
   {
    "dia": "2026-06-12",
-   "inb": 2,
+   "inb": 0,
    "out": 0,
-   "nuevas": 2,
-   "total": 3,
-   "fups": 1,
+   "nuevas": 0,
+   "total": 1,
+   "fups": 0,
    "prop": 0,
    "agendas": 2,
    "resp_min": null,
@@ -1588,47 +1588,47 @@
   },
   {
    "dia": "2026-06-13",
-   "inb": 1,
-   "out": 2,
-   "nuevas": 3,
-   "total": 8,
-   "fups": 6,
+   "inb": 2,
+   "out": 0,
+   "nuevas": 2,
+   "total": 5,
+   "fups": 2,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 744,
+   "resp_min": 114,
    "nodata": false
   },
   {
    "dia": "2026-06-14",
-   "inb": 4,
-   "out": 4,
-   "nuevas": 8,
-   "total": 14,
-   "fups": 8,
+   "inb": 1,
+   "out": 0,
+   "nuevas": 1,
+   "total": 4,
+   "fups": 5,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 780,
+   "resp_min": 42,
    "nodata": false
   },
   {
    "dia": "2026-06-15",
    "inb": 0,
-   "out": 8,
-   "nuevas": 8,
-   "total": 32,
-   "fups": 27,
-   "prop": 1,
+   "out": 2,
+   "nuevas": 2,
+   "total": 8,
+   "fups": 8,
+   "prop": 0,
    "agendas": 1,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-16",
-   "inb": 1,
-   "out": 3,
-   "nuevas": 4,
-   "total": 10,
-   "fups": 14,
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 1,
+   "fups": 0,
    "prop": 0,
    "agendas": 2,
    "resp_min": null,
@@ -1636,59 +1636,59 @@
   },
   {
    "dia": "2026-06-17",
-   "inb": 0,
+   "inb": 1,
    "out": 1,
-   "nuevas": 1,
-   "total": 12,
-   "fups": 26,
-   "prop": 3,
+   "nuevas": 2,
+   "total": 10,
+   "fups": 11,
+   "prop": 1,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 1267,
    "nodata": false
   },
   {
    "dia": "2026-06-18",
-   "inb": 3,
-   "out": 21,
-   "nuevas": 24,
-   "total": 85,
-   "fups": 76,
-   "prop": 1,
+   "inb": 2,
+   "out": 5,
+   "nuevas": 7,
+   "total": 17,
+   "fups": 17,
+   "prop": 0,
    "agendas": 3,
-   "resp_min": null,
+   "resp_min": 214,
    "nodata": false
   },
   {
    "dia": "2026-06-19",
-   "inb": 2,
-   "out": 19,
-   "nuevas": 21,
-   "total": 30,
-   "fups": 3,
-   "prop": 0,
+   "inb": 4,
+   "out": 20,
+   "nuevas": 24,
+   "total": 40,
+   "fups": 11,
+   "prop": 1,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 1180,
    "nodata": false
   },
   {
    "dia": "2026-06-20",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 1,
-   "fups": 2,
+   "inb": 3,
+   "out": 30,
+   "nuevas": 33,
+   "total": 55,
+   "fups": 18,
    "prop": 0,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 412,
    "nodata": false
   },
   {
    "dia": "2026-06-21",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 1,
-   "fups": 1,
+   "inb": 1,
+   "out": 16,
+   "nuevas": 17,
+   "total": 21,
+   "fups": 3,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -1697,10 +1697,10 @@
   {
    "dia": "2026-06-22",
    "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 6,
-   "fups": 7,
+   "out": 1,
+   "nuevas": 1,
+   "total": 2,
+   "fups": 1,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -1709,10 +1709,10 @@
   {
    "dia": "2026-06-23",
    "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 4,
-   "fups": 11,
+   "out": 0,
+   "nuevas": 0,
+   "total": 3,
+   "fups": 1,
    "prop": 0,
    "agendas": 2,
    "resp_min": null,
@@ -1720,23 +1720,23 @@
   },
   {
    "dia": "2026-06-24",
-   "inb": 3,
+   "inb": 2,
    "out": 1,
-   "nuevas": 4,
-   "total": 10,
-   "fups": 3,
+   "nuevas": 3,
+   "total": 5,
+   "fups": 0,
    "prop": 0,
    "agendas": 2,
-   "resp_min": 399,
+   "resp_min": 580,
    "nodata": false
   },
   {
    "dia": "2026-06-25",
    "inb": 1,
-   "out": 1,
-   "nuevas": 2,
-   "total": 7,
-   "fups": 4,
+   "out": 0,
+   "nuevas": 1,
+   "total": 3,
+   "fups": 2,
    "prop": 0,
    "agendas": 0,
    "resp_min": 1379,
@@ -1744,23 +1744,23 @@
   },
   {
    "dia": "2026-06-26",
-   "inb": 4,
-   "out": 35,
-   "nuevas": 39,
-   "total": 51,
-   "fups": 27,
-   "prop": 1,
+   "inb": 2,
+   "out": 6,
+   "nuevas": 8,
+   "total": 12,
+   "fups": 8,
+   "prop": 0,
    "agendas": 0,
-   "resp_min": 145,
+   "resp_min": 115,
    "nodata": false
   },
   {
    "dia": "2026-06-27",
    "inb": 4,
-   "out": 31,
-   "nuevas": 35,
-   "total": 51,
-   "fups": 19,
+   "out": 29,
+   "nuevas": 33,
+   "total": 50,
+   "fups": 20,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -1768,11 +1768,11 @@
   },
   {
    "dia": "2026-06-28",
-   "inb": 2,
-   "out": 12,
-   "nuevas": 14,
-   "total": 16,
-   "fups": 0,
+   "inb": 4,
+   "out": 23,
+   "nuevas": 27,
+   "total": 34,
+   "fups": 2,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -1780,11 +1780,11 @@
   },
   {
    "dia": "2026-06-29",
-   "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 2,
-   "fups": 0,
+   "inb": 2,
+   "out": 17,
+   "nuevas": 19,
+   "total": 19,
+   "fups": 2,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -1793,10 +1793,10 @@
   {
    "dia": "2026-06-30",
    "inb": 1,
-   "out": 2,
-   "nuevas": 3,
-   "total": 5,
-   "fups": 8,
+   "out": 1,
+   "nuevas": 2,
+   "total": 3,
+   "fups": 1,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -1804,24 +1804,24 @@
   },
   {
    "dia": "2026-07-01",
-   "inb": 2,
-   "out": 3,
-   "nuevas": 5,
-   "total": 12,
-   "fups": 23,
+   "inb": 0,
+   "out": 2,
+   "nuevas": 2,
+   "total": 4,
+   "fups": 0,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 108,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-07-02",
-   "inb": 5,
-   "out": 24,
-   "nuevas": 29,
-   "total": 56,
-   "fups": 23,
-   "prop": 1,
+   "inb": 4,
+   "out": 12,
+   "nuevas": 16,
+   "total": 35,
+   "fups": 20,
+   "prop": 0,
    "agendas": 3,
    "resp_min": 261,
    "nodata": false
@@ -1835,7 +1835,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-02",
@@ -1844,7 +1845,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-03",
@@ -1853,7 +1855,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-04",
@@ -1862,7 +1865,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-05",
@@ -1871,7 +1875,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-06",
@@ -1880,7 +1885,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-07",
@@ -1889,7 +1895,8 @@
    "noshow": 0,
    "cancelled": 2,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-08",
@@ -1898,7 +1905,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-09",
@@ -1907,7 +1915,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-10",
@@ -1916,7 +1925,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 4,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-11",
@@ -1925,7 +1935,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-12",
@@ -1934,7 +1945,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-13",
@@ -1943,7 +1955,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-14",
@@ -1952,7 +1965,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-15",
@@ -1961,7 +1975,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-16",
@@ -1970,7 +1985,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-17",
@@ -1979,7 +1995,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 4,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-18",
@@ -1988,7 +2005,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-19",
@@ -1997,7 +2015,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-20",
@@ -2006,7 +2025,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-21",
@@ -2015,7 +2035,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 3,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-22",
@@ -2024,7 +2045,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-23",
@@ -2033,7 +2055,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-24",
@@ -2042,7 +2065,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-25",
@@ -2051,7 +2075,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-26",
@@ -2060,7 +2085,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-27",
@@ -2069,7 +2095,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-02-28",
@@ -2078,7 +2105,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-01",
@@ -2087,7 +2115,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-02",
@@ -2096,7 +2125,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-03",
@@ -2105,7 +2135,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-04",
@@ -2114,7 +2145,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-05",
@@ -2123,7 +2155,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-06",
@@ -2132,7 +2165,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-07",
@@ -2141,7 +2175,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-08",
@@ -2150,7 +2185,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-09",
@@ -2159,7 +2195,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-10",
@@ -2168,7 +2205,8 @@
    "noshow": 0,
    "cancelled": 2,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-11",
@@ -2177,7 +2215,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-12",
@@ -2186,7 +2225,8 @@
    "noshow": 0,
    "cancelled": 3,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-13",
@@ -2195,7 +2235,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-14",
@@ -2204,7 +2245,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-15",
@@ -2213,7 +2255,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-16",
@@ -2222,7 +2265,8 @@
    "noshow": 0,
    "cancelled": 2,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-17",
@@ -2231,7 +2275,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-18",
@@ -2240,7 +2285,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-19",
@@ -2249,7 +2295,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-20",
@@ -2258,7 +2305,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-21",
@@ -2267,7 +2315,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-22",
@@ -2276,7 +2325,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-23",
@@ -2285,7 +2335,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 3,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-24",
@@ -2294,7 +2345,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-25",
@@ -2303,7 +2355,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-26",
@@ -2312,7 +2365,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 3,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-27",
@@ -2321,7 +2375,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-28",
@@ -2330,7 +2385,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 4,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-29",
@@ -2339,7 +2395,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-30",
@@ -2348,7 +2405,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-03-31",
@@ -2357,7 +2415,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-01",
@@ -2366,7 +2425,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-02",
@@ -2375,7 +2435,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 3,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-03",
@@ -2384,7 +2445,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-04",
@@ -2393,7 +2455,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-05",
@@ -2402,7 +2465,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-06",
@@ -2411,7 +2475,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-07",
@@ -2420,7 +2485,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-08",
@@ -2429,7 +2495,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-09",
@@ -2438,7 +2505,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-10",
@@ -2447,7 +2515,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-11",
@@ -2456,7 +2525,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-12",
@@ -2465,7 +2535,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-13",
@@ -2474,7 +2545,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-14",
@@ -2483,7 +2555,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-15",
@@ -2492,7 +2565,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-16",
@@ -2501,7 +2575,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-17",
@@ -2510,7 +2585,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-18",
@@ -2519,7 +2595,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-19",
@@ -2528,7 +2605,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-20",
@@ -2537,7 +2615,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-21",
@@ -2546,7 +2625,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-22",
@@ -2555,7 +2635,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-23",
@@ -2564,7 +2645,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-24",
@@ -2573,7 +2655,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-25",
@@ -2582,7 +2665,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-26",
@@ -2591,7 +2675,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-27",
@@ -2600,7 +2685,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-28",
@@ -2609,7 +2695,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-29",
@@ -2618,7 +2705,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-04-30",
@@ -2627,7 +2715,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-01",
@@ -2636,7 +2725,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-02",
@@ -2645,7 +2735,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-03",
@@ -2654,7 +2745,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-04",
@@ -2663,7 +2755,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-05",
@@ -2672,7 +2765,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-06",
@@ -2681,7 +2775,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-07",
@@ -2690,7 +2785,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-08",
@@ -2699,7 +2795,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 3,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-09",
@@ -2708,7 +2805,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-10",
@@ -2717,7 +2815,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-11",
@@ -2726,7 +2825,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-12",
@@ -2735,7 +2835,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-13",
@@ -2744,7 +2845,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-14",
@@ -2753,7 +2855,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-15",
@@ -2762,7 +2865,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-16",
@@ -2771,7 +2875,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-17",
@@ -2780,7 +2885,8 @@
    "noshow": 0,
    "cancelled": 2,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-18",
@@ -2789,7 +2895,8 @@
    "noshow": 0,
    "cancelled": 2,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-19",
@@ -2798,7 +2905,8 @@
    "noshow": 0,
    "cancelled": 6,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-20",
@@ -2807,7 +2915,8 @@
    "noshow": 0,
    "cancelled": 4,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-21",
@@ -2816,7 +2925,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 3,
-   "cualifica": 1
+   "cualifica": 1,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-22",
@@ -2825,7 +2935,8 @@
    "noshow": 1,
    "cancelled": 3,
    "confirmed": 3,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-23",
@@ -2834,7 +2945,8 @@
    "noshow": 0,
    "cancelled": 3,
    "confirmed": 4,
-   "cualifica": 1
+   "cualifica": 1,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-24",
@@ -2843,7 +2955,8 @@
    "noshow": 1,
    "cancelled": 2,
    "confirmed": 1,
-   "cualifica": 1
+   "cualifica": 1,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-25",
@@ -2852,7 +2965,8 @@
    "noshow": 0,
    "cancelled": 3,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-26",
@@ -2861,7 +2975,8 @@
    "noshow": 2,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-27",
@@ -2870,7 +2985,8 @@
    "noshow": 1,
    "cancelled": 4,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-28",
@@ -2879,7 +2995,8 @@
    "noshow": 1,
    "cancelled": 4,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-29",
@@ -2888,7 +3005,8 @@
    "noshow": 2,
    "cancelled": 5,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-30",
@@ -2897,7 +3015,8 @@
    "noshow": 0,
    "cancelled": 3,
    "confirmed": 0,
-   "cualifica": 1
+   "cualifica": 1,
+   "nocualifica": 0
   },
   {
    "dia": "2026-05-31",
@@ -2906,7 +3025,8 @@
    "noshow": 0,
    "cancelled": 5,
    "confirmed": 0,
-   "cualifica": 2
+   "cualifica": 2,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-01",
@@ -2915,7 +3035,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 1,
-   "cualifica": 1
+   "cualifica": 1,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-02",
@@ -2924,7 +3045,8 @@
    "noshow": 2,
    "cancelled": 3,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-03",
@@ -2933,7 +3055,8 @@
    "noshow": 1,
    "cancelled": 2,
    "confirmed": 1,
-   "cualifica": 3
+   "cualifica": 3,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-04",
@@ -2942,7 +3065,8 @@
    "noshow": 0,
    "cancelled": 3,
    "confirmed": 1,
-   "cualifica": 2
+   "cualifica": 2,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-05",
@@ -2951,7 +3075,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 1,
-   "cualifica": 1
+   "cualifica": 1,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-06",
@@ -2960,7 +3085,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-07",
@@ -2969,7 +3095,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-08",
@@ -2978,7 +3105,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-09",
@@ -2987,7 +3115,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 1
+   "cualifica": 1,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-10",
@@ -2996,7 +3125,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-11",
@@ -3005,7 +3135,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 2,
-   "cualifica": 1
+   "cualifica": 1,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-12",
@@ -3014,7 +3145,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 2,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-13",
@@ -3023,7 +3155,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-14",
@@ -3032,7 +3165,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-15",
@@ -3041,7 +3175,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 1
+   "cualifica": 1,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-16",
@@ -3050,7 +3185,8 @@
    "noshow": 1,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-17",
@@ -3059,7 +3195,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-18",
@@ -3068,7 +3205,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 0,
-   "cualifica": 1
+   "cualifica": 1,
+   "nocualifica": 1
   },
   {
    "dia": "2026-06-19",
@@ -3077,7 +3215,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-20",
@@ -3086,7 +3225,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-21",
@@ -3095,7 +3235,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-22",
@@ -3104,7 +3245,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-23",
@@ -3113,7 +3255,8 @@
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 1,
-   "cualifica": 1
+   "cualifica": 1,
+   "nocualifica": 1
   },
   {
    "dia": "2026-06-24",
@@ -3122,7 +3265,8 @@
    "noshow": 1,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 1
   },
   {
    "dia": "2026-06-25",
@@ -3131,7 +3275,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-26",
@@ -3140,7 +3285,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-27",
@@ -3149,7 +3295,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-28",
@@ -3158,7 +3305,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-29",
@@ -3167,7 +3315,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-06-30",
@@ -3176,7 +3325,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-07-01",
@@ -3185,7 +3335,8 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   },
   {
    "dia": "2026-07-02",
@@ -3194,7 +3345,8 @@
    "noshow": 0,
    "cancelled": 3,
    "confirmed": 0,
-   "cualifica": 0
+   "cualifica": 0,
+   "nocualifica": 0
   }
  ],
  "leads": [
@@ -4341,18 +4493,18 @@
   {
    "nombre": "Carlos Alberto Alarcón Moreyra",
    "setter": "",
-   "prof": "Médico General ",
-   "nivel": "🔹 No tengo conocimientos",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "ingresos": "300€ - 600€",
-   "univ": "Universidad Nacional José Faustino Sanchez Carrion ",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "El idioma alemán ",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "Carlos Alberto ",
-   "email": "carlosalbertomoreyra25@gmail.com",
-   "tf": "+51991439930",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-28",
    "closer": "",
    "restri": "",
@@ -4881,18 +5033,18 @@
   {
    "nombre": "Daniel Carranza",
    "setter": "",
-   "prof": "Médico de emergencias ",
-   "nivel": "🔹 A1",
-   "presup": "Cuento con entre 5.000€ a 10.000€ para mi proceso",
-   "ingresos": "1.000€ - 3.000€",
-   "univ": "Universidad Ricardo Palma",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "Falta de tiempo para estudiar, de preferencia si se puede ir a estudiar Alemania mucho mejor",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "No tengo",
-   "email": "carranzahuarioscard@gmail.com",
-   "tf": "+51941864653",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-28",
    "closer": "",
    "restri": "",
@@ -5031,18 +5183,18 @@
   {
    "nombre": "Dennisse Martinez Solis",
    "setter": "",
-   "prof": "",
-   "nivel": "",
+   "prof": "Estudiante de medicina",
+   "nivel": "🔹 No tengo conocimientos",
    "presup": "",
-   "ingresos": "",
+   "ingresos": "300$ - 600$",
    "univ": "",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "El idioma y el dinero",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "deniss_28_",
+   "email": "denissemar288@gmail.com",
+   "tf": "+593968865801",
    "fagenda": "2026-04-30",
    "closer": "",
    "restri": "",
@@ -6200,19 +6352,19 @@
   },
   {
    "nombre": "Jacob Orbe Proaño",
-   "setter": "",
-   "prof": "",
-   "nivel": "",
+   "setter": "Sary",
+   "prof": "Médico ",
+   "nivel": "🔹 B2",
    "presup": "",
-   "ingresos": "",
+   "ingresos": "600$ - 1.000$",
    "univ": "",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Me falta mejorar la gramática,  mi pronunciación ,hablar de forma fluida y automática. ",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "jacob.orbe.9 ",
+   "email": "jacob_orbe_mel_pr@hotmail.com",
+   "tf": "+491636237657",
    "fagenda": "2026-05-01",
    "closer": "",
    "restri": "",
@@ -6257,6 +6409,36 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/H0iYC6dkXNPEjUfiKhCc"
+  },
+  {
+   "nombre": "JC Carrillo",
+   "setter": "",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
+   "urg": "",
+   "comp": "",
+   "obst": "",
+   "canal": "",
+   "ig": "",
+   "email": "",
+   "tf": "",
+   "fagenda": "2026-05-27",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": null,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/naGS18i4O1TqLCnkFQD3"
   },
   {
    "nombre": "Jennie Mayaute Allca",
@@ -6379,36 +6561,6 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ptlVxUgodibwvVRolJjP"
   },
   {
-   "nombre": "Joffre Carrillo",
-   "setter": "",
-   "prof": "Médico General ",
-   "nivel": "🔹 Conocimientos básicos",
-   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
-   "ingresos": "300€ - 600€",
-   "univ": "Universidad de Guayaquil ",
-   "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Ninguno , solo el dinero ",
-   "canal": "",
-   "ig": "",
-   "email": "drjoffrecarrillop@gmail.com",
-   "tf": "+593967964714",
-   "fagenda": "2026-05-27",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": null,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/naGS18i4O1TqLCnkFQD3"
-  },
-  {
    "nombre": "Joha Barrios",
    "setter": "",
    "prof": "trabajo basico",
@@ -6499,7 +6651,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/93QZ6jZJY4agzOIpe3LG"
   },
   {
-   "nombre": "Jordi Mulà Domènech",
+   "nombre": "Jordi Mulà Domenech",
    "setter": "Sary",
    "prof": "Enfermero en hospitalización quirúrgica",
    "nivel": "🔹 Conocimientos básicos",
@@ -7071,18 +7223,18 @@
   {
    "nombre": "Kevin Montes Guarin",
    "setter": "",
-   "prof": "Médico general ",
-   "nivel": "🔹 Conocimientos básicos",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "ingresos": "1.000€ - 3.000€",
-   "univ": "Fundación universitaria San Martín ",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "El idioma ",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "KMG.0916",
-   "email": "kevinguarin168@gmail.com",
-   "tf": "+34666701291",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-27",
    "closer": "",
    "restri": "",
@@ -7491,18 +7643,18 @@
   {
    "nombre": "Luis Pablo Rodriguez",
    "setter": "",
-   "prof": "",
-   "nivel": "",
+   "prof": "Truck Driver",
+   "nivel": "🔹 No tengo conocimientos",
    "presup": "",
-   "ingresos": "",
+   "ingresos": "1.000$ - 3.000$",
    "univ": "",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "Seguramente el idioma",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "luispablo318@gmail.com",
+   "tf": "+34616779512",
    "fagenda": "2026-04-29",
    "closer": "",
    "restri": "",
@@ -7670,19 +7822,19 @@
   },
   {
    "nombre": "Manuel Caceres",
-   "setter": "",
-   "prof": "",
-   "nivel": "",
+   "setter": "Sary",
+   "prof": "Ingeniero ",
+   "nivel": "🔹 B1",
    "presup": "",
-   "ingresos": "",
+   "ingresos": "300$ - 600$",
    "univ": "",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Ninguno, estoy altamente motivado ",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "manuel.abrs29@gmail.com",
+   "tf": "+491744185297",
    "fagenda": "2026-05-01",
    "closer": "",
    "restri": "",
@@ -7821,18 +7973,18 @@
   {
    "nombre": "Maria",
    "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Médico especialista",
+   "nivel": "🔹 B1",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "600€- 1.000€",
+   "univ": "Universidad peruana los andes",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "No tener claro los pasos a seguir paranoider ejercer en Alemania ",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "No tengo ",
+   "email": "sol492@hotmail.com",
+   "tf": "+51948993087",
    "fagenda": "2026-05-31",
    "closer": "",
    "restri": "",
@@ -8061,18 +8213,18 @@
   {
    "nombre": "Mario Alberto Elias",
    "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Interno medico",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "600€- 1.000€",
+   "univ": "Universidad particular SAN JUAN Bautista ",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Lengua",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "Marioalberto_elias_g",
+   "email": "studer_10@hotmail.com",
+   "tf": "+51976587362",
    "fagenda": "2026-05-31",
    "closer": "",
    "restri": "",
@@ -8211,18 +8363,18 @@
   {
    "nombre": "María Victoria Delgado López",
    "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Fisioterapeuta ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "300€ - 600€",
+   "univ": "U.C.S universidad Ciencias de la Salud ",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Miedo",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "Victoria López ",
+   "email": "dlopezvictoria58@gmail.com",
+   "tf": "+584120180232",
    "fagenda": "2026-05-31",
    "closer": "",
    "restri": "",
@@ -9351,18 +9503,18 @@
   {
    "nombre": "Pedro Rico",
    "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Medico ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
+   "ingresos": "300€ - 600€",
+   "univ": "Unimetro",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "No saber como llegar",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "gabrielangelricoromero@hotmail.com",
+   "tf": "+573024560103",
    "fagenda": "2026-05-31",
    "closer": "",
    "restri": "",
@@ -10896,7 +11048,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/x83LlhTKJv9r8Yz4nI7Z"
   },
   {
-   "nombre": "Jordi Mulà Domènech",
+   "nombre": "Jordi Mulà Domenech",
    "fecha": "2026-06-02",
    "estado": "showed",
    "resclo": "",
@@ -12644,6 +12796,21 @@
  ],
  "resp_pairs": [
   {
+   "dia": "2025-08-12",
+   "in": 1755031139,
+   "rep": 1755031584
+  },
+  {
+   "dia": "2026-04-26",
+   "in": 1777187971,
+   "rep": 1777195883
+  },
+  {
+   "dia": "2026-03-17",
+   "in": 1773740299,
+   "rep": 1773753430
+  },
+  {
    "dia": "2026-06-30",
    "in": 1782854174,
    "rep": 1782941793
@@ -12654,14 +12821,14 @@
    "rep": 1783001360
   },
   {
-   "dia": "2026-07-01",
-   "in": 1782916495,
-   "rep": 1782918609
+   "dia": "2026-06-10",
+   "in": 1781098497,
+   "rep": 1781098513
   },
   {
-   "dia": "2026-07-01",
-   "in": 1782926637,
-   "rep": 1782937540
+   "dia": "2026-06-18",
+   "in": 1781824245,
+   "rep": 1781849915
   },
   {
    "dia": "2026-06-24",
@@ -12689,429 +12856,249 @@
    "rep": 1782521503
   },
   {
-   "dia": "2026-06-26",
-   "in": 1782432374,
-   "rep": 1782492128
-  },
-  {
-   "dia": "2026-06-24",
-   "in": 1782285525,
-   "rep": 1782298671
-  },
-  {
-   "dia": "2026-06-09",
-   "in": 1780969815,
-   "rep": 1781118345
-  },
-  {
-   "dia": "2026-06-16",
-   "in": 1781583792,
-   "rep": 1781804021
-  },
-  {
-   "dia": "2026-06-14",
-   "in": 1781436235,
-   "rep": 1781547119
-  },
-  {
-   "dia": "2026-06-14",
-   "in": 1781437319,
-   "rep": 1781547039
-  },
-  {
-   "dia": "2026-06-14",
-   "in": 1781471575,
-   "rep": 1781546694
-  },
-  {
-   "dia": "2024-10-01",
-   "in": 1727813807,
-   "rep": 1727819162
-  },
-  {
-   "dia": "2026-06-14",
-   "in": 1781407120,
-   "rep": 1781425644
-  },
-  {
    "dia": "2026-06-13",
-   "in": 1781382945,
-   "rep": 1781427598
+   "in": 1781323110,
+   "rep": 1781329971
   },
   {
-   "dia": "2026-01-19",
-   "in": 1768823410,
-   "rep": 1768823960
-  },
-  {
-   "dia": "2026-05-04",
-   "in": 1777906920,
-   "rep": 1777919957
-  },
-  {
-   "dia": "2025-09-30",
-   "in": 1759268663,
-   "rep": 1759272096
-  },
-  {
-   "dia": "2026-04-25",
-   "in": 1777111949,
-   "rep": 1777111981
-  },
-  {
-   "dia": "2026-04-21",
-   "in": 1776798594,
-   "rep": 1776799153
-  },
-  {
-   "dia": "2026-05-04",
-   "in": 1777892704,
-   "rep": 1777906145
-  },
-  {
-   "dia": "2026-04-08",
-   "in": 1775666831,
-   "rep": 1775668721
-  },
-  {
-   "dia": "2026-04-20",
-   "in": 1776646613,
-   "rep": 1776678692
-  },
-  {
-   "dia": "2026-06-07",
-   "in": 1780873775,
-   "rep": 1780901853
-  },
-  {
-   "dia": "2026-06-04",
-   "in": 1780566574,
-   "rep": 1780567698
+   "dia": "2026-04-19",
+   "in": 1776597205,
+   "rep": 1776763683
   },
   {
    "dia": "2026-06-05",
-   "in": 1780670285,
-   "rep": 1780671578
+   "in": 1780675802,
+   "rep": 1780726433
   },
   {
-   "dia": "2024-11-23",
-   "in": 1732339767,
-   "rep": 1732368894
+   "dia": "2026-06-20",
+   "in": 1781943290,
+   "rep": 1781968039
   },
   {
-   "dia": "2026-06-08",
-   "in": 1780909958,
-   "rep": 1780933683
+   "dia": "2026-06-19",
+   "in": 1781875722,
+   "rep": 1781967618
   },
   {
-   "dia": "2025-02-13",
-   "in": 1739419626,
-   "rep": 1739419948
+   "dia": "2026-06-19",
+   "in": 1781896586,
+   "rep": 1781967591
   },
   {
-   "dia": "2025-08-06",
-   "in": 1754493124,
-   "rep": 1754500431
+   "dia": "2026-06-19",
+   "in": 1781896940,
+   "rep": 1781967578
   },
   {
-   "dia": "2025-04-02",
-   "in": 1743558774,
-   "rep": 1743559085
+   "dia": "2026-06-17",
+   "in": 1781727910,
+   "rep": 1781803917
   },
   {
    "dia": "2026-06-07",
-   "in": 1780853541,
-   "rep": 1780855764
+   "in": 1780843066,
+   "rep": 1780855594
   },
   {
-   "dia": "2025-12-16",
-   "in": 1765912436,
-   "rep": 1765915008
+   "dia": "2026-06-18",
+   "in": 1781810027,
+   "rep": 1781810057
   },
   {
-   "dia": "2025-08-18",
-   "in": 1755536734,
-   "rep": 1755538974
+   "dia": "2025-01-06",
+   "in": 1736172203,
+   "rep": 1736172632
   },
   {
-   "dia": "2026-04-27",
-   "in": 1777291885,
-   "rep": 1777320754
+   "dia": "2026-06-14",
+   "in": 1781471763,
+   "rep": 1781474296
   },
   {
-   "dia": "2026-04-29",
-   "in": 1777450512,
-   "rep": 1777488839
+   "dia": "2026-06-11",
+   "in": 1781152564,
+   "rep": 1781173213
   },
   {
-   "dia": "2026-04-28",
-   "in": 1777402153,
-   "rep": 1777409303
+   "dia": "2026-06-10",
+   "in": 1781112062,
+   "rep": 1781116237
   },
   {
-   "dia": "2026-04-28",
-   "in": 1777377073,
-   "rep": 1777385608
+   "dia": "2026-01-04",
+   "in": 1767563907,
+   "rep": 1767568119
   },
   {
-   "dia": "2026-04-28",
-   "in": 1777371357,
-   "rep": 1777385917
+   "dia": "2026-05-01",
+   "in": 1777650763,
+   "rep": 1777875758
   },
   {
-   "dia": "2026-04-28",
-   "in": 1777373524,
-   "rep": 1777386011
-  },
-  {
-   "dia": "2026-04-27",
-   "in": 1777331999,
-   "rep": 1777356902
-  },
-  {
-   "dia": "2026-04-28",
-   "in": 1777334443,
-   "rep": 1777356879
-  },
-  {
-   "dia": "2026-04-27",
-   "in": 1777284049,
-   "rep": 1777296990
-  },
-  {
-   "dia": "2026-04-26",
-   "in": 1777230345,
-   "rep": 1777238028
-  },
-  {
-   "dia": "2026-04-25",
-   "in": 1777143381,
-   "rep": 1777220035
-  },
-  {
-   "dia": "2026-04-25",
-   "in": 1777121016,
-   "rep": 1777220114
-  },
-  {
-   "dia": "2026-04-26",
-   "in": 1777228446,
-   "rep": 1777236731
-  },
-  {
-   "dia": "2026-04-25",
-   "in": 1777123680,
-   "rep": 1777220093
-  },
-  {
-   "dia": "2026-04-26",
-   "in": 1777200976,
-   "rep": 1777219840
-  },
-  {
-   "dia": "2026-04-24",
-   "in": 1776994406,
-   "rep": 1777051748
-  },
-  {
-   "dia": "2026-04-24",
-   "in": 1777018630,
-   "rep": 1777051647
+   "dia": "2026-05-01",
+   "in": 1777666575,
+   "rep": 1777875816
   },
   {
    "dia": "2026-05-03",
-   "in": 1777839302,
-   "rep": 1777875524
+   "in": 1777829619,
+   "rep": 1777875550
+  },
+  {
+   "dia": "2026-05-03",
+   "in": 1777836764,
+   "rep": 1777875536
+  },
+  {
+   "dia": "2026-04-26",
+   "in": 1777221828,
+   "rep": 1777237316
   },
   {
    "dia": "2026-05-04",
-   "in": 1777871184,
-   "rep": 1777871675
+   "in": 1777931527,
+   "rep": 1777936105
   },
   {
-   "dia": "2026-01-10",
-   "in": 1768058660,
-   "rep": 1768059842
+   "dia": "2026-05-06",
+   "in": 1778076689,
+   "rep": 1778088381
   },
   {
-   "dia": "2024-10-25",
-   "in": 1729876338,
-   "rep": 1729876374
+   "dia": "2026-05-05",
+   "in": 1777944306,
+   "rep": 1777957350
   },
   {
-   "dia": "2025-03-26",
-   "in": 1742971462,
-   "rep": 1742993124
+   "dia": "2026-05-06",
+   "in": 1778050027,
+   "rep": 1778073552
   },
   {
-   "dia": "2026-05-03",
-   "in": 1777792151,
-   "rep": 1777794489
+   "dia": "2026-04-25",
+   "in": 1777138044,
+   "rep": 1777220066
   },
   {
-   "dia": "2026-05-03",
-   "in": 1777819377,
-   "rep": 1777821401
+   "dia": "2026-05-04",
+   "in": 1777887604,
+   "rep": 1777887639
   },
   {
-   "dia": "2026-04-22",
-   "in": 1776878586,
-   "rep": 1776882130
+   "dia": "2024-10-30",
+   "in": 1730320688,
+   "rep": 1730332949
   },
   {
-   "dia": "2026-03-10",
-   "in": 1773119115,
-   "rep": 1773137817
+   "dia": "2025-08-14",
+   "in": 1755182540,
+   "rep": 1755182617
+  },
+  {
+   "dia": "2026-04-28",
+   "in": 1777376829,
+   "rep": 1777385616
+  },
+  {
+   "dia": "2025-10-30",
+   "in": 1761817516,
+   "rep": 1761850107
+  },
+  {
+   "dia": "2026-04-16",
+   "in": 1776344622,
+   "rep": 1776442626
+  },
+  {
+   "dia": "2025-01-26",
+   "in": 1737930040,
+   "rep": 1737945624
+  },
+  {
+   "dia": "2025-06-19",
+   "in": 1750368544,
+   "rep": 1750375168
+  },
+  {
+   "dia": "2026-04-20",
+   "in": 1776655862,
+   "rep": 1776680722
+  },
+  {
+   "dia": "2025-02-26",
+   "in": 1740610839,
+   "rep": 1740618352
+  },
+  {
+   "dia": "2025-05-12",
+   "in": 1747026555,
+   "rep": 1747099240
+  },
+  {
+   "dia": "2026-04-18",
+   "in": 1776512808,
+   "rep": 1776513362
+  },
+  {
+   "dia": "2026-04-13",
+   "in": 1776113436,
+   "rep": 1776125576
+  },
+  {
+   "dia": "2025-09-28",
+   "in": 1759027680,
+   "rep": 1759052275
   },
   {
    "dia": "2026-04-17",
-   "in": 1776444215,
-   "rep": 1776444229
-  },
-  {
-   "dia": "2025-07-30",
-   "in": 1753893982,
-   "rep": 1753894781
-  },
-  {
-   "dia": "2026-03-04",
-   "in": 1772664016,
-   "rep": 1772664276
-  },
-  {
-   "dia": "2026-03-29",
-   "in": 1774796248,
-   "rep": 1774802613
-  },
-  {
-   "dia": "2026-04-02",
-   "in": 1775096578,
-   "rep": 1775108078
-  },
-  {
-   "dia": "2026-04-01",
-   "in": 1775046631,
-   "rep": 1775046634
-  },
-  {
-   "dia": "2026-04-03",
-   "in": 1775177185,
-   "rep": 1775178887
-  },
-  {
-   "dia": "2026-04-05",
-   "in": 1775397949,
-   "rep": 1775398457
-  },
-  {
-   "dia": "2026-03-07",
-   "in": 1772910970,
-   "rep": 1772913024
-  },
-  {
-   "dia": "2025-11-07",
-   "in": 1762546379,
-   "rep": 1762548926
-  },
-  {
-   "dia": "2026-03-05",
-   "in": 1772708732,
-   "rep": 1772722683
-  },
-  {
-   "dia": "2026-03-06",
-   "in": 1772817074,
-   "rep": 1772817899
-  },
-  {
-   "dia": "2026-03-05",
-   "in": 1772720490,
-   "rep": 1772722666
-  },
-  {
-   "dia": "2026-03-05",
-   "in": 1772678435,
-   "rep": 1772703482
-  },
-  {
-   "dia": "2026-04-15",
-   "in": 1776224268,
-   "rep": 1776245450
-  },
-  {
-   "dia": "2026-04-03",
-   "in": 1775249464,
-   "rep": 1775255768
-  },
-  {
-   "dia": "2026-04-12",
-   "in": 1776002897,
-   "rep": 1776007911
-  },
-  {
-   "dia": "2025-02-13",
-   "in": 1739461479,
-   "rep": 1739463324
+   "in": 1776438991,
+   "rep": 1776444506
   },
   {
    "dia": "2026-01-16",
-   "in": 1768523035,
-   "rep": 1768559800
+   "in": 1768546507,
+   "rep": 1768550790
   },
   {
-   "dia": "2026-03-14",
-   "in": 1773467632,
-   "rep": 1773509028
+   "dia": "2025-02-25",
+   "in": 1740449376,
+   "rep": 1740453752
   },
   {
-   "dia": "2026-03-17",
-   "in": 1773723371,
-   "rep": 1773729087
+   "dia": "2026-02-08",
+   "in": 1770519562,
+   "rep": 1770537977
   },
   {
-   "dia": "2026-03-22",
-   "in": 1774142793,
-   "rep": 1774289137
+   "dia": "2026-03-30",
+   "in": 1774884021,
+   "rep": 1774894952
   },
   {
-   "dia": "2026-03-27",
-   "in": 1774624066,
-   "rep": 1774631737
+   "dia": "2026-03-31",
+   "in": 1774923727,
+   "rep": 1774925598
   },
   {
-   "dia": "2026-01-31",
-   "in": 1769867918,
-   "rep": 1769872724
+   "dia": "2026-04-02",
+   "in": 1775158990,
+   "rep": 1775159970
+  },
+  {
+   "dia": "2025-08-16",
+   "in": 1755318624,
+   "rep": 1755337980
+  },
+  {
+   "dia": "2026-04-06",
+   "in": 1775518068,
+   "rep": 1775518213
   },
   {
    "dia": "2025-07-21",
    "in": 1753111688,
    "rep": 1753112448
-  },
-  {
-   "dia": "2026-03-26",
-   "in": 1774496124,
-   "rep": 1774516624
-  },
-  {
-   "dia": "2025-09-04",
-   "in": 1757024905,
-   "rep": 1757025894
-  },
-  {
-   "dia": "2025-12-31",
-   "in": 1767194654,
-   "rep": 1767199837
-  },
-  {
-   "dia": "2026-03-24",
-   "in": 1774386270,
-   "rep": 1774386467
-  },
-  {
-   "dia": "2026-03-26",
-   "in": 1774487598,
-   "rep": 1774516176
   },
   {
    "dia": "2026-03-16",
@@ -13129,29 +13116,29 @@
    "rep": 1767983457
   },
   {
-   "dia": "2026-01-19",
-   "in": 1768789420,
-   "rep": 1768817846
+   "dia": "2026-03-25",
+   "in": 1774441145,
+   "rep": 1774443718
   },
   {
-   "dia": "2026-03-15",
-   "in": 1773615585,
-   "rep": 1773618629
+   "dia": "2026-03-25",
+   "in": 1774444508,
+   "rep": 1774450627
   },
   {
-   "dia": "2026-01-27",
-   "in": 1769508442,
-   "rep": 1769508708
+   "dia": "2026-02-08",
+   "in": 1770543291,
+   "rep": 1770554703
   },
   {
-   "dia": "2025-08-15",
-   "in": 1755280046,
-   "rep": 1755284645
+   "dia": "2026-03-12",
+   "in": 1773279895,
+   "rep": 1773297334
   },
   {
-   "dia": "2026-03-19",
-   "in": 1773937214,
-   "rep": 1773937266
+   "dia": "2024-12-26",
+   "in": 1735224607,
+   "rep": 1735224609
   },
   {
    "dia": "2025-11-06",
@@ -13189,661 +13176,6 @@
    "rep": 1773746965
   },
   {
-   "dia": "2025-07-21",
-   "in": 1753107269,
-   "rep": 1753107334
-  },
-  {
-   "dia": "2026-03-12",
-   "in": 1773280574,
-   "rep": 1773297279
-  },
-  {
-   "dia": "2025-03-09",
-   "in": 1741547326,
-   "rep": 1741560061
-  },
-  {
-   "dia": "2025-07-29",
-   "in": 1753751693,
-   "rep": 1753782806
-  },
-  {
-   "dia": "2026-02-13",
-   "in": 1771018369,
-   "rep": 1771022498
-  },
-  {
-   "dia": "2026-03-10",
-   "in": 1773103339,
-   "rep": 1773103682
-  },
-  {
-   "dia": "2026-01-06",
-   "in": 1767722317,
-   "rep": 1767728026
-  },
-  {
-   "dia": "2026-03-10",
-   "in": 1773169262,
-   "rep": 1773171209
-  },
-  {
-   "dia": "2026-03-13",
-   "in": 1773443940,
-   "rep": 1773444500
-  },
-  {
-   "dia": "2026-03-13",
-   "in": 1773432288,
-   "rep": 1773432300
-  },
-  {
-   "dia": "2026-03-14",
-   "in": 1773502299,
-   "rep": 1773504122
-  },
-  {
-   "dia": "2024-11-24",
-   "in": 1732443772,
-   "rep": 1732443777
-  },
-  {
-   "dia": "2025-02-18",
-   "in": 1739838723,
-   "rep": 1739846750
-  },
-  {
-   "dia": "2026-03-13",
-   "in": 1773428078,
-   "rep": 1773428149
-  },
-  {
-   "dia": "2026-03-13",
-   "in": 1773415701,
-   "rep": 1773417209
-  },
-  {
-   "dia": "2026-02-15",
-   "in": 1771160231,
-   "rep": 1771162150
-  },
-  {
-   "dia": "2026-03-05",
-   "in": 1772755132,
-   "rep": 1772755211
-  },
-  {
-   "dia": "2026-02-03",
-   "in": 1770127271,
-   "rep": 1770136569
-  },
-  {
-   "dia": "2026-02-10",
-   "in": 1770738730,
-   "rep": 1770741046
-  },
-  {
-   "dia": "2026-02-10",
-   "in": 1770742575,
-   "rep": 1770745074
-  },
-  {
-   "dia": "2026-02-13",
-   "in": 1770949252,
-   "rep": 1770963728
-  },
-  {
-   "dia": "2026-01-30",
-   "in": 1769738037,
-   "rep": 1769738858
-  },
-  {
-   "dia": "2026-03-04",
-   "in": 1772636415,
-   "rep": 1772636804
-  },
-  {
-   "dia": "2026-03-12",
-   "in": 1773342613,
-   "rep": 1773343037
-  },
-  {
-   "dia": "2026-02-08",
-   "in": 1770560791,
-   "rep": 1770566896
-  },
-  {
-   "dia": "2026-01-27",
-   "in": 1769501719,
-   "rep": 1769507655
-  },
-  {
-   "dia": "2026-02-22",
-   "in": 1771774920,
-   "rep": 1771775351
-  },
-  {
-   "dia": "2025-07-29",
-   "in": 1753771717,
-   "rep": 1753783355
-  },
-  {
-   "dia": "2026-03-11",
-   "in": 1773263358,
-   "rep": 1773274084
-  },
-  {
-   "dia": "2026-02-22",
-   "in": 1771798241,
-   "rep": 1771799977
-  },
-  {
-   "dia": "2026-02-26",
-   "in": 1772121984,
-   "rep": 1772133214
-  },
-  {
-   "dia": "2025-06-02",
-   "in": 1748874338,
-   "rep": 1748877846
-  },
-  {
-   "dia": "2026-01-04",
-   "in": 1767568908,
-   "rep": 1767610027
-  },
-  {
-   "dia": "2025-12-10",
-   "in": 1765372771,
-   "rep": 1765374918
-  },
-  {
-   "dia": "2026-01-19",
-   "in": 1768797138,
-   "rep": 1768817765
-  },
-  {
-   "dia": "2024-11-02",
-   "in": 1730560111,
-   "rep": 1730604771
-  },
-  {
-   "dia": "2025-09-11",
-   "in": 1757628202,
-   "rep": 1757628332
-  },
-  {
-   "dia": "2025-10-29",
-   "in": 1761746577,
-   "rep": 1761746615
-  },
-  {
-   "dia": "2025-08-08",
-   "in": 1754682743,
-   "rep": 1754682913
-  },
-  {
-   "dia": "2025-06-21",
-   "in": 1750477786,
-   "rep": 1750478905
-  },
-  {
-   "dia": "2025-03-28",
-   "in": 1743177578,
-   "rep": 1743290747
-  },
-  {
-   "dia": "2025-02-11",
-   "in": 1739308248,
-   "rep": 1739308391
-  },
-  {
-   "dia": "2024-10-27",
-   "in": 1730021350,
-   "rep": 1730039016
-  },
-  {
-   "dia": "2026-03-10",
-   "in": 1773167362,
-   "rep": 1773171184
-  },
-  {
-   "dia": "2026-03-11",
-   "in": 1773211476,
-   "rep": 1773212909
-  },
-  {
-   "dia": "2025-04-10",
-   "in": 1744250298,
-   "rep": 1744252792
-  },
-  {
-   "dia": "2026-03-10",
-   "in": 1773183594,
-   "rep": 1773183716
-  },
-  {
-   "dia": "2026-01-27",
-   "in": 1769540303,
-   "rep": 1769547678
-  },
-  {
-   "dia": "2026-01-28",
-   "in": 1769560920,
-   "rep": 1769628278
-  },
-  {
-   "dia": "2026-01-29",
-   "in": 1769694800,
-   "rep": 1769715897
-  },
-  {
-   "dia": "2026-01-29",
-   "in": 1769730289,
-   "rep": 1769790206
-  },
-  {
-   "dia": "2026-01-29",
-   "in": 1769665646,
-   "rep": 1769715911
-  },
-  {
-   "dia": "2026-01-29",
-   "in": 1769729357,
-   "rep": 1769790136
-  },
-  {
-   "dia": "2026-01-31",
-   "in": 1769887852,
-   "rep": 1769887921
-  },
-  {
-   "dia": "2026-01-28",
-   "in": 1769617336,
-   "rep": 1769627960
-  },
-  {
-   "dia": "2026-02-01",
-   "in": 1769904710,
-   "rep": 1769939607
-  },
-  {
-   "dia": "2026-02-01",
-   "in": 1769955677,
-   "rep": 1769969479
-  },
-  {
-   "dia": "2026-02-01",
-   "in": 1769923296,
-   "rep": 1769939598
-  },
-  {
-   "dia": "2026-02-01",
-   "in": 1769974942,
-   "rep": 1770068339
-  },
-  {
-   "dia": "2026-02-02",
-   "in": 1770060534,
-   "rep": 1770068021
-  },
-  {
-   "dia": "2026-02-03",
-   "in": 1770116657,
-   "rep": 1770147746
-  },
-  {
-   "dia": "2026-02-03",
-   "in": 1770088726,
-   "rep": 1770147766
-  },
-  {
-   "dia": "2025-12-24",
-   "in": 1766561366,
-   "rep": 1766775614
-  },
-  {
-   "dia": "2025-12-30",
-   "in": 1767075000,
-   "rep": 1767109612
-  },
-  {
-   "dia": "2026-02-06",
-   "in": 1770394874,
-   "rep": 1770400472
-  },
-  {
-   "dia": "2026-02-03",
-   "in": 1770087628,
-   "rep": 1770147789
-  },
-  {
-   "dia": "2026-02-06",
-   "in": 1770338234,
-   "rep": 1770400505
-  },
-  {
-   "dia": "2026-02-04",
-   "in": 1770214749,
-   "rep": 1770218624
-  },
-  {
-   "dia": "2026-02-05",
-   "in": 1770260243,
-   "rep": 1770321242
-  },
-  {
-   "dia": "2026-02-07",
-   "in": 1770469505,
-   "rep": 1770482137
-  },
-  {
-   "dia": "2026-02-09",
-   "in": 1770596789,
-   "rep": 1770647925
-  },
-  {
-   "dia": "2026-01-31",
-   "in": 1769894912,
-   "rep": 1769939618
-  },
-  {
-   "dia": "2026-02-10",
-   "in": 1770737621,
-   "rep": 1770750795
-  },
-  {
-   "dia": "2026-02-09",
-   "in": 1770649295,
-   "rep": 1770663059
-  },
-  {
-   "dia": "2026-02-07",
-   "in": 1770473501,
-   "rep": 1770482199
-  },
-  {
-   "dia": "2026-02-07",
-   "in": 1770488839,
-   "rep": 1770663403
-  },
-  {
-   "dia": "2026-02-08",
-   "in": 1770557258,
-   "rep": 1770648029
-  },
-  {
-   "dia": "2026-02-09",
-   "in": 1770660243,
-   "rep": 1770663131
-  },
-  {
-   "dia": "2026-02-09",
-   "in": 1770645510,
-   "rep": 1770647835
-  },
-  {
-   "dia": "2026-02-03",
-   "in": 1770091129,
-   "rep": 1770147590
-  },
-  {
-   "dia": "2026-02-10",
-   "in": 1770734348,
-   "rep": 1770735526
-  },
-  {
-   "dia": "2026-02-09",
-   "in": 1770600335,
-   "rep": 1770647907
-  },
-  {
-   "dia": "2026-02-11",
-   "in": 1770793599,
-   "rep": 1770823454
-  },
-  {
-   "dia": "2026-02-11",
-   "in": 1770789049,
-   "rep": 1770823464
-  },
-  {
-   "dia": "2026-02-11",
-   "in": 1770813065,
-   "rep": 1770823446
-  },
-  {
-   "dia": "2026-02-13",
-   "in": 1771003807,
-   "rep": 1771086610
-  },
-  {
-   "dia": "2026-02-14",
-   "in": 1771045646,
-   "rep": 1771086603
-  },
-  {
-   "dia": "2026-02-17",
-   "in": 1771335727,
-   "rep": 1771341078
-  },
-  {
-   "dia": "2026-02-18",
-   "in": 1771433192,
-   "rep": 1771444211
-  },
-  {
-   "dia": "2026-02-22",
-   "in": 1771756684,
-   "rep": 1771777871
-  },
-  {
-   "dia": "2026-01-18",
-   "in": 1768770603,
-   "rep": 1768770607
-  },
-  {
-   "dia": "2026-02-23",
-   "in": 1771879043,
-   "rep": 1771879417
-  },
-  {
-   "dia": "2026-02-22",
-   "in": 1771776207,
-   "rep": 1771777876
-  },
-  {
-   "dia": "2026-02-23",
-   "in": 1771869487,
-   "rep": 1771874233
-  },
-  {
-   "dia": "2026-02-26",
-   "in": 1772125448,
-   "rep": 1772133211
-  },
-  {
-   "dia": "2026-02-26",
-   "in": 1772128038,
-   "rep": 1772142381
-  },
-  {
-   "dia": "2026-02-16",
-   "in": 1771280722,
-   "rep": 1771341062
-  },
-  {
-   "dia": "2026-02-10",
-   "in": 1770688322,
-   "rep": 1770733451
-  },
-  {
-   "dia": "2026-02-12",
-   "in": 1770938997,
-   "rep": 1770998008
-  },
-  {
-   "dia": "2026-02-11",
-   "in": 1770818148,
-   "rep": 1770931784
-  },
-  {
-   "dia": "2026-02-14",
-   "in": 1771083088,
-   "rep": 1771086594
-  },
-  {
-   "dia": "2026-02-19",
-   "in": 1771506146,
-   "rep": 1771528885
-  },
-  {
-   "dia": "2026-02-14",
-   "in": 1771104653,
-   "rep": 1771146282
-  },
-  {
-   "dia": "2026-02-16",
-   "in": 1771207082,
-   "rep": 1771253308
-  },
-  {
-   "dia": "2026-02-14",
-   "in": 1771101295,
-   "rep": 1771146254
-  },
-  {
-   "dia": "2026-02-12",
-   "in": 1770928154,
-   "rep": 1770931704
-  },
-  {
-   "dia": "2026-02-19",
-   "in": 1771529917,
-   "rep": 1771530375
-  },
-  {
-   "dia": "2026-02-15",
-   "in": 1771141390,
-   "rep": 1771146359
-  },
-  {
-   "dia": "2026-02-21",
-   "in": 1771718336,
-   "rep": 1771777912
-  },
-  {
-   "dia": "2026-02-22",
-   "in": 1771804636,
-   "rep": 1771858098
-  },
-  {
-   "dia": "2026-02-23",
-   "in": 1771867340,
-   "rep": 1771874229
-  },
-  {
-   "dia": "2026-01-21",
-   "in": 1769000342,
-   "rep": 1769107720
-  },
-  {
-   "dia": "2026-02-26",
-   "in": 1772083252,
-   "rep": 1772117985
-  },
-  {
-   "dia": "2026-02-22",
-   "in": 1771787708,
-   "rep": 1771858005
-  },
-  {
-   "dia": "2026-02-27",
-   "in": 1772156395,
-   "rep": 1772209571
-  },
-  {
-   "dia": "2026-02-27",
-   "in": 1772151921,
-   "rep": 1772209699
-  },
-  {
-   "dia": "2026-02-25",
-   "in": 1771988858,
-   "rep": 1772055429
-  },
-  {
-   "dia": "2026-02-27",
-   "in": 1772214756,
-   "rep": 1772215421
-  },
-  {
-   "dia": "2026-02-23",
-   "in": 1771860458,
-   "rep": 1771860578
-  },
-  {
-   "dia": "2026-02-26",
-   "in": 1772149073,
-   "rep": 1772209710
-  },
-  {
-   "dia": "2026-03-07",
-   "in": 1772883417,
-   "rep": 1772900646
-  },
-  {
-   "dia": "2026-03-08",
-   "in": 1772998144,
-   "rep": 1773001606
-  },
-  {
-   "dia": "2026-03-10",
-   "in": 1773170600,
-   "rep": 1773171027
-  },
-  {
-   "dia": "2025-04-11",
-   "in": 1744403791,
-   "rep": 1744516344
-  },
-  {
-   "dia": "2025-12-24",
-   "in": 1766589392,
-   "rep": 1766659707
-  },
-  {
-   "dia": "2026-02-25",
-   "in": 1772058644,
-   "rep": 1772059490
-  },
-  {
-   "dia": "2025-10-16",
-   "in": 1760646139,
-   "rep": 1760694324
-  },
-  {
-   "dia": "2026-03-10",
-   "in": 1773116878,
-   "rep": 1773137818
-  },
-  {
-   "dia": "2026-03-10",
-   "in": 1773114786,
-   "rep": 1773137818
-  },
-  {
-   "dia": "2026-03-09",
-   "in": 1773096784,
-   "rep": 1773096822
-  },
-  {
-   "dia": "2026-03-07",
-   "in": 1772905249,
-   "rep": 1772905258
-  },
-  {
    "dia": "2026-01-29",
    "in": 1769694688,
    "rep": 1769713740
@@ -13854,14 +13186,24 @@
    "rep": 1756393503
   },
   {
-   "dia": "2026-03-09",
-   "in": 1773085252,
-   "rep": 1773085704
+   "dia": "2026-01-02",
+   "in": 1767353345,
+   "rep": 1767383701
+  },
+  {
+   "dia": "2025-08-31",
+   "in": 1756668511,
+   "rep": 1756668767
   },
   {
    "dia": "2026-02-26",
    "in": 1772134366,
    "rep": 1772141370
+  },
+  {
+   "dia": "2025-04-22",
+   "in": 1745293169,
+   "rep": 1745293835
   },
   {
    "dia": "2025-10-05",
@@ -13914,249 +13256,119 @@
    "rep": 1740966034
   },
   {
-   "dia": "2026-02-08",
-   "in": 1770511053,
-   "rep": 1770512127
+   "dia": "2026-03-03",
+   "in": 1772575173,
+   "rep": 1772575373
   },
   {
-   "dia": "2026-02-22",
-   "in": 1771789156,
-   "rep": 1771790972
-  },
-  {
-   "dia": "2026-03-05",
-   "in": 1772736691,
-   "rep": 1772736788
-  },
-  {
-   "dia": "2026-03-05",
-   "in": 1772730482,
-   "rep": 1772733485
-  },
-  {
-   "dia": "2026-01-12",
-   "in": 1768234881,
-   "rep": 1768256567
-  },
-  {
-   "dia": "2025-12-27",
-   "in": 1766876449,
-   "rep": 1766921152
-  },
-  {
-   "dia": "2026-02-24",
-   "in": 1771893615,
-   "rep": 1771894236
+   "dia": "2026-01-03",
+   "in": 1767455524,
+   "rep": 1767520758
   },
   {
    "dia": "2026-03-02",
-   "in": 1772477605,
-   "rep": 1772478598
-  },
-  {
-   "dia": "2026-03-05",
-   "in": 1772696516,
-   "rep": 1772703461
-  },
-  {
-   "dia": "2025-03-27",
-   "in": 1743037845,
-   "rep": 1743038678
-  },
-  {
-   "dia": "2026-03-05",
-   "in": 1772672063,
-   "rep": 1772674234
-  },
-  {
-   "dia": "2026-03-02",
-   "in": 1772478770,
-   "rep": 1772481687
-  },
-  {
-   "dia": "2026-02-25",
-   "in": 1772034738,
-   "rep": 1772036201
-  },
-  {
-   "dia": "2026-03-04",
-   "in": 1772666284,
-   "rep": 1772666386
-  },
-  {
-   "dia": "2026-03-02",
-   "in": 1772431504,
-   "rep": 1772446910
-  },
-  {
-   "dia": "2025-11-18",
-   "in": 1763506263,
-   "rep": 1763511411
-  },
-  {
-   "dia": "2026-02-26",
-   "in": 1772132355,
-   "rep": 1772132497
-  },
-  {
-   "dia": "2026-02-28",
-   "in": 1772240714,
-   "rep": 1772265303
-  },
-  {
-   "dia": "2026-03-02",
-   "in": 1772422788,
-   "rep": 1772446287
-  },
-  {
-   "dia": "2026-03-02",
-   "in": 1772422747,
-   "rep": 1772446305
-  },
-  {
-   "dia": "2025-06-18",
-   "in": 1750211737,
-   "rep": 1750221376
-  },
-  {
-   "dia": "2026-03-04",
-   "in": 1772662723,
-   "rep": 1772662740
-  },
-  {
-   "dia": "2026-03-02",
-   "in": 1772420639,
-   "rep": 1772482156
-  },
-  {
-   "dia": "2026-02-25",
-   "in": 1771988388,
-   "rep": 1772000237
-  },
-  {
-   "dia": "2026-03-04",
-   "in": 1772660861,
-   "rep": 1772660864
-  },
-  {
-   "dia": "2025-03-16",
-   "in": 1742151724,
-   "rep": 1742159934
-  },
-  {
-   "dia": "2026-02-25",
-   "in": 1772058325,
-   "rep": 1772059503
-  },
-  {
-   "dia": "2025-07-03",
-   "in": 1751569226,
-   "rep": 1751582754
-  },
-  {
-   "dia": "2026-03-02",
-   "in": 1772471092,
-   "rep": 1772472890
-  },
-  {
-   "dia": "2026-01-05",
-   "in": 1767655811,
-   "rep": 1767656399
-  },
-  {
-   "dia": "2026-02-24",
-   "in": 1771898126,
-   "rep": 1771898782
-  },
-  {
-   "dia": "2026-02-20",
-   "in": 1771600195,
-   "rep": 1771601656
-  },
-  {
-   "dia": "2026-02-22",
-   "in": 1771788159,
-   "rep": 1771788764
-  },
-  {
-   "dia": "2026-02-15",
-   "in": 1771195212,
-   "rep": 1771206747
-  },
-  {
-   "dia": "2026-01-02",
-   "in": 1767360998,
-   "rep": 1767385288
-  },
-  {
-   "dia": "2026-02-27",
-   "in": 1772219117,
-   "rep": 1772219293
-  },
-  {
-   "dia": "2026-02-27",
-   "in": 1772200017,
-   "rep": 1772201228
-  },
-  {
-   "dia": "2026-02-26",
-   "in": 1772133882,
-   "rep": 1772133887
-  },
-  {
-   "dia": "2026-02-19",
-   "in": 1771532973,
-   "rep": 1771533381
-  },
-  {
-   "dia": "2026-02-13",
-   "in": 1771014992,
-   "rep": 1771016006
-  },
-  {
-   "dia": "2026-02-19",
-   "in": 1771517670,
-   "rep": 1771521286
-  },
-  {
-   "dia": "2026-02-13",
-   "in": 1771023448,
-   "rep": 1771066049
-  },
-  {
-   "dia": "2026-02-15",
-   "in": 1771154024,
-   "rep": 1771154040
-  },
-  {
-   "dia": "2026-02-13",
-   "in": 1771017212,
-   "rep": 1771022594
-  },
-  {
-   "dia": "2026-02-15",
-   "in": 1771162333,
-   "rep": 1771162349
-  },
-  {
-   "dia": "2026-02-14",
-   "in": 1771078027,
-   "rep": 1771082284
+   "in": 1772492563,
+   "rep": 1772492714
   },
   {
    "dia": "2026-03-03",
-   "in": 1772579049,
-   "rep": 1772581005
+   "in": 1772501250,
+   "rep": 1772502204
   },
   {
-   "dia": "2026-02-25",
-   "in": 1772037793,
-   "rep": 1772038190
+   "dia": "2026-02-28",
+   "in": 1772309446,
+   "rep": 1772350441
   },
   {
-   "dia": "2026-02-17",
-   "in": 1771302793,
-   "rep": 1771310160
+   "dia": "2025-03-03",
+   "in": 1741041914,
+   "rep": 1741043276
+  },
+  {
+   "dia": "2026-02-23",
+   "in": 1771873507,
+   "rep": 1771876184
+  },
+  {
+   "dia": "2025-04-08",
+   "in": 1744082959,
+   "rep": 1744083287
+  },
+  {
+   "dia": "2026-01-16",
+   "in": 1768570369,
+   "rep": 1768588407
+  },
+  {
+   "dia": "2026-02-20",
+   "in": 1771616074,
+   "rep": 1771616590
+  },
+  {
+   "dia": "2026-02-20",
+   "in": 1771627362,
+   "rep": 1771627973
+  },
+  {
+   "dia": "2026-03-02",
+   "in": 1772480156,
+   "rep": 1772480545
+  },
+  {
+   "dia": "2025-11-24",
+   "in": 1763957950,
+   "rep": 1763977891
+  },
+  {
+   "dia": "2026-03-01",
+   "in": 1772387521,
+   "rep": 1772390044
+  },
+  {
+   "dia": "2026-02-22",
+   "in": 1771778575,
+   "rep": 1771778767
+  },
+  {
+   "dia": "2026-02-22",
+   "in": 1771795489,
+   "rep": 1771797481
+  },
+  {
+   "dia": "2026-01-30",
+   "in": 1769792191,
+   "rep": 1769792531
+  },
+  {
+   "dia": "2026-01-21",
+   "in": 1768964276,
+   "rep": 1768992794
+  },
+  {
+   "dia": "2024-11-23",
+   "in": 1732336739,
+   "rep": 1732336760
+  },
+  {
+   "dia": "2025-09-24",
+   "in": 1758756621,
+   "rep": 1758756826
+  },
+  {
+   "dia": "2025-03-05",
+   "in": 1741171973,
+   "rep": 1741180468
+  },
+  {
+   "dia": "2026-02-23",
+   "in": 1771867206,
+   "rep": 1771870950
+  },
+  {
+   "dia": "2026-02-21",
+   "in": 1771703933,
+   "rep": 1771704380
   },
   {
    "dia": "2026-02-09",
@@ -14182,11 +13394,6 @@
    "dia": "2026-02-21",
    "in": 1771647607,
    "rep": 1771666318
-  },
-  {
-   "dia": "2026-02-18",
-   "in": 1771428031,
-   "rep": 1771447953
   },
   {
    "dia": "2026-01-25",
@@ -14269,44 +13476,584 @@
    "rep": 1771461482
   },
   {
-   "dia": "2026-02-18",
-   "in": 1771455957,
-   "rep": 1771461490
-  },
-  {
-   "dia": "2026-02-18",
-   "in": 1771395147,
-   "rep": 1771395425
-  },
-  {
    "dia": "2026-02-17",
    "in": 1771351130,
    "rep": 1771351450
   },
   {
-   "dia": "2026-02-17",
-   "in": 1771348669,
-   "rep": 1771365766
-  },
-  {
-   "dia": "2026-02-12",
-   "in": 1770917182,
-   "rep": 1770917292
-  },
-  {
    "dia": "2026-02-10",
-   "in": 1770764534,
-   "rep": 1770766307
+   "in": 1770693063,
+   "rep": 1770704577
   },
   {
-   "dia": "2025-03-05",
-   "in": 1741144422,
-   "rep": 1741203471
+   "dia": "2026-02-17",
+   "in": 1771370444,
+   "rep": 1771409825
+  },
+  {
+   "dia": "2025-11-24",
+   "in": 1764017946,
+   "rep": 1764061009
+  },
+  {
+   "dia": "2026-02-18",
+   "in": 1771428948,
+   "rep": 1771429673
+  },
+  {
+   "dia": "2026-02-17",
+   "in": 1771345471,
+   "rep": 1771444344
+  },
+  {
+   "dia": "2026-02-09",
+   "in": 1770617010,
+   "rep": 1770647896
+  },
+  {
+   "dia": "2026-02-18",
+   "in": 1771421367,
+   "rep": 1771444214
+  },
+  {
+   "dia": "2025-06-23",
+   "in": 1750686630,
+   "rep": 1750694469
+  },
+  {
+   "dia": "2026-01-02",
+   "in": 1767376503,
+   "rep": 1767384388
   },
   {
    "dia": "2026-02-07",
-   "in": 1770480170,
-   "rep": 1770482047
+   "in": 1770479246,
+   "rep": 1770482117
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770132368,
+   "rep": 1770150715
+  },
+  {
+   "dia": "2026-02-02",
+   "in": 1770037388,
+   "rep": 1770075889
+  },
+  {
+   "dia": "2025-06-16",
+   "in": 1750091471,
+   "rep": 1750104540
+  },
+  {
+   "dia": "2026-02-09",
+   "in": 1770601737,
+   "rep": 1770622545
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770125111,
+   "rep": 1770129140
+  },
+  {
+   "dia": "2025-04-04",
+   "in": 1743774268,
+   "rep": 1743775214
+  },
+  {
+   "dia": "2026-02-13",
+   "in": 1770944174,
+   "rep": 1770963874
+  },
+  {
+   "dia": "2026-02-08",
+   "in": 1770570023,
+   "rep": 1770572950
+  },
+  {
+   "dia": "2026-02-08",
+   "in": 1770561970,
+   "rep": 1770566923
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770142582,
+   "rep": 1770142945
+  },
+  {
+   "dia": "2026-02-04",
+   "in": 1770239219,
+   "rep": 1770239384
+  },
+  {
+   "dia": "2026-02-09",
+   "in": 1770640386,
+   "rep": 1770658144
+  },
+  {
+   "dia": "2026-02-09",
+   "in": 1770652499,
+   "rep": 1770654061
+  },
+  {
+   "dia": "2026-02-02",
+   "in": 1770055311,
+   "rep": 1770057002
+  },
+  {
+   "dia": "2026-02-08",
+   "in": 1770521915,
+   "rep": 1770537906
+  },
+  {
+   "dia": "2026-02-01",
+   "in": 1769968049,
+   "rep": 1769969375
+  },
+  {
+   "dia": "2026-02-01",
+   "in": 1769949487,
+   "rep": 1769961125
+  },
+  {
+   "dia": "2026-02-02",
+   "in": 1769993486,
+   "rep": 1769999053
+  },
+  {
+   "dia": "2026-02-11",
+   "in": 1770771648,
+   "rep": 1770791144
+  },
+  {
+   "dia": "2025-11-26",
+   "in": 1764118508,
+   "rep": 1764126191
+  },
+  {
+   "dia": "2026-02-12",
+   "in": 1770888063,
+   "rep": 1770891127
+  },
+  {
+   "dia": "2025-11-08",
+   "in": 1762564235,
+   "rep": 1762594477
+  },
+  {
+   "dia": "2026-01-21",
+   "in": 1769026864,
+   "rep": 1769039912
+  },
+  {
+   "dia": "2026-02-02",
+   "in": 1770075703,
+   "rep": 1770076754
+  },
+  {
+   "dia": "2026-01-19",
+   "in": 1768864444,
+   "rep": 1768867450
+  },
+  {
+   "dia": "2026-01-14",
+   "in": 1768406406,
+   "rep": 1768414033
+  },
+  {
+   "dia": "2026-01-25",
+   "in": 1769378415,
+   "rep": 1769422886
+  },
+  {
+   "dia": "2026-02-09",
+   "in": 1770681139,
+   "rep": 1770681175
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770160691,
+   "rep": 1770162076
+  },
+  {
+   "dia": "2026-01-06",
+   "in": 1767726678,
+   "rep": 1767741117
+  },
+  {
+   "dia": "2026-02-08",
+   "in": 1770531501,
+   "rep": 1770537192
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770079052,
+   "rep": 1770079849
+  },
+  {
+   "dia": "2026-02-10",
+   "in": 1770692113,
+   "rep": 1770704657
+  },
+  {
+   "dia": "2025-07-03",
+   "in": 1751528282,
+   "rep": 1751548868
+  },
+  {
+   "dia": "2026-02-02",
+   "in": 1770048481,
+   "rep": 1770052295
+  },
+  {
+   "dia": "2026-02-12",
+   "in": 1770918312,
+   "rep": 1770919578
+  },
+  {
+   "dia": "2026-02-12",
+   "in": 1770916038,
+   "rep": 1770916197
+  },
+  {
+   "dia": "2026-02-10",
+   "in": 1770740682,
+   "rep": 1770741035
+  },
+  {
+   "dia": "2026-02-11",
+   "in": 1770826949,
+   "rep": 1770892955
+  },
+  {
+   "dia": "2026-02-12",
+   "in": 1770893222,
+   "rep": 1770905194
+  },
+  {
+   "dia": "2026-02-11",
+   "in": 1770845261,
+   "rep": 1770849648
+  },
+  {
+   "dia": "2026-02-11",
+   "in": 1770849205,
+   "rep": 1770849614
+  },
+  {
+   "dia": "2026-01-26",
+   "in": 1769399444,
+   "rep": 1769422251
+  },
+  {
+   "dia": "2026-02-10",
+   "in": 1770761059,
+   "rep": 1770823459
+  },
+  {
+   "dia": "2026-01-14",
+   "in": 1768428805,
+   "rep": 1768435401
+  },
+  {
+   "dia": "2026-01-16",
+   "in": 1768603711,
+   "rep": 1768605524
+  },
+  {
+   "dia": "2026-02-10",
+   "in": 1770755059,
+   "rep": 1770791574
+  },
+  {
+   "dia": "2025-12-25",
+   "in": 1766686677,
+   "rep": 1766693019
+  },
+  {
+   "dia": "2026-02-01",
+   "in": 1769919778,
+   "rep": 1769928544
+  },
+  {
+   "dia": "2026-02-08",
+   "in": 1770525312,
+   "rep": 1770537207
+  },
+  {
+   "dia": "2026-02-10",
+   "in": 1770688491,
+   "rep": 1770733659
+  },
+  {
+   "dia": "2026-01-31",
+   "in": 1769832372,
+   "rep": 1769841723
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770162426,
+   "rep": 1770163710
+  },
+  {
+   "dia": "2026-02-07",
+   "in": 1770446883,
+   "rep": 1770452550
+  },
+  {
+   "dia": "2026-02-07",
+   "in": 1770486586,
+   "rep": 1770486996
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770126075,
+   "rep": 1770126600
+  },
+  {
+   "dia": "2026-02-02",
+   "in": 1770057862,
+   "rep": 1770058106
+  },
+  {
+   "dia": "2025-08-14",
+   "in": 1755214849,
+   "rep": 1755219501
+  },
+  {
+   "dia": "2026-02-01",
+   "in": 1769916951,
+   "rep": 1769928606
+  },
+  {
+   "dia": "2026-01-18",
+   "in": 1768713623,
+   "rep": 1768731881
+  },
+  {
+   "dia": "2026-02-01",
+   "in": 1769921939,
+   "rep": 1769928381
+  },
+  {
+   "dia": "2026-01-31",
+   "in": 1769825421,
+   "rep": 1769842070
+  },
+  {
+   "dia": "2026-02-05",
+   "in": 1770264518,
+   "rep": 1770273034
+  },
+  {
+   "dia": "2025-08-12",
+   "in": 1755038797,
+   "rep": 1755040464
+  },
+  {
+   "dia": "2026-02-04",
+   "in": 1770221204,
+   "rep": 1770224639
+  },
+  {
+   "dia": "2026-01-29",
+   "in": 1769691958,
+   "rep": 1769713158
+  },
+  {
+   "dia": "2026-02-05",
+   "in": 1770254112,
+   "rep": 1770254117
+  },
+  {
+   "dia": "2026-02-04",
+   "in": 1770235742,
+   "rep": 1770236061
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770136559,
+   "rep": 1770136666
+  },
+  {
+   "dia": "2026-02-04",
+   "in": 1770164145,
+   "rep": 1770190935
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770149573,
+   "rep": 1770149590
+  },
+  {
+   "dia": "2025-05-07",
+   "in": 1746621038,
+   "rep": 1746621862
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770133376,
+   "rep": 1770136696
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770131683,
+   "rep": 1770136785
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770144883,
+   "rep": 1770145559
+  },
+  {
+   "dia": "2025-12-30",
+   "in": 1767116429,
+   "rep": 1767116638
+  },
+  {
+   "dia": "2025-06-11",
+   "in": 1749669274,
+   "rep": 1749669296
+  },
+  {
+   "dia": "2026-02-05",
+   "in": 1770314042,
+   "rep": 1770319870
+  },
+  {
+   "dia": "2026-02-05",
+   "in": 1770260416,
+   "rep": 1770273154
+  },
+  {
+   "dia": "2026-01-01",
+   "in": 1767296172,
+   "rep": 1767298738
+  },
+  {
+   "dia": "2026-02-07",
+   "in": 1770430096,
+   "rep": 1770430949
+  },
+  {
+   "dia": "2026-02-04",
+   "in": 1770180350,
+   "rep": 1770190069
+  },
+  {
+   "dia": "2026-02-07",
+   "in": 1770436963,
+   "rep": 1770458226
+  },
+  {
+   "dia": "2026-02-07",
+   "in": 1770432797,
+   "rep": 1770449474
+  },
+  {
+   "dia": "2025-12-28",
+   "in": 1766929047,
+   "rep": 1766930700
+  },
+  {
+   "dia": "2026-02-06",
+   "in": 1770415092,
+   "rep": 1770420591
+  },
+  {
+   "dia": "2026-02-06",
+   "in": 1770420616,
+   "rep": 1770421697
+  },
+  {
+   "dia": "2026-01-25",
+   "in": 1769326101,
+   "rep": 1769336443
+  },
+  {
+   "dia": "2026-02-06",
+   "in": 1770392626,
+   "rep": 1770394120
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770091431,
+   "rep": 1770099781
+  },
+  {
+   "dia": "2026-02-06",
+   "in": 1770387960,
+   "rep": 1770387991
+  },
+  {
+   "dia": "2026-02-06",
+   "in": 1770403673,
+   "rep": 1770404832
+  },
+  {
+   "dia": "2026-02-06",
+   "in": 1770404728,
+   "rep": 1770404803
+  },
+  {
+   "dia": "2026-02-06",
+   "in": 1770387057,
+   "rep": 1770388682
+  },
+  {
+   "dia": "2026-02-03",
+   "in": 1770118805,
+   "rep": 1770119009
+  },
+  {
+   "dia": "2026-01-30",
+   "in": 1769793950,
+   "rep": 1769794003
+  },
+  {
+   "dia": "2026-02-05",
+   "in": 1770335736,
+   "rep": 1770336304
+  },
+  {
+   "dia": "2026-02-06",
+   "in": 1770338015,
+   "rep": 1770364974
+  },
+  {
+   "dia": "2026-01-29",
+   "in": 1769729526,
+   "rep": 1769729713
+  },
+  {
+   "dia": "2026-02-05",
+   "in": 1770313225,
+   "rep": 1770319901
+  },
+  {
+   "dia": "2026-01-26",
+   "in": 1769447868,
+   "rep": 1769449701
+  },
+  {
+   "dia": "2025-12-15",
+   "in": 1765776474,
+   "rep": 1765791147
+  },
+  {
+   "dia": "2026-01-20",
+   "in": 1768947025,
+   "rep": 1768951651
+  },
+  {
+   "dia": "2026-02-04",
+   "in": 1770202072,
+   "rep": 1770204572
+  },
+  {
+   "dia": "2026-02-04",
+   "in": 1770175860,
+   "rep": 1770179365
   },
   {
    "dia": "2025-12-03",
@@ -14447,6 +14194,41 @@
    "dia": "2026-02-02",
    "in": 1770046563,
    "rep": 1770051534
+  },
+  {
+   "dia": "2025-12-25",
+   "in": 1766700745,
+   "rep": 1766746480
+  },
+  {
+   "dia": "2026-01-17",
+   "in": 1768687080,
+   "rep": 1768726148
+  },
+  {
+   "dia": "2026-01-13",
+   "in": 1768301113,
+   "rep": 1768301386
+  },
+  {
+   "dia": "2026-01-31",
+   "in": 1769892248,
+   "rep": 1769894713
+  },
+  {
+   "dia": "2026-01-27",
+   "in": 1769517164,
+   "rep": 1769528747
+  },
+  {
+   "dia": "2026-01-19",
+   "in": 1768847538,
+   "rep": 1768859837
+  },
+  {
+   "dia": "2026-01-31",
+   "in": 1769877739,
+   "rep": 1769889321
   }
  ]
 }
