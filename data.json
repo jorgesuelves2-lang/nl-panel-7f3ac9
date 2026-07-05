@@ -1,63 +1,63 @@
 {
- "generado": "2026-07-05 04:11",
+ "generado": "2026-07-05 09:21",
  "rango": "2026-02-01 a 2026-07-05",
  "setting": [
   {
    "dia": "2026-02-01",
-   "inb": 5,
-   "out": 1,
-   "nuevas": 6,
-   "total": 11,
-   "fups": 10,
-   "prop": 0,
+   "inb": 2,
+   "out": 6,
+   "nuevas": 8,
+   "total": 25,
+   "fups": 20,
+   "prop": 2,
    "agendas": 0,
-   "resp_min": 73,
+   "resp_min": 92,
    "nodata": false
   },
   {
    "dia": "2026-02-02",
-   "inb": 5,
-   "out": 13,
-   "nuevas": 18,
-   "total": 35,
-   "fups": 47,
-   "prop": 2,
+   "inb": 8,
+   "out": 22,
+   "nuevas": 30,
+   "total": 50,
+   "fups": 43,
+   "prop": 1,
    "agendas": 0,
-   "resp_min": 5,
+   "resp_min": 13,
    "nodata": false
   },
   {
    "dia": "2026-02-03",
-   "inb": 3,
-   "out": 24,
-   "nuevas": 27,
-   "total": 62,
-   "fups": 75,
-   "prop": 1,
+   "inb": 1,
+   "out": 20,
+   "nuevas": 21,
+   "total": 57,
+   "fups": 79,
+   "prop": 2,
    "agendas": 1,
-   "resp_min": 10,
+   "resp_min": 1153,
    "nodata": false
   },
   {
    "dia": "2026-02-04",
-   "inb": 5,
-   "out": 20,
-   "nuevas": 25,
-   "total": 41,
-   "fups": 24,
-   "prop": 1,
+   "inb": 1,
+   "out": 4,
+   "nuevas": 5,
+   "total": 13,
+   "fups": 7,
+   "prop": 0,
    "agendas": 0,
-   "resp_min": 235,
+   "resp_min": 44,
    "nodata": false
   },
   {
    "dia": "2026-02-05",
    "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 11,
-   "fups": 16,
-   "prop": 0,
+   "out": 3,
+   "nuevas": 3,
+   "total": 12,
+   "fups": 38,
+   "prop": 3,
    "agendas": 1,
    "resp_min": null,
    "nodata": false
@@ -65,34 +65,34 @@
   {
    "dia": "2026-02-06",
    "inb": 0,
-   "out": 3,
-   "nuevas": 3,
-   "total": 10,
-   "fups": 14,
-   "prop": 1,
+   "out": 5,
+   "nuevas": 5,
+   "total": 13,
+   "fups": 13,
+   "prop": 3,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-02-07",
-   "inb": 0,
-   "out": 4,
-   "nuevas": 4,
-   "total": 14,
-   "fups": 9,
+   "inb": 2,
+   "out": 6,
+   "nuevas": 8,
+   "total": 24,
+   "fups": 14,
    "prop": 0,
    "agendas": 4,
-   "resp_min": null,
+   "resp_min": 34,
    "nodata": false
   },
   {
    "dia": "2026-02-08",
-   "inb": 1,
-   "out": 1,
-   "nuevas": 2,
-   "total": 7,
-   "fups": 7,
+   "inb": 3,
+   "out": 9,
+   "nuevas": 12,
+   "total": 22,
+   "fups": 10,
    "prop": 0,
    "agendas": 0,
    "resp_min": 190,
@@ -100,35 +100,35 @@
   },
   {
    "dia": "2026-02-09",
-   "inb": 3,
-   "out": 4,
-   "nuevas": 7,
-   "total": 13,
-   "fups": 8,
+   "inb": 2,
+   "out": 6,
+   "nuevas": 8,
+   "total": 22,
+   "fups": 26,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 103,
+   "resp_min": 7,
    "nodata": false
   },
   {
    "dia": "2026-02-10",
-   "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 7,
-   "fups": 3,
-   "prop": 0,
+   "inb": 4,
+   "out": 5,
+   "nuevas": 9,
+   "total": 20,
+   "fups": 19,
+   "prop": 1,
    "agendas": 4,
-   "resp_min": null,
+   "resp_min": 40,
    "nodata": false
   },
   {
    "dia": "2026-02-11",
    "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 5,
-   "fups": 10,
+   "out": 3,
+   "nuevas": 3,
+   "total": 11,
+   "fups": 14,
    "prop": 0,
    "agendas": 2,
    "resp_min": null,
@@ -136,38 +136,38 @@
   },
   {
    "dia": "2026-02-12",
-   "inb": 0,
+   "inb": 1,
    "out": 2,
-   "nuevas": 2,
-   "total": 4,
-   "fups": 1,
+   "nuevas": 3,
+   "total": 8,
+   "fups": 4,
    "prop": 0,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 2,
    "nodata": false
   },
   {
    "dia": "2026-02-13",
    "inb": 1,
-   "out": 4,
-   "nuevas": 5,
-   "total": 19,
-   "fups": 15,
+   "out": 6,
+   "nuevas": 7,
+   "total": 51,
+   "fups": 53,
    "prop": 0,
    "agendas": 2,
-   "resp_min": 69,
+   "resp_min": 241,
    "nodata": false
   },
   {
    "dia": "2026-02-14",
-   "inb": 0,
-   "out": 3,
-   "nuevas": 3,
-   "total": 13,
-   "fups": 18,
-   "prop": 2,
+   "inb": 1,
+   "out": 4,
+   "nuevas": 5,
+   "total": 16,
+   "fups": 28,
+   "prop": 1,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 342,
    "nodata": false
   },
   {
@@ -175,8 +175,8 @@
    "inb": 1,
    "out": 6,
    "nuevas": 7,
-   "total": 11,
-   "fups": 11,
+   "total": 13,
+   "fups": 7,
    "prop": 0,
    "agendas": 0,
    "resp_min": 32,
@@ -184,14 +184,14 @@
   },
   {
    "dia": "2026-02-16",
-   "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 17,
-   "fups": 32,
-   "prop": 2,
+   "inb": 4,
+   "out": 11,
+   "nuevas": 15,
+   "total": 27,
+   "fups": 28,
+   "prop": 1,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 84,
    "nodata": false
   },
   {
@@ -199,71 +199,71 @@
    "inb": 4,
    "out": 3,
    "nuevas": 7,
-   "total": 14,
-   "fups": 18,
+   "total": 16,
+   "fups": 28,
    "prop": 1,
    "agendas": 5,
-   "resp_min": 80,
+   "resp_min": 396,
    "nodata": false
   },
   {
    "dia": "2026-02-18",
-   "inb": 5,
-   "out": 0,
-   "nuevas": 5,
-   "total": 16,
-   "fups": 15,
-   "prop": 0,
+   "inb": 11,
+   "out": 3,
+   "nuevas": 14,
+   "total": 31,
+   "fups": 37,
+   "prop": 1,
    "agendas": 0,
-   "resp_min": 92,
+   "resp_min": 12,
    "nodata": false
   },
   {
    "dia": "2026-02-19",
-   "inb": 5,
-   "out": 6,
-   "nuevas": 11,
-   "total": 46,
-   "fups": 76,
-   "prop": 4,
+   "inb": 0,
+   "out": 22,
+   "nuevas": 22,
+   "total": 102,
+   "fups": 103,
+   "prop": 3,
    "agendas": 1,
-   "resp_min": 413,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-02-20",
-   "inb": 6,
-   "out": 20,
-   "nuevas": 26,
-   "total": 54,
-   "fups": 40,
+   "inb": 0,
+   "out": 3,
+   "nuevas": 3,
+   "total": 9,
+   "fups": 7,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 55,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-02-21",
-   "inb": 2,
-   "out": 19,
-   "nuevas": 21,
-   "total": 38,
-   "fups": 26,
-   "prop": 0,
+   "inb": 1,
+   "out": 2,
+   "nuevas": 3,
+   "total": 6,
+   "fups": 13,
+   "prop": 1,
    "agendas": 4,
-   "resp_min": 182,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-02-22",
-   "inb": 0,
-   "out": 3,
-   "nuevas": 3,
+   "inb": 1,
+   "out": 0,
+   "nuevas": 1,
    "total": 4,
-   "fups": 0,
+   "fups": 5,
    "prop": 0,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 7,
    "nodata": false
   },
   {
@@ -272,7 +272,7 @@
    "out": 0,
    "nuevas": 1,
    "total": 4,
-   "fups": 2,
+   "fups": 4,
    "prop": 0,
    "agendas": 0,
    "resp_min": 124,
@@ -281,10 +281,10 @@
   {
    "dia": "2026-02-24",
    "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 4,
-   "fups": 3,
+   "out": 4,
+   "nuevas": 4,
+   "total": 6,
+   "fups": 2,
    "prop": 0,
    "agendas": 2,
    "resp_min": null,
@@ -295,8 +295,8 @@
    "inb": 0,
    "out": 0,
    "nuevas": 0,
-   "total": 0,
-   "fups": 0,
+   "total": 2,
+   "fups": 1,
    "prop": 0,
    "agendas": 2,
    "resp_min": null,
@@ -304,14 +304,14 @@
   },
   {
    "dia": "2026-02-26",
-   "inb": 1,
+   "inb": 0,
    "out": 0,
-   "nuevas": 1,
-   "total": 2,
-   "fups": 13,
-   "prop": 1,
+   "nuevas": 0,
+   "total": 1,
+   "fups": 3,
+   "prop": 0,
    "agendas": 2,
-   "resp_min": 28,
+   "resp_min": null,
    "nodata": false
   },
   {
@@ -319,8 +319,8 @@
    "inb": 2,
    "out": 0,
    "nuevas": 2,
-   "total": 4,
-   "fups": 1,
+   "total": 6,
+   "fups": 4,
    "prop": 0,
    "agendas": 2,
    "resp_min": 580,
@@ -328,11 +328,11 @@
   },
   {
    "dia": "2026-02-28",
-   "inb": 0,
+   "inb": 1,
    "out": 0,
-   "nuevas": 0,
-   "total": 3,
-   "fups": 1,
+   "nuevas": 1,
+   "total": 5,
+   "fups": 2,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
@@ -343,7 +343,7 @@
    "inb": 0,
    "out": 5,
    "nuevas": 5,
-   "total": 7,
+   "total": 8,
    "fups": 6,
    "prop": 0,
    "agendas": 0,
@@ -352,10 +352,10 @@
   },
   {
    "dia": "2026-03-02",
-   "inb": 2,
+   "inb": 1,
    "out": 2,
-   "nuevas": 4,
-   "total": 10,
+   "nuevas": 3,
+   "total": 9,
    "fups": 13,
    "prop": 0,
    "agendas": 0,
@@ -364,71 +364,71 @@
   },
   {
    "dia": "2026-03-03",
-   "inb": 1,
+   "inb": 0,
    "out": 1,
-   "nuevas": 2,
-   "total": 13,
-   "fups": 16,
+   "nuevas": 1,
+   "total": 10,
+   "fups": 14,
    "prop": 0,
    "agendas": 2,
-   "resp_min": 261,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-03-04",
-   "inb": 1,
+   "inb": 2,
    "out": 10,
-   "nuevas": 11,
-   "total": 26,
-   "fups": 30,
-   "prop": 4,
+   "nuevas": 12,
+   "total": 23,
+   "fups": 21,
+   "prop": 3,
    "agendas": 0,
-   "resp_min": 5,
+   "resp_min": 6,
    "nodata": false
   },
   {
    "dia": "2026-03-05",
-   "inb": 2,
-   "out": 3,
-   "nuevas": 5,
-   "total": 15,
-   "fups": 36,
+   "inb": 3,
+   "out": 5,
+   "nuevas": 8,
+   "total": 18,
+   "fups": 26,
    "prop": 1,
    "agendas": 0,
-   "resp_min": 11,
+   "resp_min": 7,
    "nodata": false
   },
   {
    "dia": "2026-03-06",
-   "inb": 7,
-   "out": 46,
-   "nuevas": 53,
-   "total": 82,
-   "fups": 60,
+   "inb": 6,
+   "out": 54,
+   "nuevas": 60,
+   "total": 120,
+   "fups": 93,
    "prop": 1,
    "agendas": 0,
-   "resp_min": 20,
+   "resp_min": 3,
    "nodata": false
   },
   {
    "dia": "2026-03-07",
-   "inb": 4,
-   "out": 31,
-   "nuevas": 35,
-   "total": 55,
-   "fups": 38,
-   "prop": 3,
+   "inb": 2,
+   "out": 3,
+   "nuevas": 5,
+   "total": 16,
+   "fups": 16,
+   "prop": 1,
    "agendas": 1,
-   "resp_min": 11,
+   "resp_min": 12,
    "nodata": false
   },
   {
    "dia": "2026-03-08",
    "inb": 1,
-   "out": 3,
-   "nuevas": 4,
-   "total": 11,
-   "fups": 5,
+   "out": 4,
+   "nuevas": 5,
+   "total": 14,
+   "fups": 15,
    "prop": 0,
    "agendas": 0,
    "resp_min": 9,
@@ -437,11 +437,11 @@
   {
    "dia": "2026-03-09",
    "inb": 0,
-   "out": 7,
-   "nuevas": 7,
+   "out": 5,
+   "nuevas": 5,
    "total": 13,
-   "fups": 15,
-   "prop": 1,
+   "fups": 14,
+   "prop": 0,
    "agendas": 2,
    "resp_min": null,
    "nodata": false
@@ -452,8 +452,8 @@
    "out": 4,
    "nuevas": 6,
    "total": 17,
-   "fups": 28,
-   "prop": 1,
+   "fups": 24,
+   "prop": 0,
    "agendas": 2,
    "resp_min": 19,
    "nodata": false
@@ -461,94 +461,94 @@
   {
    "dia": "2026-03-11",
    "inb": 1,
-   "out": 7,
-   "nuevas": 8,
-   "total": 24,
+   "out": 6,
+   "nuevas": 7,
+   "total": 21,
    "fups": 38,
-   "prop": 0,
+   "prop": 1,
    "agendas": 1,
    "resp_min": 13,
    "nodata": false
   },
   {
    "dia": "2026-03-12",
-   "inb": 3,
-   "out": 12,
-   "nuevas": 15,
-   "total": 38,
-   "fups": 53,
+   "inb": 1,
+   "out": 9,
+   "nuevas": 10,
+   "total": 46,
+   "fups": 76,
    "prop": 0,
    "agendas": 3,
-   "resp_min": 285,
+   "resp_min": 7,
    "nodata": false
   },
   {
    "dia": "2026-03-13",
-   "inb": 4,
-   "out": 43,
-   "nuevas": 47,
-   "total": 77,
-   "fups": 66,
-   "prop": 2,
+   "inb": 6,
+   "out": 52,
+   "nuevas": 58,
+   "total": 86,
+   "fups": 61,
+   "prop": 1,
    "agendas": 0,
    "resp_min": 17,
    "nodata": false
   },
   {
    "dia": "2026-03-14",
-   "inb": 2,
-   "out": 6,
-   "nuevas": 8,
-   "total": 19,
-   "fups": 18,
-   "prop": 0,
+   "inb": 3,
+   "out": 4,
+   "nuevas": 7,
+   "total": 17,
+   "fups": 20,
+   "prop": 1,
    "agendas": 1,
-   "resp_min": 30,
+   "resp_min": 360,
    "nodata": false
   },
   {
    "dia": "2026-03-15",
-   "inb": 5,
-   "out": 41,
-   "nuevas": 46,
-   "total": 89,
-   "fups": 73,
-   "prop": 1,
+   "inb": 3,
+   "out": 8,
+   "nuevas": 11,
+   "total": 39,
+   "fups": 40,
+   "prop": 0,
    "agendas": 0,
-   "resp_min": 128,
+   "resp_min": 185,
    "nodata": false
   },
   {
    "dia": "2026-03-16",
-   "inb": 3,
-   "out": 41,
-   "nuevas": 44,
-   "total": 74,
-   "fups": 115,
-   "prop": 4,
+   "inb": 2,
+   "out": 3,
+   "nuevas": 5,
+   "total": 24,
+   "fups": 45,
+   "prop": 1,
    "agendas": 3,
-   "resp_min": 311,
+   "resp_min": 157,
    "nodata": false
   },
   {
    "dia": "2026-03-17",
-   "inb": 12,
-   "out": 64,
-   "nuevas": 76,
-   "total": 116,
-   "fups": 102,
-   "prop": 3,
+   "inb": 5,
+   "out": 6,
+   "nuevas": 11,
+   "total": 39,
+   "fups": 67,
+   "prop": 1,
    "agendas": 1,
-   "resp_min": 51,
+   "resp_min": 77,
    "nodata": false
   },
   {
    "dia": "2026-03-18",
    "inb": 0,
-   "out": 29,
-   "nuevas": 29,
-   "total": 52,
-   "fups": 56,
+   "out": 11,
+   "nuevas": 11,
+   "total": 23,
+   "fups": 38,
    "prop": 1,
    "agendas": 1,
    "resp_min": null,
@@ -556,24 +556,24 @@
   },
   {
    "dia": "2026-03-19",
-   "inb": 4,
-   "out": 101,
-   "nuevas": 105,
-   "total": 155,
-   "fups": 131,
-   "prop": 6,
+   "inb": 0,
+   "out": 19,
+   "nuevas": 19,
+   "total": 53,
+   "fups": 94,
+   "prop": 3,
    "agendas": 0,
-   "resp_min": 1,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-03-20",
    "inb": 4,
-   "out": 36,
-   "nuevas": 40,
-   "total": 73,
-   "fups": 59,
-   "prop": 4,
+   "out": 19,
+   "nuevas": 23,
+   "total": 54,
+   "fups": 46,
+   "prop": 3,
    "agendas": 2,
    "resp_min": 61,
    "nodata": false
@@ -583,8 +583,8 @@
    "inb": 7,
    "out": 48,
    "nuevas": 55,
-   "total": 85,
-   "fups": 52,
+   "total": 86,
+   "fups": 68,
    "prop": 1,
    "agendas": 2,
    "resp_min": 156,
@@ -592,11 +592,11 @@
   },
   {
    "dia": "2026-03-22",
-   "inb": 2,
-   "out": 32,
-   "nuevas": 34,
-   "total": 56,
-   "fups": 35,
+   "inb": 3,
+   "out": 23,
+   "nuevas": 26,
+   "total": 52,
+   "fups": 38,
    "prop": 1,
    "agendas": 0,
    "resp_min": null,
@@ -607,8 +607,8 @@
    "inb": 1,
    "out": 57,
    "nuevas": 58,
-   "total": 89,
-   "fups": 79,
+   "total": 93,
+   "fups": 89,
    "prop": 3,
    "agendas": 3,
    "resp_min": 220,
@@ -616,71 +616,71 @@
   },
   {
    "dia": "2026-03-24",
-   "inb": 3,
-   "out": 37,
-   "nuevas": 40,
-   "total": 76,
-   "fups": 52,
-   "prop": 3,
+   "inb": 4,
+   "out": 39,
+   "nuevas": 43,
+   "total": 87,
+   "fups": 60,
+   "prop": 4,
    "agendas": 1,
-   "resp_min": 51,
+   "resp_min": 37,
    "nodata": false
   },
   {
    "dia": "2026-03-25",
-   "inb": 5,
-   "out": 55,
-   "nuevas": 60,
-   "total": 121,
-   "fups": 115,
+   "inb": 6,
+   "out": 76,
+   "nuevas": 82,
+   "total": 157,
+   "fups": 133,
    "prop": 3,
    "agendas": 1,
-   "resp_min": 43,
+   "resp_min": 76,
    "nodata": false
   },
   {
    "dia": "2026-03-26",
-   "inb": 1,
-   "out": 81,
-   "nuevas": 82,
-   "total": 103,
-   "fups": 55,
-   "prop": 3,
+   "inb": 6,
+   "out": 106,
+   "nuevas": 112,
+   "total": 153,
+   "fups": 83,
+   "prop": 4,
    "agendas": 3,
-   "resp_min": 7,
+   "resp_min": 409,
    "nodata": false
   },
   {
    "dia": "2026-03-27",
-   "inb": 2,
-   "out": 11,
-   "nuevas": 13,
-   "total": 19,
-   "fups": 10,
-   "prop": 0,
+   "inb": 3,
+   "out": 87,
+   "nuevas": 90,
+   "total": 119,
+   "fups": 70,
+   "prop": 3,
    "agendas": 1,
-   "resp_min": 108,
+   "resp_min": 120,
    "nodata": false
   },
   {
    "dia": "2026-03-28",
-   "inb": 3,
-   "out": 28,
-   "nuevas": 31,
-   "total": 45,
-   "fups": 32,
+   "inb": 5,
+   "out": 35,
+   "nuevas": 40,
+   "total": 56,
+   "fups": 31,
    "prop": 0,
    "agendas": 4,
-   "resp_min": 98,
+   "resp_min": 125,
    "nodata": false
   },
   {
    "dia": "2026-03-29",
    "inb": 2,
-   "out": 25,
-   "nuevas": 27,
-   "total": 46,
-   "fups": 55,
+   "out": 26,
+   "nuevas": 28,
+   "total": 52,
+   "fups": 62,
    "prop": 1,
    "agendas": 1,
    "resp_min": null,
@@ -689,10 +689,10 @@
   {
    "dia": "2026-03-30",
    "inb": 1,
-   "out": 9,
-   "nuevas": 10,
-   "total": 15,
-   "fups": 4,
+   "out": 4,
+   "nuevas": 5,
+   "total": 13,
+   "fups": 15,
    "prop": 0,
    "agendas": 3,
    "resp_min": null,
@@ -700,47 +700,47 @@
   },
   {
    "dia": "2026-03-31",
-   "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 2,
-   "fups": 0,
-   "prop": 0,
+   "inb": 11,
+   "out": 39,
+   "nuevas": 50,
+   "total": 58,
+   "fups": 13,
+   "prop": 1,
    "agendas": 2,
-   "resp_min": null,
+   "resp_min": 293,
    "nodata": false
   },
   {
    "dia": "2026-04-01",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 2,
-   "fups": 0,
+   "inb": 9,
+   "out": 6,
+   "nuevas": 15,
+   "total": 25,
+   "fups": 6,
    "prop": 0,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 271,
    "nodata": false
   },
   {
    "dia": "2026-04-02",
-   "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 2,
-   "fups": 0,
+   "inb": 3,
+   "out": 8,
+   "nuevas": 11,
+   "total": 21,
+   "fups": 17,
    "prop": 0,
    "agendas": 3,
-   "resp_min": null,
+   "resp_min": 76,
    "nodata": false
   },
   {
    "dia": "2026-04-03",
    "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 1,
-   "fups": 0,
+   "out": 8,
+   "nuevas": 8,
+   "total": 9,
+   "fups": 1,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
@@ -773,10 +773,10 @@
   {
    "dia": "2026-04-06",
    "inb": 0,
-   "out": 4,
-   "nuevas": 4,
-   "total": 7,
-   "fups": 1,
+   "out": 2,
+   "nuevas": 2,
+   "total": 5,
+   "fups": 0,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -785,10 +785,10 @@
   {
    "dia": "2026-04-07",
    "inb": 1,
-   "out": 1,
-   "nuevas": 2,
+   "out": 2,
+   "nuevas": 3,
    "total": 6,
-   "fups": 8,
+   "fups": 7,
    "prop": 1,
    "agendas": 0,
    "resp_min": 2,
@@ -799,8 +799,8 @@
    "inb": 0,
    "out": 0,
    "nuevas": 0,
-   "total": 13,
-   "fups": 18,
+   "total": 11,
+   "fups": 16,
    "prop": 1,
    "agendas": 0,
    "resp_min": null,
@@ -869,9 +869,9 @@
   {
    "dia": "2026-04-14",
    "inb": 4,
-   "out": 11,
-   "nuevas": 15,
-   "total": 27,
+   "out": 13,
+   "nuevas": 17,
+   "total": 29,
    "fups": 15,
    "prop": 0,
    "agendas": 1,
@@ -895,8 +895,8 @@
    "inb": 1,
    "out": 4,
    "nuevas": 5,
-   "total": 22,
-   "fups": 18,
+   "total": 19,
+   "fups": 15,
    "prop": 0,
    "agendas": 0,
    "resp_min": 210,
@@ -907,8 +907,8 @@
    "inb": 0,
    "out": 1,
    "nuevas": 1,
-   "total": 6,
-   "fups": 8,
+   "total": 5,
+   "fups": 5,
    "prop": 0,
    "agendas": 2,
    "resp_min": null,
@@ -931,7 +931,7 @@
    "inb": 0,
    "out": 1,
    "nuevas": 1,
-   "total": 3,
+   "total": 2,
    "fups": 0,
    "prop": 0,
    "agendas": 1,
@@ -989,10 +989,10 @@
   {
    "dia": "2026-04-24",
    "inb": 1,
-   "out": 7,
-   "nuevas": 8,
-   "total": 11,
-   "fups": 22,
+   "out": 8,
+   "nuevas": 9,
+   "total": 12,
+   "fups": 23,
    "prop": 1,
    "agendas": 1,
    "resp_min": 458,
@@ -1000,26 +1000,26 @@
   },
   {
    "dia": "2026-04-25",
-   "inb": 2,
-   "out": 61,
-   "nuevas": 63,
-   "total": 79,
+   "inb": 1,
+   "out": 63,
+   "nuevas": 64,
+   "total": 80,
    "fups": 21,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 32,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-04-26",
-   "inb": 4,
-   "out": 22,
-   "nuevas": 26,
-   "total": 34,
-   "fups": 9,
+   "inb": 3,
+   "out": 20,
+   "nuevas": 23,
+   "total": 30,
+   "fups": 3,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 327,
+   "resp_min": null,
    "nodata": false
   },
   {
@@ -1027,7 +1027,7 @@
    "inb": 1,
    "out": 1,
    "nuevas": 2,
-   "total": 5,
+   "total": 4,
    "fups": 1,
    "prop": 0,
    "agendas": 1,
@@ -1039,7 +1039,7 @@
    "inb": 1,
    "out": 1,
    "nuevas": 2,
-   "total": 8,
+   "total": 6,
    "fups": 7,
    "prop": 1,
    "agendas": 3,
@@ -1051,8 +1051,8 @@
    "inb": 1,
    "out": 1,
    "nuevas": 2,
-   "total": 8,
-   "fups": 8,
+   "total": 6,
+   "fups": 7,
    "prop": 0,
    "agendas": 1,
    "resp_min": 838,
@@ -1063,8 +1063,8 @@
    "inb": 0,
    "out": 0,
    "nuevas": 0,
-   "total": 6,
-   "fups": 5,
+   "total": 4,
+   "fups": 2,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
@@ -1075,7 +1075,7 @@
    "inb": 0,
    "out": 1,
    "nuevas": 1,
-   "total": 4,
+   "total": 3,
    "fups": 0,
    "prop": 0,
    "agendas": 2,
@@ -1099,9 +1099,9 @@
    "inb": 0,
    "out": 1,
    "nuevas": 1,
-   "total": 5,
-   "fups": 1,
-   "prop": 1,
+   "total": 4,
+   "fups": 0,
+   "prop": 0,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
@@ -1111,8 +1111,8 @@
    "inb": 1,
    "out": 0,
    "nuevas": 1,
-   "total": 15,
-   "fups": 22,
+   "total": 12,
+   "fups": 20,
    "prop": 1,
    "agendas": 1,
    "resp_min": 1,
@@ -1121,10 +1121,10 @@
   {
    "dia": "2026-05-05",
    "inb": 7,
-   "out": 22,
-   "nuevas": 29,
-   "total": 62,
-   "fups": 50,
+   "out": 15,
+   "nuevas": 22,
+   "total": 54,
+   "fups": 56,
    "prop": 1,
    "agendas": 2,
    "resp_min": 214,
@@ -1133,9 +1133,9 @@
   {
    "dia": "2026-05-06",
    "inb": 1,
-   "out": 35,
-   "nuevas": 36,
-   "total": 44,
+   "out": 43,
+   "nuevas": 44,
+   "total": 53,
    "fups": 10,
    "prop": 0,
    "agendas": 1,
@@ -1505,9 +1505,9 @@
   {
    "dia": "2026-06-06",
    "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 2,
+   "out": 3,
+   "nuevas": 3,
+   "total": 3,
    "fups": 0,
    "prop": 0,
    "agendas": 1,
@@ -1553,9 +1553,9 @@
   {
    "dia": "2026-06-10",
    "inb": 4,
-   "out": 22,
-   "nuevas": 26,
-   "total": 37,
+   "out": 17,
+   "nuevas": 21,
+   "total": 32,
    "fups": 15,
    "prop": 0,
    "agendas": 0,
@@ -1567,8 +1567,8 @@
    "inb": 3,
    "out": 35,
    "nuevas": 38,
-   "total": 62,
-   "fups": 20,
+   "total": 61,
+   "fups": 19,
    "prop": 0,
    "agendas": 2,
    "resp_min": 344,
@@ -1577,9 +1577,9 @@
   {
    "dia": "2026-06-12",
    "inb": 3,
-   "out": 7,
-   "nuevas": 10,
-   "total": 11,
+   "out": 12,
+   "nuevas": 15,
+   "total": 16,
    "fups": 2,
    "prop": 0,
    "agendas": 2,
@@ -1588,10 +1588,10 @@
   },
   {
    "dia": "2026-06-13",
-   "inb": 0,
+   "inb": 1,
    "out": 0,
-   "nuevas": 0,
-   "total": 0,
+   "nuevas": 1,
+   "total": 1,
    "fups": 0,
    "prop": 0,
    "agendas": 1,
@@ -1613,10 +1613,10 @@
   {
    "dia": "2026-06-15",
    "inb": 1,
-   "out": 1,
-   "nuevas": 2,
-   "total": 4,
-   "fups": 1,
+   "out": 2,
+   "nuevas": 3,
+   "total": 6,
+   "fups": 2,
    "prop": 0,
    "agendas": 1,
    "resp_min": 822,
@@ -1639,8 +1639,8 @@
    "inb": 1,
    "out": 1,
    "nuevas": 2,
-   "total": 4,
-   "fups": 4,
+   "total": 5,
+   "fups": 6,
    "prop": 0,
    "agendas": 1,
    "resp_min": 24,
@@ -1649,10 +1649,10 @@
   {
    "dia": "2026-06-18",
    "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 9,
-   "fups": 17,
+   "out": 1,
+   "nuevas": 1,
+   "total": 6,
+   "fups": 12,
    "prop": 0,
    "agendas": 3,
    "resp_min": null,
@@ -1672,23 +1672,23 @@
   },
   {
    "dia": "2026-06-20",
-   "inb": 0,
+   "inb": 1,
    "out": 5,
-   "nuevas": 5,
-   "total": 14,
-   "fups": 12,
-   "prop": 0,
+   "nuevas": 6,
+   "total": 15,
+   "fups": 22,
+   "prop": 1,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 203,
    "nodata": false
   },
   {
    "dia": "2026-06-21",
    "inb": 2,
-   "out": 32,
-   "nuevas": 34,
-   "total": 59,
-   "fups": 30,
+   "out": 13,
+   "nuevas": 15,
+   "total": 38,
+   "fups": 27,
    "prop": 1,
    "agendas": 0,
    "resp_min": 1000,
@@ -1696,11 +1696,11 @@
   },
   {
    "dia": "2026-06-22",
-   "inb": 4,
-   "out": 34,
-   "nuevas": 38,
-   "total": 58,
-   "fups": 13,
+   "inb": 5,
+   "out": 49,
+   "nuevas": 54,
+   "total": 81,
+   "fups": 26,
    "prop": 0,
    "agendas": 0,
    "resp_min": 123,
@@ -1709,10 +1709,10 @@
   {
    "dia": "2026-06-23",
    "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 3,
-   "fups": 1,
+   "out": 1,
+   "nuevas": 1,
+   "total": 2,
+   "fups": 0,
    "prop": 0,
    "agendas": 2,
    "resp_min": null,
@@ -1769,10 +1769,10 @@
   {
    "dia": "2026-06-28",
    "inb": 0,
-   "out": 0,
-   "nuevas": 0,
+   "out": 1,
+   "nuevas": 1,
    "total": 2,
-   "fups": 0,
+   "fups": 1,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -1792,26 +1792,26 @@
   },
   {
    "dia": "2026-06-30",
-   "inb": 1,
-   "out": 20,
-   "nuevas": 21,
-   "total": 29,
-   "fups": 28,
-   "prop": 2,
+   "inb": 0,
+   "out": 4,
+   "nuevas": 4,
+   "total": 10,
+   "fups": 11,
+   "prop": 1,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-07-01",
-   "inb": 2,
-   "out": 67,
-   "nuevas": 69,
-   "total": 81,
-   "fups": 11,
+   "inb": 4,
+   "out": 83,
+   "nuevas": 87,
+   "total": 101,
+   "fups": 15,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 29,
+   "resp_min": 26,
    "nodata": false
   },
   {
@@ -1819,8 +1819,8 @@
    "inb": 0,
    "out": 1,
    "nuevas": 1,
-   "total": 3,
-   "fups": 3,
+   "total": 4,
+   "fups": 6,
    "prop": 1,
    "agendas": 3,
    "resp_min": null,
@@ -1828,36 +1828,36 @@
   },
   {
    "dia": "2026-07-03",
-   "inb": 3,
+   "inb": 2,
    "out": 4,
-   "nuevas": 7,
-   "total": 9,
-   "fups": 5,
+   "nuevas": 6,
+   "total": 8,
+   "fups": 8,
    "prop": 0,
    "agendas": 1,
-   "resp_min": 1230,
+   "resp_min": 45,
    "nodata": false
   },
   {
    "dia": "2026-07-04",
-   "inb": 7,
-   "out": 4,
-   "nuevas": 11,
-   "total": 28,
-   "fups": 38,
-   "prop": 2,
+   "inb": 4,
+   "out": 3,
+   "nuevas": 7,
+   "total": 19,
+   "fups": 30,
+   "prop": 1,
    "agendas": 3,
-   "resp_min": 647,
+   "resp_min": 958,
    "nodata": false
   },
   {
    "dia": "2026-07-05",
-   "inb": 2,
+   "inb": 1,
    "out": 16,
-   "nuevas": 18,
-   "total": 23,
-   "fups": 0,
-   "prop": 0,
+   "nuevas": 17,
+   "total": 34,
+   "fups": 6,
+   "prop": 1,
    "agendas": 1,
    "resp_min": null,
    "nodata": false
@@ -3447,36 +3447,6 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/bDuw7wPZhH1z0LMeaD4H"
   },
   {
-   "nombre": "2da Siumara Turcott",
-   "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
-   "urg": "",
-   "comp": "",
-   "obst": "",
-   "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
-   "fagenda": "2026-04-28",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": null,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/XrGhjuT2WA0JmqtwXFUH"
-  },
-  {
    "nombre": "Adriana Arrieta",
    "setter": "Sary",
    "prof": "Odontologa",
@@ -3987,20 +3957,20 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/YwguDgAIk1BfkibRaLKU"
   },
   {
-   "nombre": "Andres Fernando Ramirez Soto",
+   "nombre": "Andres fernando Ramirez soto",
    "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Médico general ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "univ": "Uptc",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Idioma",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "andrew_fer@hotmail.com",
+   "tf": "+34637939853",
    "fagenda": "2026-05-30",
    "closer": "",
    "restri": "",
@@ -4169,18 +4139,18 @@
   {
    "nombre": "Angel Baltazar",
    "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Anestesiologia ",
+   "nivel": "🔹 A2",
+   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
+   "ingresos": "más de 3.000€",
+   "univ": "San Martin de Porres  Lima",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Hablar  alemán ",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "angelbaltazartovar1@gmail.com",
+   "tf": "+51964480715",
    "fagenda": "2026-05-30",
    "closer": "",
    "restri": "",
@@ -4318,19 +4288,19 @@
   },
   {
    "nombre": "Ariel Rojas Soledad",
-   "setter": "Sary",
-   "prof": "Médico general ",
-   "nivel": "🔹 No tengo conocimientos",
-   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
-   "ingresos": "300€ - 600€",
-   "univ": "UPAEP",
+   "setter": "",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Idioma ",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "Ariel.rojas",
-   "email": "ariel.rojas.soledad@gmail.com",
-   "tf": "+525580392240",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-29",
    "closer": "",
    "restri": "",
@@ -4469,18 +4439,18 @@
   {
    "nombre": "Bryam Ureña",
    "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Enfermero ",
+   "nivel": "🔹 Conocimientos básicos",
+   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
+   "ingresos": "600€- 1.000€",
+   "univ": "Universidad Católica de Cuenca ",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Tema de papeleo ",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "fabry.mendez71@gmail.com",
+   "tf": "+593981918323",
    "fagenda": "2026-05-30",
    "closer": "",
    "restri": "",
@@ -4491,9 +4461,9 @@
    "sclo": null,
    "ticket": "",
    "pagado": "",
-   "objtri": "",
+   "objtri": ".",
    "objclo": "",
-   "infocloser": "",
+   "infocloser": ".",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/EWnMZMZ9sPajTXH7RfWs"
   },
   {
@@ -5758,19 +5728,19 @@
   },
   {
    "nombre": "Fernando Conde",
-   "setter": "",
-   "prof": "",
-   "nivel": "",
+   "setter": "Sary",
+   "prof": "Fisioterapeuta",
+   "nivel": "🔹 Conocimientos básicos",
    "presup": "",
-   "ingresos": "",
+   "ingresos": "1.000$ - 3.000$",
    "univ": "",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "El idioma siento que no he conseguido la confianza para expresarme o la memoria para no trabar me, algo que no mencione fue la profesora con la que inicie el A2 me hacia sentir como un tonto y eso aparte del tema horario me desmotivo mucho,he decidido retomarlo.",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "conde.fisioglobal@gmail.com",
+   "tf": "+34613361177",
    "fagenda": "2026-04-28",
    "closer": "",
    "restri": "",
@@ -6538,19 +6508,19 @@
   },
   {
    "nombre": "Jason Niola",
-   "setter": "",
-   "prof": "",
-   "nivel": "",
+   "setter": "Sary",
+   "prof": "Ingeniero Eléctrico ",
+   "nivel": "🔹 A2",
    "presup": "",
-   "ingresos": "",
+   "ingresos": "600$ - 1.000$",
    "univ": "",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "No saber el idioma y no conocer del sistema ",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "jason.king.ec",
+   "email": "jasonfnking@gmail.com",
+   "tf": "+593967656471",
    "fagenda": "2026-04-28",
    "closer": "",
    "restri": "",
@@ -6955,6 +6925,36 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Rk7x4n8C03MxdzxkhyWR"
+  },
+  {
+   "nombre": "Jorge Sequeira",
+   "setter": "Sary",
+   "prof": "Medico cirujano ",
+   "nivel": "🔹 B2",
+   "presup": "",
+   "ingresos": "1.000$ - 3.000$",
+   "univ": "",
+   "urg": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "Hablar",
+   "canal": "",
+   "ig": "jseq13",
+   "email": "jesc32@hotmail.com",
+   "tf": "+50374501555",
+   "fagenda": "2026-04-27",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": null,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Aj0arZWsEQgUhTLQDrBD"
   },
   {
    "nombre": "Jose David Velez M.",
@@ -8729,18 +8729,18 @@
   {
    "nombre": "Michael GONZALEZ",
    "setter": "",
-   "prof": "Medico",
-   "nivel": "🔹 No tengo conocimientos",
-   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
-   "ingresos": "300€ - 600€",
-   "univ": "Uapo",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "Idioma",
+   "comp": "",
+   "obst": "",
    "canal": "",
    "ig": "",
-   "email": "michael_gf@hotmail.com",
-   "tf": "+51949911171",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-29",
    "closer": "",
    "restri": "",
@@ -9297,33 +9297,33 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VytGKUut9QYd5hFT77RK"
   },
   {
-   "nombre": "Nery Mendoza Hernández",
+   "nombre": "Nery Mendoza HERNANDEZ",
    "setter": "",
-   "prof": "Médico general ",
-   "nivel": "🔹 No tengo conocimientos",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "ingresos": "1.000€ - 3.000€",
-   "univ": "La Habana cuba ",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Los recursos ",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "Dra nery Mendoza ",
-   "email": "mendezi65@yahoo.com",
-   "tf": "+593994641215",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-06-11",
    "closer": "",
    "restri": "",
    "resclo": "",
    "estado": "",
-   "ss": 60,
-   "stri": 58,
+   "ss": null,
+   "stri": null,
    "sclo": null,
    "ticket": "",
    "pagado": "",
    "objtri": "",
    "objclo": "",
-   "infocloser": "Medica, decision de emigrar tomada. NO puede empezar hasta septiembre (2 cirugias: tiroides 22, columna julio); dinero en efectivo desde septiembre. Aleman: nulo. David se comprometio a recontactar en septiembre. Hay un no-show posterior -> reconfirmar. Mejor SEGUIMIENTO sept, empezar por idioma.",
+   "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Qy8owgP9Ce7yg2GulVBz"
   },
   {
@@ -9449,18 +9449,18 @@
   {
    "nombre": "Oscar Castillo",
    "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Médico forense",
+   "nivel": "🔹 A1",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "univ": "Universidad Católica de Santa María - Arequipa",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "Idioma y dudas sobre las entidades que ofrecen ayudarte ",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "oz.car369",
+   "email": "os.castillo66@gmail.com",
+   "tf": "+51943779439",
    "fagenda": "2026-05-30",
    "closer": "",
    "restri": "",
@@ -9835,36 +9835,6 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/i4bRuGS50FKpfGJDusK0"
-  },
-  {
-   "nombre": "reserva Jorge Sequeira",
-   "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
-   "urg": "",
-   "comp": "",
-   "obst": "",
-   "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
-   "fagenda": "2026-04-27",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": null,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Aj0arZWsEQgUhTLQDrBD"
   },
   {
    "nombre": "Ricardo Celle",
@@ -10377,20 +10347,20 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Sy21JqSA7jbit1o5LYSJ"
   },
   {
-   "nombre": "Sergio quispe",
+   "nombre": "Sergio Quispe",
    "setter": "",
-   "prof": "Médico general",
-   "nivel": "🔹 No tengo conocimientos",
-   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
-   "ingresos": "300€ - 600€",
-   "univ": "Udabol - bolivia",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Ninguno",
+   "comp": "",
+   "obst": "",
    "canal": "",
    "ig": "",
-   "email": "shuttersergio@gmail.com",
-   "tf": "+51915118495",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-29",
    "closer": "",
    "restri": "",
@@ -10435,6 +10405,36 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/41WRRtidG30oQFMzXzvy"
+  },
+  {
+   "nombre": "Siumara Turcott",
+   "setter": "Sary",
+   "prof": "Mercadotecnia ",
+   "nivel": "🔹 B1",
+   "presup": "",
+   "ingresos": "300$ - 600$",
+   "univ": "",
+   "urg": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "El idioma ",
+   "canal": "",
+   "ig": "SiuTurcott ",
+   "email": "stnegrete1@gmail.com",
+   "tf": "+529614307302",
+   "fagenda": "2026-04-28",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": null,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/XrGhjuT2WA0JmqtwXFUH"
   },
   {
    "nombre": "Sofía Valverde",
@@ -13048,19 +13048,9 @@
  ],
  "resp_pairs": [
   {
-   "dia": "2026-07-03",
-   "in": 1783121959,
-   "rep": 1783127326
-  },
-  {
    "dia": "2026-07-04",
-   "in": 1783129219,
-   "rep": 1783206062
-  },
-  {
-   "dia": "2026-07-03",
-   "in": 1783114630,
-   "rep": 1783188409
+   "in": 1783202389,
+   "rep": 1783240462
   },
   {
    "dia": "2026-03-17",
@@ -13069,13 +13059,23 @@
   },
   {
    "dia": "2026-07-03",
-   "in": 1783108060,
-   "rep": 1783188309
+   "in": 1783121959,
+   "rep": 1783127326
+  },
+  {
+   "dia": "2026-07-03",
+   "in": 1783117486,
+   "rep": 1783117552
   },
   {
    "dia": "2026-07-04",
-   "in": 1783185744,
-   "rep": 1783186500
+   "in": 1783129219,
+   "rep": 1783206062
+  },
+  {
+   "dia": "2026-07-01",
+   "in": 1782895676,
+   "rep": 1782897101
   },
   {
    "dia": "2026-07-01",
@@ -13093,9 +13093,14 @@
    "rep": 1732374341
   },
   {
-   "dia": "2026-04-26",
-   "in": 1777200317,
-   "rep": 1777219932
+   "dia": "2026-06-20",
+   "in": 1781937139,
+   "rep": 1781949294
+  },
+  {
+   "dia": "2025-03-18",
+   "in": 1742332365,
+   "rep": 1742333347
   },
   {
    "dia": "2026-06-21",
@@ -13131,11 +13136,6 @@
    "dia": "2025-07-06",
    "in": 1751831908,
    "rep": 1751834757
-  },
-  {
-   "dia": "2026-04-25",
-   "in": 1777108887,
-   "rep": 1777110798
   },
   {
    "dia": "2026-06-10",
@@ -13268,11 +13268,6 @@
    "rep": 1772636263
   },
   {
-   "dia": "2024-10-07",
-   "in": 1728281746,
-   "rep": 1728307384
-  },
-  {
    "dia": "2025-06-03",
    "in": 1748954724,
    "rep": 1748976871
@@ -13333,9 +13328,94 @@
    "rep": 1776189009
   },
   {
-   "dia": "2026-03-25",
-   "in": 1774467824,
-   "rep": 1774467838
+   "dia": "2026-04-02",
+   "in": 1775158881,
+   "rep": 1775176513
+  },
+  {
+   "dia": "2026-03-13",
+   "in": 1773361988,
+   "rep": 1773397097
+  },
+  {
+   "dia": "2026-04-02",
+   "in": 1775143722,
+   "rep": 1775146702
+  },
+  {
+   "dia": "2026-04-01",
+   "in": 1775009388,
+   "rep": 1775035683
+  },
+  {
+   "dia": "2025-06-09",
+   "in": 1749437500,
+   "rep": 1749468257
+  },
+  {
+   "dia": "2026-01-08",
+   "in": 1767857095,
+   "rep": 1767863092
+  },
+  {
+   "dia": "2026-04-02",
+   "in": 1775103586,
+   "rep": 1775108121
+  },
+  {
+   "dia": "2026-04-01",
+   "in": 1775085757,
+   "rep": 1775087965
+  },
+  {
+   "dia": "2026-04-01",
+   "in": 1775068040,
+   "rep": 1775074298
+  },
+  {
+   "dia": "2026-04-01",
+   "in": 1775066219,
+   "rep": 1775067707
+  },
+  {
+   "dia": "2025-08-24",
+   "in": 1755999316,
+   "rep": 1756035199
+  },
+  {
+   "dia": "2026-03-31",
+   "in": 1774972557,
+   "rep": 1775035804
+  },
+  {
+   "dia": "2026-04-01",
+   "in": 1775002963,
+   "rep": 1775035755
+  },
+  {
+   "dia": "2026-04-01",
+   "in": 1775005170,
+   "rep": 1775035694
+  },
+  {
+   "dia": "2025-07-25",
+   "in": 1753461116,
+   "rep": 1753462478
+  },
+  {
+   "dia": "2026-03-31",
+   "in": 1774990655,
+   "rep": 1774990975
+  },
+  {
+   "dia": "2026-03-31",
+   "in": 1774959628,
+   "rep": 1774990944
+  },
+  {
+   "dia": "2026-03-31",
+   "in": 1774978072,
+   "rep": 1774981889
   },
   {
    "dia": "2025-10-29",
@@ -13368,14 +13448,79 @@
    "rep": 1760950203
   },
   {
-   "dia": "2026-03-27",
-   "in": 1774649637,
-   "rep": 1774655835
+   "dia": "2026-03-28",
+   "in": 1774680754,
+   "rep": 1774688991
+  },
+  {
+   "dia": "2025-02-24",
+   "in": 1740411891,
+   "rep": 1740412074
   },
   {
    "dia": "2026-03-27",
    "in": 1774649097,
    "rep": 1774655823
+  },
+  {
+   "dia": "2026-03-14",
+   "in": 1773467632,
+   "rep": 1773509028
+  },
+  {
+   "dia": "2026-03-17",
+   "in": 1773723371,
+   "rep": 1773729087
+  },
+  {
+   "dia": "2026-03-22",
+   "in": 1774142793,
+   "rep": 1774289137
+  },
+  {
+   "dia": "2026-03-27",
+   "in": 1774624066,
+   "rep": 1774631737
+  },
+  {
+   "dia": "2026-01-31",
+   "in": 1769867918,
+   "rep": 1769872724
+  },
+  {
+   "dia": "2025-07-21",
+   "in": 1753111688,
+   "rep": 1753112448
+  },
+  {
+   "dia": "2026-03-26",
+   "in": 1774496124,
+   "rep": 1774516624
+  },
+  {
+   "dia": "2025-09-04",
+   "in": 1757024905,
+   "rep": 1757025894
+  },
+  {
+   "dia": "2025-12-31",
+   "in": 1767194654,
+   "rep": 1767199837
+  },
+  {
+   "dia": "2026-03-24",
+   "in": 1774386270,
+   "rep": 1774386467
+  },
+  {
+   "dia": "2026-03-26",
+   "in": 1774487598,
+   "rep": 1774516176
+  },
+  {
+   "dia": "2026-03-16",
+   "in": 1773692577,
+   "rep": 1773692824
   },
   {
    "dia": "2026-03-26",
@@ -13401,6 +13546,31 @@
    "dia": "2026-02-08",
    "in": 1770543291,
    "rep": 1770554703
+  },
+  {
+   "dia": "2026-03-25",
+   "in": 1774476235,
+   "rep": 1774479200
+  },
+  {
+   "dia": "2026-03-26",
+   "in": 1774484124,
+   "rep": 1774516747
+  },
+  {
+   "dia": "2025-03-15",
+   "in": 1742006899,
+   "rep": 1742010375
+  },
+  {
+   "dia": "2025-05-05",
+   "in": 1746403839,
+   "rep": 1746404189
+  },
+  {
+   "dia": "2025-08-07",
+   "in": 1754566792,
+   "rep": 1754569043
   },
   {
    "dia": "2025-12-19",
@@ -13451,6 +13621,11 @@
    "dia": "2026-03-25",
    "in": 1774430397,
    "rep": 1774432014
+  },
+  {
+   "dia": "2026-03-25",
+   "in": 1774416562,
+   "rep": 1774431537
   },
   {
    "dia": "2026-03-25",
@@ -13573,11 +13748,6 @@
    "rep": 1736510302
   },
   {
-   "dia": "2025-07-04",
-   "in": 1751623368,
-   "rep": 1751635528
-  },
-  {
    "dia": "2026-03-17",
    "in": 1773742691,
    "rep": 1773743319
@@ -13586,106 +13756,6 @@
    "dia": "2026-01-19",
    "in": 1768789420,
    "rep": 1768817846
-  },
-  {
-   "dia": "2026-03-15",
-   "in": 1773615585,
-   "rep": 1773618629
-  },
-  {
-   "dia": "2026-01-27",
-   "in": 1769508442,
-   "rep": 1769508708
-  },
-  {
-   "dia": "2025-08-15",
-   "in": 1755280046,
-   "rep": 1755284645
-  },
-  {
-   "dia": "2026-03-19",
-   "in": 1773937214,
-   "rep": 1773937266
-  },
-  {
-   "dia": "2026-03-06",
-   "in": 1772805274,
-   "rep": 1772806493
-  },
-  {
-   "dia": "2026-01-12",
-   "in": 1768207016,
-   "rep": 1768214706
-  },
-  {
-   "dia": "2026-03-12",
-   "in": 1773279895,
-   "rep": 1773297334
-  },
-  {
-   "dia": "2024-12-26",
-   "in": 1735224607,
-   "rep": 1735224609
-  },
-  {
-   "dia": "2025-11-06",
-   "in": 1762464907,
-   "rep": 1762467137
-  },
-  {
-   "dia": "2026-03-17",
-   "in": 1773780719,
-   "rep": 1773788102
-  },
-  {
-   "dia": "2026-03-17",
-   "in": 1773785617,
-   "rep": 1773787345
-  },
-  {
-   "dia": "2026-03-17",
-   "in": 1773779042,
-   "rep": 1773782078
-  },
-  {
-   "dia": "2026-03-17",
-   "in": 1773767993,
-   "rep": 1773771901
-  },
-  {
-   "dia": "2025-07-04",
-   "in": 1751628221,
-   "rep": 1751635322
-  },
-  {
-   "dia": "2026-03-17",
-   "in": 1773744443,
-   "rep": 1773746965
-  },
-  {
-   "dia": "2025-07-21",
-   "in": 1753107269,
-   "rep": 1753107334
-  },
-  {
-   "dia": "2026-03-12",
-   "in": 1773280574,
-   "rep": 1773297279
-  },
-  {
-   "dia": "2025-03-09",
-   "in": 1741547326,
-   "rep": 1741560061
-  },
-  {
-   "dia": "2025-07-29",
-   "in": 1753751693,
-   "rep": 1753782806
-  },
-  {
-   "dia": "2026-02-13",
-   "in": 1771018369,
-   "rep": 1771022498
   },
   {
    "dia": "2026-03-10",
@@ -13723,6 +13793,16 @@
    "rep": 1732443777
   },
   {
+   "dia": "2025-02-18",
+   "in": 1739838723,
+   "rep": 1739846750
+  },
+  {
+   "dia": "2026-03-13",
+   "in": 1773428078,
+   "rep": 1773428149
+  },
+  {
    "dia": "2026-03-13",
    "in": 1773415701,
    "rep": 1773417209
@@ -13738,44 +13818,49 @@
    "rep": 1772755211
   },
   {
-   "dia": "2026-03-03",
-   "in": 1772508059,
-   "rep": 1772523709
+   "dia": "2026-02-10",
+   "in": 1770738730,
+   "rep": 1770741046
   },
   {
-   "dia": "2026-02-26",
-   "in": 1772110775,
-   "rep": 1772112459
+   "dia": "2026-02-10",
+   "in": 1770742575,
+   "rep": 1770745074
   },
   {
-   "dia": "2026-03-06",
-   "in": 1772770621,
-   "rep": 1772778352
+   "dia": "2026-02-13",
+   "in": 1770949252,
+   "rep": 1770963728
   },
   {
-   "dia": "2026-03-07",
-   "in": 1772901378,
-   "rep": 1772901526
+   "dia": "2026-01-30",
+   "in": 1769738037,
+   "rep": 1769738858
   },
   {
-   "dia": "2026-01-20",
-   "in": 1768925111,
-   "rep": 1768952926
+   "dia": "2026-03-04",
+   "in": 1772636415,
+   "rep": 1772636804
+  },
+  {
+   "dia": "2026-03-12",
+   "in": 1773342613,
+   "rep": 1773343037
+  },
+  {
+   "dia": "2026-01-27",
+   "in": 1769501719,
+   "rep": 1769507655
+  },
+  {
+   "dia": "2026-02-22",
+   "in": 1771774920,
+   "rep": 1771775351
   },
   {
    "dia": "2025-04-10",
    "in": 1744253481,
    "rep": 1744300577
-  },
-  {
-   "dia": "2025-12-04",
-   "in": 1764813605,
-   "rep": 1764820632
-  },
-  {
-   "dia": "2025-02-20",
-   "in": 1740078577,
-   "rep": 1740078713
   },
   {
    "dia": "2026-03-06",
@@ -13798,109 +13883,84 @@
    "rep": 1738028766
   },
   {
-   "dia": "2026-02-17",
-   "in": 1771302793,
-   "rep": 1771310160
+   "dia": "2026-03-06",
+   "in": 1772794901,
+   "rep": 1772794918
   },
   {
-   "dia": "2026-02-09",
-   "in": 1770646528,
-   "rep": 1770658428
+   "dia": "2025-10-15",
+   "in": 1760505124,
+   "rep": 1760523313
   },
   {
-   "dia": "2026-02-21",
-   "in": 1771688491,
-   "rep": 1771691634
+   "dia": "2026-03-05",
+   "in": 1772673822,
+   "rep": 1772674238
   },
   {
-   "dia": "2026-02-20",
-   "in": 1771595422,
-   "rep": 1771598718
+   "dia": "2026-02-02",
+   "in": 1770065037,
+   "rep": 1770073991
   },
   {
-   "dia": "2026-02-17",
-   "in": 1771307850,
-   "rep": 1771310091
+   "dia": "2026-01-31",
+   "in": 1769865342,
+   "rep": 1769872811
   },
   {
-   "dia": "2026-02-21",
-   "in": 1771647607,
-   "rep": 1771666318
+   "dia": "2025-07-22",
+   "in": 1753228359,
+   "rep": 1753300668
   },
   {
-   "dia": "2026-02-18",
-   "in": 1771428031,
-   "rep": 1771447953
+   "dia": "2026-02-08",
+   "in": 1770516971,
+   "rep": 1770554820
   },
   {
-   "dia": "2026-01-25",
-   "in": 1769376515,
-   "rep": 1769422852
+   "dia": "2026-02-28",
+   "in": 1772312535,
+   "rep": 1772432073
   },
   {
-   "dia": "2026-02-19",
-   "in": 1771540052,
-   "rep": 1771604292
+   "dia": "2026-01-03",
+   "in": 1767463940,
+   "rep": 1767486809
+  },
+  {
+   "dia": "2026-02-01",
+   "in": 1769975529,
+   "rep": 1769976359
+  },
+  {
+   "dia": "2026-02-16",
+   "in": 1771214616,
+   "rep": 1771223407
+  },
+  {
+   "dia": "2026-02-08",
+   "in": 1770511053,
+   "rep": 1770512127
+  },
+  {
+   "dia": "2026-02-02",
+   "in": 1770062961,
+   "rep": 1770064065
+  },
+  {
+   "dia": "2026-01-24",
+   "in": 1769273864,
+   "rep": 1769279127
+  },
+  {
+   "dia": "2026-02-04",
+   "in": 1770237025,
+   "rep": 1770239636
   },
   {
    "dia": "2026-02-18",
    "in": 1771427948,
    "rep": 1771444205
-  },
-  {
-   "dia": "2026-02-19",
-   "in": 1771544044,
-   "rep": 1771571989
-  },
-  {
-   "dia": "2026-02-20",
-   "in": 1771590145,
-   "rep": 1771590433
-  },
-  {
-   "dia": "2026-02-19",
-   "in": 1771528281,
-   "rep": 1771528534
-  },
-  {
-   "dia": "2025-02-21",
-   "in": 1740127635,
-   "rep": 1740141057
-  },
-  {
-   "dia": "2026-02-20",
-   "in": 1771558359,
-   "rep": 1771584204
-  },
-  {
-   "dia": "2024-11-09",
-   "in": 1731184661,
-   "rep": 1731191282
-  },
-  {
-   "dia": "2026-02-19",
-   "in": 1771543763,
-   "rep": 1771568535
-  },
-  {
-   "dia": "2025-03-04",
-   "in": 1741049543,
-   "rep": 1741049692
-  },
-  {
-   "dia": "2025-11-26",
-   "in": 1764135753,
-   "rep": 1764169165
-  },
-  {
-   "dia": "2026-02-19",
-   "in": 1771542698,
-   "rep": 1771543426
-  },
-  {
-   "dia": "2025-08-29",
-   "in": 1756432038,
-   "rep": 1756458492
   },
   {
    "dia": "2026-01-09",
@@ -13928,64 +13988,109 @@
    "rep": 1771351450
   },
   {
-   "dia": "2025-12-03",
-   "in": 1764803924,
-   "rep": 1764807355
+   "dia": "2026-02-17",
+   "in": 1771348669,
+   "rep": 1771365766
   },
   {
-   "dia": "2025-10-30",
-   "in": 1761857113,
-   "rep": 1761857331
+   "dia": "2026-02-12",
+   "in": 1770917182,
+   "rep": 1770917292
   },
   {
-   "dia": "2026-02-04",
-   "in": 1770164913,
-   "rep": 1770179032
+   "dia": "2026-02-10",
+   "in": 1770764534,
+   "rep": 1770766307
   },
   {
-   "dia": "2026-02-04",
-   "in": 1770237074,
-   "rep": 1770238270
+   "dia": "2025-03-05",
+   "in": 1741144422,
+   "rep": 1741203471
   },
   {
-   "dia": "2026-02-01",
-   "in": 1769962097,
-   "rep": 1769969395
+   "dia": "2026-02-07",
+   "in": 1770480170,
+   "rep": 1770482047
   },
   {
-   "dia": "2026-02-01",
-   "in": 1769969052,
-   "rep": 1769969278
+   "dia": "2026-02-07",
+   "in": 1770503756,
+   "rep": 1770505940
   },
   {
-   "dia": "2026-02-01",
-   "in": 1769972110,
-   "rep": 1769976480
+   "dia": "2025-07-06",
+   "in": 1751846352,
+   "rep": 1751881878
   },
   {
-   "dia": "2025-12-26",
-   "in": 1766749556,
-   "rep": 1766831819
+   "dia": "2026-02-10",
+   "in": 1770693063,
+   "rep": 1770704577
   },
   {
-   "dia": "2026-02-04",
-   "in": 1770163981,
-   "rep": 1770189951
+   "dia": "2026-02-14",
+   "in": 1771030082,
+   "rep": 1771050574
   },
   {
-   "dia": "2026-02-03",
-   "in": 1770159344,
-   "rep": 1770159425
+   "dia": "2026-01-08",
+   "in": 1767895524,
+   "rep": 1767904759
   },
   {
-   "dia": "2026-02-01",
-   "in": 1769985267,
-   "rep": 1769988626
+   "dia": "2026-02-16",
+   "in": 1771277613,
+   "rep": 1771277633
   },
   {
-   "dia": "2026-02-03",
-   "in": 1770147641,
-   "rep": 1770148268
+   "dia": "2026-02-16",
+   "in": 1771244496,
+   "rep": 1771253762
+  },
+  {
+   "dia": "2026-02-16",
+   "in": 1771262775,
+   "rep": 1771264119
+  },
+  {
+   "dia": "2026-02-17",
+   "in": 1771370444,
+   "rep": 1771409825
+  },
+  {
+   "dia": "2025-11-24",
+   "in": 1764017946,
+   "rep": 1764061009
+  },
+  {
+   "dia": "2026-02-18",
+   "in": 1771439742,
+   "rep": 1771439955
+  },
+  {
+   "dia": "2026-02-18",
+   "in": 1771455150,
+   "rep": 1771455684
+  },
+  {
+   "dia": "2025-03-30",
+   "in": 1743324985,
+   "rep": 1743341711
+  },
+  {
+   "dia": "2026-02-18",
+   "in": 1771428948,
+   "rep": 1771429673
+  },
+  {
+   "dia": "2026-02-18",
+   "in": 1771378998,
+   "rep": 1771379537
+  },
+  {
+   "dia": "2026-02-18",
+   "in": 1771441458,
+   "rep": 1771450292
   },
   {
    "dia": "2024-11-22",
@@ -14066,6 +14171,41 @@
    "dia": "2026-02-02",
    "in": 1770046563,
    "rep": 1770051534
+  },
+  {
+   "dia": "2025-12-25",
+   "in": 1766700745,
+   "rep": 1766746480
+  },
+  {
+   "dia": "2026-01-17",
+   "in": 1768687080,
+   "rep": 1768726148
+  },
+  {
+   "dia": "2026-01-13",
+   "in": 1768301113,
+   "rep": 1768301386
+  },
+  {
+   "dia": "2026-01-31",
+   "in": 1769892248,
+   "rep": 1769894713
+  },
+  {
+   "dia": "2026-01-27",
+   "in": 1769517164,
+   "rep": 1769528747
+  },
+  {
+   "dia": "2026-01-19",
+   "in": 1768847538,
+   "rep": 1768859837
+  },
+  {
+   "dia": "2026-01-31",
+   "in": 1769877739,
+   "rep": 1769889321
   }
  ]
 }
