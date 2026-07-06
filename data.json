@@ -1,5 +1,5 @@
 {
- "generado": "2026-07-06 12:40",
+ "generado": "2026-07-06 12:52",
  "rango": "2026-02-01 a 2026-07-06",
  "setting": [
   {
@@ -1720,23 +1720,23 @@
   },
   {
    "dia": "2026-06-24",
-   "inb": 1,
-   "out": 1,
-   "nuevas": 2,
-   "total": 5,
-   "fups": 5,
-   "prop": 0,
+   "inb": 3,
+   "out": 4,
+   "nuevas": 7,
+   "total": 35,
+   "fups": 39,
+   "prop": 2,
    "agendas": 2,
-   "resp_min": null,
+   "resp_min": 83,
    "nodata": false
   },
   {
    "dia": "2026-06-25",
-   "inb": 1,
-   "out": 1,
-   "nuevas": 2,
-   "total": 5,
-   "fups": 4,
+   "inb": 4,
+   "out": 25,
+   "nuevas": 29,
+   "total": 42,
+   "fups": 9,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -1745,10 +1745,10 @@
   {
    "dia": "2026-06-26",
    "inb": 0,
-   "out": 3,
-   "nuevas": 3,
-   "total": 8,
-   "fups": 4,
+   "out": 37,
+   "nuevas": 37,
+   "total": 39,
+   "fups": 2,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -1756,96 +1756,96 @@
   },
   {
    "dia": "2026-06-27",
-   "inb": 1,
-   "out": 2,
-   "nuevas": 3,
-   "total": 9,
-   "fups": 12,
-   "prop": 2,
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 1,
+   "fups": 2,
+   "prop": 0,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-28",
-   "inb": 4,
-   "out": 21,
-   "nuevas": 25,
-   "total": 35,
-   "fups": 5,
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 3,
+   "fups": 4,
    "prop": 0,
    "agendas": 0,
-   "resp_min": 1319,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-29",
-   "inb": 6,
-   "out": 50,
-   "nuevas": 56,
-   "total": 73,
-   "fups": 20,
-   "prop": 1,
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 4,
+   "fups": 3,
+   "prop": 0,
    "agendas": 0,
-   "resp_min": 165,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-30",
-   "inb": 2,
-   "out": 10,
-   "nuevas": 12,
-   "total": 22,
-   "fups": 27,
-   "prop": 0,
+   "inb": 0,
+   "out": 8,
+   "nuevas": 8,
+   "total": 16,
+   "fups": 24,
+   "prop": 1,
    "agendas": 0,
-   "resp_min": 83,
+   "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-07-01",
-   "inb": 5,
-   "out": 17,
-   "nuevas": 22,
-   "total": 76,
-   "fups": 119,
-   "prop": 3,
+   "inb": 3,
+   "out": 89,
+   "nuevas": 92,
+   "total": 121,
+   "fups": 60,
+   "prop": 2,
    "agendas": 0,
-   "resp_min": 23,
+   "resp_min": 26,
    "nodata": false
   },
   {
    "dia": "2026-07-02",
-   "inb": 3,
-   "out": 31,
-   "nuevas": 34,
-   "total": 62,
-   "fups": 39,
+   "inb": 1,
+   "out": 4,
+   "nuevas": 5,
+   "total": 21,
+   "fups": 27,
    "prop": 0,
    "agendas": 3,
-   "resp_min": 7,
+   "resp_min": 47,
    "nodata": false
   },
   {
    "dia": "2026-07-03",
-   "inb": 4,
-   "out": 10,
-   "nuevas": 14,
-   "total": 46,
-   "fups": 41,
-   "prop": 1,
+   "inb": 13,
+   "out": 35,
+   "nuevas": 48,
+   "total": 99,
+   "fups": 65,
+   "prop": 2,
    "agendas": 1,
-   "resp_min": 7,
+   "resp_min": 13,
    "nodata": false
   },
   {
    "dia": "2026-07-04",
-   "inb": 3,
-   "out": 36,
-   "nuevas": 39,
-   "total": 68,
-   "fups": 27,
-   "prop": 1,
+   "inb": 1,
+   "out": 0,
+   "nuevas": 1,
+   "total": 9,
+   "fups": 6,
+   "prop": 0,
    "agendas": 3,
    "resp_min": null,
    "nodata": false
@@ -1864,14 +1864,14 @@
   },
   {
    "dia": "2026-07-06",
-   "inb": 1,
-   "out": 11,
+   "inb": 4,
+   "out": 8,
    "nuevas": 12,
    "total": 26,
    "fups": 19,
    "prop": 0,
    "agendas": 3,
-   "resp_min": null,
+   "resp_min": 0,
    "nodata": false
   }
  ],
@@ -6589,6 +6589,36 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/H0iYC6dkXNPEjUfiKhCc"
   },
   {
+   "nombre": "JC Carrillo",
+   "setter": "",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
+   "urg": "",
+   "comp": "",
+   "obst": "",
+   "canal": "",
+   "ig": "",
+   "email": "",
+   "tf": "",
+   "fagenda": "2026-05-27",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": null,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/naGS18i4O1TqLCnkFQD3"
+  },
+  {
    "nombre": "Jennie Mayaute Allca",
    "setter": "",
    "prof": "Médico ",
@@ -6707,36 +6737,6 @@
    "objclo": "",
    "infocloser": "Viaje de negocios, marketing para medicos, tiene presupuesto para invertir",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ptlVxUgodibwvVRolJjP"
-  },
-  {
-   "nombre": "Joffre Carrillo",
-   "setter": "",
-   "prof": "Médico General ",
-   "nivel": "🔹 Conocimientos básicos",
-   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
-   "ingresos": "300€ - 600€",
-   "univ": "Universidad de Guayaquil ",
-   "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Ninguno , solo el dinero ",
-   "canal": "",
-   "ig": "",
-   "email": "drjoffrecarrillop@gmail.com",
-   "tf": "+593967964714",
-   "fagenda": "2026-05-27",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": null,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/naGS18i4O1TqLCnkFQD3"
   },
   {
    "nombre": "Joha Barrios",
@@ -8241,18 +8241,18 @@
   {
    "nombre": "MARIA FERNANDA TALLA SANTA CRUZ",
    "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Estudiante Médico general",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Cuento con entre 5.000€ a 10.000€ para mi proceso",
+   "ingresos": "300€ - 600€",
+   "univ": "Aún no, pero estoy en UCSUR Perú ",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Tengo miedo de que sea todo una estafa, de que no logre conseguir una plaza para estudiar, que no consiga aprobar los exámenes, que en realidad nunca pueda ir a Suiza porque he leído que es bien difícil llegar a ese país a ejercer ",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "mafertalla_",
+   "email": "mafer.tall.06@gmail.com",
+   "tf": "+51946404553",
    "fagenda": "2026-05-27",
    "closer": "",
    "restri": "",
@@ -16507,14 +16507,14 @@
    "rep": 1770319901
   },
   {
+   "dia": "2026-07-06",
+   "in": 1783342177,
+   "rep": 1783342202
+  },
+  {
    "dia": "2026-07-05",
    "in": 1783285127,
    "rep": 1783340005
-  },
-  {
-   "dia": "2026-07-03",
-   "in": 1783097063,
-   "rep": 1783097089
   },
   {
    "dia": "2026-07-03",
@@ -16522,64 +16522,49 @@
    "rep": 1783104218
   },
   {
+   "dia": "2026-07-03",
+   "in": 1783088339,
+   "rep": 1783089654
+  },
+  {
+   "dia": "2026-07-03",
+   "in": 1783072555,
+   "rep": 1783072555
+  },
+  {
+   "dia": "2026-07-03",
+   "in": 1783086121,
+   "rep": 1783086151
+  },
+  {
+   "dia": "2026-07-03",
+   "in": 1783049106,
+   "rep": 1783055683
+  },
+  {
    "dia": "2026-07-02",
-   "in": 1782982342,
-   "rep": 1782982791
+   "in": 1783025846,
+   "rep": 1783028694
   },
   {
    "dia": "2026-07-01",
-   "in": 1782909095,
-   "rep": 1782910929
+   "in": 1782895676,
+   "rep": 1782897101
   },
   {
    "dia": "2026-07-01",
-   "in": 1782924917,
-   "rep": 1782925023
+   "in": 1782906719,
+   "rep": 1782908431
   },
   {
-   "dia": "2026-07-01",
-   "in": 1782941132,
-   "rep": 1782941298
+   "dia": "2026-06-24",
+   "in": 1782280442,
+   "rep": 1782281042
   },
   {
-   "dia": "2026-07-01",
-   "in": 1782935993,
-   "rep": 1782937366
-  },
-  {
-   "dia": "2026-07-01",
-   "in": 1782897196,
-   "rep": 1782931067
-  },
-  {
-   "dia": "2026-06-30",
-   "in": 1782856859,
-   "rep": 1782861858
-  },
-  {
-   "dia": "2026-06-25",
-   "in": 1782359789,
-   "rep": 1782492292
-  },
-  {
-   "dia": "2026-06-27",
-   "in": 1782565191,
-   "rep": 1782758510
-  },
-  {
-   "dia": "2026-06-28",
-   "in": 1782632361,
-   "rep": 1782758476
-  },
-  {
-   "dia": "2026-06-28",
-   "in": 1782679210,
-   "rep": 1782758368
-  },
-  {
-   "dia": "2026-06-29",
-   "in": 1782717300,
-   "rep": 1782727227
+   "dia": "2026-06-24",
+   "in": 1782314827,
+   "rep": 1782324137
   }
  ]
 }
