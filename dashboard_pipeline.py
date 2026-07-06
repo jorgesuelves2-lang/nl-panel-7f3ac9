@@ -30,6 +30,17 @@ cutoff=int(_sdt.timestamp()*1000)
 DAYS=(datetime.datetime.now(datetime.timezone.utc).date()-_sdt.date()).days+1
 days=[(_sdt+datetime.timedelta(days=i)).strftime('%Y-%m-%d') for i in range(DAYS)]
 LINK=re.compile(r'agendaor|agendaror|natscholibre\.com/agenda|ag[eé]ndame|agendar|calendario|te paso el (link|calendario)',re.I)
+# --- CACHÉ de setting: los días pasados se CONGELAN (no se re-descargan 8000 conversaciones cada vez).
+# Solo se recalculan los últimos RECOMPUTE_DAYS días. La primera vez (sin caché) = BACKFILL completo. ---
+CACHE_PATH=os.path.join(OUTDIR,"setting_cache.json")
+try: _cache=json.load(open(CACHE_PATH))
+except Exception: _cache={}
+_cache.setdefault("days",{}); _cache.setdefault("resp_pairs",{})
+RECOMPUTE_DAYS=int(os.environ.get("RECOMPUTE_DAYS","12"))
+BACKFILL=(not _cache["days"]) or os.environ.get("BACKFILL")=="1"
+RECFROM=START if BACKFILL else (datetime.datetime.now(datetime.timezone.utc)-datetime.timedelta(days=RECOMPUTE_DAYS)).strftime('%Y-%m-%d')
+RECFROM_TS=int(datetime.datetime.strptime(RECFROM,'%Y-%m-%d').replace(tzinfo=datetime.timezone.utc).timestamp()*1000)
+print(("setting: BACKFILL completo" if BACKFILL else f"setting: incremental (recalcula desde {RECFROM})"),flush=True)
 
 # 1) lista de conversaciones (setting = IG+FB)
 base="https://services.leadconnectorhq.com/conversations/search"; convs=[]; sa=None; pages=0
@@ -40,7 +51,7 @@ while True:
     if not cs: break
     pages+=1; stop=False
     for c in cs:
-        if (c.get("lastMessageDate") or 0)<cutoff: stop=True; break
+        if (c.get("lastMessageDate") or 0)<RECFROM_TS: stop=True; break  # incremental: solo conversaciones activas en la ventana
         # NO filtramos por lastMessageType: un email reciente puede ocultar una conversación con DMs de IG.
         # Se filtra por canal a nivel de MENSAJE en fetch().
         convs.append(c)
@@ -181,7 +192,7 @@ def fetch(c):
         if oldest is not None and oldest*1000<cutoff: break  # ya pasamos febrero
     out.sort(key=lambda x:x["t"]); return cid,out
 results={}
-with ThreadPoolExecutor(max_workers=12) as ex:
+with ThreadPoolExecutor(max_workers=6) as ex:
     for i,(cid,ms) in enumerate(ex.map(fetch,convs)):
         results[cid]=ms
         if (i+1)%200==0: print("...msgs",i+1,flush=True)
@@ -194,26 +205,45 @@ for c in convs:
     ms=results.get(c["id"],[])
     if not ms: continue
     fday=dms(int(ms[0]["t"]*1000))
-    if ms[0]["dir"]=="inbound":
-        s_in[fday]+=1; fin=ms[0]["t"]
-        rep=next((x["t"] for x in ms if x["dir"]=="outbound" and x["t"]>=fin),None)
-        if rep:
-            el=(rep-fin)/60.0
-            if el<=1440: resp[fday].append(el)
-            if el<=4320: resp_pairs.append({"dia":fday,"in":int(fin),"rep":int(rep)})  # hasta 3 días (la noche se descuenta luego)
-    elif ms[0]["dir"]=="outbound": s_out[fday]+=1
+    if fday>=RECFROM:  # "nueva" solo si su PRIMER mensaje cae en la ventana recalculada (evita recontar convs viejas)
+        if ms[0]["dir"]=="inbound":
+            s_in[fday]+=1; fin=ms[0]["t"]
+            rep=next((x["t"] for x in ms if x["dir"]=="outbound" and x["t"]>=fin),None)
+            if rep:
+                el=(rep-fin)/60.0
+                if el<=1440: resp[fday].append(el)
+                if el<=4320: resp_pairs.append({"dia":fday,"in":int(fin),"rep":int(rep)})  # hasta 3 días (la noche se descuenta luego)
+        elif ms[0]["dir"]=="outbound": s_out[fday]+=1
     prev=None; proposed=False
     for x in ms:
-        dd=dms(int(x["t"]*1000)); s_total[dd].add(c["id"])
+        dd=dms(int(x["t"]*1000))
         if x["dir"]=="outbound":
-            if prev=="outbound": s_fu[dd]+=1
-            if not proposed and LINK.search(x["body"]): s_prop[dd]+=1; proposed=True
+            if dd>=RECFROM and prev=="outbound": s_fu[dd]+=1
+            if not proposed and LINK.search(x["body"]):
+                if dd>=RECFROM: s_prop[dd]+=1
+                proposed=True  # latch aunque sea día congelado, para no recontar la propuesta
+        if dd>=RECFROM: s_total[dd].add(c["id"])
         prev=x["dir"]
 
-# 5) series (days ya definido arriba: desde START hasta hoy)
-setting=[{"dia":d,"inb":s_in[d],"out":s_out[d],"nuevas":s_in[d]+s_out[d],"total":len(s_total[d]),
-          "fups":s_fu[d],"prop":s_prop[d],"agendas":sum(t_status[d].values()),
-          "resp_min":(round(statistics.median(resp[d])) if resp[d] else None)} for d in days]
+# 5) MERGE en la caché: los días recalculados se sobrescriben; los congelados se conservan
+for d in days:
+    if d<RECFROM: continue
+    _cache["days"][d]={"inb":s_in[d],"out":s_out[d],"total":len(s_total[d]),"fups":s_fu[d],"prop":s_prop[d],
+                       "resp_min":(round(statistics.median(resp[d])) if resp[d] else None)}
+for d in [k for k in _cache["resp_pairs"] if k>=RECFROM]: del _cache["resp_pairs"][d]  # limpia recientes, se re-añaden
+_rp=defaultdict(list)
+for p in resp_pairs: _rp[p["dia"]].append(p)
+for d,lst in _rp.items(): _cache["resp_pairs"][d]=lst
+json.dump(_cache,open(CACHE_PATH,"w"),ensure_ascii=False)
+# serie de setting construida DESDE la caché (agendas se calcula fresco del calendario)
+setting=[]
+for d in days:
+    c=_cache["days"].get(d,{})
+    setting.append({"dia":d,"inb":c.get("inb",0),"out":c.get("out",0),
+                    "nuevas":c.get("inb",0)+c.get("out",0),"total":c.get("total",0),
+                    "fups":c.get("fups",0),"prop":c.get("prop",0),
+                    "agendas":sum(t_status[d].values()),"resp_min":c.get("resp_min")})
+resp_pairs=[p for lst in _cache["resp_pairs"].values() for p in lst]
 triage=[{"dia":d,"agendados":sum(t_status[d].values()),"showed":t_status[d].get("showed",0),
          "noshow":t_status[d].get("noshow",0),"cancelled":t_status[d].get("cancelled",0),
          "confirmed":t_status[d].get("confirmed",0),"cualifica":t_cual[d],"nocualifica":t_nocual[d]} for d in days]
