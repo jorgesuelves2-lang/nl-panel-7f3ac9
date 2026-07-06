@@ -1,5 +1,5 @@
 {
- "generado": "2026-07-06 12:52",
+ "generado": "2026-07-06 12:56",
  "rango": "2026-02-01 a 2026-07-06",
  "setting": [
   {
@@ -1720,23 +1720,23 @@
   },
   {
    "dia": "2026-06-24",
-   "inb": 3,
-   "out": 4,
-   "nuevas": 7,
-   "total": 35,
-   "fups": 39,
-   "prop": 2,
+   "inb": 6,
+   "out": 10,
+   "nuevas": 16,
+   "total": 32,
+   "fups": 14,
+   "prop": 0,
    "agendas": 2,
-   "resp_min": 83,
+   "resp_min": 219,
    "nodata": false
   },
   {
    "dia": "2026-06-25",
    "inb": 4,
-   "out": 25,
-   "nuevas": 29,
-   "total": 42,
-   "fups": 9,
+   "out": 21,
+   "nuevas": 25,
+   "total": 40,
+   "fups": 11,
    "prop": 0,
    "agendas": 0,
    "resp_min": null,
@@ -1744,134 +1744,134 @@
   },
   {
    "dia": "2026-06-26",
-   "inb": 0,
-   "out": 37,
-   "nuevas": 37,
-   "total": 39,
-   "fups": 2,
-   "prop": 0,
+   "inb": 3,
+   "out": 65,
+   "nuevas": 68,
+   "total": 87,
+   "fups": 37,
+   "prop": 1,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 571,
    "nodata": false
   },
   {
    "dia": "2026-06-27",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 1,
-   "fups": 2,
-   "prop": 0,
+   "inb": 4,
+   "out": 11,
+   "nuevas": 15,
+   "total": 26,
+   "fups": 19,
+   "prop": 3,
    "agendas": 0,
    "resp_min": null,
    "nodata": false
   },
   {
    "dia": "2026-06-28",
-   "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 3,
-   "fups": 4,
+   "inb": 6,
+   "out": 23,
+   "nuevas": 29,
+   "total": 41,
+   "fups": 6,
    "prop": 0,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 601,
    "nodata": false
   },
   {
    "dia": "2026-06-29",
-   "inb": 0,
-   "out": 1,
-   "nuevas": 1,
-   "total": 4,
-   "fups": 3,
-   "prop": 0,
+   "inb": 5,
+   "out": 55,
+   "nuevas": 60,
+   "total": 82,
+   "fups": 33,
+   "prop": 2,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 165,
    "nodata": false
   },
   {
    "dia": "2026-06-30",
-   "inb": 0,
-   "out": 8,
-   "nuevas": 8,
-   "total": 16,
-   "fups": 24,
-   "prop": 1,
+   "inb": 4,
+   "out": 47,
+   "nuevas": 51,
+   "total": 105,
+   "fups": 93,
+   "prop": 2,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 83,
    "nodata": false
   },
   {
    "dia": "2026-07-01",
-   "inb": 3,
-   "out": 89,
-   "nuevas": 92,
-   "total": 121,
-   "fups": 60,
+   "inb": 7,
+   "out": 92,
+   "nuevas": 99,
+   "total": 167,
+   "fups": 120,
    "prop": 2,
    "agendas": 0,
-   "resp_min": 26,
+   "resp_min": 29,
    "nodata": false
   },
   {
    "dia": "2026-07-02",
-   "inb": 1,
-   "out": 4,
-   "nuevas": 5,
-   "total": 21,
-   "fups": 27,
-   "prop": 0,
+   "inb": 11,
+   "out": 48,
+   "nuevas": 59,
+   "total": 133,
+   "fups": 109,
+   "prop": 4,
    "agendas": 3,
    "resp_min": 47,
    "nodata": false
   },
   {
    "dia": "2026-07-03",
-   "inb": 13,
-   "out": 35,
-   "nuevas": 48,
-   "total": 99,
-   "fups": 65,
+   "inb": 15,
+   "out": 75,
+   "nuevas": 90,
+   "total": 133,
+   "fups": 68,
    "prop": 2,
    "agendas": 1,
-   "resp_min": 13,
+   "resp_min": 11,
    "nodata": false
   },
   {
    "dia": "2026-07-04",
-   "inb": 1,
-   "out": 0,
-   "nuevas": 1,
-   "total": 9,
-   "fups": 6,
-   "prop": 0,
+   "inb": 5,
+   "out": 43,
+   "nuevas": 48,
+   "total": 97,
+   "fups": 92,
+   "prop": 6,
    "agendas": 3,
-   "resp_min": null,
+   "resp_min": 647,
    "nodata": false
   },
   {
    "dia": "2026-07-05",
-   "inb": 2,
-   "out": 3,
-   "nuevas": 5,
-   "total": 7,
-   "fups": 4,
-   "prop": 0,
+   "inb": 12,
+   "out": 36,
+   "nuevas": 48,
+   "total": 73,
+   "fups": 32,
+   "prop": 1,
    "agendas": 1,
-   "resp_min": 915,
+   "resp_min": 583,
    "nodata": false
   },
   {
    "dia": "2026-07-06",
-   "inb": 4,
-   "out": 8,
-   "nuevas": 12,
-   "total": 26,
-   "fups": 19,
+   "inb": 5,
+   "out": 57,
+   "nuevas": 62,
+   "total": 97,
+   "fups": 41,
    "prop": 0,
    "agendas": 3,
-   "resp_min": 0,
+   "resp_min": null,
    "nodata": false
   }
  ],
@@ -6050,19 +6050,19 @@
   },
   {
    "nombre": "Gema Riera",
-   "setter": "Sary",
-   "prof": "Limpieza ",
-   "nivel": "🔹 Conocimientos básicos",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "ingresos": "600€- 1.000€",
-   "univ": "Universidad de Valencia ",
+   "setter": "",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Creo que mi mayor obstáculo podría ser el idioma y la adaptación a un nuevo entorno laboral",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "geemariera",
-   "email": "gmrieraalonso@gmail.com",
-   "tf": "+4915129755037",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-27",
    "closer": "",
    "restri": "",
@@ -7130,19 +7130,19 @@
   },
   {
    "nombre": "Josue Layme",
-   "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "setter": "Sary",
+   "prof": "Medico",
+   "nivel": "🔹 A2",
+   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
+   "ingresos": "600€- 1.000€",
+   "univ": "UNMSM",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Desconocimiento del proceso de homologacion",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "joshlayme",
+   "email": "josue15jca@gmail.com",
+   "tf": "+51947176277",
    "fagenda": "2026-05-27",
    "closer": "",
    "restri": "",
@@ -16507,19 +16507,39 @@
    "rep": 1770319901
   },
   {
-   "dia": "2026-07-06",
-   "in": 1783342177,
-   "rep": 1783342202
-  },
-  {
    "dia": "2026-07-05",
    "in": 1783285127,
    "rep": 1783340005
   },
   {
+   "dia": "2026-07-05",
+   "in": 1783253314,
+   "rep": 1783268412
+  },
+  {
    "dia": "2026-07-03",
-   "in": 1783103412,
-   "rep": 1783104218
+   "in": 1783121959,
+   "rep": 1783127326
+  },
+  {
+   "dia": "2026-07-03",
+   "in": 1783117486,
+   "rep": 1783117552
+  },
+  {
+   "dia": "2026-07-03",
+   "in": 1783108060,
+   "rep": 1783188309
+  },
+  {
+   "dia": "2026-07-03",
+   "in": 1783114049,
+   "rep": 1783114682
+  },
+  {
+   "dia": "2026-07-03",
+   "in": 1783096307,
+   "rep": 1783096329
   },
   {
    "dia": "2026-07-03",
@@ -16542,9 +16562,59 @@
    "rep": 1783055683
   },
   {
-   "dia": "2026-07-02",
-   "in": 1783025846,
-   "rep": 1783028694
+   "dia": "2026-06-30",
+   "in": 1782854174,
+   "rep": 1782941793
+  },
+  {
+   "dia": "2026-06-30",
+   "in": 1782856859,
+   "rep": 1782861858
+  },
+  {
+   "dia": "2026-06-28",
+   "in": 1782645160,
+   "rep": 1782655721
+  },
+  {
+   "dia": "2026-06-28",
+   "in": 1782690285,
+   "rep": 1782726359
+  },
+  {
+   "dia": "2026-06-28",
+   "in": 1782632361,
+   "rep": 1782758476
+  },
+  {
+   "dia": "2026-06-28",
+   "in": 1782679210,
+   "rep": 1782758368
+  },
+  {
+   "dia": "2026-07-01",
+   "in": 1782926637,
+   "rep": 1782937540
+  },
+  {
+   "dia": "2026-07-01",
+   "in": 1782916495,
+   "rep": 1782918609
+  },
+  {
+   "dia": "2026-07-01",
+   "in": 1782941132,
+   "rep": 1782941298
+  },
+  {
+   "dia": "2026-07-01",
+   "in": 1782935993,
+   "rep": 1782937366
+  },
+  {
+   "dia": "2026-07-01",
+   "in": 1782897196,
+   "rep": 1782931067
   },
   {
    "dia": "2026-07-01",
@@ -16552,19 +16622,59 @@
    "rep": 1782897101
   },
   {
-   "dia": "2026-07-01",
-   "in": 1782906719,
-   "rep": 1782908431
+   "dia": "2026-07-04",
+   "in": 1783129219,
+   "rep": 1783206062
+  },
+  {
+   "dia": "2026-07-04",
+   "in": 1783185744,
+   "rep": 1783186500
+  },
+  {
+   "dia": "2026-07-02",
+   "in": 1783027309,
+   "rep": 1783028780
+  },
+  {
+   "dia": "2026-07-02",
+   "in": 1783025846,
+   "rep": 1783028694
+  },
+  {
+   "dia": "2026-07-02",
+   "in": 1782985711,
+   "rep": 1783001360
+  },
+  {
+   "dia": "2026-06-25",
+   "in": 1782359789,
+   "rep": 1782492292
+  },
+  {
+   "dia": "2026-06-27",
+   "in": 1782565191,
+   "rep": 1782758510
+  },
+  {
+   "dia": "2026-06-29",
+   "in": 1782717300,
+   "rep": 1782727227
+  },
+  {
+   "dia": "2026-06-26",
+   "in": 1782512794,
+   "rep": 1782521503
+  },
+  {
+   "dia": "2026-06-26",
+   "in": 1782432374,
+   "rep": 1782492128
   },
   {
    "dia": "2026-06-24",
-   "in": 1782280442,
-   "rep": 1782281042
-  },
-  {
-   "dia": "2026-06-24",
-   "in": 1782314827,
-   "rep": 1782324137
+   "in": 1782285525,
+   "rep": 1782298671
   }
  ]
 }
