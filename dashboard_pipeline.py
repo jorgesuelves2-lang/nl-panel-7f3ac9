@@ -169,8 +169,10 @@ print("leads camino:",len(leads),"| closings:",len(closing),flush=True)
 # 2) mensajes EN PARALELO
 DM_TYPES=("TYPE_INSTAGRAM","TYPE_FACEBOOK")
 def fetch(c):
-    cid=c["id"]; out=[]; lastId=None
-    for _pg in range(25):  # pagina el historial completo (hasta 25 páginas = 2500 msgs/conv)
+    # Solo baja mensajes hasta RECFROM_TS (en incremental = ~12 días; en backfill = febrero).
+    # 'reached' = True si se agotó la conversación (tenemos su PRIMER mensaje) -> se puede clasificar como "nueva".
+    cid=c["id"]; out=[]; lastId=None; reached=True
+    for _pg in range(25):
         params=["limit=100"]
         if lastId: params.append(f"lastMessageId={lastId}")
         m=cg(f"https://services.leadconnectorhq.com/conversations/{cid}/messages",params)
@@ -189,12 +191,12 @@ def fetch(c):
         nextp=mm.get("nextPage") if isinstance(mm,dict) else False
         lastId=mm.get("lastMessageId") if isinstance(mm,dict) else None
         if not nextp or not lastId: break
-        if oldest is not None and oldest*1000<cutoff: break  # ya pasamos febrero
-    out.sort(key=lambda x:x["t"]); return cid,out
+        if oldest is not None and oldest*1000<RECFROM_TS: reached=False; break  # hay mensajes más viejos que la ventana
+    out.sort(key=lambda x:x["t"]); return cid,out,reached
 results={}
 with ThreadPoolExecutor(max_workers=6) as ex:
-    for i,(cid,ms) in enumerate(ex.map(fetch,convs)):
-        results[cid]=ms
+    for i,(cid,ms,reached) in enumerate(ex.map(fetch,convs)):
+        results[cid]=(ms,reached)
         if (i+1)%200==0: print("...msgs",i+1,flush=True)
 print("mensajes descargados",flush=True)
 
@@ -202,10 +204,10 @@ print("mensajes descargados",flush=True)
 s_in=Counter(); s_out=Counter(); s_total=defaultdict(set); s_fu=Counter(); s_prop=Counter(); resp=defaultdict(list)
 resp_pairs=[]  # pares 1er inbound -> 1ª respuesta, con timestamps UTC, para filtrar horario activo en el panel
 for c in convs:
-    ms=results.get(c["id"],[])
+    ms,reached=results.get(c["id"],([],True))
     if not ms: continue
     fday=dms(int(ms[0]["t"]*1000))
-    if fday>=RECFROM:  # "nueva" solo si su PRIMER mensaje cae en la ventana recalculada (evita recontar convs viejas)
+    if reached and fday>=RECFROM:  # "nueva" solo si tenemos su PRIMER mensaje y cae en la ventana (evita recontar convs viejas)
         if ms[0]["dir"]=="inbound":
             s_in[fday]+=1; fin=ms[0]["t"]
             rep=next((x["t"] for x in ms if x["dir"]=="outbound" and x["t"]>=fin),None)
