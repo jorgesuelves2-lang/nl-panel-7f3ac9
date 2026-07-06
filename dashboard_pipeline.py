@@ -227,15 +227,21 @@ for c in convs:
         if dd>=RECFROM: s_total[dd].add(c["id"])
         prev=x["dir"]
 
-# 5) MERGE en la caché: los días recalculados se sobrescriben; los congelados se conservan
-for d in days:
-    if d<RECFROM: continue
-    _cache["days"][d]={"inb":s_in[d],"out":s_out[d],"total":len(s_total[d]),"fups":s_fu[d],"prop":s_prop[d],
-                       "resp_min":(round(statistics.median(resp[d])) if resp[d] else None)}
-for d in [k for k in _cache["resp_pairs"] if k>=RECFROM]: del _cache["resp_pairs"][d]  # limpia recientes, se re-añaden
+# 5) MERGE en la caché con MÁXIMO: el estrangulamiento solo puede PERDER datos, nunca inventarlos.
+# Quedándonos con el valor más alto, un run estrangulado NUNCA baja un día ya bueno (solo puede subirlo).
 _rp=defaultdict(list)
 for p in resp_pairs: _rp[p["dia"]].append(p)
-for d,lst in _rp.items(): _cache["resp_pairs"][d]=lst
+for d in days:
+    if d<RECFROM: continue
+    new={"inb":s_in[d],"out":s_out[d],"total":len(s_total[d]),"fups":s_fu[d],"prop":s_prop[d]}
+    old=_cache["days"].get(d,{})
+    merged={k:max(int(new.get(k,0)),int(old.get(k) or 0)) for k in new}
+    if new["total"]>=int(old.get("total") or 0):  # el run más completo manda en tiempo de respuesta
+        merged["resp_min"]=(round(statistics.median(resp[d])) if resp[d] else old.get("resp_min"))
+        _cache["resp_pairs"][d]=_rp.get(d,[])
+    else:
+        merged["resp_min"]=old.get("resp_min")
+    _cache["days"][d]=merged
 json.dump(_cache,open(CACHE_PATH,"w"),ensure_ascii=False)
 # serie de setting construida DESDE la caché (agendas se calcula fresco del calendario)
 setting=[]
