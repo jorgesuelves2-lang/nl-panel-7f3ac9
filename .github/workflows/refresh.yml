@@ -29,6 +29,6 @@ jobs:
           cp dashboard.html index.html
           git config user.name "nl-bot"
           git config user.email "bot@natscholibre"
-          git add index.html data.json
+          git add index.html data.json setting_cache.json
           git commit -m "auto-refresh dashboard" || echo "sin cambios"
           git push
