@@ -1,5 +1,5 @@
 {
- "generado": "2026-07-06 12:56",
+ "generado": "2026-07-06 15:49",
  "rango": "2026-02-01 a 2026-07-06",
  "setting": [
   {
@@ -1720,21 +1720,21 @@
   },
   {
    "dia": "2026-06-24",
-   "inb": 6,
-   "out": 10,
-   "nuevas": 16,
-   "total": 32,
-   "fups": 14,
-   "prop": 0,
+   "inb": 8,
+   "out": 15,
+   "nuevas": 23,
+   "total": 59,
+   "fups": 41,
+   "prop": 3,
    "agendas": 2,
-   "resp_min": 219,
+   "resp_min": 374,
    "nodata": false
   },
   {
    "dia": "2026-06-25",
    "inb": 4,
-   "out": 21,
-   "nuevas": 25,
+   "out": 24,
+   "nuevas": 28,
    "total": 40,
    "fups": 11,
    "prop": 0,
@@ -1864,9 +1864,9 @@
   },
   {
    "dia": "2026-07-06",
-   "inb": 5,
+   "inb": 7,
    "out": 57,
-   "nuevas": 62,
+   "nuevas": 64,
    "total": 97,
    "fups": 41,
    "prop": 0,
@@ -6050,19 +6050,19 @@
   },
   {
    "nombre": "Gema Riera",
-   "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "setter": "Sary",
+   "prof": "Limpieza ",
+   "nivel": "🔹 Conocimientos básicos",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "600€- 1.000€",
+   "univ": "Universidad de Valencia ",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Creo que mi mayor obstáculo podría ser el idioma y la adaptación a un nuevo entorno laboral",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "geemariera",
+   "email": "gmrieraalonso@gmail.com",
+   "tf": "+4915129755037",
    "fagenda": "2026-05-27",
    "closer": "",
    "restri": "",
@@ -7130,19 +7130,19 @@
   },
   {
    "nombre": "Josue Layme",
-   "setter": "Sary",
-   "prof": "Medico",
-   "nivel": "🔹 A2",
-   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
-   "ingresos": "600€- 1.000€",
-   "univ": "UNMSM",
+   "setter": "",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Desconocimiento del proceso de homologacion",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "joshlayme",
-   "email": "josue15jca@gmail.com",
-   "tf": "+51947176277",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-27",
    "closer": "",
    "restri": "",
@@ -16673,8 +16673,28 @@
   },
   {
    "dia": "2026-06-24",
-   "in": 1782285525,
-   "rep": 1782298671
+   "in": 1782280442,
+   "rep": 1782281042
+  },
+  {
+   "dia": "2026-06-24",
+   "in": 1782314827,
+   "rep": 1782324137
+  },
+  {
+   "dia": "2026-06-24",
+   "in": 1782271503,
+   "rep": 1782293937
+  },
+  {
+   "dia": "2026-06-24",
+   "in": 1782276936,
+   "rep": 1782302784
+  },
+  {
+   "dia": "2026-06-24",
+   "in": 1782277995,
+   "rep": 1782302641
   }
  ]
 }
