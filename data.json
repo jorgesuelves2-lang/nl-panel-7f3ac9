@@ -1,5 +1,5 @@
 {
- "generado": "2026-07-08 14:31",
+ "generado": "2026-07-08 16:45",
  "rango": "2026-02-01 a 2026-07-08",
  "setting": [
   {
@@ -1889,12 +1889,12 @@
   {
    "dia": "2026-07-08",
    "inb": 2,
-   "out": 0,
-   "nuevas": 2,
-   "total": 23,
+   "out": 17,
+   "nuevas": 19,
+   "total": 25,
    "fups": 28,
    "prop": 1,
-   "agendas": 2,
+   "agendas": 1,
    "resp_min": null,
    "nodata": false
   }
@@ -3472,11 +3472,11 @@
   },
   {
    "dia": "2026-07-08",
-   "agendados": 2,
+   "agendados": 1,
    "showed": 0,
    "noshow": 0,
    "cancelled": 0,
-   "confirmed": 2,
+   "confirmed": 1,
    "cualifica": 0,
    "nocualifica": 0
   }
@@ -8611,36 +8611,6 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/XfzNwGdyB5fNiGeBycQe"
-  },
-  {
-   "nombre": "María jose Halupa",
-   "setter": "",
-   "prof": "Licenciada en obstetricia",
-   "nivel": "🔹 No tengo conocimientos",
-   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
-   "ingresos": "600€- 1.000€",
-   "univ": "Universidad Nacional de Entre Ríos UNNER",
-   "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "El idioma",
-   "canal": "",
-   "ig": "Mariajosepolasek",
-   "email": "mariajosehp353@gmail.com",
-   "tf": "+34653247537",
-   "fagenda": "2026-07-08",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": null,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Sp9pIJ98M3yDivzgSo6f"
   },
   {
    "nombre": "María José orellana",
