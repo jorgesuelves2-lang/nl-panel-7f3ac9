@@ -139,7 +139,16 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
 <script>
 (function(){
  var S=DATA.setting, T=DATA.triage, charts={};
- document.getElementById('sub').textContent='Datos actualizados '+DATA.generado+' · IG + Facebook';
+ (function(){
+   var sub=document.getElementById('sub');
+   sub.textContent='Datos actualizados '+DATA.generado+' · IG + Facebook';
+   // salud: si la última generación tiene más de 3h, avisar en rojo (el refresh corre cada hora)
+   var gen=new Date(DATA.generado.replace(' ','T'));
+   var horas=(Date.now()-gen.getTime())/36e5;
+   if(horas>3){
+     sub.innerHTML='⚠️ <b style="color:#E24B4A">Datos de hace '+Math.round(horas)+'h (el refresco automático puede haber fallado)</b> · generados '+DATA.generado;
+   }
+ })();
  var allDays=S.map(function(r){return r.dia;});
  var fromEl=document.getElementById('from'), toEl=document.getElementById('to');
  var firstDay=allDays[0], lastDay=allDays[allDays.length-1];
