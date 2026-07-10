@@ -270,6 +270,17 @@ while i<N:
 for r in setting:
     r["nodata"]=any(g["from"]<=r["dia"]<=g["to"] for g in gaps)
 print("tramos sin datos setting:",gaps,flush=True)
+# GUARDIÁN anti-run-degradado: leads/triaje/closing NO tienen caché (se bajan del calendario+fichas cada vez).
+# Si un run se estrangula y el calendario devuelve vacío (0 leads Y 0 agendas), NO publiques vacío:
+# conserva leads/triaje/closing del data.json anterior (el setting sí es fresco por su caché).
+if len(leads)==0 and sum(x["agendados"] for x in triage)==0:
+    try:
+        prev=json.load(open(os.path.join(OUTDIR,"data.json")))
+        if prev.get("leads") or sum(x.get("agendados",0) for x in prev.get("triage",[])):
+            print("AVISO: run degradado (0 leads/agendas) -> conservo leads/triaje/closing anteriores",flush=True)
+            leads=prev.get("leads",leads); triage=prev.get("triage",triage)
+            closing=prev.get("closing",closing); closing_daily=prev.get("closing_daily",closing_daily)
+    except Exception as e: print("guardián: sin data.json previo",e,flush=True)
 data={"generado":datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),"rango":f"{days[0]} a {days[-1]}","setting":setting,"triage":triage,"leads":leads,"closing":closing,"closing_daily":closing_daily,"gaps":gaps,"resp_pairs":resp_pairs}
 json.dump(data,open(os.path.join(OUTDIR,"data.json"),"w"),ensure_ascii=False,indent=1)
 tpl=open(os.path.join(HERE,"template.html")).read()
