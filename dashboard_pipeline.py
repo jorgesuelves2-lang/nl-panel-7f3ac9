@@ -272,9 +272,18 @@ for r in setting:
 print("tramos sin datos setting:",gaps,flush=True)
 data={"generado":datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),"rango":f"{days[0]} a {days[-1]}","setting":setting,"triage":triage,"leads":leads,"closing":closing,"closing_daily":closing_daily,"gaps":gaps,"resp_pairs":resp_pairs}
 json.dump(data,open(os.path.join(OUTDIR,"data.json"),"w"),ensure_ascii=False,indent=1)
-html=open(os.path.join(HERE,"template.html")).read().replace("/*DATA*/","const DATA = "+json.dumps(data,ensure_ascii=False)+";")
+tpl=open(os.path.join(HERE,"template.html")).read()
+html=tpl.replace("/*DATA*/","const DATA = "+json.dumps(data,ensure_ascii=False)+";")
 open(os.path.join(OUTDIR,"dashboard.html"),"w").write(html)
-print("OK dashboard.html generado",flush=True)
+# versión EQUIPO: misma info SIN dinero (se ELIMINA del embed, no solo se oculta)
+import copy
+td=copy.deepcopy(data)
+for l in td["leads"]: l["ticket"]=""; l["pagado"]=""
+for r in td["closing"]: r["cash"]=""; r["ticket"]=""; r["pagado"]=""
+for r in td["closing_daily"]: r["facturacion"]=0; r["cash"]=0
+thtml=tpl.replace("/*DATA*/","window.TEAM=true; const DATA = "+json.dumps(td,ensure_ascii=False)+";")
+open(os.path.join(OUTDIR,"equipo.html"),"w").write(thtml)
+print("OK dashboard.html + equipo.html generados",flush=True)
 # publicar en GitHub Pages (en local). En CI (SKIP_DEPLOY=1) lo publica el propio workflow.
 if not os.environ.get("SKIP_DEPLOY"):
     subprocess.run(["python3",os.path.join(HERE,"deploy_github.py")])
