@@ -285,7 +285,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var CDf=(DATA.closing_daily||[]).filter(function(r){return r.dia>=from&&r.dia<=to;});
    var cAg=sum(CDf,'agendados'),cSh=sum(CDf,'showed'),cVe=sum(CDf,'vendido'),cFa=sum(CDf,'facturacion'),cCa=sum(CDf,'cash');
    document.getElementById('c_cards').innerHTML=
-     card('Closings',cAg,'media '+avg(CDf,'agendados')+'/día')+card('Asistió',cSh,pct(cSh,cAg)+' de closings')+card('Vendidos',cVe,pct(cVe,cSh)+' de asistidos')+card('Facturación','€'+Math.round(cFa).toLocaleString('es-ES'))+card('Cash collected','€'+Math.round(cCa).toLocaleString('es-ES'));
+     card('Closings',cAg,'media '+avg(CDf,'agendados')+'/día')+card('Asistió',cSh,pct(cSh,cAg)+' de closings')+card('Vendidos',cVe,pct(cVe,cSh)+' de asistidos')+(window.TEAM?'':card('Facturación','€'+Math.round(cFa).toLocaleString('es-ES'))+card('Cash collected','€'+Math.round(cCa).toLocaleString('es-ES')));
    charts.c1=new Chart(document.getElementById('c_estado'),{type:'bar',data:{labels:labels,datasets:[
      {label:'Asistió',data:CDf.map(function(r){return r.showed;}),backgroundColor:'#1D9E75'},
      {label:'Confirmado',data:CDf.map(function(r){return r.confirmed;}),backgroundColor:'#378ADD'},
@@ -297,7 +297,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    charts.c2=new Chart(document.getElementById('c_fact'),{type:'bar',data:factDS(),options:factOpts});
    // ===== GLOBAL (embudo completo + dinero) =====
    document.getElementById('g_cards').innerHTML=
-     card('Conv. totales',tot)+card('Propuestas',pr,pct(pr,tot)+' de conv.')+card('Agendas triaje',ag,pct(ag,pr)+' de prop.')+card('Asistió triaje',tsh,pct(tsh,tag)+' de agend.')+card('Cualifica',tcu,pct(tcu,tsh)+' de asistidos')+card('Vendidos',cVe,pct(cVe,cSh)+' de closings asist.')+card('Facturación','€'+Math.round(cFa).toLocaleString('es-ES'))+card('Cash collected','€'+Math.round(cCa).toLocaleString('es-ES'));
+     card('Conv. totales',tot)+card('Propuestas',pr,pct(pr,tot)+' de conv.')+card('Agendas triaje',ag,pct(ag,pr)+' de prop.')+card('Asistió triaje',tsh,pct(tsh,tag)+' de agend.')+card('Cualifica',tcu,pct(tcu,tsh)+' de asistidos')+card('Vendidos',cVe,pct(cVe,cSh)+' de closings asist.')+(window.TEAM?'':card('Facturación','€'+Math.round(cFa).toLocaleString('es-ES'))+card('Cash collected','€'+Math.round(cCa).toLocaleString('es-ES')));
    document.getElementById('g_funnel').innerHTML=
      fbar('Conversaciones',tot,tot,'var(--blue)')+fbar('Propuestas de agenda',pr,tot,'var(--teal)',pct(pr,tot))+fbar('Agendas de triaje',ag,tot,'var(--amber)',pct(ag,tot))+fbar('Asistió al triaje',tsh,tot,'var(--purple)',pct(tsh,tot))+fbar('Cualifica → closing',tcu,tot,'#0F6E56',pct(tcu,tot))+fbar('Vendido',cVe,tot,'var(--red)',pct(cVe,tot));
    charts.g1=new Chart(document.getElementById('g_fact'),{type:'bar',data:factDS(),options:factOpts});
@@ -319,6 +319,10 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    renderLeads();
  }
  var LCOLS=[{k:'nombre',l:'Nombre'},{k:'setter',l:'Setter'},{k:'prof',l:'Profesión'},{k:'nivel',l:'Nivel'},{k:'presup',l:'Presupuesto'},{k:'ingresos',l:'Ingresos'},{k:'univ',l:'Universidad'},{k:'urg',l:'Urgencia'},{k:'comp',l:'Compromiso'},{k:'canal',l:'Canal'},{k:'fagenda',l:'Fecha agenda'},{k:'restri',l:'Res.Triaje'},{k:'stri',l:'S.Tri'},{k:'closer',l:'Closer'},{k:'resclo',l:'Res.Closing'},{k:'estado',l:'Estado'},{k:'sclo',l:'S.Cl'},{k:'ticket',l:'Ticket'},{k:'pagado',l:'Pagado'},{k:'ig',l:'IG'}];
+ if(window.TEAM){ LCOLS=LCOLS.filter(function(c){return ['ticket','pagado','presup','ingresos'].indexOf(c.k)<0;});
+   document.querySelectorAll('button.tab[data-t="cash"],button.tab[data-t="clientes"]').forEach(function(b){b.style.display='none';});
+   document.querySelectorAll('.panel h3').forEach(function(h){ if(/facturaci|cash/i.test(h.textContent)) h.parentElement.style.display='none'; });
+   document.title='NatschoLibre · Equipo'; }
  var lSort={k:'fagenda',dir:-1};
  function renderLeads(){
    var LD=DATA.leads||[];
