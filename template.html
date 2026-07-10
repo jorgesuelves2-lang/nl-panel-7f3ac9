@@ -125,8 +125,11 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
   </section>
 
   <section id="clientes" class="hide">
-    <div class="panel" style="border-left:3px solid var(--amber);border-radius:0"><h3>Clientes — pendiente de datos</h3>
-    <div style="font-size:13px;color:var(--mut)">Para controlar <b style="color:var(--tx)">pagos y progreso en la mentoría</b> (clase actual, cuotas, próximo pago, estado) hay que capturar esos datos: hoy no existen en el sistema. Propuesta: campos en GHL (plan · cuotas pagadas · próximo pago · clase actual · estado) que el equipo/mentor actualiza, o un formulario de pago. En cuanto se capturen, esta pestaña se llena sola.</div></div>
+    <div class="bhctrl"><span>Estado: <select id="cl_estado"><option value="">Todos</option></select></span>
+      <span>Buscar: <input id="cl_q" type="text" placeholder="cliente, closer…" style="width:160px"></span>
+      <span id="cl_resumen" style="color:var(--mut)"></span></div>
+    <div class="panel" style="overflow-x:auto"><table id="cl_table" class="leadtbl"></table></div>
+    <div class="panel" style="border-left:3px solid var(--amber);border-radius:0;margin-top:12px"><div style="font-size:12px;color:var(--mut)">Cuotas / próximos pagos / cash-collected por cuota se llenan cuando esté el <b style="color:var(--tx)">formulario de cierre + registrar pago</b> (ver <code>sistema-closing-cobros.md</code>). Ahora se muestran ticket y pagado si constan en la ficha.</div></div>
   </section>
 
   <section id="cash" class="hide">
@@ -316,7 +319,29 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var cth='<thead><tr><th>Nombre</th><th>Fecha</th><th>Estado</th><th>Resultado</th><th>S.Cl</th><th>Cash</th><th>Ficha</th></tr></thead>';
    var cb=CL.map(function(r){return '<tr><td>'+r.nombre+'</td><td>'+(r.fecha||'').slice(5)+'</td><td>'+(r.estado||'')+'</td><td>'+(r.resclo||'—')+'</td><td>'+(r.sc!=null?r.sc:'—')+'</td><td>'+(r.cash||'—')+'</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>';}).join('');
    document.getElementById('c_table').innerHTML=cth+'<tbody>'+(cb||'<tr><td>Sin closings</td></tr>')+'</tbody>';
-   renderLeads();
+   renderLeads(); initClientes();
+ }
+ // ---- Pestaña Clientes: leads que llegaron a closing (tienen closer o resultado de closing) ----
+ var CLCOLS=[{k:'nombre',l:'Cliente'},{k:'setter',l:'Setter'},{k:'closer',l:'Closer'},{k:'fagenda',l:'Fecha'},{k:'resclo',l:'Res.Closing'},{k:'estado',l:'Estado'},{k:'sclo',l:'S.Cl'},{k:'ticket',l:'Ticket'},{k:'pagado',l:'Pagado'}];
+ function clientesData(){ return (DATA.leads||[]).filter(function(r){ return r.closer||r.resclo||r.estado||r.sclo!=null||r.ticket; }); }
+ function initClientes(){
+   if(window.TEAM){ CLCOLS=CLCOLS.filter(function(c){return ['ticket','pagado'].indexOf(c.k)<0;}); }
+   var sel=document.getElementById('cl_estado'); if(!sel) return;
+   var est={}; clientesData().forEach(function(r){ if(r.estado) est[r.estado]=1; });
+   Object.keys(est).sort().forEach(function(e){ var o=document.createElement('option'); o.value=e; o.textContent=e; sel.appendChild(o); });
+   sel.onchange=document.getElementById('cl_q').oninput=renderClientes;
+   renderClientes();
+ }
+ function renderClientes(){
+   var LD=clientesData();
+   var es=document.getElementById('cl_estado').value, q=(document.getElementById('cl_q').value||'').toLowerCase();
+   var rows=LD.filter(function(r){ if(es&&r.estado!==es) return false;
+     if(q&&(((r.nombre||'')+' '+(r.closer||'')).toLowerCase()).indexOf(q)<0) return false; return true; });
+   rows.sort(function(a,b){ return String(b.fagenda||'').localeCompare(String(a.fagenda||'')); });
+   document.getElementById('cl_resumen').innerHTML='Clientes en closing: <b>'+LD.length+'</b> · (mostrando '+rows.length+')';
+   var th='<thead><tr>'+CLCOLS.map(function(c){return '<th>'+c.l+'</th>';}).join('')+'<th>Ficha</th></tr></thead>';
+   var body=rows.map(function(r){ return '<tr>'+CLCOLS.map(function(c){var v=r[c.k];v=(v==null||v==='')?'—':String(v);return '<td>'+v+'</td>';}).join('')+'<td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>'; }).join('');
+   document.getElementById('cl_table').innerHTML=th+'<tbody>'+(body||'<tr><td>Sin clientes en closing todavía</td></tr>')+'</tbody>';
  }
  var LCOLS=[{k:'nombre',l:'Nombre'},{k:'setter',l:'Setter'},{k:'prof',l:'Profesión'},{k:'nivel',l:'Nivel'},{k:'presup',l:'Presupuesto'},{k:'ingresos',l:'Ingresos'},{k:'univ',l:'Universidad'},{k:'urg',l:'Urgencia'},{k:'comp',l:'Compromiso'},{k:'canal',l:'Canal'},{k:'fagenda',l:'Fecha agenda'},{k:'restri',l:'Res.Triaje'},{k:'stri',l:'S.Tri'},{k:'closer',l:'Closer'},{k:'resclo',l:'Res.Closing'},{k:'estado',l:'Estado'},{k:'sclo',l:'S.Cl'},{k:'ticket',l:'Ticket'},{k:'pagado',l:'Pagado'},{k:'ig',l:'IG'}];
  if(window.TEAM){ LCOLS=LCOLS.filter(function(c){return ['ticket','pagado','presup','ingresos'].indexOf(c.k)<0;});
