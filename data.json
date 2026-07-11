@@ -1,6 +1,6 @@
 {
- "generado": "2026-07-10 22:37",
- "rango": "2026-02-01 a 2026-07-10",
+ "generado": "2026-07-11 01:02",
+ "rango": "2026-02-01 a 2026-07-11",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -34,7 +34,7 @@
    "total": 146,
    "fups": 216,
    "prop": 5,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 17,
    "nodata": false
   },
@@ -58,7 +58,7 @@
    "total": 112,
    "fups": 195,
    "prop": 10,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 104,
    "nodata": false
   },
@@ -82,7 +82,7 @@
    "total": 148,
    "fups": 150,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 4,
    "resp_min": 36,
    "nodata": false
   },
@@ -106,7 +106,7 @@
    "total": 148,
    "fups": 151,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 61,
    "nodata": false
   },
@@ -118,7 +118,7 @@
    "total": 92,
    "fups": 108,
    "prop": 6,
-   "agendas": 0,
+   "agendas": 4,
    "resp_min": 200,
    "nodata": false
   },
@@ -130,7 +130,7 @@
    "total": 91,
    "fups": 125,
    "prop": 5,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 249,
    "nodata": false
   },
@@ -154,7 +154,7 @@
    "total": 231,
    "fups": 241,
    "prop": 7,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 148,
    "nodata": false
   },
@@ -166,7 +166,7 @@
    "total": 74,
    "fups": 74,
    "prop": 5,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 122,
    "nodata": false
   },
@@ -202,7 +202,7 @@
    "total": 60,
    "fups": 71,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 5,
    "resp_min": 123,
    "nodata": false
   },
@@ -226,7 +226,7 @@
    "total": 190,
    "fups": 220,
    "prop": 8,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 44,
    "nodata": false
   },
@@ -250,7 +250,7 @@
    "total": 84,
    "fups": 110,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 4,
    "resp_min": 52,
    "nodata": false
   },
@@ -286,7 +286,7 @@
    "total": 71,
    "fups": 83,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 11,
    "nodata": false
   },
@@ -298,7 +298,7 @@
    "total": 60,
    "fups": 92,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 21,
    "nodata": false
   },
@@ -310,7 +310,7 @@
    "total": 49,
    "fups": 40,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 114,
    "nodata": false
   },
@@ -322,7 +322,7 @@
    "total": 77,
    "fups": 113,
    "prop": 4,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 91,
    "nodata": false
   },
@@ -334,7 +334,7 @@
    "total": 51,
    "fups": 50,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 410,
    "nodata": false
   },
@@ -370,7 +370,7 @@
    "total": 102,
    "fups": 112,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 115,
    "nodata": false
   },
@@ -418,7 +418,7 @@
    "total": 105,
    "fups": 96,
    "prop": 5,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 13,
    "nodata": false
   },
@@ -442,7 +442,7 @@
    "total": 164,
    "fups": 147,
    "prop": 5,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 4,
    "nodata": false
   },
@@ -454,7 +454,7 @@
    "total": 176,
    "fups": 135,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 64,
    "nodata": false
   },
@@ -466,7 +466,7 @@
    "total": 89,
    "fups": 104,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 96,
    "nodata": false
   },
@@ -478,7 +478,7 @@
    "total": 91,
    "fups": 84,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": 285,
    "nodata": false
   },
@@ -502,7 +502,7 @@
    "total": 25,
    "fups": 26,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 360,
    "nodata": false
   },
@@ -526,7 +526,7 @@
    "total": 85,
    "fups": 124,
    "prop": 4,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": 157,
    "nodata": false
   },
@@ -538,7 +538,7 @@
    "total": 91,
    "fups": 120,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 42,
    "nodata": false
   },
@@ -550,7 +550,7 @@
    "total": 57,
    "fups": 90,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": null,
    "nodata": false
   },
@@ -574,7 +574,7 @@
    "total": 73,
    "fups": 75,
    "prop": 4,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 27,
    "nodata": false
   },
@@ -586,7 +586,7 @@
    "total": 63,
    "fups": 50,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 111,
    "nodata": false
   },
@@ -610,7 +610,7 @@
    "total": 100,
    "fups": 95,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": 112,
    "nodata": false
   },
@@ -622,7 +622,7 @@
    "total": 97,
    "fups": 73,
    "prop": 4,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 37,
    "nodata": false
   },
@@ -634,7 +634,7 @@
    "total": 146,
    "fups": 126,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 53,
    "nodata": false
   },
@@ -646,7 +646,7 @@
    "total": 145,
    "fups": 162,
    "prop": 6,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": 476,
    "nodata": false
   },
@@ -658,7 +658,7 @@
    "total": 124,
    "fups": 101,
    "prop": 6,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 108,
    "nodata": false
   },
@@ -670,7 +670,7 @@
    "total": 68,
    "fups": 45,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 4,
    "resp_min": 98,
    "nodata": false
   },
@@ -682,7 +682,7 @@
    "total": 70,
    "fups": 77,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 106,
    "nodata": false
   },
@@ -694,7 +694,7 @@
    "total": 67,
    "fups": 54,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": 182,
    "nodata": false
   },
@@ -706,7 +706,7 @@
    "total": 80,
    "fups": 17,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 239,
    "nodata": false
   },
@@ -730,7 +730,7 @@
    "total": 29,
    "fups": 30,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": 63,
    "nodata": false
   },
@@ -742,7 +742,7 @@
    "total": 46,
    "fups": 8,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 46,
    "nodata": false
   },
@@ -754,7 +754,7 @@
    "total": 30,
    "fups": 37,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 192,
    "nodata": false
   },
@@ -814,7 +814,7 @@
    "total": 59,
    "fups": 77,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": 1371,
    "nodata": false
   },
@@ -838,7 +838,7 @@
    "total": 89,
    "fups": 22,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 244,
    "nodata": false
   },
@@ -850,7 +850,7 @@
    "total": 45,
    "fups": 34,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": null,
    "nodata": false
   },
@@ -862,7 +862,7 @@
    "total": 98,
    "fups": 51,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 147,
    "nodata": false
   },
@@ -874,7 +874,7 @@
    "total": 69,
    "fups": 63,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 236,
    "nodata": false
   },
@@ -910,7 +910,7 @@
    "total": 145,
    "fups": 125,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 121,
    "nodata": false
   },
@@ -922,7 +922,7 @@
    "total": 39,
    "fups": 26,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 9,
    "nodata": false
   },
@@ -934,7 +934,7 @@
    "total": 76,
    "fups": 50,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 1063,
    "nodata": false
   },
@@ -946,7 +946,7 @@
    "total": 84,
    "fups": 48,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 275,
    "nodata": false
   },
@@ -958,7 +958,7 @@
    "total": 66,
    "fups": 72,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 138,
    "nodata": false
   },
@@ -982,7 +982,7 @@
    "total": 116,
    "fups": 86,
    "prop": 6,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 5,
    "nodata": false
   },
@@ -994,7 +994,7 @@
    "total": 132,
    "fups": 110,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 207,
    "nodata": false
   },
@@ -1030,7 +1030,7 @@
    "total": 108,
    "fups": 78,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 215,
    "nodata": false
   },
@@ -1042,7 +1042,7 @@
    "total": 135,
    "fups": 64,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": 142,
    "nodata": false
   },
@@ -1054,7 +1054,7 @@
    "total": 168,
    "fups": 93,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 731,
    "nodata": false
   },
@@ -1066,7 +1066,7 @@
    "total": 156,
    "fups": 163,
    "prop": 5,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 249,
    "nodata": false
   },
@@ -1078,7 +1078,7 @@
    "total": 66,
    "fups": 67,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 84,
    "nodata": false
   },
@@ -1090,7 +1090,7 @@
    "total": 49,
    "fups": 51,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 324,
    "nodata": false
   },
@@ -1114,7 +1114,7 @@
    "total": 155,
    "fups": 167,
    "prop": 7,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 75,
    "nodata": false
   },
@@ -1126,7 +1126,7 @@
    "total": 144,
    "fups": 139,
    "prop": 4,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 214,
    "nodata": false
   },
@@ -1138,7 +1138,7 @@
    "total": 163,
    "fups": 125,
    "prop": 4,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 323,
    "nodata": false
   },
@@ -1150,7 +1150,7 @@
    "total": 81,
    "fups": 111,
    "prop": 5,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": 91,
    "nodata": false
   },
@@ -1162,7 +1162,7 @@
    "total": 77,
    "fups": 75,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": 211,
    "nodata": false
   },
@@ -1174,7 +1174,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": null,
    "nodata": true
   },
@@ -1210,7 +1210,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": null,
    "nodata": true
   },
@@ -1222,7 +1222,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": null,
    "nodata": true
   },
@@ -1246,7 +1246,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": null,
    "nodata": true
   },
@@ -1258,7 +1258,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": null,
    "nodata": true
   },
@@ -1270,7 +1270,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": null,
    "nodata": true
   },
@@ -1282,7 +1282,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 4,
    "resp_min": null,
    "nodata": true
   },
@@ -1294,7 +1294,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 8,
    "resp_min": null,
    "nodata": true
   },
@@ -1306,7 +1306,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 5,
    "resp_min": null,
    "nodata": true
   },
@@ -1318,7 +1318,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 4,
    "resp_min": null,
    "nodata": true
   },
@@ -1330,7 +1330,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 7,
    "resp_min": null,
    "nodata": true
   },
@@ -1342,7 +1342,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 7,
    "resp_min": null,
    "nodata": true
   },
@@ -1354,7 +1354,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 4,
    "resp_min": null,
    "nodata": true
   },
@@ -1366,7 +1366,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 5,
    "resp_min": null,
    "nodata": true
   },
@@ -1378,7 +1378,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 4,
    "resp_min": null,
    "nodata": true
   },
@@ -1390,7 +1390,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 12,
    "resp_min": null,
    "nodata": true
   },
@@ -1402,7 +1402,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 7,
    "resp_min": null,
    "nodata": true
   },
@@ -1414,7 +1414,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 9,
    "resp_min": null,
    "nodata": true
   },
@@ -1426,7 +1426,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 5,
    "resp_min": null,
    "nodata": true
   },
@@ -1438,7 +1438,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 7,
    "resp_min": null,
    "nodata": true
   },
@@ -1450,7 +1450,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 4,
    "resp_min": null,
    "nodata": true
   },
@@ -1462,7 +1462,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 6,
    "resp_min": null,
    "nodata": true
   },
@@ -1474,7 +1474,7 @@
    "total": 0,
    "fups": 0,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 6,
    "resp_min": null,
    "nodata": true
   },
@@ -1486,7 +1486,7 @@
    "total": 42,
    "fups": 32,
    "prop": 4,
-   "agendas": 0,
+   "agendas": 5,
    "resp_min": 19,
    "nodata": false
   },
@@ -1498,7 +1498,7 @@
    "total": 81,
    "fups": 22,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 340,
    "nodata": false
   },
@@ -1510,7 +1510,7 @@
    "total": 67,
    "fups": 40,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": null,
    "nodata": false
   },
@@ -1534,7 +1534,7 @@
    "total": 55,
    "fups": 53,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 278,
    "nodata": false
   },
@@ -1546,7 +1546,7 @@
    "total": 108,
    "fups": 29,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 565,
    "nodata": false
   },
@@ -1570,7 +1570,7 @@
    "total": 108,
    "fups": 73,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 904,
    "nodata": false
   },
@@ -1582,7 +1582,7 @@
    "total": 65,
    "fups": 58,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 145,
    "nodata": false
   },
@@ -1594,7 +1594,7 @@
    "total": 104,
    "fups": 34,
    "prop": 0,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": null,
    "nodata": false
   },
@@ -1618,7 +1618,7 @@
    "total": 173,
    "fups": 186,
    "prop": 8,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 65,
    "nodata": false
   },
@@ -1630,7 +1630,7 @@
    "total": 99,
    "fups": 87,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 120,
    "nodata": false
   },
@@ -1642,7 +1642,7 @@
    "total": 139,
    "fups": 138,
    "prop": 6,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 1267,
    "nodata": false
   },
@@ -1654,7 +1654,7 @@
    "total": 183,
    "fups": 152,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": 1,
    "nodata": false
   },
@@ -1678,7 +1678,7 @@
    "total": 78,
    "fups": 65,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 308,
    "nodata": false
   },
@@ -1714,7 +1714,7 @@
    "total": 148,
    "fups": 120,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 163,
    "nodata": false
   },
@@ -1726,7 +1726,7 @@
    "total": 59,
    "fups": 41,
    "prop": 3,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 374,
    "nodata": false
   },
@@ -1822,7 +1822,7 @@
    "total": 133,
    "fups": 109,
    "prop": 4,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": 47,
    "nodata": false
   },
@@ -1834,7 +1834,7 @@
    "total": 133,
    "fups": 68,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 11,
    "nodata": false
   },
@@ -1846,7 +1846,7 @@
    "total": 97,
    "fups": 92,
    "prop": 6,
-   "agendas": 0,
+   "agendas": 3,
    "resp_min": 647,
    "nodata": false
   },
@@ -1858,7 +1858,7 @@
    "total": 87,
    "fups": 32,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 252,
    "nodata": false
   },
@@ -1870,7 +1870,7 @@
    "total": 108,
    "fups": 122,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 22,
    "nodata": false
   },
@@ -1894,7 +1894,7 @@
    "total": 118,
    "fups": 101,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 2,
    "nodata": false
   },
@@ -1906,7 +1906,7 @@
    "total": 96,
    "fups": 55,
    "prop": 1,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": null,
    "nodata": false
   },
@@ -1918,8 +1918,20 @@
    "total": 99,
    "fups": 56,
    "prop": 2,
-   "agendas": 0,
+   "agendas": 2,
    "resp_min": 4,
+   "nodata": false
+  },
+  {
+   "dia": "2026-07-11",
+   "inb": 0,
+   "out": 7,
+   "nuevas": 7,
+   "total": 17,
+   "fups": 7,
+   "prop": 0,
+   "agendas": 0,
+   "resp_min": null,
    "nodata": false
   }
  ],
@@ -3521,6 +3533,16 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 1,
+   "cualifica": 0,
+   "nocualifica": 0
+  },
+  {
+   "dia": "2026-07-11",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
    "cualifica": 0,
    "nocualifica": 0
   }
@@ -6398,11 +6420,11 @@
    "estado": "",
    "ss": 65,
    "stri": 60,
-   "sclo": null,
+   "sclo": 38,
    "ticket": "",
    "pagado": "",
    "objtri": "",
-   "objclo": "",
+   "objclo": "1) Tiempo/carga academica actual (tesis, examenes, maestria). 2) Dinero no disponible ahora (implicito, no verbalizado en esta llamada pero critico segun ficha). 3) Alternativa competidora: curso presencial universidad Pacifico que ya evalua para julio. 4) Motivacion de asistencia baja (vino por compromiso con David, no por urgencia propia).",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rDUwGEh1RKKTzxyIttJH"
   },
@@ -8389,18 +8411,18 @@
   {
    "nombre": "MARIA FERNANDA TALLA SANTA CRUZ",
    "setter": "",
-   "prof": "Estudiante Médico general",
-   "nivel": "🔹 No tengo conocimientos",
-   "presup": "Cuento con entre 5.000€ a 10.000€ para mi proceso",
-   "ingresos": "300€ - 600€",
-   "univ": "Aún no, pero estoy en UCSUR Perú ",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Tengo miedo de que sea todo una estafa, de que no logre conseguir una plaza para estudiar, que no consiga aprobar los exámenes, que en realidad nunca pueda ir a Suiza porque he leído que es bien difícil llegar a ese país a ejercer ",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "mafertalla_",
-   "email": "mafer.tall.06@gmail.com",
-   "tf": "+51946404553",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-27",
    "closer": "",
    "restri": "",
@@ -11522,7 +11544,7 @@
    "fecha": "2026-06-25",
    "estado": "confirmed",
    "resclo": "",
-   "sc": null,
+   "sc": 38,
    "cash": "",
    "ticket": "",
    "pagado": "",
@@ -13457,6 +13479,17 @@
   },
   {
    "dia": "2026-07-10",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
+  },
+  {
+   "dia": "2026-07-11",
    "agendados": 0,
    "showed": 0,
    "noshow": 0,
