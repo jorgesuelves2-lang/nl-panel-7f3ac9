@@ -71,7 +71,7 @@ for cal in ["VRaGr4KGSZNiuDamyV4q","ODbNZytVDUxJxry4QzmX"]:
 t_cual=defaultdict(int)
 for e in ev:
     if e.get("contactId") and e["contactId"] in closing_contacts: t_cual[str(e.get("startTime"))[:10]]+=1
-t_nocual=defaultdict(int)  # se rellena en el bucle de leads (depende de las etiquetas de la ficha)
+t_nocual=defaultdict(int); t_seg=defaultdict(int)  # se rellenan en el bucle de leads (etiquetas de resultado)
 print("eventos triaje:",len(ev),"| contactos con closing:",len(closing_contacts),flush=True)
 
 # 1c) CAMINO DE LOS LEADS + CLOSING (desde START) — antes de los mensajes para evitar rate-limit
@@ -123,8 +123,10 @@ for cid,info in cids.items():
     c=cmap.get(cid) or {}
     cm={x.get("id"):x.get("value") for x in c.get("customFields",[])}
     tags=c.get("tags",[]) or []
-    if info.get("tri") and "triage-no-cualifica" in tags:
-        t_nocual[str(info["tri"].get("startTime"))[:10]]+=1
+    if info.get("tri"):
+        _td=str(info["tri"].get("startTime"))[:10]
+        if "triage-no-cualifica" in tags: t_nocual[_td]+=1
+        if "triage-seguimiento" in tags: t_seg[_td]+=1
     nombre=c.get("contactName") or ((c.get("firstName") or "")+" "+(c.get("lastName") or "")).strip() or ev_name(info) or "(sin nombre)"
     ficha=f"https://app.funnelup.io/v2/location/{LOC}/contacts/detail/{cid}"
     utm=((c.get("lastAttributionSource") or {}).get("utmSource") or (c.get("attributionSource") or {}).get("utmSource") or "").strip().lower()
@@ -254,7 +256,7 @@ for d in days:
 resp_pairs=[p for lst in _cache["resp_pairs"].values() for p in lst]
 triage=[{"dia":d,"agendados":sum(t_status[d].values()),"showed":t_status[d].get("showed",0),
          "noshow":t_status[d].get("noshow",0),"cancelled":t_status[d].get("cancelled",0),
-         "confirmed":t_status[d].get("confirmed",0),"cualifica":t_cual[d],"nocualifica":t_nocual[d]} for d in days]
+         "confirmed":t_status[d].get("confirmed",0),"cualifica":t_cual[d],"nocualifica":t_nocual[d],"seguimiento":t_seg[d]} for d in days]
 # detectar tramos SIN DATOS de setting (huecos interiores de sincronización GHL↔Instagram)
 gaps=[]; i=0; N=len(setting)
 while i<N:
