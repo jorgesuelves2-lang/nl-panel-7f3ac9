@@ -215,16 +215,17 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var total='<tr class="total"><td>Total</td><td>'+sum(Sf,'inb')+'</td><td>'+sum(Sf,'out')+'</td><td>'+nuev+'</td><td>'+tot+'</td><td>'+fu+'</td><td>'+pr+'</td><td>'+pct(pr,nuev)+'</td><td>'+ag+'</td><td>'+pct(ag,pr)+'</td><td>—</td></tr>';
    document.getElementById('s_table').innerHTML=th+'<tbody>'+tb+media+total+'</tbody>';
    // TRIAGE cards
-   var tag=sum(Tf,'agendados'),tsh=sum(Tf,'showed'),tns=sum(Tf,'noshow'),tc=sum(Tf,'cancelled'),tcu=sum(Tf,'cualifica'),tconf=sum(Tf,'confirmed'),tncu=sum(Tf,'nocualifica');
-   var sup=(tsh+tns)?Math.round(100*tsh/(tsh+tns)):0;
+   var tag=sum(Tf,'agendados'),tns=sum(Tf,'noshow'),tc=sum(Tf,'cancelled'),tcu=sum(Tf,'cualifica'),tncu=sum(Tf,'nocualifica'),tseg=sum(Tf,'seguimiento');
+   var tsh=sum(Tf,'showed'),tconf=sum(Tf,'confirmed'),sup=(tsh+tns)?Math.round(100*tsh/(tsh+tns)):0;  // usados por Análisis y pestaña Global
+   var tres=tcu+tncu+tseg;  // triajes CON resultado registrado (asistieron y David marcó)
    document.getElementById('t_cards').innerHTML=
-     card('Agendados',tag,'media '+avg(Tf,'agendados')+'/día')+card('Asistió',tsh,pct(tsh,tag)+' de agend.')+card('Cualifica → closing',tcu,pct(tcu,tag)+' de agend.')+card('No-show',tns)+card('Cancelados',tc)+card('Show-up',sup+'%','de los celebrados');
-   var TH='<th>Día</th><th>Agendas</th><th>Confirmadas</th><th>Asistió</th><th>No show</th><th>Cancelada</th><th>Cualifica</th><th>No cualifica</th>';
+     card('Agendados',tag,'media '+avg(Tf,'agendados')+'/día')+card('Cualifica → closing',tcu,pct(tcu,tag)+' de agend.')+card('No cualifica',tncu)+card('Seguimiento',tseg)+card('No-show',tns)+card('Cancelados',tc)+card('Con resultado',tres,pct(tres,tag)+' de agend.');
+   var TH='<th>Día</th><th>Agendas</th><th>Cualifica</th><th>No cualifica</th><th>Seguimiento</th><th>No show</th><th>Cancelada</th>';
    var tth='<thead><tr>'+TH+'</tr></thead>';
-   var ttb=Tf.map(function(r){return '<tr><td>'+r.dia.slice(5)+'</td><td><b>'+r.agendados+'</b></td><td>'+r.confirmed+'</td><td>'+r.showed+'</td><td>'+r.noshow+'</td><td>'+r.cancelled+'</td><td><b>'+r.cualifica+'</b></td><td>'+(r.nocualifica||0)+'</td></tr>';}).join('');
+   var ttb=Tf.map(function(r){return '<tr><td>'+r.dia.slice(5)+'</td><td><b>'+r.agendados+'</b></td><td><b>'+r.cualifica+'</b></td><td>'+(r.nocualifica||0)+'</td><td>'+(r.seguimiento||0)+'</td><td>'+r.noshow+'</td><td>'+r.cancelled+'</td></tr>';}).join('');
    var thdrB='<tr class="hdrrow">'+TH+'</tr>';
-   var ttot='<tr class="total"><td>Total</td><td>'+tag+'</td><td>'+tconf+'</td><td>'+tsh+'</td><td>'+tns+'</td><td>'+tc+'</td><td>'+tcu+'</td><td>'+tncu+'</td></tr>';
-   var tpct='<tr class="media"><td>% s/agendas</td><td>—</td><td>'+pct(tconf,tag)+'</td><td>'+pct(tsh,tag)+'</td><td>'+pct(tns,tag)+'</td><td>'+pct(tc,tag)+'</td><td>'+pct(tcu,tag)+'</td><td>'+pct(tncu,tag)+'</td></tr>';
+   var ttot='<tr class="total"><td>Total</td><td>'+tag+'</td><td>'+tcu+'</td><td>'+tncu+'</td><td>'+tseg+'</td><td>'+tns+'</td><td>'+tc+'</td></tr>';
+   var tpct='<tr class="media"><td>% s/agendas</td><td>—</td><td>'+pct(tcu,tag)+'</td><td>'+pct(tncu,tag)+'</td><td>'+pct(tseg,tag)+'</td><td>'+pct(tns,tag)+'</td><td>'+pct(tc,tag)+'</td></tr>';
    document.getElementById('t_table').innerHTML=tth+'<tbody>'+ttb+thdrB+ttot+tpct+'</tbody>';
    // ANÁLISIS (dinámico en cifras, fijo en diagnóstico)
    document.getElementById('s_analisis').innerHTML=anItem(
