@@ -1,5 +1,5 @@
 {
- "generado": "2026-07-15 04:33",
+ "generado": "2026-07-15 06:38",
  "rango": "2026-02-01 a 2026-07-15",
  "setting": [
   {
@@ -1975,8 +1975,8 @@
    "inb": 0,
    "out": 0,
    "nuevas": 0,
-   "total": 8,
-   "fups": 0,
+   "total": 14,
+   "fups": 8,
    "prop": 0,
    "agendas": 1,
    "resp_min": null,
