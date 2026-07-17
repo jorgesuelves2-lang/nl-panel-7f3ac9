@@ -1,5 +1,5 @@
 {
- "generado": "2026-07-17 16:43",
+ "generado": "2026-07-17 18:38",
  "rango": "2026-02-01 a 2026-07-17",
  "setting": [
   {
@@ -1999,7 +1999,7 @@
    "inb": 0,
    "out": 32,
    "nuevas": 32,
-   "total": 60,
+   "total": 62,
    "fups": 10,
    "prop": 0,
    "agendas": 2,
@@ -5517,7 +5517,7 @@
    "restri": "",
    "resclo": "",
    "estado": "",
-   "ss": null,
+   "ss": 18,
    "stri": null,
    "sclo": null,
    "ticket": "",
