@@ -1,5 +1,5 @@
 {
- "generado": "2026-07-18 16:31",
+ "generado": "2026-07-18 17:35",
  "rango": "2026-02-01 a 2026-07-18",
  "setting": [
   {
@@ -1879,11 +1879,11 @@
    "inb": 14,
    "out": 53,
    "nuevas": 67,
-   "total": 119,
+   "total": 125,
    "fups": 85,
    "prop": 3,
    "agendas": 0,
-   "resp_min": 157,
+   "resp_min": 10,
    "nodata": false
   },
   {
@@ -2008,9 +2008,9 @@
   },
   {
    "dia": "2026-07-18",
-   "inb": 0,
+   "inb": 1,
    "out": 15,
-   "nuevas": 15,
+   "nuevas": 16,
    "total": 39,
    "fups": 20,
    "prop": 0,
@@ -6063,18 +6063,18 @@
   {
    "nombre": "Elena GUERRERO BEJARANO",
    "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Odontóloga ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Cuento con entre 5.000€ a 10.000€ para mi proceso",
+   "ingresos": "600€- 1.000€",
+   "univ": "Universidad SAN Gregorio de Portoviejo",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Desinformación ",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "Elena Guerrero",
+   "email": "elenamariellg.c@gmail.com",
+   "tf": "+593961512279",
    "fagenda": "2026-05-27",
    "closer": "",
    "restri": "",
@@ -6572,19 +6572,19 @@
   },
   {
    "nombre": "Gema Riera",
-   "setter": "Sary",
-   "prof": "Limpieza ",
-   "nivel": "🔹 Conocimientos básicos",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "ingresos": "600€- 1.000€",
-   "univ": "Universidad de Valencia ",
+   "setter": "",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Creo que mi mayor obstáculo podría ser el idioma y la adaptación a un nuevo entorno laboral",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "geemariera",
-   "email": "gmrieraalonso@gmail.com",
-   "tf": "+4915129755037",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-27",
    "closer": "",
    "restri": "",
@@ -17716,13 +17716,18 @@
   },
   {
    "dia": "2026-07-07",
-   "in": 1783383005,
-   "rep": 1783401329
+   "in": 1783455348,
+   "rep": 1783455903
   },
   {
    "dia": "2026-07-07",
-   "in": 1783455348,
-   "rep": 1783455903
+   "in": 1783425728,
+   "rep": 1783426329
+  },
+  {
+   "dia": "2026-07-07",
+   "in": 1783397414,
+   "rep": 1783401890
   },
   {
    "dia": "2026-07-06",
