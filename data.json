@@ -1,6 +1,6 @@
 {
- "generado": "2026-07-18 23:32",
- "rango": "2026-02-01 a 2026-07-18",
+ "generado": "2026-07-19 01:05",
+ "rango": "2026-02-01 a 2026-07-19",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -2013,9 +2013,21 @@
    "nuevas": 49,
    "total": 95,
    "fups": 50,
-   "prop": 0,
+   "prop": 1,
    "agendas": 0,
    "resp_min": 55,
+   "nodata": false
+  },
+  {
+   "dia": "2026-07-19",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 4,
+   "fups": 0,
+   "prop": 0,
+   "agendas": 1,
+   "resp_min": null,
    "nodata": false
   }
  ],
@@ -3864,6 +3876,17 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-07-19",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 1,
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
@@ -14230,6 +14253,17 @@
    "vendido": 0,
    "facturacion": 0.0,
    "cash": 0.0
+  },
+  {
+   "dia": "2026-07-19",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
   }
  ],
  "gaps": [
@@ -17773,6 +17807,11 @@
    "dia": "2026-07-09",
    "in": 1783591912,
    "rep": 1783611346
+  },
+  {
+   "dia": "2026-07-11",
+   "in": 1783733050,
+   "rep": 1783784342
   },
   {
    "dia": "2026-07-15",
