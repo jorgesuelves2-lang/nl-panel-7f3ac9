@@ -1,5 +1,5 @@
 {
- "generado": "2026-07-20 11:25",
+ "generado": "2026-07-20 13:29",
  "rango": "2026-02-01 a 2026-07-20",
  "setting": [
   {
@@ -2002,7 +2002,7 @@
    "total": 99,
    "fups": 78,
    "prop": 1,
-   "agendas": 2,
+   "agendas": 1,
    "resp_min": null,
    "nodata": false
   },
@@ -2036,7 +2036,7 @@
    "out": 2,
    "nuevas": 3,
    "total": 13,
-   "fups": 6,
+   "fups": 10,
    "prop": 1,
    "agendas": 0,
    "resp_min": null,
@@ -3872,11 +3872,11 @@
   },
   {
    "dia": "2026-07-17",
-   "agendados": 2,
+   "agendados": 1,
    "showed": 0,
    "noshow": 0,
    "cancelled": 0,
-   "confirmed": 2,
+   "confirmed": 1,
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
@@ -5565,36 +5565,6 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/AQm462QFF0JXL92zmjHg"
-  },
-  {
-   "nombre": "Cisse",
-   "setter": "Sary",
-   "prof": "Medico generalista ",
-   "nivel": "🔹 No tengo conocimientos",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "ingresos": "300€ - 600€",
-   "univ": "La habana",
-   "urg": "",
-   "comp": "Aún no estoy en disposición de comenzar (por favor no agendar)",
-   "obst": "Suiza ",
-   "canal": "",
-   "ig": "Monalisa",
-   "email": "mouneissahamadouncisse@gmail.com",
-   "tf": "+22392858587",
-   "fagenda": "2026-07-17",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": 18,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/4MK8TGlAZR8OvjWqIqCA"
   },
   {
    "nombre": "Crista E",
