@@ -1,5 +1,5 @@
 {
- "generado": "2026-07-24 01:01",
+ "generado": "2026-07-24 04:53",
  "rango": "2026-02-01 a 2026-07-24",
  "setting": [
   {
@@ -2057,13 +2057,13 @@
   {
    "dia": "2026-07-22",
    "inb": 4,
-   "out": 37,
-   "nuevas": 41,
+   "out": 50,
+   "nuevas": 54,
    "total": 99,
    "fups": 106,
    "prop": 3,
    "agendas": 2,
-   "resp_min": 19,
+   "resp_min": 164,
    "nodata": false
   },
   {
@@ -4299,13 +4299,13 @@
    "resclo": "",
    "estado": "",
    "ss": 78,
-   "stri": 0,
+   "stri": 72,
    "sclo": null,
    "ticket": "",
    "pagado": "",
    "objtri": "",
    "objclo": "",
-   "infocloser": "",
+   "infocloser": "PERFIL: Alfredo David Nieves, edad no consta, Colombia, medico graduado en Universidad San Martin sede Bogota (titulo LATAM, fuera de la UE).\n\nOBJETIVO: Ejercer medicina en Alemania; plazo no consta explicitamente pero declara querer empezar de inmediato. Nivel de aleman: cero. Horas/semana de estudio: no consta.\n\nDOLORES: Motivacion real no detallada en triaje. No constan dolores especificos declarados mas alla del interes profesional en Alemania.\n\nINVERSION: Ingresos declarados >3.000 EUR/mes. Presupuesto declarado: 3.500-5.000 EUR para el proceso. No confirmado si es liquidez disponible hoy o estimacion.\n\nRUTA: Titulo LATAM (Colombia) requiere proceso de homologacion ante autoridades alemanas (Approbation), mas largo y complejo que titulo UE. Con aleman cero, el proceso realista puede ser 18-30 meses. Nivel de consciencia del reto linguistico aparentemente bajo ('Nada' como obstaculo).\n\nOBJECIONES: No constan objeciones explicitas en triaje. Posible objecion oculta: desconocimiento del esfuerzo real del proceso (aleman + homologacion LATAM).\n\nRECOMENDACION: Validar en los primeros minutos si los 3.500-5.000 EUR son liquidez disponible hoy. Gestionar expectativas de plazo y esfuerzo linguistico antes de presentar oferta; si acepta la realidad del proceso, perfil apto para cerrar.",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/erJPAY0Bd3ZRyt6jEUTE"
   },
   {
@@ -9291,18 +9291,18 @@
   {
    "nombre": "MARIA FERNANDA TALLA SANTA CRUZ",
    "setter": "",
-   "prof": "Estudiante Médico general",
-   "nivel": "🔹 No tengo conocimientos",
-   "presup": "Cuento con entre 5.000€ a 10.000€ para mi proceso",
-   "ingresos": "300€ - 600€",
-   "univ": "Aún no, pero estoy en UCSUR Perú ",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Tengo miedo de que sea todo una estafa, de que no logre conseguir una plaza para estudiar, que no consiga aprobar los exámenes, que en realidad nunca pueda ir a Suiza porque he leído que es bien difícil llegar a ese país a ejercer ",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "mafertalla_",
-   "email": "mafer.tall.06@gmail.com",
-   "tf": "+51946404553",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-27",
    "closer": "",
    "restri": "",
@@ -10399,20 +10399,20 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/05ewbaB7i5K7cwW5jCAk"
   },
   {
-   "nombre": "Nelson Zambrano",
-   "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "nombre": "Nelson zambrano",
+   "setter": "Sary",
+   "prof": "Técnico de sistemas de seguridad ",
+   "nivel": "🔹 Conocimientos básicos",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "univ": "No me he graduado",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "La nacionalidad y el idioma ",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "nelson327z@gmail.com",
+   "tf": "+34601608356",
    "fagenda": "2026-05-27",
    "closer": "",
    "restri": "",
@@ -18289,18 +18289,8 @@
   },
   {
    "dia": "2026-07-22",
-   "in": 1784734306,
-   "rep": 1784734778
-  },
-  {
-   "dia": "2026-07-22",
-   "in": 1784753253,
-   "rep": 1784754404
-  },
-  {
-   "dia": "2026-07-22",
-   "in": 1784704192,
-   "rep": 1784716068
+   "in": 1784729218,
+   "rep": 1784739074
   }
  ]
 }
