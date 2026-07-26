@@ -1,5 +1,5 @@
 {
- "generado": "2026-07-26 15:43",
+ "generado": "2026-07-26 17:37",
  "rango": "2026-02-01 a 2026-07-26",
  "setting": [
   {
@@ -2320,7 +2320,7 @@
    "total": 145,
    "fups": 83,
    "prop": 2,
-   "link": 0,
+   "link": 1,
    "badlink": 0,
    "agendas": 1,
    "resp_min": 0,
@@ -2429,7 +2429,7 @@
    "inb": 2,
    "out": 85,
    "nuevas": 87,
-   "total": 102,
+   "total": 103,
    "fups": 73,
    "prop": 1,
    "link": 2,
@@ -2458,9 +2458,9 @@
    "out": 36,
    "nuevas": 38,
    "total": 81,
-   "fups": 52,
-   "prop": 0,
-   "link": 0,
+   "fups": 64,
+   "prop": 1,
+   "link": 1,
    "badlink": 0,
    "agendas": 1,
    "resp_min": null,
@@ -4571,7 +4571,7 @@
   {
    "dia": "2026-07-26",
    "agendados": 1,
-   "showed": 0,
+   "showed": 1,
    "noshow": 0,
    "noconfirma": 0,
    "cancelled": 0,
