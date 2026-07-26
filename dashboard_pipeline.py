@@ -72,6 +72,43 @@ t_cual=defaultdict(int)
 for e in ev:
     if e.get("contactId") and e["contactId"] in closing_contacts: t_cual[str(e.get("startTime"))[:10]]+=1
 t_nocual=defaultdict(int); t_seg=defaultdict(int)  # se rellenan en el bucle de leads (etiquetas de resultado)
+# FIX 25-jul: el show-up se deduce de EVIDENCIAS de que la llamada ocurrió, no del appointmentStatus
+# (nadie marca "Asistió" en el calendario: se queda en 'confirmed' para siempre). Evidencias, por fiabilidad:
+#   1) GRABACIÓN en Fathom con el nombre del lead  -> prueba directa de que la llamada se hizo
+#   2) etiqueta de resultado del formulario post-triaje (cualifica / no-cualifica / seguimiento)
+#   3) appointmentStatus == showed (respaldo, casi nunca se marca)
+t_cualT=defaultdict(int); t_showT=defaultdict(int); t_noshT=defaultdict(int); t_nocfT=defaultdict(int)
+
+# --- Fathom: nombres con grabación de triaje (evidencia nº1 de asistencia) ---
+import unicodedata
+def _nrm(s):
+    s=unicodedata.normalize('NFKD',(s or '').lower()); s=''.join(c for c in s if not unicodedata.combining(c))
+    s=re.sub(r'\b(ing|dr|dra|md|mg|med|odont|e-md|arg)\b','',s); return re.sub(r'[^a-z ]','',s).split()
+def _nk(s): return " ".join(_nrm(s)[:2])
+FATHOM_TRI=set()
+try:
+    _fk=os.environ.get("FATHOM_API_KEY") or re.search(r'FATHOM_API_KEY=(.+)',open(os.path.expanduser("~/.natscholibre_secrets/fathom.env")).read()).group(1).strip()
+    _ca=_sdt.strftime('%Y-%m-%dT%H:%M:%SZ'); _cur=None; _f=0
+    while True:
+        _u=f'https://api.fathom.ai/external/v1/meetings?include_transcript=false&limit=50&created_after={_ca}'+(f'&cursor={_cur}' if _cur else '')
+        _d=cg(_u,headers=["-H",f"X-Api-Key: {_fk}"])
+        if "items" not in _d:
+            _f+=1
+            if _f>6: print("AVISO Fathom: mapa parcial",flush=True); break
+            time.sleep(3); continue
+        for _m in _d["items"]:
+            _t=_m.get("title") or ""
+            if not re.search(r'triage|triaje|introducci|validaci',_t,re.I): continue
+            if re.search(r'closing|planificaci|estrateg',_t,re.I): continue
+            _KW=re.compile(r'reuni|introducci|validaci|triage|triaje|llamada|dr\.?',re.I)
+            _sg=[s.strip() for s in re.split(r'\s*-\s*',_t) if s.strip()]
+            _ld=next((s for s in _sg if not _KW.search(s)),"")
+            if _ld: FATHOM_TRI.add(_nk(_ld))
+        _cur=_d.get("next_cursor")
+        if not _cur: break
+except Exception as _e:
+    print("AVISO Fathom no disponible:",str(_e)[:80],flush=True)
+print("triajes con grabación en Fathom:",len(FATHOM_TRI),flush=True)
 print("eventos triaje:",len(ev),"| contactos con closing:",len(closing_contacts),flush=True)
 
 # 1c) CAMINO DE LOS LEADS + CLOSING (desde START) — antes de los mensajes para evitar rate-limit
@@ -127,6 +164,14 @@ for cid,info in cids.items():
         _td=str(info["tri"].get("startTime"))[:10]
         if "triage-no-cualifica" in tags: t_nocual[_td]+=1
         if "triage-seguimiento" in tags: t_seg[_td]+=1
+        if "triage-cualifica" in tags: t_cualT[_td]+=1
+        # ASISTIÓ = grabación en Fathom (prueba directa) O resultado registrado por el formulario post-triaje
+        _nm_ev=(c.get("contactName") or ev_name(info) or "")
+        _grab=bool(_nm_ev) and _nk(_nm_ev) in FATHOM_TRI
+        _res=any(t in tags for t in ("triage-cualifica","triage-no-cualifica","triage-seguimiento"))
+        if _grab or _res: t_showT[_td]+=1
+        if "triage-no-show" in tags: t_noshT[_td]+=1
+        if "triage-no-confirma" in tags: t_nocfT[_td]+=1
     nombre=c.get("contactName") or ((c.get("firstName") or "")+" "+(c.get("lastName") or "")).strip() or ev_name(info) or "(sin nombre)"
     ficha=f"https://app.funnelup.io/v2/location/{LOC}/contacts/detail/{cid}"
     utm=((c.get("lastAttributionSource") or {}).get("utmSource") or (c.get("attributionSource") or {}).get("utmSource") or "").strip().lower()
@@ -254,9 +299,15 @@ for d in days:
                     "fups":c.get("fups",0),"prop":c.get("prop",0),
                     "agendas":sum(t_status[d].values()),"resp_min":c.get("resp_min")})
 resp_pairs=[p for lst in _cache["resp_pairs"].values() for p in lst]
-triage=[{"dia":d,"agendados":sum(t_status[d].values()),"showed":t_status[d].get("showed",0),
-         "noshow":t_status[d].get("noshow",0),"cancelled":t_status[d].get("cancelled",0),
-         "confirmed":t_status[d].get("confirmed",0),"cualifica":t_cual[d],"nocualifica":t_nocual[d],"seguimiento":t_seg[d]} for d in days]
+# FIX 25-jul: showed/noshow salen de las ETIQUETAS del formulario post-triaje (fuente real),
+# con el appointmentStatus del calendario como respaldo (se toma el mayor: una fuente solo puede perder datos).
+triage=[{"dia":d,"agendados":sum(t_status[d].values()),
+         "showed":max(t_showT[d],t_status[d].get("showed",0)),
+         "noshow":max(t_noshT[d],t_status[d].get("noshow",0)),
+         "noconfirma":t_nocfT[d],
+         "cancelled":t_status[d].get("cancelled",0),
+         "confirmed":t_status[d].get("confirmed",0),
+         "cualifica":max(t_cualT[d],t_cual[d]),"nocualifica":t_nocual[d],"seguimiento":t_seg[d]} for d in days]
 # detectar tramos SIN DATOS de setting (huecos interiores de sincronización GHL↔Instagram)
 gaps=[]; i=0; N=len(setting)
 while i<N:
