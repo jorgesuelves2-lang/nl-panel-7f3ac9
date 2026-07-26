@@ -30,6 +30,11 @@ cutoff=int(_sdt.timestamp()*1000)
 DAYS=(datetime.datetime.now(datetime.timezone.utc).date()-_sdt.date()).days+1
 days=[(_sdt+datetime.timedelta(days=i)).strftime('%Y-%m-%d') for i in range(DAYS)]
 LINK=re.compile(r'agendaor|agendaror|natscholibre\.com/agenda|ag[eé]ndame|agendar|calendario|te paso el (link|calendario)',re.I)
+# Propuesta REAL = se envió el link de agenda. Distinguimos link BIEN enviado (snippet de GHL, con
+# contact_id resuelto -> actualiza la ficha existente) de link ROTO (copiado a mano: sin contact_id o
+# con {{contact.id}} literal -> el lead crea una ficha DUPLICADA al agendar).
+AGLINK=re.compile(r'natscholibre\.com/(agenda[\w-]*|agendaror\d*)',re.I)
+BADLINK=re.compile(r'natscholibre\.com/agenda[\w-]*(?![^\s]*contact_id=[A-Za-z0-9]{15})',re.I)
 # --- CACHÉ de setting: los días pasados se CONGELAN (no se re-descargan 8000 conversaciones cada vez).
 # Solo se recalculan los últimos RECOMPUTE_DAYS días. La primera vez (sin caché) = BACKFILL completo. ---
 CACHE_PATH=os.path.join(OUTDIR,"setting_cache.json")
@@ -249,6 +254,7 @@ print("mensajes descargados",flush=True)
 
 # 3) KPIs setting por día
 s_in=Counter(); s_out=Counter(); s_total=defaultdict(set); s_fu=Counter(); s_prop=Counter(); resp=defaultdict(list)
+s_link=Counter(); s_badlink=Counter()  # propuestas con LINK de agenda real · de esas, las que van sin contact_id (=> duplicado)
 resp_pairs=[]  # pares 1er inbound -> 1ª respuesta, con timestamps UTC, para filtrar horario activo en el panel
 for c in convs:
     ms,reached=results.get(c["id"],([],True))
@@ -263,7 +269,7 @@ for c in convs:
                 if el<=1440: resp[fday].append(el)
                 if el<=4320: resp_pairs.append({"dia":fday,"in":int(fin),"rep":int(rep)})  # hasta 3 días (la noche se descuenta luego)
         elif ms[0]["dir"]=="outbound": s_out[fday]+=1
-    prev=None; proposed=False
+    prev=None; proposed=False; linked=False
     for x in ms:
         dd=dms(int(x["t"]*1000))
         if x["dir"]=="outbound":
@@ -271,6 +277,12 @@ for c in convs:
             if not proposed and LINK.search(x["body"]):
                 if dd>=RECFROM: s_prop[dd]+=1
                 proposed=True  # latch aunque sea día congelado, para no recontar la propuesta
+            # propuesta con LINK real: la señal precisa. Y avisamos si el link va roto (=> ficha duplicada)
+            if not linked and AGLINK.search(x["body"]):
+                if dd>=RECFROM:
+                    s_link[dd]+=1
+                    if BADLINK.search(x["body"]): s_badlink[dd]+=1
+                linked=True
         if dd>=RECFROM: s_total[dd].add(c["id"])
         prev=x["dir"]
 
@@ -280,7 +292,8 @@ _rp=defaultdict(list)
 for p in resp_pairs: _rp[p["dia"]].append(p)
 for d in days:
     if d<RECFROM: continue
-    new={"inb":s_in[d],"out":s_out[d],"total":len(s_total[d]),"fups":s_fu[d],"prop":s_prop[d]}
+    new={"inb":s_in[d],"out":s_out[d],"total":len(s_total[d]),"fups":s_fu[d],"prop":s_prop[d],
+         "link":s_link[d],"badlink":s_badlink[d]}
     old=_cache["days"].get(d,{})
     merged={k:max(int(new.get(k,0)),int(old.get(k) or 0)) for k in new}
     if new["total"]>=int(old.get("total") or 0):  # el run más completo manda en tiempo de respuesta
@@ -297,6 +310,7 @@ for d in days:
     setting.append({"dia":d,"inb":c.get("inb",0),"out":c.get("out",0),
                     "nuevas":c.get("inb",0)+c.get("out",0),"total":c.get("total",0),
                     "fups":c.get("fups",0),"prop":c.get("prop",0),
+                    "link":c.get("link",0),"badlink":c.get("badlink",0),
                     "agendas":sum(t_status[d].values()),"resp_min":c.get("resp_min")})
 resp_pairs=[p for lst in _cache["resp_pairs"].values() for p in lst]
 # FIX 25-jul: showed/noshow salen de las ETIQUETAS del formulario post-triaje (fuente real),
