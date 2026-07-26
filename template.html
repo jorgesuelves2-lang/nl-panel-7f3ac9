@@ -219,13 +219,13 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var tsh=sum(Tf,'showed'),tconf=sum(Tf,'confirmed'),sup=(tsh+tns)?Math.round(100*tsh/(tsh+tns)):0;  // usados por Análisis y pestaña Global
    var tres=tcu+tncu+tseg;  // triajes CON resultado registrado (asistieron y David marcó)
    document.getElementById('t_cards').innerHTML=
-     card('Agendados',tag,'media '+avg(Tf,'agendados')+'/día')+card('Cualifica → closing',tcu,pct(tcu,tag)+' de agend.')+card('No cualifica',tncu)+card('Seguimiento',tseg)+card('No-show',tns)+card('Cancelados',tc)+card('Con resultado',tres,pct(tres,tag)+' de agend.');
-   var TH='<th>Día</th><th>Agendas</th><th>Cualifica</th><th>No cualifica</th><th>Seguimiento</th><th>No show</th><th>Cancelada</th>';
+     card('Agendados',tag,'media '+avg(Tf,'agendados')+'/día')+card('Asistió',tsh,pct(tsh,tag)+' de agendas (show-up)')+card('Cualifica → closing',tcu,pct(tcu,tsh)+' de asistidos')+card('No cualifica',tncu)+card('Seguimiento',tseg)+card('No-show',tns)+card('Cancelados',tc)+card('Con resultado',tres,pct(tres,tag)+' de agend.');
+   var TH='<th>Día</th><th>Agendas</th><th>Asistió</th><th>Cualifica</th><th>No cualifica</th><th>Seguimiento</th><th>No show</th><th>Cancelada</th>';
    var tth='<thead><tr>'+TH+'</tr></thead>';
-   var ttb=Tf.map(function(r){return '<tr><td>'+r.dia.slice(5)+'</td><td><b>'+r.agendados+'</b></td><td><b>'+r.cualifica+'</b></td><td>'+(r.nocualifica||0)+'</td><td>'+(r.seguimiento||0)+'</td><td>'+r.noshow+'</td><td>'+r.cancelled+'</td></tr>';}).join('');
+   var ttb=Tf.map(function(r){return '<tr><td>'+r.dia.slice(5)+'</td><td><b>'+r.agendados+'</b></td><td><b>'+(r.showed||0)+'</b></td><td><b>'+r.cualifica+'</b></td><td>'+(r.nocualifica||0)+'</td><td>'+(r.seguimiento||0)+'</td><td>'+r.noshow+'</td><td>'+r.cancelled+'</td></tr>';}).join('');
    var thdrB='<tr class="hdrrow">'+TH+'</tr>';
-   var ttot='<tr class="total"><td>Total</td><td>'+tag+'</td><td>'+tcu+'</td><td>'+tncu+'</td><td>'+tseg+'</td><td>'+tns+'</td><td>'+tc+'</td></tr>';
-   var tpct='<tr class="media"><td>% s/agendas</td><td>—</td><td>'+pct(tcu,tag)+'</td><td>'+pct(tncu,tag)+'</td><td>'+pct(tseg,tag)+'</td><td>'+pct(tns,tag)+'</td><td>'+pct(tc,tag)+'</td></tr>';
+   var ttot='<tr class="total"><td>Total</td><td>'+tag+'</td><td>'+tsh+'</td><td>'+tcu+'</td><td>'+tncu+'</td><td>'+tseg+'</td><td>'+tns+'</td><td>'+tc+'</td></tr>';
+   var tpct='<tr class="media"><td>% s/agendas</td><td>—</td><td>'+pct(tsh,tag)+'</td><td>'+pct(tcu,tag)+'</td><td>'+pct(tncu,tag)+'</td><td>'+pct(tseg,tag)+'</td><td>'+pct(tns,tag)+'</td><td>'+pct(tc,tag)+'</td></tr>';
    document.getElementById('t_table').innerHTML=tth+'<tbody>'+ttb+thdrB+ttot+tpct+'</tbody>';
    // ANÁLISIS (dinámico en cifras, fijo en diagnóstico)
    document.getElementById('s_analisis').innerHTML=anItem(
