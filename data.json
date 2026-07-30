@@ -1,5 +1,5 @@
 {
- "generado": "2026-07-30 15:35",
+ "generado": "2026-07-30 17:07",
  "rango": "2026-02-01 a 2026-07-30",
  "setting": [
   {
@@ -2519,7 +2519,7 @@
    "link": 1,
    "badlink": 0,
    "agendas": 0,
-   "resp_min": null,
+   "resp_min": 158,
    "nodata": false
   }
  ],
@@ -5407,20 +5407,20 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/YwguDgAIk1BfkibRaLKU"
   },
   {
-   "nombre": "Andres Fernando Ramirez Soto",
+   "nombre": "Andres fernando Ramirez soto",
    "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Médico general ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "univ": "Uptc",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Idioma",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "andrew_fer@hotmail.com",
+   "tf": "+34637939853",
    "fagenda": "2026-05-30",
    "closer": "",
    "restri": "",
@@ -11679,18 +11679,18 @@
   {
    "nombre": "Pedro Rico",
    "setter": "",
-   "prof": "Medico ",
-   "nivel": "🔹 No tengo conocimientos",
-   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
-   "ingresos": "300€ - 600€",
-   "univ": "Unimetro",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "No saber como llegar",
+   "comp": "",
+   "obst": "",
    "canal": "",
    "ig": "",
-   "email": "gabrielangelricoromero@hotmail.com",
-   "tf": "+573024560103",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-31",
    "closer": "",
    "restri": "",
@@ -19191,6 +19191,16 @@
    "dia": "2026-07-27",
    "in": 1785144012,
    "rep": 1785191004
+  },
+  {
+   "dia": "2026-07-30",
+   "in": 1785421473,
+   "rep": 1785428461
+  },
+  {
+   "dia": "2026-07-30",
+   "in": 1785416428,
+   "rep": 1785428403
   }
  ]
 }
