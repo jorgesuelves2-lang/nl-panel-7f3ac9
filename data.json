@@ -1,6 +1,6 @@
 {
- "generado": "2026-07-31 23:35",
- "rango": "2026-02-01 a 2026-07-31",
+ "generado": "2026-08-01 01:09",
+ "rango": "2026-02-01 a 2026-08-01",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -2535,6 +2535,20 @@
    "agendas": 0,
    "resp_min": null,
    "nodata": false
+  },
+  {
+   "dia": "2026-08-01",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 1,
+   "fups": 0,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 0,
+   "resp_min": null,
+   "nodata": false
   }
  ],
  "triage": [
@@ -4700,6 +4714,18 @@
   },
   {
    "dia": "2026-07-31",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-08-01",
    "agendados": 0,
    "showed": 0,
    "noshow": 0,
@@ -15622,6 +15648,17 @@
   },
   {
    "dia": "2026-07-31",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
+  },
+  {
+   "dia": "2026-08-01",
    "agendados": 0,
    "showed": 0,
    "noshow": 0,
