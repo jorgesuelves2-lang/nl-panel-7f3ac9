@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-02 19:49",
+ "generado": "2026-08-02 21:29",
  "rango": "2026-02-01 a 2026-08-02",
  "setting": [
   {
@@ -2513,13 +2513,13 @@
    "inb": 3,
    "out": 23,
    "nuevas": 26,
-   "total": 92,
-   "fups": 99,
+   "total": 104,
+   "fups": 104,
    "prop": 5,
    "link": 5,
    "badlink": 0,
    "agendas": 0,
-   "resp_min": 141,
+   "resp_min": 82,
    "nodata": false
   },
   {
@@ -8815,6 +8815,36 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VHTsaKZVijr7zqDVebHU"
   },
   {
+   "nombre": "Jose Pastrana",
+   "setter": "Sary",
+   "prof": "Médico general ",
+   "nivel": "🔹 A1",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "más de 3.000€",
+   "univ": "Universidad tecnológica de Pereira ",
+   "urg": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "Idioma ",
+   "canal": "",
+   "ig": "@josepastrana",
+   "email": "medicopastrana@gmail.com",
+   "tf": "+34695519470",
+   "fagenda": "2026-08-03",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": 38,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/TG54KrTcJYocpQ2a3K5q"
+  },
+  {
    "nombre": "Jose Raúl Mora Dieguez",
    "setter": "",
    "prof": "Médico general",
@@ -10583,6 +10613,36 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/XfzNwGdyB5fNiGeBycQe"
+  },
+  {
+   "nombre": "María jose Halupa",
+   "setter": "Sara",
+   "prof": "Licenciada en obstetricia",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "600€- 1.000€",
+   "univ": "Universidad Nacional de Entre Ríos UNNER",
+   "urg": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "El idioma",
+   "canal": "",
+   "ig": "Mariajosepolasek",
+   "email": "mariajosehp353@gmail.com",
+   "tf": "+34653247537",
+   "fagenda": "2026-08-03",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": 78,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Sp9pIJ98M3yDivzgSo6f"
   },
   {
    "nombre": "María José orellana",
@@ -19317,11 +19377,6 @@
    "dia": "2026-07-27",
    "in": 1785144012,
    "rep": 1785191004
-  },
-  {
-   "dia": "2026-07-30",
-   "in": 1785416428,
-   "rep": 1785428403
   },
   {
    "dia": "2026-07-30",
