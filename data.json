@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-04 12:28",
+ "generado": "2026-08-04 15:06",
  "rango": "2026-02-01 a 2026-08-04",
  "setting": [
   {
@@ -2528,7 +2528,7 @@
    "out": 65,
    "nuevas": 66,
    "total": 106,
-   "fups": 54,
+   "fups": 72,
    "prop": 1,
    "link": 1,
    "badlink": 0,
@@ -2539,9 +2539,9 @@
   {
    "dia": "2026-08-01",
    "inb": 1,
-   "out": 19,
-   "nuevas": 20,
-   "total": 22,
+   "out": 24,
+   "nuevas": 25,
+   "total": 38,
    "fups": 14,
    "prop": 2,
    "link": 2,
@@ -2589,7 +2589,7 @@
    "link": 0,
    "badlink": 0,
    "agendas": 2,
-   "resp_min": null,
+   "resp_min": 416,
    "nodata": false
   }
  ],
@@ -7398,19 +7398,19 @@
   },
   {
    "nombre": "Fernando Conde",
-   "setter": "Sary",
-   "prof": "Fisioterapeuta",
-   "nivel": "🔹 Conocimientos básicos",
+   "setter": "",
+   "prof": "",
+   "nivel": "",
    "presup": "",
-   "ingresos": "1.000$ - 3.000$",
+   "ingresos": "",
    "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "El idioma siento que no he conseguido la confianza para expresarme o la memoria para no trabar me, algo que no mencione fue la profesora con la que inicie el A2 me hacia sentir como un tonto y eso aparte del tema horario me desmotivo mucho,he decidido retomarlo.",
+   "comp": "",
+   "obst": "",
    "canal": "",
    "ig": "",
-   "email": "conde.fisioglobal@gmail.com",
-   "tf": "+34613361177",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-04-28",
    "closer": "",
    "restri": "",
@@ -8268,19 +8268,19 @@
   },
   {
    "nombre": "Jason Niola",
-   "setter": "",
-   "prof": "",
-   "nivel": "",
+   "setter": "Sary",
+   "prof": "Ingeniero Eléctrico ",
+   "nivel": "🔹 A2",
    "presup": "",
-   "ingresos": "",
+   "ingresos": "600$ - 1.000$",
    "univ": "",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "No saber el idioma y no conocer del sistema ",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "jason.king.ec",
+   "email": "jasonfnking@gmail.com",
+   "tf": "+593967656471",
    "fagenda": "2026-04-28",
    "closer": "",
    "restri": "",
@@ -19518,14 +19518,19 @@
    "rep": 1785376319
   },
   {
-   "dia": "2026-08-01",
-   "in": 1785591500,
-   "rep": 1785595102
-  },
-  {
    "dia": "2026-08-03",
    "in": 1785760349,
    "rep": 1785783279
+  },
+  {
+   "dia": "2026-08-04",
+   "in": 1785842817,
+   "rep": 1785848412
+  },
+  {
+   "dia": "2026-08-04",
+   "in": 1785805136,
+   "rep": 1785849461
   }
  ]
 }
