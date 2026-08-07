@@ -1,6 +1,6 @@
 {
- "generado": "2026-08-06 13:12",
- "rango": "2026-02-01 a 2026-08-06",
+ "generado": "2026-08-07 00:27",
+ "rango": "2026-02-01 a 2026-08-07",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -2581,8 +2581,8 @@
   {
    "dia": "2026-08-04",
    "inb": 4,
-   "out": 47,
-   "nuevas": 51,
+   "out": 52,
+   "nuevas": 56,
    "total": 109,
    "fups": 92,
    "prop": 2,
@@ -2609,8 +2609,8 @@
   {
    "dia": "2026-08-06",
    "inb": 3,
-   "out": 1,
-   "nuevas": 4,
+   "out": 3,
+   "nuevas": 6,
    "total": 16,
    "fups": 18,
    "prop": 0,
@@ -2618,6 +2618,20 @@
    "badlink": 0,
    "agendas": 1,
    "resp_min": 39,
+   "nodata": false
+  },
+  {
+   "dia": "2026-08-07",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 1,
+   "fups": 0,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 1,
+   "resp_min": null,
    "nodata": false
   }
  ],
@@ -4862,6 +4876,18 @@
    "noconfirma": 0,
    "cancelled": 0,
    "confirmed": 0,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-08-07",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 1,
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
@@ -9157,6 +9183,36 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Pm0CPBXWh4N8rQNJHdWv"
+  },
+  {
+   "nombre": "JUAN CARLOS CÁCERES",
+   "setter": "Sary",
+   "prof": "MÉDICO URGENCIAS",
+   "nivel": "🔹 A1",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "más de 3.000€",
+   "univ": "Sevilla",
+   "urg": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "El idioma",
+   "canal": "",
+   "ig": "_juuaanca",
+   "email": "jccppd@gmail.com",
+   "tf": "+34646475229",
+   "fagenda": "2026-08-07",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": 78,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/0rrX7xoyDojvo8CNmBJm"
   },
   {
    "nombre": "Juan JIMÉNEZ",
@@ -15994,6 +16050,17 @@
   },
   {
    "dia": "2026-08-06",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
+  },
+  {
+   "dia": "2026-08-07",
    "agendados": 0,
    "showed": 0,
    "noshow": 0,
