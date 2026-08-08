@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-08 14:09",
+ "generado": "2026-08-08 15:01",
  "rango": "2026-02-01 a 2026-08-08",
  "setting": [
   {
@@ -2623,15 +2623,15 @@
   {
    "dia": "2026-08-07",
    "inb": 3,
-   "out": 12,
-   "nuevas": 15,
-   "total": 30,
-   "fups": 26,
+   "out": 19,
+   "nuevas": 22,
+   "total": 60,
+   "fups": 36,
    "prop": 1,
    "link": 1,
    "badlink": 0,
    "agendas": 1,
-   "resp_min": 261,
+   "resp_min": 1,
    "nodata": false
   },
   {
@@ -2640,12 +2640,12 @@
    "out": 10,
    "nuevas": 13,
    "total": 16,
-   "fups": 26,
+   "fups": 29,
    "prop": 2,
    "link": 1,
    "badlink": 0,
    "agendas": 0,
-   "resp_min": 14,
+   "resp_min": 9,
    "nodata": false
   }
  ],
@@ -7502,19 +7502,19 @@
   },
   {
    "nombre": "Fernando Conde",
-   "setter": "Sary",
-   "prof": "Fisioterapeuta",
-   "nivel": "🔹 Conocimientos básicos",
+   "setter": "",
+   "prof": "",
+   "nivel": "",
    "presup": "",
-   "ingresos": "1.000$ - 3.000$",
+   "ingresos": "",
    "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "El idioma siento que no he conseguido la confianza para expresarme o la memoria para no trabar me, algo que no mencione fue la profesora con la que inicie el A2 me hacia sentir como un tonto y eso aparte del tema horario me desmotivo mucho,he decidido retomarlo.",
+   "comp": "",
+   "obst": "",
    "canal": "",
    "ig": "",
-   "email": "conde.fisioglobal@gmail.com",
-   "tf": "+34613361177",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-04-28",
    "closer": "",
    "restri": "",
@@ -10471,36 +10471,6 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/RCOL8MWOMlG5IxytkwPP"
   },
   {
-   "nombre": "Maria Gallardo",
-   "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
-   "urg": "",
-   "comp": "",
-   "obst": "",
-   "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
-   "fagenda": "2026-04-24",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": null,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VytGKUut9QYd5hFT77RK"
-  },
-  {
    "nombre": "Maria Lourdes Justiniano Velasco",
    "setter": "",
    "prof": "Medico especialista en Medicina Interna",
@@ -11669,6 +11639,36 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/f5AinWaoOgWylCe45gnI"
+  },
+  {
+   "nombre": "NenaGallardo Gallardo",
+   "setter": "Sary",
+   "prof": "Ing civil",
+   "nivel": "🔹 B1",
+   "presup": "",
+   "ingresos": "1.000$ - 3.000$",
+   "univ": "",
+   "urg": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "Hablar más fluido el idioma y con vocabulario técnico y expresar mis ideas ",
+   "canal": "",
+   "ig": "NenaGallardo10",
+   "email": "nena_1309@hotmail.com",
+   "tf": "+34662376628",
+   "fagenda": "2026-04-24",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": null,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VytGKUut9QYd5hFT77RK"
   },
   {
    "nombre": "Nery Mendoza Hernández",
@@ -19882,13 +19882,13 @@
   },
   {
    "dia": "2026-08-07",
-   "in": 1786068048,
-   "rep": 1786083730
+   "in": 1786146570,
+   "rep": 1786146647
   },
   {
    "dia": "2026-08-08",
-   "in": 1786187356,
-   "rep": 1786188188
+   "in": 1786193332,
+   "rep": 1786193895
   }
  ]
 }
