@@ -1,6 +1,6 @@
 {
- "generado": "2026-08-08 23:58",
- "rango": "2026-02-01 a 2026-08-08",
+ "generado": "2026-08-09 02:37",
+ "rango": "2026-02-01 a 2026-08-09",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -2647,6 +2647,20 @@
    "agendas": 0,
    "resp_min": 3,
    "nodata": false
+  },
+  {
+   "dia": "2026-08-09",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 5,
+   "fups": 0,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 1,
+   "resp_min": null,
+   "nodata": false
   }
  ],
  "triage": [
@@ -4917,6 +4931,18 @@
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
+  },
+  {
+   "dia": "2026-08-09",
+   "agendados": 1,
+   "showed": 1,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 1,
+   "cualifica": 1,
+   "nocualifica": 0,
+   "seguimiento": 0
   }
  ],
  "leads": [
@@ -5641,20 +5667,20 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/YwguDgAIk1BfkibRaLKU"
   },
   {
-   "nombre": "Andres Fernando Ramirez Soto",
+   "nombre": "Andres fernando Ramirez soto",
    "setter": "",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Médico general ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "univ": "Uptc",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Idioma",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "andrew_fer@hotmail.com",
+   "tf": "+34637939853",
    "fagenda": "2026-05-30",
    "closer": "",
    "restri": "",
@@ -6123,18 +6149,18 @@
   {
    "nombre": "Bryam Ureña",
    "setter": "",
-   "prof": "Enfermero ",
-   "nivel": "🔹 Conocimientos básicos",
-   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
-   "ingresos": "600€- 1.000€",
-   "univ": "Universidad Católica de Cuenca ",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Tema de papeleo ",
+   "comp": "",
+   "obst": "",
    "canal": "",
    "ig": "",
-   "email": "fabry.mendez71@gmail.com",
-   "tf": "+593981918323",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-30",
    "closer": "",
    "restri": "",
@@ -6145,9 +6171,9 @@
    "sclo": null,
    "ticket": "",
    "pagado": "",
-   "objtri": ".",
+   "objtri": "",
    "objclo": "",
-   "infocloser": ".",
+   "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/EWnMZMZ9sPajTXH7RfWs"
   },
   {
@@ -6167,17 +6193,17 @@
    "tf": "+17259102434",
    "fagenda": "2026-08-09",
    "closer": "",
-   "restri": "",
+   "restri": "Cualifica",
    "resclo": "",
    "estado": "",
    "ss": 62,
-   "stri": null,
+   "stri": 72,
    "sclo": null,
    "ticket": "",
    "pagado": "",
    "objtri": "",
    "objclo": "",
-   "infocloser": "",
+   "infocloser": "PERFIL: Camila Cuesta, edad no consta, Colombia, medica general recien graduada, Universidad de Los Andes (titulo LATAM). Instagram: Camilleti. Setter asignada: Sary.\n\nOBJETIVO: Emigrar a Alemania para trabajar como medico y eventualmente especializarse. Plazo: quiere iniciar en los proximos 7-14 dias segun formulario. Nivel de aleman actual: B1. Meta declarada por la lead: B2. ATENCION: para medicos en Alemania se requiere C1; este punto debe aclararse en el closing.\n\nDOLORES: Quiere desarrollar su carrera medica en Alemania y acceder a especializacion. Reenganche proactivo tras un ano sugiere que la motivacion es genuina y que el momento vital (recien graduada, disponible) es ahora.\n\nINVERSION: Ingresos declarados 300-600 EUR/mes. Presupuesto declarado en formulario: 3.500-5.000 EUR. Dato no cualificado en la conversacion. El closer debe verificar si ese presupuesto es real (ahorros, apoyo familiar, financiacion) o aspiracional dado el nivel de ingresos.\n\nRUTA: Titulo LATAM (Colombia) implica proceso de homologacion largo en Alemania (Berufserlaubnis, adaptacion, examen de idioma C1, reconocimiento). Viabilidad alta en perfil, pero tiempos y costos deben gestionarse con claridad para no generar frustracion.\n\nOBJECIONES: Lead cree que necesita solo B2 (mencionado en formulario y en chat); el setter lo corrigio en 2025 pero no se retomo en 2026. Puede haber resistencia al costo o al tiempo real del proceso. Ingresos bajos pueden ser freno real de inversion.\n\nRECOMENDACION: Abrir con la correccion del nivel de aleman (B2 no es suficiente para medicos, se necesita C1) para alinear expectativas desde el inicio. Verificar capacidad de inversion real antes de presentar precio. Si hay apoyo familiar o ahorros, el deal es viable; si no, evaluar opciones de financiacion. Proximo paso: cerrar inicio de proceso en los proximos 7-14 dias si el dinero se confirma.",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/oJ5eP7w8Gf9r7WIRbnwf"
   },
   {
@@ -13694,6 +13720,17 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/vwsl4lvnZAebEgOX9DTs"
   },
   {
+   "nombre": "Camila Cuesta ladino",
+   "fecha": "2026-08-15",
+   "estado": "confirmed",
+   "resclo": "",
+   "sc": null,
+   "cash": "",
+   "ticket": "",
+   "pagado": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/oJ5eP7w8Gf9r7WIRbnwf"
+  },
+  {
    "nombre": "Daniela Montalvo",
    "fecha": "2026-07-28",
    "estado": "cancelled",
@@ -16128,6 +16165,17 @@
   },
   {
    "dia": "2026-08-08",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
+  },
+  {
+   "dia": "2026-08-09",
    "agendados": 0,
    "showed": 0,
    "noshow": 0,
