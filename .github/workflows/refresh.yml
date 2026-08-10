@@ -22,7 +22,6 @@ jobs:
           GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
           GHL_LOCATION_ID: ${{ secrets.GHL_LOCATION_ID }}
           FATHOM_API_KEY: ${{ secrets.FATHOM_API_KEY }}
-          FATHOM_API_KEY_CHRISTIAN: ${{ secrets.FATHOM_API_KEY_CHRISTIAN }}
           OUTDIR: ${{ github.workspace }}
           SKIP_DEPLOY: '1'
         run: python3 dashboard_pipeline.py
