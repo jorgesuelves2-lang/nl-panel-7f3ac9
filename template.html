@@ -114,6 +114,20 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
 
   <section id="triage" class="hide">
     <div class="cards" id="t_cards"></div>
+
+    <div class="panel" style="border-left:3px solid var(--purple);border-radius:0">
+      <h3>Por setter que generó la agenda <span style="font-weight:400;color:var(--mut);font-size:13px">— atribuido por el enlace de agenda (utm) o la etiqueta del lead</span></h3>
+      <div style="margin:10px 0 14px">
+        <button class="tab on" data-tset="TOTAL" style="font-size:13px;padding:5px 12px">Total</button>
+        <button class="tab" data-tset="Sary" style="font-size:13px;padding:5px 12px">Sary</button>
+        <button class="tab" data-tset="Sara" style="font-size:13px;padding:5px 12px">Sara</button>
+        <button class="tab" data-tset="Yexsander" style="font-size:13px;padding:5px 12px">Yexsander</button>
+        <button class="tab" data-tset="SIN" style="font-size:13px;padding:5px 12px">Sin asignar</button>
+      </div>
+      <div class="cards" id="ts_cards"></div>
+      <div id="ts_nota" style="font-size:12px;color:var(--mut);margin-bottom:10px"></div>
+      <div class="tablewrap"><table id="ts_tabla" class="leadtbl"></table></div>
+    </div>
     <div class="panel"><h3>Triajes por día y estado</h3>
       <div class="legend"><span><i style="background:var(--blue)"></i>Agendados</span><span><i style="background:var(--teal)"></i>Asistió</span><span><i style="background:var(--purple)"></i>Cualifica → closing</span></div>
       <div class="chartbox"><canvas id="t_trend"></canvas></div></div>
@@ -318,6 +332,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{autoSkip:true,maxRotation:0}},y:{beginAtZero:true,position:'left',title:{display:true,text:'totales'}},y2:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'prop / agendas'}}}}});
    var SCOL=['#378ADD','#1D9E75','#BA7517'];
    aplicaTendencias(charts.t1,'trend',SCOL);
+   if(typeof renderTriSetter==='function' && document.getElementById('ts_cards').innerHTML) renderTriSetter();
    if(!window._trendHook){ window._trendHook=1;
      document.querySelectorAll('input.trend').forEach(function(cb){ cb.onchange=function(){ aplicaTendencias(charts.t1,'trend',SCOL); }; });
      document.querySelectorAll('input.ktrend').forEach(function(cb){ cb.onchange=function(){ renderKpis(); }; });
@@ -365,11 +380,57 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var cth='<thead><tr><th>Nombre</th><th>Fecha</th><th>Estado</th><th>Resultado</th><th>S.Cl</th><th>Cash</th><th>Ficha</th></tr></thead>';
    var cb=CL.map(function(r){return '<tr><td>'+r.nombre+'</td><td>'+(r.fecha||'').slice(5)+'</td><td>'+(r.estado||'')+'</td><td>'+(r.resclo||'—')+'</td><td>'+(r.sc!=null?r.sc:'—')+'</td><td>'+(r.cash||'—')+'</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>';}).join('');
    document.getElementById('c_table').innerHTML=cth+'<tbody>'+(cb||'<tr><td>Sin closings</td></tr>')+'</tbody>';
-   renderLeads(); initClientes(); initAntonie(); initKpis();
+   renderLeads(); initClientes(); initAntonie(); initKpis(); initTriSetter();
  }
  // ---- Pestaña Clientes: leads que llegaron a closing (tienen closer o resultado de closing) ----
  var CLCOLS=[{k:'nombre',l:'Cliente'},{k:'setter',l:'Setter'},{k:'closer',l:'Closer'},{k:'fagenda',l:'Fecha'},{k:'resclo',l:'Res.Closing'},{k:'estado',l:'Estado'},{k:'sclo',l:'S.Cl'},{k:'ticket',l:'Ticket'},{k:'pagado',l:'Pagado'}];
  function clientesData(){ return (DATA.leads||[]).filter(function(r){ return r.closer||r.resclo||r.estado||r.sclo!=null||r.ticket; }); }
+ // ---- Triaje desglosado por el setter que generó la agenda ----
+ var TSEL='TOTAL';
+ function initTriSetter(){
+   document.querySelectorAll('button.tab[data-tset]').forEach(function(b){
+     b.onclick=function(){
+       document.querySelectorAll('button.tab[data-tset]').forEach(function(x){x.classList.remove('on');});
+       b.classList.add('on'); TSEL=b.dataset.tset; renderTriSetter();
+     };
+   });
+   renderTriSetter();
+ }
+ function renderTriSetter(){
+   var cc=document.getElementById('ts_cards'); if(!cc) return;
+   var from=fromEl.value, to=toEl.value;
+   var L=(DATA.leads||[]).filter(function(r){ return r.fagenda && r.fagenda>=from && r.fagenda<=to; });
+   if(TSEL==='SIN')          L=L.filter(function(r){ return !r.setter; });
+   else if(TSEL!=='TOTAL')   L=L.filter(function(r){ return r.setter===TSEL; });
+
+   var ag=L.length;
+   var sh=L.filter(function(r){ return r.restri && r.restri!==''; }).length;   // hubo resultado => la llamada ocurrió
+   var cu=L.filter(function(r){ return r.restri==='Cualifica'; }).length;
+   var nc=L.filter(function(r){ return r.restri==='No cualifica'; }).length;
+   var sg=L.filter(function(r){ return r.restri==='Seguimiento'; }).length;
+   function pc(a,b){ return b? Math.round(a*100/b)+'%' : '—'; }
+   cc.innerHTML =
+     card('Agendas de triaje', ag) +
+     card('Asistió', sh, pc(sh,ag)+' de agendadas') +
+     card('Cualifica', cu, pc(cu,sh)+' de asistidas') +
+     card('No cualifica', nc, pc(nc,sh)+' de asistidas') +
+     card('Seguimiento', sg, pc(sg,sh)+' de asistidas');
+
+   var sinAsig=(DATA.leads||[]).filter(function(r){ return r.fagenda && r.fagenda>=from && r.fagenda<=to && !r.setter; }).length;
+   var totRng =(DATA.leads||[]).filter(function(r){ return r.fagenda && r.fagenda>=from && r.fagenda<=to; }).length;
+   document.getElementById('ts_nota').innerHTML = totRng
+     ? 'Atribución: <b>'+(totRng-sinAsig)+'</b> de '+totRng+' agendas tienen setter identificado ('+Math.round((totRng-sinAsig)*100/totRng)+'%). Las <b>'+sinAsig+'</b> restantes están en “Sin asignar”: llegaron sin utm en el enlace de agenda.'
+     : '';
+
+   L.sort(function(a,b){ return String(b.fagenda||'').localeCompare(String(a.fagenda||'')); });
+   var t=document.getElementById('ts_tabla');
+   t.innerHTML='<thead><tr><th>Fecha</th><th>Nombre</th><th>Setter</th><th>Profesión</th><th>Resultado</th><th>Closer</th><th>Ficha</th></tr></thead><tbody>'+
+     (L.length ? L.map(function(r){ return '<tr><td>'+(r.fagenda||'').split('-').reverse().join('/')+'</td><td>'+(r.nombre||'—')+
+       '</td><td>'+(r.setter||'—')+'</td><td>'+(r.prof||'—')+'</td><td>'+(r.restri||'—')+'</td><td>'+(r.closer||'—')+
+       '</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>'; }).join('')
+      : '<tr><td colspan="7" style="padding:16px;color:var(--mut)">Sin agendas de triaje en este rango.</td></tr>')+'</tbody>';
+ }
+
  // ---- Línea de tendencia (regresión lineal por mínimos cuadrados, ignora huecos) ----
  function tendencia(datos,color){
    var xs=[],ys=[];
