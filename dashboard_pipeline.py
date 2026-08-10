@@ -187,8 +187,11 @@ for cid,info in cids.items():
     fagenda=str((info.get("tri") or {}).get("startTime") or (info.get("clo") or {}).get("startTime") or "")[:10]
     # solo leads REALES en la tabla (fichas fantasma/duplicadas sin nombre ni datos => fuera)
     es_real=(nombre and nombre!="(sin nombre)") or c.get("email") or c.get("phone") or cm.get(F["prof"])
+    # Origen del lead: canal de afiliado (Antonie) vs funnel propio.
+    # Se detecta por el utm_source del link de agenda o por la etiqueta, lo que llegue.
+    origen = "antonie" if (utm == "antonie" or "antonie" in [str(t).lower() for t in tags]) else "propio"
     if es_real:
-      leads.append({"nombre":nombre,"setter":setter,"prof":cm.get(F["prof"]) or "",
+      leads.append({"nombre":nombre,"setter":setter,"origen":origen,"prof":cm.get(F["prof"]) or "",
         "nivel":cm.get(F["nivel"]) or "","presup":cm.get(F["presup"]) or "","ingresos":cm.get(F["ingresos"]) or "",
         "univ":cm.get(F["univ"]) or "","urg":cm.get(F["urg"]) or "","comp":cm.get(F["comp"]) or "",
         "obst":cm.get(F["obst"]) or "","canal":cm.get(F["canal"]) or "","ig":cm.get(F["ig"]) or "",
