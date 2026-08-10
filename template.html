@@ -65,6 +65,19 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
 
   <section id="setting">
     <div class="cards" id="s_cards"></div>
+
+    <div class="panel" style="border-left:3px solid var(--blue);border-radius:0">
+      <h3>Reportado por el equipo <span style="font-weight:400;color:var(--mut);font-size:13px">— del formulario diario de KPIs</span></h3>
+      <div style="margin:10px 0 14px">
+        <button class="tab on" data-setter="TOTAL" style="font-size:13px;padding:5px 12px">Total</button>
+        <button class="tab" data-setter="Sary" style="font-size:13px;padding:5px 12px">Sary</button>
+        <button class="tab" data-setter="Sara" style="font-size:13px;padding:5px 12px">Sara</button>
+        <button class="tab" data-setter="Yexsander" style="font-size:13px;padding:5px 12px">Yexsander</button>
+      </div>
+      <div class="cards" id="k_cards"></div>
+      <div id="k_falta" style="margin-top:12px"></div>
+      <div class="tablewrap" style="margin-top:14px"><table id="k_tabla"></table></div>
+    </div>
     <div class="panel"><h3>Embudo del rango</h3><div id="funnel"></div></div>
     <div class="panel"><h3>Evolución por día</h3>
       <div class="legend"><span><i style="background:var(--blue)"></i>Conversaciones totales</span><span><i style="background:var(--teal)"></i>Propuestas (eje der.)</span><span><i style="background:var(--amber)"></i>Agendas (eje der.)</span></div>
@@ -321,7 +334,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  bhOn.onchange=bhTz.onchange=bhA.onchange=bhB.onchange=function(){render();};
  document.querySelectorAll('.qb').forEach(function(b){b.onclick=function(){document.querySelectorAll('.qb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');setRange(+b.dataset.d);render();};});
  var SECTIONS=['setting','triage','closing','global','leads','clientes','cash','antonie'];
- document.querySelectorAll('.tab').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');SECTIONS.forEach(function(s){document.getElementById(s).classList.toggle('hide',s!==b.dataset.t);});};});
+ document.querySelectorAll('.tab[data-t]').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');SECTIONS.forEach(function(s){document.getElementById(s).classList.toggle('hide',s!==b.dataset.t);});};});
  function num(v){return parseFloat(String(v||'').replace(/[^0-9.]/g,''))||0;}
  function renderStatic(){
    var CL=DATA.closing||[],LD=DATA.leads||[];
@@ -330,11 +343,65 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var cth='<thead><tr><th>Nombre</th><th>Fecha</th><th>Estado</th><th>Resultado</th><th>S.Cl</th><th>Cash</th><th>Ficha</th></tr></thead>';
    var cb=CL.map(function(r){return '<tr><td>'+r.nombre+'</td><td>'+(r.fecha||'').slice(5)+'</td><td>'+(r.estado||'')+'</td><td>'+(r.resclo||'—')+'</td><td>'+(r.sc!=null?r.sc:'—')+'</td><td>'+(r.cash||'—')+'</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>';}).join('');
    document.getElementById('c_table').innerHTML=cth+'<tbody>'+(cb||'<tr><td>Sin closings</td></tr>')+'</tbody>';
-   renderLeads(); initClientes(); initAntonie();
+   renderLeads(); initClientes(); initAntonie(); initKpis();
  }
  // ---- Pestaña Clientes: leads que llegaron a closing (tienen closer o resultado de closing) ----
  var CLCOLS=[{k:'nombre',l:'Cliente'},{k:'setter',l:'Setter'},{k:'closer',l:'Closer'},{k:'fagenda',l:'Fecha'},{k:'resclo',l:'Res.Closing'},{k:'estado',l:'Estado'},{k:'sclo',l:'S.Cl'},{k:'ticket',l:'Ticket'},{k:'pagado',l:'Pagado'}];
  function clientesData(){ return (DATA.leads||[]).filter(function(r){ return r.closer||r.resclo||r.estado||r.sclo!=null||r.ticket; }); }
+ // ---- KPIs reportados por las setters (formulario diario) ----
+ var KSEL='TOTAL';
+ function initKpis(){
+   document.querySelectorAll('button.tab[data-setter]').forEach(function(b){
+     b.onclick=function(){
+       document.querySelectorAll('button.tab[data-setter]').forEach(function(x){x.classList.remove('on');});
+       b.classList.add('on'); KSEL=b.dataset.setter; renderKpis();
+     };
+   });
+   renderKpis();
+ }
+ function renderKpis(){
+   var from=fromEl.value, to=toEl.value;
+   var K=(DATA.kpis||[]).filter(function(r){ return r.dia>=from && r.dia<=to; });
+   if(KSEL!=='TOTAL') K=K.filter(function(r){ return r.setter===KSEL; });
+   var cc=document.getElementById('k_cards'); if(!cc) return;
+   function sum(k){ return K.reduce(function(a,r){ return a+(r[k]||0); },0); }
+   var dias=Object.keys(K.reduce(function(a,r){a[r.dia]=1;return a;},{})).length;
+   cc.innerHTML =
+     card('Follow-ups', sum('fu'), dias?Math.round(sum('fu')/dias)+'/día reportado':'') +
+     card('Chats inbound', sum('inb')) +
+     card('Outbound', sum('out')) +
+     card('Propuestas', sum('prop')) +
+     card('Bookings', sum('book')) +
+     card('Welcome', sum('wel'));
+
+   // Días laborables del rango sin reporte (solo desde que existe el formulario)
+   var INICIO='2026-08-08';
+   var setters = KSEL==='TOTAL' ? (DATA.setters||[]) : [KSEL];
+   var falta=[];
+   (function(){
+     var d=new Date(Math.max(new Date(from),new Date(INICIO))), fin=new Date(to);
+     while(d<=fin){
+       var iso=d.toISOString().slice(0,10), dow=d.getDay();
+       if(dow!==0&&dow!==6){
+         setters.forEach(function(s){
+           if(!(DATA.kpis||[]).some(function(r){return r.dia===iso&&r.setter===s;})) falta.push(s+' · '+iso.split('-').reverse().join('/'));
+         });
+       }
+       d.setDate(d.getDate()+1);
+     }
+   })();
+   document.getElementById('k_falta').innerHTML = falta.length
+     ? '<div style="background:#FFF6E5;border-left:3px solid var(--amber);padding:10px 14px;font-size:13px">'+
+       '<b>Sin reportar ('+falta.length+'):</b> '+falta.join(' · ')+'</div>'
+     : '<div style="font-size:13px;color:var(--mut)">Todos los días laborables del rango están reportados.</div>';
+
+   K.sort(function(a,b){ return b.dia.localeCompare(a.dia) || a.setter.localeCompare(b.setter); });
+   var t=document.getElementById('k_tabla');
+   t.innerHTML='<thead><tr><th>Día</th><th>Setter</th><th>Follow-ups</th><th>Inbound</th><th>Outbound</th><th>Propuestas</th><th>Bookings</th><th>Welcome</th><th>Notas</th></tr></thead><tbody>'+
+     (K.length? K.map(function(r){ return '<tr><td>'+r.dia.split('-').reverse().join('/')+'</td><td>'+r.setter+'</td><td>'+r.fu+'</td><td>'+r.inb+'</td><td>'+r.out+'</td><td>'+r.prop+'</td><td>'+r.book+'</td><td>'+r.wel+'</td><td style="max-width:260px">'+(r.notas||'—')+'</td></tr>'; }).join('')
+       : '<tr><td colspan="9" style="padding:16px;color:var(--mut)">Sin reportes en este rango.</td></tr>')+'</tbody>';
+ }
+
  // ---- Pestaña Antonie: canal de afiliado, leads directos a closing ----
  function initAntonie(){
    var LD=(DATA.leads||[]).filter(function(r){ return r.origen==='antonie'; });
