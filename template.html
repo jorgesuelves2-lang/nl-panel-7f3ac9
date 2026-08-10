@@ -75,12 +75,28 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
         <button class="tab" data-setter="Yexsander" style="font-size:13px;padding:5px 12px">Yexsander</button>
       </div>
       <div class="cards" id="k_cards"></div>
+      <div class="legend" style="margin-top:6px"><span><i style="background:var(--blue)"></i>Follow-ups</span><span><i style="background:var(--teal)"></i>Outbound</span><span><i style="background:var(--amber)"></i>Inbound (eje der.)</span><span><i style="background:var(--purple)"></i>Propuestas (eje der.)</span><span><i style="background:var(--red)"></i>Bookings (eje der.)</span></div>
+      <div class="bhctrl" style="margin-bottom:6px">
+        <span style="font-weight:500">Líneas de tendencia:</span>
+        <label><input type="checkbox" class="ktrend" data-i="0"> Follow-ups</label>
+        <label><input type="checkbox" class="ktrend" data-i="1"> Outbound</label>
+        <label><input type="checkbox" class="ktrend" data-i="2"> Inbound</label>
+        <label><input type="checkbox" class="ktrend" data-i="3"> Propuestas</label>
+        <label><input type="checkbox" class="ktrend" data-i="4"> Bookings</label>
+      </div>
+      <div class="chartbox" style="height:230px"><canvas id="k_trend"></canvas></div>
       <div id="k_falta" style="margin-top:12px"></div>
       <div class="tablewrap" style="margin-top:14px"><table id="k_tabla"></table></div>
     </div>
     <div class="panel"><h3>Embudo del rango</h3><div id="funnel"></div></div>
     <div class="panel"><h3>Evolución por día</h3>
       <div class="legend"><span><i style="background:var(--blue)"></i>Conversaciones totales</span><span><i style="background:var(--teal)"></i>Propuestas (eje der.)</span><span><i style="background:var(--amber)"></i>Agendas (eje der.)</span></div>
+      <div class="bhctrl" style="margin-bottom:6px">
+        <span style="font-weight:500">Líneas de tendencia:</span>
+        <label><input type="checkbox" class="trend" data-i="0"> Conversaciones</label>
+        <label><input type="checkbox" class="trend" data-i="1"> Propuestas</label>
+        <label><input type="checkbox" class="trend" data-i="2"> Agendas</label>
+      </div>
       <div class="chartbox"><canvas id="s_trend"></canvas></div>
       <div id="s_gapnote" style="font-size:12px;color:var(--mut);margin-top:8px"></div></div>
     <div class="panel"><h3>Tiempo de 1ª respuesta (mediana, min) por día</h3>
@@ -300,6 +316,12 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      {label:'Propuestas',data:Sf.map(function(r){return r.nodata?null:r.prop;}),backgroundColor:'#1D9E75',yAxisID:'y2',grouped:false,barPercentage:0.5,categoryPercentage:0.7,order:2},
      {label:'Agendas',data:Sf.map(function(r){return r.agendas;}),backgroundColor:'#BA7517',yAxisID:'y2',grouped:false,barPercentage:0.28,categoryPercentage:0.7,order:1}
    ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{autoSkip:true,maxRotation:0}},y:{beginAtZero:true,position:'left',title:{display:true,text:'totales'}},y2:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'prop / agendas'}}}}});
+   var SCOL=['#378ADD','#1D9E75','#BA7517'];
+   aplicaTendencias(charts.t1,'trend',SCOL);
+   if(!window._trendHook){ window._trendHook=1;
+     document.querySelectorAll('input.trend').forEach(function(cb){ cb.onchange=function(){ aplicaTendencias(charts.t1,'trend',SCOL); }; });
+     document.querySelectorAll('input.ktrend').forEach(function(cb){ cb.onchange=function(){ renderKpis(); }; });
+   }
    charts.t2=new Chart(document.getElementById('s_resp'),{type:'line',plugins:[gapPlugin],data:{labels:labels,datasets:[
      {label:'Min',data:Sf.map(function(r){return r.nodata?null:(dayResp[r.dia]!=null?dayResp[r.dia]:null);}),borderColor:'#534AB7',backgroundColor:'#534AB7',tension:.3,spanGaps:false}
    ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
@@ -348,6 +370,34 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  // ---- Pestaña Clientes: leads que llegaron a closing (tienen closer o resultado de closing) ----
  var CLCOLS=[{k:'nombre',l:'Cliente'},{k:'setter',l:'Setter'},{k:'closer',l:'Closer'},{k:'fagenda',l:'Fecha'},{k:'resclo',l:'Res.Closing'},{k:'estado',l:'Estado'},{k:'sclo',l:'S.Cl'},{k:'ticket',l:'Ticket'},{k:'pagado',l:'Pagado'}];
  function clientesData(){ return (DATA.leads||[]).filter(function(r){ return r.closer||r.resclo||r.estado||r.sclo!=null||r.ticket; }); }
+ // ---- Línea de tendencia (regresión lineal por mínimos cuadrados, ignora huecos) ----
+ function tendencia(datos,color){
+   var xs=[],ys=[];
+   datos.forEach(function(v,i){ if(v!=null&&!isNaN(v)){ xs.push(i); ys.push(v); } });
+   if(xs.length<2) return null;
+   var n=xs.length, sx=0,sy=0,sxy=0,sxx=0;
+   for(var i=0;i<n;i++){ sx+=xs[i]; sy+=ys[i]; sxy+=xs[i]*ys[i]; sxx+=xs[i]*xs[i]; }
+   var den=n*sxx-sx*sx; if(!den) return null;
+   var m=(n*sxy-sx*sy)/den, b=(sy-m*sx)/n;
+   return datos.map(function(_,i){ return Math.max(0, m*i+b); });
+ }
+ // Añade/quita las líneas de tendencia de un gráfico según sus casillas marcadas
+ function aplicaTendencias(chart, clase, colores){
+   if(!chart) return;
+   chart.data.datasets=chart.data.datasets.filter(function(d){ return !d._trend; });
+   document.querySelectorAll('input.'+clase).forEach(function(cb){
+     if(!cb.checked) return;
+     var i=+cb.dataset.i, base=chart.data.datasets[i];
+     if(!base) return;
+     var t=tendencia(base.data);
+     if(!t) return;
+     chart.data.datasets.push({_trend:true,type:'line',label:'Tendencia '+(base.label||''),
+       data:t,borderColor:colores[i]||'#888',borderDash:[6,4],borderWidth:2,
+       pointRadius:0,fill:false,tension:0,yAxisID:base.yAxisID||'y',order:0});
+   });
+   chart.update();
+ }
+
  // ---- KPIs reportados por las setters (formulario diario) ----
  var KSEL='TOTAL';
  function initKpis(){
@@ -394,6 +444,33 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      ? '<div style="background:#FFF6E5;border-left:3px solid var(--amber);padding:10px 14px;font-size:13px">'+
        '<b>Sin reportar ('+falta.length+'):</b> '+falta.join(' · ')+'</div>'
      : '<div style="font-size:13px;color:var(--mut)">Todos los días laborables del rango están reportados.</div>';
+
+   // ---- gráfica de evolución del equipo (responde al filtro de setter) ----
+   var dias2=[]; (function(){
+     var d=new Date(from), fin=new Date(to);
+     while(d<=fin){ dias2.push(d.toISOString().slice(0,10)); d.setDate(d.getDate()+1); }
+   })();
+   function serie(campo){
+     return dias2.map(function(dd){
+       var f=K.filter(function(r){ return r.dia===dd; });
+       return f.length ? f.reduce(function(a,r){ return a+(r[campo]||0); },0) : null;
+     });
+   }
+   var KCOL=['#378ADD','#1D9E75','#BA7517','#534AB7','#E24B4A'];
+   var kdata={labels:dias2.map(function(d){return d.slice(8,10)+'/'+d.slice(5,7);}),datasets:[
+     {label:'Follow-ups',data:serie('fu'),borderColor:KCOL[0],backgroundColor:KCOL[0],tension:.3,spanGaps:false,yAxisID:'y'},
+     {label:'Outbound',data:serie('out'),borderColor:KCOL[1],backgroundColor:KCOL[1],tension:.3,spanGaps:false,yAxisID:'y'},
+     {label:'Inbound',data:serie('inb'),borderColor:KCOL[2],backgroundColor:KCOL[2],tension:.3,spanGaps:false,yAxisID:'y2'},
+     {label:'Propuestas',data:serie('prop'),borderColor:KCOL[3],backgroundColor:KCOL[3],tension:.3,spanGaps:false,yAxisID:'y2'},
+     {label:'Bookings',data:serie('book'),borderColor:KCOL[4],backgroundColor:KCOL[4],tension:.3,spanGaps:false,yAxisID:'y2'}
+   ]};
+   if(charts.k1){ charts.k1.destroy(); }
+   charts.k1=new Chart(document.getElementById('k_trend'),{type:'line',data:kdata,
+     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
+       scales:{x:{ticks:{autoSkip:true,maxRotation:0}},
+               y:{beginAtZero:true,position:'left',title:{display:true,text:'follow-ups / outbound'}},
+               y2:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'inb / prop / book'}}}}});
+   aplicaTendencias(charts.k1,'ktrend',KCOL);
 
    K.sort(function(a,b){ return b.dia.localeCompare(a.dia) || a.setter.localeCompare(b.setter); });
    var t=document.getElementById('k_tabla');
