@@ -60,6 +60,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <button class="tab" data-t="leads">Camino leads</button>
     <button class="tab" data-t="clientes">Clientes</button>
     <button class="tab" data-t="cash">Cash</button>
+    <button class="tab" data-t="antonie">Antonie</button>
   </div>
 
   <section id="setting">
@@ -135,6 +136,15 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
   <section id="cash" class="hide">
     <div class="panel" style="border-left:3px solid var(--amber);border-radius:0"><h3>Cash collected por mes — pendiente de datos</h3>
     <div style="font-size:13px;color:var(--mut)">Necesita el registro de <b style="color:var(--tx)">cada pago</b> (cliente · fecha · importe). Una vez se capturen los pagos en GHL, monto la vista mensual (como tu pestaña "Mayo 2026").</div></div>
+  </section>
+
+  <section id="antonie" class="hide">
+    <div class="panel" style="border-left:3px solid var(--teal);border-radius:0">
+      <h3>Canal Antonie — leads directos a llamada de venta</h3>
+      <div style="font-size:13px;color:var(--mut)">Leads que llegan por el enlace de Antonie (<code>utm_source=antonie</code>) y van <b style="color:var(--tx)">directos a closing con Natalie</b>, sin pasar por setting ni triaje. Por eso se miden aparte: mezclarlos con el funnel propio distorsiona las tasas.</div>
+    </div>
+    <div class="cards" id="an_cards"></div>
+    <div class="panel"><h3>Sus leads</h3><div class="tablewrap"><table id="an_tabla"></table></div></div>
   </section>
 </div>
 
@@ -310,7 +320,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  fromEl.onchange=toEl.onchange=function(){document.querySelectorAll('.qb').forEach(function(b){b.classList.remove('on');});render();};
  bhOn.onchange=bhTz.onchange=bhA.onchange=bhB.onchange=function(){render();};
  document.querySelectorAll('.qb').forEach(function(b){b.onclick=function(){document.querySelectorAll('.qb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');setRange(+b.dataset.d);render();};});
- var SECTIONS=['setting','triage','closing','global','leads','clientes','cash'];
+ var SECTIONS=['setting','triage','closing','global','leads','clientes','cash','antonie'];
  document.querySelectorAll('.tab').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');SECTIONS.forEach(function(s){document.getElementById(s).classList.toggle('hide',s!==b.dataset.t);});};});
  function num(v){return parseFloat(String(v||'').replace(/[^0-9.]/g,''))||0;}
  function renderStatic(){
@@ -320,11 +330,39 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var cth='<thead><tr><th>Nombre</th><th>Fecha</th><th>Estado</th><th>Resultado</th><th>S.Cl</th><th>Cash</th><th>Ficha</th></tr></thead>';
    var cb=CL.map(function(r){return '<tr><td>'+r.nombre+'</td><td>'+(r.fecha||'').slice(5)+'</td><td>'+(r.estado||'')+'</td><td>'+(r.resclo||'—')+'</td><td>'+(r.sc!=null?r.sc:'—')+'</td><td>'+(r.cash||'—')+'</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>';}).join('');
    document.getElementById('c_table').innerHTML=cth+'<tbody>'+(cb||'<tr><td>Sin closings</td></tr>')+'</tbody>';
-   renderLeads(); initClientes();
+   renderLeads(); initClientes(); initAntonie();
  }
  // ---- Pestaña Clientes: leads que llegaron a closing (tienen closer o resultado de closing) ----
  var CLCOLS=[{k:'nombre',l:'Cliente'},{k:'setter',l:'Setter'},{k:'closer',l:'Closer'},{k:'fagenda',l:'Fecha'},{k:'resclo',l:'Res.Closing'},{k:'estado',l:'Estado'},{k:'sclo',l:'S.Cl'},{k:'ticket',l:'Ticket'},{k:'pagado',l:'Pagado'}];
  function clientesData(){ return (DATA.leads||[]).filter(function(r){ return r.closer||r.resclo||r.estado||r.sclo!=null||r.ticket; }); }
+ // ---- Pestaña Antonie: canal de afiliado, leads directos a closing ----
+ function initAntonie(){
+   var LD=(DATA.leads||[]).filter(function(r){ return r.origen==='antonie'; });
+   var cards=document.getElementById('an_cards'), tabla=document.getElementById('an_tabla');
+   if(!cards) return;
+   var ag=LD.length;
+   var sh=LD.filter(function(r){ return r.resclo && r.resclo!==''; }).length;      // hubo resultado = asistió
+   var ve=LD.filter(function(r){ return /vend|cierr|compr/i.test(r.resclo||''); }).length;
+   var fa=LD.reduce(function(a,r){ var n=parseFloat(String(r.ticket||'').replace(/[^\d.,]/g,'').replace(',','.')); return a+(isNaN(n)?0:n); },0);
+   function pc(a,b){ return b? Math.round(a*100/b)+'%' : '—'; }
+   cards.innerHTML =
+     card('Leads de Antonie', ag, 'con etiqueta antonie') +
+     card('Asistieron', sh, pc(sh,ag)+' de sus leads') +
+     card('Vendidos', ve, pc(ve,sh)+' de asistidos') +
+     (window.TEAM?'':card('Facturación','€'+Math.round(fa).toLocaleString('es-ES')));
+   if(!ag){
+     tabla.innerHTML='<tbody><tr><td style="padding:18px;color:var(--mut)">Todavía no ha entrado ningún lead por este canal. En cuanto agende el primero aparecerá aquí.</td></tr></tbody>';
+     return;
+   }
+   var cols=[{k:'nombre',l:'Nombre'},{k:'prof',l:'Profesión'},{k:'fagenda',l:'Fecha closing'},
+             {k:'resclo',l:'Resultado'},{k:'objclo',l:'Objeción'}];
+   if(!window.TEAM) cols.push({k:'ticket',l:'Ticket'});
+   LD.sort(function(a,b){ return String(b.fagenda||'').localeCompare(String(a.fagenda||'')); });
+   tabla.innerHTML='<thead><tr>'+cols.map(function(c){return '<th>'+c.l+'</th>';}).join('')+'<th>Ficha</th></tr></thead>'+
+     '<tbody>'+LD.map(function(r){ return '<tr>'+cols.map(function(c){var v=r[c.k];v=(v==null||v==='')?'—':String(v);return '<td>'+v+'</td>';}).join('')+
+     '<td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>'; }).join('')+'</tbody>';
+ }
+
  function initClientes(){
    if(window.TEAM){ CLCOLS=CLCOLS.filter(function(c){return ['ticket','pagado'].indexOf(c.k)<0;}); }
    var sel=document.getElementById('cl_estado'); if(!sel) return;
