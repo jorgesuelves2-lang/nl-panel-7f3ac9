@@ -1,6 +1,6 @@
 {
- "generado": "2026-08-11 23:21",
- "rango": "2026-02-01 a 2026-08-11",
+ "generado": "2026-08-12 00:10",
+ "rango": "2026-02-01 a 2026-08-12",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -2689,6 +2689,20 @@
    "agendas": 0,
    "resp_min": 139,
    "nodata": false
+  },
+  {
+   "dia": "2026-08-12",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 1,
+   "fups": 0,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 2,
+   "resp_min": null,
+   "nodata": false
   }
  ],
  "triage": [
@@ -4993,6 +5007,18 @@
    "cancelled": 0,
    "confirmed": 0,
    "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-08-12",
+   "agendados": 2,
+   "showed": 1,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 1,
+   "confirmed": 1,
+   "cualifica": 1,
    "nocualifica": 0,
    "seguimiento": 0
   }
@@ -13076,7 +13102,7 @@
    "tf": "+4915203961055",
    "fagenda": "2026-08-12",
    "closer": "",
-   "restri": "",
+   "restri": "Cualifica",
    "resclo": "",
    "estado": "",
    "ss": 38,
@@ -14104,6 +14130,17 @@
    "ticket": "",
    "pagado": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/oJ5eP7w8Gf9r7WIRbnwf"
+  },
+  {
+   "nombre": "Sara Beatriz Zaldivar Fustos",
+   "fecha": "2026-08-14",
+   "estado": "confirmed",
+   "resclo": "",
+   "sc": null,
+   "cash": "",
+   "ticket": "",
+   "pagado": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VPNyAbV8d41fMASMwPIB"
   },
   {
    "nombre": "Daniela Montalvo",
@@ -16518,6 +16555,17 @@
   },
   {
    "dia": "2026-08-11",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
+  },
+  {
+   "dia": "2026-08-12",
    "agendados": 0,
    "showed": 0,
    "noshow": 0,
@@ -20357,6 +20405,28 @@
   }
  ],
  "kpis": [
+  {
+   "dia": "2026-08-11",
+   "setter": "Sara",
+   "fu": 68,
+   "inb": 1,
+   "out": 55,
+   "prop": 0,
+   "book": 0,
+   "wel": 0,
+   "notas": ""
+  },
+  {
+   "dia": "2026-08-10",
+   "setter": "Sara",
+   "fu": 20,
+   "inb": 4,
+   "out": 45,
+   "prop": 0,
+   "book": 0,
+   "wel": 1,
+   "notas": ""
+  },
   {
    "dia": "2026-08-11",
    "setter": "Sary",
