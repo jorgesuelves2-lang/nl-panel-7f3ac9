@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-12 19:42",
+ "generado": "2026-08-12 21:24",
  "rango": "2026-02-01 a 2026-08-12",
  "setting": [
   {
@@ -2693,8 +2693,8 @@
   {
    "dia": "2026-08-12",
    "inb": 2,
-   "out": 7,
-   "nuevas": 9,
+   "out": 10,
+   "nuevas": 12,
    "total": 98,
    "fups": 131,
    "prop": 2,
@@ -5013,12 +5013,12 @@
   {
    "dia": "2026-08-12",
    "agendados": 3,
-   "showed": 1,
+   "showed": 2,
    "noshow": 0,
    "noconfirma": 0,
    "cancelled": 1,
    "confirmed": 2,
-   "cualifica": 1,
+   "cualifica": 2,
    "nocualifica": 0,
    "seguimiento": 0
   }
@@ -8669,7 +8669,7 @@
    "tf": "+491606761229",
    "fagenda": "2026-08-12",
    "closer": "",
-   "restri": "",
+   "restri": "Cualifica",
    "resclo": "",
    "estado": "",
    "ss": 62,
@@ -10107,6 +10107,37 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ZqCdX8QjuLgtdGtTIjAW"
+  },
+  {
+   "nombre": "Leonor Escribano",
+   "setter": "Sary",
+   "origen": "propio",
+   "prof": "Médico estético ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "más de 3.000€",
+   "univ": "Ceu San Pablo ",
+   "urg": "",
+   "comp": "Aún no estoy en disposición de comenzar (por favor no agendar)",
+   "obst": "Idioma ",
+   "canal": "",
+   "ig": "",
+   "email": "leonorescribano@outlook.com",
+   "tf": "+34675174364",
+   "fagenda": "2026-08-13",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": 62,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/GqhuxMB4cyVQzeET6dls"
   },
   {
    "nombre": "Letny Canelon",
@@ -14172,6 +14203,17 @@
    "ticket": "",
    "pagado": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VPNyAbV8d41fMASMwPIB"
+  },
+  {
+   "nombre": "Ivan Bruckner",
+   "fecha": "2026-08-14",
+   "estado": "confirmed",
+   "resclo": "",
+   "sc": null,
+   "cash": "",
+   "ticket": "",
+   "pagado": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/DmdFHFjCubYN094kYHbo"
   },
   {
    "nombre": "Daniela Montalvo",
