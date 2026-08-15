@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-15 13:10",
+ "generado": "2026-08-15 13:55",
  "rango": "2026-02-01 a 2026-08-15",
  "setting": [
   {
@@ -2738,7 +2738,7 @@
    "out": 0,
    "nuevas": 1,
    "total": 8,
-   "fups": 6,
+   "fups": 8,
    "prop": 0,
    "link": 0,
    "badlink": 0,
@@ -14354,6 +14354,17 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/vwsl4lvnZAebEgOX9DTs"
   },
   {
+   "nombre": "Ivan Bruckner",
+   "fecha": "2026-08-17",
+   "estado": "confirmed",
+   "resclo": "",
+   "sc": null,
+   "cash": "",
+   "ticket": "",
+   "pagado": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/DmdFHFjCubYN094kYHbo"
+  },
+  {
    "nombre": "(sin nombre)",
    "fecha": "2026-08-17",
    "estado": "confirmed",
@@ -14374,17 +14385,6 @@
    "ticket": "",
    "pagado": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/oJ5eP7w8Gf9r7WIRbnwf"
-  },
-  {
-   "nombre": "Ivan Bruckner",
-   "fecha": "2026-08-15",
-   "estado": "confirmed",
-   "resclo": "",
-   "sc": null,
-   "cash": "",
-   "ticket": "",
-   "pagado": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/DmdFHFjCubYN094kYHbo"
   },
   {
    "nombre": "Sara Beatriz Zaldivar Fustos",
@@ -16854,11 +16854,11 @@
   },
   {
    "dia": "2026-08-15",
-   "agendados": 2,
+   "agendados": 1,
    "showed": 0,
    "noshow": 0,
    "cancelled": 0,
-   "confirmed": 2,
+   "confirmed": 1,
    "vendido": 0,
    "facturacion": 0.0,
    "cash": 0.0
