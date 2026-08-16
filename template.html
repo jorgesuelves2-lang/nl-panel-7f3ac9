@@ -86,7 +86,13 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
       <div id="k_desglose" style="margin-top:14px"></div>
       <div id="k_comp_wrap" style="margin-top:16px">
         <h3 style="font-size:14px;margin-bottom:6px">Comparativa entre setters <span style="font-weight:400;color:var(--mut);font-size:12px">— totales del rango</span></h3>
-        <div class="chartbox" style="height:210px"><canvas id="k_comp"></canvas></div>
+        <div class="serietoggles">
+          <label><input type="checkbox" class="stc" data-i="0" checked><i style="background:#378ADD"></i>Conversaciones nuevas</label>
+          <label><input type="checkbox" class="stc" data-i="1" checked><i style="background:#1D9E75"></i>Agendas propuestas <span style="color:var(--mut)">(der.)</span></label>
+          <label><input type="checkbox" class="stc" data-i="2" checked><i style="background:#BA7517"></i>Agendas conseguidas <span style="color:var(--mut)">(der.)</span></label>
+          <label><input type="checkbox" class="stc" data-i="3" checked><i style="background:#534AB7"></i>Ventas de sus agendas <span style="color:var(--mut)">(der.)</span></label>
+        </div>
+        <div class="chartbox" style="height:230px"><canvas id="k_comp"></canvas></div>
       </div>
       <h3 style="font-size:14px;margin:16px 0 6px">Evolución diaria</h3>
       <div class="serietoggles">
@@ -361,6 +367,10 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    if(typeof renderCumpl==='function') renderCumpl();
    if(!window._trendHook){ window._trendHook=1;
      document.querySelectorAll('input.st1, #t1trend').forEach(function(cb){ cb.onchange=function(){ syncSeries(charts.t1,'st1','t1trend',SCOL); }; });
+     document.querySelectorAll('input.stc').forEach(function(cb){ cb.onchange=function(){
+       if(!charts.kc) return;
+       var d=charts.kc.data.datasets[+cb.dataset.i]; if(d){ d.hidden=!cb.checked; charts.kc.update(); }
+     }; });
      document.querySelectorAll('input.stk, #ktrendAll').forEach(function(cb){ cb.onchange=function(){ if(charts.k1) syncSeries(charts.k1,'stk','ktrendAll',['#378ADD','#1D9E75','#BA7517','#534AB7','#E24B4A']); }; });
    }
    charts.t2=new Chart(document.getElementById('s_resp'),{type:'line',plugins:[gapPlugin],data:{labels:labels,datasets:[
@@ -665,22 +675,28 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      if(KSEL!=='TOTAL'){ wrap.style.display='none'; if(charts.kc){charts.kc.destroy();delete charts.kc;} return; }
      wrap.style.display='';
      var Krng=(DATA.kpis||[]).filter(function(r){ return r.dia>=from && r.dia<=to; });
-     var METS=[['fu','Follow-ups'],['out','Outbound'],['inb','Inbound'],['prop','Propuestas'],['book','Bookings']];
-     var SC=['#378ADD','#1D9E75','#BA7517'];
-     var ds=(DATA.setters||[]).map(function(s,i){
-       return {label:s,backgroundColor:SC[i%SC.length],barPercentage:0.82,categoryPercentage:0.7,
-         data:METS.map(function(m){ return Krng.filter(function(r){return r.setter===s;}).reduce(function(a,r){return a+(r[m[0]]||0);},0); })};
+     var Lrng=(DATA.leads||[]).filter(function(r){ return r.fagenda && r.fagenda>=from && r.fagenda<=to; });
+     var SETS=DATA.setters||[];
+     function vendida(r){ return (r.resclo==='Vendido') || (parseFloat(String(r.ticket||'').replace(/[^0-9.]/g,''))>0); }
+     var METS=[
+       {label:'Conversaciones nuevas',color:'#378ADD',eje:'y', val:function(s){ return Krng.filter(function(r){return r.setter===s;}).reduce(function(a,r){return a+(r.inb||0)+(r.out||0);},0); }},
+       {label:'Agendas propuestas',color:'#1D9E75',eje:'y2', val:function(s){ return Krng.filter(function(r){return r.setter===s;}).reduce(function(a,r){return a+(r.prop||0);},0); }},
+       {label:'Agendas conseguidas',color:'#BA7517',eje:'y2', val:function(s){ return Krng.filter(function(r){return r.setter===s;}).reduce(function(a,r){return a+(r.book||0);},0); }},
+       {label:'Ventas de sus agendas',color:'#534AB7',eje:'y2', val:function(s){ return Lrng.filter(function(r){return r.setter===s&&vendida(r);}).length; }}
+     ];
+     var ds=METS.map(function(m,i){
+       var cb=document.querySelector('input.stc[data-i="'+i+'"]');
+       return {label:m.label,backgroundColor:m.color,yAxisID:m.eje,hidden:cb?!cb.checked:false,
+               barPercentage:0.85,categoryPercentage:0.72,
+               data:SETS.map(function(s){ return m.val(s); })};
      });
-     // proporción por métrica: quién aporta qué (los absolutos, en la tabla de arriba y el tooltip)
-     var tot=METS.map(function(m,mi){ return ds.reduce(function(a,d){return a+d.data[mi];},0)||1; });
-     ds.forEach(function(d){ d._abs=d.data.slice(); d.data=d.data.map(function(v,mi){ return Math.round(v*100/tot[mi]); }); });
-     if(charts.kc) charts.kc.destroy();
+     if(charts.kc){ charts.kc.destroy(); delete charts.kc; }
      charts.kc=new Chart(document.getElementById('k_comp'),{type:'bar',
-       data:{labels:METS.map(function(m){return m[1];}),datasets:ds},
-       options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
-         plugins:{legend:{display:true,position:'bottom'},
-           tooltip:{callbacks:{label:function(c){ return c.dataset.label+': '+c.dataset._abs[c.dataIndex]+' ('+c.parsed.x+'%)'; }}}},
-         scales:{x:{stacked:true,max:100,ticks:{callback:function(v){return v+'%';}}},y:{stacked:true}}}});
+       data:{labels:SETS,datasets:ds},
+       options:{responsive:true,maintainAspectRatio:false,
+         plugins:{legend:{display:false}},
+         scales:{y:{beginAtZero:true,position:'left',title:{display:true,text:'conversaciones'}},
+                 y2:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'prop / agendas / ventas'},ticks:{precision:0}}}}});
    })();
 
    K.sort(function(a,b){ return b.dia.localeCompare(a.dia) || a.setter.localeCompare(b.setter); });
