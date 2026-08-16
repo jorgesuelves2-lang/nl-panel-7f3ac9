@@ -580,17 +580,29 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      box.innerHTML='<table class="tbl">'+th+'<tbody>'+(filas||'')+tot+'</tbody></table>';
    })();
    var dias=Object.keys(K.reduce(function(a,r){a[r.dia]=1;return a;},{})).length;
-   // aviso de ambito: el formulario de KPIs no existe desde siempre
+   // aviso de ambito: que dias tiene reportados EL SETTER SELECCIONADO (o todos)
    (function(){
      var amb=document.getElementById('k_ambito'); if(!amb) return;
-     var todos=(DATA.kpis||[]).map(function(r){return r.dia;}).sort();
-     if(!todos.length){ amb.innerHTML=''; return; }
-     var min=todos[0], max=todos[todos.length-1];
+     var uni=(DATA.kpis||[]).filter(function(r){ return KSEL==='TOTAL'||r.setter===KSEL; })
+                            .map(function(r){return r.dia;}).sort();
+     if(!uni.length){ amb.innerHTML='<div style="background:#FBE9E7;border-left:3px solid var(--red);padding:9px 14px;font-size:13px;margin-bottom:10px">'+(KSEL==='TOTAL'?'Nadie ha':'<b>'+KSEL+'</b> no ha')+' enviado ningún reporte todavía.</div>'; return; }
+     var min=uni[0], max=uni[uni.length-1];
      function fmt(d){ return d.split('-').reverse().join('/'); }
-     amb.innerHTML = (from<min)
-       ? '<div style="background:#EEF4FD;border-left:3px solid var(--blue);padding:9px 14px;font-size:13px;margin-bottom:10px">'+
-         'El formulario de KPIs existe desde el <b>'+fmt(min)+'</b>. Este rango muestra los datos reportados de <b>'+fmt(min)+'</b> a <b>'+fmt(max<to?max:to)+'</b>; ampliar el rango hacia atrás no añade datos anteriores.</div>'
-       : '';
+     function finde(d){ var x=new Date(d+'T12:00').getDay(); return x===0||x===6; }
+     var partes=[];
+     partes.push((KSEL==='TOTAL'?'Reportes del equipo':'Reportes de <b>'+KSEL+'</b>')+': del <b>'+fmt(min)+'</b> al <b>'+fmt(max)+'</b>.');
+     if(from<min) partes.push('Antes del '+fmt(min)+' el formulario no existía.');
+     if(to>max){
+       // ¿los dias que faltan al final son fin de semana o dias sin enviar?
+       var pend=[], d=new Date(max+'T12:00');
+       d.setDate(d.getDate()+1);
+       var lim=new Date(to+'T12:00');
+       while(d<=lim){ var iso=d.toISOString().slice(0,10); if(!finde(iso)) pend.push(fmt(iso)); d.setDate(d.getDate()+1); }
+       partes.push(pend.length
+         ? '<span style="color:var(--red)">Sin reporte aún: '+pend.join(', ')+'.</span>'
+         : 'Del '+fmt(max)+' en adelante solo hay fin de semana (no se reporta).');
+     }
+     amb.innerHTML='<div style="background:#EEF4FD;border-left:3px solid var(--blue);padding:9px 14px;font-size:13px;margin-bottom:10px">'+partes.join(' ')+'</div>';
    })();
    cc.innerHTML =
      card('Follow-ups', sum('fu'), dias?Math.round(sum('fu')/dias)+'/día reportado':'') +
