@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-16 14:53",
+ "generado": "2026-08-16 15:24",
  "rango": "2026-02-01 a 2026-08-16",
  "setting": [
   {
@@ -2709,13 +2709,13 @@
    "inb": 3,
    "out": 31,
    "nuevas": 34,
-   "total": 75,
+   "total": 79,
    "fups": 70,
    "prop": 0,
    "link": 0,
    "badlink": 0,
    "agendas": 2,
-   "resp_min": 350,
+   "resp_min": 120,
    "nodata": false
   },
   {
@@ -5160,6 +5160,37 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/bDuw7wPZhH1z0LMeaD4H"
   },
   {
+   "nombre": "2da Siumara Turcott",
+   "setter": "",
+   "origen": "propio",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
+   "urg": "",
+   "comp": "",
+   "obst": "",
+   "canal": "",
+   "ig": "",
+   "email": "",
+   "tf": "",
+   "fagenda": "2026-04-28",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": null,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/XrGhjuT2WA0JmqtwXFUH"
+  },
+  {
    "nombre": "Adolfo Labarca",
    "setter": "Sara",
    "origen": "propio",
@@ -6341,18 +6372,18 @@
    "nombre": "Bryam Ureña",
    "setter": "",
    "origen": "propio",
-   "prof": "Enfermero ",
-   "nivel": "🔹 Conocimientos básicos",
-   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
-   "ingresos": "600€- 1.000€",
-   "univ": "Universidad Católica de Cuenca ",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Tema de papeleo ",
+   "comp": "",
+   "obst": "",
    "canal": "",
    "ig": "",
-   "email": "fabry.mendez71@gmail.com",
-   "tf": "+593981918323",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-30",
    "closer": "",
    "restri": "",
@@ -6363,9 +6394,9 @@
    "sclo": null,
    "ticket": "",
    "pagado": "",
-   "objtri": ".",
+   "objtri": "",
    "objclo": "",
-   "infocloser": ".",
+   "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/EWnMZMZ9sPajTXH7RfWs"
   },
   {
@@ -7827,20 +7858,20 @@
   },
   {
    "nombre": "Fernando Conde",
-   "setter": "Sary",
+   "setter": "",
    "origen": "propio",
-   "prof": "Fisioterapeuta",
-   "nivel": "🔹 Conocimientos básicos",
+   "prof": "",
+   "nivel": "",
    "presup": "",
-   "ingresos": "1.000$ - 3.000$",
+   "ingresos": "",
    "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "El idioma siento que no he conseguido la confianza para expresarme o la memoria para no trabar me, algo que no mencione fue la profesora con la que inicie el A2 me hacia sentir como un tonto y eso aparte del tema horario me desmotivo mucho,he decidido retomarlo.",
+   "comp": "",
+   "obst": "",
    "canal": "",
    "ig": "",
-   "email": "conde.fisioglobal@gmail.com",
-   "tf": "+34613361177",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-04-28",
    "closer": "",
    "restri": "",
@@ -8819,20 +8850,20 @@
   },
   {
    "nombre": "Jacob Orbe Proaño",
-   "setter": "",
+   "setter": "Sary",
    "origen": "propio",
-   "prof": "",
-   "nivel": "",
+   "prof": "Médico ",
+   "nivel": "🔹 B2",
    "presup": "",
-   "ingresos": "",
+   "ingresos": "600$ - 1.000$",
    "univ": "",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Me falta mejorar la gramática,  mi pronunciación ,hablar de forma fluida y automática. ",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "jacob.orbe.9 ",
+   "email": "jacob_orbe_mel_pr@hotmail.com",
+   "tf": "+491636237657",
    "fagenda": "2026-05-01",
    "closer": "",
    "restri": "",
@@ -10557,18 +10588,18 @@
    "nombre": "Luis Pablo Rodriguez",
    "setter": "",
    "origen": "propio",
-   "prof": "Truck Driver",
-   "nivel": "🔹 No tengo conocimientos",
+   "prof": "",
+   "nivel": "",
    "presup": "",
-   "ingresos": "1.000$ - 3.000$",
+   "ingresos": "",
    "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "Seguramente el idioma",
+   "comp": "",
+   "obst": "",
    "canal": "",
    "ig": "",
-   "email": "luispablo318@gmail.com",
-   "tf": "+34616779512",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-04-29",
    "closer": "",
    "restri": "",
@@ -10772,20 +10803,20 @@
   },
   {
    "nombre": "Manuel Caceres",
-   "setter": "",
+   "setter": "Sary",
    "origen": "propio",
-   "prof": "",
-   "nivel": "",
+   "prof": "Ingeniero ",
+   "nivel": "🔹 B1",
    "presup": "",
-   "ingresos": "",
+   "ingresos": "300$ - 600$",
    "univ": "",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Ninguno, estoy altamente motivado ",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "manuel.abrs29@gmail.com",
+   "tf": "+491744185297",
    "fagenda": "2026-05-01",
    "closer": "",
    "restri": "",
@@ -11017,37 +11048,6 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/RCOL8MWOMlG5IxytkwPP"
-  },
-  {
-   "nombre": "Maria Gallardo",
-   "setter": "",
-   "origen": "propio",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
-   "urg": "",
-   "comp": "",
-   "obst": "",
-   "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
-   "fagenda": "2026-04-24",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": null,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VytGKUut9QYd5hFT77RK"
   },
   {
    "nombre": "Maria Lourdes Justiniano Velasco",
@@ -11456,18 +11456,18 @@
    "nombre": "María Victoria Delgado López",
    "setter": "",
    "origen": "propio",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Fisioterapeuta ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "300€ - 600€",
+   "univ": "U.C.S universidad Ciencias de la Salud ",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Miedo",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "Victoria López ",
+   "email": "dlopezvictoria58@gmail.com",
+   "tf": "+584120180232",
    "fagenda": "2026-05-31",
    "closer": "",
    "restri": "",
@@ -12228,6 +12228,37 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/f5AinWaoOgWylCe45gnI"
   },
   {
+   "nombre": "NenaGallardo Gallardo",
+   "setter": "Sary",
+   "origen": "propio",
+   "prof": "Ing civil",
+   "nivel": "🔹 B1",
+   "presup": "",
+   "ingresos": "1.000$ - 3.000$",
+   "univ": "",
+   "urg": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "Hablar más fluido el idioma y con vocabulario técnico y expresar mis ideas ",
+   "canal": "",
+   "ig": "NenaGallardo10",
+   "email": "nena_1309@hotmail.com",
+   "tf": "+34662376628",
+   "fagenda": "2026-04-24",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": null,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/VytGKUut9QYd5hFT77RK"
+  },
+  {
    "nombre": "Nery Mendoza Hernández",
    "setter": "",
    "origen": "propio",
@@ -12386,18 +12417,18 @@
    "nombre": "Oscar Castillo",
    "setter": "",
    "origen": "propio",
-   "prof": "Médico forense",
-   "nivel": "🔹 A1",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "ingresos": "1.000€ - 3.000€",
-   "univ": "Universidad Católica de Santa María - Arequipa",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "Idioma y dudas sobre las entidades que ofrecen ayudarte ",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "oz.car369",
-   "email": "os.castillo66@gmail.com",
-   "tf": "+51943779439",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-30",
    "closer": "",
    "restri": "",
@@ -12665,18 +12696,18 @@
    "nombre": "Pedro Rico",
    "setter": "",
    "origen": "propio",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Medico ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
+   "ingresos": "300€ - 600€",
+   "univ": "Unimetro",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "No saber como llegar",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "gabrielangelricoromero@hotmail.com",
+   "tf": "+573024560103",
    "fagenda": "2026-05-31",
    "closer": "",
    "restri": "",
@@ -13528,37 +13559,6 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/41WRRtidG30oQFMzXzvy"
-  },
-  {
-   "nombre": "Siumara Turcott",
-   "setter": "Sary",
-   "origen": "propio",
-   "prof": "Mercadotecnia ",
-   "nivel": "🔹 B1",
-   "presup": "",
-   "ingresos": "300$ - 600$",
-   "univ": "",
-   "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "El idioma ",
-   "canal": "",
-   "ig": "SiuTurcott ",
-   "email": "stnegrete1@gmail.com",
-   "tf": "+529614307302",
-   "fagenda": "2026-04-28",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": null,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/XrGhjuT2WA0JmqtwXFUH"
   },
   {
    "nombre": "Sofía Valverde",
@@ -20689,11 +20689,6 @@
   },
   {
    "dia": "2026-08-13",
-   "in": 1786580470,
-   "rep": 1786615299
-  },
-  {
-   "dia": "2026-08-13",
    "in": 1786617714,
    "rep": 1786624928
   },
@@ -20899,6 +20894,2569 @@
    "book": 0,
    "wel": 0,
    "notas": "Hubo problemas con el link de agenda"
+  }
+ ],
+ "cumplimiento": [
+  {
+   "dia": "2026-02-01",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-02",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-03",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-04",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-05",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-06",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-07",
+   "triages": 4,
+   "con_form": 0,
+   "sin_form": 4,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-08",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-09",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-10",
+   "triages": 4,
+   "con_form": 0,
+   "sin_form": 4,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-11",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-12",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-13",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-14",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-15",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-16",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-17",
+   "triages": 5,
+   "con_form": 0,
+   "sin_form": 5,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-18",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-19",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-20",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-21",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-22",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-23",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-24",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-25",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-26",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-27",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-02-28",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-01",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-02",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-03",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-04",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-05",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-06",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-07",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-08",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-09",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-10",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-11",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-12",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-13",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-14",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-15",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-16",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-17",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-18",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-19",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-20",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-21",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-22",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-23",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-24",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-25",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-26",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-27",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-28",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-29",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-30",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-03-31",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-01",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-02",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-03",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-04",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-05",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-06",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-07",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-08",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-09",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-10",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-11",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-12",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-13",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-14",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-15",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-16",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-17",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-18",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-19",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-20",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-21",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-22",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-23",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-24",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-25",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-26",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-27",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-28",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-29",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-04-30",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-01",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-02",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-03",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-04",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-05",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-06",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-07",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-08",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-09",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-10",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-11",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-12",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-13",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-14",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-15",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-16",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-17",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-18",
+   "triages": 4,
+   "con_form": 0,
+   "sin_form": 4,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-19",
+   "triages": 7,
+   "con_form": 0,
+   "sin_form": 7,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-20",
+   "triages": 5,
+   "con_form": 0,
+   "sin_form": 5,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-21",
+   "triages": 4,
+   "con_form": 0,
+   "sin_form": 4,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-22",
+   "triages": 7,
+   "con_form": 0,
+   "sin_form": 7,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-23",
+   "triages": 6,
+   "con_form": 0,
+   "sin_form": 6,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-24",
+   "triages": 4,
+   "con_form": 0,
+   "sin_form": 4,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-25",
+   "triages": 5,
+   "con_form": 0,
+   "sin_form": 5,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-26",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-27",
+   "triages": 12,
+   "con_form": 0,
+   "sin_form": 12,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-28",
+   "triages": 7,
+   "con_form": 0,
+   "sin_form": 7,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-29",
+   "triages": 6,
+   "con_form": 0,
+   "sin_form": 6,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-30",
+   "triages": 5,
+   "con_form": 0,
+   "sin_form": 5,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-05-31",
+   "triages": 6,
+   "con_form": 0,
+   "sin_form": 6,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-01",
+   "triages": 4,
+   "con_form": 0,
+   "sin_form": 4,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-02",
+   "triages": 4,
+   "con_form": 0,
+   "sin_form": 4,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-03",
+   "triages": 5,
+   "con_form": 0,
+   "sin_form": 5,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-04",
+   "triages": 5,
+   "con_form": 0,
+   "sin_form": 5,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-05",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-06",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-07",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-08",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-09",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-10",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-11",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-12",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-13",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-14",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-15",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-16",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-17",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-18",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-19",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-20",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-21",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-22",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-23",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-24",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-25",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-26",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-27",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-28",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-29",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-06-30",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-01",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-02",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-03",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-04",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-05",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-06",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-07",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-08",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-09",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-10",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-11",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-12",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-13",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-14",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-15",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-16",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-17",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-18",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-19",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-20",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-21",
+   "triages": 2,
+   "con_form": 1,
+   "sin_form": 1,
+   "estado_triage": "Parcial",
+   "retraso_medio": 0.0,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-22",
+   "triages": 1,
+   "con_form": 1,
+   "sin_form": 0,
+   "estado_triage": "Completo",
+   "retraso_medio": 5.0,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-23",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-24",
+   "triages": 3,
+   "con_form": 2,
+   "sin_form": 1,
+   "estado_triage": "Parcial",
+   "retraso_medio": -0.5,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-25",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-26",
+   "triages": 1,
+   "con_form": 1,
+   "sin_form": 0,
+   "estado_triage": "Completo",
+   "retraso_medio": 0.0,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-27",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-28",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-29",
+   "triages": 1,
+   "con_form": 1,
+   "sin_form": 0,
+   "estado_triage": "Completo",
+   "retraso_medio": -1.0,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-30",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-07-31",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-01",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-02",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-03",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-04",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-05",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-06",
+   "triages": 1,
+   "con_form": 1,
+   "sin_form": 0,
+   "estado_triage": "Completo",
+   "retraso_medio": -1.0,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-07",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-08",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": true,
+    "Sara": true,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-09",
+   "triages": 1,
+   "con_form": 1,
+   "sin_form": 0,
+   "estado_triage": "Completo",
+   "retraso_medio": -1.0,
+   "kpis": {
+    "Sary": true,
+    "Sara": true,
+    "Yexsander": true
+   }
+  },
+  {
+   "dia": "2026-08-10",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": true,
+    "Yexsander": true
+   }
+  },
+  {
+   "dia": "2026-08-11",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": true,
+    "Sara": true,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-12",
+   "triages": 3,
+   "con_form": 2,
+   "sin_form": 1,
+   "estado_triage": "Parcial",
+   "retraso_medio": 0.0,
+   "kpis": {
+    "Sary": true,
+    "Sara": true,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-13",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": true,
+    "Sara": true,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-14",
+   "triages": 1,
+   "con_form": 1,
+   "sin_form": 0,
+   "estado_triage": "Completo",
+   "retraso_medio": 0.0,
+   "kpis": {
+    "Sary": true,
+    "Sara": true,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-15",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-16",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
   }
  ],
  "setters": [
