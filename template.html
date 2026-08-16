@@ -61,6 +61,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <button class="tab" data-t="clientes">Clientes</button>
     <button class="tab" data-t="cash">Cash</button>
     <button class="tab" data-t="antonie">Antonie</button>
+    <button class="tab" data-t="cumpl">Cumplimiento</button>
   </div>
 
   <section id="setting">
@@ -190,6 +191,15 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <div class="cards" id="an_cards"></div>
     <div class="panel"><h3>Sus leads</h3><div class="tablewrap"><table id="an_tabla"></table></div></div>
   </section>
+
+  <section id="cumpl" class="hide">
+    <div class="cards" id="cu_cards"></div>
+    <div class="panel" style="border-left:3px solid var(--purple);border-radius:0">
+      <h3>Registro diario <span style="font-weight:400;color:var(--mut);font-size:13px">— el triaje se imputa al día de la LLAMADA, no al del envío del formulario</span></h3>
+      <div id="cu_tabla" style="overflow:auto;max-height:620px"></div>
+    </div>
+  </section>
+
 </div>
 
 <script>/*DATA*/</script>
@@ -336,6 +346,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    if(typeof renderTriSetter==='function' && document.getElementById('ts_cards').innerHTML) renderTriSetter();
    // el panel de KPIs por setter tambien depende del rango de fechas
    if(typeof renderKpis==='function' && document.getElementById('k_cards') && document.getElementById('k_cards').innerHTML) renderKpis();
+   if(typeof renderCumpl==='function') renderCumpl();
    if(!window._trendHook){ window._trendHook=1;
      document.querySelectorAll('input.trend').forEach(function(cb){ cb.onchange=function(){ aplicaTendencias(charts.t1,'trend',SCOL); }; });
      document.querySelectorAll('input.ktrend').forEach(function(cb){ cb.onchange=function(){ renderKpis(); }; });
@@ -373,7 +384,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  fromEl.onchange=toEl.onchange=function(){document.querySelectorAll('.qb').forEach(function(b){b.classList.remove('on');});render();};
  bhOn.onchange=bhTz.onchange=bhA.onchange=bhB.onchange=function(){render();};
  document.querySelectorAll('.qb').forEach(function(b){b.onclick=function(){document.querySelectorAll('.qb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');setRange(+b.dataset.d);render();};});
- var SECTIONS=['setting','triage','closing','global','leads','clientes','cash','antonie'];
+ var SECTIONS=['setting','triage','closing','global','leads','clientes','cash','antonie','cumpl'];
  document.querySelectorAll('.tab[data-t]').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');SECTIONS.forEach(function(s){document.getElementById(s).classList.toggle('hide',s!==b.dataset.t);});};});
  function num(v){return parseFloat(String(v||'').replace(/[^0-9.]/g,''))||0;}
  function renderStatic(){
@@ -383,7 +394,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var cth='<thead><tr><th>Nombre</th><th>Fecha</th><th>Estado</th><th>Resultado</th><th>S.Cl</th><th>Cash</th><th>Ficha</th></tr></thead>';
    var cb=CL.map(function(r){return '<tr><td>'+r.nombre+'</td><td>'+(r.fecha||'').slice(5)+'</td><td>'+(r.estado||'')+'</td><td>'+(r.resclo||'—')+'</td><td>'+(r.sc!=null?r.sc:'—')+'</td><td>'+(r.cash||'—')+'</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>';}).join('');
    document.getElementById('c_table').innerHTML=cth+'<tbody>'+(cb||'<tr><td>Sin closings</td></tr>')+'</tbody>';
-   renderLeads(); initClientes(); initAntonie(); initKpis(); initTriSetter();
+   renderLeads(); initClientes(); initAntonie(); initKpis(); initTriSetter(); renderCumpl();
  }
  // ---- Pestaña Clientes: leads que llegaron a closing (tienen closer o resultado de closing) ----
  var CLCOLS=[{k:'nombre',l:'Cliente'},{k:'setter',l:'Setter'},{k:'closer',l:'Closer'},{k:'fagenda',l:'Fecha'},{k:'resclo',l:'Res.Closing'},{k:'estado',l:'Estado'},{k:'sclo',l:'S.Cl'},{k:'ticket',l:'Ticket'},{k:'pagado',l:'Pagado'}];
@@ -398,6 +409,43 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      };
    });
    renderTriSetter();
+ }
+
+ function renderCumpl(){
+   var box=document.getElementById('cu_tabla'); if(!box) return;
+   var from=fromEl.value,to=toEl.value;
+   var C=(DATA.cumplimiento||[]).filter(function(r){return r.dia>=from&&r.dia<=to;});
+   var setters=DATA.setters||[];
+   var conTri=C.filter(function(r){return r.triages>0;});
+   var tri=conTri.reduce(function(a,r){return a+r.triages;},0);
+   var reg=conTri.reduce(function(a,r){return a+r.con_form;},0);
+   var diasLab=C.filter(function(r){var d=new Date(r.dia+'T12:00');return d.getDay()!==0&&d.getDay()!==6;});
+   var espera=diasLab.length*setters.length;
+   var envi=diasLab.reduce(function(a,r){return a+setters.filter(function(s){return r.kpis&&r.kpis[s];}).length;},0);
+   document.getElementById('cu_cards').innerHTML=
+     card('Triajes en el rango',tri)+
+     card('Con formulario',reg,pct(reg,tri)+' registrado')+
+     card('Sin registrar',tri-reg,(tri-reg)?'requieren acción':'todo al día')+
+     card('KPIs de setters',envi+' / '+espera,pct(envi,espera)+' de días laborables');
+   var th='<thead><tr><th>Día</th><th>Triajes</th><th>Estado del registro</th><th>Sin registrar</th><th>Retraso medio</th>'+
+          setters.map(function(s){return '<th>'+s+'</th>';}).join('')+'</tr></thead>';
+   var COL={'No hubo llamadas':'#9aa0aa','Completo':'#1D9E75','Parcial':'#BA7517','Sin registrar':'#C0392B'};
+   var body=C.slice().reverse().map(function(r){
+     var d=new Date(r.dia+'T12:00'), finde=(d.getDay()===0||d.getDay()===6);
+     var col=COL[r.estado_triage]||'#9aa0aa';
+     var chips=setters.map(function(s){
+       if(finde) return '<td style="color:#c3c7ce">—</td>';
+       var ok=r.kpis&&r.kpis[s];
+       return '<td><span style="display:inline-block;padding:2px 9px;border-radius:10px;font-size:12px;font-weight:600;'+
+              (ok?'background:#E6F5EE;color:#1D9E75':'background:#FBE9E7;color:#C0392B')+'">'+(ok?'enviado':'NO')+'</span></td>';
+     }).join('');
+     return '<tr><td style="white-space:nowrap">'+r.dia.split('-').reverse().join('/')+(finde?' <span style="color:#c3c7ce;font-size:11px">(finde)</span>':'')+'</td>'+
+       '<td>'+(r.triages||'—')+'</td>'+
+       '<td><span style="color:'+col+';font-weight:600">'+r.estado_triage+'</span></td>'+
+       '<td>'+(r.sin_form?'<b style="color:#C0392B">'+r.sin_form+'</b>':'—')+'</td>'+
+       '<td>'+(r.retraso_medio==null?'—':(r.retraso_medio===0?'mismo día':(r.retraso_medio>0?'+':'')+r.retraso_medio+' d'))+'</td>'+chips+'</tr>';
+   }).join('');
+   box.innerHTML='<table class="tbl">'+th+'<tbody>'+(body||'<tr><td colspan="9" style="padding:16px;color:var(--mut)">Sin datos en este rango.</td></tr>')+'</tbody></table>';
  }
  function renderTriSetter(){
    var cc=document.getElementById('ts_cards'); if(!cc) return;
