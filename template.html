@@ -328,7 +328,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      'El lead llega al closing pensando que es informativo, no de decisión.',
      'Cerrar el triaje con: "Natalie te presenta el plan y la inversión, y ahí, si lo ves claro, reservas tu plaza".');
    // charts
-   Object.values(charts).forEach(function(c){c.destroy();});
+   Object.values(charts).forEach(function(c){ if(c&&typeof c.destroy==='function') c.destroy(); });
    var labels=Sf.map(function(r){return r.dia.slice(5);});
    var FULLDAYS=Sf.map(function(r){return r.dia;});
    // plugin: sombrea los tramos SIN DATOS de setting (sync GHL↔Instagram caída)
@@ -662,7 +662,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    // comparativa entre setters (solo en la pestaña Total)
    (function(){
      var wrap=document.getElementById('k_comp_wrap'); if(!wrap) return;
-     if(KSEL!=='TOTAL'){ wrap.style.display='none'; if(charts.kc){charts.kc.destroy();charts.kc=null;} return; }
+     if(KSEL!=='TOTAL'){ wrap.style.display='none'; if(charts.kc){charts.kc.destroy();delete charts.kc;} return; }
      wrap.style.display='';
      var Krng=(DATA.kpis||[]).filter(function(r){ return r.dia>=from && r.dia<=to; });
      var METS=[['fu','Follow-ups'],['out','Outbound'],['inb','Inbound'],['prop','Propuestas'],['book','Bookings']];
