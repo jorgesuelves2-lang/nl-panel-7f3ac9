@@ -75,6 +75,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
         <button class="tab" data-setter="Yexsander" style="font-size:13px;padding:5px 12px">Yexsander</button>
       </div>
       <div class="cards" id="k_cards"></div>
+      <div id="k_desglose" style="margin-top:14px"></div>
       <div class="legend" style="margin-top:6px"><span><i style="background:var(--blue)"></i>Follow-ups</span><span><i style="background:var(--teal)"></i>Outbound</span><span><i style="background:var(--amber)"></i>Inbound (eje der.)</span><span><i style="background:var(--purple)"></i>Propuestas (eje der.)</span><span><i style="background:var(--red)"></i>Bookings (eje der.)</span></div>
       <div class="bhctrl" style="margin-bottom:6px">
         <span style="font-weight:500">Líneas de tendencia:</span>
@@ -333,6 +334,8 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var SCOL=['#378ADD','#1D9E75','#BA7517'];
    aplicaTendencias(charts.t1,'trend',SCOL);
    if(typeof renderTriSetter==='function' && document.getElementById('ts_cards').innerHTML) renderTriSetter();
+   // el panel de KPIs por setter tambien depende del rango de fechas
+   if(typeof renderKpis==='function' && document.getElementById('k_cards') && document.getElementById('k_cards').innerHTML) renderKpis();
    if(!window._trendHook){ window._trendHook=1;
      document.querySelectorAll('input.trend').forEach(function(cb){ cb.onchange=function(){ aplicaTendencias(charts.t1,'trend',SCOL); }; });
      document.querySelectorAll('input.ktrend').forEach(function(cb){ cb.onchange=function(){ renderKpis(); }; });
@@ -476,6 +479,25 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    if(KSEL!=='TOTAL') K=K.filter(function(r){ return r.setter===KSEL; });
    var cc=document.getElementById('k_cards'); if(!cc) return;
    function sum(k){ return K.reduce(function(a,r){ return a+(r[k]||0); },0); }
+   // En 'Total': desglose de quien aporta que, con la suma abajo
+   (function(){
+     var box=document.getElementById('k_desglose'); if(!box) return;
+     if(KSEL!=='TOTAL'){ box.innerHTML=''; return; }
+     var Krng=(DATA.kpis||[]).filter(function(r){ return r.dia>=from && r.dia<=to; });
+     var COLS=[['fu','Follow-ups'],['inb','Inbound'],['out','Outbound'],['prop','Propuestas'],['book','Bookings'],['wel','Welcome']];
+     var th='<thead><tr><th>Setter</th>'+COLS.map(function(c){return '<th>'+c[1]+'</th>';}).join('')+'<th>Días reportados</th></tr></thead>';
+     var filas=(DATA.setters||[]).map(function(s){
+       var R=Krng.filter(function(r){ return r.setter===s; });
+       var dd=Object.keys(R.reduce(function(a,r){a[r.dia]=1;return a;},{})).length;
+       return '<tr><td style="font-weight:600">'+s+'</td>'+COLS.map(function(c){
+         return '<td>'+R.reduce(function(a,r){return a+(r[c[0]]||0);},0)+'</td>';}).join('')+
+         '<td>'+(dd||'<span style="color:var(--red);font-weight:600">0</span>')+'</td></tr>';
+     }).join('');
+     var tot='<tr class="total"><td>Total</td>'+COLS.map(function(c){
+       return '<td>'+Krng.reduce(function(a,r){return a+(r[c[0]]||0);},0)+'</td>';}).join('')+
+       '<td>'+Object.keys(Krng.reduce(function(a,r){a[r.dia+'|'+r.setter]=1;return a;},{})).length+'</td></tr>';
+     box.innerHTML='<table class="tbl">'+th+'<tbody>'+(filas||'')+tot+'</tbody></table>';
+   })();
    var dias=Object.keys(K.reduce(function(a,r){a[r.dia]=1;return a;},{})).length;
    cc.innerHTML =
      card('Follow-ups', sum('fu'), dias?Math.round(sum('fu')/dias)+'/día reportado':'') +
