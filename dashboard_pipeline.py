@@ -56,6 +56,27 @@ KF={"fecha":"H2w4exowODqlxqsYeEBC","setter":"hJ0AUdYi22CUZnvb3WBT","fu":"VNCxDXh
 def _n(v):
     try: return int(float(str(v).replace(",",".")))
     except: return 0
+# ---- CUMPLIMIENTO: formulario post-triaje (se atribuye al DIA DE LA LLAMADA, no al del envio) ----
+POST_FORM="hstHa9zweROKcpLZUepv"
+post_by_cid={}; post_by_mail={}
+try:
+    _pg=1
+    while True:
+        _d=cg("https://services.leadconnectorhq.com/forms/submissions",
+              [f"locationId={LOC}",f"formId={POST_FORM}","limit=100",f"page={_pg}"],H21)
+        _subs=_d.get("submissions",[]) or []
+        for s in _subs:
+            o=s.get("others") or {}
+            f=(s.get("createdAt") or "")[:10]
+            if s.get("contactId"): post_by_cid.setdefault(s["contactId"],f)
+            em=str(o.get("email") or s.get("email") or "").lower().strip()
+            if em: post_by_mail.setdefault(em,f)
+        if not (_d.get("meta") or {}).get("nextPage"): break
+        _pg+=1
+except Exception as _e:
+    print("   [aviso] formulario post-triaje:",str(_e)[:70],flush=True)
+print("   post-triaje: %d envios" % len(post_by_cid),flush=True)
+
 kpis=[]
 try:
     _pg=1
@@ -195,6 +216,8 @@ def restri(tags):
     if "triage-no-cualifica" in tags: return "No cualifica"
     if "triage-seguimiento" in tags: return "Seguimiento"
     return ""
+t_triCall=Counter(); t_triForm=Counter()
+t_triLag=defaultdict(list)
 leads=[]; closing=[]
 for cid,info in cids.items():
     c=cmap.get(cid) or {}
@@ -212,6 +235,16 @@ for cid,info in cids.items():
         if _grab or _res: t_showT[_td]+=1
         if "triage-no-show" in tags: t_noshT[_td]+=1
         if "triage-no-confirma" in tags: t_nocfT[_td]+=1
+        # cumplimiento del formulario post-triaje, imputado al dia de la llamada
+        t_triCall[_td]+=1
+        _em=(c.get("email") or "").lower().strip()
+        _fp=post_by_cid.get(cid) or (post_by_mail.get(_em) if _em else None)
+        if _fp:
+            t_triForm[_td]+=1
+            try:
+                _d1=datetime.date(*map(int,_td.split("-"))); _d2=datetime.date(*map(int,_fp.split("-")))
+                t_triLag[_td].append((_d2-_d1).days)
+            except Exception: pass
     nombre=c.get("contactName") or ((c.get("firstName") or "")+" "+(c.get("lastName") or "")).strip() or ev_name(info) or "(sin nombre)"
     ficha=f"https://app.funnelup.io/v2/location/{LOC}/contacts/detail/{cid}"
     utm=((c.get("lastAttributionSource") or {}).get("utmSource") or (c.get("attributionSource") or {}).get("utmSource") or "").strip().lower()
@@ -386,7 +419,17 @@ if len(leads)==0 and sum(x["agendados"] for x in triage)==0:
             leads=prev.get("leads",leads); triage=prev.get("triage",triage)
             closing=prev.get("closing",closing); closing_daily=prev.get("closing_daily",closing_daily)
     except Exception as e: print("guardián: sin data.json previo",e,flush=True)
-data={"generado":datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),"rango":f"{days[0]} a {days[-1]}","setting":setting,"triage":triage,"leads":leads,"closing":closing,"closing_daily":closing_daily,"gaps":gaps,"resp_pairs":resp_pairs,"kpis":kpis,"setters":["Sary","Sara","Yexsander"]}
+SETTERS_ACT=["Sary","Sara","Yexsander"]
+_kpi_dias=defaultdict(set)
+for _k in kpis: _kpi_dias[_k["dia"]].add(_k["setter"])
+cumplimiento=[]
+for d in days:
+    _n=t_triCall.get(d,0); _f=t_triForm.get(d,0); _lags=t_triLag.get(d,[])
+    cumplimiento.append({"dia":d,"triages":_n,"con_form":_f,"sin_form":max(0,_n-_f),
+        "estado_triage":("No hubo llamadas" if _n==0 else ("Completo" if _f>=_n else ("Parcial" if _f>0 else "Sin registrar"))),
+        "retraso_medio":(round(sum(_lags)/len(_lags),1) if _lags else None),
+        "kpis":{s:(s in _kpi_dias.get(d,set())) for s in SETTERS_ACT}})
+data={"generado":datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),"rango":f"{days[0]} a {days[-1]}","setting":setting,"triage":triage,"leads":leads,"closing":closing,"closing_daily":closing_daily,"gaps":gaps,"resp_pairs":resp_pairs,"kpis":kpis,"cumplimiento":cumplimiento,"setters":SETTERS_ACT}
 json.dump(data,open(os.path.join(OUTDIR,"data.json"),"w"),ensure_ascii=False,indent=1)
 tpl=open(os.path.join(HERE,"template.html")).read()
 html=tpl.replace("/*DATA*/","const DATA = "+json.dumps(data,ensure_ascii=False)+";")
