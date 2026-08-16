@@ -75,6 +75,13 @@ try:
         _pg+=1
 except Exception as _e:
     print("   [aviso] formulario post-triaje:",str(_e)[:70],flush=True)
+# correccion: si un setter envio 2 veces el mismo dia, vale SOLO el ultimo envio
+_ult={}
+for _k in kpis:
+    _key=(_k["dia"],_k["setter"])
+    if _key not in _ult or _k.get("_env","")>_ult[_key].get("_env",""): _ult[_key]=_k
+kpis=[{k:v for k,v in r.items() if k!="_env"} for r in _ult.values()]
+print("   kpis tras dedupe:",len(kpis),flush=True)
 print("   post-triaje: %d envios" % len(post_by_cid),flush=True)
 
 kpis=[]
@@ -93,7 +100,7 @@ try:
                     "yexsander":"Yexsander","yesxander":"Yexsander"}.get(nom)
             fecha=str(o.get(KF["fecha"]) or s.get("createdAt") or "")[:10]
             if not setter or not re.match(r"\d{4}-\d{2}-\d{2}",fecha): continue
-            kpis.append({"dia":fecha,"setter":setter,
+            kpis.append({"dia":fecha,"setter":setter,"_env":str(s.get("createdAt") or ""),
                 "fu":_n(o.get(KF["fu"])),"inb":_n(o.get(KF["inb"])),"out":_n(o.get(KF["out"])),
                 "prop":_n(o.get(KF["prop"])),"book":_n(o.get(KF["book"])),"wel":_n(o.get(KF["wel"])),
                 "notas":str(o.get(KF["notas"]) or "")})
