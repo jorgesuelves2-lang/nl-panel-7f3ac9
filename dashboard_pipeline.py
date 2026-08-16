@@ -75,13 +75,6 @@ try:
         _pg+=1
 except Exception as _e:
     print("   [aviso] formulario post-triaje:",str(_e)[:70],flush=True)
-# correccion: si un setter envio 2 veces el mismo dia, vale SOLO el ultimo envio
-_ult={}
-for _k in kpis:
-    _key=(_k["dia"],_k["setter"])
-    if _key not in _ult or _k.get("_env","")>_ult[_key].get("_env",""): _ult[_key]=_k
-kpis=[{k:v for k,v in r.items() if k!="_env"} for r in _ult.values()]
-print("   kpis tras dedupe:",len(kpis),flush=True)
 print("   post-triaje: %d envios" % len(post_by_cid),flush=True)
 
 kpis=[]
@@ -106,6 +99,13 @@ try:
                 "notas":str(o.get(KF["notas"]) or "")})
         if not (_d.get("meta") or {}).get("nextPage"): break
         _pg+=1
+    # correccion: si un setter envio 2 veces el mismo dia, vale SOLO el ultimo envio
+    _ult={}
+    for _k in kpis:
+        _key=(_k["dia"],_k["setter"])
+        if _key not in _ult or _k.get("_env","")>_ult[_key].get("_env",""): _ult[_key]=_k
+    kpis=[{k:v for k,v in r.items() if k!="_env"} for r in _ult.values()]
+    print("   kpis tras dedupe:",len(kpis),flush=True)
     print("KPIs reportados por setters:",len(kpis),flush=True)
 except Exception as e:
     print("AVISO: no se pudieron leer los KPIs del formulario:",e,flush=True)
