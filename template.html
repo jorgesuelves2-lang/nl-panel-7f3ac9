@@ -32,6 +32,12 @@ tr.nd td{color:var(--mut);font-style:italic;background:repeating-linear-gradient
 table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowrap;position:sticky;top:0;background:#fafbfc;} table.leadtbl td{white-space:nowrap;max-width:220px;overflow:hidden;text-overflow:ellipsis;}
 .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--mut);margin-bottom:8px;}
 .legend i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:4px;vertical-align:-1px;}
+.serietoggles{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;margin-bottom:10px;}
+.serietoggles label{display:inline-flex;align-items:center;gap:7px;cursor:pointer;border:1px solid var(--bd);border-radius:16px;padding:4px 12px;user-select:none;background:var(--card);}
+.serietoggles label:has(input:not(:checked)){opacity:.4;}
+.serietoggles input{margin:0;accent-color:#378ADD;}
+.serietoggles i{width:10px;height:10px;border-radius:2px;display:inline-block;}
+.serietoggles .sep{width:1px;height:20px;background:var(--bd);margin:0 4px;}
 .chartbox{position:relative;height:250px;}
 .hide{display:none;}
 .an{border-left:3px solid var(--red);border-radius:0;padding:10px 14px;margin-bottom:12px;background:#fff;border-top:1px solid var(--bd);border-right:1px solid var(--bd);border-bottom:1px solid var(--bd);}
@@ -78,14 +84,19 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
       <div id="k_ambito"></div>
       <div class="cards" id="k_cards"></div>
       <div id="k_desglose" style="margin-top:14px"></div>
-      <div class="legend" style="margin-top:6px"><span><i style="background:var(--blue)"></i>Follow-ups</span><span><i style="background:var(--teal)"></i>Outbound</span><span><i style="background:var(--amber)"></i>Inbound (eje der.)</span><span><i style="background:var(--purple)"></i>Propuestas (eje der.)</span><span><i style="background:var(--red)"></i>Bookings (eje der.)</span></div>
-      <div class="bhctrl" style="margin-bottom:6px">
-        <span style="font-weight:500">Líneas de tendencia:</span>
-        <label><input type="checkbox" class="ktrend" data-i="0"> Follow-ups</label>
-        <label><input type="checkbox" class="ktrend" data-i="1"> Outbound</label>
-        <label><input type="checkbox" class="ktrend" data-i="2"> Inbound</label>
-        <label><input type="checkbox" class="ktrend" data-i="3"> Propuestas</label>
-        <label><input type="checkbox" class="ktrend" data-i="4"> Bookings</label>
+      <div id="k_comp_wrap" style="margin-top:16px">
+        <h3 style="font-size:14px;margin-bottom:6px">Comparativa entre setters <span style="font-weight:400;color:var(--mut);font-size:12px">— totales del rango</span></h3>
+        <div class="chartbox" style="height:210px"><canvas id="k_comp"></canvas></div>
+      </div>
+      <h3 style="font-size:14px;margin:16px 0 6px">Evolución diaria</h3>
+      <div class="serietoggles">
+        <label><input type="checkbox" class="stk" data-i="0" checked><i style="background:#378ADD"></i>Follow-ups</label>
+        <label><input type="checkbox" class="stk" data-i="1" checked><i style="background:#1D9E75"></i>Outbound</label>
+        <label><input type="checkbox" class="stk" data-i="2" checked><i style="background:#BA7517"></i>Inbound <span style="color:var(--mut)">(der.)</span></label>
+        <label><input type="checkbox" class="stk" data-i="3" checked><i style="background:#534AB7"></i>Propuestas <span style="color:var(--mut)">(der.)</span></label>
+        <label><input type="checkbox" class="stk" data-i="4" checked><i style="background:#E24B4A"></i>Bookings <span style="color:var(--mut)">(der.)</span></label>
+        <span class="sep"></span>
+        <label><input type="checkbox" id="ktrendAll"><i style="background:repeating-linear-gradient(90deg,#666 0 4px,transparent 4px 7px)"></i>Tendencia</label>
       </div>
       <div class="chartbox" style="height:230px"><canvas id="k_trend"></canvas></div>
       <div id="k_falta" style="margin-top:12px"></div>
@@ -93,12 +104,12 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     </div>
     <div class="panel"><h3>Embudo del rango</h3><div id="funnel"></div></div>
     <div class="panel"><h3>Evolución por día</h3>
-      <div class="legend"><span><i style="background:var(--blue)"></i>Conversaciones totales</span><span><i style="background:var(--teal)"></i>Propuestas (eje der.)</span><span><i style="background:var(--amber)"></i>Agendas (eje der.)</span></div>
-      <div class="bhctrl" style="margin-bottom:6px">
-        <span style="font-weight:500">Líneas de tendencia:</span>
-        <label><input type="checkbox" class="trend" data-i="0"> Conversaciones</label>
-        <label><input type="checkbox" class="trend" data-i="1"> Propuestas</label>
-        <label><input type="checkbox" class="trend" data-i="2"> Agendas</label>
+      <div class="serietoggles">
+        <label><input type="checkbox" class="st1" data-i="0" checked><i style="background:#378ADD"></i>Conversaciones totales</label>
+        <label><input type="checkbox" class="st1" data-i="1" checked><i style="background:#1D9E75"></i>Propuestas <span style="color:var(--mut)">(eje der.)</span></label>
+        <label><input type="checkbox" class="st1" data-i="2" checked><i style="background:#BA7517"></i>Agendas <span style="color:var(--mut)">(eje der.)</span></label>
+        <span class="sep"></span>
+        <label><input type="checkbox" id="t1trend"><i style="background:repeating-linear-gradient(90deg,#666 0 4px,transparent 4px 7px)"></i>Tendencia</label>
       </div>
       <div class="chartbox"><canvas id="s_trend"></canvas></div>
       <div id="s_gapnote" style="font-size:12px;color:var(--mut);margin-top:8px"></div></div>
@@ -338,19 +349,19 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      ctx.restore();
    }};
    charts.t1=new Chart(document.getElementById('s_trend'),{type:'bar',plugins:[gapPlugin],data:{labels:labels,datasets:[
-     {label:'Totales',data:Sf.map(function(r){return r.nodata?null:r.total;}),backgroundColor:'#378ADD',yAxisID:'y',grouped:false,barPercentage:0.9,categoryPercentage:0.7,order:3},
-     {label:'Propuestas',data:Sf.map(function(r){return r.nodata?null:r.prop;}),backgroundColor:'#1D9E75',yAxisID:'y2',grouped:false,barPercentage:0.5,categoryPercentage:0.7,order:2},
-     {label:'Agendas',data:Sf.map(function(r){return r.agendas;}),backgroundColor:'#BA7517',yAxisID:'y2',grouped:false,barPercentage:0.28,categoryPercentage:0.7,order:1}
-   ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{autoSkip:true,maxRotation:0}},y:{beginAtZero:true,position:'left',title:{display:true,text:'totales'}},y2:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'prop / agendas'}}}}});
+     {label:'Conversaciones totales',data:Sf.map(function(r){return r.nodata?null:r.total;}),backgroundColor:'#378ADD',yAxisID:'y',barPercentage:0.85,categoryPercentage:0.72},
+     {label:'Propuestas',data:Sf.map(function(r){return r.nodata?null:r.prop;}),backgroundColor:'#1D9E75',yAxisID:'y2',barPercentage:0.85,categoryPercentage:0.72},
+     {label:'Agendas',data:Sf.map(function(r){return r.agendas;}),backgroundColor:'#BA7517',yAxisID:'y2',barPercentage:0.85,categoryPercentage:0.72}
+   ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{autoSkip:true,maxRotation:0}},y:{beginAtZero:true,position:'left',title:{display:true,text:'conversaciones'}},y2:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'prop / agendas'}}}}});
    var SCOL=['#378ADD','#1D9E75','#BA7517'];
-   aplicaTendencias(charts.t1,'trend',SCOL);
+   syncSeries(charts.t1,'st1','t1trend',SCOL);
    if(typeof renderTriSetter==='function' && document.getElementById('ts_cards').innerHTML) renderTriSetter();
    // el panel de KPIs por setter tambien depende del rango de fechas
    if(typeof renderKpis==='function' && document.getElementById('k_cards') && document.getElementById('k_cards').innerHTML) renderKpis();
    if(typeof renderCumpl==='function') renderCumpl();
    if(!window._trendHook){ window._trendHook=1;
-     document.querySelectorAll('input.trend').forEach(function(cb){ cb.onchange=function(){ aplicaTendencias(charts.t1,'trend',SCOL); }; });
-     document.querySelectorAll('input.ktrend').forEach(function(cb){ cb.onchange=function(){ renderKpis(); }; });
+     document.querySelectorAll('input.st1, #t1trend').forEach(function(cb){ cb.onchange=function(){ syncSeries(charts.t1,'st1','t1trend',SCOL); }; });
+     document.querySelectorAll('input.stk, #ktrendAll').forEach(function(cb){ cb.onchange=function(){ if(charts.k1) syncSeries(charts.k1,'stk','ktrendAll',['#378ADD','#1D9E75','#BA7517','#534AB7','#E24B4A']); }; });
    }
    charts.t2=new Chart(document.getElementById('s_resp'),{type:'line',plugins:[gapPlugin],data:{labels:labels,datasets:[
      {label:'Min',data:Sf.map(function(r){return r.nodata?null:(dayResp[r.dia]!=null?dayResp[r.dia]:null);}),borderColor:'#534AB7',backgroundColor:'#534AB7',tension:.3,spanGaps:false}
@@ -495,6 +506,27 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    return datos.map(function(_,i){ return Math.max(0, m*i+b); });
  }
  // Añade/quita las líneas de tendencia de un gráfico según sus casillas marcadas
+
+ // Un solo control por serie: la casilla muestra/oculta la serie. "Tendencia" añade
+ // la línea discontinua SOLO de las series visibles.
+ function syncSeries(chart, clase, idTrend, colores){
+   if(!chart) return;
+   chart.data.datasets=chart.data.datasets.filter(function(d){ return !d._trend; });
+   document.querySelectorAll('input.'+clase).forEach(function(cb){
+     var d=chart.data.datasets[+cb.dataset.i]; if(d) d.hidden=!cb.checked;
+   });
+   var tcb=document.getElementById(idTrend);
+   if(tcb&&tcb.checked){
+     chart.data.datasets.slice().forEach(function(base,i){
+       if(base._trend||base.hidden) return;
+       var t=tendencia(base.data); if(!t) return;
+       chart.data.datasets.push({_trend:true,type:'line',label:'Tendencia',data:t,
+         borderColor:colores[i]||'#888',borderDash:[6,4],borderWidth:2,
+         pointRadius:0,fill:false,tension:0,yAxisID:base.yAxisID||'y',order:0});
+     });
+   }
+   chart.update();
+ }
  function aplicaTendencias(chart, clase, colores){
    if(!chart) return;
    chart.data.datasets=chart.data.datasets.filter(function(d){ return !d._trend; });
@@ -614,7 +646,30 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
        scales:{x:{ticks:{autoSkip:true,maxRotation:0}},
                y:{beginAtZero:true,position:'left',title:{display:true,text:'follow-ups / outbound'}},
                y2:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'inb / prop / book'}}}}});
-   aplicaTendencias(charts.k1,'ktrend',KCOL);
+   syncSeries(charts.k1,'stk','ktrendAll',KCOL);
+   // comparativa entre setters (solo en la pestaña Total)
+   (function(){
+     var wrap=document.getElementById('k_comp_wrap'); if(!wrap) return;
+     if(KSEL!=='TOTAL'){ wrap.style.display='none'; if(charts.kc){charts.kc.destroy();charts.kc=null;} return; }
+     wrap.style.display='';
+     var Krng=(DATA.kpis||[]).filter(function(r){ return r.dia>=from && r.dia<=to; });
+     var METS=[['fu','Follow-ups'],['out','Outbound'],['inb','Inbound'],['prop','Propuestas'],['book','Bookings']];
+     var SC=['#378ADD','#1D9E75','#BA7517'];
+     var ds=(DATA.setters||[]).map(function(s,i){
+       return {label:s,backgroundColor:SC[i%SC.length],barPercentage:0.82,categoryPercentage:0.7,
+         data:METS.map(function(m){ return Krng.filter(function(r){return r.setter===s;}).reduce(function(a,r){return a+(r[m[0]]||0);},0); })};
+     });
+     // proporción por métrica: quién aporta qué (los absolutos, en la tabla de arriba y el tooltip)
+     var tot=METS.map(function(m,mi){ return ds.reduce(function(a,d){return a+d.data[mi];},0)||1; });
+     ds.forEach(function(d){ d._abs=d.data.slice(); d.data=d.data.map(function(v,mi){ return Math.round(v*100/tot[mi]); }); });
+     if(charts.kc) charts.kc.destroy();
+     charts.kc=new Chart(document.getElementById('k_comp'),{type:'bar',
+       data:{labels:METS.map(function(m){return m[1];}),datasets:ds},
+       options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+         plugins:{legend:{display:true,position:'bottom'},
+           tooltip:{callbacks:{label:function(c){ return c.dataset.label+': '+c.dataset._abs[c.dataIndex]+' ('+c.parsed.x+'%)'; }}}},
+         scales:{x:{stacked:true,max:100,ticks:{callback:function(v){return v+'%';}}},y:{stacked:true}}}});
+   })();
 
    K.sort(function(a,b){ return b.dia.localeCompare(a.dia) || a.setter.localeCompare(b.setter); });
    var t=document.getElementById('k_tabla');
