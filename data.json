@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-17 11:53",
+ "generado": "2026-08-17 13:10",
  "rango": "2026-02-01 a 2026-08-17",
  "setting": [
   {
@@ -2695,7 +2695,7 @@
    "inb": 4,
    "out": 70,
    "nuevas": 74,
-   "total": 106,
+   "total": 113,
    "fups": 131,
    "prop": 4,
    "link": 3,
@@ -2735,15 +2735,15 @@
   {
    "dia": "2026-08-15",
    "inb": 4,
-   "out": 2,
-   "nuevas": 6,
-   "total": 8,
-   "fups": 16,
+   "out": 9,
+   "nuevas": 13,
+   "total": 44,
+   "fups": 34,
    "prop": 2,
    "link": 2,
    "badlink": 0,
    "agendas": 0,
-   "resp_min": 25,
+   "resp_min": 27,
    "nodata": false
   },
   {
@@ -5087,7 +5087,7 @@
    "noshow": 0,
    "noconfirma": 0,
    "cancelled": 1,
-   "confirmed": 2,
+   "confirmed": 1,
    "cualifica": 2,
    "nocualifica": 0,
    "seguimiento": 0
@@ -5184,6 +5184,37 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/bDuw7wPZhH1z0LMeaD4H"
+  },
+  {
+   "nombre": "2da Siumara Turcott",
+   "setter": "",
+   "origen": "propio",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
+   "urg": "",
+   "comp": "",
+   "obst": "",
+   "canal": "",
+   "ig": "",
+   "email": "",
+   "tf": "",
+   "fagenda": "2026-04-28",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": null,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/XrGhjuT2WA0JmqtwXFUH"
   },
   {
    "nombre": "Adolfo Labarca",
@@ -6367,18 +6398,18 @@
    "nombre": "Bryam Ureña",
    "setter": "",
    "origen": "propio",
-   "prof": "Enfermero ",
-   "nivel": "🔹 Conocimientos básicos",
-   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
-   "ingresos": "600€- 1.000€",
-   "univ": "Universidad Católica de Cuenca ",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Tema de papeleo ",
+   "comp": "",
+   "obst": "",
    "canal": "",
    "ig": "",
-   "email": "fabry.mendez71@gmail.com",
-   "tf": "+593981918323",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-30",
    "closer": "",
    "restri": "",
@@ -6389,9 +6420,9 @@
    "sclo": null,
    "ticket": "",
    "pagado": "",
-   "objtri": ".",
+   "objtri": "",
    "objclo": "",
-   "infocloser": ".",
+   "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/EWnMZMZ9sPajTXH7RfWs"
   },
   {
@@ -7390,18 +7421,18 @@
    "nombre": "Dennisse Martinez Solis",
    "setter": "",
    "origen": "propio",
-   "prof": "Estudiante de medicina",
-   "nivel": "🔹 No tengo conocimientos",
+   "prof": "",
+   "nivel": "",
    "presup": "",
-   "ingresos": "300$ - 600$",
+   "ingresos": "",
    "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "El idioma y el dinero",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "deniss_28_",
-   "email": "denissemar288@gmail.com",
-   "tf": "+593968865801",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-04-30",
    "closer": "",
    "restri": "",
@@ -7824,6 +7855,37 @@
    "nombre": "Feli Alemany Alemany",
    "setter": "",
    "origen": "propio",
+   "prof": "Medico especialista ",
+   "nivel": "🔹 A2",
+   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "univ": "Universidad de Valencia. España",
+   "urg": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "El alemán ",
+   "canal": "",
+   "ig": "emmayfeli2023",
+   "email": "felialemany@hotmail.com",
+   "tf": "+34660486835",
+   "fagenda": "2026-05-31",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": null,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": ".",
+   "objclo": "",
+   "infocloser": ".",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/x83LlhTKJv9r8Yz4nI7Z"
+  },
+  {
+   "nombre": "Fernando Conde",
+   "setter": "",
+   "origen": "propio",
    "prof": "",
    "nivel": "",
    "presup": "",
@@ -7836,37 +7898,6 @@
    "ig": "",
    "email": "",
    "tf": "",
-   "fagenda": "2026-05-31",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": null,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/x83LlhTKJv9r8Yz4nI7Z"
-  },
-  {
-   "nombre": "Fernando Conde",
-   "setter": "Sary",
-   "origen": "propio",
-   "prof": "Fisioterapeuta",
-   "nivel": "🔹 Conocimientos básicos",
-   "presup": "",
-   "ingresos": "1.000$ - 3.000$",
-   "univ": "",
-   "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "El idioma siento que no he conseguido la confianza para expresarme o la memoria para no trabar me, algo que no mencione fue la profesora con la que inicie el A2 me hacia sentir como un tonto y eso aparte del tema horario me desmotivo mucho,he decidido retomarlo.",
-   "canal": "",
-   "ig": "",
-   "email": "conde.fisioglobal@gmail.com",
-   "tf": "+34613361177",
    "fagenda": "2026-04-28",
    "closer": "",
    "restri": "",
@@ -8845,20 +8876,20 @@
   },
   {
    "nombre": "Jacob Orbe Proaño",
-   "setter": "",
+   "setter": "Sary",
    "origen": "propio",
-   "prof": "",
-   "nivel": "",
+   "prof": "Médico ",
+   "nivel": "🔹 B2",
    "presup": "",
-   "ingresos": "",
+   "ingresos": "600$ - 1.000$",
    "univ": "",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Me falta mejorar la gramática,  mi pronunciación ,hablar de forma fluida y automática. ",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "jacob.orbe.9 ",
+   "email": "jacob_orbe_mel_pr@hotmail.com",
+   "tf": "+491636237657",
    "fagenda": "2026-05-01",
    "closer": "",
    "restri": "",
@@ -10583,18 +10614,18 @@
    "nombre": "Luis Pablo Rodriguez",
    "setter": "",
    "origen": "propio",
-   "prof": "Truck Driver",
-   "nivel": "🔹 No tengo conocimientos",
+   "prof": "",
+   "nivel": "",
    "presup": "",
-   "ingresos": "1.000$ - 3.000$",
+   "ingresos": "",
    "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "Seguramente el idioma",
+   "comp": "",
+   "obst": "",
    "canal": "",
    "ig": "",
-   "email": "luispablo318@gmail.com",
-   "tf": "+34616779512",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-04-29",
    "closer": "",
    "restri": "",
@@ -10798,20 +10829,20 @@
   },
   {
    "nombre": "Manuel Caceres",
-   "setter": "",
+   "setter": "Sary",
    "origen": "propio",
-   "prof": "",
-   "nivel": "",
+   "prof": "Ingeniero ",
+   "nivel": "🔹 B1",
    "presup": "",
-   "ingresos": "",
+   "ingresos": "300$ - 600$",
    "univ": "",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Ninguno, estoy altamente motivado ",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "manuel.abrs29@gmail.com",
+   "tf": "+491744185297",
    "fagenda": "2026-05-01",
    "closer": "",
    "restri": "",
@@ -10986,18 +11017,18 @@
    "nombre": "Maria",
    "setter": "",
    "origen": "propio",
-   "prof": "Médico especialista",
-   "nivel": "🔹 B1",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "ingresos": "600€- 1.000€",
-   "univ": "Universidad peruana los andes",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "No tener claro los pasos a seguir paranoider ejercer en Alemania ",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "No tengo ",
-   "email": "sol492@hotmail.com",
-   "tf": "+51948993087",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-31",
    "closer": "",
    "restri": "",
@@ -11265,18 +11296,18 @@
    "nombre": "Mario Alberto Elias",
    "setter": "",
    "origen": "propio",
-   "prof": "Interno medico",
-   "nivel": "🔹 No tengo conocimientos",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "ingresos": "600€- 1.000€",
-   "univ": "Universidad particular SAN JUAN Bautista ",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Lengua",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "Marioalberto_elias_g",
-   "email": "studer_10@hotmail.com",
-   "tf": "+51976587362",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-31",
    "closer": "",
    "restri": "",
@@ -11451,18 +11482,18 @@
    "nombre": "María Victoria Delgado López",
    "setter": "",
    "origen": "propio",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Fisioterapeuta ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "300€ - 600€",
+   "univ": "U.C.S universidad Ciencias de la Salud ",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Miedo",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "Victoria López ",
+   "email": "dlopezvictoria58@gmail.com",
+   "tf": "+584120180232",
    "fagenda": "2026-05-31",
    "closer": "",
    "restri": "",
@@ -11541,21 +11572,21 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/9OV8P9EJxZIns9gqa2gx"
   },
   {
-   "nombre": "Matías",
-   "setter": "",
+   "nombre": "Matías.",
+   "setter": "Sary",
    "origen": "propio",
-   "prof": "",
-   "nivel": "",
+   "prof": "estudiante",
+   "nivel": "🔹 B1",
    "presup": "",
-   "ingresos": "",
+   "ingresos": "600$ - 1.000$",
    "univ": "",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "ser constante en el aprendizaje del idioma",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
+   "ig": "mato73akbino",
+   "email": "matiasebref@hotmail.com",
+   "tf": "+525544748520",
    "fagenda": "2026-05-04",
    "closer": "",
    "restri": "",
@@ -12378,27 +12409,27 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/7iCPpbkTTULf68CiIxED"
   },
   {
-   "nombre": "no confirmó setting Roberto Carlos",
-   "setter": "",
+   "nombre": "Olga Magaly Betancur Ospina",
+   "setter": "Sara",
    "origen": "propio",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Enfermera",
+   "nivel": "🔹 B1",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "univ": "Universidad Libre - Cali Comombia",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "El idioma… A pesar del B1, siento que necesito mucho mas",
    "canal": "",
-   "ig": "",
-   "email": "",
-   "tf": "",
-   "fagenda": "2026-05-02",
+   "ig": "@violetagi",
+   "email": "magaly.betancur.ospina@gmail.com",
+   "tf": "+4916096529465",
+   "fagenda": "2026-08-18",
    "closer": "",
-   "restri": "",
+   "restri": "Cualifica",
    "resclo": "",
    "estado": "",
-   "ss": null,
+   "ss": 62,
    "stri": null,
    "sclo": null,
    "ticket": "",
@@ -12406,7 +12437,7 @@
    "objtri": "",
    "objclo": "",
    "infocloser": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/op67pjomnga6cVDZol0p"
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rkDJpWVqRAwMmdzJbsOA"
   },
   {
    "nombre": "omaima Boudouah",
@@ -12443,18 +12474,18 @@
    "nombre": "Oscar Castillo",
    "setter": "",
    "origen": "propio",
-   "prof": "Médico forense",
-   "nivel": "🔹 A1",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "ingresos": "1.000€ - 3.000€",
-   "univ": "Universidad Católica de Santa María - Arequipa",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "Idioma y dudas sobre las entidades que ofrecen ayudarte ",
+   "comp": "",
+   "obst": "",
    "canal": "",
-   "ig": "oz.car369",
-   "email": "os.castillo66@gmail.com",
-   "tf": "+51943779439",
+   "ig": "",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-30",
    "closer": "",
    "restri": "",
@@ -12722,18 +12753,18 @@
    "nombre": "Pedro Rico",
    "setter": "",
    "origen": "propio",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Medico ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
+   "ingresos": "300€ - 600€",
+   "univ": "Unimetro",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "No saber como llegar",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "gabrielangelricoromero@hotmail.com",
+   "tf": "+573024560103",
    "fagenda": "2026-05-31",
    "closer": "",
    "restri": "",
@@ -13027,6 +13058,37 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/XpqEfn3Y3p75bk3BpUG9"
+  },
+  {
+   "nombre": "Roberto Carlos",
+   "setter": "Sary",
+   "origen": "propio",
+   "prof": "Chapista carrossier ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "",
+   "ingresos": "1.000$ - 3.000$",
+   "univ": "",
+   "urg": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "Permiso de trabajo y y un contrato ",
+   "canal": "",
+   "ig": "Carlosvilla1456",
+   "email": "robertocarlosvillarroel14@gmail.com",
+   "tf": "+34633626166",
+   "fagenda": "2026-05-02",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": null,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/op67pjomnga6cVDZol0p"
   },
   {
    "nombre": "Rocca Luis",
@@ -13554,37 +13616,6 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/41WRRtidG30oQFMzXzvy"
-  },
-  {
-   "nombre": "Siumara Turcott",
-   "setter": "Sary",
-   "origen": "propio",
-   "prof": "Mercadotecnia ",
-   "nivel": "🔹 B1",
-   "presup": "",
-   "ingresos": "300$ - 600$",
-   "univ": "",
-   "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "El idioma ",
-   "canal": "",
-   "ig": "SiuTurcott ",
-   "email": "stnegrete1@gmail.com",
-   "tf": "+529614307302",
-   "fagenda": "2026-04-28",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": null,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/XrGhjuT2WA0JmqtwXFUH"
   },
   {
    "nombre": "Sofía Valverde",
@@ -14117,18 +14148,18 @@
    "nombre": "Walter Mosquera",
    "setter": "",
    "origen": "propio",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Médico familiar ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "univ": "Universidad técnica particular de Loja ",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "Idioma ",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "alexismosquera87@gmail.com",
+   "tf": "+593989321815",
    "fagenda": "2026-06-01",
    "closer": "",
    "restri": "",
@@ -14404,6 +14435,17 @@
    "ticket": "",
    "pagado": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/vwsl4lvnZAebEgOX9DTs"
+  },
+  {
+   "nombre": "Olga Magaly Betancur Ospina",
+   "fecha": "2026-08-18",
+   "estado": "confirmed",
+   "resclo": "",
+   "sc": null,
+   "cash": "",
+   "ticket": "",
+   "pagado": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rkDJpWVqRAwMmdzJbsOA"
   },
   {
    "nombre": "Ivan Bruckner",
@@ -20746,16 +20788,6 @@
    "rep": 1786469960
   },
   {
-   "dia": "2026-08-12",
-   "in": 1786529082,
-   "rep": 1786530201
-  },
-  {
-   "dia": "2026-08-12",
-   "in": 1786566599,
-   "rep": 1786566744
-  },
-  {
    "dia": "2026-08-13",
    "in": 1786580470,
    "rep": 1786615299
@@ -20777,13 +20809,13 @@
   },
   {
    "dia": "2026-08-15",
-   "in": 1786823750,
-   "rep": 1786825546
+   "in": 1786807576,
+   "rep": 1786807688
   },
   {
    "dia": "2026-08-15",
-   "in": 1786822154,
-   "rep": 1786823345
+   "in": 1786798180,
+   "rep": 1786801311
   },
   {
    "dia": "2026-08-17",
@@ -20792,6 +20824,17 @@
   }
  ],
  "kpis": [
+  {
+   "dia": "2026-08-16",
+   "setter": "Sary",
+   "fu": 72,
+   "inb": 3,
+   "out": 59,
+   "prop": 4,
+   "book": 2,
+   "wel": 0,
+   "notas": ""
+  },
   {
    "dia": "2026-08-16",
    "setter": "Sara",
@@ -20914,17 +20957,6 @@
    "notas": ""
   },
   {
-   "dia": "2026-08-10",
-   "setter": "Yexsander",
-   "fu": 7,
-   "inb": 0,
-   "out": 14,
-   "prop": 0,
-   "book": 0,
-   "wel": 0,
-   "notas": ""
-  },
-  {
    "dia": "2026-08-09",
    "setter": "Sary",
    "fu": 37,
@@ -20958,17 +20990,6 @@
    "notas": "@rema_alemania"
   },
   {
-   "dia": "2026-08-09",
-   "setter": "Yexsander",
-   "fu": 3,
-   "inb": 5,
-   "out": 24,
-   "prop": 0,
-   "book": 0,
-   "wel": 0,
-   "notas": ""
-  },
-  {
    "dia": "2026-08-08",
    "setter": "Sary",
    "fu": 39,
@@ -20991,7 +21012,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21004,7 +21025,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21017,7 +21038,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21030,7 +21051,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21043,7 +21064,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21056,7 +21077,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21069,7 +21090,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21082,7 +21103,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21095,7 +21116,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21108,7 +21129,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21121,7 +21142,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21134,7 +21155,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21147,7 +21168,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21160,7 +21181,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21173,7 +21194,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21186,7 +21207,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21199,7 +21220,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21212,7 +21233,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21225,7 +21246,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21238,7 +21259,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21251,7 +21272,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21264,7 +21285,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21277,7 +21298,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21290,7 +21311,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21303,7 +21324,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21316,7 +21337,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21329,7 +21350,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21342,7 +21363,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21355,7 +21376,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21368,7 +21389,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21381,7 +21402,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21394,7 +21415,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21407,7 +21428,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21420,7 +21441,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21433,7 +21454,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21446,7 +21467,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21459,7 +21480,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21472,7 +21493,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21485,7 +21506,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21498,7 +21519,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21511,7 +21532,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21524,7 +21545,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21537,7 +21558,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21550,7 +21571,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21563,7 +21584,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21576,7 +21597,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21589,7 +21610,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21602,7 +21623,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21615,7 +21636,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21628,7 +21649,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21641,7 +21662,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21654,7 +21675,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21667,7 +21688,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21680,7 +21701,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21693,7 +21714,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21706,7 +21727,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21719,7 +21740,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21732,7 +21753,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21745,7 +21766,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21758,7 +21779,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21771,7 +21792,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21784,7 +21805,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21797,7 +21818,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21810,7 +21831,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21823,7 +21844,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21836,7 +21857,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21849,7 +21870,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21862,7 +21883,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21875,7 +21896,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21888,7 +21909,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21901,7 +21922,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21914,7 +21935,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21927,7 +21948,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21940,7 +21961,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21953,7 +21974,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21966,7 +21987,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21979,7 +22000,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -21992,7 +22013,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22005,7 +22026,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22018,7 +22039,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22031,7 +22052,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22044,7 +22065,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22057,7 +22078,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22070,7 +22091,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22083,7 +22104,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22096,7 +22117,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22109,7 +22130,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22122,7 +22143,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22135,7 +22156,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22148,7 +22169,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22161,7 +22182,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22174,7 +22195,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22187,7 +22208,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22200,7 +22221,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22213,7 +22234,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22226,7 +22247,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22239,7 +22260,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22252,7 +22273,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22265,7 +22286,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22278,7 +22299,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22291,7 +22312,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22304,7 +22325,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22317,7 +22338,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22330,7 +22351,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22343,7 +22364,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22356,7 +22377,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22369,7 +22390,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22382,7 +22403,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22395,7 +22416,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22408,7 +22429,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22421,7 +22442,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22434,7 +22455,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22447,7 +22468,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22460,7 +22481,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22473,7 +22494,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22486,7 +22507,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22499,7 +22520,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22512,7 +22533,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22525,7 +22546,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22538,7 +22559,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22551,7 +22572,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22564,7 +22585,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22577,7 +22598,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22590,7 +22611,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22603,7 +22624,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22616,7 +22637,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22629,7 +22650,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22642,7 +22663,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22655,7 +22676,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22668,7 +22689,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22681,7 +22702,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22694,7 +22715,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22707,7 +22728,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22720,7 +22741,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22733,7 +22754,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22746,7 +22767,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22759,7 +22780,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22772,7 +22793,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22785,7 +22806,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22798,7 +22819,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22811,7 +22832,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22824,7 +22845,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22837,7 +22858,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22850,7 +22871,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22863,7 +22884,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22876,7 +22897,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22889,7 +22910,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22902,7 +22923,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22915,7 +22936,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22928,7 +22949,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22941,7 +22962,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22954,7 +22975,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22967,7 +22988,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22980,7 +23001,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -22993,7 +23014,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23006,7 +23027,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23019,7 +23040,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23032,7 +23053,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23045,7 +23066,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23058,7 +23079,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23071,7 +23092,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23084,7 +23105,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23097,7 +23118,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23110,7 +23131,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23123,7 +23144,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23136,7 +23157,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23149,7 +23170,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23162,7 +23183,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23175,7 +23196,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23188,7 +23209,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23201,7 +23222,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23214,7 +23235,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23227,7 +23248,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23240,7 +23261,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23253,7 +23274,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23266,7 +23287,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23279,7 +23300,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23292,7 +23313,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23305,7 +23326,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23318,7 +23339,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23331,7 +23352,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23344,7 +23365,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23357,7 +23378,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23370,7 +23391,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23383,7 +23404,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23396,7 +23417,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23409,7 +23430,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23422,7 +23443,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23435,7 +23456,7 @@
    "kpis": {
     "Sary": true,
     "Sara": true,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23448,7 +23469,7 @@
    "kpis": {
     "Sary": true,
     "Sara": true,
-    "Yexsander": true
+    "Jesmary": false
    }
   },
   {
@@ -23461,7 +23482,7 @@
    "kpis": {
     "Sary": false,
     "Sara": true,
-    "Yexsander": true
+    "Jesmary": false
    }
   },
   {
@@ -23474,7 +23495,7 @@
    "kpis": {
     "Sary": true,
     "Sara": true,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23487,7 +23508,7 @@
    "kpis": {
     "Sary": true,
     "Sara": true,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23500,7 +23521,7 @@
    "kpis": {
     "Sary": true,
     "Sara": true,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23513,7 +23534,7 @@
    "kpis": {
     "Sary": true,
     "Sara": true,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23526,7 +23547,7 @@
    "kpis": {
     "Sary": false,
     "Sara": true,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23537,9 +23558,9 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Sary": true,
     "Sara": true,
-    "Yexsander": false
+    "Jesmary": false
    }
   },
   {
@@ -23552,13 +23573,13 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Yexsander": false
+    "Jesmary": false
    }
   }
  ],
  "setters": [
   "Sary",
   "Sara",
-  "Yexsander"
+  "Jesmary"
  ]
 }
