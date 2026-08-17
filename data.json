@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-17 13:10",
+ "generado": "2026-08-17 13:23",
  "rango": "2026-02-01 a 2026-08-17",
  "setting": [
   {
@@ -2679,8 +2679,8 @@
   {
    "dia": "2026-08-11",
    "inb": 2,
-   "out": 50,
-   "nuevas": 52,
+   "out": 51,
+   "nuevas": 53,
    "total": 106,
    "fups": 72,
    "prop": 0,
@@ -8472,7 +8472,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/pzzvlnhf5EbTgEyUarbv"
   },
   {
-   "nombre": "Heber Hualpa",
+   "nombre": "Heber Canales",
    "setter": "Sara",
    "origen": "propio",
    "prof": "Ingeniero Electrónico y Electricista, trabajo  como especialista senior de comunicaciones en el rubro de infraestructura civil DE edificaciones ",
@@ -14668,7 +14668,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/42iwrZRtZ4MUS9g5LgEe"
   },
   {
-   "nombre": "Heber Hualpa",
+   "nombre": "Heber Canales",
    "fecha": "2026-06-25",
    "estado": "confirmed",
    "resclo": "",
