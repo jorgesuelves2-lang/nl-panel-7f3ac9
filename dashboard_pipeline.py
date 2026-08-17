@@ -90,7 +90,7 @@ try:
             crudo=str(o.get(KF["setter"]) or "")
             nom=re.sub(r"^\s*\d+\s*-\s*","",crudo).strip().lower()
             setter={"sary":"Sary","sara":"Sara","sarisa":"Sara",
-                    "yexsander":"Yexsander","yesxander":"Yexsander"}.get(nom)
+                    "jesmary":"Jesmary"}.get(nom)
             fecha=str(o.get(KF["fecha"]) or s.get("createdAt") or "")[:10]
             if not setter or not re.match(r"\d{4}-\d{2}-\d{2}",fecha): continue
             kpis.append({"dia":fecha,"setter":setter,"_env":str(s.get("createdAt") or ""),
@@ -426,7 +426,7 @@ if len(leads)==0 and sum(x["agendados"] for x in triage)==0:
             leads=prev.get("leads",leads); triage=prev.get("triage",triage)
             closing=prev.get("closing",closing); closing_daily=prev.get("closing_daily",closing_daily)
     except Exception as e: print("guardián: sin data.json previo",e,flush=True)
-SETTERS_ACT=["Sary","Sara","Yexsander"]
+SETTERS_ACT=["Sary","Sara","Jesmary"]
 _kpi_dias=defaultdict(set)
 for _k in kpis: _kpi_dias[_k["dia"]].add(_k["setter"])
 cumplimiento=[]
