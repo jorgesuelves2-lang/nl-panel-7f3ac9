@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-17 14:57",
+ "generado": "2026-08-17 15:53",
  "rango": "2026-02-01 a 2026-08-17",
  "setting": [
   {
@@ -2735,10 +2735,10 @@
   {
    "dia": "2026-08-15",
    "inb": 4,
-   "out": 9,
-   "nuevas": 13,
-   "total": 44,
-   "fups": 34,
+   "out": 15,
+   "nuevas": 19,
+   "total": 60,
+   "fups": 41,
    "prop": 2,
    "link": 2,
    "badlink": 0,
@@ -20825,6 +20825,28 @@
  ],
  "kpis": [
   {
+   "dia": "2026-08-10",
+   "setter": "Sary",
+   "fu": 82,
+   "inb": 1,
+   "out": 58,
+   "prop": 1,
+   "book": 2,
+   "wel": 0,
+   "notas": ""
+  },
+  {
+   "dia": "2026-08-15",
+   "setter": "Sary",
+   "fu": 72,
+   "inb": 2,
+   "out": 46,
+   "prop": 2,
+   "book": -1,
+   "wel": 0,
+   "notas": ""
+  },
+  {
    "dia": "2026-08-16",
    "setter": "Sary",
    "fu": 72,
@@ -23480,7 +23502,7 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Sary": true,
     "Sara": true,
     "Jesmary": false
    }
@@ -23545,7 +23567,7 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Sary": true,
     "Sara": true,
     "Jesmary": false
    }
