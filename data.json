@@ -1,6 +1,6 @@
 {
- "generado": "2026-08-16 23:49",
- "rango": "2026-02-01 a 2026-08-16",
+ "generado": "2026-08-17 02:06",
+ "rango": "2026-02-01 a 2026-08-17",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -2759,6 +2759,20 @@
    "agendas": 0,
    "resp_min": null,
    "nodata": false
+  },
+  {
+   "dia": "2026-08-17",
+   "inb": 1,
+   "out": 0,
+   "nuevas": 1,
+   "total": 2,
+   "fups": 0,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 1,
+   "resp_min": null,
+   "nodata": false
   }
  ],
  "triage": [
@@ -5125,6 +5139,18 @@
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
+  },
+  {
+   "dia": "2026-08-17",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 1,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
   }
  ],
  "leads": [
@@ -6062,18 +6088,18 @@
    "nombre": "Angel Baltazar",
    "setter": "",
    "origen": "propio",
-   "prof": "",
-   "nivel": "",
-   "presup": "",
-   "ingresos": "",
-   "univ": "",
+   "prof": "Anestesiologia ",
+   "nivel": "🔹 A2",
+   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
+   "ingresos": "más de 3.000€",
+   "univ": "San Martin de Porres  Lima",
    "urg": "",
-   "comp": "",
-   "obst": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Hablar  alemán ",
    "canal": "",
    "ig": "",
-   "email": "",
-   "tf": "",
+   "email": "angelbaltazartovar1@gmail.com",
+   "tf": "+51964480715",
    "fagenda": "2026-05-30",
    "closer": "",
    "restri": "",
@@ -6372,18 +6398,18 @@
    "nombre": "Bryam Ureña",
    "setter": "",
    "origen": "propio",
-   "prof": "Enfermero ",
-   "nivel": "🔹 Conocimientos básicos",
-   "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
-   "ingresos": "600€- 1.000€",
-   "univ": "Universidad Católica de Cuenca ",
+   "prof": "",
+   "nivel": "",
+   "presup": "",
+   "ingresos": "",
+   "univ": "",
    "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Tema de papeleo ",
+   "comp": "",
+   "obst": "",
    "canal": "",
    "ig": "",
-   "email": "fabry.mendez71@gmail.com",
-   "tf": "+593981918323",
+   "email": "",
+   "tf": "",
    "fagenda": "2026-05-30",
    "closer": "",
    "restri": "",
@@ -6394,9 +6420,9 @@
    "sclo": null,
    "ticket": "",
    "pagado": "",
-   "objtri": ".",
+   "objtri": "",
    "objclo": "",
-   "infocloser": ".",
+   "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/EWnMZMZ9sPajTXH7RfWs"
   },
   {
@@ -16899,6 +16925,17 @@
    "vendido": 0,
    "facturacion": 0.0,
    "cash": 0.0
+  },
+  {
+   "dia": "2026-08-17",
+   "agendados": 2,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 2,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
   }
  ],
  "gaps": [
@@ -23471,6 +23508,19 @@
    "con_form": 0,
    "sin_form": 0,
    "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Yexsander": false
+   }
+  },
+  {
+   "dia": "2026-08-17",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
     "Sary": false,
