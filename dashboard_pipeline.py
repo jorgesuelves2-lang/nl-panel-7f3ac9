@@ -11,7 +11,9 @@ def env(k):
 TOKEN=env("GHL_TOKEN"); LOC=env("GHL_LOCATION_ID")
 H=["-H",f"Authorization: Bearer {TOKEN}","-H","Version: 2021-04-15","-H","Accept: application/json"]
 H21=["-H",f"Authorization: Bearer {TOKEN}","-H","Version: 2021-07-28","-H","Accept: application/json"]
-TRIAGE_CAL="2EY5mRYqpaAx4qfnsWJM"; START="2026-02-01"  # fecha más antigua que se descarga
+# OJO 18-ago-2026: hay DOS calendarios de triaje ACTIVOS en paralelo (el duplicado 2EY5 domina desde julio,
+# pero 1kHW sigue recibiendo citas — ej. triaje de Olga Betancur 17-ago). Hay que leer los dos SIEMPRE.
+TRIAGE_CALS=["2EY5mRYqpaAx4qfnsWJM","1kHWabxSmIJSHTfdr7s5"]; START="2026-02-01"  # fecha más antigua que se descarga
 HERE=os.path.dirname(os.path.abspath(__file__))
 OUTDIR=os.environ.get("OUTDIR","/Users/jorgesuelves/Desktop/Claude Code/marcas/natscholibre/dashboard")
 os.makedirs(OUTDIR,exist_ok=True)
@@ -128,12 +130,14 @@ while True:
 print("conversaciones setting:",len(convs),flush=True)
 
 # 1b) triaje + closing (calendario) PRIMERO, para que no le afecte el rate-limit de los mensajes
-ev=cg(f"https://services.leadconnectorhq.com/calendars/events?locationId={LOC}&calendarId={TRIAGE_CAL}&startTime={cutoff}&endTime={now}",headers=H21).get("events",[])
+ev=[]
+for _tc in TRIAGE_CALS:
+    ev+=cg(f"https://services.leadconnectorhq.com/calendars/events?locationId={LOC}&calendarId={_tc}&startTime={cutoff}&endTime={now}",headers=H21).get("events",[])
 t_status=defaultdict(Counter)
 for e in ev: t_status[str(e.get("startTime"))[:10]][e.get("appointmentStatus","?")]+=1
 # contactos que pasaron a CLOSING (calendarios de Planificación Estratégica)
 endf=now+30*86400*1000; closing_contacts=set()
-for cal in ["VRaGr4KGSZNiuDamyV4q","ODbNZytVDUxJxry4QzmX"]:
+for cal in ["VRaGr4KGSZNiuDamyV4q","998ij1w7jUrmPqJZu43V"]:
     for e in cg(f"https://services.leadconnectorhq.com/calendars/events?locationId={LOC}&calendarId={cal}&startTime={cutoff}&endTime={endf}",headers=H21).get("events",[]):
         if e.get("contactId"): closing_contacts.add(e["contactId"])
 t_cual=defaultdict(int)
@@ -183,9 +187,10 @@ print("eventos triaje:",len(ev),"| contactos con closing:",len(closing_contacts)
 LJcut=cutoff
 def evs(cal,s,e): return cg(f"https://services.leadconnectorhq.com/calendars/events?locationId={LOC}&calendarId={cal}&startTime={s}&endTime={e}",headers=H21).get("events",[])
 cids={}
-for e in evs(TRIAGE_CAL,LJcut,now):
-    if e.get("contactId"): cids.setdefault(e["contactId"],{})["tri"]=e
-for cal in ["VRaGr4KGSZNiuDamyV4q","ODbNZytVDUxJxry4QzmX"]:
+for _tc in TRIAGE_CALS:
+    for e in evs(_tc,LJcut,now):
+        if e.get("contactId"): cids.setdefault(e["contactId"],{})["tri"]=e
+for cal in ["VRaGr4KGSZNiuDamyV4q","998ij1w7jUrmPqJZu43V"]:
     for e in evs(cal,LJcut,endf):
         if e.get("contactId"): cids.setdefault(e["contactId"],{})["clo"]=e
 def ev_name(info):
@@ -255,10 +260,13 @@ for cid,info in cids.items():
     nombre=c.get("contactName") or ((c.get("firstName") or "")+" "+(c.get("lastName") or "")).strip() or ev_name(info) or "(sin nombre)"
     ficha=f"https://app.funnelup.io/v2/location/{LOC}/contacts/detail/{cid}"
     utm=((c.get("lastAttributionSource") or {}).get("utmSource") or (c.get("attributionSource") or {}).get("utmSource") or "").strip().lower()
-    if utm in ("sara","sary"):
+    if utm in ("sara","sary","jesmary"):
         setter=utm.capitalize()  # utm_source del link de agenda = fuente principal y fiable
     else:
-        setter="Sara" if "Sara" in tags else ("Sary" if "Sary" in tags else (cm.get(F["setter"]) or ""))
+        _tl=[str(t).lower() for t in tags]
+        setter=("Sara" if ("sara" in _tl or "setter: sara" in _tl) else
+                ("Sary" if ("sary" in _tl or "setter: sary" in _tl) else
+                 ("Jesmary" if ("jesmary" in _tl or "setter: jesmary" in _tl) else (cm.get(F["setter"]) or ""))))
     fagenda=str((info.get("tri") or {}).get("startTime") or (info.get("clo") or {}).get("startTime") or "")[:10]
     # solo leads REALES en la tabla (fichas fantasma/duplicadas sin nombre ni datos => fuera)
     es_real=(nombre and nombre!="(sin nombre)") or c.get("email") or c.get("phone") or cm.get(F["prof"])
