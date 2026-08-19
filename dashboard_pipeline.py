@@ -158,28 +158,41 @@ def _nrm(s):
     s=re.sub(r'\b(ing|dr|dra|md|mg|med|odont|e-md|arg)\b','',s); return re.sub(r'[^a-z ]','',s).split()
 def _nk(s): return " ".join(_nrm(s)[:2])
 FATHOM_TRI=set()
-try:
-    _fk=os.environ.get("FATHOM_API_KEY") or re.search(r'FATHOM_API_KEY=(.+)',open(os.path.expanduser("~/.natscholibre_secrets/fathom.env")).read()).group(1).strip()
-    _ca=_sdt.strftime('%Y-%m-%dT%H:%M:%SZ'); _cur=None; _f=0
-    while True:
-        _u=f'https://api.fathom.ai/external/v1/meetings?include_transcript=false&limit=50&created_after={_ca}'+(f'&cursor={_cur}' if _cur else '')
-        _d=cg(_u,headers=["-H",f"X-Api-Key: {_fk}"])
-        if "items" not in _d:
-            _f+=1
-            if _f>6: print("AVISO Fathom: mapa parcial",flush=True); break
-            time.sleep(3); continue
-        for _m in _d["items"]:
-            _t=_m.get("title") or ""
-            if not re.search(r'triage|triaje|introducci|validaci',_t,re.I): continue
-            if re.search(r'closing|planificaci|estrateg',_t,re.I): continue
-            _KW=re.compile(r'reuni|introducci|validaci|triage|triaje|llamada|dr\.?',re.I)
-            _sg=[s.strip() for s in re.split(r'\s*-\s*',_t) if s.strip()]
-            _ld=next((s for s in _sg if not _KW.search(s)),"")
-            if _ld: FATHOM_TRI.add(_nk(_ld))
-        _cur=_d.get("next_cursor")
-        if not _cur: break
-except Exception as _e:
-    print("AVISO Fathom no disponible:",str(_e)[:80],flush=True)
+def _fkeys():
+    # TODAS las cuentas de Fathom (Natalie/David + Christian...). 19-ago-2026: antes solo se leia
+    # la principal, asi que los triajes de Christian no contaban como "asistido" en el panel.
+    ks=[v.strip() for k,v in os.environ.items() if k.startswith("FATHOM_API_KEY") and (v or "").strip()]
+    _p=os.path.expanduser("~/.natscholibre_secrets/fathom.env")
+    if os.path.exists(_p):
+        for _l in open(_p):
+            _m=re.match(r'(FATHOM_API_KEY[A-Za-z0-9_]*)\s*=\s*(\S.*)',_l.strip())
+            if _m: ks.append(_m.group(2).strip())
+    seen=set(); out=[]
+    for k in ks:
+        if k and k not in seen: seen.add(k); out.append(k)
+    return out
+for _fk in _fkeys():
+    try:
+        _ca=_sdt.strftime('%Y-%m-%dT%H:%M:%SZ'); _cur=None; _f=0
+        while True:
+            _u=f'https://api.fathom.ai/external/v1/meetings?include_transcript=false&limit=50&created_after={_ca}'+(f'&cursor={_cur}' if _cur else '')
+            _d=cg(_u,headers=["-H",f"X-Api-Key: {_fk}"])
+            if "items" not in _d:
+                _f+=1
+                if _f>6: print("AVISO Fathom: mapa parcial",flush=True); break
+                time.sleep(3); continue
+            for _m in _d["items"]:
+                _t=_m.get("title") or ""
+                if not re.search(r'triage|triaje|introducci|validaci',_t,re.I): continue
+                if re.search(r'closing|planificaci|estrateg',_t,re.I): continue
+                _KW=re.compile(r'reuni|introducci|validaci|triage|triaje|llamada|dr\.?',re.I)
+                _sg=[s.strip() for s in re.split(r'\s*-\s*',_t) if s.strip()]
+                _ld=next((s for s in _sg if not _KW.search(s)),"")
+                if _ld: FATHOM_TRI.add(_nk(_ld))
+            _cur=_d.get("next_cursor")
+            if not _cur: break
+    except Exception as _e:
+        print("AVISO Fathom (una cuenta no disponible):",str(_e)[:80],flush=True)
 print("triajes con grabación en Fathom:",len(FATHOM_TRI),flush=True)
 print("eventos triaje:",len(ev),"| contactos con closing:",len(closing_contacts),flush=True)
 
