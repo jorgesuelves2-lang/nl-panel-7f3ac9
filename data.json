@@ -1,6 +1,6 @@
 {
- "generado": "2026-08-22 23:51",
- "rango": "2026-02-01 a 2026-08-22",
+ "generado": "2026-08-23 02:12",
+ "rango": "2026-02-01 a 2026-08-23",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -2843,6 +2843,20 @@
    "agendas": 1,
    "resp_min": null,
    "nodata": false
+  },
+  {
+   "dia": "2026-08-23",
+   "inb": 0,
+   "out": 5,
+   "nuevas": 5,
+   "total": 7,
+   "fups": 1,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 0,
+   "resp_min": null,
+   "nodata": false
   }
  ],
  "triage": [
@@ -5278,6 +5292,18 @@
    "noconfirma": 0,
    "cancelled": 0,
    "confirmed": 1,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-08-23",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 0,
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
@@ -18303,6 +18329,17 @@
    "vendido": 0,
    "facturacion": 0.0,
    "cash": 0.0
+  },
+  {
+   "dia": "2026-08-23",
+   "agendados": 2,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 2,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
   }
  ],
  "gaps": [
@@ -22386,6 +22423,17 @@
  "kpis": [
   {
    "dia": "2026-08-21",
+   "setter": "Sary",
+   "fu": 53,
+   "inb": 1,
+   "out": 44,
+   "prop": 2,
+   "book": 1,
+   "wel": 0,
+   "notas": ""
+  },
+  {
+   "dia": "2026-08-21",
    "setter": "Jesmary",
    "fu": 30,
    "inb": 0,
@@ -25337,7 +25385,7 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Sary": true,
     "Sara": false,
     "Jesmary": true
    }
@@ -25348,6 +25396,19 @@
    "con_form": 0,
    "sin_form": 1,
    "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Jesmary": false
+   }
+  },
+  {
+   "dia": "2026-08-23",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
     "Sary": false,
