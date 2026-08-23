@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-23 09:55",
+ "generado": "2026-08-23 10:54",
  "rango": "2026-02-01 a 2026-08-23",
  "setting": [
   {
@@ -2847,10 +2847,10 @@
   {
    "dia": "2026-08-23",
    "inb": 1,
-   "out": 8,
-   "nuevas": 9,
-   "total": 33,
-   "fups": 19,
+   "out": 56,
+   "nuevas": 57,
+   "total": 74,
+   "fups": 22,
    "prop": 0,
    "link": 0,
    "badlink": 0,
