@@ -205,7 +205,32 @@ for _tc in TRIAGE_CALS:
         if e.get("contactId"): cids.setdefault(e["contactId"],{})["tri"]=e
 for cal in ["VRaGr4KGSZNiuDamyV4q","998ij1w7jUrmPqJZu43V"]:
     for e in evs(cal,LJcut,endf):
-        if e.get("contactId"): cids.setdefault(e["contactId"],{})["clo"]=e
+        if e.get("contactId"):
+            _i=cids.setdefault(e["contactId"],{})
+            _i["clo"]=e                              # la ultima (compatibilidad con lo que ya existia)
+            _i.setdefault("clos",[]).append(e)       # 23-ago-2026: TODAS las citas de closing del lead,
+            # para que la pestana de closing pueda listar cada llamada de cada semana, no solo la ultima.
+# --- ETAPA ACTUAL DEL PIPELINE por contacto (23-ago-2026) ---
+# Se baja TODO el pipeline de una vez (paginado) en lugar de preguntar oportunidad por oportunidad:
+# son ~250 llamadas menos y esta cuenta ya sufre rate-limit.
+ETAPA_DE={}
+try:
+    _stages={}
+    for _p in cg(f"https://services.leadconnectorhq.com/opportunities/pipelines?locationId={LOC}",headers=H21).get("pipelines",[]):
+        for _s in _p.get("stages",[]): _stages[_s["id"]]=_s.get("name")
+    _url=f"https://services.leadconnectorhq.com/opportunities/search?location_id={LOC}&limit=100"
+    _n=0
+    while _url and _n<15:
+        _d=cg(_url,headers=H21)
+        for _o in _d.get("opportunities",[]):
+            _c=(_o.get("contact") or {}).get("id")
+            if _c: ETAPA_DE[_c]=_stages.get(_o.get("pipelineStageId"),"")
+        _url=((_d.get("meta") or {}).get("nextPageUrl")) or None
+        _n+=1
+    print("etapas de pipeline mapeadas:",len(ETAPA_DE),flush=True)
+except Exception as _e:
+    print("AVISO: no se pudieron mapear etapas:",str(_e)[:70],flush=True)
+
 def ev_name(info):
     # el titulo del evento del calendario trae "Nombre Lead - Reunion ..."; nombre fiable sin depender de la ficha
     for k in ("tri","clo"):
@@ -232,7 +257,8 @@ F={"prof":"I3MgyLftSnsPLPShebZH","setter":"lcFBOFN6VjZhvTgMFvuf","sf":"m7Sypf2v0
    "urg":"fFb774tASOa5l3sjN6lV","comp":"cA3DiOdTpyG5dJi8hMb3","ig":"mA0HbCszoRU4syOjXAHQ",
    "canal":"eSHxDJMExlEXqP5tiBGn","closer":"X1bI7LUkc6wxJGuvMHrB","infocloser":"N4HJDy9VFhKhGCpwJoAk",
    "infolead":"FoBSAwhN7pZ9bRVk9h3o","objtri":"3adftx5fU0SS60Z9HfL7","objclo":"irbogxFInHAcRdPZuEPM",
-   "estado":"3se8LQQqUMP1wp6CwXSZ","linktri":"EC5k5nHjjV9E5Vj6kkgp","linkclo":"EZqcLopGWnk2nUfMR5Yz"}
+   "estado":"3se8LQQqUMP1wp6CwXSZ","linktri":"EC5k5nHjjV9E5Vj6kkgp","linkclo":"EZqcLopGWnk2nUfMR5Yz",
+   "motivo":"hTpq3AySxQLimEIlMKGp"}   # Motivo principal (no cierre)
 def _num(v):
     try: return float(re.sub(r'[^0-9.]','',str(v))) if v not in (None,'') else 0.0
     except: return 0.0
@@ -297,11 +323,18 @@ for cid,info in cids.items():
         "ticket":cm.get(F["ticket"]) or "","pagado":cm.get(F["pagado"]) or "",
         "objtri":cm.get(F["objtri"]) or "","objclo":cm.get(F["objclo"]) or "",
         "infocloser":cm.get(F["infocloser"]) or "","ficha":ficha})
-    if "clo" in info:
-        e=info["clo"]
-        closing.append({"nombre":nombre,"fecha":str(e.get("startTime"))[:10],"estado":e.get("appointmentStatus",""),
+    # UNA FILA POR CITA DE CLOSING (no una por lead): asi al filtrar una semana se ven todas las
+    # llamadas que habia esa semana y que paso con cada una.
+    for e in (info.get("clos") or ([info["clo"]] if "clo" in info else [])):
+        closing.append({"nombre":nombre,"fecha":str(e.get("startTime"))[:10],
+            "hora":str(e.get("startTime"))[11:16],"estado":e.get("appointmentStatus",""),
             "resclo":cm.get(F["rc"]) or "","sc":cm.get(F["sc"]),"cash":cm.get(F["cash"]) or "",
-            "ticket":cm.get(F["ticket"]) or "","pagado":cm.get(F["pagado"]) or "","ficha":ficha})
+            "ticket":cm.get(F["ticket"]) or "","pagado":cm.get(F["pagado"]) or "",
+            # contexto para saber QUE PASO con cada uno sin salir del panel:
+            "setter":setter,"closer":cm.get(F["closer"]) or "","prof":cm.get(F["prof"]) or "",
+            "estadoclo":cm.get(F["estado"]) or "","motivo":cm.get(F["motivo"]) or "",
+            "objclo":(cm.get(F["objclo"]) or "")[:400],"etapa":ETAPA_DE.get(cid,""),
+            "tel":c.get("phone") or "","email":c.get("email") or "","ficha":ficha})
 leads.sort(key=lambda r:(r["nombre"] or "").lower())
 closing.sort(key=lambda r:r["fecha"],reverse=True)
 # serie diaria de closing (alineada con days[])
