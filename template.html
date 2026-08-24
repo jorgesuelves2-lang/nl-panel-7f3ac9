@@ -808,8 +808,9 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
        var s=l.setter||'(sin asignar)';
        reales[s]=(reales[s]||0)+1;
      });
+     var Kr2=(DATA.kpis||[]).filter(function(r){ return r.dia>=from && r.dia<=to; });
      var filas=setters2.map(function(s){
-       var kr=Krng.filter(function(r){return r.setter===s;});
+       var kr=Kr2.filter(function(r){return r.setter===s;});
        var conv=kr.reduce(function(a,r){return a+(r.out||0)+(r.inb||0);},0);
        var pr=kr.reduce(function(a,r){return a+(r.prop||0);},0);
        var bk=kr.reduce(function(a,r){return a+(r.book||0);},0);
