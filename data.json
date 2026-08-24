@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-24 19:16",
+ "generado": "2026-08-24 20:03",
  "rango": "2026-02-01 a 2026-08-24",
  "setting": [
   {
@@ -2863,8 +2863,8 @@
    "inb": 5,
    "out": 156,
    "nuevas": 161,
-   "total": 251,
-   "fups": 108,
+   "total": 252,
+   "fups": 115,
    "prop": 2,
    "link": 2,
    "badlink": 0,
@@ -12346,14 +12346,14 @@
    "nombre": "Martin Alejandro Burgos",
    "setter": "Sary",
    "origen": "propio",
-   "prof": "Médico general",
+   "prof": "Medico",
    "nivel": "🔹 A1",
-   "presup": "Cuento con entre 5.000€ a 10.000€ para mi proceso",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "más de 3.000€",
-   "univ": "Fundación Barceló (Argentina)",
+   "univ": "Fundación Barceló. Argentina",
    "urg": "",
    "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "Idioma es un impedimento.. Pero creo que conviviendo con personas y estudiando a la vez va a ser más fácil.",
+   "obst": "Idioma\nInformación en el proceso todo",
    "canal": "",
    "ig": "dr.martinburgos",
    "email": "marburgos_@hotmail.com",
@@ -15896,7 +15896,7 @@
    "pagado": "",
    "setter": "Sary",
    "closer": "",
-   "prof": "Médico general",
+   "prof": "Medico",
    "estadoclo": "",
    "motivo": "",
    "objclo": "",
@@ -15906,13 +15906,13 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/qttvMfSasa9XiEqGFvRR",
    "ult": "2026-08-24",
    "ultdir": "outbound",
-   "ulttxt": "https://natscholibre.com/agenda-medico?contact_id=qttvMfSasa9XiEqGFvRR&utm_source=sary",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ulttxt": "Hola Martin Alejandro Burgos,\n\nTe dejo aquí los detalles de la reunión.\nMartin Alejandro Burgos - Reunión de Introducción (Validación)\n\n\nFecha y Ho...",
+   "ulttipo": "TYPE_EMAIL",
    "infoclo": "PERFIL: Martin Alejandro Burgos, 40 anos, argentino, residente en Brasil (zona de colonia alemana) hace 10 anos. Medico general con 10 anos de experiencia. Titulo de Fundacion Barcelo (Argentina) ya homologado en Espana. Pareja enfermera alineada con el proyecto, hijastro conviviente.\n\nOBJETIVO: Ejercer medicina en Alemania, hacer especialidad medica alli (no pudo conseguirla en Brasil por razones politicas). Plazo: inmediato si se dan las condiciones. Nivel de aleman actual: A1. Objetivo de idioma: B2 + FSP.\n\nDOLORES: Incapacidad de hacer especialidad en Brasil tras 4 anos de intentos frustrados por politica y corrupcion. Sensacion de techo profesional y economico en Latinoamerica. Quiere acceso a tecnologia medica avanzada y mejores condiciones laborales.\n\nINVERSION: Ingresos declarados mas de 3.000 EUR/mes. Presupuesto declarado en formulario: 5.000-10.000 EUR. En triaje no mostro resistencia al precio de 5.000 USD mencionado por el closer. Capacidad economica solida.\n\nRUTA: Titulo argentino ya homologado en Espana (via UE): ruta directa a Alemania sin necesidad de revalidacion desde cero. Necesita B2 + FSP para ejercer. Pareja enfermera solo necesita B2 para trabajar (sin FSP). Viabilidad alta; el cuello de botella es el idioma desde A1.\n\nOBJECIONES: Ninguna objecion dura detectada. Duda menor sobre como funcionan las clases (presenciales/grabadas, horarios). Le sorprendio positivamente la velocidad de insercion laboral (20-45 dias tras pasar FSP). El closer ya solto rang",
    "restri": "Cualifica",
    "ss": 72,
    "stri": 78,
-   "presup": "Cuento con entre 5.000€ a 10.000€ para mi proceso",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "más de 3.000€",
    "nivel": "🔹 A1",
    "urg": ""
@@ -23484,13 +23484,13 @@
   },
   {
    "dia": "2026-08-24",
-   "in": 1787587364,
-   "rep": 1787597476
+   "in": 1787592176,
+   "rep": 1787592842
   },
   {
    "dia": "2026-08-24",
-   "in": 1787592176,
-   "rep": 1787592842
+   "in": 1787587364,
+   "rep": 1787597476
   },
   {
    "dia": "2026-08-24",
@@ -26643,9 +26643,9 @@
    "infotri": "",
    "restri_ia": "",
    "ult": "2026-08-24",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Tanya!\n\nSolo quería recordarte que tu llamada es en 30 minutos\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en ...",
-   "ulttipo": "TYPE_EMAIL",
+   "ultdir": "inbound",
+   "ulttxt": "ya estoy conectada",
+   "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
   {
@@ -26745,14 +26745,14 @@
    "ss": 72,
    "setter": "Sary",
    "triager": "",
-   "prof": "Médico general",
+   "prof": "Medico",
    "motivo": "",
    "objtri": "",
    "etapa": "🔸Closing Agendado",
    "tel": "+55996871364",
    "email": "marburgos_@hotmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/qttvMfSasa9XiEqGFvRR",
-   "presup": "Cuento con entre 5.000€ a 10.000€ para mi proceso",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "más de 3.000€",
    "nivel": "🔹 A1",
    "urg": "",
@@ -26760,8 +26760,8 @@
    "restri_ia": "PERFIL: Martin Alejandro Burgos, 40 anos, argentino residente en Brasil (zona de colonia alemana) hace 10 anos. Medico general con 10 anos de experiencia. Titulo argentino (Fundacion Barcelo) ya homologado en Espana. Actualmente sin especialidad, ha intentado conseguirla en Brasil durante 4 anos sin exito por razones politicas/competitivas. Pareja enfermera (ya estudiando aleman) e hijastro conviviente.\n\nDINERO: Declaro en el triaje que estaria dentro si el programa le encaja ('yo estoy adentro, no?'). En el formulario indica presupuesto de 5.000-10.000 EUR e ingresos de mas de 3.000 EUR/mes. El closer menciono el paquete de 5.000 USD y Martin no mostro resistencia. Capacidad economica parece solida.\n\nDECISION: Decision tomada en pareja; la esposa ya esta estudiando aleman y ambos tienen claro el destino. Martin es el decisor principal pero la decision es familiar y coordinada. No hay objeciones de terceros.\n\nPLAZO/URGENCIA: Dice que si consiguiera trabajo la semana siguiente se iria. Ha estado preparando documentos personales durante un ano. Titulo ya homologado en Espana: puede avanzar de inmediato. Urgencia real y alta; el unico freno es el nivel de aleman (actualmente A1, neces",
    "ult": "2026-08-24",
    "ultdir": "outbound",
-   "ulttxt": "https://natscholibre.com/agenda-medico?contact_id=qttvMfSasa9XiEqGFvRR&utm_source=sary",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ulttxt": "Hola Martin Alejandro Burgos,\n\nTe dejo aquí los detalles de la reunión.\nMartin Alejandro Burgos - Reunión de Introducción (Validación)\n\n\nFecha y Ho...",
+   "ulttipo": "TYPE_EMAIL",
    "tiene_closing": true
   },
   {
@@ -27079,7 +27079,7 @@
    "restri_ia": "",
    "ult": "2026-08-24",
    "ultdir": "inbound",
-   "ulttxt": "Todo bien, aunque bueno, sentimentalmente igual \nSigo pensando lo de apuntarme a aprender alemán",
+   "ulttxt": "Quiero pensarlo un poco todavía, es que no tengo ese dinero ahora mismo",
    "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
