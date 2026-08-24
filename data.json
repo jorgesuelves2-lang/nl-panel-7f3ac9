@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-24 20:03",
+ "generado": "2026-08-24 21:07",
  "rango": "2026-02-01 a 2026-08-24",
  "setting": [
   {
@@ -2863,8 +2863,8 @@
    "inb": 5,
    "out": 156,
    "nuevas": 161,
-   "total": 252,
-   "fups": 115,
+   "total": 259,
+   "fups": 119,
    "prop": 2,
    "link": 2,
    "badlink": 0,
@@ -26644,7 +26644,7 @@
    "restri_ia": "",
    "ult": "2026-08-24",
    "ultdir": "inbound",
-   "ulttxt": "ya estoy conectada",
+   "ulttxt": "Christian: Urología ó Traumatología\nTanya: cirugía pediatrica",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
@@ -27078,8 +27078,8 @@
    "infotri": "",
    "restri_ia": "",
    "ult": "2026-08-24",
-   "ultdir": "inbound",
-   "ulttxt": "Quiero pensarlo un poco todavía, es que no tengo ese dinero ahora mismo",
+   "ultdir": "outbound",
+   "ulttxt": "También tenemos opciones de financiamiento bella me avisas y te comentamos la opción",
    "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
