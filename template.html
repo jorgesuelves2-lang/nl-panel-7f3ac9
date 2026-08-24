@@ -163,8 +163,10 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <div class="panel"><h3>Facturación y cash collected por día (€)</h3>
       <div class="legend"><span><i style="background:var(--teal)"></i>Facturación</span><span><i style="background:var(--blue)"></i>Cash collected</span></div>
       <div class="chartbox"><canvas id="c_fact"></canvas></div></div>
-    <div class="panel"><h3>Llamadas de closing (desde febrero)</h3><table id="c_table"></table></div>
-    <div class="panel" style="border-left:3px solid var(--amber);border-radius:0"><div style="font-size:13px;color:var(--mut)"><b style="color:var(--tx)">Faltan datos:</b> # ventas, cash collected, ingresos y "resultado del closing" no se capturan aún de forma sistemática. Para llenar esta pestaña hace falta el formulario de cierre (que rellena Natalie) + el workflow WF07.</div></div>
+    <div class="panel"><h3>Llamadas de closing del periodo seleccionado</h3>
+      <div class="sub" id="c_table_sub" style="margin-bottom:10px">Una fila por cada llamada de closing que había en el rango de fechas de arriba, con qué pasó con cada lead. Cambia el rango para ver otra semana.</div>
+      <table id="c_table"></table></div>
+    <div class="panel" style="border-left:3px solid var(--amber);border-radius:0"><div style="font-size:13px;color:var(--mut)"><b style="color:var(--tx)">Cómo leer esto:</b> las filas marcadas <b style="color:var(--red)">SIN REGISTRAR</b> son llamadas cuya fecha ya pasó y nadie anotó qué ocurrió. Se rellenan con el <b style="color:var(--tx)">formulario post-closing</b> o editando el resultado en la ficha del lead.</div></div>
   </section>
 
   <section id="global" class="hide">
@@ -386,6 +388,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var cAg=sum(CDf,'agendados'),cSh=sum(CDf,'showed'),cVe=sum(CDf,'vendido'),cFa=sum(CDf,'facturacion'),cCa=sum(CDf,'cash');
    document.getElementById('c_cards').innerHTML=
      card('Closings',cAg,'media '+avg(CDf,'agendados')+'/día')+card('Asistió',cSh,pct(cSh,cAg)+' de closings')+card('Vendidos',cVe,pct(cVe,cSh)+' de asistidos')+(window.TEAM?'':card('Facturación','€'+Math.round(cFa).toLocaleString('es-ES'))+card('Cash collected','€'+Math.round(cCa).toLocaleString('es-ES')));
+   renderClosingTabla(from,to);
    charts.c1=new Chart(document.getElementById('c_estado'),{type:'bar',data:{labels:labels,datasets:[
      {label:'Asistió',data:CDf.map(function(r){return r.showed;}),backgroundColor:'#1D9E75'},
      {label:'Confirmado',data:CDf.map(function(r){return r.confirmed;}),backgroundColor:'#378ADD'},
@@ -409,13 +412,58 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  var SECTIONS=['setting','triage','closing','global','leads','clientes','cash','antonie','cumpl'];
  document.querySelectorAll('.tab[data-t]').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');SECTIONS.forEach(function(s){document.getElementById(s).classList.toggle('hide',s!==b.dataset.t);});};});
  function num(v){return parseFloat(String(v||'').replace(/[^0-9.]/g,''))||0;}
+ // ---- Tabla de closings del periodo: una fila por llamada agendada, con que paso con cada lead ----
+ function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+ function renderClosingTabla(from,to){
+   var CL=(DATA.closing||[]).filter(function(r){return r.fecha>=from&&r.fecha<=to;});
+   CL.sort(function(a,b){return (a.fecha+(a.hora||'')).localeCompare(b.fecha+(b.hora||''));});
+   var hoy=new Date().toISOString().slice(0,10);
+   // Que paso: primero lo que diga el resultado del closing; si no, el estado de la cita; y si la
+   // cita ya paso y nadie marco nada, se dice explicitamente en vez de dejarlo en blanco.
+   function queP(r){
+     var res=(r.resclo||'').trim();
+     if(res) return {t:res,c:(res==='Vendido'?'var(--teal)':(res==='Seguimiento'?'var(--amber)':'var(--red)'))};
+     var st=(r.estado||'').trim();
+     if(st==='showed') return {t:'Asistió · sin resultado',c:'var(--amber)'};
+     if(st==='noshow') return {t:'No se presentó',c:'var(--red)'};
+     if(st==='cancelled') return {t:'Cancelada',c:'var(--red)'};
+     if(r.fecha>hoy) return {t:'Pendiente (futura)',c:'var(--blue)'};
+     return {t:'SIN REGISTRAR',c:'var(--red)'};
+   }
+   var sinReg=CL.filter(function(r){return queP(r).t==='SIN REGISTRAR';}).length;
+   var vend=CL.filter(function(r){return (r.resclo||'')==='Vendido';}).length;
+   document.getElementById('c_table_sub').innerHTML=
+     '<b>'+CL.length+'</b> llamadas de closing entre <b>'+from+'</b> y <b>'+to+'</b> · '+
+     '<span style="color:var(--teal)">'+vend+' vendidas</span>'+
+     (sinReg?' · <span style="color:var(--red)"><b>'+sinReg+' sin registrar</b> (la cita pasó y nadie anotó qué ocurrió)</span>':'')+
+     '. Cambia el rango de fechas de arriba para ver otra semana.';
+   var cols=['Fecha','Hora','Lead','Profesión','Closer','Setter','¿Qué pasó?','Motivo','Etapa actual','Ticket','Pagado','Ficha'];
+   var th='<thead><tr>'+cols.map(function(c){return '<th>'+c+'</th>';}).join('')+'</tr></thead>';
+   var body=CL.map(function(r){
+     var q=queP(r);
+     var money=window.TEAM?'':('<td>'+esc(r.ticket||'—')+'</td><td>'+esc(r.pagado||r.cash||'—')+'</td>');
+     return '<tr>'
+      +'<td>'+esc((r.fecha||'').slice(5))+'</td>'
+      +'<td>'+esc(r.hora||'—')+'</td>'
+      +'<td><b>'+esc(r.nombre)+'</b></td>'
+      +'<td>'+esc((r.prof||'—').slice(0,28))+'</td>'
+      +'<td>'+esc(r.closer||'—')+'</td>'
+      +'<td>'+esc(r.setter||'—')+'</td>'
+      +'<td style="color:'+q.c+';font-weight:600">'+esc(q.t)+'</td>'
+      +'<td>'+esc(r.motivo||'—')+'</td>'
+      +'<td>'+esc(r.etapa||'—')+'</td>'
+      +money
+      +'<td><a href="'+esc(r.ficha)+'" target="_blank">abrir</a></td>'
+      +'</tr>'
+      +(r.objclo?'<tr><td></td><td colspan="'+(cols.length-1)+'" style="color:var(--mut);font-size:12px;padding-top:0">Objeciones: '+esc(r.objclo)+'</td></tr>':'');
+   }).join('');
+   if(window.TEAM){th=th.replace('<th>Ticket</th><th>Pagado</th>','');}
+   document.getElementById('c_table').innerHTML=th+'<tbody>'+(body||'<tr><td colspan="12">No había ninguna llamada de closing agendada en este rango de fechas.</td></tr>')+'</tbody>';
+ }
  function renderStatic(){
    var CL=DATA.closing||[],LD=DATA.leads||[];
    // c_cards se renderiza en render() (filtrado por fecha); aquí solo la tabla-log de 30 días
    var _ignore=card('Cualifica→closing','ver Triaje','');
-   var cth='<thead><tr><th>Nombre</th><th>Fecha</th><th>Estado</th><th>Resultado</th><th>S.Cl</th><th>Cash</th><th>Ficha</th></tr></thead>';
-   var cb=CL.map(function(r){return '<tr><td>'+r.nombre+'</td><td>'+(r.fecha||'').slice(5)+'</td><td>'+(r.estado||'')+'</td><td>'+(r.resclo||'—')+'</td><td>'+(r.sc!=null?r.sc:'—')+'</td><td>'+(r.cash||'—')+'</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>';}).join('');
-   document.getElementById('c_table').innerHTML=cth+'<tbody>'+(cb||'<tr><td>Sin closings</td></tr>')+'</tbody>';
    renderLeads(); initClientes(); initAntonie(); initKpis(); initTriSetter(); renderCumpl();
  }
  // ---- Pestaña Clientes: leads que llegaron a closing (tienen closer o resultado de closing) ----
