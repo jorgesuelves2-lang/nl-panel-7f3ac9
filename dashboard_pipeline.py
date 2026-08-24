@@ -18,12 +18,27 @@ HERE=os.path.dirname(os.path.abspath(__file__))
 OUTDIR=os.environ.get("OUTDIR","/Users/jorgesuelves/Desktop/Claude Code/marcas/natscholibre/dashboard")
 os.makedirs(OUTDIR,exist_ok=True)
 def cg(url,params=[],headers=H):
+    # 24-ago-2026: GHL contesta al rate-limit con un JSON PERFECTAMENTE VALIDO (429 / "Too Many Requests").
+    # Antes eso se daba por bueno, .get("events") devolvia [] y la seccion se publicaba VACIA sin avisar
+    # (asi se borro la pestana de closing el 24-ago a las 13:11). Ahora se detecta y se reintenta.
     for a in range(5):
         r=subprocess.run(["curl","-s","-m","25","-G",url,*sum([["--data-urlencode",p] for p in params],[]),*headers],capture_output=True,text=True).stdout
         if r:
-            try: return json.loads(r)
-            except: pass
+            try: d=json.loads(r)
+            except Exception: d=None
+            if isinstance(d,dict):
+                _sc=d.get("statusCode") or d.get("status")
+                _msg=str(d.get("message") or d.get("error") or "")
+                _malo=False
+                try: _malo=bool(_sc) and int(_sc)>=400
+                except Exception: _malo=False
+                if _malo or "too many" in _msg.lower() or "rate limit" in _msg.lower():
+                    time.sleep(2.0*(a+1)); continue
+                return d
+            elif d is not None:
+                return d
         time.sleep(0.4*(a+1))
+    print("AVISO GHL: sin respuesta util tras 5 intentos ->",url[:90],flush=True)
     return {}
 def dms(ms): return datetime.datetime.utcfromtimestamp(ms/1000).strftime('%Y-%m-%d') if ms else None
 now=int(time.time()*1000)
@@ -129,16 +144,25 @@ while True:
     sa=cs[-1].get("lastMessageDate")
 print("conversaciones setting:",len(convs),flush=True)
 
+def evs(cal,s,e):
+    # Un 0 aqui no es "no hay citas", casi siempre es estrangulamiento: reintenta antes de rendirse.
+    for _a in range(3):
+        _ev=cg(f"https://services.leadconnectorhq.com/calendars/events?locationId={LOC}&calendarId={cal}&startTime={s}&endTime={e}",headers=H21).get("events",[])
+        if _ev: return _ev
+        time.sleep(1.5*(_a+1))
+    print("AVISO: calendario",cal,"devolvio 0 eventos",flush=True)
+    return []
+
 # 1b) triaje + closing (calendario) PRIMERO, para que no le afecte el rate-limit de los mensajes
 ev=[]
 for _tc in TRIAGE_CALS:
-    ev+=cg(f"https://services.leadconnectorhq.com/calendars/events?locationId={LOC}&calendarId={_tc}&startTime={cutoff}&endTime={now}",headers=H21).get("events",[])
+    ev+=evs(_tc,cutoff,now)
 t_status=defaultdict(Counter)
 for e in ev: t_status[str(e.get("startTime"))[:10]][e.get("appointmentStatus","?")]+=1
 # contactos que pasaron a CLOSING (calendarios de Planificación Estratégica)
 endf=now+30*86400*1000; closing_contacts=set()
 for cal in ["VRaGr4KGSZNiuDamyV4q","998ij1w7jUrmPqJZu43V"]:
-    for e in cg(f"https://services.leadconnectorhq.com/calendars/events?locationId={LOC}&calendarId={cal}&startTime={cutoff}&endTime={endf}",headers=H21).get("events",[]):
+    for e in evs(cal,cutoff,endf):
         if e.get("contactId"): closing_contacts.add(e["contactId"])
 t_cual=defaultdict(int)
 for e in ev:
@@ -198,7 +222,6 @@ print("eventos triaje:",len(ev),"| contactos con closing:",len(closing_contacts)
 
 # 1c) CAMINO DE LOS LEADS + CLOSING (desde START) — antes de los mensajes para evitar rate-limit
 LJcut=cutoff
-def evs(cal,s,e): return cg(f"https://services.leadconnectorhq.com/calendars/events?locationId={LOC}&calendarId={cal}&startTime={s}&endTime={e}",headers=H21).get("events",[])
 cids={}
 for _tc in TRIAGE_CALS:
     for e in evs(_tc,LJcut,now):
