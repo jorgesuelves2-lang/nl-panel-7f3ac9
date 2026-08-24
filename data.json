@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-24 13:52",
+ "generado": "2026-08-24 14:26",
  "rango": "2026-02-01 a 2026-08-24",
  "setting": [
   {
@@ -2861,12 +2861,12 @@
   {
    "dia": "2026-08-24",
    "inb": 3,
-   "out": 84,
-   "nuevas": 87,
-   "total": 164,
-   "fups": 88,
-   "prop": 1,
-   "link": 1,
+   "out": 115,
+   "nuevas": 118,
+   "total": 198,
+   "fups": 95,
+   "prop": 2,
+   "link": 2,
    "badlink": 0,
    "agendas": 5,
    "resp_min": 33,
@@ -5325,7 +5325,7 @@
   {
    "dia": "2026-08-24",
    "agendados": 5,
-   "showed": 0,
+   "showed": 1,
    "noshow": 0,
    "noconfirma": 0,
    "cancelled": 0,
@@ -6567,13 +6567,13 @@
    "resclo": "",
    "estado": "",
    "ss": 68,
-   "stri": null,
+   "stri": 72,
    "sclo": null,
    "ticket": "",
    "pagado": "",
    "objtri": "",
    "objclo": "",
-   "infocloser": "",
+   "infocloser": "PERFIL: Brenda Michell Riascos Mosquera. Colombiana, 6 anos en Espana, nacionalidad espanola. Auxiliar de enfermeria (titulo Colombia, Cruz Roja Valle del Cauca). Homologacion espanola ya hecha. Proceso de homologacion en Alemania en curso con Enfymed/Johanna, aprox. 4 meses para completarse.\n\nOBJETIVO: Ir a Alemania sola a trabajar como enfermera. Plazo: cuando complete la homologacion (aprox. 4 meses). Nivel de aleman: 0 absoluto. Disponibilidad: 45-60 min/dia confirmado.\n\nDOLORES: El idioma es su unico freno real. Su propia gestora de homologacion le aviso que necesita aleman urgente para la entrevista final. Le da miedo llegar sin idioma.\n\nINVERSION: Ingresos 600-1.000 euros/mes. Ya invertidos aprox. 4.000 euros en homologacion. Acepto plan de idioma a 3.500 euros en cuotas. Primer pago de 297 euros acordado para el 31 de agosto (dia de cobro de nomina). Tiene un ultimo pago pendiente a Enfymed que puede competir con la primera cuota.\n\nRUTA: Perfil UE (nacionalidad espanola): ruta mas agil para Alemania. Solo necesita idioma y FSP. Homologacion casi lista (4 meses estimados por Johanna). Producto vendido: solo idioma (3.500 euros, 6 meses).\n\nOBJECIONES: Pago diferido al 31; liquidez ajustada por pago pendiente a Enfymed; leve duda residual sobre destino (Alemania vs Espana vs Colombia), aunque al cierre del triaje parece resuelta.\n\nRECOMENDACION: Contactar el 31 a la hora acordada para acompanar el pago en directo. Antes del 31, Nati debe activar el grupo de WhatsApp con mensaje de bienvenida calido para evitar enfriamiento. Confirmar que el pago a Enfymed no bloquea el primer abono de 297 euros.",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/yCKR9tlzdscSvllsSMHE"
   },
   {
@@ -26669,8 +26669,8 @@
    "restri_ia": "",
    "ult": "2026-08-24",
    "ultdir": "outbound",
-   "ulttxt": "Hola Mónica muy buenos días, pudiste agendar tu llamada? Estoy muy pendiente de ti ☺️",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ulttxt": "¡Hey Monica!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en e...",
+   "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
   {
@@ -26737,7 +26737,7 @@
    "hora": "17:40",
    "estado": "confirmed",
    "restri": "",
-   "stri": null,
+   "stri": 72,
    "ss": 68,
    "setter": "Sary",
    "triager": "",
@@ -26752,8 +26752,8 @@
    "ingresos": "600€- 1.000€",
    "nivel": "🔹 No tengo conocimientos",
    "urg": "",
-   "infotri": "",
-   "restri_ia": "",
+   "infotri": "PERFIL: Brenda Michell Riascos Mosquera. Colombiana, 6 anos en Espana, nacionalidad espanola. Auxiliar de enfermeria (titulo Colombia, Cruz Roja Valle del Cauca). Homologacion espanola ya hecha. Proceso de homologacion en Alemania en curso con Enfymed/Johanna, aprox. 4 meses para completarse.\n\nOBJETIVO: Ir a Alemania sola a trabajar como enfermera. Plazo: cuando complete la homologacion (aprox. 4 meses). Nivel de aleman: 0 absoluto. Disponibilidad: 45-60 min/dia confirmado.\n\nDOLORES: El idioma es su unico freno real. Su propia gestora de homologacion le aviso que necesita aleman urgente para la entrevista final. Le da miedo llegar sin idioma.\n\nINVERSION: Ingresos 600-1.000 euros/mes. Ya invertidos aprox. 4.000 euros en homologacion. Acepto plan de idioma a 3.500 euros en cuotas. Primer pago de 297 euros acordado para el 31 de agosto (dia de cobro de nomina). Tiene un ultimo pago pendiente a Enfymed que puede competir con la primera cuota.\n\nRUTA: Perfil UE (nacionalidad espanola): ruta mas agil para Alemania. Solo necesita idioma y FSP. Homologacion casi lista (4 meses estimados por Johanna). Producto vendido: solo idioma (3.500 euros, 6 meses).\n\nOBJECIONES: Pago diferido al 31; liquidez ajustada por pago pendiente a Enfymed; leve duda residual sobre destino (Alemania vs Espana vs Colombia), aunque al cierre del triaje parece resuelta.\n\nRECOMENDACION: Contactar el 31 a la hora acordada para acompanar el pago en directo. Antes del 31, Nati debe activar el grupo de WhatsApp con ",
+   "restri_ia": "PERFIL: Brenda Michell Riascos Mosquera. Auxiliar de enfermeria titulada en Colombia (Cruz Roja del Valle del Cauca). Vive en Espana hace 6 anos, tiene nacionalidad espanola. Ya inicio proceso de homologacion del titulo en Alemania con la agencia Enfymed (con Johanna). Ira sola a Alemania, sin familia.\n\nMOTIVACIONES: Quiere seguir estudiando y trabajar en Alemania. Ya invirtio aprox. 4.000 euros en traducciones y proceso de homologacion, lo que refuerza su compromiso con el proyecto. Johanna (su gestora de homologacion) le advirtio que debia estudiar aleman urgente porque la entrevista puede ser en aleman.\n\nDOLORES: No sabe nada de aleman (nivel 0 confirmado en llamada). Teme que el idioma le bloquee el acceso al trabajo. Duda entre volver a Colombia, quedarse en Espana (FP de 2 anos) o irse a Alemania; el idioma es el principal freno.\n\nCOMPROMISO: Muy alto. Se mostro dispuesta a empezar de inmediato, dijo 'empecemos, ya tengo todo mi proceso, no me voy para atras'. Acepto el plan de pago. Confirmo disponibilidad de 45-60 min/dia para el idioma. Quedaron en hacer el primer pago el 31 de agosto. Se creo grupo de WhatsApp con Nati y Christian.\n\nINVERSION: Ingresos entre 600-1.000 eur",
    "ult": "2026-08-24",
    "ultdir": "inbound",
    "ulttxt": "Gracias",
