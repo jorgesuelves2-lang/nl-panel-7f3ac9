@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-24 18:06",
+ "generado": "2026-08-24 19:16",
  "rango": "2026-02-01 a 2026-08-24",
  "setting": [
   {
@@ -2863,13 +2863,13 @@
    "inb": 5,
    "out": 156,
    "nuevas": 161,
-   "total": 249,
-   "fups": 102,
+   "total": 251,
+   "fups": 108,
    "prop": 2,
    "link": 2,
    "badlink": 0,
    "agendas": 3,
-   "resp_min": 34,
+   "resp_min": 57,
    "nodata": false
   }
  ],
@@ -23484,6 +23484,11 @@
   },
   {
    "dia": "2026-08-24",
+   "in": 1787587364,
+   "rep": 1787597476
+  },
+  {
+   "dia": "2026-08-24",
    "in": 1787592176,
    "rep": 1787592842
   },
@@ -26609,9 +26614,9 @@
    "infotri": "",
    "restri_ia": "",
    "ult": "2026-08-24",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Maria!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
-   "ulttipo": "TYPE_EMAIL",
+   "ultdir": "inbound",
+   "ulttxt": "Mil disculpas\n\nEstaba súper pendiente \nPero no me llegó el man sino hasta ahora",
+   "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
   {
@@ -26639,7 +26644,7 @@
    "restri_ia": "",
    "ult": "2026-08-24",
    "ultdir": "outbound",
-   "ulttxt": "¡Hey Tanya!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
+   "ulttxt": "¡Hey Tanya!\n\nSolo quería recordarte que tu llamada es en 30 minutos\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en ...",
    "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
@@ -27073,8 +27078,8 @@
    "infotri": "",
    "restri_ia": "",
    "ult": "2026-08-24",
-   "ultdir": "outbound",
-   "ulttxt": "Hola hermosa como has estado? Cómo te has sentido?",
+   "ultdir": "inbound",
+   "ulttxt": "Todo bien, aunque bueno, sentimentalmente igual \nSigo pensando lo de apuntarme a aprender alemán",
    "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
