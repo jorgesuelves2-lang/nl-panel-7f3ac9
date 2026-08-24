@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-24 16:11",
+ "generado": "2026-08-24 17:13",
  "rango": "2026-02-01 a 2026-08-24",
  "setting": [
   {
@@ -2863,12 +2863,12 @@
    "inb": 4,
    "out": 155,
    "nuevas": 159,
-   "total": 244,
+   "total": 245,
    "fups": 99,
    "prop": 2,
    "link": 2,
    "badlink": 0,
-   "agendas": 4,
+   "agendas": 3,
    "resp_min": 57,
    "nodata": false
   }
@@ -5324,12 +5324,12 @@
   },
   {
    "dia": "2026-08-24",
-   "agendados": 4,
+   "agendados": 3,
    "showed": 1,
    "noshow": 0,
    "noconfirma": 0,
    "cancelled": 0,
-   "confirmed": 4,
+   "confirmed": 3,
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
@@ -13054,37 +13054,6 @@
    "objclo": "",
    "infocloser": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/buZDVr8875DrUz8AAE44"
-  },
-  {
-   "nombre": "Monica Jimenez Piñate",
-   "setter": "Jesmary",
-   "origen": "propio",
-   "prof": "Medico radiologo ",
-   "nivel": "🔹 Conocimientos básicos",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "ingresos": "1.000€ - 3.000€",
-   "univ": "Universidad Central de Venezuela ",
-   "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "El idioma",
-   "canal": "",
-   "ig": "@movij86",
-   "email": "vicjim1886@gmail.com",
-   "tf": "+34671405487",
-   "fagenda": "2026-08-24",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": 52,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/WhZJwMe36WH4w2iEO07t"
   },
   {
    "nombre": "Montserrat Godoy Pontones",
@@ -26593,9 +26562,9 @@
   },
   {
    "dia": "2026-08-24",
-   "triages": 4,
+   "triages": 3,
    "con_form": 0,
-   "sin_form": 4,
+   "sin_form": 3,
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
@@ -26611,35 +26580,6 @@
   "Jesmary"
  ],
  "triage_leads": [
-  {
-   "nombre": "Monica Jimenez Piñate",
-   "fecha": "2026-08-24",
-   "hora": "20:00",
-   "estado": "confirmed",
-   "restri": "",
-   "stri": null,
-   "ss": 52,
-   "setter": "Jesmary",
-   "triager": "",
-   "prof": "Medico radiologo ",
-   "motivo": "",
-   "objtri": "",
-   "etapa": "🔹 Triage Agendado",
-   "tel": "+34671405487",
-   "email": "vicjim1886@gmail.com",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/WhZJwMe36WH4w2iEO07t",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "ingresos": "1.000€ - 3.000€",
-   "nivel": "🔹 Conocimientos básicos",
-   "urg": "",
-   "infotri": "",
-   "restri_ia": "",
-   "ult": "2026-08-24",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Monica!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y...",
-   "ulttipo": "TYPE_EMAIL",
-   "tiene_closing": false
-  },
   {
    "nombre": "Maria t mehlhorn",
    "fecha": "2026-08-24",
@@ -26664,9 +26604,9 @@
    "infotri": "",
    "restri_ia": "",
    "ult": "2026-08-24",
-   "ultdir": "inbound",
-   "ulttxt": "Hola si",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ultdir": "outbound",
+   "ulttxt": "¡Hey Maria!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
+   "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
   {
