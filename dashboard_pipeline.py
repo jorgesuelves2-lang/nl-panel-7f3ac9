@@ -181,7 +181,7 @@ def _nrm(s):
     s=unicodedata.normalize('NFKD',(s or '').lower()); s=''.join(c for c in s if not unicodedata.combining(c))
     s=re.sub(r'\b(ing|dr|dra|md|mg|med|odont|e-md|arg)\b','',s); return re.sub(r'[^a-z ]','',s).split()
 def _nk(s): return " ".join(_nrm(s)[:2])
-FATHOM_TRI=set()
+FATHOM_TRI=set(); FATHOM_CLO=set()   # 25-ago: closing tambien, para inferir asistencia a la llamada de venta
 def _fkeys():
     # TODAS las cuentas de Fathom (Natalie/David + Christian...). 19-ago-2026: antes solo se leia
     # la principal, asi que los triajes de Christian no contaban como "asistido" en el panel.
@@ -207,17 +207,20 @@ for _fk in _fkeys():
                 time.sleep(3); continue
             for _m in _d["items"]:
                 _t=_m.get("title") or ""
-                if not re.search(r'triage|triaje|introducci|validaci',_t,re.I): continue
-                if re.search(r'closing|planificaci|estrateg',_t,re.I): continue
-                _KW=re.compile(r'reuni|introducci|validaci|triage|triaje|llamada|dr\.?',re.I)
+                _es_clo=bool(re.search(r'closing|planificaci|estrateg',_t,re.I))
+                _es_tri=(not _es_clo) and bool(re.search(r'triage|triaje|introducci|validaci',_t,re.I))
+                if not (_es_clo or _es_tri): continue
+                # 25-ago: antes 'dr\.?' casaba con el 'dr' DENTRO de Alejan-dra/Pe-dro/San-dra y
+                # descartaba el nombre del lead (mismo bug corregido en el autofill el 24-ago).
+                _KW=re.compile(r'reuni|introducci|validaci|triage|triaje|llamada|closing|planificaci|estrateg|\bdra?\.',re.I)
                 _sg=[s.strip() for s in re.split(r'\s*-\s*',_t) if s.strip()]
                 _ld=next((s for s in _sg if not _KW.search(s)),"")
-                if _ld: FATHOM_TRI.add(_nk(_ld))
+                if _ld: (FATHOM_CLO if _es_clo else FATHOM_TRI).add(_nk(_ld))
             _cur=_d.get("next_cursor")
             if not _cur: break
     except Exception as _e:
         print("AVISO Fathom (una cuenta no disponible):",str(_e)[:80],flush=True)
-print("triajes con grabación en Fathom:",len(FATHOM_TRI),flush=True)
+print("grabaciones Fathom -> triajes:",len(FATHOM_TRI),"| closings:",len(FATHOM_CLO),flush=True)
 print("eventos triaje:",len(ev),"| contactos con closing:",len(closing_contacts),flush=True)
 
 # 1c) CAMINO DE LOS LEADS + CLOSING (desde START) — antes de los mensajes para evitar rate-limit
@@ -312,7 +315,8 @@ F={"prof":"I3MgyLftSnsPLPShebZH","setter":"lcFBOFN6VjZhvTgMFvuf","sf":"m7Sypf2v0
    "canal":"eSHxDJMExlEXqP5tiBGn","closer":"X1bI7LUkc6wxJGuvMHrB","infocloser":"N4HJDy9VFhKhGCpwJoAk",
    "infolead":"FoBSAwhN7pZ9bRVk9h3o","objtri":"3adftx5fU0SS60Z9HfL7","objclo":"irbogxFInHAcRdPZuEPM",
    "estado":"3se8LQQqUMP1wp6CwXSZ","linktri":"EC5k5nHjjV9E5Vj6kkgp","linkclo":"EZqcLopGWnk2nUfMR5Yz",
-   "motivo":"hTpq3AySxQLimEIlMKGp"}   # Motivo principal (no cierre)
+   "motivo":"hTpq3AySxQLimEIlMKGp",   # Motivo principal (no cierre)
+   "cta":"ycjnCtvt5bkIvlWzCO4v"}      # CTA Comentario (link del reel): de que reel/anuncio/cuenta vino el lead
 def _num(v):
     try: return float(re.sub(r'[^0-9.]','',str(v))) if v not in (None,'') else 0.0
     except: return 0.0
@@ -376,12 +380,21 @@ for cid,info in cids.items():
         "estado":cm.get(F["estado"]) or "","ss":cm.get(F["ss"]),"stri":cm.get(F["st"]),"sclo":cm.get(F["sc"]),
         "ticket":cm.get(F["ticket"]) or "","pagado":cm.get(F["pagado"]) or "",
         "objtri":cm.get(F["objtri"]) or "","objclo":cm.get(F["objclo"]) or "",
-        "infocloser":cm.get(F["infocloser"]) or "","ficha":ficha})
+        "infocloser":cm.get(F["infocloser"]) or "","cta":cm.get(F["cta"]) or "","ficha":ficha})
     # UNA FILA POR CITA DE CLOSING (no una por lead): asi al filtrar una semana se ven todas las
     # llamadas que habia esa semana y que paso con cada una.
-    for e in (info.get("clos") or ([info["clo"]] if "clo" in info else [])):
+    _clist=info.get("clos") or ([info["clo"]] if "clo" in info else [])
+    _nmL=(c.get("contactName") or ev_name(info) or nombre or "")
+    _asis_clo=bool(_nmL) and _nk(_nmL) in FATHOM_CLO   # hay grabacion de su llamada de venta
+    for e in _clist:
+        # ¿se REAGENDO? = existe otra cita del mismo lead POSTERIOR a esta. Cero esfuerzo del
+        # equipo: al reagendar se crea la cita nueva y esta pasa a "reagendada", no a "sin registrar".
+        _post=[str(x.get("startTime"))[:10] for x in _clist if str(x.get("startTime"))>str(e.get("startTime"))]
         closing.append({"nombre":nombre,"fecha":str(e.get("startTime"))[:10],
             "hora":str(e.get("startTime"))[11:16],"estado":e.get("appointmentStatus",""),
+            "reag":(min(_post) if _post else ""),
+            "agendada":str(e.get("dateAdded"))[:10],
+            "cta":cm.get(F["cta"]) or "","asistio":_asis_clo,
             "resclo":cm.get(F["rc"]) or "","sc":cm.get(F["sc"]),"cash":cm.get(F["cash"]) or "",
             "ticket":cm.get(F["ticket"]) or "","pagado":cm.get(F["pagado"]) or "",
             # contexto para saber QUE PASO con cada uno sin salir del panel:
@@ -399,9 +412,16 @@ for cid,info in cids.items():
             "nivel":cm.get(F["nivel"]) or "","urg":cm.get(F["urg"]) or ""})
 
     # ---- UNA FILA POR CITA DE TRIAJE (mismo formato que closing) ----
-    for e in (info.get("tris") or ([info["tri"]] if "tri" in info else [])):
+    _tlist=info.get("tris") or ([info["tri"]] if "tri" in info else [])
+    _asis_tri=(bool(_nmL) and _nk(_nmL) in FATHOM_TRI) or restri(tags)!=""
+    _fclo=min((str(x.get("startTime"))[:10] for x in _clist),default="")
+    for e in _tlist:
+        _post=[str(x.get("startTime"))[:10] for x in _tlist if str(x.get("startTime"))>str(e.get("startTime"))]
         triage_leads.append({"nombre":nombre,"fecha":str(e.get("startTime"))[:10],
             "hora":str(e.get("startTime"))[11:16],"estado":e.get("appointmentStatus",""),
+            "reag":(min(_post) if _post else ""),
+            "agendada":str(e.get("dateAdded"))[:10],
+            "cta":cm.get(F["cta"]) or "","asistio":_asis_tri,"fclo":_fclo,
             "restri":restri(tags),"stri":cm.get(F["st"]),"ss":cm.get(F["ss"]),
             "setter":setter,"triager":cm.get("HOpZ4zQsnwEs70pJSzea") or "","prof":cm.get(F["prof"]) or "",
             "motivo":cm.get("GWZs0fx5rdOsMiW8cvHM") or "","objtri":(cm.get(F["objtri"]) or "")[:400],
@@ -423,7 +443,9 @@ for r in closing:
     d=r["fecha"]
     if d not in cd: continue
     cd[d]["agendados"]+=1
-    if r["estado"] in cd[d]: cd[d][r["estado"]]+=1
+    if r["estado"] in cd[d] and r["estado"]!="showed": cd[d][r["estado"]]+=1
+    # asistencia inferida como en triaje: grabacion de la llamada o resultado registrado
+    if r["estado"]=="showed" or r.get("asistio") or (r.get("resclo") or "").strip(): cd[d]["showed"]+=1
     vend=(r.get("resclo")=="Vendido") or _num(r.get("ticket"))>0
     if vend: cd[d]["vendido"]+=1; cd[d]["facturacion"]+=_num(r.get("ticket"))
     cd[d]["cash"]+=_num(r.get("pagado")) or _num(r.get("cash"))
@@ -571,6 +593,13 @@ if prev:
         print("AVISO: 0 llamadas de triaje -> conservo las anteriores",flush=True)
         triage_leads=prev["triage_leads"]
 SETTERS_ACT=["Sary","Sara","Jesmary"]
+# ---- OBJETIVOS DIARIOS (pestana "Dia"): derivados de la meta de 50k/mes con ticket medio ~4.000.
+# Cadena: 170 conv -> 8 propuestas (5%) -> 4 agendas (55%) -> 3 triajes hechos -> 2 cualifican
+# -> 2 closings -> 0,4 ventas/dia (12/mes x ~4.000 = ~50k). EDITABLES en targets.json junto al script.
+TARGETS={"conversaciones":170,"propuestas":8,"agendas":4,"triajes_hechos":3,"cualifica":2,
+         "closings":2,"ventas":0.4,"facturacion":1700,"cash":1300}
+try: TARGETS.update({k:v for k,v in json.load(open(os.path.join(HERE,"targets.json"))).items() if k in TARGETS})
+except Exception: pass
 _kpi_dias=defaultdict(set)
 for _k in kpis: _kpi_dias[_k["dia"]].add(_k["setter"])
 cumplimiento=[]
@@ -580,7 +609,7 @@ for d in days:
         "estado_triage":("No hubo llamadas" if _n==0 else ("Completo" if _f>=_n else ("Parcial" if _f>0 else "Sin registrar"))),
         "retraso_medio":(round(sum(_lags)/len(_lags),1) if _lags else None),
         "kpis":{s:(s in _kpi_dias.get(d,set())) for s in SETTERS_ACT}})
-data={"generado":datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),"rango":f"{days[0]} a {days[-1]}","setting":setting,"triage":triage,"leads":leads,"closing":closing,"closing_daily":closing_daily,"gaps":gaps,"resp_pairs":resp_pairs,"kpis":kpis,"cumplimiento":cumplimiento,"setters":SETTERS_ACT,"triage_leads":triage_leads}
+data={"generado":datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),"rango":f"{days[0]} a {days[-1]}","setting":setting,"triage":triage,"leads":leads,"closing":closing,"closing_daily":closing_daily,"gaps":gaps,"resp_pairs":resp_pairs,"kpis":kpis,"cumplimiento":cumplimiento,"setters":SETTERS_ACT,"triage_leads":triage_leads,"targets":TARGETS}
 json.dump(data,open(os.path.join(OUTDIR,"data.json"),"w"),ensure_ascii=False,indent=1)
 tpl=open(os.path.join(HERE,"template.html")).read()
 html=tpl.replace("/*DATA*/","const DATA = "+json.dumps(data,ensure_ascii=False)+";")
@@ -591,6 +620,7 @@ td=copy.deepcopy(data)
 for l in td["leads"]: l["ticket"]=""; l["pagado"]=""
 for r in td["closing"]: r["cash"]=""; r["ticket"]=""; r["pagado"]=""
 for r in td["closing_daily"]: r["facturacion"]=0; r["cash"]=0
+td["targets"]={k:v for k,v in TARGETS.items() if k not in ("facturacion","cash")}
 thtml=tpl.replace("/*DATA*/","window.TEAM=true; const DATA = "+json.dumps(td,ensure_ascii=False)+";")
 open(os.path.join(OUTDIR,"equipo.html"),"w").write(thtml)
 print("OK dashboard.html + equipo.html generados",flush=True)
