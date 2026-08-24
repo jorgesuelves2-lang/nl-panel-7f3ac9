@@ -143,18 +143,19 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
   <section id="triage" class="hide">
     <div class="cards" id="t_cards"></div>
 
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:4px 0 16px">
+      <span style="font-size:13px;color:var(--mut)">Filtrar por setter:</span>
+      <button class="tab on" data-tset="TOTAL" style="font-size:13px;padding:5px 12px">Total</button>
+      <button class="tab" data-tset="Sary" style="font-size:13px;padding:5px 12px">Sary</button>
+      <button class="tab" data-tset="Sara" style="font-size:13px;padding:5px 12px">Sara</button>
+      <button class="tab" data-tset="Jesmary" style="font-size:13px;padding:5px 12px">Jesmary</button>
+      <button class="tab" data-tset="SIN" style="font-size:13px;padding:5px 12px">Sin asignar</button>
+    </div>
+
     <div class="panel" style="border-left:3px solid var(--purple);border-radius:0">
       <h3>Por setter que generó la agenda <span style="font-weight:400;color:var(--mut);font-size:13px">— atribuido por el enlace de agenda (utm) o la etiqueta del lead</span></h3>
-      <div style="margin:10px 0 14px">
-        <button class="tab on" data-tset="TOTAL" style="font-size:13px;padding:5px 12px">Total</button>
-        <button class="tab" data-tset="Sary" style="font-size:13px;padding:5px 12px">Sary</button>
-        <button class="tab" data-tset="Sara" style="font-size:13px;padding:5px 12px">Sara</button>
-        <button class="tab" data-tset="Jesmary" style="font-size:13px;padding:5px 12px">Jesmary</button>
-        <button class="tab" data-tset="SIN" style="font-size:13px;padding:5px 12px">Sin asignar</button>
-      </div>
       <div class="cards" id="ts_cards"></div>
-      <div id="ts_nota" style="font-size:12px;color:var(--mut);margin-bottom:10px"></div>
-      <div class="tablewrap"><table id="ts_tabla" class="leadtbl"></table></div>
+      <div id="ts_nota" style="font-size:12px;color:var(--mut);margin-top:10px"></div>
     </div>
     <div class="panel"><h3>Triajes por día y estado</h3>
       <div class="legend"><span><i style="background:var(--blue)"></i>Agendados</span><span><i style="background:var(--teal)"></i>Asistió</span><span><i style="background:var(--purple)"></i>Cualifica → closing</span></div>
@@ -548,6 +549,9 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  else _conectarModal();
  function renderTablaLlamadas(cfg){
    var LIST=(DATA[cfg.data]||[]).filter(function(r){return r.fecha>=cfg.from&&r.fecha<=cfg.to;});
+   // filtro por setter (lo usa la pestana de triaje; en closing llega vacio y no filtra)
+   if(cfg.setter==='SIN')                          LIST=LIST.filter(function(r){return !r.setter;});
+   else if(cfg.setter&&cfg.setter!=='TOTAL')       LIST=LIST.filter(function(r){return r.setter===cfg.setter;});
    LIST.sort(function(a,b){return (a.fecha+(a.hora||'')).localeCompare(b.fecha+(b.hora||''));});
    var sinReg=0, ok=0, nosToca=0;
    LIST.forEach(function(r){
@@ -561,6 +565,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      +'<span style="color:var(--teal)">'+ok+' '+cfg.okLabel+'</span>'
      +(sinReg?' · <span style="color:var(--red)"><b>'+sinReg+' sin registrar</b></span>':'')
      +(nosToca?' · <span style="color:var(--red)"><b>'+nosToca+' esperando respuesta nuestra</b></span>':'')
+     +(cfg.setter&&cfg.setter!=='TOTAL' ? ' · <span style="color:var(--purple)">setter: <b>'+(cfg.setter==='SIN'?'sin asignar':cfg.setter)+'</b></span>' : '')
      +'. Pulsa <b>Ver</b> en cualquier fila para el detalle y qué toca hacer.';
    var money = (cfg.tipo==='clo' && !window.TEAM);
    var cols=['Fecha','Hora','Lead','Profesión',cfg.tipo==='clo'?'Closer':'Triager','Setter','¿Qué pasó?','Turno','Etapa actual']
@@ -590,7 +595,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  }
  function renderTriajeTabla(from,to){
    renderTablaLlamadas({data:'triage_leads',tipo:'tri',from:from,to:to,tabla:'t_lista',sub:'t_lista_sub',
-                        label:'llamadas de triaje',okLabel:'cualificaron'});
+                        label:'llamadas de triaje',okLabel:'cualificaron',setter:TSEL});
  }
  function renderStatic(){
    var CL=DATA.closing||[],LD=DATA.leads||[];
@@ -607,7 +612,9 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    document.querySelectorAll('button.tab[data-tset]').forEach(function(b){
      b.onclick=function(){
        document.querySelectorAll('button.tab[data-tset]').forEach(function(x){x.classList.remove('on');});
-       b.classList.add('on'); TSEL=b.dataset.tset; renderTriSetter();
+       b.classList.add('on'); TSEL=b.dataset.tset;
+       renderTriSetter();
+       renderTriajeTabla(fromEl.value,toEl.value);   // el filtro manda sobre toda la pestana
      };
    });
    renderTriSetter();
@@ -675,13 +682,6 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      ? 'Atribución: <b>'+(totRng-sinAsig)+'</b> de '+totRng+' agendas tienen setter identificado ('+Math.round((totRng-sinAsig)*100/totRng)+'%). Las <b>'+sinAsig+'</b> restantes están en “Sin asignar”: llegaron sin utm en el enlace de agenda.'
      : '';
 
-   L.sort(function(a,b){ return String(b.fagenda||'').localeCompare(String(a.fagenda||'')); });
-   var t=document.getElementById('ts_tabla');
-   t.innerHTML='<thead><tr><th>Fecha</th><th>Nombre</th><th>Setter</th><th>Profesión</th><th>Resultado</th><th>Closer</th><th>Ficha</th></tr></thead><tbody>'+
-     (L.length ? L.map(function(r){ return '<tr><td>'+(r.fagenda||'').split('-').reverse().join('/')+'</td><td>'+(r.nombre||'—')+
-       '</td><td>'+(r.setter||'—')+'</td><td>'+(r.prof||'—')+'</td><td>'+(r.restri||'—')+'</td><td>'+(r.closer||'—')+
-       '</td><td><a href="'+r.ficha+'" target="_blank">abrir</a></td></tr>'; }).join('')
-      : '<tr><td colspan="7" style="padding:16px;color:var(--mut)">Sin agendas de triaje en este rango.</td></tr>')+'</tbody>';
  }
 
  // ---- Línea de tendencia (regresión lineal por mínimos cuadrados, ignora huecos) ----
