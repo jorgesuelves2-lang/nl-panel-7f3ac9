@@ -526,15 +526,26 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      +(obj?'<h4 style="margin:18px 0 6px;font-size:14px">Objeciones registradas</h4><div style="color:var(--mut)">'+esc(obj)+'</div>':'')
      +(an?'<h4 style="margin:18px 0 6px;font-size:14px">Análisis de la llamada</h4><div style="white-space:pre-wrap;background:rgba(128,128,128,.08);padding:12px;border-radius:8px;font-size:12.5px;max-height:280px;overflow:auto">'+esc(an)+'</div>':'')
      +'<div style="margin-top:20px"><a href="'+esc(r.ficha)+'" target="_blank" style="display:inline-block;background:var(--blue);color:#fff;padding:9px 18px;border-radius:8px;text-decoration:none;font-size:13px">Abrir ficha en FunnelUp</a></div>';
+   _conectarModal();
    document.getElementById('lead_modal').style.display='block';
  }
- (function(){
+ // 24-ago-2026: esto era un IIFE que corria AQUI, pero el HTML del modal esta al final del
+ // <body> (despues de este script), asi que getElementById devolvia null, salia por el return y
+ // la "X" nunca quedaba conectada: el pop-up se abria y ya no habia forma de cerrarlo.
+ // Ahora se conecta cuando el DOM ya existe, y ademas desde abrirLead() por si acaso.
+ var _modalListo=false;
+ function _conectarModal(){
    var m=document.getElementById('lead_modal');
-   if(!m) return;
-   document.getElementById('lm_cerrar').onclick=function(){m.style.display='none';};
-   m.onclick=function(e){ if(e.target===m) m.style.display='none'; };
-   document.addEventListener('keydown',function(e){ if(e.key==='Escape') m.style.display='none'; });
- })();
+   if(!m||_modalListo) return;
+   var cerrar=function(){ m.style.display='none'; };
+   var x=document.getElementById('lm_cerrar');
+   if(x) x.onclick=cerrar;
+   m.onclick=function(e){ if(e.target===m) cerrar(); };
+   document.addEventListener('keydown',function(e){ if(e.key==='Escape') cerrar(); });
+   _modalListo=true;
+ }
+ if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',_conectarModal);
+ else _conectarModal();
  function renderTablaLlamadas(cfg){
    var LIST=(DATA[cfg.data]||[]).filter(function(r){return r.fecha>=cfg.from&&r.fecha<=cfg.to;});
    LIST.sort(function(a,b){return (a.fecha+(a.hora||'')).localeCompare(b.fecha+(b.hora||''));});
