@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-24 21:07",
+ "generado": "2026-08-24 22:02",
  "rango": "2026-02-01 a 2026-08-24",
  "setting": [
   {
@@ -2863,10 +2863,10 @@
    "inb": 5,
    "out": 156,
    "nuevas": 161,
-   "total": 259,
-   "fups": 119,
-   "prop": 2,
-   "link": 2,
+   "total": 260,
+   "fups": 130,
+   "prop": 3,
+   "link": 3,
    "badlink": 0,
    "agendas": 3,
    "resp_min": 57,
