@@ -202,7 +202,10 @@ def evs(cal,s,e): return cg(f"https://services.leadconnectorhq.com/calendars/eve
 cids={}
 for _tc in TRIAGE_CALS:
     for e in evs(_tc,LJcut,now):
-        if e.get("contactId"): cids.setdefault(e["contactId"],{})["tri"]=e
+        if e.get("contactId"):
+            _i=cids.setdefault(e["contactId"],{})
+            _i["tri"]=e
+            _i.setdefault("tris",[]).append(e)   # todas las citas de triaje, no solo la ultima
 for cal in ["VRaGr4KGSZNiuDamyV4q","998ij1w7jUrmPqJZu43V"]:
     for e in evs(cal,LJcut,endf):
         if e.get("contactId"):
@@ -249,6 +252,34 @@ def fc(cid):
 cmap={}
 with ThreadPoolExecutor(max_workers=4) as ex:
     for cid,c in ex.map(fc,list(cids)): cmap[cid]=c
+
+# --- ULTIMO MENSAJE por contacto (24-ago-2026) ---
+# Sirve para saber DE QUIEN ES EL TURNO en cada lead: si el ultimo mensaje es del lead, la pelota
+# esta en nuestro tejado; si es nuestro, estamos esperando respuesta. Se saca del listado de
+# conversaciones (una pasada paginada), sin bajar los mensajes uno a uno.
+ULT={}
+try:
+    _sa=None; _p=0
+    while _p<60:
+        _pr=[f"locationId={LOC}","limit=100","sortBy=last_message_date","sort=desc"]
+        if _sa: _pr.append(f"startAfterDate={_sa}")
+        _d=cg("https://services.leadconnectorhq.com/conversations/search",_pr)
+        _cs=_d.get("conversations",[])
+        if not _cs: break
+        for _c in _cs:
+            _cid=_c.get("contactId")
+            if not _cid: continue
+            _lmd=_c.get("lastMessageDate") or 0
+            if _cid not in ULT or _lmd>ULT[_cid]["ts"]:
+                ULT[_cid]={"ts":_lmd,"fecha":dms(_lmd) or "",
+                           "dir":_c.get("lastMessageDirection") or "",
+                           "txt":(_c.get("lastMessageBody") or "")[:220],
+                           "tipo":_c.get("lastMessageType") or ""}
+        if (_cs[-1].get("lastMessageDate") or 0) < cutoff: break
+        _sa=_cs[-1].get("lastMessageDate"); _p+=1
+    print("ultimo mensaje mapeado para",len(ULT),"contactos",flush=True)
+except Exception as _e:
+    print("AVISO: no se pudo mapear el ultimo mensaje:",str(_e)[:70],flush=True)
 F={"prof":"I3MgyLftSnsPLPShebZH","setter":"lcFBOFN6VjZhvTgMFvuf","sf":"m7Sypf2v0DsMUl5EDv9D",
    "st":"BAdbcKq3A7Ks4kiaE9Vf","sc":"Gw71M4thYl2f0qTewdnV","rc":"dQQq7OBT7if2KbQv3mrx","cash":"fjnYS3QQDnOAhwa1je51",
    "ticket":"qSSpqvVhQqBMd01jwaiB","pagado":"Atuyg9PkXzUA0Na2OOxQ",
@@ -269,7 +300,7 @@ def restri(tags):
     return ""
 t_triCall=Counter(); t_triForm=Counter()
 t_triLag=defaultdict(list)
-leads=[]; closing=[]
+leads=[]; closing=[]; triage_leads=[]
 for cid,info in cids.items():
     c=cmap.get(cid) or {}
     cm={x.get("id"):x.get("value") for x in c.get("customFields",[])}
@@ -334,8 +365,34 @@ for cid,info in cids.items():
             "setter":setter,"closer":cm.get(F["closer"]) or "","prof":cm.get(F["prof"]) or "",
             "estadoclo":cm.get(F["estado"]) or "","motivo":cm.get(F["motivo"]) or "",
             "objclo":(cm.get(F["objclo"]) or "")[:400],"etapa":ETAPA_DE.get(cid,""),
-            "tel":c.get("phone") or "","email":c.get("email") or "","ficha":ficha})
+            "tel":c.get("phone") or "","email":c.get("email") or "","ficha":ficha,
+            # contexto del hilo: de quien es el turno ahora mismo
+            "ult":(ULT.get(cid) or {}).get("fecha",""),"ultdir":(ULT.get(cid) or {}).get("dir",""),
+            "ulttxt":(ULT.get(cid) or {}).get("txt",""),"ulttipo":(ULT.get(cid) or {}).get("tipo",""),
+            # material para el resumen ampliado del pop-up
+            "infoclo":(cm.get(F["infocloser"]) or "")[:1500],"restri":restri(tags),
+            "ss":cm.get(F["ss"]),"stri":cm.get(F["st"]),
+            "presup":cm.get(F["presup"]) or "","ingresos":cm.get(F["ingresos"]) or "",
+            "nivel":cm.get(F["nivel"]) or "","urg":cm.get(F["urg"]) or ""})
+
+    # ---- UNA FILA POR CITA DE TRIAJE (mismo formato que closing) ----
+    for e in (info.get("tris") or ([info["tri"]] if "tri" in info else [])):
+        triage_leads.append({"nombre":nombre,"fecha":str(e.get("startTime"))[:10],
+            "hora":str(e.get("startTime"))[11:16],"estado":e.get("appointmentStatus",""),
+            "restri":restri(tags),"stri":cm.get(F["st"]),"ss":cm.get(F["ss"]),
+            "setter":setter,"triager":cm.get("HOpZ4zQsnwEs70pJSzea") or "","prof":cm.get(F["prof"]) or "",
+            "motivo":cm.get("GWZs0fx5rdOsMiW8cvHM") or "","objtri":(cm.get(F["objtri"]) or "")[:400],
+            "etapa":ETAPA_DE.get(cid,""),"tel":c.get("phone") or "","email":c.get("email") or "",
+            "ficha":ficha,"presup":cm.get(F["presup"]) or "","ingresos":cm.get(F["ingresos"]) or "",
+            "nivel":cm.get(F["nivel"]) or "","urg":cm.get(F["urg"]) or "",
+            "infotri":(cm.get(F["infocloser"]) or "")[:1500],
+            "restri_ia":(cm.get("tXb9dblrmzhtTZqdmBBj") or "")[:1200],
+            "ult":(ULT.get(cid) or {}).get("fecha",""),"ultdir":(ULT.get(cid) or {}).get("dir",""),
+            "ulttxt":(ULT.get(cid) or {}).get("txt",""),"ulttipo":(ULT.get(cid) or {}).get("tipo",""),
+            # ¿tiene closing agendado despues del triaje? -> senal de que el triaje si avanzo
+            "tiene_closing": bool(info.get("clos") or info.get("clo"))})
 leads.sort(key=lambda r:(r["nombre"] or "").lower())
+triage_leads.sort(key=lambda r:r["fecha"],reverse=True)
 closing.sort(key=lambda r:r["fecha"],reverse=True)
 # serie diaria de closing (alineada con days[])
 cd={d:{"agendados":0,"showed":0,"noshow":0,"cancelled":0,"confirmed":0,"vendido":0,"facturacion":0.0,"cash":0.0} for d in days}
@@ -479,6 +536,7 @@ if len(leads)==0 and sum(x["agendados"] for x in triage)==0:
             print("AVISO: run degradado (0 leads/agendas) -> conservo leads/triaje/closing anteriores",flush=True)
             leads=prev.get("leads",leads); triage=prev.get("triage",triage)
             closing=prev.get("closing",closing); closing_daily=prev.get("closing_daily",closing_daily)
+            triage_leads=prev.get("triage_leads",triage_leads)
     except Exception as e: print("guardián: sin data.json previo",e,flush=True)
 SETTERS_ACT=["Sary","Sara","Jesmary"]
 _kpi_dias=defaultdict(set)
@@ -490,7 +548,7 @@ for d in days:
         "estado_triage":("No hubo llamadas" if _n==0 else ("Completo" if _f>=_n else ("Parcial" if _f>0 else "Sin registrar"))),
         "retraso_medio":(round(sum(_lags)/len(_lags),1) if _lags else None),
         "kpis":{s:(s in _kpi_dias.get(d,set())) for s in SETTERS_ACT}})
-data={"generado":datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),"rango":f"{days[0]} a {days[-1]}","setting":setting,"triage":triage,"leads":leads,"closing":closing,"closing_daily":closing_daily,"gaps":gaps,"resp_pairs":resp_pairs,"kpis":kpis,"cumplimiento":cumplimiento,"setters":SETTERS_ACT}
+data={"generado":datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),"rango":f"{days[0]} a {days[-1]}","setting":setting,"triage":triage,"leads":leads,"closing":closing,"closing_daily":closing_daily,"gaps":gaps,"resp_pairs":resp_pairs,"kpis":kpis,"cumplimiento":cumplimiento,"setters":SETTERS_ACT,"triage_leads":triage_leads}
 json.dump(data,open(os.path.join(OUTDIR,"data.json"),"w"),ensure_ascii=False,indent=1)
 tpl=open(os.path.join(HERE,"template.html")).read()
 html=tpl.replace("/*DATA*/","const DATA = "+json.dumps(data,ensure_ascii=False)+";")
