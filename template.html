@@ -83,6 +83,14 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
       </div>
       <div id="k_ambito"></div>
       <div class="cards" id="k_cards"></div>
+      <div class="panel" style="margin-top:14px">
+        <h3>Conversión por setter</h3>
+        <div class="sub" style="margin-bottom:10px">Qué porcentaje de sus conversaciones acaba en propuesta de agenda, y qué porcentaje de sus propuestas acaba en agenda. Sirve para ver si una setter consigue más agendas porque trabaja más volumen o porque <b>convierte mejor</b>.</div>
+        <div id="k_contraste"></div>
+        <div style="background:#FFF6E8;border-left:3px solid var(--amber);padding:9px 14px;font-size:12.5px;color:var(--mut);margin-top:10px">
+          <b style="color:var(--tx)">Ojo con estos números:</b> conversaciones, propuestas y bookings salen del <b style="color:var(--tx)">formulario que rellena cada setter</b>, no del CRM, porque los DMs de Instagram no identifican quién los envió. La columna <b style="color:var(--tx)">Agendas reales</b> sí viene del CRM: si el descuadre es grande y persistente, los porcentajes de esa fila no son fiables.
+        </div>
+      </div>
       <div id="k_desglose" style="margin-top:14px"></div>
       <div id="k_comp_wrap" style="margin-top:16px">
         <h3 style="font-size:14px;margin-bottom:6px">Comparativa entre setters <span style="font-weight:400;color:var(--mut);font-size:12px">— totales del rango</span></h3>
@@ -662,13 +670,48 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      }
      amb.innerHTML='<div style="background:#EEF4FD;border-left:3px solid var(--blue);padding:9px 14px;font-size:13px;margin-bottom:10px">'+partes.join(' ')+'</div>';
    })();
+   // ---- Conversión por setter (autoreportada: sale del formulario diario, no del CRM) ----
+   // Base de "conversaciones" del setter = outbound + inbound del dia (los follow-ups no son
+   // conversaciones nuevas, son toques sobre conversaciones que ya existen).
+   var _conv = sum('out') + sum('inb');
+   var _prop = sum('prop'), _book = sum('book');
+   var pctTxt=function(a,b){ return b>0 ? (Math.round(1000*a/b)/10).toString().replace('.',',')+'%' : '—'; };
    cc.innerHTML =
      card('Follow-ups', sum('fu'), dias?Math.round(sum('fu')/dias)+'/día reportado':'') +
      card('Chats inbound', sum('inb')) +
      card('Outbound', sum('out')) +
-     card('Propuestas', sum('prop')) +
-     card('Bookings', sum('book')) +
+     card('Propuestas', _prop, pctTxt(_prop,_conv)+' de conversaciones') +
+     card('Bookings', _book, pctTxt(_book,_prop)+' de propuestas') +
      card('Welcome', sum('wel'));
+
+   // ---- Contraste autoreporte vs CRM: los bookings que dice el setter vs las agendas reales ----
+   (function(){
+     var box=document.getElementById('k_contraste'); if(!box) return;
+     var setters2 = KSEL==='TOTAL' ? (DATA.setters||[]) : [KSEL];
+     // agendas reales del CRM en el rango, por setter (campo "setter" de cada lead + fecha de agenda)
+     var reales={};
+     (DATA.leads||[]).forEach(function(l){
+       if(!l.fagenda || l.fagenda<from || l.fagenda>to) return;
+       var s=l.setter||'(sin asignar)';
+       reales[s]=(reales[s]||0)+1;
+     });
+     var filas=setters2.map(function(s){
+       var kr=Krng.filter(function(r){return r.setter===s;});
+       var conv=kr.reduce(function(a,r){return a+(r.out||0)+(r.inb||0);},0);
+       var pr=kr.reduce(function(a,r){return a+(r.prop||0);},0);
+       var bk=kr.reduce(function(a,r){return a+(r.book||0);},0);
+       var re=reales[s]||0;
+       var dif=bk-re;
+       var col = dif===0 ? 'var(--mut)' : (dif>0 ? 'var(--amber)' : 'var(--blue)');
+       return '<tr><td><b>'+s+'</b></td><td>'+conv+'</td><td>'+pr+'</td><td>'+pctTxt(pr,conv)+'</td>'
+             +'<td>'+bk+'</td><td>'+pctTxt(bk,pr)+'</td><td>'+pctTxt(bk,conv)+'</td>'
+             +'<td>'+re+'</td><td style="color:'+col+'">'+(dif>0?'+':'')+dif+'</td></tr>';
+     }).join('');
+     box.innerHTML='<table><thead><tr><th>Setter</th><th>Conversaciones<br><span style="font-weight:400;font-size:11px">(out+inb)</span></th>'
+       +'<th>Propuestas</th><th>% conv→prop</th><th>Bookings<br><span style="font-weight:400;font-size:11px">(dice el setter)</span></th>'
+       +'<th>% prop→book</th><th>% conv→book</th><th>Agendas reales<br><span style="font-weight:400;font-size:11px">(CRM)</span></th>'
+       +'<th>Descuadre</th></tr></thead><tbody>'+(filas||'<tr><td>Sin datos en el rango</td></tr>')+'</tbody></table>';
+   })();
 
    // Días laborables del rango sin reporte (solo desde que existe el formulario)
    var INICIO='2026-08-08';
