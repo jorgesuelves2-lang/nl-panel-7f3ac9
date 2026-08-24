@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-24 17:13",
+ "generado": "2026-08-24 18:06",
  "rango": "2026-02-01 a 2026-08-24",
  "setting": [
   {
@@ -2860,16 +2860,16 @@
   },
   {
    "dia": "2026-08-24",
-   "inb": 4,
-   "out": 155,
-   "nuevas": 159,
-   "total": 245,
-   "fups": 99,
+   "inb": 5,
+   "out": 156,
+   "nuevas": 161,
+   "total": 249,
+   "fups": 102,
    "prop": 2,
    "link": 2,
    "badlink": 0,
    "agendas": 3,
-   "resp_min": 57,
+   "resp_min": 34,
    "nodata": false
   }
  ],
@@ -23484,6 +23484,11 @@
   },
   {
    "dia": "2026-08-24",
+   "in": 1787592176,
+   "rep": 1787592842
+  },
+  {
+   "dia": "2026-08-24",
    "in": 1787577360,
    "rep": 1787583683
   },
@@ -26633,9 +26638,9 @@
    "infotri": "",
    "restri_ia": "",
    "ult": "2026-08-24",
-   "ultdir": "inbound",
-   "ulttxt": "Gracias!",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ultdir": "outbound",
+   "ulttxt": "¡Hey Tanya!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
+   "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
   {
@@ -27068,8 +27073,8 @@
    "infotri": "",
    "restri_ia": "",
    "ult": "2026-08-24",
-   "ultdir": "inbound",
-   "ulttxt": "Hola guapa",
+   "ultdir": "outbound",
+   "ulttxt": "Hola hermosa como has estado? Cómo te has sentido?",
    "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
