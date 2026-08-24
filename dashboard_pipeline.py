@@ -529,15 +529,24 @@ print("tramos sin datos setting:",gaps,flush=True)
 # GUARDIÁN anti-run-degradado: leads/triaje/closing NO tienen caché (se bajan del calendario+fichas cada vez).
 # Si un run se estrangula y el calendario devuelve vacío (0 leads Y 0 agendas), NO publiques vacío:
 # conserva leads/triaje/closing del data.json anterior (el setting sí es fresco por su caché).
-if len(leads)==0 and sum(x["agendados"] for x in triage)==0:
-    try:
-        prev=json.load(open(os.path.join(OUTDIR,"data.json")))
-        if prev.get("leads") or sum(x.get("agendados",0) for x in prev.get("triage",[])):
-            print("AVISO: run degradado (0 leads/agendas) -> conservo leads/triaje/closing anteriores",flush=True)
-            leads=prev.get("leads",leads); triage=prev.get("triage",triage)
-            closing=prev.get("closing",closing); closing_daily=prev.get("closing_daily",closing_daily)
-            triage_leads=prev.get("triage_leads",triage_leads)
-    except Exception as e: print("guardián: sin data.json previo",e,flush=True)
+try:
+    prev=json.load(open(os.path.join(OUTDIR,"data.json")))
+except Exception as e:
+    prev=None; print("guardián: sin data.json previo",e,flush=True)
+if prev:
+    # 24-ago-2026: el guardián se hace POR SECCIÓN. Antes solo saltaba si TODO venía vacío, así que
+    # un run donde el calendario de triaje respondía pero el de closing se estrangulaba publicaba
+    # closing=[] y borraba la pestaña entera (pasó el 24-ago 13:11).
+    if len(leads)==0 and prev.get("leads"):
+        print("AVISO: 0 leads -> conservo los anteriores",flush=True); leads=prev["leads"]
+    if sum(x["agendados"] for x in triage)==0 and sum(x.get("agendados",0) for x in prev.get("triage",[])):
+        print("AVISO: 0 agendas de triaje -> conservo las anteriores",flush=True); triage=prev["triage"]
+    if len(closing)==0 and prev.get("closing"):
+        print("AVISO: 0 closings (calendario estrangulado) -> conservo los anteriores",flush=True)
+        closing=prev["closing"]; closing_daily=prev.get("closing_daily",closing_daily)
+    if len(triage_leads)==0 and prev.get("triage_leads"):
+        print("AVISO: 0 llamadas de triaje -> conservo las anteriores",flush=True)
+        triage_leads=prev["triage_leads"]
 SETTERS_ACT=["Sary","Sara","Jesmary"]
 _kpi_dias=defaultdict(set)
 for _k in kpis: _kpi_dias[_k["dia"]].add(_k["setter"])
