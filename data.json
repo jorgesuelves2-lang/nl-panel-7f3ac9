@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-25 06:06",
+ "generado": "2026-08-25 07:32",
  "rango": "2026-02-01 a 2026-08-25",
  "setting": [
   {
@@ -2874,10 +2874,10 @@
   },
   {
    "dia": "2026-08-25",
-   "inb": 1,
+   "inb": 2,
    "out": 16,
-   "nuevas": 17,
-   "total": 43,
+   "nuevas": 18,
+   "total": 44,
    "fups": 18,
    "prop": 0,
    "link": 0,
@@ -12692,7 +12692,7 @@
   },
   {
    "nombre": "María Victoria Delgado López",
-   "setter": "",
+   "setter": "Sara",
    "origen": "propio",
    "prof": "Fisioterapeuta ",
    "nivel": "🔹 No tengo conocimientos",
@@ -31979,7 +31979,7 @@
    "restri": "",
    "stri": null,
    "ss": null,
-   "setter": "",
+   "setter": "Sara",
    "triager": "",
    "prof": "Fisioterapeuta ",
    "motivo": "",
