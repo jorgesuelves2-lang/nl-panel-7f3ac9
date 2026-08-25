@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-25 12:03",
+ "generado": "2026-08-25 13:37",
  "rango": "2026-02-01 a 2026-08-25",
  "setting": [
   {
@@ -2874,15 +2874,15 @@
   },
   {
    "dia": "2026-08-25",
-   "inb": 3,
-   "out": 38,
-   "nuevas": 41,
-   "total": 94,
-   "fups": 68,
+   "inb": 4,
+   "out": 52,
+   "nuevas": 56,
+   "total": 110,
+   "fups": 69,
    "prop": 0,
    "link": 0,
    "badlink": 0,
-   "agendas": 0,
+   "agendas": 1,
    "resp_min": 5,
    "nodata": false
   }
@@ -5350,12 +5350,12 @@
   },
   {
    "dia": "2026-08-25",
-   "agendados": 0,
+   "agendados": 1,
    "showed": 0,
    "noshow": 0,
    "noconfirma": 0,
    "cancelled": 0,
-   "confirmed": 0,
+   "confirmed": 1,
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
@@ -12339,38 +12339,6 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/8xFkhVay0LSZhnt0BBTV"
   },
   {
-   "nombre": "Maria t mehlhorn",
-   "setter": "Sary",
-   "origen": "propio",
-   "prof": "Médico ",
-   "nivel": "🔹 B1",
-   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
-   "ingresos": "300€ - 600€",
-   "univ": "Universidad del Sinú - Cartagena ",
-   "urg": "",
-   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
-   "obst": "El idioma - trámites ",
-   "canal": "",
-   "ig": "Mayirubio",
-   "email": "mariat.mehlhorn@gmail.com",
-   "tf": "+4915116935757",
-   "fagenda": "2026-08-24",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": 62,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "cta": "Outbound frio Angie Bru",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/lJnRjJdd8FkRXTI4tbsA"
-  },
-  {
    "nombre": "MARIALYS JIMÉNEZ BOLIVAR",
    "setter": "Sary",
    "origen": "propio",
@@ -12689,6 +12657,38 @@
    "infocloser": "",
    "cta": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/xPD0FJ9O3EPlzTgzOBE8"
+  },
+  {
+   "nombre": "María Mehlhorn",
+   "setter": "Sary",
+   "origen": "propio",
+   "prof": "Medico",
+   "nivel": "🔹 B1",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "600€- 1.000€",
+   "univ": "Universidad del Sinú Cartagena ",
+   "urg": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "El idioma - la burocracia ",
+   "canal": "",
+   "ig": "Mayirubio ",
+   "email": "mariat.mehlhorn@gmail.com",
+   "tf": "+4915116935757",
+   "fagenda": "2026-08-25",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": 62,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "cta": "Outbound frio Angie Bru",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/lJnRjJdd8FkRXTI4tbsA"
   },
   {
    "nombre": "María Victoria Delgado López",
@@ -28844,9 +28844,9 @@
   },
   {
    "dia": "2026-08-24",
-   "triages": 3,
+   "triages": 2,
    "con_form": 0,
-   "sin_form": 3,
+   "sin_form": 2,
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
@@ -28857,10 +28857,10 @@
   },
   {
    "dia": "2026-08-25",
-   "triages": 0,
+   "triages": 1,
    "con_form": 0,
-   "sin_form": 0,
-   "estado_triage": "No hubo llamadas",
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
     "Sary": false,
@@ -28876,11 +28876,47 @@
  ],
  "triage_leads": [
   {
-   "nombre": "Maria t mehlhorn",
+   "nombre": "María Mehlhorn",
+   "fecha": "2026-08-25",
+   "hora": "22:20",
+   "estado": "confirmed",
+   "reag": "",
+   "agendada": "2026-08-25",
+   "cta": "Outbound frio Angie Bru",
+   "asistio": false,
+   "fclo": "",
+   "fuente": "Outbound",
+   "d0": "2025-11-16",
+   "restri": "",
+   "stri": null,
+   "ss": 62,
+   "setter": "Sary",
+   "triager": "",
+   "prof": "Medico",
+   "motivo": "",
+   "objtri": "",
+   "etapa": "🔹 Triage Agendado",
+   "tel": "+4915116935757",
+   "email": "mariat.mehlhorn@gmail.com",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/lJnRjJdd8FkRXTI4tbsA",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "600€- 1.000€",
+   "nivel": "🔹 B1",
+   "urg": "",
+   "infotri": "",
+   "restri_ia": "",
+   "ult": "2026-08-25",
+   "ultdir": "outbound",
+   "ulttxt": "¡Hola María!\n\n\n\nEsta es tu confirmación para la cita que has agendado con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Chri...",
+   "ulttipo": "TYPE_EMAIL",
+   "tiene_closing": false
+  },
+  {
+   "nombre": "María Mehlhorn",
    "fecha": "2026-08-24",
    "hora": "22:40",
    "estado": "confirmed",
-   "reag": "",
+   "reag": "2026-08-25",
    "agendada": "2026-08-24",
    "cta": "Outbound frio Angie Bru",
    "asistio": false,
@@ -28892,7 +28928,7 @@
    "ss": 62,
    "setter": "Sary",
    "triager": "",
-   "prof": "Médico ",
+   "prof": "Medico",
    "motivo": "",
    "objtri": "",
    "etapa": "🔹 Triage Agendado",
@@ -28900,15 +28936,15 @@
    "email": "mariat.mehlhorn@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/lJnRjJdd8FkRXTI4tbsA",
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
-   "ingresos": "300€ - 600€",
+   "ingresos": "600€- 1.000€",
    "nivel": "🔹 B1",
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-08-24",
-   "ultdir": "inbound",
-   "ulttxt": "Mil disculpas\n\nEstaba súper pendiente \nPero no me llegó el man sino hasta ahora",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ult": "2026-08-25",
+   "ultdir": "outbound",
+   "ulttxt": "¡Hola María!\n\n\n\nEsta es tu confirmación para la cita que has agendado con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Chri...",
+   "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
   {
@@ -41829,14 +41865,14 @@
   },
   {
    "cid": "lJnRjJdd8FkRXTI4tbsA",
-   "nombre": "Maria t mehlhorn",
+   "nombre": "María Mehlhorn",
    "etapa": "🔹 Triage Agendado",
    "desde": "2026-08-24",
    "fuente": "Outbound",
-   "prox": "",
+   "prox": "2026-08-25",
    "setter": "Sary",
    "cta": "Outbound frio Angie Bru",
-   "prof": "Médico ",
+   "prof": "Medico",
    "restri": "",
    "resclo": "",
    "ticket": "",
@@ -41850,10 +41886,10 @@
    "ss": 62,
    "stri": null,
    "sc": null,
-   "ult": "2026-08-24",
-   "ultdir": "inbound",
-   "ulttxt": "Mil disculpas\n\nEstaba súper pendiente \nPero no me llegó el man sino hasta ahora",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ult": "2026-08-25",
+   "ultdir": "outbound",
+   "ulttxt": "¡Hola María!\n\n\n\nEsta es tu confirmación para la cita que has agendado con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Chri...",
+   "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/lJnRjJdd8FkRXTI4tbsA"
   },
   {
@@ -45390,36 +45426,6 @@
   },
   {
    "dia": "2026-08-25",
-   "s": "",
-   "h": [
-    0,
-    17,
-    13,
-    5,
-    4,
-    24,
-    0,
-    0,
-    0,
-    17,
-    59,
-    6,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-25",
    "s": "Sary",
    "h": [
     0,
@@ -45436,6 +45442,36 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-25",
+   "s": "",
+   "h": [
+    0,
+    17,
+    13,
+    5,
+    4,
+    24,
+    0,
+    0,
+    0,
+    17,
+    59,
+    6,
+    15,
+    1,
     0,
     0,
     0,
@@ -45630,6 +45666,36 @@
   },
   {
    "dia": "2026-08-18",
+   "s": "Sary",
+   "h": [
+    1,
+    2,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    7,
+    8,
+    10,
+    1,
+    6,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-18",
    "s": "",
    "h": [
     16,
@@ -45690,36 +45756,6 @@
   },
   {
    "dia": "2026-08-18",
-   "s": "Sary",
-   "h": [
-    1,
-    2,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    4,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    7,
-    8,
-    10,
-    1,
-    6,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-18",
    "s": "Jesmary",
    "h": [
     0,
@@ -45743,6 +45779,36 @@
     0,
     0,
     0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-22",
+   "s": "Sary",
+   "h": [
+    5,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
     0,
     0,
     0
@@ -45839,33 +45905,33 @@
    ]
   },
   {
-   "dia": "2026-08-22",
+   "dia": "2026-08-21",
    "s": "Sary",
    "h": [
-    5,
-    5,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    4,
     1,
-    1,
-    0,
-    0,
     0,
     1,
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    12,
+    3,
     0,
     0,
     2,
     0,
     0,
-    0
+    0,
+    3,
+    0,
+    0,
+    1,
+    0,
+    7
    ]
   },
   {
@@ -45896,36 +45962,6 @@
     7,
     5,
     9
-   ]
-  },
-  {
-   "dia": "2026-08-21",
-   "s": "Sary",
-   "h": [
-    4,
-    1,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    12,
-    3,
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0,
-    1,
-    0,
-    7
    ]
   },
   {
@@ -54780,36 +54816,6 @@
   },
   {
    "dia": "2026-08-13",
-   "s": "",
-   "h": [
-    14,
-    15,
-    0,
-    0,
-    0,
-    3,
-    13,
-    0,
-    0,
-    1,
-    19,
-    0,
-    5,
-    3,
-    6,
-    0,
-    0,
-    6,
-    14,
-    8,
-    22,
-    10,
-    31,
-    27
-   ]
-  },
-  {
-   "dia": "2026-08-13",
    "s": "Sary",
    "h": [
     0,
@@ -54836,6 +54842,36 @@
     0,
     0,
     8
+   ]
+  },
+  {
+   "dia": "2026-08-13",
+   "s": "",
+   "h": [
+    14,
+    15,
+    0,
+    0,
+    0,
+    3,
+    13,
+    0,
+    0,
+    1,
+    19,
+    0,
+    5,
+    3,
+    6,
+    0,
+    0,
+    6,
+    14,
+    8,
+    22,
+    10,
+    31,
+    27
    ]
   },
   {
@@ -54870,36 +54906,6 @@
   },
   {
    "dia": "2026-08-14",
-   "s": "",
-   "h": [
-    8,
-    6,
-    3,
-    0,
-    0,
-    0,
-    9,
-    0,
-    0,
-    30,
-    45,
-    0,
-    3,
-    2,
-    8,
-    11,
-    8,
-    16,
-    0,
-    25,
-    13,
-    8,
-    44,
-    6
-   ]
-  },
-  {
-   "dia": "2026-08-14",
    "s": "Sary",
    "h": [
     3,
@@ -54926,6 +54932,36 @@
     0,
     0,
     2
+   ]
+  },
+  {
+   "dia": "2026-08-14",
+   "s": "",
+   "h": [
+    8,
+    6,
+    3,
+    0,
+    0,
+    0,
+    9,
+    0,
+    0,
+    30,
+    45,
+    0,
+    3,
+    2,
+    8,
+    11,
+    8,
+    16,
+    0,
+    25,
+    13,
+    8,
+    44,
+    6
    ]
   },
   {
@@ -55260,6 +55296,36 @@
   },
   {
    "dia": "2026-08-17",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    15,
+    9,
+    2,
+    0,
+    0,
+    1,
+    3,
+    0,
+    0,
+    0,
+    5,
+    0,
+    0,
+    3
+   ]
+  },
+  {
+   "dia": "2026-08-17",
    "s": "",
    "h": [
     0,
@@ -55316,36 +55382,6 @@
     5,
     4,
     1
-   ]
-  },
-  {
-   "dia": "2026-08-17",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    15,
-    9,
-    2,
-    0,
-    0,
-    1,
-    3,
-    0,
-    0,
-    0,
-    5,
-    0,
-    0,
-    3
    ]
   },
   {
@@ -124953,6 +124989,81 @@
   {
    "s": "",
    "d0": "2026-02-01",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
    "dp": ""
   },
   {
