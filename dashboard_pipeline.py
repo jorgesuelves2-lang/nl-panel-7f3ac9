@@ -185,6 +185,30 @@ try:
         print("kommo: contactos con setter/origen casables:",len(KSET),flush=True)
 except Exception as _e:
     print("AVISO Kommo:",str(_e)[:80],flush=True)
+def _canal_bucket(o):
+    o=(o or "").lower()
+    if "ads" in o: return "Ads"
+    if "cta" in o: return "CTA comentario"
+    if "outbound" in o: return "Outbound"
+    if "inbound" in o: return "Inbound"
+    return "Otros" if o else ""
+def origen_de(nm):
+    n=_knorm(nm)
+    if not n: return ""
+    t=(KSET.get(n)
+       or (KSET2.get(" ".join(n.split()[:2])) if len(n.split())>=2 else None)
+       or KSET3.get(re.sub(r'[^a-z0-9]','',n)))
+    return _canal_bucket(t["o"]) if t else ""
+def _canal_cta(v):
+    v=(v or "").lower()
+    if not v.strip(): return ""
+    if "outbound" in v: return "Outbound"
+    if "http" in v or "reel" in v or "instagram" in v: return "CTA comentario"
+    if "anuncio" in v or re.search(r'\bads?\b',v): return "Ads"
+    if "inbound" in v: return "Inbound"
+    return "Otros"
+def fuente_de(nombre,cta):
+    return origen_de(nombre) or _canal_cta(cta)
 def setter_de(nm):
     n=_knorm(nm)
     if not n: return ""
@@ -386,10 +410,12 @@ print("setter por ficha (GSET):",len(GSET),flush=True)
 # Sirve para saber DE QUIEN ES EL TURNO en cada lead: si el ultimo mensaje es del lead, la pelota
 # esta en nuestro tejado; si es nuestro, estamos esperando respuesta. Se saca del listado de
 # conversaciones (una pasada paginada), sin bajar los mensajes uno a uno.
-ULT={}
+ULT={}; CONV_D0={}; CONV_D0N={}   # D0 por contactId y, de respaldo, por NOMBRE normalizado:
+# el lead que agenda con el link roto crea una FICHA DUPLICADA, asi que su chat vive en otro contactId
+# y solo el nombre permite unirlos.
 try:
     _sa=None; _p=0
-    while _p<60:
+    while _p<140:
         _pr=[f"locationId={LOC}","limit=100","sortBy=last_message_date","sort=desc"]
         if _sa: _pr.append(f"startAfterDate={_sa}")
         _d=cg("https://services.leadconnectorhq.com/conversations/search",_pr)
@@ -399,6 +425,17 @@ try:
             _cid=_c.get("contactId")
             if not _cid: continue
             _lmd=_c.get("lastMessageDate") or 0
+            _da0r=_c.get("dateAdded")
+            # el listado de conversaciones da dateAdded en EPOCH ms (no ISO como el calendario)
+            if isinstance(_da0r,(int,float)) or (isinstance(_da0r,str) and _da0r.isdigit()):
+                _ms=int(_da0r); _da0=dms(_ms if _ms>10**12 else _ms*1000) or ""
+            else:
+                _da0=str(_da0r or "")[:10]
+            if _da0 and (_cid not in CONV_D0 or _da0<CONV_D0[_cid]): CONV_D0[_cid]=_da0
+            _nm0=_knorm(_c.get("contactName") or _c.get("fullName") or "")
+            if _da0 and _nm0 and len(_nm0)>4:
+                for _k0 in {_nm0," ".join(_nm0.split()[:2])}:
+                    if len(_k0)>4 and (_k0 not in CONV_D0N or _da0<CONV_D0N[_k0]): CONV_D0N[_k0]=_da0
             if _cid not in ULT or _lmd>ULT[_cid]["ts"]:
                 ULT[_cid]={"ts":_lmd,"fecha":dms(_lmd) or "",
                            "dir":_c.get("lastMessageDirection") or "",
@@ -498,6 +535,7 @@ for cid,info in cids.items():
             "reag":(min(_post) if _post else ""),
             "agendada":str(e.get("dateAdded"))[:10],
             "cta":cm.get(F["cta"]) or "","asistio":_asis_clo,
+            "fuente":fuente_de(nombre,cm.get(F["cta"])),
             "resclo":cm.get(F["rc"]) or "","sc":cm.get(F["sc"]),"cash":cm.get(F["cash"]) or "",
             "ticket":cm.get(F["ticket"]) or "","pagado":cm.get(F["pagado"]) or "",
             # contexto para saber QUE PASO con cada uno sin salir del panel:
@@ -525,6 +563,8 @@ for cid,info in cids.items():
             "reag":(min(_post) if _post else ""),
             "agendada":str(e.get("dateAdded"))[:10],
             "cta":cm.get(F["cta"]) or "","asistio":_asis_tri,"fclo":_fclo,
+            "fuente":fuente_de(nombre,cm.get(F["cta"])),
+            "d0":(CONV_D0.get(cid) or CONV_D0N.get(_knorm(nombre)) or CONV_D0N.get(" ".join(_knorm(nombre).split()[:2])) or ""),
             "restri":restri(tags),"stri":cm.get(F["st"]),"ss":cm.get(F["ss"]),
             "setter":setter,"triager":cm.get("HOpZ4zQsnwEs70pJSzea") or "","prof":cm.get(F["prof"]) or "",
             "motivo":cm.get("GWZs0fx5rdOsMiW8cvHM") or "","objtri":(cm.get(F["objtri"]) or "")[:400],
@@ -553,6 +593,7 @@ for _c,_o in OPPS.items():
     _prox=next((f for f in _citas if f>=_hoy),"")
     _u=ULT.get(_c) or {}
     pipeline_leads.append({"cid":_c,"nombre":_nm,"etapa":_o["etapa"],"desde":_o["desde"],
+        "fuente":fuente_de(_nm,_cm.get(F["cta"])),
         "prox":_prox,"setter":_cm.get(F["setter"]) or "","cta":_cm.get(F["cta"]) or "",
         "prof":_cm.get(F["prof"]) or "","restri":restri(_tg),"resclo":_cm.get(F["rc"]) or "",
         "ticket":_cm.get(F["ticket"]) or "","pagado":_cm.get(F["pagado"]) or "",
