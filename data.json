@@ -1,6 +1,6 @@
 {
- "generado": "2026-08-24 23:57",
- "rango": "2026-02-01 a 2026-08-24",
+ "generado": "2026-08-25 02:11",
+ "rango": "2026-02-01 a 2026-08-25",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -2863,13 +2863,27 @@
    "inb": 5,
    "out": 158,
    "nuevas": 163,
-   "total": 290,
-   "fups": 195,
+   "total": 292,
+   "fups": 206,
    "prop": 4,
    "link": 4,
    "badlink": 0,
    "agendas": 3,
    "resp_min": 57,
+   "nodata": false
+  },
+  {
+   "dia": "2026-08-25",
+   "inb": 1,
+   "out": 10,
+   "nuevas": 11,
+   "total": 22,
+   "fups": 2,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 0,
+   "resp_min": 2,
    "nodata": false
   }
  ],
@@ -5330,6 +5344,18 @@
    "noconfirma": 0,
    "cancelled": 0,
    "confirmed": 3,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-08-25",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 0,
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
@@ -16886,10 +16912,10 @@
    "tel": "+5547997493053",
    "email": "dannyvargas703@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/f4ei7Aiqm58D88j1kbXK",
-   "ult": "2026-07-05",
-   "ultdir": "outbound",
-   "ulttxt": "Hola Danny Vargas,\n\nTe dejo aquí los detalles de la reunión.\nDanny Vargas - Reunión de Planificación Estratégica\n\n\nFehca y Hora: miércoles, 8 de ju...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "infoclo": "Danny Vargas, medico intensivista boliviano radicado en Brasil, coordinador de UTI de 10 camas. Perfil solido y de alta demanda en Alemania. Cero nivel de aleman, horizonte de 3-5 anos y urgencia moderada. Presupuesto declarado de 3.500-5.000 EUR pero coste real estimado del proceso completo es 15.000-20.000 EUR; necesita propuesta escalonada. Esta en modo evaluacion: quiere confirmar viabilidad antes de comprometerse. Acepto reunion con Natalie; punto clave a trabajar en closing: ruta personalizada con su experiencia en UCI, ROI claro y plan de inversion accesible para activar decision ahora.",
    "restri": "Cualifica",
    "ss": 72,
@@ -19813,6 +19839,17 @@
   },
   {
    "dia": "2026-08-24",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
+  },
+  {
+   "dia": "2026-08-25",
    "agendados": 0,
    "showed": 0,
    "noshow": 0,
@@ -23952,13 +23989,13 @@
   },
   {
    "dia": "2026-08-21",
-   "in": 1787320563,
-   "rep": 1787320701
+   "in": 1787321603,
+   "rep": 1787321947
   },
   {
    "dia": "2026-08-21",
-   "in": 1787321603,
-   "rep": 1787321947
+   "in": 1787320563,
+   "rep": 1787320701
   },
   {
    "dia": "2026-08-21",
@@ -23977,6 +24014,11 @@
   },
   {
    "dia": "2026-08-24",
+   "in": 1787577360,
+   "rep": 1787583683
+  },
+  {
+   "dia": "2026-08-24",
    "in": 1787550616,
    "rep": 1787551096
   },
@@ -23992,13 +24034,13 @@
   },
   {
    "dia": "2026-08-24",
-   "in": 1787577360,
-   "rep": 1787583683
-  },
-  {
-   "dia": "2026-08-24",
    "in": 1787559176,
    "rep": 1787562610
+  },
+  {
+   "dia": "2026-08-25",
+   "in": 1787622354,
+   "rep": 1787622467
   }
  ],
  "kpis": [
@@ -27075,6 +27117,19 @@
     "Sara": false,
     "Jesmary": false
    }
+  },
+  {
+   "dia": "2026-08-25",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Jesmary": false
+   }
   }
  ],
  "setters": [
@@ -29695,10 +29750,10 @@
    "urg": "",
    "infotri": "Danny Vargas, medico intensivista boliviano radicado en Brasil, coordinador de UTI de 10 camas. Perfil solido y de alta demanda en Alemania. Cero nivel de aleman, horizonte de 3-5 anos y urgencia moderada. Presupuesto declarado de 3.500-5.000 EUR pero coste real estimado del proceso completo es 15.000-20.000 EUR; necesita propuesta escalonada. Esta en modo evaluacion: quiere confirmar viabilidad antes de comprometerse. Acepto reunion con Natalie; punto clave a trabajar en closing: ruta personalizada con su experiencia en UCI, ROI claro y plan de inversion accesible para activar decision ahora.",
    "restri_ia": "PERFIL: Medico intensivista boliviano radicado en Brasil (Santa Catarina). Revalido su diploma en Brasil, hizo residencia en medicina intensiva y termino hace 2 anos. Actualmente es coordinador de una UTI de 10 camas en el interior de Brasil. Perfil solido y relevante para Alemania.\n\nDINERO: Formulario indica presupuesto de 3.500-5.000 EUR. En triaje (transcripcion de Fathom) menciona que 'tiene una parte del dinero y puede iniciar, pero necesita ver la propuesta para organizarse'. Coste total estimado del proceso completo: 15.000-20.000 EUR (incluyendo cuenta bloqueada, burocracia, gastos). Hay un gap importante entre lo que dice tener y el coste real total. Riesgo financiero moderado-alto si no tiene liquidez adicional o plan de ahorro claro.\n\nDECISION: Es el decisor unico. Sin dependientes mencionados que bloqueen. Sin embargo, su nivel de compromiso es condicional: 'si el proceso es viable, le doy inicio'. Aun esta validando si vale la pena. No es un 'si' firme todavia.\n\nPLAZO/URGENCIA: Horizonte personal de 3 a 5 anos. Urgencia real moderada: tiene trabajo estable hoy y no hay presion externa. Quiere empezar si se le convence de la viabilidad. No hay urgencia emocional fuerte.",
-   "ult": "2026-07-05",
-   "ultdir": "outbound",
-   "ulttxt": "Hola Danny Vargas,\n\nTe dejo aquí los detalles de la reunión.\nDanny Vargas - Reunión de Planificación Estratégica\n\n\nFehca y Hora: miércoles, 8 de ju...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": true
   },
   {
