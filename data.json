@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-25 16:18",
+ "generado": "2026-08-25 17:14",
  "rango": "2026-02-01 a 2026-08-25",
  "setting": [
   {
@@ -2874,16 +2874,16 @@
   },
   {
    "dia": "2026-08-25",
-   "inb": 5,
+   "inb": 6,
    "out": 114,
-   "nuevas": 119,
-   "total": 182,
+   "nuevas": 120,
+   "total": 184,
    "fups": 94,
    "prop": 0,
    "link": 0,
    "badlink": 0,
    "agendas": 1,
-   "resp_min": 5,
+   "resp_min": 3,
    "nodata": false
   }
  ],
@@ -25752,6 +25752,12 @@
   },
   {
    "dia": "2026-08-25",
+   "in": 1787676470,
+   "rep": 1787676510,
+   "s": ""
+  },
+  {
+   "dia": "2026-08-25",
    "in": 1787657763,
    "rep": 1787658054,
    "s": ""
@@ -28907,7 +28913,7 @@
    "restri_ia": "",
    "ult": "2026-08-25",
    "ultdir": "outbound",
-   "ulttxt": "¡Hola María!\n\n\n\nEsta es tu confirmación para la cita que has agendado con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Chri...",
+   "ulttxt": "¡Hey María!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
    "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
@@ -28943,7 +28949,7 @@
    "restri_ia": "",
    "ult": "2026-08-25",
    "ultdir": "outbound",
-   "ulttxt": "¡Hola María!\n\n\n\nEsta es tu confirmación para la cita que has agendado con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Chri...",
+   "ulttxt": "¡Hey María!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
    "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
@@ -41801,8 +41807,8 @@
    "sc": null,
    "ult": "2026-08-25",
    "ultdir": "inbound",
-   "ulttxt": "Ya agende la cita de la llamada",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ulttxt": "yo vi que hoy no habia",
+   "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/NUo77MuCtbQu3eGTBGCs"
   },
   {
@@ -41917,7 +41923,7 @@
    "sc": null,
    "ult": "2026-08-25",
    "ultdir": "outbound",
-   "ulttxt": "¡Hola María!\n\n\n\nEsta es tu confirmación para la cita que has agendado con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Chri...",
+   "ulttxt": "¡Hey María!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
    "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/lJnRjJdd8FkRXTI4tbsA"
   },
@@ -45473,7 +45479,7 @@
     2,
     50,
     48,
-    0,
+    1,
     0,
     0,
     0,
@@ -45695,36 +45701,6 @@
   },
   {
    "dia": "2026-08-18",
-   "s": "Sary",
-   "h": [
-    1,
-    2,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    4,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    7,
-    8,
-    10,
-    1,
-    6,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-18",
    "s": "",
    "h": [
     16,
@@ -45751,6 +45727,36 @@
     10,
     1,
     4
+   ]
+  },
+  {
+   "dia": "2026-08-18",
+   "s": "Sary",
+   "h": [
+    1,
+    2,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    7,
+    8,
+    10,
+    1,
+    6,
+    0
    ]
   },
   {
@@ -45815,36 +45821,6 @@
   },
   {
    "dia": "2026-08-22",
-   "s": "",
-   "h": [
-    8,
-    9,
-    1,
-    5,
-    0,
-    0,
-    0,
-    0,
-    7,
-    86,
-    21,
-    5,
-    5,
-    1,
-    4,
-    5,
-    0,
-    2,
-    7,
-    8,
-    9,
-    2,
-    1,
-    1
-   ]
-  },
-  {
-   "dia": "2026-08-22",
    "s": "Sary",
    "h": [
     5,
@@ -45871,6 +45847,36 @@
     0,
     0,
     0
+   ]
+  },
+  {
+   "dia": "2026-08-22",
+   "s": "",
+   "h": [
+    8,
+    9,
+    1,
+    5,
+    0,
+    0,
+    0,
+    0,
+    7,
+    86,
+    21,
+    5,
+    5,
+    1,
+    4,
+    5,
+    0,
+    2,
+    7,
+    8,
+    9,
+    2,
+    1,
+    1
    ]
   },
   {
@@ -125018,6 +125024,11 @@
   {
    "s": "",
    "d0": "2026-02-01",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-25",
    "dp": ""
   },
   {
