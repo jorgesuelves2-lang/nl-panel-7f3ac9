@@ -245,6 +245,8 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
       <div style="font-size:12px;color:var(--mut)" id="g_tiempos_nota"></div></div>
     <div class="panel" id="g_meta_panel"><h3>Inversión en anuncios y coste por lead <span style="font-weight:400;color:var(--mut);font-size:13px">— cuenta NatschoADS</span></h3>
       <div class="cards" id="g_meta"></div>
+      <div style="font-size:13px;margin:12px 0 6px;font-weight:600">Agendas y ventas por fuente <span style="font-weight:400;color:var(--mut);font-size:12px">— para no mezclar lo que traen los ads con lo que trae el outbound</span></div>
+      <div class="cards" id="g_meta2"></div>
       <div style="font-size:12px;color:var(--mut)" id="g_meta_nota"></div></div>
     <div class="panel"><h3>Facturación y cash collected por día (€)</h3>
       <div class="legend"><span><i style="background:var(--teal)"></i>Facturación</span><span><i style="background:var(--blue)"></i>Cash</span></div>
@@ -626,7 +628,11 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
       +fila('Score setting',r.ss!=null?r.ss:'')+fila('Score triaje',r.stri!=null?r.stri:'')
       +fila('Score closing',tipo==='clo'&&r.sc!=null?r.sc:'')
       +(window.TEAM?'':fila('Ticket',esc(r.ticket))+fila('Pagado',esc(r.pagado)))
-      +fila('Origen (CTA)',esc(r.cta))+fila('Motivo',esc(r.motivo))+fila('Teléfono',esc(r.tel))+fila('Email',esc(r.email))
+      +fila('Origen (CTA)',(function(v){ v=String(v||''); if(!v) return '';
+        var t=esc(v), m=v.match(/https?:\/\/[^\s<>"]+/);
+        if(m){ var u=esc(m[0]); t=t.replace(u,'<a href="'+u+'" target="_blank" style="color:var(--blue)">'+u+'</a>'); }
+        return t; })(r.cta))
+      +fila('Fuente',esc(r.fuente))+fila('Motivo',esc(r.motivo))+fila('Teléfono',esc(r.tel))+fila('Email',esc(r.email))
      +'</table>'
      +(obj?'<h4 style="margin:18px 0 6px;font-size:14px">Objeciones registradas</h4><div style="color:var(--mut)">'+esc(obj)+'</div>':'')
      +(an?'<h4 style="margin:18px 0 6px;font-size:14px">Análisis de la llamada</h4><div style="white-space:pre-wrap;background:rgba(128,128,128,.08);padding:12px;border-radius:8px;font-size:12.5px;max-height:280px;overflow:auto">'+esc(an)+'</div>':'')
@@ -717,10 +723,15 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      if(r.fecha<from||r.fecha>to) return;
      var d=_dd(r.agendada,r.fecha); if(d!=null&&d>=0&&d<60) a3.push(d);
    });
-   function c(l,arr){ var m=_med(arr); return card(l, m==null?'—':(m+' día'+(m===1?'':'s')), arr.length?('mediana de '+arr.length+' citas'):'sin datos en el rango'); }
-   el.innerHTML=c('De agendar al triaje',a1)+c('Del triaje al closing',a2)+c('De agendar al closing',a3);
+   var a0=[];
+   (DATA.triage_leads||[]).forEach(function(r){
+     if(r.fecha<from||r.fecha>to) return;
+     if(r.d0&&r.agendada){ var d0=_dd(r.d0,r.agendada); if(d0!=null&&d0>=0&&d0<400) a0.push(d0); }   // hay leads que maduran meses
+   });
+   function c(l,arr,sub){ var m=_med(arr); return card(l, m==null?'—':(m+' día'+(m===1?'':'s')), arr.length?('mediana de '+arr.length+' '+(sub||'citas')):'sin datos en el rango'); }
+   el.innerHTML=c('Duración de la conversación',a0,'conversaciones')+c('De agendar al triaje',a1)+c('Del triaje al closing',a2)+c('De agendar al closing',a3);
    var n=document.getElementById('g_tiempos_nota');
-   if(n) n.innerHTML='"Del triaje al closing" = días entre la llamada de triaje del lead y su primera cita de closing. Cuanto más corto, menos leads se enfrían entre etapas.';
+   if(n) n.innerHTML='"Duración de la conversación" = del primer mensaje del chat a que se crea la agenda de triaje. "Del triaje al closing" = de la llamada de triaje a su primera cita de closing. Cuanto más corto todo, menos leads se enfrían.';
  }
 
  // ===== INVERSION EN META (meta_spend.json en el propio repo; COP -> EUR aprox.) =====
@@ -748,6 +759,23 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     +card('Coste por conversación nueva',f(nv?eur/nv:NaN),nv+' conversaciones nuevas')
     +card('Coste por agenda',f(agm?eur/agm:NaN),agm+' agendas en el rango')
     +card('Coste por venta',f(vt?eur/vt:NaN),vt+' ventas en el rango');
+   // agendas y ventas separadas por fuente (etiqueta de Kommo o campo CTA)
+   var F2={}; var VF={};
+   (DATA.triage_leads||[]).forEach(function(r){ if(r.fecha<from||r.fecha>to) return;
+     var k=r.fuente||'Sin clasificar'; F2[k]=(F2[k]||0)+1; });
+   (DATA.closing||[]).forEach(function(r){ if(r.fecha<from||r.fecha>to) return;
+     if((r.resclo||'')!=='Vendido') return;
+     var k=r.fuente||'Sin clasificar'; VF[k]=(VF[k]||0)+1; });
+   var el2=document.getElementById('g_meta2');
+   if(el2){
+     var ordenF=['Ads','CTA comentario','Outbound','Inbound','Otros','Sin clasificar'];
+     var h2='';
+     ordenF.forEach(function(k){ if(F2[k]||VF[k]) h2+=card(k,(F2[k]||0)+' agendas',(VF[k]?VF[k]+' venta'+(VF[k]===1?'':'s'):'sin ventas en el rango')); });
+     var nAds=F2['Ads']||0, vAds=VF['Ads']||0;
+     h2+=card('Coste por agenda de ads',nAds?f(eur/nAds):'—',nAds+' agendas de ads');
+     h2+=card('Coste por venta de ads',vAds?f(eur/vAds):'—',vAds+' ventas de ads');
+     el2.innerHTML=h2;
+   }
    var n2=document.getElementById('g_meta_nota');
    if(n2) n2.innerHTML='Cambio aplicado: 1 COP = '+(META.cop_eur||0.00022)+' € (editable en meta_spend.json, actualizado '+(META.actualizado||'—')+'). Ojo al leerlo: el gasto es solo de ads y parte de los leads llegan por outbound orgánico, así que estos costes mezclan pago y orgánico.';
  }
