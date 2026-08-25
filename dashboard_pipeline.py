@@ -57,7 +57,7 @@ BADLINK=re.compile(r'natscholibre\.com/agenda[\w-]*(?![^\s]*contact_id=[A-Za-z0-
 CACHE_PATH=os.path.join(OUTDIR,"setting_cache.json")
 try: _cache=json.load(open(CACHE_PATH))
 except Exception: _cache={}
-_cache.setdefault("days",{}); _cache.setdefault("resp_pairs",{})
+_cache.setdefault("days",{}); _cache.setdefault("resp_pairs",{}); _cache.setdefault("horas",{}); _cache.setdefault("convs",{})
 RECOMPUTE_DAYS=int(os.environ.get("RECOMPUTE_DAYS","12"))
 BACKFILL=(not _cache["days"]) or os.environ.get("BACKFILL")=="1"
 RECFROM=START if BACKFILL else (datetime.datetime.now(datetime.timezone.utc)-datetime.timedelta(days=RECOMPUTE_DAYS)).strftime('%Y-%m-%d')
@@ -126,6 +126,72 @@ try:
     print("KPIs reportados por setters:",len(kpis),flush=True)
 except Exception as e:
     print("AVISO: no se pudieron leer los KPIs del formulario:",e,flush=True)
+
+# ---- KOMMO: de quien es cada conversacion (etiquetas de setter) y de donde vino (origen) ----
+# Kommo es el CRM del setting: cada chat es un lead con etiquetas ("Sary","Sara","Jes","Outbound frio","Ads"...).
+# Se cruza por NOMBRE del contacto con las conversaciones de FunnelUp. Si Kommo no responde, el panel
+# sigue funcionando y todo queda como "sin asignar" (nunca rompe).
+import unicodedata as _ud
+def _knorm(x):
+    x=_ud.normalize("NFKD",(x or "")).encode("ascii","ignore").decode().lower()
+    return " ".join(re.sub(r'[^a-z0-9 ]',' ',x).split())
+KSET={}; KSET2={}; KSET3={}
+try:
+    _ktok=os.environ.get("KOMMO_TOKEN") or ""
+    if not _ktok:
+        _kp=os.path.expanduser("~/.natscholibre_secrets/kommo.env")
+        if os.path.exists(_kp):
+            _km=re.search(r'KOMMO_LONG_LIVED_TOKEN=(.+)',open(_kp).read())
+            if _km: _ktok=_km.group(1).strip()
+    if _ktok:
+        def _kget(pth):
+            # OJO: -g obligatorio (los corchetes de order[...] disparan el globbing de curl -> cuerpo vacio)
+            o=subprocess.run(["curl","-sg","--compressed","-m","30",f"https://aprendealeman.kommo.com{pth}",
+                "-H",f"Authorization: Bearer {_ktok}","-H","Accept: application/json"],capture_output=True,text=True).stdout
+            try: return json.loads(o)
+            except Exception: return {}
+        _ltags={}
+        _pg=1
+        while _pg<40:
+            _d=_kget(f"/api/v4/leads?limit=250&page={_pg}&with=contacts")
+            _ls=(_d.get("_embedded") or {}).get("leads") or []
+            if not _ls: break
+            for _l in _ls:
+                _tg=[(x.get("name") or "").lower().strip() for x in ((_l.get("_embedded") or {}).get("tags") or [])]
+                _st=("Sary" if "sary" in _tg else
+                     "Sara" if any(t=="sara" or t.startswith("sara ") for t in _tg) else
+                     "Jesmary" if "jes" in _tg or "jesmary" in _tg else "")
+                _or=next((t for t in _tg if t in ("outbound frio","ads","cta comentario","inbound","outbound seguidores","skool","poll historia")),"")
+                if not (_st or _or): continue
+                for _ct in ((_l.get("_embedded") or {}).get("contacts") or []):
+                    if _ct.get("id"): _ltags.setdefault(_ct["id"],{"s":_st,"o":_or})
+            _pg+=1
+        _pg=1
+        while _pg<80:
+            _d=_kget(f"/api/v4/contacts?limit=250&page={_pg}")
+            _cs=(_d.get("_embedded") or {}).get("contacts") or []
+            if not _cs: break
+            for _ct in _cs:
+                _t=_ltags.get(_ct.get("id"))
+                if _t:
+                    _n=_knorm(_ct.get("name"))
+                    if _n:
+                        KSET.setdefault(_n,_t)
+                        _p2=" ".join(_n.split()[:2])
+                        if len(_n.split())>=2: KSET2.setdefault(_p2,_t)
+                        _c3=re.sub(r'[^a-z0-9]','',_n)   # forma compacta: "dra.axia" == "dra axia"
+                        if len(_c3)>=5: KSET3.setdefault(_c3,_t)
+            _pg+=1
+        print("kommo: contactos con setter/origen casables:",len(KSET),flush=True)
+except Exception as _e:
+    print("AVISO Kommo:",str(_e)[:80],flush=True)
+def setter_de(nm):
+    n=_knorm(nm)
+    if not n: return ""
+    t=(KSET.get(n)
+       or (KSET2.get(" ".join(n.split()[:2])) if len(n.split())>=2 else None)
+       or KSET3.get(re.sub(r'[^a-z0-9]','',n)))
+    return t["s"] if t else ""
 
 # 1) lista de conversaciones (setting = IG+FB)
 base="https://services.leadconnectorhq.com/conversations/search"; convs=[]; sa=None; pages=0
@@ -243,22 +309,45 @@ for cal in ["VRaGr4KGSZNiuDamyV4q","998ij1w7jUrmPqJZu43V"]:
 # Se baja TODO el pipeline de una vez (paginado) en lugar de preguntar oportunidad por oportunidad:
 # son ~250 llamadas menos y esta cuenta ya sufre rate-limit.
 ETAPA_DE={}
+# 25-ago: ademas del nombre de etapa, guardamos la oportunidad completa del pipeline "LEADS"
+# (etapa, cuando entro en ella, estado) para la pestana Pipeline: leads vivos en el embudo.
+LEADS_PIPE="mW4ZfvQnRARhIlgmpj6e"   # pipeline "LEADS" de FunnelUp
+# etapa VIVA = no es un cierre (rojos/completados/reembolso). Se decide por el nombre, asi
+# si crean una etapa nueva entra sola mientras no sea de cierre.
+def _etapa_viva(n):
+    n=(n or "").lower()
+    return not any(x in n for x in ("no show","no confirma","no cualifica","pago completo","reembolso","descartado"))
+OPPS={}; ETAPAS_ORDEN=[]
 try:
-    _stages={}
+    _stages={}; _pos={}
     for _p in cg(f"https://services.leadconnectorhq.com/opportunities/pipelines?locationId={LOC}",headers=H21).get("pipelines",[]):
-        for _s in _p.get("stages",[]): _stages[_s["id"]]=_s.get("name")
+        for _s in _p.get("stages",[]):
+            _stages[_s["id"]]=_s.get("name")
+            if _p.get("id")==LEADS_PIPE: _pos[_s.get("name")]=_s.get("position",99)
+    ETAPAS_ORDEN=[n for n,_ in sorted(_pos.items(),key=lambda kv:kv[1]) if _etapa_viva(n)]
     _url=f"https://services.leadconnectorhq.com/opportunities/search?location_id={LOC}&limit=100"
     _n=0
     while _url and _n<15:
         _d=cg(_url,headers=H21)
         for _o in _d.get("opportunities",[]):
-            _c=(_o.get("contact") or {}).get("id")
-            if _c: ETAPA_DE[_c]=_stages.get(_o.get("pipelineStageId"),"")
+            _ct=_o.get("contact") or {}
+            _c=_ct.get("id")
+            if not _c: continue
+            ETAPA_DE[_c]=_stages.get(_o.get("pipelineStageId"),"")
+            if _o.get("pipelineId")==LEADS_PIPE and _o.get("status")=="open":
+                _en=_stages.get(_o.get("pipelineStageId"),"")
+                OPPS[_c]={"etapa":_en,"viva":_etapa_viva(_en),
+                          "desde":str(_o.get("lastStageChangeAt") or _o.get("createdAt") or "")[:10],
+                          "nombre":_ct.get("name") or "","email":_ct.get("email") or "","tel":_ct.get("phone") or ""}
         _url=((_d.get("meta") or {}).get("nextPageUrl")) or None
         _n+=1
-    print("etapas de pipeline mapeadas:",len(ETAPA_DE),flush=True)
+    print("etapas de pipeline mapeadas:",len(ETAPA_DE),"| leads vivos en LEADS:",sum(1 for o in OPPS.values() if o["viva"]),flush=True)
 except Exception as _e:
     print("AVISO: no se pudieron mapear etapas:",str(_e)[:70],flush=True)
+
+# los leads vivos del pipeline entran en la descarga de fichas aunque no tengan cita
+for _c,_o in OPPS.items():
+    if _o["viva"] and _c not in cids: cids[_c]={"_solo_pipe":True}
 
 def ev_name(info):
     # el titulo del evento del calendario trae "Nombre Lead - Reunion ..."; nombre fiable sin depender de la ficha
@@ -278,6 +367,20 @@ def fc(cid):
 cmap={}
 with ThreadPoolExecutor(max_workers=4) as ex:
     for cid,c in ex.map(fc,list(cids)): cmap[cid]=c
+
+# setter por contactId, leido de la FICHA (campo "Setter asignada" o etiqueta): atribucion exacta,
+# sin cruzar nombres. Cubre a todos los leads con cita; Kommo cubre el resto por nombre.
+GSET={}
+for _c3,_cc3 in cmap.items():
+    _cm3={x.get("id"):x.get("value") for x in (_cc3 or {}).get("customFields",[])}
+    _v3=str(_cm3.get("lcFBOFN6VjZhvTgMFvuf") or "").strip().capitalize()
+    if _v3 not in ("Sary","Sara","Jesmary"):
+        _tl3=[str(t).lower() for t in ((_cc3 or {}).get("tags") or [])]
+        _v3=("Sary" if any("sary" in t for t in _tl3) else
+             "Sara" if any(t=="sara" or "setter: sara" in t for t in _tl3) else
+             "Jesmary" if any("jesmary" in t for t in _tl3) else "")
+    if _v3: GSET[_c3]=_v3
+print("setter por ficha (GSET):",len(GSET),flush=True)
 
 # --- ULTIMO MENSAJE por contacto (24-ago-2026) ---
 # Sirve para saber DE QUIEN ES EL TURNO en cada lead: si el ultimo mensaje es del lead, la pelota
@@ -370,7 +473,7 @@ for cid,info in cids.items():
     # Origen del lead: canal de afiliado (Antonie) vs funnel propio.
     # Se detecta por el utm_source del link de agenda o por la etiqueta, lo que llegue.
     origen = "antonie" if (utm == "antonie" or "antonie" in [str(t).lower() for t in tags]) else "propio"
-    if es_real:
+    if es_real and not (info.get("_solo_pipe") and not info.get("tri") and not info.get("clo")):
       leads.append({"nombre":nombre,"setter":setter,"origen":origen,"prof":cm.get(F["prof"]) or "",
         "nivel":cm.get(F["nivel"]) or "","presup":cm.get(F["presup"]) or "","ingresos":cm.get(F["ingresos"]) or "",
         "univ":cm.get(F["univ"]) or "","urg":cm.get(F["urg"]) or "","comp":cm.get(F["comp"]) or "",
@@ -434,6 +537,32 @@ for cid,info in cids.items():
             "ulttxt":(ULT.get(cid) or {}).get("txt",""),"ulttipo":(ULT.get(cid) or {}).get("tipo",""),
             # ¿tiene closing agendado despues del triaje? -> senal de que el triaje si avanzo
             "tiene_closing": bool(info.get("clos") or info.get("clo"))})
+# ---- PESTANA PIPELINE: un lead por oportunidad VIVA del pipeline LEADS ----
+pipeline_leads=[]
+for _c,_o in OPPS.items():
+    if not _o["viva"]: continue
+    _cc=cmap.get(_c) or {}
+    _cm={x.get("id"):x.get("value") for x in _cc.get("customFields",[])}
+    _tg=_cc.get("tags",[]) or []
+    _info=cids.get(_c,{})
+    _nm=(_cc.get("contactName") or " ".join(x for x in [_cc.get("firstName"),_cc.get("lastName")] if x).strip()
+         or _o["nombre"] or "(sin nombre)")
+    # proxima cita futura (triaje o closing) si la hay
+    _hoy=datetime.datetime.utcnow().strftime('%Y-%m-%d')
+    _citas=sorted(str(x.get("startTime"))[:10] for x in (_info.get("tris") or [])+(_info.get("clos") or []) if x.get("startTime"))
+    _prox=next((f for f in _citas if f>=_hoy),"")
+    _u=ULT.get(_c) or {}
+    pipeline_leads.append({"cid":_c,"nombre":_nm,"etapa":_o["etapa"],"desde":_o["desde"],
+        "prox":_prox,"setter":_cm.get(F["setter"]) or "","cta":_cm.get(F["cta"]) or "",
+        "prof":_cm.get(F["prof"]) or "","restri":restri(_tg),"resclo":_cm.get(F["rc"]) or "",
+        "ticket":_cm.get(F["ticket"]) or "","pagado":_cm.get(F["pagado"]) or "",
+        "motivo":_cm.get(F["motivo"]) or "","tel":_cc.get("phone") or _o["tel"],"email":_cc.get("email") or _o["email"],
+        "presup":_cm.get(F["presup"]) or "","urg":_cm.get(F["urg"]) or "",
+        "nivel":_cm.get(F["nivel"]) or "","ss":_cm.get(F["ss"]),"stri":_cm.get(F["st"]),"sc":_cm.get(F["sc"]),
+        "ult":_u.get("fecha",""),"ultdir":_u.get("dir",""),"ulttxt":_u.get("txt",""),"ulttipo":_u.get("tipo",""),
+        "ficha":f"https://app.funnelup.io/v2/location/{LOC}/contacts/detail/{_c}"})
+print("pipeline_leads:",len(pipeline_leads),flush=True)
+
 leads.sort(key=lambda r:(r["nombre"] or "").lower())
 triage_leads.sort(key=lambda r:r["fecha"],reverse=True)
 closing.sort(key=lambda r:r["fecha"],reverse=True)
@@ -490,9 +619,11 @@ print("mensajes descargados",flush=True)
 s_in=Counter(); s_out=Counter(); s_total=defaultdict(set); s_fu=Counter(); s_prop=Counter(); resp=defaultdict(list)
 s_link=Counter(); s_badlink=Counter()  # propuestas con LINK de agenda real · de esas, las que van sin contact_id (=> duplicado)
 resp_pairs=[]  # pares 1er inbound -> 1ª respuesta, con timestamps UTC, para filtrar horario activo en el panel
+sh_horas=defaultdict(lambda: defaultdict(lambda: [0]*24))   # dia -> setter -> [24] mensajes salientes por hora UTC
 for c in convs:
     ms,reached=results.get(c["id"],([],True))
     if not ms: continue
+    _st=GSET.get(c.get("contactId")) or setter_de(c.get("contactName") or c.get("fullName") or "")
     fday=dms(int(ms[0]["t"]*1000))
     if reached and fday>=RECFROM:  # "nueva" solo si tenemos su PRIMER mensaje y cae en la ventana (evita recontar convs viejas)
         if ms[0]["dir"]=="inbound":
@@ -501,12 +632,16 @@ for c in convs:
             if rep:
                 el=(rep-fin)/60.0
                 if el<=1440: resp[fday].append(el)
-                if el<=4320: resp_pairs.append({"dia":fday,"in":int(fin),"rep":int(rep)})  # hasta 3 días (la noche se descuenta luego)
+                if el<=4320: resp_pairs.append({"dia":fday,"in":int(fin),"rep":int(rep),"s":_st})  # hasta 3 días (la noche se descuenta luego)
         elif ms[0]["dir"]=="outbound": s_out[fday]+=1
     prev=None; proposed=False; linked=False
+    _dprop=""   # primer dia en que se envio el link/propuesta en esta conversacion
     for x in ms:
         dd=dms(int(x["t"]*1000))
         if x["dir"]=="outbound":
+            if dd>=RECFROM:
+                sh_horas[dd][_st][datetime.datetime.utcfromtimestamp(x["t"]).hour]+=1
+            if not _dprop and LINK.search(x["body"]): _dprop=dd
             if dd>=RECFROM and prev=="outbound": s_fu[dd]+=1
             if not proposed and LINK.search(x["body"]):
                 if dd>=RECFROM: s_prop[dd]+=1
@@ -519,6 +654,10 @@ for c in convs:
                 linked=True
         if dd>=RECFROM: s_total[dd].add(c["id"])
         prev=x["dir"]
+    if reached:   # solo con la conversacion completa sabemos su primer mensaje real
+        _old=_cache["convs"].get(c["id"],{})
+        _cache["convs"][c["id"]]={"s":_st or _old.get("s",""),"d0":fday,
+                                  "dp":(_dprop or _old.get("dp",""))}
 
 # 5) MERGE en la caché con MÁXIMO: el estrangulamiento solo puede PERDER datos, nunca inventarlos.
 # Quedándonos con el valor más alto, un run estrangulado NUNCA baja un día ya bueno (solo puede subirlo).
@@ -536,6 +675,8 @@ for d in days:
     else:
         merged["resp_min"]=old.get("resp_min")
     _cache["days"][d]=merged
+for _d2 in list(sh_horas):
+    if _d2>=RECFROM: _cache["horas"][_d2]={k:v for k,v in sh_horas[_d2].items()}
 json.dump(_cache,open(CACHE_PATH,"w"),ensure_ascii=False)
 # serie de setting construida DESDE la caché (agendas se calcula fresco del calendario)
 setting=[]
@@ -609,7 +750,7 @@ for d in days:
         "estado_triage":("No hubo llamadas" if _n==0 else ("Completo" if _f>=_n else ("Parcial" if _f>0 else "Sin registrar"))),
         "retraso_medio":(round(sum(_lags)/len(_lags),1) if _lags else None),
         "kpis":{s:(s in _kpi_dias.get(d,set())) for s in SETTERS_ACT}})
-data={"generado":datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),"rango":f"{days[0]} a {days[-1]}","setting":setting,"triage":triage,"leads":leads,"closing":closing,"closing_daily":closing_daily,"gaps":gaps,"resp_pairs":resp_pairs,"kpis":kpis,"cumplimiento":cumplimiento,"setters":SETTERS_ACT,"triage_leads":triage_leads,"targets":TARGETS}
+data={"generado":datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),"rango":f"{days[0]} a {days[-1]}","setting":setting,"triage":triage,"leads":leads,"closing":closing,"closing_daily":closing_daily,"gaps":gaps,"resp_pairs":resp_pairs,"kpis":kpis,"cumplimiento":cumplimiento,"setters":SETTERS_ACT,"triage_leads":triage_leads,"targets":TARGETS,"pipeline_leads":pipeline_leads,"etapas_orden":ETAPAS_ORDEN,"horas":[{"dia":d,"s":st,"h":h} for d,m in _cache["horas"].items() for st,h in m.items()],"convprop":[{"s":v.get("s",""),"d0":v.get("d0",""),"dp":v.get("dp","")} for v in _cache["convs"].values()]}
 json.dump(data,open(os.path.join(OUTDIR,"data.json"),"w"),ensure_ascii=False,indent=1)
 tpl=open(os.path.join(HERE,"template.html")).read()
 html=tpl.replace("/*DATA*/","const DATA = "+json.dumps(data,ensure_ascii=False)+";")
@@ -621,6 +762,7 @@ for l in td["leads"]: l["ticket"]=""; l["pagado"]=""
 for r in td["closing"]: r["cash"]=""; r["ticket"]=""; r["pagado"]=""
 for r in td["closing_daily"]: r["facturacion"]=0; r["cash"]=0
 td["targets"]={k:v for k,v in TARGETS.items() if k not in ("facturacion","cash")}
+for r in td.get("pipeline_leads",[]): r["ticket"]=""; r["pagado"]=""
 thtml=tpl.replace("/*DATA*/","window.TEAM=true; const DATA = "+json.dumps(td,ensure_ascii=False)+";")
 open(os.path.join(OUTDIR,"equipo.html"),"w").write(thtml)
 print("OK dashboard.html + equipo.html generados",flush=True)
