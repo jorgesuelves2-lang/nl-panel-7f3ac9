@@ -1,0 +1,32 @@
+name: pipeline-live
+on:
+  schedule:
+    - cron: '3,18,33,48 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: pipeline-live
+  cancel-in-progress: false
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Refrescar pipeline
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+          GHL_LOCATION_ID: ${{ secrets.GHL_LOCATION_ID }}
+        run: python3 nl_pipeline_live.py
+      - name: Publicar si cambió
+        run: |
+          git config user.name "nl-bot"
+          git config user.email "bot@natscholibre"
+          git add pipeline_live.json
+          git commit -m "pipeline live" || { echo "sin cambios"; exit 0; }
+          git pull --rebase origin main || true
+          git push
