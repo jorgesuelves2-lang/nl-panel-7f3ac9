@@ -60,11 +60,12 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <button class="qb" data-d="9999">Todo</button>
   </div>
   <div class="tabs">
-    <button class="tab on" data-t="dia">Día</button>
+    <button class="tab on" data-t="global">Control</button>
+    <button class="tab" data-t="dia">Día</button>
+    <button class="tab" data-t="pipeline">Pipeline</button>
     <button class="tab" data-t="setting">Setting</button>
     <button class="tab" data-t="triage">Triaje</button>
     <button class="tab" data-t="closing">Closing</button>
-    <button class="tab" data-t="global">Global</button>
     <button class="tab" data-t="leads">Camino leads</button>
     <button class="tab" data-t="clientes">Clientes</button>
     <button class="tab" data-t="cash">Cash</button>
@@ -72,7 +73,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <button class="tab" data-t="cumpl">Cumplimiento</button>
   </div>
 
-  <section id="dia">
+  <section id="dia" class="hide">
     <div class="panel" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
       <h3 style="margin:0">Resumen del día</h3>
       <button id="dia_prev" class="tab" style="padding:4px 12px">◀</button>
@@ -88,6 +89,16 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <div class="panel"><h3>Equipo — tareas del día</h3><div id="dia_equipo"></div></div>
     <div class="panel"><h3>Llamadas de triaje del día</h3><div class="sub" id="dia_tri_sub" style="margin-bottom:10px"></div><table id="dia_tri"></table></div>
     <div class="panel"><h3>Llamadas de closing del día</h3><div class="sub" id="dia_clo_sub" style="margin-bottom:10px"></div><table id="dia_clo"></table></div>
+  </section>
+
+  <section id="pipeline" class="hide">
+    <div class="panel" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+      <h3 style="margin:0">Leads vivos en el embudo</h3>
+      <span id="pl_estado" style="color:var(--mut);font-size:12.5px"></span>
+      <button id="pl_ref" class="tab" style="padding:4px 12px">Actualizar</button>
+    </div>
+    <div class="cards" id="pl_cards"></div>
+    <div id="pl_grupos"></div>
   </section>
 
   <section id="setting" class="hide">
@@ -135,6 +146,25 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
       <div class="chartbox" style="height:230px"><canvas id="k_trend"></canvas></div>
       <div id="k_falta" style="margin-top:12px"></div>
       <div class="tablewrap" style="margin-top:14px"><table id="k_tabla"></table></div>
+    </div>
+    <div class="panel" style="border-left:3px solid var(--teal);border-radius:0">
+      <h3>Medido por conversación — cruce con Kommo <span style="font-weight:400;color:var(--mut);font-size:13px">— respuesta, horarios de trabajo y camino a la propuesta</span></h3>
+      <div style="margin:8px 0 12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <span style="font-size:13px;color:var(--mut)">Setter:</span>
+        <button class="tab on" data-kset="TOTAL" style="font-size:13px;padding:5px 12px">Total</button>
+        <button class="tab" data-kset="Sary" style="font-size:13px;padding:5px 12px">Sary</button>
+        <button class="tab" data-kset="Sara" style="font-size:13px;padding:5px 12px">Sara</button>
+        <button class="tab" data-kset="Jesmary" style="font-size:13px;padding:5px 12px">Jesmary</button>
+        <span style="font-size:13px;color:var(--mut);margin-left:14px">Hora local:</span>
+        <select id="ks_tz" style="padding:4px 8px;border:1px solid rgba(128,128,128,.35);border-radius:8px;background:transparent;color:var(--tx);font-size:13px">
+          <option value="-5" selected>Bogotá (UTC-5)</option>
+          <option value="-4">Caracas (UTC-4)</option>
+          <option value="2">Madrid (UTC+2)</option>
+        </select>
+      </div>
+      <div class="cards" id="ks_cards"></div>
+      <div id="ks_horas" style="margin-top:12px"></div>
+      <div id="ks_nota" style="font-size:12px;color:var(--mut);margin-top:8px"></div>
     </div>
     <div class="panel"><h3>Embudo del rango</h3><div id="funnel"></div></div>
     <div class="panel"><h3>Evolución por día</h3>
@@ -205,13 +235,17 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <div class="panel" style="border-left:3px solid var(--amber);border-radius:0"><div style="font-size:13px;color:var(--mut)"><b style="color:var(--tx)">Cómo leer esto:</b> las filas marcadas <b style="color:var(--red)">SIN REGISTRAR</b> son llamadas cuya fecha ya pasó y nadie anotó qué ocurrió. Se rellenan con el <b style="color:var(--tx)">formulario post-closing</b> o editando el resultado en la ficha del lead.</div></div>
   </section>
 
-  <section id="global" class="hide">
-    <div class="sub" style="margin-bottom:10px">Visión global del embudo en el rango seleccionado (selector de fechas arriba).</div>
+  <section id="global">
+    <div class="sub" style="margin-bottom:10px">Control del negocio: el embudo completo con la caída entre pasos, alertas, tiempos e inversión, sobre el rango de fechas de arriba.</div>
+    <div class="panel" style="border-left:3px solid var(--red);border-radius:0"><h3>Alertas — qué requiere acción</h3><div class="cards" id="g_alertas"></div></div>
     <div class="cards" id="g_cards"></div>
-    <div class="panel"><h3>Embudo completo</h3><div id="g_funnel"></div></div>
+    <div class="panel"><h3>Embudo completo <span style="font-weight:400;color:var(--mut);font-size:13px">— cada paso con su % sobre el paso anterior</span></h3><div id="g_funnel"></div></div>
     <div class="panel"><h3>Tiempos del embudo <span style="font-weight:400;color:var(--mut);font-size:13px">— mediana de días, en el rango seleccionado</span></h3>
       <div class="cards" id="g_tiempos"></div>
       <div style="font-size:12px;color:var(--mut)" id="g_tiempos_nota"></div></div>
+    <div class="panel" id="g_meta_panel"><h3>Inversión en anuncios y coste por lead <span style="font-weight:400;color:var(--mut);font-size:13px">— cuenta NatschoADS</span></h3>
+      <div class="cards" id="g_meta"></div>
+      <div style="font-size:12px;color:var(--mut)" id="g_meta_nota"></div></div>
     <div class="panel"><h3>Facturación y cash collected por día (€)</h3>
       <div class="legend"><span><i style="background:var(--teal)"></i>Facturación</span><span><i style="background:var(--blue)"></i>Cash</span></div>
       <div class="chartbox"><canvas id="g_fact"></canvas></div></div>
@@ -431,6 +465,8 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    renderTriajeTabla(from,to);
    renderTiempos(from,to);
    renderDia();
+   renderPipeline();
+   renderKset();
    charts.c1=new Chart(document.getElementById('c_estado'),{type:'bar',data:{labels:labels,datasets:[
      {label:'Asistió',data:CDf.map(function(r){return r.showed;}),backgroundColor:'#1D9E75'},
      {label:'Confirmado',data:CDf.map(function(r){return r.confirmed;}),backgroundColor:'#378ADD'},
@@ -443,15 +479,42 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    // ===== GLOBAL (embudo completo + dinero) =====
    document.getElementById('g_cards').innerHTML=
      card('Conv. totales',tot)+card('Propuestas',pr,pct(pr,tot)+' de conv.')+card('Agendas triaje',ag,pct(ag,pr)+' de prop.')+card('Asistió triaje',tsh,pct(tsh,tag)+' de agend.')+card('Cualifica',tcu,pct(tcu,tsh)+' de asistidos')+card('Vendidos',cVe,pct(cVe,cSh)+' de closings asist.')+(window.TEAM?'':card('Facturación','€'+Math.round(cFa).toLocaleString('es-ES'))+card('Cash collected','€'+Math.round(cCa).toLocaleString('es-ES')));
+   var cSh=(DATA.closing_daily||[]).filter(function(r){return r.dia>=from&&r.dia<=to;}).reduce(function(a,r){return a+(r.showed||0);},0);
+   var _pp=function(a,b){return b?Math.round(a*100/b)+'%':'—';};
    document.getElementById('g_funnel').innerHTML=
-     fbar('Conversaciones',tot,tot,'var(--blue)')+fbar('Propuestas de agenda',pr,tot,'var(--teal)',pct(pr,tot))+fbar('Agendas de triaje',ag,tot,'var(--amber)',pct(ag,tot))+fbar('Asistió al triaje',tsh,tot,'var(--purple)',pct(tsh,tot))+fbar('Cualifica → closing',tcu,tot,'#0F6E56',pct(tcu,tot))+fbar('Vendido',cVe,tot,'var(--red)',pct(cVe,tot));
+     fbar('Conversaciones',tot,tot,'var(--blue)')
+    +fbar('Propuestas de agenda',pr,tot,'var(--teal)',_pp(pr,tot)+' de las conversaciones')
+    +fbar('Agendas de triaje',ag,tot,'var(--amber)',_pp(ag,pr)+' de las propuestas')
+    +fbar('Asistió al triaje',tsh,tot,'var(--purple)',_pp(tsh,ag)+' de las agendas')
+    +fbar('Cualifica',tcu,tot,'#0F6E56',_pp(tcu,tsh)+' de los que asistieron')
+    +fbar('Closing hecho',cSh,tot,'#7A4DD8',_pp(cSh,tcu)+' de los que cualificaron')
+    +fbar('Vendido',cVe,tot,'var(--red)',_pp(cVe,cSh)+' de los closings hechos');
+   // ---- alertas del rango ----
+   var _al={sinReg:0,nosToca:0,cta:0};
+   (DATA.triage_leads||[]).forEach(function(r){ if(r.fecha<from||r.fecha>to) return; var sx=situacion(r,'tri');
+     if(sx.estado==='SIN REGISTRAR'||sx.estado==='Asistió · sin resultado') _al.sinReg++;
+     if(sx.turno==='NOSOTROS') _al.nosToca++;
+     if(!String(r.cta||'').trim()&&!/^Reagendada/.test(sx.estado)) _al.cta++; });
+   (DATA.closing||[]).forEach(function(r){ if(r.fecha<from||r.fecha>to) return; var sx=situacion(r,'clo');
+     if(sx.estado==='SIN REGISTRAR'||sx.estado==='Asistió · sin resultado') _al.sinReg++;
+     if(sx.turno==='NOSOTROS') _al.nosToca++; });
+   var _pend=0,_vis={};
+   (DATA.closing||[]).forEach(function(r){ if(_vis[r.nombre]) return; _vis[r.nombre]=1;
+     if((r.resclo||'')==='Vendido'){ var _p=num(r.ticket)-num(r.pagado); if(_p>0) _pend+=_p; } });
+   var _ga=document.getElementById('g_alertas');
+   if(_ga) _ga.innerHTML=
+     card('Llamadas sin registrar',_al.sinReg,'en el rango elegido')
+    +card('Leads esperándonos',_al.nosToca,'el último mensaje es suyo')
+    +(window.TEAM?'':card('Pendiente de cobro',Math.round(_pend).toLocaleString('es')+' €','ventas con cuotas abiertas'))
+    +card('Sin origen (CTA)',_al.cta,'triajes del rango sin fuente anotada');
+   renderMeta(from,to);
    charts.g1=new Chart(document.getElementById('g_fact'),{type:'bar',data:factDS(),options:factOpts});
  }
  function anItem(t,why,fix){return '<div class="an"><div class="t">'+t+'</div><div class="r"><b>Por qué:</b> '+why+'</div><div class="r fix"><b>Cómo corregirlo:</b> '+fix+'</div></div>';}
  fromEl.onchange=toEl.onchange=function(){document.querySelectorAll('.qb').forEach(function(b){b.classList.remove('on');});render();};
  bhOn.onchange=bhTz.onchange=bhA.onchange=bhB.onchange=function(){render();};
  document.querySelectorAll('.qb').forEach(function(b){b.onclick=function(){document.querySelectorAll('.qb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');if(b.dataset.d==='mes'){var h=hoyISO(); fromEl.value=h.slice(0,8)+'01'; toEl.value=h;}else{setRange(+b.dataset.d);}render();};});
- var SECTIONS=['dia','setting','triage','closing','global','leads','clientes','cash','antonie','cumpl'];
+ var SECTIONS=['dia','pipeline','setting','triage','closing','global','leads','clientes','cash','antonie','cumpl'];
  document.querySelectorAll('.tab[data-t]').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');SECTIONS.forEach(function(s){document.getElementById(s).classList.toggle('hide',s!==b.dataset.t);});};});
  function num(v){return parseFloat(String(v||'').replace(/[^0-9.]/g,''))||0;}
  // ---- Tabla de closings del periodo: una fila por llamada agendada, con que paso con cada lead ----
@@ -533,8 +596,8 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  window.abrirLead=function(key){ return abrirLead(key); };
  function abrirLead(key){
    var x=LM_DATA[key]; if(!x) return;
-   var r=x.r, tipo=x.tipo, s=situacion(r,tipo);
-   document.getElementById('lm_titulo').innerHTML=esc(r.nombre)+' <span style="font-weight:400;color:var(--mut);font-size:13px">— '+(tipo==='clo'?'llamada de closing':'llamada de triaje')+' del '+esc(r.fecha)+(r.hora?' a las '+esc(r.hora):'')+'</span>';
+   var r=x.r, tipo=x.tipo, s=(tipo==='pipe'?situPipe(r):situacion(r,tipo));
+   document.getElementById('lm_titulo').innerHTML=esc(r.nombre)+' <span style="font-weight:400;color:var(--mut);font-size:13px">— '+(tipo==='pipe'?esc(r.etapa||'lead del embudo'):((tipo==='clo'?'llamada de closing':'llamada de triaje')+' del '+esc(r.fecha)+(r.hora?' a las '+esc(r.hora):'')))+'</span>';
    var fila=function(k,v){ return v? '<tr><td style="color:var(--mut);padding:3px 14px 3px 0;white-space:nowrap;vertical-align:top;text-align:left;width:150px">'+k+'</td><td style="padding:3px 0;text-align:left">'+v+'</td></tr>' : ''; };
    var urg=function(u){ return u===1?'var(--red)':(u===2?'var(--amber)':'var(--teal)'); };
    var accs=s.acciones.map(function(a){
@@ -660,6 +723,94 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    if(n) n.innerHTML='"Del triaje al closing" = días entre la llamada de triaje del lead y su primera cita de closing. Cuanto más corto, menos leads se enfrían entre etapas.';
  }
 
+ // ===== INVERSION EN META (meta_spend.json en el propio repo; COP -> EUR aprox.) =====
+ var META=null;
+ function cargarMeta(cb){
+   fetch('meta_spend.json?_='+Date.now(),{cache:'no-store'})
+     .then(function(r){return r.ok?r.json():null;})
+     .then(function(j){META=j; if(cb)cb();})
+     .catch(function(){META=null; if(cb)cb();});
+ }
+ function renderMeta(from,to){
+   var pan=document.getElementById('g_meta_panel'), el=document.getElementById('g_meta');
+   if(!pan||!el) return;
+   if(window.TEAM){ pan.style.display='none'; return; }
+   if(!META||!META.dias){ el.innerHTML=card('Gasto en ads','—','sin datos de gasto todavía'); return; }
+   var cop=0; Object.keys(META.dias).forEach(function(d){ if(d>=from&&d<=to) cop+=META.dias[d]; });
+   var eur=cop*(META.cop_eur||0.00022);
+   var Sm=(DATA.setting||[]).filter(function(r){return r.dia>=from&&r.dia<=to;});
+   var nv=Sm.reduce(function(a,r){return a+(r.nuevas||0);},0);
+   var agm=Sm.reduce(function(a,r){return a+(r.agendas||0);},0);
+   var vt=(DATA.closing_daily||[]).filter(function(r){return r.dia>=from&&r.dia<=to;}).reduce(function(a,r){return a+(r.vendido||0);},0);
+   var f=function(x){return isFinite(x)&&x>0?((Math.round(x*100)/100).toLocaleString('es')+' €'):'—';};
+   el.innerHTML=
+     card('Gasto en ads',Math.round(eur).toLocaleString('es')+' €',Math.round(cop).toLocaleString('es')+' COP en el rango')
+    +card('Coste por conversación nueva',f(nv?eur/nv:NaN),nv+' conversaciones nuevas')
+    +card('Coste por agenda',f(agm?eur/agm:NaN),agm+' agendas en el rango')
+    +card('Coste por venta',f(vt?eur/vt:NaN),vt+' ventas en el rango');
+   var n2=document.getElementById('g_meta_nota');
+   if(n2) n2.innerHTML='Cambio aplicado: 1 COP = '+(META.cop_eur||0.00022)+' € (editable en meta_spend.json, actualizado '+(META.actualizado||'—')+'). Ojo al leerlo: el gasto es solo de ads y parte de los leads llegan por outbound orgánico, así que estos costes mezclan pago y orgánico.';
+ }
+
+ // ===== POR SETTER via Kommo: respuesta, franja horaria real y camino a la propuesta =====
+ var KSEL='TOTAL';
+ function renderKset(){
+   var el=document.getElementById('ks_cards'); if(!el) return;
+   var from=fromEl.value, to=toEl.value;
+   var esDe=function(st){ return KSEL==='TOTAL' || st===KSEL; };
+   // 1) tiempo de respuesta (pares inbound->outbound del rango)
+   var P=(DATA.resp_pairs||[]).filter(function(p){return p.dia>=from&&p.dia<=to;});
+   var conS=P.filter(function(p){return p.s;}).length;
+   var mios=P.filter(function(p){return esDe(p.s||'');});
+   var gaps=mios.map(function(p){return (p.rep-p["in"])/60;}).filter(function(m){return m>=0;});
+   gaps.sort(function(a,b){return a-b;});
+   var med=gaps.length?gaps[Math.floor(gaps.length/2)]:null;
+   var r15=gaps.length?Math.round(100*gaps.filter(function(m){return m<=15;}).length/gaps.length):null;
+   // 2) camino a la propuesta (conversaciones completas del rango)
+   var C=(DATA.convprop||[]).filter(function(c){return c.d0>=from&&c.d0<=to&&esDe(c.s||'');});
+   var conProp=C.filter(function(c){return c.dp&&c.dp>=c.d0;});
+   var dds=conProp.map(function(c){return _dd(c.d0,c.dp);}).filter(function(x){return x!=null&&x>=0&&x<60;});
+   dds.sort(function(a,b){return a-b;});
+   var medProp=dds.length?dds[Math.floor(dds.length/2)]:null;
+   var fmtMin=function(m){ return m==null?'—':(m<60?Math.round(m)+' min':(Math.round(m/6)/10)+' h'); };
+   el.innerHTML=
+     card('Respuesta (mediana)',fmtMin(med),gaps.length+' respuestas medidas')
+    +card('Respuestas en <15 min',r15==null?'—':r15+'%','lo que ve el lead')
+    +card('Conversaciones (rango)',C.length,'con el chat completo descargado')
+    +card('Llegan a propuesta',C.length?Math.round(100*conProp.length/C.length)+'%':'—',conProp.length+' de '+C.length)
+    +card('Días hasta la propuesta',medProp==null?'—':medProp+' día'+(medProp===1?'':'s'),'del 1er mensaje al link de agenda');
+   // 3) mapa horario: a que horas contesta (mensajes salientes por hora, en la zona elegida)
+   var off=parseInt((document.getElementById('ks_tz')||{}).value||'-5',10);
+   var H=[]; for(var i=0;i<24;i++) H.push(0);
+   (DATA.horas||[]).forEach(function(r){
+     if(r.dia<from||r.dia>to) return;
+     if(!esDe(r.s||'')) return;
+     (r.h||[]).forEach(function(v,hu){ H[((hu+off)%24+24)%24]+=v; });
+   });
+   var mx=Math.max.apply(null,H.concat([1]));
+   var bars='<div style="display:flex;align-items:flex-end;gap:3px;height:72px">';
+   for(var h2=0;h2<24;h2++){
+     var alt=Math.max(2,Math.round(64*H[h2]/mx));
+     bars+='<div title="'+h2+':00 — '+H[h2]+' mensajes" style="flex:1;height:'+alt+'px;background:'+(H[h2]?'var(--teal)':'rgba(128,128,128,.18)')+';border-radius:3px 3px 0 0"></div>';
+   }
+   bars+='</div><div style="display:flex;gap:3px;font-size:10.5px;color:var(--mut)">';
+   for(var h3=0;h3<24;h3++){ bars+='<div style="flex:1;text-align:center">'+(h3%6===0?h3:'')+'</div>'; }
+   bars+='</div>';
+   document.getElementById('ks_horas').innerHTML=
+     '<div style="font-size:13px;margin-bottom:6px">Mensajes enviados por hora del día '+(KSEL==='TOTAL'?'(todo el equipo)':'de '+KSEL)+' — su franja real de trabajo. Un hueco largo dentro de la franja = horas de trabajo sin contestar.</div>'+bars;
+   var nota=document.getElementById('ks_nota');
+   if(nota) nota.innerHTML='Atribución por las etiquetas de Kommo cruzadas por nombre: <b>'+conS+'</b> de '+P.length+' respuestas del rango tienen setter identificado'+(P.length?' ('+Math.round(conS*100/P.length)+'%)':'')+'. El resto cuenta solo en "Total".';
+ }
+ (function(){
+   document.querySelectorAll('button.tab[data-kset]').forEach(function(b){
+     b.onclick=function(){
+       document.querySelectorAll('button.tab[data-kset]').forEach(function(x){x.classList.remove('on');});
+       b.classList.add('on'); KSEL=b.dataset.kset; renderKset();
+     };
+   });
+   var tz=document.getElementById('ks_tz'); if(tz) tz.onchange=renderKset;
+ })();
+
  // ===== PESTAÑA DÍA: resumen global del negocio y del equipo, día a día, contra objetivo =====
  var DIA_DEFS=[
   {k:'conversaciones',l:'Conversaciones de setting',src:'S',f:'total'},
@@ -741,6 +892,96 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    if(b=document.getElementById('dia_prev')) b.onclick=function(){mv(-1);};
    if(b=document.getElementById('dia_next')) b.onclick=function(){mv(1);};
    if(b=document.getElementById('dia_hoy'))  b.onclick=function(){sel.value=hoyISO(); renderDia();};
+ })();
+
+ // ===== PESTANA PIPELINE: leads vivos del embudo, agrupados por etapa, overlay fresco cada 15 min =====
+ var PL_LIVE=null;
+ function plCargarLive(cb){
+   fetch('pipeline_live.json?_='+Date.now(),{cache:'no-store'})
+     .then(function(r){return r.ok?r.json():null;})
+     .then(function(j){PL_LIVE=j; if(cb)cb();})
+     .catch(function(){PL_LIVE=null; if(cb)cb();});
+ }
+ function situPipe(r){
+   var o={estado:r.etapa||'',color:'var(--blue)'};
+   var d=diasDesde(r.ult);
+   if(!r.ult){ o.turno='sin datos'; o.turnoTxt='No hay conversación registrada en el CRM.'; }
+   else if(r.ultdir==='inbound'){ o.turno='NOSOTROS'; o.turnoTxt='El último mensaje es <b>del lead</b>'+(d!=null?' (hace '+d+' día'+(d===1?'':'s')+')':'')+': nos toca responder.'; }
+   else { o.turno='ELLOS'; o.turnoTxt='El último mensaje es <b>nuestro</b>'+(d!=null?' (hace '+d+' día'+(d===1?'':'s')+')':'')+': estamos esperando respuesta.'; }
+   var A=[], et=(r.etapa||''), pend=num(r.ticket)-num(r.pagado);
+   if(/faltan pagos/i.test(et)) A.push({t:'Cobrar la cuota pendiente'+(pend>0&&!window.TEAM?' ('+Math.round(pend)+' €)':''),u:1,d:'El lead compró y tiene pagos pendientes. Revisar cuotas y fechas de vencimiento.'});
+   if(/agendado|confirmado/i.test(et)){
+     if(r.prox) A.push({t:'Cita el '+r.prox.slice(8,10)+'/'+r.prox.slice(5,7),u:3,d:'Tiene la llamada agendada. Confirmar asistencia el día antes.'});
+     else A.push({t:'Sin cita futura a la vista',u:1,d:'La etapa dice agendado/confirmado pero no hay ninguna cita futura en el calendario. Reagendar o mover de etapa.'});
+   }
+   if(o.turno==='NOSOTROS' && d!=null && d>=1) A.push({t:'Responder al lead',u:1,d:'Escribió hace '+d+' día'+(d===1?'':'s')+' y sigue sin respuesta nuestra.'});
+   else if(/seguimiento/i.test(et) && o.turno!=='NOSOTROS' && (d==null||d>=3)) A.push({t:'Retomar el contacto',u:1,d:(d==null?'No consta conversación en el CRM':'Llevamos '+d+' días sin escribirle')+'. Un seguimiento sin contacto es un lead que se enfría.'});
+   if(!String(r.cta||'').trim()) A.push({t:'Anotar el origen del lead (CTA / reel)',u:2,d:'No consta de qué reel, anuncio o cuenta de outbound vino.'});
+   if(!A.length) A.push({t:'A la espera del lead',u:3,d:'Por nuestra parte está todo hecho.'});
+   o.acciones=A;
+   return o;
+ }
+ function renderPipeline(){
+   var cont=document.getElementById('pl_grupos'); if(!cont) return;
+   var base={}; (DATA.pipeline_leads||[]).forEach(function(r){ base[r.cid]=r; });
+   var L=[];
+   if(PL_LIVE&&PL_LIVE.leads){
+     // el refresco de 15 min manda sobre QUIEN esta vivo; el detalle sale del panel horario
+     Object.keys(PL_LIVE.leads).forEach(function(cid){
+       var v=PL_LIVE.leads[cid], b=base[cid];
+       var r=b?Object.assign({},b):{cid:cid,nombre:v.nombre||'(aún sin detalle en el panel)',prox:'',setter:'',cta:'',prof:'',ticket:'',pagado:'',motivo:'',ficha:v.ficha||'#'};
+       r.etapa=v.etapa||r.etapa; r.desde=v.desde||r.desde;
+       if(v.ult&&v.ult.fecha){ r.ult=v.ult.fecha; r.ultdir=v.ult.dir; r.ulttxt=v.ult.txt; r.ulttipo=v.ult.tipo; }
+       L.push(r);
+     });
+   } else {
+     L=Object.keys(base).map(function(k){return Object.assign({},base[k]);});
+   }
+   var nosToca=0,sinCta=0,pendTot=0;
+   L.forEach(function(r){ r._s=situPipe(r);
+     if(r._s.turno==='NOSOTROS') nosToca++;
+     if(!String(r.cta||'').trim()) sinCta++;
+     var pp=num(r.ticket)-num(r.pagado); if(/faltan pagos/i.test(r.etapa||'')&&pp>0) pendTot+=pp; });
+   document.getElementById('pl_cards').innerHTML=
+     card('Leads vivos',L.length)
+     +card('Nos toca mover',nosToca,'el último mensaje es del lead')
+     +(window.TEAM?'':card('Cobros pendientes',Math.round(pendTot).toLocaleString('es')+' €','etapas "faltan pagos"'))
+     +card('Sin origen (CTA)',sinCta);
+   var G={}; L.forEach(function(r){ (G[r.etapa]=G[r.etapa]||[]).push(r); });
+   var orden=(DATA.etapas_orden||[]).filter(function(e){return G[e];})
+       .concat(Object.keys(G).filter(function(e){return (DATA.etapas_orden||[]).indexOf(e)<0;}));
+   var html='', ki=0;
+   orden.forEach(function(et){
+     var rows=G[et];
+     rows.sort(function(a,b){ var ua=(a._s.turno==='NOSOTROS'?0:1), ub=(b._s.turno==='NOSOTROS'?0:1);
+       if(ua!==ub) return ua-ub; return String(a.ult||'').localeCompare(String(b.ult||'')); });
+     html+='<div class="panel"><h3>'+esc(et)+' <span style="font-weight:400;color:var(--mut);font-size:13px">· '+rows.length+' lead'+(rows.length===1?'':'s')+'</span></h3>'
+       +'<div class="tablewrap"><table><thead><tr><th style="text-align:left">Lead</th><th>Días en etapa</th><th>Próx. cita</th><th>Turno</th><th style="text-align:left">Último mensaje</th><th style="text-align:left">Qué toca</th><th></th><th>Ficha</th></tr></thead><tbody>';
+     rows.forEach(function(r){
+       var key='pl_'+(ki++); LM_DATA[key]={r:r,tipo:'pipe'};
+       var dd=diasDesde(r.desde), s=r._s, acc=s.acciones[0]||{};
+       html+='<tr>'
+        +'<td style="text-align:left"><b>'+esc(r.nombre)+'</b>'+(r.prof?'<br><span style="color:var(--mut);font-size:11.5px">'+esc(r.prof)+'</span>':'')+'</td>'
+        +'<td>'+(dd!=null?dd:'—')+'</td>'
+        +'<td>'+(r.prox?(r.prox.slice(8,10)+'/'+r.prox.slice(5,7)):'—')+'</td>'
+        +'<td><span style="color:'+(s.turno==='NOSOTROS'?'var(--red)':'var(--mut)')+(s.turno==='NOSOTROS'?';font-weight:600':'')+'">'+(s.turno==='NOSOTROS'?'Nosotros':(s.turno==='ELLOS'?'El lead':'—'))+'</span></td>'
+        +'<td style="text-align:left;max-width:260px"><span style="color:var(--mut);font-size:12px">'+esc(String(r.ulttxt||'').slice(0,80))+(r.ult?'<br>'+esc(r.ult):'')+'</span></td>'
+        +'<td style="text-align:left;font-size:12.5px;color:'+(acc.u===1?'var(--red)':(acc.u===2?'var(--amber)':'var(--mut)'))+'">'+esc(acc.t||'')+'</td>'
+        +'<td><button onclick="abrirLead(\''+key+'\')" style="border:1px solid var(--blue);background:transparent;color:var(--blue);border-radius:6px;padding:3px 12px;font-size:12px;cursor:pointer">Ver</button></td>'
+        +'<td><a href="'+esc(r.ficha)+'" target="_blank">abrir</a></td></tr>';
+     });
+     html+='</tbody></table></div></div>';
+   });
+   cont.innerHTML=html||'<div class="panel" style="color:var(--mut)">No hay leads vivos en el embudo.</div>';
+   var est=document.getElementById('pl_estado');
+   if(est){ var g=PL_LIVE&&PL_LIVE.generado;
+     est.textContent=g?('actualizado: '+g.replace('T',' ')+' UTC · se refresca cada 15 min'):'con los datos de la última regeneración del panel (el refresco de 15 min llegará solo)'; }
+ }
+ (function(){
+   var b=document.getElementById('pl_ref');
+   if(b) b.onclick=function(){ plCargarLive(renderPipeline); };
+   plCargarLive(renderPipeline);
+   cargarMeta(function(){ renderMeta(fromEl.value,toEl.value); });
  })();
  function renderStatic(){
    var CL=DATA.closing||[],LD=DATA.leads||[];
