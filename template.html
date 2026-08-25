@@ -56,6 +56,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <button class="qb on" data-d="14">14 días</button>
     <button class="qb" data-d="30">30 días</button>
     <button class="qb" data-d="90">90 días</button>
+    <button class="qb" data-d="mes">Mes hasta hoy</button>
     <button class="qb" data-d="9999">Todo</button>
   </div>
   <div class="tabs">
@@ -449,7 +450,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  function anItem(t,why,fix){return '<div class="an"><div class="t">'+t+'</div><div class="r"><b>Por qué:</b> '+why+'</div><div class="r fix"><b>Cómo corregirlo:</b> '+fix+'</div></div>';}
  fromEl.onchange=toEl.onchange=function(){document.querySelectorAll('.qb').forEach(function(b){b.classList.remove('on');});render();};
  bhOn.onchange=bhTz.onchange=bhA.onchange=bhB.onchange=function(){render();};
- document.querySelectorAll('.qb').forEach(function(b){b.onclick=function(){document.querySelectorAll('.qb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');setRange(+b.dataset.d);render();};});
+ document.querySelectorAll('.qb').forEach(function(b){b.onclick=function(){document.querySelectorAll('.qb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');if(b.dataset.d==='mes'){var h=hoyISO(); fromEl.value=h.slice(0,8)+'01'; toEl.value=h;}else{setRange(+b.dataset.d);}render();};});
  var SECTIONS=['dia','setting','triage','closing','global','leads','clientes','cash','antonie','cumpl'];
  document.querySelectorAll('.tab[data-t]').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');SECTIONS.forEach(function(s){document.getElementById(s).classList.toggle('hide',s!==b.dataset.t);});};});
  function num(v){return parseFloat(String(v||'').replace(/[^0-9.]/g,''))||0;}
