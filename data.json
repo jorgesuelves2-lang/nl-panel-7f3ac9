@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-26 10:15",
+ "generado": "2026-08-26 11:10",
  "rango": "2026-02-01 a 2026-08-26",
  "setting": [
   {
@@ -2889,10 +2889,10 @@
   {
    "dia": "2026-08-26",
    "inb": 1,
-   "out": 2,
-   "nuevas": 3,
-   "total": 44,
-   "fups": 29,
+   "out": 3,
+   "nuevas": 4,
+   "total": 54,
+   "fups": 39,
    "prop": 0,
    "link": 0,
    "badlink": 0,
@@ -25853,15 +25853,15 @@
   },
   {
    "dia": "2026-08-25",
-   "in": 1787667322,
-   "rep": 1787686537,
-   "s": "Sary"
-  },
-  {
-   "dia": "2026-08-25",
    "in": 1787657763,
    "rep": 1787658054,
    "s": ""
+  },
+  {
+   "dia": "2026-08-25",
+   "in": 1787667322,
+   "rep": 1787686537,
+   "s": "Sary"
   },
   {
    "dia": "2026-08-25",
@@ -25883,6 +25883,28 @@
   }
  ],
  "kpis": [
+  {
+   "dia": "2026-09-25",
+   "setter": "Sary",
+   "fu": 56,
+   "inb": 1,
+   "out": 41,
+   "prop": 1,
+   "book": 1,
+   "wel": 0,
+   "notas": ""
+  },
+  {
+   "dia": "2026-08-24",
+   "setter": "Sary",
+   "fu": 107,
+   "inb": 0,
+   "out": 58,
+   "prop": 2,
+   "book": 1,
+   "wel": 0,
+   "notas": ""
+  },
   {
    "dia": "2026-08-25",
    "setter": "Jesmary",
@@ -28974,7 +28996,7 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Sary": true,
     "Sara": false,
     "Jesmary": true
    }
@@ -29078,10 +29100,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-08-25",
-   "ultdir": "inbound",
-   "ulttxt": "Okey",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ult": "2026-08-26",
+   "ultdir": "outbound",
+   "ulttxt": "¡Hey Mario!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
+   "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
   {
@@ -29726,9 +29748,9 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-08-25",
-   "ultdir": "outbound",
-   "ulttxt": "Cómo estás? Cómo te has sentido hoy? Ya volviste de vacaciones?",
+   "ult": "2026-08-26",
+   "ultdir": "inbound",
+   "ulttxt": "Financiado como Sería?",
    "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
@@ -42037,9 +42059,9 @@
    "ss": null,
    "stri": null,
    "sc": null,
-   "ult": "2026-08-25",
-   "ultdir": "inbound",
-   "ulttxt": "Si, creo que ya",
+   "ult": "2026-08-26",
+   "ultdir": "outbound",
+   "ulttxt": "También vi que indicaste en el formulario que no tendrías disponibilidad para invertir en este momento en tu acompañamiento. Me gustaría saber si para nuestra llamada estarías preparada para ingresar en caso de qué sean ",
    "ulttipo": "TYPE_INSTAGRAM",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/KGaICpHJcTpKIXKNon9q"
   },
@@ -42095,10 +42117,10 @@
    "ss": 52,
    "stri": null,
    "sc": null,
-   "ult": "2026-08-25",
-   "ultdir": "inbound",
-   "ulttxt": "Okey",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ult": "2026-08-26",
+   "ultdir": "outbound",
+   "ulttxt": "¡Hey Mario!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
+   "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/kfKKKhDe7vb83BQYUOy2"
   },
   {
@@ -42617,9 +42639,9 @@
    "ss": 45,
    "stri": null,
    "sc": null,
-   "ult": "2026-08-25",
-   "ultdir": "outbound",
-   "ulttxt": "Cómo estás? Cómo te has sentido hoy? Ya volviste de vacaciones?",
+   "ult": "2026-08-26",
+   "ultdir": "inbound",
+   "ulttxt": "Financiado como Sería?",
    "ulttipo": "TYPE_INSTAGRAM",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/GqhuxMB4cyVQzeET6dls"
   },
@@ -45573,32 +45595,32 @@
   },
   {
    "dia": "2026-08-24",
-   "s": "",
+   "s": "Jesmary",
    "h": [
-    28,
-    12,
-    8,
-    0,
-    0,
-    10,
-    0,
-    0,
-    0,
-    46,
-    66,
     5,
-    2,
-    33,
-    59,
+    0,
     3,
     0,
-    4,
-    21,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    6,
+    24,
     10,
-    4,
-    29,
-    42,
-    36
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ]
   },
   {
@@ -45633,6 +45655,36 @@
   },
   {
    "dia": "2026-08-24",
+   "s": "",
+   "h": [
+    28,
+    12,
+    8,
+    0,
+    0,
+    10,
+    0,
+    0,
+    0,
+    46,
+    66,
+    5,
+    2,
+    33,
+    59,
+    3,
+    0,
+    4,
+    21,
+    10,
+    4,
+    29,
+    42,
+    36
+   ]
+  },
+  {
+   "dia": "2026-08-24",
    "s": "Sara",
    "h": [
     0,
@@ -45659,66 +45711,6 @@
     4,
     0,
     1
-   ]
-  },
-  {
-   "dia": "2026-08-24",
-   "s": "Jesmary",
-   "h": [
-    5,
-    0,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    0,
-    6,
-    24,
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-25",
-   "s": "",
-   "h": [
-    0,
-    17,
-    13,
-    5,
-    4,
-    24,
-    0,
-    0,
-    0,
-    17,
-    58,
-    6,
-    15,
-    2,
-    50,
-    46,
-    0,
-    4,
-    21,
-    34,
-    35,
-    74,
-    1,
-    14
    ]
   },
   {
@@ -45749,6 +45741,36 @@
     0,
     0,
     1
+   ]
+  },
+  {
+   "dia": "2026-08-25",
+   "s": "",
+   "h": [
+    0,
+    17,
+    13,
+    5,
+    4,
+    24,
+    0,
+    0,
+    0,
+    17,
+    58,
+    6,
+    15,
+    2,
+    50,
+    46,
+    0,
+    4,
+    21,
+    34,
+    35,
+    74,
+    1,
+    14
    ]
   },
   {
@@ -55263,36 +55285,6 @@
   },
   {
    "dia": "2026-08-15",
-   "s": "",
-   "h": [
-    0,
-    2,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15,
-    11,
-    15,
-    6,
-    1,
-    6,
-    83,
-    6,
-    10,
-    7,
-    5,
-    8,
-    6,
-    10
-   ]
-  },
-  {
-   "dia": "2026-08-15",
    "s": "Sary",
    "h": [
     0,
@@ -55323,6 +55315,36 @@
   },
   {
    "dia": "2026-08-15",
+   "s": "",
+   "h": [
+    0,
+    2,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    15,
+    11,
+    15,
+    6,
+    1,
+    6,
+    83,
+    6,
+    10,
+    7,
+    5,
+    8,
+    6,
+    10
+   ]
+  },
+  {
+   "dia": "2026-08-15",
    "s": "Sara",
    "h": [
     0,
@@ -55347,6 +55369,36 @@
     0,
     0,
     1,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-16",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    22,
+    6,
+    6,
+    9,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
     0,
     0
    ]
@@ -55407,36 +55459,6 @@
     0,
     0,
     3,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-16",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    22,
-    6,
-    6,
-    9,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
     0,
     0
    ]
@@ -60555,7 +60577,7 @@
     0,
     1,
     1,
-    9,
+    31,
     0,
     0,
     0,
@@ -60585,7 +60607,7 @@
     0,
     0,
     0,
-    0,
+    3,
     0,
     0,
     0,
@@ -126226,6 +126248,11 @@
   {
    "s": "",
    "d0": "2024-09-23",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
    "dp": ""
   },
   {
