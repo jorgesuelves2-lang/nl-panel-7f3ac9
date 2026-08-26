@@ -526,7 +526,7 @@ for cid,info in cids.items():
         "univ":cm.get(F["univ"]) or "","urg":cm.get(F["urg"]) or "","comp":cm.get(F["comp"]) or "",
         "obst":cm.get(F["obst"]) or "","canal":cm.get(F["canal"]) or "","ig":cm.get(F["ig"]) or "",
         "email":c.get("email") or "","tf":c.get("phone") or "","fagenda":fagenda,
-        "closer":cm.get(F["closer"]) or "","restri":restri(tags),"resclo":cm.get(F["rc"]) or "",
+        "closer":cm.get(F["closer"]) or user_nombre(((info.get("clo") or {}).get("assignedUserId"))),"restri":restri(tags),"resclo":cm.get(F["rc"]) or "",
         "estado":cm.get(F["estado"]) or "","ss":cm.get(F["ss"]),"stri":cm.get(F["st"]),"sclo":cm.get(F["sc"]),
         "ticket":cm.get(F["ticket"]) or "","pagado":cm.get(F["pagado"]) or "",
         "objtri":cm.get(F["objtri"]) or "","objclo":cm.get(F["objclo"]) or "",
