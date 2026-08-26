@@ -788,7 +788,7 @@ SETTERS_ACT=["Sary","Sara","Jesmary"]
 #    rojo hasta que el cierre mejore, y esa es la funcion). EDITABLES en targets.json.
 # 26-ago (tarde): Jorge sube el minimo a 100 conversaciones POR SETTER (x3 = 300/dia) y la
 # cadena se reescala manteniendo sus tasas. Pendiente: decidir que tasas exigentes se relajan.
-TARGETS={"conversaciones": 150, "propuestas": 4.5, "agendas": 2.7, "triajes_hechos": 2.03, "cualifica": 1.36, "closings": 1.15, "ventas": 0.58, "facturacion": 1700, "cash": 1300}
+TARGETS={"conversaciones": 250, "propuestas": 7.5, "agendas": 4.5, "triajes_hechos": 3.38, "cualifica": 2.26, "closings": 1.92, "ventas": 0.96, "facturacion": 1700, "cash": 1300, "setters_peso": {"Sary": 1, "Jes": 1, "Sara": 0.5}}
 try: TARGETS.update({k:v for k,v in json.load(open(os.path.join(HERE,"targets.json"))).items() if k in TARGETS})
 except Exception: pass
 _kpi_dias=defaultdict(set)
