@@ -629,9 +629,9 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
        return '<tr>'
          +'<td>'+esc((r.fecha||'').slice(5))+'</td>'
          +'<td><b>'+esc(r.nombre)+'</b></td>'
-         +'<td>'+esc((r.prof||'&mdash;').slice(0,26))+'</td>'
-         +'<td>'+esc(r.closer||'&mdash;')+'</td><td>'+esc(r.setter||'&mdash;')+'</td>'
-         +(money?'<td>'+esc(r.ticket||'&mdash;')+'</td><td>'+esc(r.pagado||r.cash||'&mdash;')+'</td>':'')
+         +'<td>'+esc((r.prof||'—').slice(0,26))+'</td>'
+         +'<td>'+esc(r.closer||'—')+'</td><td>'+esc(r.setter||'—')+'</td>'
+         +(money?'<td>'+esc(r.ticket||'—')+'</td><td>'+esc(r.pagado||r.cash||'—')+'</td>':'')
          +'<td><button onclick="abrirLead(\''+key+'\')" style="border:1px solid var(--blue);background:transparent;color:var(--blue);border-radius:6px;padding:3px 12px;font-size:12px;cursor:pointer">Ver</button></td>'
          +'<td><a href="'+esc(r.ficha)+'" target="_blank">abrir</a></td></tr>';
      }).join('');
