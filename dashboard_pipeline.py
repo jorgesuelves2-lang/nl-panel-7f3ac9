@@ -776,12 +776,15 @@ if prev:
         triage_leads=prev["triage_leads"]
 SETTERS_ACT=["Sary","Sara","Jesmary"]
 # ---- OBJETIVOS DIARIOS (pestana "Dia"): estandar de calidad del funnel, fijado con Jorge 26-ago.
-# Cadena: 170 conv -> 5 propuestas (3% hasta fin de septiembre con el mix outbound actual; subir a 7 = 4% el 1-oct segun mejore el inbound/ads - decidido con Jorge 26-ago) -> 4 agendas -> 3 triajes hechos -> 2 cualifican
+# Tasas fijadas por Jorge (26-ago): 3% conv->prop (subir a 4% el 1-oct si mejora el inbound) ->
+# 60% prop->agenda -> 75% asistencia triaje -> 67% cualifica -> 85% asistencia closing -> 50% cierre.
+# La palanca si falta resultado son las CONVERSACIONES (la fila de arriba lleva objetivo en numeros
+# absolutos, no en %). Cadena resultante: 170 -> 5 -> 3 -> 2,25 -> 1,5 -> 1,275
 # -> 1,6 ASISTEN al closing (80%: pedido por Jorge, el 100% anterior era ingenuo)
 # -> 0,8 ventas/dia (cierre del 50%: estandar de Jorge; el historico real es 16%, el chip ira
 #    rojo hasta que el cierre mejore, y esa es la funcion). EDITABLES en targets.json.
-TARGETS={"conversaciones":170,"propuestas":5,"agendas":4,"triajes_hechos":3,"cualifica":2,
-         "closings":1.6,"ventas":0.8,"facturacion":1700,"cash":1300}
+TARGETS={"conversaciones":170,"propuestas":5,"agendas":3,"triajes_hechos":2.25,"cualifica":1.5,
+         "closings":1.275,"ventas":0.6375,"facturacion":1700,"cash":1300}
 try: TARGETS.update({k:v for k,v in json.load(open(os.path.join(HERE,"targets.json"))).items() if k in TARGETS})
 except Exception: pass
 _kpi_dias=defaultdict(set)
