@@ -775,11 +775,13 @@ if prev:
         print("AVISO: 0 llamadas de triaje -> conservo las anteriores",flush=True)
         triage_leads=prev["triage_leads"]
 SETTERS_ACT=["Sary","Sara","Jesmary"]
-# ---- OBJETIVOS DIARIOS (pestana "Dia"): derivados de la meta de 50k/mes con ticket medio ~4.000.
-# Cadena: 170 conv -> 8 propuestas (5%) -> 4 agendas (55%) -> 3 triajes hechos -> 2 cualifican
-# -> 2 closings -> 0,4 ventas/dia (12/mes x ~4.000 = ~50k). EDITABLES en targets.json junto al script.
+# ---- OBJETIVOS DIARIOS (pestana "Dia"): estandar de calidad del funnel, fijado con Jorge 26-ago.
+# Cadena: 170 conv -> 8 propuestas -> 4 agendas -> 3 triajes hechos -> 2 cualifican
+# -> 1,6 ASISTEN al closing (80%: pedido por Jorge, el 100% anterior era ingenuo)
+# -> 0,8 ventas/dia (cierre del 50%: estandar de Jorge; el historico real es 16%, el chip ira
+#    rojo hasta que el cierre mejore, y esa es la funcion). EDITABLES en targets.json.
 TARGETS={"conversaciones":170,"propuestas":8,"agendas":4,"triajes_hechos":3,"cualifica":2,
-         "closings":2,"ventas":0.4,"facturacion":1700,"cash":1300}
+         "closings":1.6,"ventas":0.8,"facturacion":1700,"cash":1300}
 try: TARGETS.update({k:v for k,v in json.load(open(os.path.join(HERE,"targets.json"))).items() if k in TARGETS})
 except Exception: pass
 _kpi_dias=defaultdict(set)
