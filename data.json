@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-26 02:18",
+ "generado": "2026-08-26 03:40",
  "rango": "2026-02-01 a 2026-08-26",
  "setting": [
   {
@@ -2891,7 +2891,7 @@
    "inb": 0,
    "out": 1,
    "nuevas": 1,
-   "total": 20,
+   "total": 21,
    "fups": 18,
    "prop": 0,
    "link": 0,
@@ -41974,6 +41974,35 @@
   "cash": 1300
  },
  "pipeline_leads": [
+  {
+   "cid": "rr2imZ0SNmwsXkFhC0R4",
+   "nombre": "Laura Fontalvo Durango",
+   "etapa": "🔹 Triage Agendado",
+   "desde": "2026-08-26",
+   "fuente": "",
+   "prox": "",
+   "setter": "",
+   "cta": "",
+   "prof": "Enfermera ",
+   "restri": "",
+   "resclo": "",
+   "ticket": "",
+   "pagado": "",
+   "motivo": "",
+   "tel": "+573164978652",
+   "email": "laurafontalvo@yahoo.es",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "urg": "",
+   "nivel": "🔹 A2",
+   "ss": null,
+   "stri": null,
+   "sc": null,
+   "ult": "2026-08-26",
+   "ultdir": "inbound",
+   "ulttxt": "Laura Fontalvo",
+   "ulttipo": "TYPE_WHATSAPP",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rr2imZ0SNmwsXkFhC0R4"
+  },
   {
    "cid": "KGaICpHJcTpKIXKNon9q",
    "nombre": "Belen Körner",
@@ -126181,6 +126210,11 @@
   {
    "s": "",
    "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2024-09-23",
    "dp": ""
   }
  ]
