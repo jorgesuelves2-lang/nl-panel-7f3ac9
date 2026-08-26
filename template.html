@@ -239,7 +239,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <div class="sub" style="margin-bottom:10px">Control del negocio: el embudo completo con la caída entre pasos, alertas, tiempos e inversión, sobre el rango de fechas de arriba.</div>
     <div class="panel" style="border-left:3px solid var(--red);border-radius:0"><h3>Alertas — qué requiere acción</h3><div class="cards" id="g_alertas"></div></div>
     <div class="cards" id="g_cards"></div>
-    <div class="panel"><h3>Embudo completo <span style="font-weight:400;color:var(--mut);font-size:13px">— cada paso con su % sobre el paso anterior; conversaciones va fuera de escala, el resto de barras son comparables entre sí</span></h3><div id="g_funnel"></div></div>
+    <div class="panel"><h3>Embudo completo <span style="font-weight:400;color:var(--mut);font-size:13px">— la caída de cada paso contra la esperada; conversaciones va fuera de escala, el resto de barras son comparables entre sí</span></h3><div id="g_funnel"></div><div id="g_funnel_leyenda" style="font-size:12px;color:var(--mut);margin-top:10px"></div></div>
     <div class="panel"><h3>Tiempos del embudo <span style="font-weight:400;color:var(--mut);font-size:13px">— mediana de días, en el rango seleccionado</span></h3>
       <div class="cards" id="g_tiempos"></div>
       <div style="font-size:12px;color:var(--mut)" id="g_tiempos_nota"></div></div>
@@ -339,18 +339,23 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  // Embudo de Control: la barra ocupa ~media fila y los numeros respiran a la derecha.
  // "Conversaciones" va FUERA DE ESCALA (es 50-100x el resto y aplastaba la comparativa);
  // de propuestas para abajo, todas las barras estan a escala real ENTRE SI.
- function fEmb(lbl,val,maxRef,col,extra,fueraEscala){
+ function fEmb(lbl,val,maxRef,col,caida,fueraEscala){
    var w=fueraEscala?100:Math.max(2.5,Math.round(1000*val/(maxRef||1))/10);
+   var der='<b style="font-size:16px">'+val+'</b>';
+   if(caida && caida.real!=null){
+     var peor = (caida.esp!=null) ? (caida.real>caida.esp) : null;
+     var colChip = peor===null ? 'var(--mut)' : (peor ? 'var(--red)' : 'var(--teal)');
+     der+=' <span style="display:inline-block;background:'+colChip+';color:#fff;border-radius:6px;padding:2px 9px;font-size:12.5px;font-weight:700;margin:0 4px">&#9660; '+caida.real+'%</span>'
+        +'<span style="color:var(--mut)">de caída'
+        +(caida.esp!=null?' · esperada '+caida.esp+'%':'')+'</span>';
+   }
    return '<div style="display:flex;align-items:center;gap:14px;margin-bottom:11px">'
      +'<span style="width:170px;flex:none;font-size:13px;color:var(--mut);text-align:right">'+lbl+'</span>'
      +'<div style="width:44%;flex:none;background:rgba(128,128,128,.13);border-radius:8px;height:28px;position:relative;overflow:hidden">'
        +'<div style="width:'+w+'%;background:'+col+';height:28px;border-radius:8px'+(fueraEscala?';opacity:.45':'')+'"></div>'
        +(fueraEscala?'<span style="position:absolute;right:10px;top:0;line-height:28px;font-size:11px;font-weight:600;color:var(--tx);opacity:.75">fuera de escala</span>':'')
      +'</div>'
-     +'<div style="flex:1;min-width:0;font-size:13.5px;line-height:1.25">'
-       +'<b style="font-size:16px">'+val+'</b>'
-       +(extra?' <span style="color:var(--mut)">· '+extra+'</span>':'')
-     +'</div>'
+     +'<div style="flex:1;min-width:0;font-size:13.5px;line-height:1.25">'+der+'</div>'
    +'</div>';
  }
 
@@ -501,14 +506,25 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var cSh=(DATA.closing_daily||[]).filter(function(r){return r.dia>=from&&r.dia<=to;}).reduce(function(a,r){return a+(r.showed||0);},0);
    var _pp=function(a,b){return b?Math.round(a*100/b)+'%':'—';};
    var _mx=Math.max(pr,ag,tsh,tcu,cSh,cVe,1);   // referencia de escala: el mayor SIN contar conversaciones
+   // CAIDA real de cada paso (100 - conversion) y caida ESPERADA segun la cadena de objetivos
+   // de targets.json: si Jorge cambia los objetivos, los semaforos se recalibran solos.
+   var _tg=DATA.targets||{};
+   var _caiEsp=function(a,b){ var x=_tg[a],y=_tg[b];
+     return (x>0&&y!=null)?Math.max(0,Math.round(100-100*y/x)):null; };
+   var _cai=function(v,prev){ return prev>0?Math.round(100-100*v/prev):null; };
    document.getElementById('g_funnel').innerHTML=
-     fEmb('Conversaciones',tot,_mx,'var(--blue)','',true)
-    +fEmb('Propuestas de agenda',pr,_mx,'var(--teal)',_pp(pr,tot)+' de las conversaciones')
-    +fEmb('Agendas de triaje',ag,_mx,'var(--amber)',_pp(ag,pr)+' de las propuestas')
-    +fEmb('Asistió al triaje',tsh,_mx,'var(--purple)',_pp(tsh,ag)+' de las agendas')
-    +fEmb('Cualifica',tcu,_mx,'#0F6E56',_pp(tcu,tsh)+' de los que asistieron')
-    +fEmb('Closing hecho',cSh,_mx,'#7A4DD8',_pp(cSh,tcu)+' de los que cualificaron')
-    +fEmb('Vendido',cVe,_mx,'var(--red)',_pp(cVe,cSh)+' de los closings hechos');
+     fEmb('Conversaciones',tot,_mx,'var(--blue)',null,true)
+    +fEmb('Propuestas de agenda',pr,_mx,'var(--teal)',{real:_cai(pr,tot),esp:_caiEsp('conversaciones','propuestas')})
+    +fEmb('Agendas de triaje',ag,_mx,'var(--amber)',{real:_cai(ag,pr),esp:_caiEsp('propuestas','agendas')})
+    +fEmb('Asistió al triaje',tsh,_mx,'var(--purple)',{real:_cai(tsh,ag),esp:_caiEsp('agendas','triajes_hechos')})
+    +fEmb('Cualifica',tcu,_mx,'#0F6E56',{real:_cai(tcu,tsh),esp:_caiEsp('triajes_hechos','cualifica')})
+    +fEmb('Closing hecho',cSh,_mx,'#7A4DD8',{real:_cai(cSh,tcu),esp:_caiEsp('cualifica','closings')})
+    +fEmb('Vendido',cVe,_mx,'var(--red)',{real:_cai(cVe,cSh),esp:_caiEsp('closings','ventas')});
+   var _gl=document.getElementById('g_funnel_leyenda');
+   if(_gl) _gl.innerHTML='&#9660; = porcentaje de leads que se PIERDEN en ese paso respecto al anterior. '
+     +'<span style="color:var(--teal);font-weight:600">Verde</span>: se pierde menos de lo esperado. '
+     +'<span style="color:var(--red);font-weight:600">Rojo</span>: se pierde más de lo esperado. '
+     +'La caída esperada sale de la cadena de objetivos (targets.json).';
    // ---- alertas del rango ----
    var _al={sinReg:0,nosToca:0,cta:0};
    (DATA.triage_leads||[]).forEach(function(r){ if(r.fecha<from||r.fecha>to) return; var sx=situacion(r,'tri');
