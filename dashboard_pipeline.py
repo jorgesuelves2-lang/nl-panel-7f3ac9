@@ -329,6 +329,19 @@ for cal in ["VRaGr4KGSZNiuDamyV4q","998ij1w7jUrmPqJZu43V"]:
             _i["clo"]=e                              # la ultima (compatibilidad con lo que ya existia)
             _i.setdefault("clos",[]).append(e)       # 23-ago-2026: TODAS las citas de closing del lead,
             # para que la pestana de closing pueda listar cada llamada de cada semana, no solo la ultima.
+# --- CITAS FUTURAS DE TRIAJE (27-ago-2026) ---
+# Las citas de triaje se bajaban solo hasta AHORA (las de closing sí llegaban a +30 días), asi que
+# un lead reagendado a la semana que viene salia como "sin cita futura a la vista" en el Pipeline.
+# Se bajan aparte, en su propia estructura, para NO alterar los contadores diarios de triaje ni la
+# tabla de triaje (que deben seguir contando solo citas ya ocurridas).
+FUT_TRI={}
+_futf=now+45*86400*1000
+for _tc in TRIAGE_CALS:
+    for e in evs(_tc,now,_futf):
+        if e.get("contactId") and e.get("startTime"):
+            FUT_TRI.setdefault(e["contactId"],[]).append(str(e.get("startTime"))[:10])
+print("citas futuras de triaje:",sum(len(v) for v in FUT_TRI.values()),flush=True)
+
 # --- ETAPA ACTUAL DEL PIPELINE por contacto (23-ago-2026) ---
 # Se baja TODO el pipeline de una vez (paginado) en lugar de preguntar oportunidad por oportunidad:
 # son ~250 llamadas menos y esta cuenta ya sufre rate-limit.
@@ -599,7 +612,8 @@ for _c,_o in OPPS.items():
          or _o["nombre"] or "(sin nombre)")
     # proxima cita futura (triaje o closing) si la hay
     _hoy=datetime.datetime.utcnow().strftime('%Y-%m-%d')
-    _citas=sorted(str(x.get("startTime"))[:10] for x in (_info.get("tris") or [])+(_info.get("clos") or []) if x.get("startTime"))
+    _citas=sorted([str(x.get("startTime"))[:10] for x in (_info.get("tris") or [])+(_info.get("clos") or []) if x.get("startTime")]
+                  + FUT_TRI.get(_c,[]))
     _prox=next((f for f in _citas if f>=_hoy),"")
     _u=ULT.get(_c) or {}
     pipeline_leads.append({"cid":_c,"nombre":_nm,"etapa":_o["etapa"],"desde":_o["desde"],
