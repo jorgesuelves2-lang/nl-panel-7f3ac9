@@ -332,6 +332,16 @@ for cal in ["VRaGr4KGSZNiuDamyV4q","998ij1w7jUrmPqJZu43V"]:
 # --- ETAPA ACTUAL DEL PIPELINE por contacto (23-ago-2026) ---
 # Se baja TODO el pipeline de una vez (paginado) en lugar de preguntar oportunidad por oportunidad:
 # son ~250 llamadas menos y esta cuenta ya sufre rate-limit.
+# nombre del usuario asignado a la cita (closer de respaldo cuando el formulario no lo registro)
+_USER_NOMBRE={"J4UXESeEUJxZNpPkYrIu":"Natalie","hyiIfpfoUHIOyLuclKPM":"Christian"}  # fallback fijo 26-ago
+def user_nombre(uid):
+    if not uid: return ""
+    if uid not in _USER_NOMBRE:
+        try:
+            _u=cg(f"https://services.leadconnectorhq.com/users/{uid}",headers=H21)
+            _USER_NOMBRE[uid]=(_u.get("name") or ((_u.get("firstName") or "")+" "+(_u.get("lastName") or "")).strip() or uid[:6])
+        except Exception: _USER_NOMBRE[uid]=uid[:6]
+    return _USER_NOMBRE[uid]
 ETAPA_DE={}
 # 25-ago: ademas del nombre de etapa, guardamos la oportunidad completa del pipeline "LEADS"
 # (etapa, cuando entro en ella, estado) para la pestana Pipeline: leads vivos en el embudo.
@@ -539,7 +549,7 @@ for cid,info in cids.items():
             "resclo":cm.get(F["rc"]) or "","sc":cm.get(F["sc"]),"cash":cm.get(F["cash"]) or "",
             "ticket":cm.get(F["ticket"]) or "","pagado":cm.get(F["pagado"]) or "",
             # contexto para saber QUE PASO con cada uno sin salir del panel:
-            "setter":setter,"closer":cm.get(F["closer"]) or "","prof":cm.get(F["prof"]) or "",
+            "setter":setter,"closer":cm.get(F["closer"]) or user_nombre(e.get("assignedUserId")),"prof":cm.get(F["prof"]) or "",
             "estadoclo":cm.get(F["estado"]) or "","motivo":cm.get(F["motivo"]) or "",
             "objclo":(cm.get(F["objclo"]) or "")[:400],"etapa":ETAPA_DE.get(cid,""),
             "tel":c.get("phone") or "","email":c.get("email") or "","ficha":ficha,
