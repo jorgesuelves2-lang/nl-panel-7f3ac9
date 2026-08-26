@@ -776,11 +776,11 @@ if prev:
         triage_leads=prev["triage_leads"]
 SETTERS_ACT=["Sary","Sara","Jesmary"]
 # ---- OBJETIVOS DIARIOS (pestana "Dia"): estandar de calidad del funnel, fijado con Jorge 26-ago.
-# Cadena: 170 conv -> 7 propuestas (4%: la mejor quincena historica fue 4,1%) -> 4 agendas -> 3 triajes hechos -> 2 cualifican
+# Cadena: 170 conv -> 5 propuestas (3% hasta fin de septiembre con el mix outbound actual; subir a 7 = 4% el 1-oct segun mejore el inbound/ads - decidido con Jorge 26-ago) -> 4 agendas -> 3 triajes hechos -> 2 cualifican
 # -> 1,6 ASISTEN al closing (80%: pedido por Jorge, el 100% anterior era ingenuo)
 # -> 0,8 ventas/dia (cierre del 50%: estandar de Jorge; el historico real es 16%, el chip ira
 #    rojo hasta que el cierre mejore, y esa es la funcion). EDITABLES en targets.json.
-TARGETS={"conversaciones":170,"propuestas":7,"agendas":4,"triajes_hechos":3,"cualifica":2,
+TARGETS={"conversaciones":170,"propuestas":5,"agendas":4,"triajes_hechos":3,"cualifica":2,
          "closings":1.6,"ventas":0.8,"facturacion":1700,"cash":1300}
 try: TARGETS.update({k:v for k,v in json.load(open(os.path.join(HERE,"targets.json"))).items() if k in TARGETS})
 except Exception: pass
