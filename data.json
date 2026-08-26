@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-26 14:28",
+ "generado": "2026-08-26 14:52",
  "rango": "2026-02-01 a 2026-08-26",
  "setting": [
   {
@@ -2889,10 +2889,10 @@
   {
    "dia": "2026-08-26",
    "inb": 2,
-   "out": 4,
-   "nuevas": 6,
-   "total": 63,
-   "fups": 61,
+   "out": 7,
+   "nuevas": 9,
+   "total": 67,
+   "fups": 62,
    "prop": 1,
    "link": 1,
    "badlink": 0,
@@ -16274,7 +16274,8 @@
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "600€- 1.000€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Edwin Serrano",
@@ -16312,7 +16313,8 @@
    "presup": "Cuento con entre 5.000€ a 10.000€ para mi proceso",
    "ingresos": "más de 3.000€",
    "nivel": "🔹 Conocimientos básicos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Patricia Zurita",
@@ -16350,7 +16352,8 @@
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "300€ - 600€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Jhonatan Oliver Ricardo Parra Ortegón",
@@ -16388,7 +16391,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 A2",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Martin Alejandro Burgos",
@@ -16426,7 +16430,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "más de 3.000€",
    "nivel": "🔹 A1",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Brandi Juleisi Afontin Gabriel",
@@ -16464,7 +16469,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "300€ - 600€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Viviana Durasno",
@@ -16502,7 +16508,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 Conocimientos básicos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Olga Magaly Betancur Ospina",
@@ -16540,7 +16547,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 B1",
-   "urg": ""
+   "urg": "",
+   "venta": 1
   },
   {
    "nombre": "Ivan Bruckner",
@@ -16578,7 +16586,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "300€ - 600€",
    "nivel": "🔹 A1",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Carla Montalvo",
@@ -16616,7 +16625,8 @@
    "presup": "",
    "ingresos": "",
    "nivel": "",
-   "urg": ""
+   "urg": "",
+   "venta": 1
   },
   {
    "nombre": "Maria Camila Cuesta",
@@ -16654,7 +16664,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "300€ - 600€",
    "nivel": "🔹 B1",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Sara Beatriz Zaldivar Fustos",
@@ -16692,7 +16703,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "300€ - 600€",
    "nivel": "🔹 B1",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Daniela Montalvo",
@@ -16730,7 +16742,8 @@
    "presup": "Cuento con entre 5.000€ a 10.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 A1",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Carlos Aparicio",
@@ -16768,7 +16781,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "más de 3.000€",
    "nivel": "🔹 Conocimientos básicos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "ALFREDO DAVID NIEVES",
@@ -16806,7 +16820,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "más de 3.000€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Vladimir Sanczuk",
@@ -16844,7 +16859,8 @@
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "600€- 1.000€",
    "nivel": "🔹 A1",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Zhary Mosquera",
@@ -16882,7 +16898,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Sebastian Rojas",
@@ -16920,7 +16937,8 @@
    "presup": "Cuento con entre 5.000€ a 10.000€ para mi proceso",
    "ingresos": "300€ - 600€",
    "nivel": "🔹 A1",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Kennedy Sanatana",
@@ -16958,7 +16976,8 @@
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 B1",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Juan JIMÉNEZ",
@@ -16996,7 +17015,8 @@
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 Conocimientos básicos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Aline Gilio",
@@ -17034,7 +17054,8 @@
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Danny Vargas",
@@ -17072,7 +17093,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 1
   },
   {
    "nombre": "Laura Guarnizo",
@@ -17110,7 +17132,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "300€ - 600€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Edwar Peña Esteves",
@@ -17148,7 +17171,8 @@
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "más de 3.000€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Gilmer Julio Leon Rodriguez Becerra",
@@ -17186,7 +17210,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 A2",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Frank Fernández",
@@ -17224,7 +17249,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "600€- 1.000€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Maria Paula Guevara Valdivieso",
@@ -17262,7 +17288,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "300€ - 600€",
    "nivel": "🔹 Conocimientos básicos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Mark Anthony Safranic",
@@ -17300,7 +17327,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "300€ - 600€",
    "nivel": "🔹 A2",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Heber Canales",
@@ -17338,7 +17366,8 @@
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 A2",
-   "urg": ""
+   "urg": "",
+   "venta": 1
   },
   {
    "nombre": "Angela Luque reyes",
@@ -17376,7 +17405,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "600€- 1.000€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Carlos Martin",
@@ -17414,7 +17444,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "David Gómez Posada",
@@ -17452,7 +17483,8 @@
    "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
    "ingresos": "más de 3.000€",
    "nivel": "🔹 B1",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Egmar Junior Alava Cielo",
@@ -17490,7 +17522,8 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "600€- 1.000€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Fausto Carrión",
@@ -17528,7 +17561,8 @@
    "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 No tengo conocimientos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Bryam Ureña",
@@ -17566,7 +17600,8 @@
    "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
    "ingresos": "600€- 1.000€",
    "nivel": "🔹 Conocimientos básicos",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Santiago Avella",
@@ -17604,7 +17639,8 @@
    "presup": "Cuento con entre 5.000€ a 10.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 A2",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Michelle Diaz",
@@ -17642,7 +17678,8 @@
    "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 A2",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Feli Alemany Alemany",
@@ -17680,7 +17717,8 @@
    "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 A2",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "Carmen Joanna González",
@@ -17718,7 +17756,8 @@
    "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 B1",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   },
   {
    "nombre": "AURISA VÁZQUEZ",
@@ -17756,7 +17795,8 @@
    "presup": "Cuento con entre 3.000€ a 5.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 B1",
-   "urg": ""
+   "urg": "",
+   "venta": 0
   }
  ],
  "closing_daily": [
@@ -29176,7 +29216,7 @@
    "prof": "Estudiante de medicina ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔹 Triage Agendado",
+   "etapa": "🔹 Tri. Saludo Enviado",
    "tel": "+573023232904",
    "email": "andradecami203@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ZozZsUdaW8m163j4TEfE",
@@ -30482,10 +30522,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-07-31",
-   "ultdir": "outbound",
-   "ulttxt": "Entiendo, excelente generalmente nuestras mentor van a partir de los €3500. Como viste en el formulario sería dentro de tu posibilidad para que podamos comenzar?",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ult": "2026-08-26",
+   "ultdir": "inbound",
+   "ulttxt": "Me puedes confirmar a qué hora",
+   "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
   {
@@ -42082,7 +42122,7 @@
    "sc": null,
    "ult": "2026-08-26",
    "ultdir": "inbound",
-   "ulttxt": "😞",
+   "ulttxt": "As es",
    "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rr2imZ0SNmwsXkFhC0R4"
   },
@@ -42176,8 +42216,8 @@
   {
    "cid": "ZozZsUdaW8m163j4TEfE",
    "nombre": "María Camila Andrade Andrade",
-   "etapa": "🔹 Triage Agendado",
-   "desde": "2026-08-24",
+   "etapa": "🔹 Tri. Saludo Enviado",
+   "desde": "2026-08-26",
    "fuente": "Outbound",
    "prox": "2026-08-26",
    "setter": "Jesmary",
@@ -42205,8 +42245,8 @@
   {
    "cid": "pvp9xEt2aQawliLnw8jk",
    "nombre": "Amanda Lizeth Cruz Peña",
-   "etapa": "🔹 Triage Agendado",
-   "desde": "2026-08-24",
+   "etapa": "🔹 Triage Confirmado",
+   "desde": "2026-08-26",
    "fuente": "",
    "prox": "",
    "setter": "Sara",
@@ -42321,8 +42361,8 @@
   {
    "cid": "Gg0V2Q5OaVeYx5d5RIp3",
    "nombre": "Javier Dario Varona Martín",
-   "etapa": "🔹 Triage Agendado",
-   "desde": "2026-08-23",
+   "etapa": "🔹®️ Triage RE-agendado",
+   "desde": "2026-08-26",
    "fuente": "Outbound",
    "prox": "",
    "setter": "Sara",
@@ -42834,10 +42874,10 @@
    "ss": 35,
    "stri": null,
    "sc": null,
-   "ult": "2026-07-31",
-   "ultdir": "outbound",
-   "ulttxt": "Entiendo, excelente generalmente nuestras mentor van a partir de los €3500. Como viste en el formulario sería dentro de tu posibilidad para que podamos comenzar?",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ult": "2026-08-26",
+   "ultdir": "inbound",
+   "ulttxt": "Me puedes confirmar a qué hora",
+   "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/GeIsH8YfezemxzSphzR2"
   },
   {
@@ -45513,6 +45553,7 @@
   "🔹 Triage Agendado",
   "🔹 Tri. Saludo Enviado",
   "🔹 Triage Confirmado",
+  "🔹®️ Triage RE-agendado",
   "🔸Closing Agendado",
   "🔷 Triage Seguimiento",
   "🔶 Seguimiento Caliente",
@@ -45765,36 +45806,6 @@
   },
   {
    "dia": "2026-08-25",
-   "s": "",
-   "h": [
-    0,
-    17,
-    13,
-    5,
-    4,
-    24,
-    0,
-    0,
-    0,
-    17,
-    58,
-    6,
-    15,
-    2,
-    50,
-    46,
-    0,
-    4,
-    21,
-    34,
-    35,
-    74,
-    1,
-    14
-   ]
-  },
-  {
-   "dia": "2026-08-25",
    "s": "Sary",
    "h": [
     0,
@@ -45821,6 +45832,36 @@
     0,
     0,
     1
+   ]
+  },
+  {
+   "dia": "2026-08-25",
+   "s": "",
+   "h": [
+    0,
+    17,
+    13,
+    5,
+    4,
+    24,
+    0,
+    0,
+    0,
+    17,
+    58,
+    6,
+    15,
+    2,
+    50,
+    46,
+    0,
+    4,
+    21,
+    34,
+    35,
+    74,
+    1,
+    14
    ]
   },
   {
@@ -60631,7 +60672,7 @@
     2,
     1,
     28,
-    15,
+    19,
     0,
     0,
     0,
@@ -126298,6 +126339,21 @@
   {
    "s": "",
    "d0": "2024-09-23",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
    "dp": ""
   },
   {
