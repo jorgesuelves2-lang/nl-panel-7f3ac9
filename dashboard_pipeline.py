@@ -611,6 +611,9 @@ closing.sort(key=lambda r:r["fecha"],reverse=True)
 cd={d:{"agendados":0,"showed":0,"noshow":0,"cancelled":0,"confirmed":0,"vendido":0,"facturacion":0.0,"cash":0.0} for d in days}
 for r in closing:
     d=r["fecha"]
+    # flag explicito de venta (mismo criterio que closing_daily) para la tabla de vendidos;
+    # sobrevive a la version EQUIPO, que elimina ticket/pagado
+    r["venta"]=1 if ((r.get("resclo")=="Vendido") or _num(r.get("ticket"))>0) else 0
     if d not in cd: continue
     cd[d]["agendados"]+=1
     if r["estado"] in cd[d] and r["estado"]!="showed": cd[d][r["estado"]]+=1
