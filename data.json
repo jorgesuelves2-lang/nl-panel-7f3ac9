@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-26 14:52",
+ "generado": "2026-08-26 15:54",
  "rango": "2026-02-01 a 2026-08-26",
  "setting": [
   {
@@ -2889,14 +2889,14 @@
   {
    "dia": "2026-08-26",
    "inb": 2,
-   "out": 7,
-   "nuevas": 9,
-   "total": 67,
-   "fups": 62,
-   "prop": 1,
-   "link": 1,
+   "out": 20,
+   "nuevas": 22,
+   "total": 85,
+   "fups": 78,
+   "prop": 4,
+   "link": 4,
    "badlink": 0,
-   "agendas": 3,
+   "agendas": 2,
    "resp_min": 297,
    "nodata": false
   }
@@ -5376,12 +5376,12 @@
   },
   {
    "dia": "2026-08-26",
-   "agendados": 3,
+   "agendados": 2,
    "showed": 2,
    "noshow": 0,
    "noconfirma": 0,
    "cancelled": 0,
-   "confirmed": 3,
+   "confirmed": 2,
    "cualifica": 2,
    "nocualifica": 0,
    "seguimiento": 0
@@ -12653,38 +12653,6 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/qttvMfSasa9XiEqGFvRR"
   },
   {
-   "nombre": "María Camila Andrade Andrade",
-   "setter": "Sary",
-   "origen": "propio",
-   "prof": "Estudiante de medicina ",
-   "nivel": "🔹 No tengo conocimientos",
-   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
-   "ingresos": "300€ - 600€",
-   "univ": "Estudio en la universidad metropolitana de Barranquilla ",
-   "urg": "",
-   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
-   "obst": "Hasta el momento nada",
-   "canal": "",
-   "ig": "mcamila203",
-   "email": "andradecami203@gmail.com",
-   "tf": "+573023232904",
-   "fagenda": "2026-08-26",
-   "closer": "",
-   "restri": "",
-   "resclo": "",
-   "estado": "",
-   "ss": 28,
-   "stri": null,
-   "sclo": null,
-   "ticket": "",
-   "pagado": "",
-   "objtri": "",
-   "objclo": "",
-   "infocloser": "",
-   "cta": "",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ZozZsUdaW8m163j4TEfE"
-  },
-  {
    "nombre": "María jose Halupa",
    "setter": "Sara",
    "origen": "propio",
@@ -16419,9 +16387,9 @@
    "tel": "+55996871364",
    "email": "marburgos_@hotmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/qttvMfSasa9XiEqGFvRR",
-   "ult": "2026-08-24",
+   "ult": "2026-08-26",
    "ultdir": "outbound",
-   "ulttxt": "Hola Martin Alejandro Burgos,\n\nTe dejo aquí los detalles de la reunión.\nMartin Alejandro Burgos - Reunión de Introducción (Validación)\n\n\nFecha y Ho...",
+   "ulttxt": "¡Hey Martin!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en e...",
    "ulttipo": "TYPE_EMAIL",
    "infoclo": "PERFIL: Martin Alejandro Burgos, 40 anos, argentino residente en Brasil (zona con colonia alemana) hace 10 anos. Medico con 10 anos de experiencia. Titulo obtenido en Argentina, ya homologado en Espana (UE). Actualmente ejerce en Brasil con guardias.\n\nOBJETIVO: Emigrar a Alemania para revalidar titulo, ejercer medicina y hacer una especialidad medica. Quiere irse cuanto antes; plazo condicionado al nivel de aleman. Nivel actual: A1. Horas disponibles para estudio: no consta (menciona disponibilidad limitada por guardias).\n\nDOLORES: Lleva 4 anos intentando entrar a la especialidad en Brasil sin exito por politica y corrupcion del sistema. Siente que en Latinoamerica no puede avanzar sin entrar en dinamicas que no acepta. Alemania es su meta real desde hace tiempo, no un plan B.\n\nINVERSION: No menciono cifras de ahorro ni plan de financiacion. Reacciono sin rechazo cuando el triajista menciono precios entre 3.500 y 8.000 USD y lo oriento al paquete de 5.000. Capacidad economica real: no consta, pendiente de cualificar.\n\nRUTA: Titulo argentino homologado en Espana (UE): ruta mas favorable. Necesita B2 de aleman + FSP para ejercer. Su pareja (enfermera) necesita B2 sin FSP. Tiempos realistas desde A1 hasta trabajar en Alemania: estimacion de 12-18 meses dependiendo de dedicacion.\n\nOBJECIONES: El idioma le genera respeto pero no lo ve como barrera (lo compara con aprender portugues). No manifesto objeciones de precio ni de proceso. Pregunto por precio el mismo: senal positiva. Sin",
    "restri": "Cualifica",
@@ -25974,6 +25942,28 @@
  ],
  "kpis": [
   {
+   "dia": "2026-08-24",
+   "setter": "Sara",
+   "fu": 30,
+   "inb": 1,
+   "out": 50,
+   "prop": 0,
+   "book": 1,
+   "wel": 0,
+   "notas": "@dr.kennyh"
+  },
+  {
+   "dia": "2026-08-25",
+   "setter": "Sara",
+   "fu": 18,
+   "inb": 2,
+   "out": 58,
+   "prop": 0,
+   "book": 0,
+   "wel": 0,
+   "notas": "@dieguinidoc"
+  },
+  {
    "dia": "2026-09-25",
    "setter": "Sary",
    "fu": 56,
@@ -29087,7 +29077,7 @@
    "retraso_medio": null,
    "kpis": {
     "Sary": true,
-    "Sara": false,
+    "Sara": true,
     "Jesmary": true
    }
   },
@@ -29100,16 +29090,16 @@
    "retraso_medio": null,
    "kpis": {
     "Sary": false,
-    "Sara": false,
+    "Sara": true,
     "Jesmary": true
    }
   },
   {
    "dia": "2026-08-26",
-   "triages": 3,
+   "triages": 2,
    "con_form": 2,
-   "sin_form": 1,
-   "estado_triage": "Parcial",
+   "sin_form": 0,
+   "estado_triage": "Completo",
    "retraso_medio": -3.0,
    "kpis": {
     "Sary": false,
@@ -29154,9 +29144,9 @@
    "urg": "",
    "infotri": "PERFIL: Martin Alejandro Burgos, 40 anos, argentino residente en Brasil (zona con colonia alemana) hace 10 anos. Medico con 10 anos de experiencia. Titulo obtenido en Argentina, ya homologado en Espana (UE). Actualmente ejerce en Brasil con guardias.\n\nOBJETIVO: Emigrar a Alemania para revalidar titulo, ejercer medicina y hacer una especialidad medica. Quiere irse cuanto antes; plazo condicionado al nivel de aleman. Nivel actual: A1. Horas disponibles para estudio: no consta (menciona disponibilidad limitada por guardias).\n\nDOLORES: Lleva 4 anos intentando entrar a la especialidad en Brasil sin exito por politica y corrupcion del sistema. Siente que en Latinoamerica no puede avanzar sin entrar en dinamicas que no acepta. Alemania es su meta real desde hace tiempo, no un plan B.\n\nINVERSION: No menciono cifras de ahorro ni plan de financiacion. Reacciono sin rechazo cuando el triajista menciono precios entre 3.500 y 8.000 USD y lo oriento al paquete de 5.000. Capacidad economica real: no consta, pendiente de cualificar.\n\nRUTA: Titulo argentino homologado en Espana (UE): ruta mas favorable. Necesita B2 de aleman + FSP para ejercer. Su pareja (enfermera) necesita B2 sin FSP. Tiempos realistas desde A1 hasta trabajar en Alemania: estimacion de 12-18 meses dependiendo de dedicacion.\n\nOBJECIONES: El idioma le genera respeto pero no lo ve como barrera (lo compara con aprender portugues). No manifesto objeciones de precio ni de proceso. Pregunto por precio el mismo: senal positiva. Sin",
    "restri_ia": "MOTIVACIONES:\n- Ampliar posibilidades profesionales y economicas fuera de Brasil\n- Hacer una especialidad medica: es su motivacion central y lo que no ha podido lograr en Brasil\n- Acceder a tecnologia hospitalaria alemana, que ve como 'de otro mundo'\n- Lleva tiempo preparandose: tiene titulo homologado en Espana, pareja estudiando aleman, y un ano de preparacion personal segun sus palabras\n\nDOLORES:\n- 4 anos intentando acceder a la especialidad en Brasil sin exito por politica y corrupcion del sistema\n- Frustracion con el sistema latinoamericano en general ('infelizmente', 'ya sabes')\n- El idioma le genera respeto pero no lo ve como barrera insuperable: lo compara con cuando aprendio portugues al llegar a Brasil sin saber nada\n\nDECISION:\n- Pareja (enfermera) e hijastro iran con el; ya estan alineados\n- El es el decisor principal; ella ya esta estudiando aleman\n- Decision tomada, no tanteando: 'Lo tengo todo organizado'\n\nPLAZO/URGENCIA:\n- Quiere irse 'cuanto antes', condicionado al idioma y papeles\n- 'Si consegui trabajo y todas las cosas, semana que viene' (hiperbolico pero indica mentalidad de accion)\n- Lleva un ano preparando aspectos personales\n\nCOMPROMISO:\n- Al final del triaje",
-   "ult": "2026-08-24",
+   "ult": "2026-08-26",
    "ultdir": "outbound",
-   "ulttxt": "Hola Martin Alejandro Burgos,\n\nTe dejo aquí los detalles de la reunión.\nMartin Alejandro Burgos - Reunión de Introducción (Validación)\n\n\nFecha y Ho...",
+   "ulttxt": "¡Hey Martin!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en e...",
    "ulttipo": "TYPE_EMAIL",
    "tiene_closing": true
   },
@@ -29195,42 +29185,6 @@
    "ulttxt": "Hola Mario Andrés Vasquez Martinez,\n\nTe dejo aquí los detalles de la reunión.\nMario Andrés Vasquez Martinez - Reunión de Planificación Estratégica\n...",
    "ulttipo": "TYPE_EMAIL",
    "tiene_closing": true
-  },
-  {
-   "nombre": "María Camila Andrade Andrade",
-   "fecha": "2026-08-26",
-   "hora": "19:20",
-   "estado": "confirmed",
-   "reag": "",
-   "agendada": "2026-08-24",
-   "cta": "",
-   "asistio": false,
-   "fclo": "",
-   "fuente": "Outbound",
-   "d0": "2026-08-24",
-   "restri": "",
-   "stri": null,
-   "ss": 28,
-   "setter": "Sary",
-   "triager": "",
-   "prof": "Estudiante de medicina ",
-   "motivo": "",
-   "objtri": "",
-   "etapa": "🔹 Tri. Saludo Enviado",
-   "tel": "+573023232904",
-   "email": "andradecami203@gmail.com",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ZozZsUdaW8m163j4TEfE",
-   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
-   "ingresos": "300€ - 600€",
-   "nivel": "🔹 No tengo conocimientos",
-   "urg": "",
-   "infotri": "",
-   "restri_ia": "",
-   "ult": "2026-08-26",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey María!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
-   "ulttipo": "TYPE_EMAIL",
-   "tiene_closing": false
   },
   {
    "nombre": "María Mehlhorn",
@@ -29442,9 +29396,9 @@
    "urg": "",
    "infotri": "PERFIL: Martin Alejandro Burgos, 40 anos, argentino residente en Brasil (zona con colonia alemana) hace 10 anos. Medico con 10 anos de experiencia. Titulo obtenido en Argentina, ya homologado en Espana (UE). Actualmente ejerce en Brasil con guardias.\n\nOBJETIVO: Emigrar a Alemania para revalidar titulo, ejercer medicina y hacer una especialidad medica. Quiere irse cuanto antes; plazo condicionado al nivel de aleman. Nivel actual: A1. Horas disponibles para estudio: no consta (menciona disponibilidad limitada por guardias).\n\nDOLORES: Lleva 4 anos intentando entrar a la especialidad en Brasil sin exito por politica y corrupcion del sistema. Siente que en Latinoamerica no puede avanzar sin entrar en dinamicas que no acepta. Alemania es su meta real desde hace tiempo, no un plan B.\n\nINVERSION: No menciono cifras de ahorro ni plan de financiacion. Reacciono sin rechazo cuando el triajista menciono precios entre 3.500 y 8.000 USD y lo oriento al paquete de 5.000. Capacidad economica real: no consta, pendiente de cualificar.\n\nRUTA: Titulo argentino homologado en Espana (UE): ruta mas favorable. Necesita B2 de aleman + FSP para ejercer. Su pareja (enfermera) necesita B2 sin FSP. Tiempos realistas desde A1 hasta trabajar en Alemania: estimacion de 12-18 meses dependiendo de dedicacion.\n\nOBJECIONES: El idioma le genera respeto pero no lo ve como barrera (lo compara con aprender portugues). No manifesto objeciones de precio ni de proceso. Pregunto por precio el mismo: senal positiva. Sin",
    "restri_ia": "MOTIVACIONES:\n- Ampliar posibilidades profesionales y economicas fuera de Brasil\n- Hacer una especialidad medica: es su motivacion central y lo que no ha podido lograr en Brasil\n- Acceder a tecnologia hospitalaria alemana, que ve como 'de otro mundo'\n- Lleva tiempo preparandose: tiene titulo homologado en Espana, pareja estudiando aleman, y un ano de preparacion personal segun sus palabras\n\nDOLORES:\n- 4 anos intentando acceder a la especialidad en Brasil sin exito por politica y corrupcion del sistema\n- Frustracion con el sistema latinoamericano en general ('infelizmente', 'ya sabes')\n- El idioma le genera respeto pero no lo ve como barrera insuperable: lo compara con cuando aprendio portugues al llegar a Brasil sin saber nada\n\nDECISION:\n- Pareja (enfermera) e hijastro iran con el; ya estan alineados\n- El es el decisor principal; ella ya esta estudiando aleman\n- Decision tomada, no tanteando: 'Lo tengo todo organizado'\n\nPLAZO/URGENCIA:\n- Quiere irse 'cuanto antes', condicionado al idioma y papeles\n- 'Si consegui trabajo y todas las cosas, semana que viene' (hiperbolico pero indica mentalidad de accion)\n- Lleva un ano preparando aspectos personales\n\nCOMPROMISO:\n- Al final del triaje",
-   "ult": "2026-08-24",
+   "ult": "2026-08-26",
    "ultdir": "outbound",
-   "ulttxt": "Hola Martin Alejandro Burgos,\n\nTe dejo aquí los detalles de la reunión.\nMartin Alejandro Burgos - Reunión de Introducción (Validación)\n\n\nFecha y Ho...",
+   "ulttxt": "¡Hey Martin!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en e...",
    "ulttipo": "TYPE_EMAIL",
    "tiene_closing": true
   },
@@ -40654,7 +40608,7 @@
    "cta": "",
    "asistio": false,
    "fclo": "",
-   "fuente": "",
+   "fuente": "Outbound",
    "d0": "2026-03-04",
    "restri": "",
    "stri": null,
@@ -42086,15 +42040,20 @@
   }
  ],
  "targets": {
-  "conversaciones": 300,
-  "propuestas": 9,
-  "agendas": 5.4,
-  "triajes_hechos": 4.05,
-  "cualifica": 2.7,
-  "closings": 2.3,
-  "ventas": 1.15,
+  "conversaciones": 250,
+  "propuestas": 7.5,
+  "agendas": 4.5,
+  "triajes_hechos": 3.38,
+  "cualifica": 2.26,
+  "closings": 1.92,
+  "ventas": 0.96,
   "facturacion": 1700,
-  "cash": 1300
+  "cash": 1300,
+  "setters_peso": {
+   "Sary": 1,
+   "Jes": 1,
+   "Sara": 0.5
+  }
  },
  "pipeline_leads": [
   {
@@ -42122,7 +42081,7 @@
    "sc": null,
    "ult": "2026-08-26",
    "ultdir": "inbound",
-   "ulttxt": "As es",
+   "ulttxt": "Estoy atenta",
    "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rr2imZ0SNmwsXkFhC0R4"
   },
@@ -42178,10 +42137,10 @@
    "ss": 72,
    "stri": null,
    "sc": null,
-   "ult": "2026-08-25",
+   "ult": "2026-08-26",
    "ultdir": "inbound",
-   "ulttxt": "Bueno",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ulttxt": "Si",
+   "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/NUo77MuCtbQu3eGTBGCs"
   },
   {
@@ -42216,10 +42175,10 @@
   {
    "cid": "ZozZsUdaW8m163j4TEfE",
    "nombre": "María Camila Andrade Andrade",
-   "etapa": "🔹 Tri. Saludo Enviado",
+   "etapa": "🔹®️ Triage RE-agendado",
    "desde": "2026-08-26",
    "fuente": "Outbound",
-   "prox": "2026-08-26",
+   "prox": "",
    "setter": "Jesmary",
    "cta": "",
    "prof": "Estudiante de medicina ",
@@ -42238,7 +42197,7 @@
    "sc": null,
    "ult": "2026-08-26",
    "ultdir": "outbound",
-   "ulttxt": "¡Hey María!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
+   "ulttxt": "¡Hola María!\n\n\n\nEsta es tu confirmación para la cita que has agendado con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Chri...",
    "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ZozZsUdaW8m163j4TEfE"
   },
@@ -42265,9 +42224,9 @@
    "ss": 42,
    "stri": null,
    "sc": null,
-   "ult": "2026-08-25",
+   "ult": "2026-08-26",
    "ultdir": "inbound",
-   "ulttxt": "Que me cuesta trabajo entender todas las cosas o que se me dificulta expresarme",
+   "ulttxt": "Hola si claro",
    "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/pvp9xEt2aQawliLnw8jk"
   },
@@ -42332,8 +42291,8 @@
   {
    "cid": "WhZJwMe36WH4w2iEO07t",
    "nombre": "Monica Jimenez Piñate",
-   "etapa": "🔹 Triage Agendado",
-   "desde": "2026-08-23",
+   "etapa": "🔹®️ Triage RE-agendado",
+   "desde": "2026-08-26",
    "fuente": "Outbound",
    "prox": "",
    "setter": "Jesmary",
@@ -42468,9 +42427,9 @@
    "ss": 62,
    "stri": 74,
    "sc": null,
-   "ult": "2026-08-24",
+   "ult": "2026-08-26",
    "ultdir": "outbound",
-   "ulttxt": "Hola Martin Alejandro Burgos,\n\nTe dejo aquí los detalles de la reunión.\nMartin Alejandro Burgos - Reunión de Introducción (Validación)\n\n\nFecha y Ho...",
+   "ulttxt": "¡Hey Martin!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en e...",
    "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/qttvMfSasa9XiEqGFvRR"
   },
@@ -45566,6 +45525,36 @@
  "horas": [
   {
    "dia": "2026-08-20",
+   "s": "Sara",
+   "h": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    2,
+    1,
+    3,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-20",
    "s": "",
    "h": [
     20,
@@ -45655,33 +45644,33 @@
    ]
   },
   {
-   "dia": "2026-08-20",
-   "s": "Sara",
+   "dia": "2026-08-24",
+   "s": "",
    "h": [
+    28,
+    12,
+    8,
     0,
-    1,
+    0,
+    10,
     0,
     0,
     0,
+    46,
+    65,
+    5,
     2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    2,
-    1,
+    33,
+    59,
     3,
     0,
-    0,
-    0
+    4,
+    21,
+    10,
+    4,
+    29,
+    42,
+    36
    ]
   },
   {
@@ -45698,7 +45687,7 @@
     0,
     0,
     7,
-    17,
+    18,
     0,
     2,
     2,
@@ -45712,36 +45701,6 @@
     1,
     3,
     19
-   ]
-  },
-  {
-   "dia": "2026-08-24",
-   "s": "",
-   "h": [
-    28,
-    12,
-    8,
-    0,
-    0,
-    10,
-    0,
-    0,
-    0,
-    46,
-    66,
-    5,
-    2,
-    33,
-    59,
-    3,
-    0,
-    4,
-    21,
-    10,
-    4,
-    29,
-    42,
-    36
    ]
   },
   {
@@ -45806,36 +45765,6 @@
   },
   {
    "dia": "2026-08-25",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    0,
-    7,
-    0,
-    0,
-    0,
-    0,
-    12,
-    0,
-    0,
-    4,
-    8,
-    1,
-    0,
-    0,
-    1
-   ]
-  },
-  {
-   "dia": "2026-08-25",
    "s": "",
    "h": [
     0,
@@ -45859,7 +45788,7 @@
     21,
     34,
     35,
-    74,
+    73,
     1,
     14
    ]
@@ -45896,6 +45825,36 @@
   },
   {
    "dia": "2026-08-25",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    7,
+    0,
+    0,
+    0,
+    0,
+    12,
+    0,
+    0,
+    4,
+    8,
+    1,
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "dia": "2026-08-25",
    "s": "Jesmary",
    "h": [
     0,
@@ -45919,6 +45878,36 @@
     1,
     10,
     2,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-23",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    7,
+    0,
+    6,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0
@@ -45956,36 +45945,6 @@
   },
   {
    "dia": "2026-08-23",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    7,
-    0,
-    6,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-23",
    "s": "Sara",
    "h": [
     0,
@@ -46039,6 +45998,66 @@
     0,
     0,
     0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-18",
+   "s": "Sary",
+   "h": [
+    1,
+    2,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    7,
+    8,
+    10,
+    1,
+    6,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-18",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    8,
+    4,
+    5,
+    3,
+    0,
+    0,
+    2,
+    1,
     0,
     0,
     0
@@ -46076,66 +46095,6 @@
   },
   {
    "dia": "2026-08-18",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    8,
-    4,
-    5,
-    3,
-    0,
-    0,
-    2,
-    1,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-18",
-   "s": "Sary",
-   "h": [
-    1,
-    2,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    4,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    7,
-    8,
-    10,
-    1,
-    6,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-18",
    "s": "Jesmary",
    "h": [
     0,
@@ -46159,36 +46118,6 @@
     0,
     0,
     0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-22",
-   "s": "Sary",
-   "h": [
-    5,
-    5,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
     0,
     0,
     0
@@ -46226,36 +46155,6 @@
   },
   {
    "dia": "2026-08-22",
-   "s": "Jesmary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-22",
    "s": "Sara",
    "h": [
     0,
@@ -46285,33 +46184,63 @@
    ]
   },
   {
-   "dia": "2026-08-21",
-   "s": "",
+   "dia": "2026-08-22",
+   "s": "Sary",
    "h": [
-    20,
-    21,
-    0,
-    0,
-    0,
-    24,
-    4,
-    0,
-    2,
-    1,
-    22,
-    2,
-    1,
-    12,
-    0,
-    9,
-    0,
-    19,
-    36,
-    1,
-    4,
-    7,
     5,
-    9
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-22",
+   "s": "Jesmary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
    ]
   },
   {
@@ -46342,6 +46271,36 @@
     1,
     0,
     7
+   ]
+  },
+  {
+   "dia": "2026-08-21",
+   "s": "",
+   "h": [
+    20,
+    21,
+    0,
+    0,
+    0,
+    24,
+    4,
+    0,
+    2,
+    1,
+    22,
+    2,
+    1,
+    12,
+    0,
+    9,
+    0,
+    19,
+    36,
+    1,
+    4,
+    7,
+    5,
+    9
    ]
   },
   {
@@ -55286,36 +55245,6 @@
   },
   {
    "dia": "2026-08-14",
-   "s": "",
-   "h": [
-    8,
-    6,
-    3,
-    0,
-    0,
-    0,
-    9,
-    0,
-    0,
-    29,
-    45,
-    0,
-    3,
-    2,
-    8,
-    11,
-    8,
-    16,
-    0,
-    25,
-    13,
-    8,
-    44,
-    6
-   ]
-  },
-  {
-   "dia": "2026-08-14",
    "s": "Sara",
    "h": [
     0,
@@ -55346,6 +55275,36 @@
   },
   {
    "dia": "2026-08-14",
+   "s": "",
+   "h": [
+    8,
+    6,
+    3,
+    0,
+    0,
+    0,
+    9,
+    0,
+    0,
+    29,
+    45,
+    0,
+    3,
+    2,
+    8,
+    11,
+    8,
+    16,
+    0,
+    25,
+    13,
+    8,
+    44,
+    6
+   ]
+  },
+  {
+   "dia": "2026-08-14",
    "s": "Sary",
    "h": [
     3,
@@ -55372,6 +55331,36 @@
     0,
     0,
     2
+   ]
+  },
+  {
+   "dia": "2026-08-15",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    10,
+    3,
+    3,
+    0,
+    7,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
    ]
   },
   {
@@ -55435,7 +55424,7 @@
    ]
   },
   {
-   "dia": "2026-08-15",
+   "dia": "2026-08-16",
    "s": "Sara",
    "h": [
     0,
@@ -55449,47 +55438,17 @@
     0,
     0,
     1,
-    10,
-    3,
     3,
     0,
-    7,
-    2,
     0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-16",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    22,
-    6,
-    6,
+    5,
     9,
-    0,
-    0,
-    0,
-    0,
     1,
     0,
     0,
     0,
+    0,
+    3,
     0,
     0
    ]
@@ -55526,7 +55485,7 @@
   },
   {
    "dia": "2026-08-16",
-   "s": "Sara",
+   "s": "Sary",
    "h": [
     0,
     0,
@@ -55537,19 +55496,79 @@
     0,
     0,
     0,
-    0,
     1,
-    3,
-    0,
-    0,
-    5,
+    22,
+    6,
+    6,
     9,
+    0,
+    0,
+    0,
+    0,
     1,
     0,
     0,
     0,
     0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-19",
+   "s": "Sary",
+   "h": [
+    0,
+    4,
+    4,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    7,
+    1,
+    4,
+    0,
+    2,
+    4,
+    25,
+    5,
     3,
+    0,
+    3,
+    0,
+    0,
+    2
+   ]
+  },
+  {
+   "dia": "2026-08-19",
+   "s": "Sara",
+   "h": [
+    0,
+    3,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    3,
+    0,
+    3,
+    1,
+    6,
+    15,
+    0,
     0,
     0
    ]
@@ -55586,36 +55605,6 @@
   },
   {
    "dia": "2026-08-19",
-   "s": "Sary",
-   "h": [
-    0,
-    4,
-    4,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    7,
-    1,
-    4,
-    0,
-    2,
-    4,
-    25,
-    5,
-    3,
-    0,
-    3,
-    0,
-    0,
-    2
-   ]
-  },
-  {
-   "dia": "2026-08-19",
    "s": "Jesmary",
    "h": [
     0,
@@ -55645,33 +55634,33 @@
    ]
   },
   {
-   "dia": "2026-08-19",
+   "dia": "2026-08-17",
    "s": "Sara",
    "h": [
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     3,
-    0,
-    0,
-    0,
+    5,
     4,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    3,
-    0,
-    3,
-    1,
-    6,
-    15,
-    0,
-    0,
-    0
+    1
    ]
   },
   {
@@ -55732,36 +55721,6 @@
     0,
     0,
     3
-   ]
-  },
-  {
-   "dia": "2026-08-17",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    16,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    5,
-    4,
-    1
    ]
   },
   {
@@ -60656,14 +60615,44 @@
   },
   {
    "dia": "2026-08-26",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-26",
    "s": "",
    "h": [
     7,
-    9,
+    6,
     0,
     0,
     0,
-    12,
+    11,
     2,
     0,
     1,
@@ -60671,8 +60660,38 @@
     31,
     2,
     1,
-    28,
-    19,
+    23,
+    29,
+    31,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-26",
+   "s": "Jesmary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
     0,
     0,
     0,
@@ -60689,11 +60708,11 @@
    "s": "Sary",
    "h": [
     5,
+    3,
     0,
     0,
     0,
-    0,
-    0,
+    1,
     0,
     0,
     0,
@@ -60759,7 +60778,7 @@
   {
    "s": "",
    "d0": "2026-08-19",
-   "dp": ""
+   "dp": "2026-08-26"
   },
   {
    "s": "",
@@ -60989,7 +61008,7 @@
   {
    "s": "",
    "d0": "2026-08-10",
-   "dp": ""
+   "dp": "2026-08-26"
   },
   {
    "s": "",
@@ -61947,7 +61966,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sary",
    "d0": "2026-08-24",
    "dp": ""
   },
@@ -83672,7 +83691,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sary",
    "d0": "2026-07-14",
    "dp": ""
   },
@@ -126072,7 +126091,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Jesmary",
    "d0": "2026-08-25",
    "dp": ""
   },
@@ -126299,7 +126318,7 @@
   {
    "s": "",
    "d0": "2026-08-25",
-   "dp": ""
+   "dp": "2026-08-26"
   },
   {
    "s": "",
@@ -126327,7 +126346,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sara",
    "d0": "2025-01-04",
    "dp": "2025-01-04"
   },
@@ -126339,6 +126358,71 @@
   {
    "s": "",
    "d0": "2024-09-23",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-26",
    "dp": ""
   },
   {
