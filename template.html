@@ -362,8 +362,10 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  function pintarEmbudo(){
    var el=document.getElementById('g_funnel'); if(!el||!_EMB_ROWS) return;
    var esCaida=(EMB_VISTA==='caida');
-   var M=_EMB_META||{days:1,base:300,tg:{},nset:3};
-   var extra=EMB_INB*(M.nset||3);                      // la barra es POR SETTER: se multiplica por el equipo
+   var M=_EMB_META||{days:1,base:300,tg:{}};
+   var PES=M.pesos||{Sary:1,Jes:1,Sara:0.5};           // peso de cada setter (Sara media jornada de KPIs)
+   var sumW=0; Object.keys(PES).forEach(function(k){ sumW+=PES[k]; }); if(!sumW) sumW=3;
+   var extra=Math.round(EMB_INB*sumW);                 // la barra = inbound de un setter a peso 1
    var f=(M.base>0)?((M.base+extra)/M.base):1;         // factor de escala por el inbound de la barra
    var col=function(w,txt){ return '<span style="width:'+w+'px;flex:none;text-align:center">'+txt+'</span>'; };
    var html='<div style="display:flex;align-items:center;gap:14px;margin-bottom:9px;font-size:11px;color:var(--mut);font-weight:700;text-transform:uppercase;letter-spacing:.5px">'
@@ -409,19 +411,28 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var iv=document.getElementById('emb_inb_val');
    if(iv) iv.textContent='+'+EMB_INB;
    var ce=document.getElementById('emb_conv_esp');
-   if(ce) ce.innerHTML='&rarr; conversaciones esperadas: <b>'+(M.base+extra)+'/día</b> ('+M.base+' outbound+seguimiento + '+extra+' inbound: '+EMB_INB+' &times; '+(M.nset||3)+' setters)';
+   if(ce) ce.innerHTML='&rarr; conversaciones esperadas: <b>'+(M.base+extra)+'/día</b> ('+M.base+' outbound+seguimiento + '+extra+' inbound)';
    var kb=document.getElementById('emb_kpibase');
    if(kb){
-     var _r1=function(x){ return String(Math.round(x*10)/10).replace('.',','); };
-     var trab=Math.round(M.base/(M.nset||3));
-     var propS=(M.tg.propuestas!=null)?_r1(M.tg.propuestas*f/(M.nset||3)):null;
-     var agS=(M.tg.agendas!=null)?_r1(M.tg.agendas*f/(M.nset||3)):null;
-     kb.innerHTML='<b style="color:var(--tx)">KPIs base por setter y día:</b> '
-       +trab+' conversaciones trabajadas ('+Math.round(trab/2)+' outbound + '+Math.round(trab/2)+' follow-ups) · '
-       +EMB_INB+' inbound'
-       +(propS?' · '+propS+' propuestas de agenda':'')
-       +(agS?' · '+agS+' agendas de triaje (Qbookings)':'')
-       +' — propuestas y agendas se reescalan con la barra de inbound.';
+     var _n1=function(x){ var v=Math.round(x*10)/10; return String(v).replace('.',','); };
+     var nombres=Object.keys(PES);
+     var th='<tr><th style="text-align:left;padding:6px 10px;background:var(--blue);color:#fff;border-radius:6px 0 0 0">KPIs base por setter (día)</th>'
+       +nombres.map(function(s){return '<th style="text-align:right;padding:6px 10px;background:var(--blue);color:#fff">'+s+(PES[s]===1?'':' (&frac12;)')+'</th>';}).join('')
+       +'<th style="text-align:right;padding:6px 10px;background:var(--blue);color:#fff;border-radius:0 6px 0 0">Equipo</th></tr>';
+     var fila=function(lbl,fn,eq,bold){
+       return '<tr'+(bold?' style="font-weight:700;border-top:1px solid rgba(128,128,128,.25)"':'')+'>'
+         +'<td style="text-align:left;padding:4px 10px;color:var(--mut)">'+lbl+'</td>'
+         +nombres.map(function(s){ return '<td style="text-align:right;padding:4px 10px">'+_n1(fn(PES[s]))+'</td>'; }).join('')
+         +'<td style="text-align:right;padding:4px 10px;font-weight:700">'+_n1(eq)+'</td></tr>';
+     };
+     var rows=''
+       +fila('Outbound',function(w){return M.base*w/sumW/2;},M.base/2)
+       +fila('Follow-ups',function(w){return M.base*w/sumW/2;},M.base/2)
+       +fila('Inbound (según la barra)',function(w){return EMB_INB*w;},extra)
+       +fila('Total conversaciones',function(w){return M.base*w/sumW+EMB_INB*w;},M.base+extra,true)
+       +(M.tg.propuestas!=null?fila('Propuestas de agenda',function(w){return M.tg.propuestas*f*w/sumW;},M.tg.propuestas*f):'')
+       +(M.tg.agendas!=null?fila('Agendas de triaje (QBookings)',function(w){return M.tg.agendas*f*w/sumW;},M.tg.agendas*f):'');
+     kb.innerHTML='<div style="overflow-x:auto"><table style="font-size:12.5px;border-collapse:collapse;min-width:430px">'+th+rows+'</table></div>';
    }
    var gl=document.getElementById('g_funnel_leyenda');
    if(gl) gl.innerHTML=(esCaida
@@ -593,7 +604,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var _cv=function(v,prev){ return prev>0?Math.round(100*v/prev):null; };
    _EMB_META={days:Math.round((new Date(to)-new Date(from))/86400000)+1,
               base:(_tg.conversaciones!=null?_tg.conversaciones:300), tg:_tg,
-              nset:((DATA.setters||[]).length||3)};
+              pesos:(_tg.setters_peso||null)};
    _EMB_ROWS=[
      {lbl:'Conversaciones',val:tot,col:'var(--blue)',esc:true,max:_mx,conv:null,espConv:null},
      {lbl:'Propuestas de agenda',val:pr,col:'var(--teal)',max:_mx,tKey:'propuestas',conv:_cv(pr,tot),espConv:_ec('conversaciones','propuestas')},
