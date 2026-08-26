@@ -239,7 +239,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <div class="sub" style="margin-bottom:10px">Control del negocio: el embudo completo con la caída entre pasos, alertas, tiempos e inversión, sobre el rango de fechas de arriba.</div>
     <div class="panel" style="border-left:3px solid var(--red);border-radius:0"><h3>Alertas — qué requiere acción</h3><div class="cards" id="g_alertas"></div></div>
     <div class="cards" id="g_cards"></div>
-    <div class="panel"><h3>Embudo completo <span style="font-weight:400;color:var(--mut);font-size:13px">— cada paso con su % sobre el paso anterior</span></h3><div id="g_funnel"></div></div>
+    <div class="panel"><h3>Embudo completo <span style="font-weight:400;color:var(--mut);font-size:13px">— cada paso con su % sobre el paso anterior; conversaciones va fuera de escala, el resto de barras son comparables entre sí</span></h3><div id="g_funnel"></div></div>
     <div class="panel"><h3>Tiempos del embudo <span style="font-weight:400;color:var(--mut);font-size:13px">— mediana de días, en el rango seleccionado</span></h3>
       <div class="cards" id="g_tiempos"></div>
       <div style="font-size:12px;color:var(--mut)" id="g_tiempos_nota"></div></div>
@@ -336,6 +336,23 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  function card(l,v,h){return '<div class="kc"><div class="l">'+l+'</div><div class="v">'+v+'</div>'+(h?'<div class="h">'+h+'</div>':'')+'</div>';}
  function fbar(lbl,val,max,col,extra){var w=Math.max(2,Math.round(100*val/(max||1)));
   return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;"><span style="width:100px;font-size:13px;color:var(--mut)">'+lbl+'</span><div style="flex:1;background:#eef1f5;border-radius:8px;height:28px"><div style="width:'+w+'%;background:'+col+';height:28px;border-radius:8px"></div></div><span style="width:90px;text-align:right;font-weight:500;font-size:13px">'+val+(extra?' · '+extra:'')+'</span></div>';}
+ // Embudo de Control: la barra ocupa ~media fila y los numeros respiran a la derecha.
+ // "Conversaciones" va FUERA DE ESCALA (es 50-100x el resto y aplastaba la comparativa);
+ // de propuestas para abajo, todas las barras estan a escala real ENTRE SI.
+ function fEmb(lbl,val,maxRef,col,extra,fueraEscala){
+   var w=fueraEscala?100:Math.max(2.5,Math.round(1000*val/(maxRef||1))/10);
+   return '<div style="display:flex;align-items:center;gap:14px;margin-bottom:11px">'
+     +'<span style="width:170px;flex:none;font-size:13px;color:var(--mut);text-align:right">'+lbl+'</span>'
+     +'<div style="width:44%;flex:none;background:rgba(128,128,128,.13);border-radius:8px;height:28px;position:relative;overflow:hidden">'
+       +'<div style="width:'+w+'%;background:'+col+';height:28px;border-radius:8px'+(fueraEscala?';opacity:.45':'')+'"></div>'
+       +(fueraEscala?'<span style="position:absolute;right:10px;top:0;line-height:28px;font-size:11px;font-weight:600;color:var(--tx);opacity:.75">fuera de escala</span>':'')
+     +'</div>'
+     +'<div style="flex:1;min-width:0;font-size:13.5px;line-height:1.25">'
+       +'<b style="font-size:16px">'+val+'</b>'
+       +(extra?' <span style="color:var(--mut)">· '+extra+'</span>':'')
+     +'</div>'
+   +'</div>';
+ }
 
  function render(){
    var from=fromEl.value, to=toEl.value;
@@ -483,14 +500,15 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      card('Conv. totales',tot)+card('Propuestas',pr,pct(pr,tot)+' de conv.')+card('Agendas triaje',ag,pct(ag,pr)+' de prop.')+card('Asistió triaje',tsh,pct(tsh,tag)+' de agend.')+card('Cualifica',tcu,pct(tcu,tsh)+' de asistidos')+card('Vendidos',cVe,pct(cVe,cSh)+' de closings asist.')+(window.TEAM?'':card('Facturación','€'+Math.round(cFa).toLocaleString('es-ES'))+card('Cash collected','€'+Math.round(cCa).toLocaleString('es-ES')));
    var cSh=(DATA.closing_daily||[]).filter(function(r){return r.dia>=from&&r.dia<=to;}).reduce(function(a,r){return a+(r.showed||0);},0);
    var _pp=function(a,b){return b?Math.round(a*100/b)+'%':'—';};
+   var _mx=Math.max(pr,ag,tsh,tcu,cSh,cVe,1);   // referencia de escala: el mayor SIN contar conversaciones
    document.getElementById('g_funnel').innerHTML=
-     fbar('Conversaciones',tot,tot,'var(--blue)')
-    +fbar('Propuestas de agenda',pr,tot,'var(--teal)',_pp(pr,tot)+' de las conversaciones')
-    +fbar('Agendas de triaje',ag,tot,'var(--amber)',_pp(ag,pr)+' de las propuestas')
-    +fbar('Asistió al triaje',tsh,tot,'var(--purple)',_pp(tsh,ag)+' de las agendas')
-    +fbar('Cualifica',tcu,tot,'#0F6E56',_pp(tcu,tsh)+' de los que asistieron')
-    +fbar('Closing hecho',cSh,tot,'#7A4DD8',_pp(cSh,tcu)+' de los que cualificaron')
-    +fbar('Vendido',cVe,tot,'var(--red)',_pp(cVe,cSh)+' de los closings hechos');
+     fEmb('Conversaciones',tot,_mx,'var(--blue)','',true)
+    +fEmb('Propuestas de agenda',pr,_mx,'var(--teal)',_pp(pr,tot)+' de las conversaciones')
+    +fEmb('Agendas de triaje',ag,_mx,'var(--amber)',_pp(ag,pr)+' de las propuestas')
+    +fEmb('Asistió al triaje',tsh,_mx,'var(--purple)',_pp(tsh,ag)+' de las agendas')
+    +fEmb('Cualifica',tcu,_mx,'#0F6E56',_pp(tcu,tsh)+' de los que asistieron')
+    +fEmb('Closing hecho',cSh,_mx,'#7A4DD8',_pp(cSh,tcu)+' de los que cualificaron')
+    +fEmb('Vendido',cVe,_mx,'var(--red)',_pp(cVe,cSh)+' de los closings hechos');
    // ---- alertas del rango ----
    var _al={sinReg:0,nosToca:0,cta:0};
    (DATA.triage_leads||[]).forEach(function(r){ if(r.fecha<from||r.fecha>to) return; var sx=situacion(r,'tri');
