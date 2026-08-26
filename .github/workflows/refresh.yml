@@ -34,4 +34,5 @@ jobs:
           git config user.email "bot@natscholibre"
           git add index.html equipo.html data.json setting_cache.json
           git commit -m "auto-refresh dashboard" || echo "sin cambios"
+          git pull --rebase origin main || true
           git push
