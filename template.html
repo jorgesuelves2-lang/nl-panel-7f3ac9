@@ -549,7 +549,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      {lbl:'Agendas de triaje',val:ag,col:'var(--amber)',max:_mx,conv:_cv(ag,pr),espConv:_ec('propuestas','agendas')},
      {lbl:'Asistió al triaje',val:tsh,col:'var(--purple)',max:_mx,conv:_cv(tsh,ag),espConv:_ec('agendas','triajes_hechos')},
      {lbl:'Cualifica',val:tcu,col:'#0F6E56',max:_mx,conv:_cv(tcu,tsh),espConv:_ec('triajes_hechos','cualifica')},
-     {lbl:'Closing hecho',val:cSh,col:'#7A4DD8',max:_mx,conv:_cv(cSh,tcu),espConv:_ec('cualifica','closings')},
+     {lbl:'Asistió al closing',val:cSh,col:'#7A4DD8',max:_mx,conv:_cv(cSh,tcu),espConv:_ec('cualifica','closings')},
      {lbl:'Vendido',val:cVe,col:'var(--red)',max:_mx,conv:_cv(cVe,cSh),espConv:_ec('closings','ventas')}];
    pintarEmbudo();
    // ---- alertas del rango ----
@@ -907,7 +907,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
   {k:'agendas',l:'Agendas conseguidas',src:'S',f:'agendas'},
   {k:'triajes_hechos',l:'Triajes hechos (asistió)',src:'T',f:'showed'},
   {k:'cualifica',l:'Cualificaron en triaje',src:'T',f:'cualifica'},
-  {k:'closings',l:'Closings hechos (asistió)',src:'C',f:'showed'},
+  {k:'closings',l:'Asistió al closing',src:'C',f:'showed'},
   {k:'ventas',l:'Ventas',src:'C',f:'vendido'},
   {k:'facturacion',l:'Facturación (€)',src:'C',f:'facturacion',money:true},
   {k:'cash',l:'Cash cobrado (€)',src:'C',f:'cash',money:true}
