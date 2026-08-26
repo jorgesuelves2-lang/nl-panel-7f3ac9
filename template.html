@@ -363,7 +363,13 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    _EMB_ROWS.forEach(function(r){
      var w=r.esc?100:Math.max(2.5,Math.round(1000*r.val/(r.max||1))/10);
      var chip='<span style="color:var(--mut)">&mdash;</span>', esp='<span style="color:var(--mut)">&mdash;</span>';
-     if(r.conv!=null){
+     if(r.abs&&r.abs.esp!=null){
+       // primera fila: numeros ENTEROS, no % (la palanca del embudo es el volumen de conversaciones)
+       var okA=r.abs.real>=r.abs.esp;
+       chip='<span style="display:inline-block;min-width:76px;background:'+(okA?'var(--teal)':'var(--red)')+';color:#fff;border-radius:7px;padding:3px 10px;font-size:12.5px;font-weight:700;text-align:center">'+r.abs.real+'</span>';
+       esp='<span style="color:var(--mut);font-size:13.5px">'+r.abs.esp+'</span>';
+     }
+     else if(r.conv!=null){
        var real=esCaida?(100-r.conv):r.conv;
        var espv=(r.espConv!=null)?(esCaida?(100-r.espConv):r.espConv):null;
        var bien=(espv==null)?null:(esCaida?(real<=espv):(real>=espv));
@@ -544,7 +550,8 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var _ec=function(a,b){ var x=_tg[a],y=_tg[b]; return (x>0&&y!=null)?Math.round(100*y/x):null; };
    var _cv=function(v,prev){ return prev>0?Math.round(100*v/prev):null; };
    _EMB_ROWS=[
-     {lbl:'Conversaciones',val:tot,col:'var(--blue)',esc:true,max:_mx,conv:null,espConv:null},
+     {lbl:'Conversaciones',val:tot,col:'var(--blue)',esc:true,max:_mx,conv:null,espConv:null,
+      abs:{real:tot,esp:(_tg.conversaciones!=null?Math.round(_tg.conversaciones*(Math.round((new Date(to)-new Date(from))/86400000)+1)):null)}},
      {lbl:'Propuestas de agenda',val:pr,col:'var(--teal)',max:_mx,conv:_cv(pr,tot),espConv:_ec('conversaciones','propuestas')},
      {lbl:'Agendas de triaje',val:ag,col:'var(--amber)',max:_mx,conv:_cv(ag,pr),espConv:_ec('propuestas','agendas')},
      {lbl:'Asistió al triaje',val:tsh,col:'var(--purple)',max:_mx,conv:_cv(tsh,ag),espConv:_ec('agendas','triajes_hechos')},
