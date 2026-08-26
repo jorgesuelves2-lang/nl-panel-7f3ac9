@@ -247,6 +247,12 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
           <button class="tab" data-emb="conv" style="font-size:12.5px;padding:4px 14px">Conversión</button>
         </div>
       </div>
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px;font-size:13px">
+        <span style="color:var(--mut)">Inbound esperado al día:</span>
+        <input type="range" id="emb_inb" min="0" max="50" step="10" value="0" style="width:190px;accent-color:var(--teal)">
+        <b id="emb_inb_val" style="min-width:34px">+0</b>
+        <span id="emb_conv_esp" style="color:var(--mut)"></span>
+      </div>
       <div id="g_funnel" style="margin-top:14px"></div>
       <div id="g_funnel_leyenda" style="font-size:12px;color:var(--mut);margin-top:10px"></div>
     </div>
@@ -348,26 +354,35 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
   return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;"><span style="width:100px;font-size:13px;color:var(--mut)">'+lbl+'</span><div style="flex:1;background:#eef1f5;border-radius:8px;height:28px"><div style="width:'+w+'%;background:'+col+';height:28px;border-radius:8px"></div></div><span style="width:90px;text-align:right;font-weight:500;font-size:13px">'+val+(extra?' · '+extra:'')+'</span></div>';}
  // Embudo de Control como MATRIZ: barra | Total | Caída/Conversión | Esperada, todo en columnas
  // fijas para que las tarjetas queden alineadas en vertical. El conmutador del panel cambia la vista.
- var EMB_VISTA='caida'; var _EMB_ROWS=null;
+ var EMB_VISTA='caida'; var _EMB_ROWS=null; var _EMB_META=null;
+ var EMB_INB=0;
+ try{ EMB_INB=parseInt(localStorage.getItem('emb_inb')||'0',10)||0; }catch(e){}
  function pintarEmbudo(){
    var el=document.getElementById('g_funnel'); if(!el||!_EMB_ROWS) return;
    var esCaida=(EMB_VISTA==='caida');
+   var M=_EMB_META||{days:1,base:300,tg:{}};
+   var f=(M.base>0)?((M.base+EMB_INB)/M.base):1;   // factor de escala por el inbound de la barra
    var col=function(w,txt){ return '<span style="width:'+w+'px;flex:none;text-align:center">'+txt+'</span>'; };
    var html='<div style="display:flex;align-items:center;gap:14px;margin-bottom:9px;font-size:11px;color:var(--mut);font-weight:700;text-transform:uppercase;letter-spacing:.5px">'
      +'<span style="width:170px;flex:none"></span>'
-     +'<span style="width:36%;flex:none"></span>'
+     +'<span style="width:31%;flex:none"></span>'
      +col(64,'Total')
+     +col(78,'Esperado')
      +col(110,esCaida?'Caída':'Conversión')
      +col(104,'Esperada')
    +'</div>';
    _EMB_ROWS.forEach(function(r){
      var w=r.esc?100:Math.max(2.5,Math.round(1000*r.val/(r.max||1))/10);
      var chip='<span style="color:var(--mut)">&mdash;</span>', esp='<span style="color:var(--mut)">&mdash;</span>';
-     if(r.abs&&r.abs.esp!=null){
-       // primera fila: numeros ENTEROS, no % (la palanca del embudo es el volumen de conversaciones)
-       var okA=r.abs.real>=r.abs.esp;
-       chip='<span style="display:inline-block;min-width:76px;background:'+(okA?'var(--teal)':'var(--red)')+';color:#fff;border-radius:7px;padding:3px 10px;font-size:12.5px;font-weight:700;text-align:center">'+r.abs.real+'</span>';
-       esp='<span style="color:var(--mut);font-size:13.5px">'+r.abs.esp+'</span>';
+     // TOTAL ESPERADO del rango: cadena de objetivos x dias x factor de inbound
+     var espAbs=null;
+     if(r.esc) espAbs=Math.round((M.base+EMB_INB)*M.days);
+     else if(r.tKey&&M.tg[r.tKey]!=null) espAbs=Math.round(M.tg[r.tKey]*f*M.days);
+     var espAbsHtml=espAbs!=null?'<span style="color:var(--mut);font-size:13.5px">'+espAbs+'</span>':'<span style="color:var(--mut)">&mdash;</span>';
+     if(r.esc&&espAbs!=null){
+       var okA=r.val>=espAbs;
+       chip='<span style="display:inline-block;min-width:76px;background:'+(okA?'var(--teal)':'var(--red)')+';color:#fff;border-radius:7px;padding:3px 10px;font-size:12.5px;font-weight:700;text-align:center">'+r.val+'</span>';
+       esp='<span style="color:var(--mut)">&mdash;</span>';
      }
      else if(r.conv!=null){
        var real=esCaida?(100-r.conv):r.conv;
@@ -379,25 +394,38 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      }
      html+='<div style="display:flex;align-items:center;gap:14px;margin-bottom:11px">'
        +'<span style="width:170px;flex:none;font-size:13px;color:var(--mut);text-align:right">'+r.lbl+'</span>'
-       +'<div style="width:36%;flex:none;background:rgba(128,128,128,.13);border-radius:8px;height:28px;position:relative;overflow:hidden">'
+       +'<div style="width:31%;flex:none;background:rgba(128,128,128,.13);border-radius:8px;height:28px;position:relative;overflow:hidden">'
          +'<div style="width:'+w+'%;background:'+r.col+';height:28px;border-radius:8px'+(r.esc?';opacity:.45':'')+'"></div>'
          +(r.esc?'<span style="position:absolute;right:10px;top:0;line-height:28px;font-size:11px;font-weight:600;color:var(--tx);opacity:.75">fuera de escala</span>':'')
        +'</div>'
        +col(64,'<b style="font-size:16px">'+r.val+'</b>')
+       +col(78,espAbsHtml)
        +col(110,chip)
        +col(104,esp)
      +'</div>';
    });
    el.innerHTML=html;
+   var iv=document.getElementById('emb_inb_val');
+   if(iv) iv.textContent='+'+EMB_INB;
+   var ce=document.getElementById('emb_conv_esp');
+   if(ce) ce.innerHTML='&rarr; conversaciones esperadas: <b>'+(M.base+EMB_INB)+'/día</b> ('+M.base+' outbound+seguimiento del equipo + '+EMB_INB+' inbound de ads)';
    var gl=document.getElementById('g_funnel_leyenda');
-   if(gl) gl.innerHTML=esCaida
-     ?'&#9660; = % de leads que se PIERDEN en ese paso respecto al anterior. <span style="color:var(--teal);font-weight:600">Verde</span>: se pierde menos de lo esperado · <span style="color:var(--red);font-weight:600">rojo</span>: se pierde más. Lo esperado sale de la cadena de objetivos (targets.json).'
-     :'Conversión = % de leads del paso anterior que AVANZAN a este. <span style="color:var(--teal);font-weight:600">Verde</span>: convierte mejor de lo esperado · <span style="color:var(--red);font-weight:600">rojo</span>: peor. Lo esperado sale de la cadena de objetivos (targets.json).';
+   if(gl) gl.innerHTML=(esCaida
+     ?'&#9660; = % de leads que se PIERDEN en ese paso respecto al anterior. <span style="color:var(--teal);font-weight:600">Verde</span>: se pierde menos de lo esperado · <span style="color:var(--red);font-weight:600">rojo</span>: se pierde más.'
+     :'Conversión = % de leads del paso anterior que AVANZAN a este. <span style="color:var(--teal);font-weight:600">Verde</span>: convierte mejor de lo esperado · <span style="color:var(--red);font-weight:600">rojo</span>: peor.')
+     +' La columna ESPERADO son los números absolutos que la cadena de objetivos (targets.json) produce con las conversaciones esperadas del rango — se recalcula al mover la barra de inbound.';
    document.querySelectorAll('button[data-emb]').forEach(function(b){ b.classList.toggle('on',b.dataset.emb===EMB_VISTA); });
  }
  document.querySelectorAll('button[data-emb]').forEach(function(b){
    b.onclick=function(){ EMB_VISTA=b.dataset.emb; pintarEmbudo(); };
  });
+ (function(){
+   var sl=document.getElementById('emb_inb'); if(!sl) return;
+   sl.value=String(EMB_INB);
+   sl.oninput=function(){ EMB_INB=parseInt(sl.value,10)||0;
+     try{ localStorage.setItem('emb_inb',String(EMB_INB)); }catch(e){}
+     pintarEmbudo(); };
+ })();
 
  function render(){
    var from=fromEl.value, to=toEl.value;
@@ -549,15 +577,16 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var _tg=DATA.targets||{};
    var _ec=function(a,b){ var x=_tg[a],y=_tg[b]; return (x>0&&y!=null)?Math.round(100*y/x):null; };
    var _cv=function(v,prev){ return prev>0?Math.round(100*v/prev):null; };
+   _EMB_META={days:Math.round((new Date(to)-new Date(from))/86400000)+1,
+              base:(_tg.conversaciones!=null?_tg.conversaciones:300), tg:_tg};
    _EMB_ROWS=[
-     {lbl:'Conversaciones',val:tot,col:'var(--blue)',esc:true,max:_mx,conv:null,espConv:null,
-      abs:{real:tot,esp:(_tg.conversaciones!=null?Math.round(_tg.conversaciones*(Math.round((new Date(to)-new Date(from))/86400000)+1)):null)}},
-     {lbl:'Propuestas de agenda',val:pr,col:'var(--teal)',max:_mx,conv:_cv(pr,tot),espConv:_ec('conversaciones','propuestas')},
-     {lbl:'Agendas de triaje',val:ag,col:'var(--amber)',max:_mx,conv:_cv(ag,pr),espConv:_ec('propuestas','agendas')},
-     {lbl:'Asistió al triaje',val:tsh,col:'var(--purple)',max:_mx,conv:_cv(tsh,ag),espConv:_ec('agendas','triajes_hechos')},
-     {lbl:'Cualifica',val:tcu,col:'#0F6E56',max:_mx,conv:_cv(tcu,tsh),espConv:_ec('triajes_hechos','cualifica')},
-     {lbl:'Asistió al closing',val:cSh,col:'#7A4DD8',max:_mx,conv:_cv(cSh,tcu),espConv:_ec('cualifica','closings')},
-     {lbl:'Vendido',val:cVe,col:'var(--red)',max:_mx,conv:_cv(cVe,cSh),espConv:_ec('closings','ventas')}];
+     {lbl:'Conversaciones',val:tot,col:'var(--blue)',esc:true,max:_mx,conv:null,espConv:null},
+     {lbl:'Propuestas de agenda',val:pr,col:'var(--teal)',max:_mx,tKey:'propuestas',conv:_cv(pr,tot),espConv:_ec('conversaciones','propuestas')},
+     {lbl:'Agendas de triaje',val:ag,col:'var(--amber)',max:_mx,tKey:'agendas',conv:_cv(ag,pr),espConv:_ec('propuestas','agendas')},
+     {lbl:'Asistió al triaje',val:tsh,col:'var(--purple)',max:_mx,tKey:'triajes_hechos',conv:_cv(tsh,ag),espConv:_ec('agendas','triajes_hechos')},
+     {lbl:'Cualifica',val:tcu,col:'#0F6E56',max:_mx,tKey:'cualifica',conv:_cv(tcu,tsh),espConv:_ec('triajes_hechos','cualifica')},
+     {lbl:'Asistió al closing',val:cSh,col:'#7A4DD8',max:_mx,tKey:'closings',conv:_cv(cSh,tcu),espConv:_ec('cualifica','closings')},
+     {lbl:'Vendido',val:cVe,col:'var(--red)',max:_mx,tKey:'ventas',conv:_cv(cVe,cSh),espConv:_ec('closings','ventas')}];
    pintarEmbudo();
    // ---- alertas del rango ----
    var _al={sinReg:0,nosToca:0,cta:0};
