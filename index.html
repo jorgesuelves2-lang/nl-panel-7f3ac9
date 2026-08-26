@@ -239,7 +239,17 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <div class="sub" style="margin-bottom:10px">Control del negocio: el embudo completo con la caída entre pasos, alertas, tiempos e inversión, sobre el rango de fechas de arriba.</div>
     <div class="panel" style="border-left:3px solid var(--red);border-radius:0"><h3>Alertas — qué requiere acción</h3><div class="cards" id="g_alertas"></div></div>
     <div class="cards" id="g_cards"></div>
-    <div class="panel"><h3>Embudo completo <span style="font-weight:400;color:var(--mut);font-size:13px">— la caída de cada paso contra la esperada; conversaciones va fuera de escala, el resto de barras son comparables entre sí</span></h3><div id="g_funnel"></div><div id="g_funnel_leyenda" style="font-size:12px;color:var(--mut);margin-top:10px"></div></div>
+    <div class="panel">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+        <h3 style="margin:0">Embudo completo <span style="font-weight:400;color:var(--mut);font-size:13px">— conversaciones va fuera de escala; el resto de barras son comparables entre sí</span></h3>
+        <div style="display:flex;gap:6px">
+          <button class="tab on" data-emb="caida" style="font-size:12.5px;padding:4px 14px">Caída</button>
+          <button class="tab" data-emb="conv" style="font-size:12.5px;padding:4px 14px">Conversión</button>
+        </div>
+      </div>
+      <div id="g_funnel" style="margin-top:14px"></div>
+      <div id="g_funnel_leyenda" style="font-size:12px;color:var(--mut);margin-top:10px"></div>
+    </div>
     <div class="panel"><h3>Tiempos del embudo <span style="font-weight:400;color:var(--mut);font-size:13px">— mediana de días, en el rango seleccionado</span></h3>
       <div class="cards" id="g_tiempos"></div>
       <div style="font-size:12px;color:var(--mut)" id="g_tiempos_nota"></div></div>
@@ -336,28 +346,52 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  function card(l,v,h){return '<div class="kc"><div class="l">'+l+'</div><div class="v">'+v+'</div>'+(h?'<div class="h">'+h+'</div>':'')+'</div>';}
  function fbar(lbl,val,max,col,extra){var w=Math.max(2,Math.round(100*val/(max||1)));
   return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;"><span style="width:100px;font-size:13px;color:var(--mut)">'+lbl+'</span><div style="flex:1;background:#eef1f5;border-radius:8px;height:28px"><div style="width:'+w+'%;background:'+col+';height:28px;border-radius:8px"></div></div><span style="width:90px;text-align:right;font-weight:500;font-size:13px">'+val+(extra?' · '+extra:'')+'</span></div>';}
- // Embudo de Control: la barra ocupa ~media fila y los numeros respiran a la derecha.
- // "Conversaciones" va FUERA DE ESCALA (es 50-100x el resto y aplastaba la comparativa);
- // de propuestas para abajo, todas las barras estan a escala real ENTRE SI.
- function fEmb(lbl,val,maxRef,col,caida,fueraEscala){
-   var w=fueraEscala?100:Math.max(2.5,Math.round(1000*val/(maxRef||1))/10);
-   var der='<b style="font-size:16px">'+val+'</b>';
-   if(caida && caida.real!=null){
-     var peor = (caida.esp!=null) ? (caida.real>caida.esp) : null;
-     var colChip = peor===null ? 'var(--mut)' : (peor ? 'var(--red)' : 'var(--teal)');
-     der+=' <span style="display:inline-block;background:'+colChip+';color:#fff;border-radius:6px;padding:2px 9px;font-size:12.5px;font-weight:700;margin:0 4px">&#9660; '+caida.real+'%</span>'
-        +'<span style="color:var(--mut)">de caída'
-        +(caida.esp!=null?' · esperada '+caida.esp+'%':'')+'</span>';
-   }
-   return '<div style="display:flex;align-items:center;gap:14px;margin-bottom:11px">'
-     +'<span style="width:170px;flex:none;font-size:13px;color:var(--mut);text-align:right">'+lbl+'</span>'
-     +'<div style="width:44%;flex:none;background:rgba(128,128,128,.13);border-radius:8px;height:28px;position:relative;overflow:hidden">'
-       +'<div style="width:'+w+'%;background:'+col+';height:28px;border-radius:8px'+(fueraEscala?';opacity:.45':'')+'"></div>'
-       +(fueraEscala?'<span style="position:absolute;right:10px;top:0;line-height:28px;font-size:11px;font-weight:600;color:var(--tx);opacity:.75">fuera de escala</span>':'')
-     +'</div>'
-     +'<div style="flex:1;min-width:0;font-size:13.5px;line-height:1.25">'+der+'</div>'
+ // Embudo de Control como MATRIZ: barra | Total | Caída/Conversión | Esperada, todo en columnas
+ // fijas para que las tarjetas queden alineadas en vertical. El conmutador del panel cambia la vista.
+ var EMB_VISTA='caida'; var _EMB_ROWS=null;
+ function pintarEmbudo(){
+   var el=document.getElementById('g_funnel'); if(!el||!_EMB_ROWS) return;
+   var esCaida=(EMB_VISTA==='caida');
+   var col=function(w,txt){ return '<span style="width:'+w+'px;flex:none;text-align:center">'+txt+'</span>'; };
+   var html='<div style="display:flex;align-items:center;gap:14px;margin-bottom:9px;font-size:11px;color:var(--mut);font-weight:700;text-transform:uppercase;letter-spacing:.5px">'
+     +'<span style="width:170px;flex:none"></span>'
+     +'<span style="width:36%;flex:none"></span>'
+     +col(64,'Total')
+     +col(110,esCaida?'Caída':'Conversión')
+     +col(104,'Esperada')
    +'</div>';
+   _EMB_ROWS.forEach(function(r){
+     var w=r.esc?100:Math.max(2.5,Math.round(1000*r.val/(r.max||1))/10);
+     var chip='<span style="color:var(--mut)">&mdash;</span>', esp='<span style="color:var(--mut)">&mdash;</span>';
+     if(r.conv!=null){
+       var real=esCaida?(100-r.conv):r.conv;
+       var espv=(r.espConv!=null)?(esCaida?(100-r.espConv):r.espConv):null;
+       var bien=(espv==null)?null:(esCaida?(real<=espv):(real>=espv));
+       var c=(bien==null)?'var(--mut)':(bien?'var(--teal)':'var(--red)');
+       chip='<span style="display:inline-block;min-width:76px;background:'+c+';color:#fff;border-radius:7px;padding:3px 10px;font-size:12.5px;font-weight:700;text-align:center">'+(esCaida?'&#9660; ':'')+real+'%</span>';
+       if(espv!=null) esp='<span style="color:var(--mut);font-size:13.5px">'+espv+'%</span>';
+     }
+     html+='<div style="display:flex;align-items:center;gap:14px;margin-bottom:11px">'
+       +'<span style="width:170px;flex:none;font-size:13px;color:var(--mut);text-align:right">'+r.lbl+'</span>'
+       +'<div style="width:36%;flex:none;background:rgba(128,128,128,.13);border-radius:8px;height:28px;position:relative;overflow:hidden">'
+         +'<div style="width:'+w+'%;background:'+r.col+';height:28px;border-radius:8px'+(r.esc?';opacity:.45':'')+'"></div>'
+         +(r.esc?'<span style="position:absolute;right:10px;top:0;line-height:28px;font-size:11px;font-weight:600;color:var(--tx);opacity:.75">fuera de escala</span>':'')
+       +'</div>'
+       +col(64,'<b style="font-size:16px">'+r.val+'</b>')
+       +col(110,chip)
+       +col(104,esp)
+     +'</div>';
+   });
+   el.innerHTML=html;
+   var gl=document.getElementById('g_funnel_leyenda');
+   if(gl) gl.innerHTML=esCaida
+     ?'&#9660; = % de leads que se PIERDEN en ese paso respecto al anterior. <span style="color:var(--teal);font-weight:600">Verde</span>: se pierde menos de lo esperado · <span style="color:var(--red);font-weight:600">rojo</span>: se pierde más. Lo esperado sale de la cadena de objetivos (targets.json).'
+     :'Conversión = % de leads del paso anterior que AVANZAN a este. <span style="color:var(--teal);font-weight:600">Verde</span>: convierte mejor de lo esperado · <span style="color:var(--red);font-weight:600">rojo</span>: peor. Lo esperado sale de la cadena de objetivos (targets.json).';
+   document.querySelectorAll('button[data-emb]').forEach(function(b){ b.classList.toggle('on',b.dataset.emb===EMB_VISTA); });
  }
+ document.querySelectorAll('button[data-emb]').forEach(function(b){
+   b.onclick=function(){ EMB_VISTA=b.dataset.emb; pintarEmbudo(); };
+ });
 
  function render(){
    var from=fromEl.value, to=toEl.value;
@@ -506,25 +540,18 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    var cSh=(DATA.closing_daily||[]).filter(function(r){return r.dia>=from&&r.dia<=to;}).reduce(function(a,r){return a+(r.showed||0);},0);
    var _pp=function(a,b){return b?Math.round(a*100/b)+'%':'—';};
    var _mx=Math.max(pr,ag,tsh,tcu,cSh,cVe,1);   // referencia de escala: el mayor SIN contar conversaciones
-   // CAIDA real de cada paso (100 - conversion) y caida ESPERADA segun la cadena de objetivos
-   // de targets.json: si Jorge cambia los objetivos, los semaforos se recalibran solos.
    var _tg=DATA.targets||{};
-   var _caiEsp=function(a,b){ var x=_tg[a],y=_tg[b];
-     return (x>0&&y!=null)?Math.max(0,Math.round(100-100*y/x)):null; };
-   var _cai=function(v,prev){ return prev>0?Math.round(100-100*v/prev):null; };
-   document.getElementById('g_funnel').innerHTML=
-     fEmb('Conversaciones',tot,_mx,'var(--blue)',null,true)
-    +fEmb('Propuestas de agenda',pr,_mx,'var(--teal)',{real:_cai(pr,tot),esp:_caiEsp('conversaciones','propuestas')})
-    +fEmb('Agendas de triaje',ag,_mx,'var(--amber)',{real:_cai(ag,pr),esp:_caiEsp('propuestas','agendas')})
-    +fEmb('Asistió al triaje',tsh,_mx,'var(--purple)',{real:_cai(tsh,ag),esp:_caiEsp('agendas','triajes_hechos')})
-    +fEmb('Cualifica',tcu,_mx,'#0F6E56',{real:_cai(tcu,tsh),esp:_caiEsp('triajes_hechos','cualifica')})
-    +fEmb('Closing hecho',cSh,_mx,'#7A4DD8',{real:_cai(cSh,tcu),esp:_caiEsp('cualifica','closings')})
-    +fEmb('Vendido',cVe,_mx,'var(--red)',{real:_cai(cVe,cSh),esp:_caiEsp('closings','ventas')});
-   var _gl=document.getElementById('g_funnel_leyenda');
-   if(_gl) _gl.innerHTML='&#9660; = porcentaje de leads que se PIERDEN en ese paso respecto al anterior. '
-     +'<span style="color:var(--teal);font-weight:600">Verde</span>: se pierde menos de lo esperado. '
-     +'<span style="color:var(--red);font-weight:600">Rojo</span>: se pierde más de lo esperado. '
-     +'La caída esperada sale de la cadena de objetivos (targets.json).';
+   var _ec=function(a,b){ var x=_tg[a],y=_tg[b]; return (x>0&&y!=null)?Math.round(100*y/x):null; };
+   var _cv=function(v,prev){ return prev>0?Math.round(100*v/prev):null; };
+   _EMB_ROWS=[
+     {lbl:'Conversaciones',val:tot,col:'var(--blue)',esc:true,max:_mx,conv:null,espConv:null},
+     {lbl:'Propuestas de agenda',val:pr,col:'var(--teal)',max:_mx,conv:_cv(pr,tot),espConv:_ec('conversaciones','propuestas')},
+     {lbl:'Agendas de triaje',val:ag,col:'var(--amber)',max:_mx,conv:_cv(ag,pr),espConv:_ec('propuestas','agendas')},
+     {lbl:'Asistió al triaje',val:tsh,col:'var(--purple)',max:_mx,conv:_cv(tsh,ag),espConv:_ec('agendas','triajes_hechos')},
+     {lbl:'Cualifica',val:tcu,col:'#0F6E56',max:_mx,conv:_cv(tcu,tsh),espConv:_ec('triajes_hechos','cualifica')},
+     {lbl:'Closing hecho',val:cSh,col:'#7A4DD8',max:_mx,conv:_cv(cSh,tcu),espConv:_ec('cualifica','closings')},
+     {lbl:'Vendido',val:cVe,col:'var(--red)',max:_mx,conv:_cv(cVe,cSh),espConv:_ec('closings','ventas')}];
+   pintarEmbudo();
    // ---- alertas del rango ----
    var _al={sinReg:0,nosToca:0,cta:0};
    (DATA.triage_leads||[]).forEach(function(r){ if(r.fecha<from||r.fecha>to) return; var sx=situacion(r,'tri');
