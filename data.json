@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-27 12:04",
+ "generado": "2026-08-27 21:58",
  "rango": "2026-02-01 a 2026-08-27",
  "setting": [
   {
@@ -2902,16 +2902,16 @@
   },
   {
    "dia": "2026-08-27",
-   "inb": 5,
-   "out": 2,
-   "nuevas": 7,
-   "total": 44,
-   "fups": 29,
-   "prop": 1,
-   "link": 1,
+   "inb": 7,
+   "out": 117,
+   "nuevas": 124,
+   "total": 206,
+   "fups": 114,
+   "prop": 3,
+   "link": 2,
    "badlink": 0,
    "agendas": 4,
-   "resp_min": 27,
+   "resp_min": 39,
    "nodata": false
   }
  ],
@@ -5406,8 +5406,8 @@
    "showed": 1,
    "noshow": 0,
    "noconfirma": 0,
-   "cancelled": 0,
-   "confirmed": 4,
+   "cancelled": 1,
+   "confirmed": 3,
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
@@ -6663,6 +6663,38 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/yLFDONBZDcMt3mXHk1QW"
   },
   {
+   "nombre": "Belen Körner",
+   "setter": "Sary",
+   "origen": "propio",
+   "prof": "Médico General",
+   "nivel": "🔹 Conocimientos básicos",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "300€ - 600€",
+   "univ": "UAGRM",
+   "urg": "",
+   "comp": "Aún no estoy en disposición de comenzar (por favor no agendar)",
+   "obst": "El idioma",
+   "canal": "",
+   "ig": "",
+   "email": "bellekorner4@gmail.com",
+   "tf": "+59169085064",
+   "fagenda": "2026-08-28",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": null,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "cta": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/KGaICpHJcTpKIXKNon9q"
+  },
+  {
    "nombre": "Brandi Juleisi Afontin Gabriel",
    "setter": "Sara",
    "origen": "propio",
@@ -7717,6 +7749,38 @@
    "infocloser": "",
    "cta": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/KRwNt0vplCEKBCNva1Yo"
+  },
+  {
+   "nombre": "Daniel Aranda",
+   "setter": "Sara",
+   "origen": "propio",
+   "prof": "Ingeniero en Mecatrónica ",
+   "nivel": "🔹 B1",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "univ": "UPIITA IPN",
+   "urg": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Burocracia",
+   "canal": "",
+   "ig": "DanielAr",
+   "email": "daniel203ccm@gmail.com",
+   "tf": "+525527450614",
+   "fagenda": "2026-08-28",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": null,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "cta": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/GHJzMRAsCPGwOiUIFAYH"
   },
   {
    "nombre": "Daniel Carranza",
@@ -10920,7 +10984,7 @@
   },
   {
    "nombre": "Juan Luis Jimenez",
-   "setter": "Sara",
+   "setter": "Sary",
    "origen": "propio",
    "prof": "Mwdico",
    "nivel": "🔹 No tengo conocimientos",
@@ -11752,7 +11816,7 @@
   },
   {
    "nombre": "Luis Fernando Fernandez Bedoya",
-   "setter": "",
+   "setter": "Sary",
    "origen": "propio",
    "prof": "Instrumentador qirurgico",
    "nivel": "🔹 B1",
@@ -17200,7 +17264,7 @@
    "estadoclo": "",
    "motivo": "",
    "objclo": "",
-   "etapa": "🟢 C8k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+34632687758",
    "email": "alinedealmeidagilio@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/UXPdoIt6bS8xl4hSMpGx",
@@ -17512,7 +17576,7 @@
    "estadoclo": "Pago completo",
    "motivo": "Dinero",
    "objclo": "Resueltas: carga academica y liquidez puntual. Pago reserva al dia siguiente de la llamada y liquido el resto el 28.07.",
-   "etapa": "🟢 C3,5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+51987707674",
    "email": "hhualpa@outlook.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rDUwGEh1RKKTzxyIttJH",
@@ -26103,9 +26167,9 @@
   },
   {
    "dia": "2026-08-25",
-   "in": 1787676470,
-   "rep": 1787676510,
-   "s": "Jesmary"
+   "in": 1787657763,
+   "rep": 1787658054,
+   "s": ""
   },
   {
    "dia": "2026-08-25",
@@ -26115,9 +26179,9 @@
   },
   {
    "dia": "2026-08-25",
-   "in": 1787657763,
-   "rep": 1787658054,
-   "s": ""
+   "in": 1787676470,
+   "rep": 1787676510,
+   "s": "Jesmary"
   },
   {
    "dia": "2026-08-25",
@@ -26157,9 +26221,15 @@
   },
   {
    "dia": "2026-08-27",
+   "in": 1787797761,
+   "rep": 1787851157,
+   "s": ""
+  },
+  {
+   "dia": "2026-08-27",
    "in": 1787820562,
    "rep": 1787821485,
-   "s": ""
+   "s": "Sara"
   },
   {
    "dia": "2026-08-27",
@@ -26169,6 +26239,17 @@
   }
  ],
  "kpis": [
+  {
+   "dia": "2026-08-26",
+   "setter": "Sary",
+   "fu": 72,
+   "inb": 0,
+   "out": 50,
+   "prop": 2,
+   "book": 1,
+   "wel": 0,
+   "notas": ""
+  },
   {
    "dia": "2026-08-26",
    "setter": "Jesmary",
@@ -28881,10 +28962,10 @@
   {
    "dia": "2026-07-22",
    "triages": 1,
-   "con_form": 1,
-   "sin_form": 0,
-   "estado_triage": "Completo",
-   "retraso_medio": 5.0,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
    "kpis": {
     "Sary": false,
     "Sara": false,
@@ -29341,7 +29422,7 @@
    "estado_triage": "Completo",
    "retraso_medio": 0.0,
    "kpis": {
-    "Sary": false,
+    "Sary": true,
     "Sara": false,
     "Jesmary": true
    }
@@ -29366,6 +29447,78 @@
   "Jesmary"
  ],
  "triage_leads": [
+  {
+   "nombre": "Belen Körner",
+   "fecha": "2026-08-28",
+   "hora": "22:00",
+   "estado": "confirmed",
+   "reag": "",
+   "agendada": "2026-08-25",
+   "cta": "",
+   "asistio": false,
+   "fclo": "",
+   "fuente": "",
+   "d0": "2026-07-26",
+   "restri": "",
+   "stri": null,
+   "ss": null,
+   "setter": "Sary",
+   "triager": "",
+   "prof": "Médico General",
+   "motivo": "",
+   "objtri": "",
+   "etapa": "🔹 Tri. Saludo Enviado",
+   "tel": "+59169085064",
+   "email": "bellekorner4@gmail.com",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/KGaICpHJcTpKIXKNon9q",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "300€ - 600€",
+   "nivel": "🔹 Conocimientos básicos",
+   "urg": "",
+   "infotri": "",
+   "restri_ia": "",
+   "ult": "2026-08-27",
+   "ultdir": "inbound",
+   "ulttxt": "Pues seguir creciendo en mi área",
+   "ulttipo": "TYPE_WHATSAPP",
+   "tiene_closing": false
+  },
+  {
+   "nombre": "Daniel Aranda",
+   "fecha": "2026-08-28",
+   "hora": "17:00",
+   "estado": "confirmed",
+   "reag": "",
+   "agendada": "2026-08-27",
+   "cta": "",
+   "asistio": false,
+   "fclo": "",
+   "fuente": "",
+   "d0": "2025-01-04",
+   "restri": "",
+   "stri": null,
+   "ss": null,
+   "setter": "Sara",
+   "triager": "",
+   "prof": "Ingeniero en Mecatrónica ",
+   "motivo": "",
+   "objtri": "",
+   "etapa": "🔹 Triage Agendado",
+   "tel": "+525527450614",
+   "email": "daniel203ccm@gmail.com",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/GHJzMRAsCPGwOiUIFAYH",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "nivel": "🔹 B1",
+   "urg": "",
+   "infotri": "",
+   "restri_ia": "",
+   "ult": "2026-08-27",
+   "ultdir": "inbound",
+   "ulttxt": "Es correcto",
+   "ulttipo": "TYPE_WHATSAPP",
+   "tiene_closing": false
+  },
   {
    "nombre": "Thalia Gissela Regino Ospina",
    "fecha": "2026-08-27",
@@ -29406,7 +29559,7 @@
    "nombre": "Axia Alex",
    "fecha": "2026-08-27",
    "hora": "20:00",
-   "estado": "confirmed",
+   "estado": "cancelled",
    "reag": "",
    "agendada": "2026-08-26",
    "cta": "",
@@ -29422,7 +29575,7 @@
    "prof": "Médico general y estético",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔹 Triage Confirmado",
+   "etapa": "🔴🔹 Tri. No Cualifica",
    "tel": "+584241951350",
    "email": "dra.axia.alex@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/yLFDONBZDcMt3mXHk1QW",
@@ -29433,9 +29586,9 @@
    "infotri": "",
    "restri_ia": "",
    "ult": "2026-08-27",
-   "ultdir": "inbound",
-   "ulttxt": "Ok Christian, mil gracias por toda tu asesoría, 🙏🏾🙏🏾🙏🏾",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ultdir": "outbound",
+   "ulttxt": "Estoy atenta 😊",
+   "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
   {
@@ -29494,7 +29647,7 @@
    "prof": "Enfermera ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔹 Triage Confirmado",
+   "etapa": "🔴🔹 Tri. No Show",
    "tel": "+573164978652",
    "email": "laurafontalvo@yahoo.es",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rr2imZ0SNmwsXkFhC0R4",
@@ -30190,7 +30343,7 @@
    "restri_ia": "",
    "ult": "2026-08-27",
    "ultdir": "inbound",
-   "ulttxt": "Podrías desglosarme un poco más \nQue incluye todo vuestro asesoramiento? Y precio total y financiado",
+   "ulttxt": "O sea que realmente se cubre lo que es aprender alemán como tal",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
@@ -31109,7 +31262,7 @@
    "restri": "",
    "stri": null,
    "ss": 42,
-   "setter": "Sara",
+   "setter": "Sary",
    "triager": "",
    "prof": "Mwdico",
    "motivo": "",
@@ -31870,7 +32023,7 @@
    "prof": "Gestora de proyectos urbanísticos y de implantación de supermerc",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C8k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+34632687758",
    "email": "alinedealmeidagilio@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/UXPdoIt6bS8xl4hSMpGx",
@@ -33130,7 +33283,7 @@
    "prof": "Ingeniero Electrónico y Electricista, trabajo  como especialista senior de comunicaciones en el rubro de infraestructura civil DE edificaciones ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C3,5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+51987707674",
    "email": "hhualpa@outlook.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rDUwGEh1RKKTzxyIttJH",
@@ -34534,7 +34687,7 @@
    "prof": "Estudiante de medicina ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+573213788738",
    "email": "lauraroye17@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/srGX1JsisUCCY57aCLF3",
@@ -34570,7 +34723,7 @@
    "prof": "Enfermero en hospitalización quirúrgica",
    "motivo": "",
    "objtri": ".",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+34628746806",
    "email": "jordi2994@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/FCqBdLtcxmL1TyCnrJMN",
@@ -37882,7 +38035,7 @@
    "prof": "Enfermera, mi esposo ingeniero ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+56962513859",
    "email": "orellanavera.mj@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/xPD0FJ9O3EPlzTgzOBE8",
@@ -38458,7 +38611,7 @@
    "prof": "Enfermera",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+51949174096",
    "email": "carla.235091@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/I96QrwZcgy5aiVH1gAIG",
@@ -38854,7 +39007,7 @@
    "prof": "Medico cirujano ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+50374501555",
    "email": "jesc32@hotmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Aj0arZWsEQgUhTLQDrBD",
@@ -39142,7 +39295,7 @@
    "prof": "Tatuador ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+491717772940",
    "email": "marino.art77@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/V78wwKdn98ecmhOgyY0g",
@@ -39430,7 +39583,7 @@
    "prof": "Medico",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+573134021306",
    "email": "josemlinares65@hotmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rlGq6gNhlmioe26u8NWs",
@@ -40114,7 +40267,7 @@
    "prof": "Programador de software",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+526862724444",
    "email": "ice.alfredomartinez@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/6G05CrPwEN1JKQwCoDij",
@@ -40402,7 +40555,7 @@
    "prof": "Médico ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+51968202777",
    "email": "jennie.m.allca@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/EpdSTcwCtvE4vSC6Ni57",
@@ -40510,7 +40663,7 @@
    "prof": "Médico ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C3,5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+34617184774",
    "email": "eprc30396@hotmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/bklKoAC2r7CEKj3opn9l",
@@ -40726,7 +40879,7 @@
    "prof": "Medico ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+393444408809",
    "email": "bardus.sebastian@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/269NRFgDalPUeROsvKRQ",
@@ -41009,7 +41162,7 @@
    "restri": "",
    "stri": null,
    "ss": null,
-   "setter": "",
+   "setter": "Sary",
    "triager": "",
    "prof": "Instrumentador qirurgico",
    "motivo": "",
@@ -41482,7 +41635,7 @@
    "prof": "Sales account manager en ciberseguridad",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+34611816253",
    "email": "omaima1506@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/JdcT9mngi1yg5CmklH29",
@@ -41518,7 +41671,7 @@
    "prof": "Médicina",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+4917661476776",
    "email": "emrichcrista23@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/uzN0mvcwGXwAcKE8Eopn",
@@ -41770,7 +41923,7 @@
    "prof": "Dentista",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+51951865060",
    "email": "raisa.severinola@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/OSUcNf9Utr0oZtuYY3EJ",
@@ -41806,7 +41959,7 @@
    "prof": "Médico General ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🟢 C5k Pago Completo",
+   "etapa": "🟢  Pago Completo",
    "tel": "+34634023064",
    "email": "elisabelcaraballo@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/zeVDl8rxypzF1kDJNL91",
@@ -42409,7 +42562,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-01-29",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -42428,10 +42581,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-01-31",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Gabi!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y c...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   }
  ],
@@ -42453,62 +42606,33 @@
  },
  "pipeline_leads": [
   {
-   "cid": "yLFDONBZDcMt3mXHk1QW",
-   "nombre": "Axia Alex",
-   "etapa": "🔹 Triage Confirmado",
-   "desde": "2026-08-26",
+   "cid": "GHJzMRAsCPGwOiUIFAYH",
+   "nombre": "Daniel Aranda",
+   "etapa": "🔹 Triage Agendado",
+   "desde": "2026-08-27",
    "fuente": "",
-   "prox": "2026-08-27",
+   "prox": "2026-08-28",
    "setter": "",
    "cta": "",
-   "prof": "Médico general y estético",
+   "prof": "Ingeniero en Mecatrónica ",
    "restri": "",
    "resclo": "",
    "ticket": "",
    "pagado": "",
    "motivo": "",
-   "tel": "+584241951350",
-   "email": "dra.axia.alex@gmail.com",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "tel": "+525527450614",
+   "email": "daniel203ccm@gmail.com",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "urg": "",
-   "nivel": "🔹 No tengo conocimientos",
+   "nivel": "🔹 B1",
    "ss": null,
    "stri": null,
    "sc": null,
    "ult": "2026-08-27",
    "ultdir": "inbound",
-   "ulttxt": "Ok Christian, mil gracias por toda tu asesoría, 🙏🏾🙏🏾🙏🏾",
+   "ulttxt": "Es correcto",
    "ulttipo": "TYPE_WHATSAPP",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/yLFDONBZDcMt3mXHk1QW"
-  },
-  {
-   "cid": "rr2imZ0SNmwsXkFhC0R4",
-   "nombre": "Laura Fontalvo Durango",
-   "etapa": "🔹 Triage Confirmado",
-   "desde": "2026-08-26",
-   "fuente": "",
-   "prox": "2026-08-27",
-   "setter": "",
-   "cta": "",
-   "prof": "Enfermera ",
-   "restri": "",
-   "resclo": "",
-   "ticket": "",
-   "pagado": "",
-   "motivo": "",
-   "tel": "+573164978652",
-   "email": "laurafontalvo@yahoo.es",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "urg": "",
-   "nivel": "🔹 A2",
-   "ss": null,
-   "stri": null,
-   "sc": null,
-   "ult": "2026-08-26",
-   "ultdir": "inbound",
-   "ulttxt": "Estoy atenta",
-   "ulttipo": "TYPE_WHATSAPP",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rr2imZ0SNmwsXkFhC0R4"
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/GHJzMRAsCPGwOiUIFAYH"
   },
   {
    "cid": "KGaICpHJcTpKIXKNon9q",
@@ -42535,7 +42659,7 @@
    "sc": null,
    "ult": "2026-08-27",
    "ultdir": "inbound",
-   "ulttxt": "Pero el horario que coloque (14 pm hora Bolivia) me sale diferente a la hora de confirmación en el correo (18:00 pm)",
+   "ulttxt": "Pues seguir creciendo en mi área",
    "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/KGaICpHJcTpKIXKNon9q"
   },
@@ -43086,7 +43210,7 @@
    "sc": null,
    "ult": "2026-08-27",
    "ultdir": "inbound",
-   "ulttxt": "Podrías desglosarme un poco más \nQue incluye todo vuestro asesoramiento? Y precio total y financiado",
+   "ulttxt": "O sea que realmente se cubre lo que es aprender alemán como tal",
    "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/GqhuxMB4cyVQzeET6dls"
   },
@@ -45752,10 +45876,10 @@
    "ss": null,
    "stri": null,
    "sc": null,
-   "ult": "2026-01-31",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Gabi!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y c...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/adFQw4QtSPO9fzRAk75t"
   },
   {
@@ -45954,36 +46078,6 @@
   },
   {
    "dia": "2026-08-24",
-   "s": "Sary",
-   "h": [
-    2,
-    0,
-    1,
-    0,
-    0,
-    6,
-    0,
-    0,
-    0,
-    7,
-    21,
-    0,
-    2,
-    2,
-    0,
-    0,
-    0,
-    2,
-    0,
-    4,
-    3,
-    1,
-    3,
-    27
-   ]
-  },
-  {
-   "dia": "2026-08-24",
    "s": "",
    "h": [
     27,
@@ -46009,6 +46103,36 @@
     4,
     29,
     42,
+    27
+   ]
+  },
+  {
+   "dia": "2026-08-24",
+   "s": "Sary",
+   "h": [
+    2,
+    0,
+    1,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0,
+    7,
+    21,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    4,
+    3,
+    1,
+    3,
     27
    ]
   },
@@ -46074,32 +46198,32 @@
   },
   {
    "dia": "2026-08-25",
-   "s": "Jesmary",
+   "s": "",
    "h": [
     0,
+    17,
+    13,
+    5,
+    4,
+    24,
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    0,
-    1,
-    1,
-    0,
-    1,
-    10,
+    11,
+    55,
+    6,
+    15,
     2,
-    2,
+    50,
+    46,
     0,
-    0
+    4,
+    18,
+    34,
+    19,
+    71,
+    1,
+    14
    ]
   },
   {
@@ -46134,32 +46258,32 @@
   },
   {
    "dia": "2026-08-25",
-   "s": "",
+   "s": "Jesmary",
    "h": [
     0,
-    17,
-    13,
-    5,
-    4,
-    24,
     0,
     0,
     0,
-    11,
-    55,
-    6,
-    15,
-    2,
-    50,
-    46,
     0,
-    4,
-    18,
-    34,
-    19,
-    71,
+    0,
+    0,
+    0,
+    0,
     1,
-    14
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    10,
+    2,
+    2,
+    0,
+    0
    ]
   },
   {
@@ -55734,36 +55858,6 @@
   },
   {
    "dia": "2026-08-16",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    22,
-    6,
-    6,
-    9,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-16",
    "s": "",
    "h": [
     0,
@@ -55790,6 +55884,36 @@
     1,
     0,
     6
+   ]
+  },
+  {
+   "dia": "2026-08-16",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    22,
+    6,
+    6,
+    9,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
    ]
   },
   {
@@ -60924,6 +61048,36 @@
   },
   {
    "dia": "2026-08-26",
+   "s": "",
+   "h": [
+    7,
+    5,
+    0,
+    0,
+    0,
+    9,
+    2,
+    0,
+    1,
+    1,
+    29,
+    2,
+    1,
+    23,
+    27,
+    31,
+    12,
+    22,
+    27,
+    44,
+    38,
+    34,
+    11,
+    3
+   ]
+  },
+  {
+   "dia": "2026-08-26",
    "s": "Sary",
    "h": [
     5,
@@ -60950,66 +61104,6 @@
     0,
     3,
     1
-   ]
-  },
-  {
-   "dia": "2026-08-26",
-   "s": "",
-   "h": [
-    7,
-    5,
-    0,
-    0,
-    0,
-    9,
-    2,
-    0,
-    1,
-    1,
-    29,
-    2,
-    1,
-    23,
-    27,
-    31,
-    12,
-    22,
-    27,
-    44,
-    38,
-    35,
-    11,
-    3
-   ]
-  },
-  {
-   "dia": "2026-08-26",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    2,
-    4,
-    4,
-    13,
-    3,
-    1,
-    0,
-    0,
-    0
    ]
   },
   {
@@ -61043,10 +61137,40 @@
    ]
   },
   {
+   "dia": "2026-08-26",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    2,
+    4,
+    4,
+    13,
+    3,
+    1,
+    1,
+    0,
+    0
+   ]
+  },
+  {
    "dia": "2026-08-27",
    "s": "",
    "h": [
-    16,
+    15,
     6,
     0,
     0,
@@ -61055,19 +61179,19 @@
     0,
     7,
     1,
-    16,
+    15,
     3,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    65,
+    60,
+    20,
+    3,
+    11,
+    23,
+    33,
+    3,
+    6,
+    16,
     0,
     0
    ]
@@ -61088,23 +61212,23 @@
     2,
     0,
     0,
+    1,
+    0,
+    3,
     0,
     0,
     0,
+    4,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    6,
     0,
     0
    ]
   },
   {
    "dia": "2026-08-27",
-   "s": "Sara",
+   "s": "Jesmary",
    "h": [
     0,
     0,
@@ -61115,6 +61239,27 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-27",
+   "s": "Sara",
+   "h": [
     1,
     0,
     0,
@@ -61124,7 +61269,16 @@
     0,
     0,
     0,
+    2,
     0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    6,
+    2,
     0,
     0,
     0,
@@ -61527,7 +61681,7 @@
   {
    "s": "",
    "d0": "2026-08-19",
-   "dp": ""
+   "dp": "2026-08-27"
   },
   {
    "s": "",
@@ -125570,7 +125724,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sary",
    "d0": "2026-01-28",
    "dp": ""
   },
@@ -127160,7 +127314,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sara",
    "d0": "2026-08-26",
    "dp": ""
   },
@@ -127197,6 +127351,591 @@
   {
    "s": "",
    "d0": "2026-08-26",
+   "dp": ""
+  },
+  {
+   "s": "Sara",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": "2026-08-27"
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "Sara",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-27",
    "dp": ""
   },
   {
