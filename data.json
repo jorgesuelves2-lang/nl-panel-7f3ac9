@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-28 06:23",
+ "generado": "2026-08-28 06:48",
  "rango": "2026-02-01 a 2026-08-28",
  "setting": [
   {
@@ -11413,7 +11413,7 @@
    "restri": "",
    "resclo": "",
    "estado": "",
-   "ss": null,
+   "ss": 30,
    "stri": null,
    "sclo": null,
    "ticket": "",
@@ -29691,7 +29691,7 @@
    "d0": "2025-04-24",
    "restri": "",
    "stri": null,
-   "ss": null,
+   "ss": 30,
    "setter": "",
    "triager": "",
    "prof": "Enfermera ",
