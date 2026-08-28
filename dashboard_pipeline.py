@@ -434,6 +434,10 @@ print("setter por ficha (GSET):",len(GSET),flush=True)
 # esta en nuestro tejado; si es nuestro, estamos esperando respuesta. Se saca del listado de
 # conversaciones (una pasada paginada), sin bajar los mensajes uno a uno.
 ULT={}; CONV_D0={}; CONV_D0N={}   # D0 por contactId y, de respaldo, por NOMBRE normalizado:
+# 28-ago-2026: al agendar, el lead aterriza en la landing post-agenda con un boton de WhatsApp, pero
+# NO todos lo pulsan. Saber quien nos ha escrito y quien no es lo que permite perseguir a los mudos
+# antes de la llamada. El listado de conversaciones ya trae la fecha del ultimo entrante de WhatsApp.
+WSP_IN={}
 # el lead que agenda con el link roto crea una FICHA DUPLICADA, asi que su chat vive en otro contactId
 # y solo el nombre permite unirlos.
 try:
@@ -459,6 +463,10 @@ try:
             if _da0 and _nm0 and len(_nm0)>4:
                 for _k0 in {_nm0," ".join(_nm0.split()[:2])}:
                     if len(_k0)>4 and (_k0 not in CONV_D0N or _da0<CONV_D0N[_k0]): CONV_D0N[_k0]=_da0
+            _wi=_c.get("lastInboundWhatsappMessageDate")
+            if _wi:
+                _wf=dms(int(_wi) if str(_wi).isdigit() else 0) or ""
+                if _wf and (_cid not in WSP_IN or _wf>WSP_IN[_cid]): WSP_IN[_cid]=_wf
             if _cid not in ULT or _lmd>ULT[_cid]["ts"]:
                 ULT[_cid]={"ts":_lmd,"fecha":dms(_lmd) or "",
                            "dir":_c.get("lastMessageDirection") or "",
@@ -592,6 +600,7 @@ for cid,info in cids.items():
             "setter":setter,"triager":cm.get("HOpZ4zQsnwEs70pJSzea") or "","prof":cm.get(F["prof"]) or "",
             "motivo":cm.get("GWZs0fx5rdOsMiW8cvHM") or "","objtri":(cm.get(F["objtri"]) or "")[:400],
             "etapa":ETAPA_DE.get(cid,""),"tel":c.get("phone") or "","email":c.get("email") or "",
+            "wsp":WSP_IN.get(cid,""),
             "ficha":ficha,"presup":cm.get(F["presup"]) or "","ingresos":cm.get(F["ingresos"]) or "",
             "nivel":cm.get(F["nivel"]) or "","urg":cm.get(F["urg"]) or "",
             "infotri":(cm.get(F["infocloser"]) or "")[:1500],
@@ -618,7 +627,7 @@ for _c,_o in OPPS.items():
     _u=ULT.get(_c) or {}
     pipeline_leads.append({"cid":_c,"nombre":_nm,"etapa":_o["etapa"],"desde":_o["desde"],
         "fuente":fuente_de(_nm,_cm.get(F["cta"])),
-        "prox":_prox,"setter":_cm.get(F["setter"]) or "","cta":_cm.get(F["cta"]) or "",
+        "prox":_prox,"wsp":WSP_IN.get(_c,""),"setter":_cm.get(F["setter"]) or "","cta":_cm.get(F["cta"]) or "",
         "prof":_cm.get(F["prof"]) or "","restri":restri(_tg),"resclo":_cm.get(F["rc"]) or "",
         "ticket":_cm.get(F["ticket"]) or "","pagado":_cm.get(F["pagado"]) or "",
         "motivo":_cm.get(F["motivo"]) or "","tel":_cc.get("phone") or _o["tel"],"email":_cc.get("email") or _o["email"],
