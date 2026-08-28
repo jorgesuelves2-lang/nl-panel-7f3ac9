@@ -98,6 +98,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
       <button id="pl_ref" class="tab" style="padding:4px 12px">Actualizar</button>
     </div>
     <div class="cards" id="pl_cards"></div>
+    <div id="pl_wsp" style="margin-bottom:18px"></div>
     <div id="pl_grupos"></div>
   </section>
 
@@ -1091,6 +1092,10 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    }
    if(o.turno==='NOSOTROS' && d!=null && d>=1) A.push({t:'Responder al lead',u:1,d:'Escribió hace '+d+' día'+(d===1?'':'s')+' y sigue sin respuesta nuestra.'});
    else if(/seguimiento/i.test(et) && o.turno!=='NOSOTROS' && (d==null||d>=3)) A.push({t:'Retomar el contacto',u:1,d:(d==null?'No consta conversación en el CRM':'Llevamos '+d+' días sin escribirle')+'. Un seguimiento sin contacto es un lead que se enfría.'});
+   var _hoyP=new Date().toISOString().slice(0,10);
+   if(r.prox && r.prox>=_hoyP && !String(r.wsp||'').trim())
+     A.push({t:'Tiene cita y NUNCA nos ha escrito por WhatsApp',u:1,
+             d:'Agendó pero no pulsó el botón de WhatsApp de la landing post-agenda. Escribirle antes de la llamada: son los que más no-show hacen.'});
    if(!String(r.cta||'').trim()) A.push({t:'Anotar el origen del lead (CTA / reel)',u:2,d:'No consta de qué reel, anuncio o cuenta de outbound vino.'});
    if(!A.length) A.push({t:'A la espera del lead',u:3,d:'Por nuestra parte está todo hecho.'});
    o.acciones=A;
@@ -1117,11 +1122,37 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      if(r._s.turno==='NOSOTROS') nosToca++;
      if(!String(r.cta||'').trim()) sinCta++;
      var pp=num(r.ticket)-num(r.pagado); if(/faltan pagos/i.test(r.etapa||'')&&pp>0) pendTot+=pp; });
+   // AGENDADOS QUE NO NOS HAN ESCRITO POR WHATSAPP (28-ago-2026)
+   // Al agendar aterrizan en la landing post-agenda con un boton de WhatsApp, pero no todos lo pulsan.
+   // Estos son los que hay que perseguir ANTES de la llamada: tienen cita pero nunca abrieron chat.
+   var _hoy=new Date().toISOString().slice(0,10);
+   var mudos=L.filter(function(r){ return r.prox && r.prox>=_hoy && !String(r.wsp||'').trim(); });
+   mudos.sort(function(a,b){ return a.prox<b.prox?-1:1; });
+   var conCita=L.filter(function(r){ return r.prox && r.prox>=_hoy; }).length;
    document.getElementById('pl_cards').innerHTML=
      card('Leads vivos',L.length)
      +card('Nos toca mover',nosToca,'el último mensaje es del lead')
+     +card('Con cita, sin escribirnos',mudos.length,(conCita?Math.round(100*mudos.length/conCita)+'% de los '+conCita+' con cita':'nadie con cita'))
      +(window.TEAM?'':card('Cobros pendientes',Math.round(pendTot).toLocaleString('es')+' €','etapas "faltan pagos"'))
      +card('Sin origen (CTA)',sinCta);
+   (function(){
+     var el=document.getElementById('pl_wsp'); if(!el) return;
+     if(!mudos.length){ el.innerHTML='<div style="font-size:12.5px;color:var(--mut)">Todos los leads con cita futura nos han escrito por WhatsApp.</div>'; return; }
+     var filas=mudos.map(function(r,i){
+       var key='wsp_'+i; LM_DATA[key]={r:r,tipo:'pipe'};
+       var dias=Math.round((new Date(r.prox)-new Date(_hoy))/86400000);
+       return '<tr>'
+        +'<td><b>'+esc(r.nombre)+'</b></td>'
+        +'<td>'+esc((r.prof||'—').slice(0,24))+'</td>'
+        +'<td>'+esc(r.prox.slice(8,10)+'/'+r.prox.slice(5,7))+(dias===0?' <b style="color:var(--red)">(hoy)</b>':(dias===1?' (mañana)':''))+'</td>'
+        +'<td>'+esc(r.etapa||'—')+'</td><td>'+esc(r.setter||'—')+'</td>'
+        +'<td><button onclick="abrirLead(\''+key+'\')" style="border:1px solid var(--blue);background:transparent;color:var(--blue);border-radius:6px;padding:3px 12px;font-size:12px;cursor:pointer">Ver</button></td>'
+        +'<td><a href="'+esc(r.ficha)+'" target="_blank">abrir</a></td></tr>';
+     }).join('');
+     el.innerHTML='<div style="font-size:13px;font-weight:700;margin-bottom:6px">Tienen cita pero NO nos han escrito por WhatsApp '
+       +'<span style="font-weight:400;color:var(--mut)">— '+mudos.length+'; agendaron y no pulsaron el botón de la landing. Escribirles antes de la llamada.</span></div>'
+       +'<div style="overflow-x:auto"><table><thead><tr><th>Lead</th><th>Profesión</th><th>Cita</th><th>Etapa</th><th>Setter</th><th></th><th>Ficha</th></tr></thead><tbody>'+filas+'</tbody></table></div>';
+   })();
    var G={}; L.forEach(function(r){ (G[r.etapa]=G[r.etapa]||[]).push(r); });
    var orden=(DATA.etapas_orden||[]).filter(function(e){return G[e];})
        .concat(Object.keys(G).filter(function(e){return (DATA.etapas_orden||[]).indexOf(e)<0;}));
