@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-29 14:46",
+ "generado": "2026-08-29 18:54",
  "rango": "2026-02-01 a 2026-08-29",
  "setting": [
   {
@@ -2930,13 +2930,13 @@
   },
   {
    "dia": "2026-08-29",
-   "inb": 5,
-   "out": 5,
-   "nuevas": 10,
-   "total": 50,
-   "fups": 52,
-   "prop": 0,
-   "link": 0,
+   "inb": 7,
+   "out": 15,
+   "nuevas": 22,
+   "total": 70,
+   "fups": 89,
+   "prop": 2,
+   "link": 2,
    "badlink": 0,
    "agendas": 6,
    "resp_min": 2,
@@ -12080,13 +12080,13 @@
    "resclo": "",
    "estado": "",
    "ss": 66,
-   "stri": null,
+   "stri": 78,
    "sclo": null,
    "ticket": "",
    "pagado": "",
    "objtri": "",
    "objclo": "",
-   "infocloser": "",
+   "infocloser": "PERFIL: Luis Fernando Mercado Ardila, medico general colombiano, graduado en Barranquilla (Universidad Metropolitana). Titulo LATAM. 10 anos de experiencia. Lleva 2 anos en Espana ejerciendo en atencion primaria (centro de salud publico). Tiene pareja polaca (ingeniera informatica). Sin hijos.\n\nOBJETIVO: Llegar a Alemania para especializarse en cirugia (meta final: cirujano). No tiene fecha fija pero quiere avanzar pronto, supeditado a lo que se pacte en la llamada de cierre. Disponibilidad de 45-60 min/dia para aleman confirmada. Sin nivel de aleman previo.\n\nDOLORES: Techo salarial en Espana + carga fiscal (IRPF, colegio medico). Acceso casi bloqueado al MIR para extranjeros (aprox. 10% plazas). Se presento al MIR y solo obtuvo plazas en especialidades que no le interesan (familia, epidemiologia); su meta es cirugia. Siente que Espana es un punto medio aceptable pero no el destino final. No quiere retroceder a Colombia ni estancarse.\n\nINVERSION: Segun formulario y notas del setter, cuenta con entre 3.500 y 5.000 euros. Ingresos mensuales declarados: mas de 3.000 euros. Esta en Espana, por lo que es viable financiacion SEQURA. No se verifico economicamente en el triaje: confirmar en closing.\n\nRUTA: Titulo colombiano (LATAM), proceso completo de homologacion necesario. Ya tiene experiencia en Espana que simplifica documentacion. Ruta: diagnostico + documentacion + aleman B2 medico (6 meses, metodologia Polyglota, 3 sesiones/semana) + FSP + colocacion laboral. Sueldo inicial estimado 5.700-7.000 euros/mes; con especializacion en cirugia, 10.000-11.000 euros. Ciudades a valorar: preferiblemente proximas a Polonia (Berlin, Leipzig) por situacion de pareja.\n\nOBJECIONES: Quiere 'estudiarlo minuciosamente' y programarse segun ingresos y proyectos actuales (derecho en Espana). Pareja polaca: condicion implicita de ciudad neutra entre Alemania y Polonia. Anteriormente contacto con otra agencia colombiana que no tenia presencia en Europa (experiencia que le genera contraste positivo con NatschoLibre).\n\nRECOMENDACION: Anclar urgencia usando su propio discurso ('quiero que sea pronto'). Verificar presupuesto y abrir SEQURA si aplica. Proponer ciudad cercana a Polonia para neutralizar objecion de pareja. Confirmar que esta listo para pausar el derecho si el programa arranca. Proximo paso: llamada de cierre con Christian o closer designado.",
    "cta": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/2Tmh3TUqEv1VRq0iP3Qs"
   },
@@ -14480,13 +14480,13 @@
    "resclo": "",
    "estado": "",
    "ss": 15,
-   "stri": null,
+   "stri": 42,
    "sclo": null,
    "ticket": "",
    "pagado": "",
    "objtri": "",
    "objclo": "",
-   "infocloser": "",
+   "infocloser": "PERFIL: Paola Lucila Paniagua Ferreira, edad no consta, Paraguay, medica en formacion (internado, ultimo semestre). Titulo de medicina pendiente, lo obtiene en aprox. 2-3 meses. Universidad Central del Paraguay. Tiene pareja e hija. Unica paraguaya en su clase.\n\nOBJETIVO: Migrar a Alemania para ejercer medicina con mejor remuneracion y calidad de vida. Quiere empezar con el idioma de inmediato y gestionar papeles al obtener el titulo. Nivel de aleman: cero. Horas/semana disponibles: no consta.\n\nDOLORES: Situacion economica muy precaria en Paraguay, familia de bajos recursos, sueldo medico ~800 USD, poca valoracion profesional. Quiere dar mejor vida a su hija y pareja.\n\nINVERSION: Sin recursos actuales. Ingresos 300-600 EUR/mes segun formulario. Planea solicitar prestamo bancario local; estima tener fondos en 4-6 meses. Acepto el rango de 3.500-5.000 EUR sin rechazo fuerte.\n\nRUTA: Perfil LATAM (Paraguay), homologacion compleja y larga (apostillas, traducciones, reconocimiento de titulo). Titulo aun no en mano. Proceso realista: idioma primero, papeles al obtener titulo, llegada a Alemania en 18-24 meses vista. Christian ya explico estructura de precios (3.500 idioma / 5.000 completo).\n\nOBJECIONES: Barrera economica principal y explicita. No manifesto dudas sobre el proyecto en si, solo sobre el dinero y los plazos para conseguirlo.\n\nRECOMENDACION: Trabajar urgencia economica (costo de oportunidad de cada mes de retraso vs sueldo en Alemania). Explorar si hay apoyo familiar o de pareja para acortar plazo. Anclar fecha concreta para sesion con Nati; no dejar el seguimiento en '4-6 meses indefinidos'. No revelar mas precios: ya conoce el rango, el closer debe enfocarse en el valor y en el plan de accion.",
    "cta": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/lcLzmvUTOBVunvc8zYBg"
   },
@@ -16240,13 +16240,13 @@
    "resclo": "",
    "estado": "",
    "ss": 15,
-   "stri": null,
+   "stri": 28,
    "sclo": null,
    "ticket": "",
    "pagado": "",
    "objtri": "",
    "objclo": "",
-   "infocloser": "",
+   "infocloser": "PERFIL: Vitoria Ortiz Bernardes, brasilena de origen venezolano. Medica graduada en universidad de Paraguay. Reprobo el Revalida en Brasil (aprobadas las 2 fases); pendiente de certificado universitario y registro en el CRM para poder ejercer. Sin experiencia laboral aun.\n\nOBJETIVO: Emigrar a Alemania para ejercer como medica y eventualmente especializarse. Interesada tambien en Suiza a largo plazo. Plazo estimado por ella: iniciar el proceso en aproximadamente 1 ano. Aleman: nivel cero.\n\nDOLORES: Busca mejor calidad de vida. Sistema de homologacion en Brasil muy largo y desgastante (mas de un ano de estudio y examenes). Ve en Alemania una salida mas directa para especializarse y ganar bien.\n\nINVERSION: Sin recursos actuales. Entiende que el servicio cuesta 3.500-5.000 EUR (~25.000 BRL) y lo ve como mucho pero alcanzable. Plan: trabajar en Brasil tras obtener el titulo y ahorrar para financiar el proceso. Sin tarjeta de credito ni ahorro disponible ahora.\n\nRUTA: Titulo de Paraguay (LATAM): requiere proceso de homologacion completo en Alemania (traduccion, FSP, posiblemente KP segun anos de experiencia). Antes de iniciar necesita: (1) certificado universitario revalidado, (2) inscripcion en CRM, (3) empleo y ahorro en Brasil. Tiempo real hasta poder iniciar: estimado 12-18 meses minimo.\n\nOBJECIONES: Sin dinero inmediato; multiples pasos administrativos previos en Brasil antes de poder comprometerse; motivacion todavia en consolidacion (cambio reciente de enfoque tras ruptura sentimental).\n\nRECOMENDACION: No es un cierre viable hoy. Perfil para nurturing largo. Mantener acceso a School (ya prometido), hacer seguimiento en 3-4 meses para verificar avance en CRM y empleo. Solo escalar a closer cuando confirme ingresos y capacidad de inversion real.",
    "cta": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/HyxC1ekpt8Ufh1d5f6Ct"
   },
@@ -16793,10 +16793,10 @@
    "ultdir": "outbound",
    "ulttxt": "Hola Luis Fernando Mercado Ardila,\n\nTe dejo aquí los detalles de la reunión.\nLuis Fernando Mercado Ardila - Reunión de Planificación Estratégica\n\n\n...",
    "ulttipo": "TYPE_EMAIL",
-   "infoclo": "",
+   "infoclo": "PERFIL: Luis Fernando Mercado Ardila, medico general colombiano, graduado en Barranquilla (Universidad Metropolitana). Titulo LATAM. 10 anos de experiencia. Lleva 2 anos en Espana ejerciendo en atencion primaria (centro de salud publico). Tiene pareja polaca (ingeniera informatica). Sin hijos.\n\nOBJETIVO: Llegar a Alemania para especializarse en cirugia (meta final: cirujano). No tiene fecha fija pero quiere avanzar pronto, supeditado a lo que se pacte en la llamada de cierre. Disponibilidad de 45-60 min/dia para aleman confirmada. Sin nivel de aleman previo.\n\nDOLORES: Techo salarial en Espana + carga fiscal (IRPF, colegio medico). Acceso casi bloqueado al MIR para extranjeros (aprox. 10% plazas). Se presento al MIR y solo obtuvo plazas en especialidades que no le interesan (familia, epidemiologia); su meta es cirugia. Siente que Espana es un punto medio aceptable pero no el destino final. No quiere retroceder a Colombia ni estancarse.\n\nINVERSION: Segun formulario y notas del setter, cuenta con entre 3.500 y 5.000 euros. Ingresos mensuales declarados: mas de 3.000 euros. Esta en Espana, por lo que es viable financiacion SEQURA. No se verifico economicamente en el triaje: confirmar en closing.\n\nRUTA: Titulo colombiano (LATAM), proceso completo de homologacion necesario. Ya tiene experiencia en Espana que simplifica documentacion. Ruta: diagnostico + documentacion + aleman B2 medico (6 meses, metodologia Polyglota, 3 sesiones/semana) + FSP + colocacion laboral. Sueldo inicial es",
    "restri": "Cualifica",
    "ss": 66,
-   "stri": null,
+   "stri": 78,
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "más de 3.000€",
    "nivel": "🔹 No tengo conocimientos",
@@ -26685,6 +26685,12 @@
   },
   {
    "dia": "2026-08-29",
+   "in": 1788020215,
+   "rep": 1788020338,
+   "s": ""
+  },
+  {
+   "dia": "2026-08-29",
    "in": 1788012696,
    "rep": 1788012856,
    "s": ""
@@ -29988,7 +29994,7 @@
    "fuente": "Outbound",
    "d0": "2026-08-25",
    "restri": "Cualifica",
-   "stri": null,
+   "stri": 78,
    "ss": 66,
    "setter": "Sary",
    "triager": "",
@@ -30004,8 +30010,8 @@
    "ingresos": "más de 3.000€",
    "nivel": "🔹 No tengo conocimientos",
    "urg": "",
-   "infotri": "",
-   "restri_ia": "",
+   "infotri": "PERFIL: Luis Fernando Mercado Ardila, medico general colombiano, graduado en Barranquilla (Universidad Metropolitana). Titulo LATAM. 10 anos de experiencia. Lleva 2 anos en Espana ejerciendo en atencion primaria (centro de salud publico). Tiene pareja polaca (ingeniera informatica). Sin hijos.\n\nOBJETIVO: Llegar a Alemania para especializarse en cirugia (meta final: cirujano). No tiene fecha fija pero quiere avanzar pronto, supeditado a lo que se pacte en la llamada de cierre. Disponibilidad de 45-60 min/dia para aleman confirmada. Sin nivel de aleman previo.\n\nDOLORES: Techo salarial en Espana + carga fiscal (IRPF, colegio medico). Acceso casi bloqueado al MIR para extranjeros (aprox. 10% plazas). Se presento al MIR y solo obtuvo plazas en especialidades que no le interesan (familia, epidemiologia); su meta es cirugia. Siente que Espana es un punto medio aceptable pero no el destino final. No quiere retroceder a Colombia ni estancarse.\n\nINVERSION: Segun formulario y notas del setter, cuenta con entre 3.500 y 5.000 euros. Ingresos mensuales declarados: mas de 3.000 euros. Esta en Espana, por lo que es viable financiacion SEQURA. No se verifico economicamente en el triaje: confirmar en closing.\n\nRUTA: Titulo colombiano (LATAM), proceso completo de homologacion necesario. Ya tiene experiencia en Espana que simplifica documentacion. Ruta: diagnostico + documentacion + aleman B2 medico (6 meses, metodologia Polyglota, 3 sesiones/semana) + FSP + colocacion laboral. Sueldo inicial es",
+   "restri_ia": "PERFIL: Luis Fernando Mercado Ardila, medico general colombiano, graduado en la Universidad Metropolitana de Barranquilla. Lleva 2 anos en Espana. Titulo LATAM. Ha hecho la homologacion para ejercer en Espana. Trabaja en centro de salud publico (atencion primaria). Tiene pareja polaca (ingeniera informatica/logistica). Sin hijos. Interesado en especializarse en urologia/cirugia. Tambien esta cursando derecho en Espana (inicio reciente).\n\nMOTIVACIONES PRINCIPALES:\n- Las plazas del MIR para extranjeros son muy limitadas (aprox. 10%), lo que hace casi imposible especializarse en Espana.\n- Quiere especializarse en cirugia/urologia y ve Alemania como la mejor via.\n- Ambicion personal clara: quiere crecer economicamente y profesionalmente, no conformarse con el techo salarial espanol.\n- La pareja polaca encaja geograficamente cerca de Alemania, lo que reduce friccion de pareja.\n\nDOLORES PRINCIPALES:\n- Techo salarial en Espana: siente que su salario no va a crecer mas, y que entre IRPF, colegio medico y gastos, paga mas de medio salario solo para vivir.\n- Acceso cerrado a la especializacion: se presento al MIR, paso en areas que no le interesan (familia, epidemiologia) y el quiere cirugia",
    "ult": "2026-08-29",
    "ultdir": "outbound",
    "ulttxt": "Hola Luis Fernando Mercado Ardila,\n\nTe dejo aquí los detalles de la reunión.\nLuis Fernando Mercado Ardila - Reunión de Planificación Estratégica\n\n\n...",
@@ -30025,7 +30031,7 @@
    "fuente": "",
    "d0": "2026-08-28",
    "restri": "",
-   "stri": null,
+   "stri": 28,
    "ss": 15,
    "setter": "",
    "triager": "",
@@ -30041,8 +30047,8 @@
    "ingresos": "300€ - 600€",
    "nivel": "🔹 No tengo conocimientos",
    "urg": "",
-   "infotri": "",
-   "restri_ia": "",
+   "infotri": "PERFIL: Vitoria Ortiz Bernardes, brasilena de origen venezolano. Medica graduada en universidad de Paraguay. Reprobo el Revalida en Brasil (aprobadas las 2 fases); pendiente de certificado universitario y registro en el CRM para poder ejercer. Sin experiencia laboral aun.\n\nOBJETIVO: Emigrar a Alemania para ejercer como medica y eventualmente especializarse. Interesada tambien en Suiza a largo plazo. Plazo estimado por ella: iniciar el proceso en aproximadamente 1 ano. Aleman: nivel cero.\n\nDOLORES: Busca mejor calidad de vida. Sistema de homologacion en Brasil muy largo y desgastante (mas de un ano de estudio y examenes). Ve en Alemania una salida mas directa para especializarse y ganar bien.\n\nINVERSION: Sin recursos actuales. Entiende que el servicio cuesta 3.500-5.000 EUR (~25.000 BRL) y lo ve como mucho pero alcanzable. Plan: trabajar en Brasil tras obtener el titulo y ahorrar para financiar el proceso. Sin tarjeta de credito ni ahorro disponible ahora.\n\nRUTA: Titulo de Paraguay (LATAM): requiere proceso de homologacion completo en Alemania (traduccion, FSP, posiblemente KP segun anos de experiencia). Antes de iniciar necesita: (1) certificado universitario revalidado, (2) inscripcion en CRM, (3) empleo y ahorro en Brasil. Tiempo real hasta poder iniciar: estimado 12-18 meses minimo.\n\nOBJECIONES: Sin dinero inmediato; multiples pasos administrativos previos en Brasil antes de poder comprometerse; motivacion todavia en consolidacion (cambio reciente de enfoque tras ruptura s",
+   "restri_ia": "PERFIL: Vitoria Ortiz Bernardes, Brasil (origen venezolano). Medica graduada en universidad de Paraguay. Aprobo las dos fases del Revalida en Brasil; pendiente de que la universidad emita el certificado revalidado y de inscribirse en el CRM (Consejo Regional de Medicina) para poder ejercer. Aun no trabaja.\n\nDINERO: Sin capacidad de inversion actual. En el triaje afirma que los 3.500 EUR 'son muchos en real' (~25.000 BRL) pero que 'es posible conseguirlo'. Plan: empezar a trabajar en Brasil cuando obtenga el titulo, ahorrar y contactar cuando tenga el monto completo. No hay compromiso de inversion inmediato ni fecha concreta. El closer cerro dandole acceso a School y diciendole que la contactaran: lead queda en nurturing indefinido.\n\nURGENCIA/PLAZO: Estima que en un ano podria tener el dinero y empezar el proceso. Plazo real muy difuso: primero espera el certificado universitario, luego el CRM, luego trabajar, luego ahorrar. Puede ser 12-24 meses o mas antes de estar lista.\n\nCOMPROMISO: Interesada y receptiva, hace preguntas sobre el proceso (FSP, residencia, visa, especializacion). Sin embargo, su posicion es claramente exploratoria: quiere informarse y planear, no decidir ahora. N",
    "ult": "2026-08-29",
    "ultdir": "outbound",
    "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
@@ -30118,9 +30124,9 @@
    "infotri": "",
    "restri_ia": "",
    "ult": "2026-08-29",
-   "ultdir": "inbound",
-   "ulttxt": "Podríamos remarcar?",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ultdir": "outbound",
+   "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
+   "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
   {
@@ -30136,7 +30142,7 @@
    "fuente": "",
    "d0": "2026-08-28",
    "restri": "",
-   "stri": null,
+   "stri": 42,
    "ss": 15,
    "setter": "",
    "triager": "",
@@ -30152,8 +30158,8 @@
    "ingresos": "300€ - 600€",
    "nivel": "🔹 No tengo conocimientos",
    "urg": "",
-   "infotri": "",
-   "restri_ia": "",
+   "infotri": "PERFIL: Paola Lucila Paniagua Ferreira, edad no consta, Paraguay, medica en formacion (internado, ultimo semestre). Titulo de medicina pendiente, lo obtiene en aprox. 2-3 meses. Universidad Central del Paraguay. Tiene pareja e hija. Unica paraguaya en su clase.\n\nOBJETIVO: Migrar a Alemania para ejercer medicina con mejor remuneracion y calidad de vida. Quiere empezar con el idioma de inmediato y gestionar papeles al obtener el titulo. Nivel de aleman: cero. Horas/semana disponibles: no consta.\n\nDOLORES: Situacion economica muy precaria en Paraguay, familia de bajos recursos, sueldo medico ~800 USD, poca valoracion profesional. Quiere dar mejor vida a su hija y pareja.\n\nINVERSION: Sin recursos actuales. Ingresos 300-600 EUR/mes segun formulario. Planea solicitar prestamo bancario local; estima tener fondos en 4-6 meses. Acepto el rango de 3.500-5.000 EUR sin rechazo fuerte.\n\nRUTA: Perfil LATAM (Paraguay), homologacion compleja y larga (apostillas, traducciones, reconocimiento de titulo). Titulo aun no en mano. Proceso realista: idioma primero, papeles al obtener titulo, llegada a Alemania en 18-24 meses vista. Christian ya explico estructura de precios (3.500 idioma / 5.000 completo).\n\nOBJECIONES: Barrera economica principal y explicita. No manifesto dudas sobre el proyecto en si, solo sobre el dinero y los plazos para conseguirlo.\n\nRECOMENDACION: Trabajar urgencia economica (costo de oportunidad de cada mes de retraso vs sueldo en Alemania). Explorar si hay apoyo familiar o d",
+   "restri_ia": "PERFIL: Paola Lucila Paniagua Ferreira, pais Paraguay, medica en formacion (internado, ultimo año). Unica paraguaya en su clase (resto son brasileños). Tiene pareja e hija. Titulo aun no obtenido, lo espera en 2-3 meses tras terminar internado.\n\nMOTIVACIONES PRINCIPALES:\n- Salir de situacion economica muy precaria (familia de bajos recursos, paso necesidades).\n- Dar mejor vida a su hija y pareja.\n- Crecer profesionalmente en lo que ama: la medicina.\n- Fue a una charla organizada por su facultad con la doctora Nathalie, lo que reforzo su interes ya existente.\n\nDOLORES PRINCIPALES:\n- Remuneracion medica en Paraguay muy baja (~800 USD equivalente en guaranies).\n- Poca valoracion del medico en su pais.\n- Trabajo extenuante con escasa recompensa economica.\n- No puede dar el nivel de vida que desea a su familia.\n\nOBJETIVOS:\n- Migrar a Alemania una vez obtenga el titulo (horizonte: 12-15 meses desde la llamada).\n- Aprender aleman como primer paso.\n- Homologar titulo y trabajar como medico en Alemania.\n\nEJES DE CUALIFICACION:\n1. PERFIL: Medica en formacion, titulo pendiente en 2-3 meses. Encaja con el avatar objetivo aunque aun no es graduada. LATAM, por lo que el proceso de homologacion e",
    "ult": "2026-08-29",
    "ultdir": "outbound",
    "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
@@ -43883,7 +43889,7 @@
    "urg": "",
    "nivel": "🔹 No tengo conocimientos",
    "ss": 15,
-   "stri": null,
+   "stri": 28,
    "sc": null,
    "ult": "2026-08-29",
    "ultdir": "outbound",
@@ -44003,7 +44009,7 @@
    "urg": "",
    "nivel": "🔹 No tengo conocimientos",
    "ss": 15,
-   "stri": null,
+   "stri": 42,
    "sc": null,
    "ult": "2026-08-29",
    "ultdir": "outbound",
@@ -44063,7 +44069,7 @@
    "urg": "",
    "nivel": "🔹 No tengo conocimientos",
    "ss": 66,
-   "stri": null,
+   "stri": 78,
    "sc": null,
    "ult": "2026-08-29",
    "ultdir": "outbound",
@@ -48259,36 +48265,6 @@
   },
   {
    "dia": "2026-08-21",
-   "s": "Sary",
-   "h": [
-    4,
-    1,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    14,
-    4,
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    4,
-    0,
-    0,
-    1,
-    0,
-    7
-   ]
-  },
-  {
-   "dia": "2026-08-21",
    "s": "",
    "h": [
     20,
@@ -48315,6 +48291,36 @@
     5,
     5,
     9
+   ]
+  },
+  {
+   "dia": "2026-08-21",
+   "s": "Sary",
+   "h": [
+    4,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    14,
+    4,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    1,
+    0,
+    7
    ]
   },
   {
@@ -57529,36 +57535,6 @@
   },
   {
    "dia": "2026-08-19",
-   "s": "Sary",
-   "h": [
-    0,
-    4,
-    4,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    7,
-    1,
-    4,
-    0,
-    2,
-    4,
-    25,
-    5,
-    3,
-    0,
-    3,
-    0,
-    0,
-    2
-   ]
-  },
-  {
-   "dia": "2026-08-19",
    "s": "",
    "h": [
     3,
@@ -57585,6 +57561,36 @@
     31,
     0,
     3
+   ]
+  },
+  {
+   "dia": "2026-08-19",
+   "s": "Sary",
+   "h": [
+    0,
+    4,
+    4,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    7,
+    1,
+    4,
+    0,
+    2,
+    4,
+    25,
+    5,
+    3,
+    0,
+    3,
+    0,
+    0,
+    2
    ]
   },
   {
@@ -63005,10 +63011,10 @@
     22,
     1,
     13,
-    22,
-    0,
-    0,
-    0,
+    30,
+    11,
+    36,
+    18,
     0,
     0,
     0,
@@ -130767,6 +130773,66 @@
   {
    "s": "",
    "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": "2026-08-29"
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": "2026-08-29"
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
    "dp": ""
   },
   {
