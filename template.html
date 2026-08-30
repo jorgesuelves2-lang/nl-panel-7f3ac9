@@ -63,6 +63,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <button class="tab on" data-t="global">Control</button>
     <button class="tab" data-t="dia">Día</button>
     <button class="tab" data-t="pipeline">Pipeline</button>
+    <button class="tab" data-t="incoh">Incoherencias <span id="incoh_badge" style="background:var(--red);color:#fff;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px"></span></button>
     <button class="tab" data-t="setting">Setting</button>
     <button class="tab" data-t="triage">Triaje</button>
     <button class="tab" data-t="closing">Closing</button>
@@ -100,6 +101,15 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <div class="cards" id="pl_cards"></div>
     <div id="pl_wsp" style="margin-bottom:18px"></div>
     <div id="pl_grupos"></div>
+  </section>
+
+  <section id="incoh" class="hide">
+    <div class="panel">
+      <h3 style="margin:0 0 4px">Incoherencias del sistema
+        <span style="font-weight:400;color:var(--mut);font-size:13px">— casos donde lo que dice el CRM no cuadra con la realidad. Se recalcula en cada refresco.</span></h3>
+      <div id="incoh_cards" class="cards" style="margin-top:12px"></div>
+      <div id="incoh_body"></div>
+    </div>
   </section>
 
   <section id="setting" class="hide">
@@ -584,6 +594,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    renderTiempos(from,to);
    renderDia();
    renderPipeline();
+   renderIncoherencias();
    renderKset();
    charts.c1=new Chart(document.getElementById('c_estado'),{type:'bar',data:{labels:labels,datasets:[
      {label:'Asistió',data:CDf.map(function(r){return r.showed;}),backgroundColor:'#1D9E75'},
@@ -663,7 +674,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  fromEl.onchange=toEl.onchange=function(){document.querySelectorAll('.qb').forEach(function(b){b.classList.remove('on');});render();};
  bhOn.onchange=bhTz.onchange=bhA.onchange=bhB.onchange=function(){render();};
  document.querySelectorAll('.qb').forEach(function(b){b.onclick=function(){document.querySelectorAll('.qb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');if(b.dataset.d==='mes'){var h=hoyISO(); fromEl.value=h.slice(0,8)+'01'; toEl.value=h;}else{setRange(+b.dataset.d);}render();};});
- var SECTIONS=['dia','pipeline','setting','triage','closing','global','leads','clientes','cash','antonie','cumpl'];
+ var SECTIONS=['dia','pipeline','incoh','setting','triage','closing','global','leads','clientes','cash','antonie','cumpl'];
  document.querySelectorAll('.tab[data-t]').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');SECTIONS.forEach(function(s){document.getElementById(s).classList.toggle('hide',s!==b.dataset.t);});};});
  function num(v){return parseFloat(String(v||'').replace(/[^0-9.]/g,''))||0;}
  // ---- Tabla de closings del periodo: una fila por llamada agendada, con que paso con cada lead ----
@@ -1101,6 +1112,74 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    o.acciones=A;
    return o;
  }
+ // ===== INCOHERENCIAS (31-ago-2026) =====
+ // Casos donde el CRM dice una cosa y la realidad dice otra. Cada regla nacio de un caso real:
+ // Martin Alejandro Burgos (closing "confirmado" que nunca ocurrio), Olga y Carla (vendidas sin cobro
+ // registrado), Edwin Serrano (el closer llego tarde y nadie recupero al lead).
+ function renderIncoherencias(){
+   var cont=document.getElementById('incoh_body'); if(!cont) return;
+   var hoy=hoyISO();
+   var P=(DATA.pipeline_leads||[]), C=(DATA.closing||[]);
+   var G=[];
+
+   // 1) el pipeline dice que tiene llamada agendada, pero no hay ninguna cita futura
+   var g1=P.filter(function(r){
+     var e=String(r.etapa||'').toLowerCase();
+     return (e.indexOf('agendado')>=0||e.indexOf('confirmado')>=0) && !String(r.prox||'').trim();
+   }).map(function(r){ r._d=diasDesde(r.desde); return r; }).sort(function(a,b){return (b._d||0)-(a._d||0);});
+   G.push({t:'Dice "agendado" pero no existe la cita',
+           d:'El CRM los da por agendados y en el calendario no hay ninguna cita futura: estan congelados esperando algo que nadie va a hacer.',
+           rows:g1, col:'desde'});
+
+   // 2) vendido sin cobro registrado
+   var g2=C.filter(function(r){ return r.resclo==='Vendido' && num(r.ticket)>0 && num(r.pagado)===0 && num(r.cash)===0; });
+   G.push({t:'Marcado "Vendido" sin ningun cobro registrado',
+           d:'Venta cerrada en el CRM pero con el importe pagado vacio. O no se ha cobrado, o se cobro y nadie lo anoto.',
+           rows:g2, col:'fecha', money:true});
+
+   // 3) el lead escribio y seguimos sin contestar
+   var g3=P.filter(function(r){ return r.ultdir==='inbound' && (diasDesde(r.ult)||0)>=2; })
+           .map(function(r){ r._d=diasDesde(r.ult); return r; }).sort(function(a,b){return (b._d||0)-(a._d||0);});
+   G.push({t:'El lead escribio y no le hemos contestado',
+           d:'El ultimo mensaje es suyo y llevan 2 dias o mas esperando. Cada dia que pasa se enfrian.',
+           rows:g3, col:'ult', txt:true});
+
+   // 4) tiene cita futura y nunca nos ha escrito por WhatsApp
+   var g4=P.filter(function(r){ return r.prox && r.prox>=hoy && !String(r.wsp||'').trim(); })
+           .sort(function(a,b){ return a.prox<b.prox?-1:1; });
+   G.push({t:'Tiene cita y nunca nos ha escrito por WhatsApp',
+           d:'Agendaron y no pulsaron el boton de la landing. Son los que mas no-show hacen.',
+           rows:g4, col:'prox'});
+
+   var tot=G.reduce(function(a,g){return a+g.rows.length;},0);
+   var b=document.getElementById('incoh_badge'); if(b) b.textContent=tot||'';
+   document.getElementById('incoh_cards').innerHTML=
+     G.map(function(g){ return card(g.t.length>34?g.t.slice(0,32)+'…':g.t, g.rows.length); }).join('');
+
+   var html='';
+   G.forEach(function(g,gi){
+     html+='<div style="margin-top:22px"><div style="font-size:13.5px;font-weight:700">'+esc(g.t)
+          +' <span style="font-weight:400;color:var(--mut)">— '+g.rows.length+'</span></div>'
+          +'<div style="font-size:12.5px;color:var(--mut);margin:2px 0 8px">'+esc(g.d)+'</div>';
+     if(!g.rows.length){ html+='<div style="font-size:12.5px;color:var(--teal)">Ninguno. Todo correcto aqui.</div></div>'; return; }
+     html+='<div style="overflow-x:auto"><table><thead><tr><th>Lead</th><th>Etapa / estado</th><th>Desde</th>'
+          +(g.money?'<th>Ticket</th>':'')+(g.txt?'<th>Lo ultimo que dijo</th>':'')+'<th></th><th>Ficha</th></tr></thead><tbody>';
+     g.rows.forEach(function(r,i){
+       var key='ic_'+gi+'_'+i; LM_DATA[key]={r:r,tipo:(g.money?'clo':'pipe')};
+       var ref=r[g.col]||'', dd=diasDesde(ref);
+       html+='<tr><td><b>'+esc(r.nombre)+'</b></td>'
+         +'<td>'+esc(String(r.etapa||r.resclo||r.estado||'—').slice(0,30))+'</td>'
+         +'<td>'+esc(String(ref).slice(5))+(dd!=null?' <span style="color:'+(dd>=7?'var(--red)':'var(--mut)')+'">('+dd+'d)</span>':'')+'</td>'
+         +(g.money?'<td>'+esc(r.ticket||'—')+'</td>':'')
+         +(g.txt?'<td style="max-width:280px;color:var(--mut)">'+esc(String(r.ulttxt||'').slice(0,90))+'</td>':'')
+         +'<td><button onclick="abrirLead(\''+key+'\')" style="border:1px solid var(--blue);background:transparent;color:var(--blue);border-radius:6px;padding:3px 12px;font-size:12px;cursor:pointer">Ver</button></td>'
+         +'<td><a href="'+esc(r.ficha)+'" target="_blank">abrir</a></td></tr>';
+     });
+     html+='</tbody></table></div></div>';
+   });
+   cont.innerHTML=html;
+ }
+
  function renderPipeline(){
    var cont=document.getElementById('pl_grupos'); if(!cont) return;
    var base={}; (DATA.pipeline_leads||[]).forEach(function(r){ base[r.cid]=r; });
