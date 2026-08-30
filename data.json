@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-30 05:53",
+ "generado": "2026-08-30 12:18",
  "rango": "2026-02-01 a 2026-08-30",
  "setting": [
   {
@@ -2944,16 +2944,16 @@
   },
   {
    "dia": "2026-08-30",
-   "inb": 0,
+   "inb": 4,
    "out": 1,
-   "nuevas": 1,
-   "total": 10,
-   "fups": 2,
-   "prop": 0,
-   "link": 0,
+   "nuevas": 5,
+   "total": 58,
+   "fups": 53,
+   "prop": 1,
+   "link": 2,
    "badlink": 0,
    "agendas": 4,
-   "resp_min": null,
+   "resp_min": 28,
    "nodata": false
   }
  ],
@@ -26850,20 +26850,32 @@
   },
   {
    "dia": "2026-08-29",
-   "in": 1788020215,
-   "rep": 1788020338,
-   "s": ""
-  },
-  {
-   "dia": "2026-08-29",
    "in": 1788012696,
    "rep": 1788012856,
    "s": ""
   },
   {
    "dia": "2026-08-29",
+   "in": 1788020215,
+   "rep": 1788020338,
+   "s": ""
+  },
+  {
+   "dia": "2026-08-29",
    "in": 1787992185,
    "rep": 1787992241,
+   "s": ""
+  },
+  {
+   "dia": "2026-08-30",
+   "in": 1788078362,
+   "rep": 1788080964,
+   "s": ""
+  },
+  {
+   "dia": "2026-08-30",
+   "in": 1788082300,
+   "rep": 1788083036,
    "s": ""
   }
  ],
@@ -30201,7 +30213,7 @@
    "prof": "Estudiante ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔹 Tri. Saludo Enviado",
+   "etapa": "🔴🔹 Tri. No Show",
    "tel": "+595986698689",
    "email": "francielyvargasvc@gmail.com",
    "wsp": "",
@@ -30212,9 +30224,9 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-08-29",
+   "ult": "2026-08-30",
    "ultdir": "outbound",
-   "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
+   "ulttxt": "¡Hey Laura!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y ...",
    "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
@@ -30249,9 +30261,9 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-08-29",
+   "ult": "2026-08-30",
    "ultdir": "outbound",
-   "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
+   "ulttxt": "¡Hey Silvia!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en e...",
    "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
@@ -44186,6 +44198,36 @@
  },
  "pipeline_leads": [
   {
+   "cid": "5wbBDohyfQssFyeAaFkO",
+   "nombre": "José Angel Córdova Paredes",
+   "etapa": "🔹 Triage Agendado",
+   "desde": "2026-08-30",
+   "fuente": "Otros",
+   "prox": "2026-09-01",
+   "wsp": "2026-08-30",
+   "setter": "",
+   "cta": "",
+   "prof": "Médico especialista ",
+   "restri": "",
+   "resclo": "",
+   "ticket": "",
+   "pagado": "",
+   "motivo": "",
+   "tel": "+34613614181",
+   "email": "joseacp.es@gmail.com",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "urg": "",
+   "nivel": "🔹 Conocimientos básicos",
+   "ss": null,
+   "stri": null,
+   "sc": null,
+   "ult": "2026-08-30",
+   "ultdir": "inbound",
+   "ulttxt": "Si, martes a las 9 de la noche hora España",
+   "ulttipo": "TYPE_WHATSAPP",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/5wbBDohyfQssFyeAaFkO"
+  },
+  {
    "cid": "SSokcOthSKOApPTMw8ep",
    "nombre": "Camila Talau Hellmann",
    "etapa": "🔹 Tri. Saludo Enviado",
@@ -44269,41 +44311,11 @@
    "ss": 27,
    "stri": null,
    "sc": null,
-   "ult": "2026-08-29",
+   "ult": "2026-08-30",
    "ultdir": "outbound",
-   "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
+   "ulttxt": "¡Hey Silvia!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en e...",
    "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/dHYH9IUpQ2vyoH4deq0z"
-  },
-  {
-   "cid": "0HWrhAB0UzI6aBu47qTr",
-   "nombre": "Laura Franciely Vargas",
-   "etapa": "🔹 Tri. Saludo Enviado",
-   "desde": "2026-08-29",
-   "fuente": "",
-   "prox": "2026-08-30",
-   "wsp": "",
-   "setter": "",
-   "cta": "",
-   "prof": "Estudiante ",
-   "restri": "",
-   "resclo": "",
-   "ticket": "",
-   "pagado": "",
-   "motivo": "",
-   "tel": "+595986698689",
-   "email": "francielyvargasvc@gmail.com",
-   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
-   "urg": "",
-   "nivel": "🔹 No tengo conocimientos",
-   "ss": 45,
-   "stri": null,
-   "sc": null,
-   "ult": "2026-08-29",
-   "ultdir": "outbound",
-   "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
-   "ulttipo": "TYPE_EMAIL",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/0HWrhAB0UzI6aBu47qTr"
   },
   {
    "cid": "n2wtBDs7owsUWrqJcALD",
@@ -47893,36 +47905,6 @@
  "horas": [
   {
    "dia": "2026-08-20",
-   "s": "",
-   "h": [
-    20,
-    50,
-    5,
-    0,
-    2,
-    14,
-    7,
-    0,
-    0,
-    0,
-    32,
-    67,
-    10,
-    22,
-    32,
-    22,
-    37,
-    74,
-    20,
-    7,
-    20,
-    50,
-    9,
-    17
-   ]
-  },
-  {
-   "dia": "2026-08-20",
    "s": "Sary",
    "h": [
     2,
@@ -47936,7 +47918,7 @@
     0,
     0,
     5,
-    4,
+    5,
     0,
     1,
     0,
@@ -47949,6 +47931,36 @@
     1,
     3,
     0
+   ]
+  },
+  {
+   "dia": "2026-08-20",
+   "s": "",
+   "h": [
+    20,
+    50,
+    5,
+    0,
+    2,
+    14,
+    7,
+    0,
+    0,
+    0,
+    32,
+    66,
+    10,
+    22,
+    32,
+    22,
+    37,
+    74,
+    20,
+    7,
+    20,
+    50,
+    9,
+    17
    ]
   },
   {
@@ -48013,36 +48025,6 @@
   },
   {
    "dia": "2026-08-24",
-   "s": "",
-   "h": [
-    27,
-    12,
-    7,
-    0,
-    0,
-    9,
-    0,
-    0,
-    0,
-    46,
-    62,
-    5,
-    2,
-    33,
-    59,
-    2,
-    0,
-    4,
-    21,
-    10,
-    4,
-    29,
-    42,
-    27
-   ]
-  },
-  {
-   "dia": "2026-08-24",
    "s": "Sary",
    "h": [
     2,
@@ -48068,7 +48050,37 @@
     3,
     1,
     3,
-    27
+    28
+   ]
+  },
+  {
+   "dia": "2026-08-24",
+   "s": "",
+   "h": [
+    27,
+    12,
+    7,
+    0,
+    0,
+    9,
+    0,
+    0,
+    0,
+    46,
+    62,
+    5,
+    2,
+    33,
+    59,
+    2,
+    0,
+    4,
+    21,
+    10,
+    4,
+    29,
+    42,
+    26
    ]
   },
   {
@@ -48283,36 +48295,6 @@
   },
   {
    "dia": "2026-08-23",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    11,
-    0,
-    7,
-    5,
-    10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1
-   ]
-  },
-  {
-   "dia": "2026-08-23",
    "s": "Sara",
    "h": [
     0,
@@ -48339,6 +48321,36 @@
     0,
     0,
     0
+   ]
+  },
+  {
+   "dia": "2026-08-23",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    11,
+    0,
+    7,
+    5,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
    ]
   },
   {
@@ -48493,9 +48505,39 @@
   },
   {
    "dia": "2026-08-22",
+   "s": "Sary",
+   "h": [
+    6,
+    5,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    3,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-22",
    "s": "",
    "h": [
-    8,
+    7,
     9,
     0,
     5,
@@ -48549,36 +48591,6 @@
     0,
     2,
     1
-   ]
-  },
-  {
-   "dia": "2026-08-22",
-   "s": "Sary",
-   "h": [
-    5,
-    5,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    3,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0,
-    0
    ]
   },
   {
@@ -57883,36 +57895,6 @@
   },
   {
    "dia": "2026-08-19",
-   "s": "",
-   "h": [
-    3,
-    21,
-    8,
-    1,
-    5,
-    3,
-    8,
-    1,
-    1,
-    0,
-    34,
-    47,
-    15,
-    20,
-    32,
-    38,
-    44,
-    14,
-    17,
-    16,
-    48,
-    31,
-    0,
-    3
-   ]
-  },
-  {
-   "dia": "2026-08-19",
    "s": "Sary",
    "h": [
     0,
@@ -57926,11 +57908,11 @@
     0,
     0,
     7,
-    1,
+    2,
     4,
     0,
     2,
-    4,
+    5,
     25,
     5,
     3,
@@ -57939,6 +57921,36 @@
     0,
     0,
     2
+   ]
+  },
+  {
+   "dia": "2026-08-19",
+   "s": "",
+   "h": [
+    3,
+    21,
+    8,
+    1,
+    5,
+    3,
+    8,
+    1,
+    1,
+    0,
+    34,
+    46,
+    15,
+    20,
+    32,
+    37,
+    44,
+    14,
+    17,
+    16,
+    48,
+    31,
+    0,
+    3
    ]
   },
   {
@@ -62983,6 +62995,36 @@
   },
   {
    "dia": "2026-08-26",
+   "s": "Sary",
+   "h": [
+    5,
+    4,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0,
+    7,
+    14,
+    2,
+    0,
+    3,
+    1
+   ]
+  },
+  {
+   "dia": "2026-08-26",
    "s": "",
    "h": [
     7,
@@ -63004,41 +63046,11 @@
     12,
     22,
     27,
-    44,
+    38,
     38,
     34,
     11,
     3
-   ]
-  },
-  {
-   "dia": "2026-08-26",
-   "s": "Jesmary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    11,
-    20,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
    ]
   },
   {
@@ -63073,32 +63085,62 @@
   },
   {
    "dia": "2026-08-26",
+   "s": "Jesmary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    11,
+    20,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-27",
    "s": "Sary",
    "h": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     5,
-    4,
     0,
     0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    0,
-    4,
-    0,
-    0,
-    0,
-    2,
-    1,
-    0,
-    0,
-    7,
-    8,
-    2,
+    5,
     0,
     3,
-    1
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    6,
+    1,
+    0
    ]
   },
   {
@@ -63114,10 +63156,10 @@
     0,
     7,
     1,
-    15,
+    12,
     3,
     0,
-    65,
+    61,
     60,
     20,
     3,
@@ -63158,36 +63200,6 @@
     8,
     1,
     0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-27",
-   "s": "Sary",
-   "h": [
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    0,
-    0,
-    1,
-    0,
-    3,
-    0,
-    0,
-    0,
-    4,
-    0,
-    0,
-    6,
-    1,
     0
    ]
   },
@@ -63405,7 +63417,19 @@
    "dia": "2026-08-30",
    "s": "",
    "h": [
-    4,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    56,
+    32,
+    0,
+    5,
     0,
     0,
     0,
@@ -63416,6 +63440,54 @@
     0,
     0,
     0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-30",
+   "s": "Sary",
+   "h": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-30",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
     0,
     0,
     0,
@@ -63824,7 +63896,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sary",
    "d0": "2026-08-19",
    "dp": "2026-08-27"
   },
@@ -130396,7 +130468,7 @@
   {
    "s": "",
    "d0": "2026-08-28",
-   "dp": ""
+   "dp": "2026-08-30"
   },
   {
    "s": "",
@@ -131476,6 +131548,26 @@
   {
    "s": "",
    "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
    "dp": ""
   }
  ]
