@@ -1,6 +1,6 @@
 {
- "generado": "2026-08-29 22:02",
- "rango": "2026-02-01 a 2026-08-29",
+ "generado": "2026-08-30 00:44",
+ "rango": "2026-02-01 a 2026-08-30",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -2931,15 +2931,29 @@
   {
    "dia": "2026-08-29",
    "inb": 7,
-   "out": 17,
-   "nuevas": 24,
-   "total": 75,
-   "fups": 95,
+   "out": 60,
+   "nuevas": 67,
+   "total": 120,
+   "fups": 98,
    "prop": 2,
    "link": 2,
    "badlink": 0,
    "agendas": 6,
    "resp_min": 2,
+   "nodata": false
+  },
+  {
+   "dia": "2026-08-30",
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 5,
+   "fups": 2,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 4,
+   "resp_min": null,
    "nodata": false
   }
  ],
@@ -5461,6 +5475,18 @@
    "cancelled": 0,
    "confirmed": 6,
    "cualifica": 1,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-08-30",
+   "agendados": 4,
+   "showed": 0,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 4,
+   "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
   }
@@ -20880,6 +20906,17 @@
    "vendido": 0,
    "facturacion": 0.0,
    "cash": 0.0
+  },
+  {
+   "dia": "2026-08-30",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
   }
  ],
  "gaps": [
@@ -26832,6 +26869,28 @@
  ],
  "kpis": [
   {
+   "dia": "2026-08-29",
+   "setter": "Sara",
+   "fu": 16,
+   "inb": 1,
+   "out": 62,
+   "prop": 0,
+   "book": 0,
+   "wel": 0,
+   "notas": "@medicosenaustria"
+  },
+  {
+   "dia": "2026-08-28",
+   "setter": "Sara",
+   "fu": 26,
+   "inb": 1,
+   "out": 48,
+   "prop": 0,
+   "book": 1,
+   "wel": 0,
+   "notas": "@medicosenaustria"
+  },
+  {
    "dia": "2026-08-28",
    "setter": "Jesmary",
    "fu": 5,
@@ -30085,7 +30144,7 @@
    "retraso_medio": 0.0,
    "kpis": {
     "Sary": true,
-    "Sara": false,
+    "Sara": true,
     "Jesmary": true
    }
   },
@@ -30096,6 +30155,19 @@
    "sin_form": 5,
    "estado_triage": "Parcial",
    "retraso_medio": 0.0,
+   "kpis": {
+    "Sary": false,
+    "Sara": true,
+    "Jesmary": false
+   }
+  },
+  {
+   "dia": "2026-08-30",
+   "triages": 4,
+   "con_form": 0,
+   "sin_form": 4,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
    "kpis": {
     "Sary": false,
     "Sara": false,
@@ -43884,7 +43956,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-02-02",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -43904,10 +43976,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-07",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Nicole!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -43921,7 +43993,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-02-03",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -43941,10 +44013,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-07",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Susana!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -44149,7 +44221,7 @@
    "etapa": "🔶 Seguimiento Futuro",
    "desde": "2026-08-29",
    "fuente": "",
-   "prox": "2026-08-29",
+   "prox": "",
    "wsp": "2026-08-29",
    "setter": "",
    "cta": "",
@@ -44269,7 +44341,7 @@
    "etapa": "🔶 Seguimiento Futuro",
    "desde": "2026-08-29",
    "fuente": "",
-   "prox": "2026-08-29",
+   "prox": "",
    "wsp": "2026-08-29",
    "setter": "",
    "cta": "",
@@ -44299,7 +44371,7 @@
    "etapa": "🔶 Seguimiento Futuro",
    "desde": "2026-08-29",
    "fuente": "",
-   "prox": "2026-08-29",
+   "prox": "",
    "wsp": "2026-08-29",
    "setter": "",
    "cta": "",
@@ -44329,7 +44401,7 @@
    "etapa": "🔸Closing Agendado",
    "desde": "2026-08-29",
    "fuente": "Outbound",
-   "prox": "2026-08-29",
+   "prox": "2026-09-03",
    "wsp": "",
    "setter": "Jesmary",
    "cta": "",
@@ -44419,7 +44491,7 @@
    "etapa": "🔸Closing Agendado",
    "desde": "2026-08-26",
    "fuente": "",
-   "prox": "2026-08-29",
+   "prox": "",
    "wsp": "2026-08-28",
    "setter": "Jesmary",
    "cta": "",
@@ -47647,10 +47719,10 @@
    "ss": null,
    "stri": null,
    "sc": null,
-   "ult": "2026-02-07",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Nicole!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/X5VkEGipLjDO14NTNPI2"
   },
   {
@@ -63294,9 +63366,9 @@
     0,
     0,
     12,
-    7,
-    0,
-    0
+    12,
+    40,
+    4
    ]
   },
   {
@@ -63312,6 +63384,36 @@
     0,
     0,
     2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-30",
+   "s": "",
+   "h": [
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -131095,6 +131197,226 @@
    "s": "",
    "d0": "2026-08-29",
    "dp": "2026-08-29"
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-29",
+   "dp": ""
   },
   {
    "s": "",
