@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-30 12:18",
+ "generado": "2026-08-30 17:02",
  "rango": "2026-02-01 a 2026-08-30",
  "setting": [
   {
@@ -2944,16 +2944,16 @@
   },
   {
    "dia": "2026-08-30",
-   "inb": 4,
-   "out": 1,
-   "nuevas": 5,
-   "total": 58,
-   "fups": 53,
+   "inb": 5,
+   "out": 27,
+   "nuevas": 32,
+   "total": 93,
+   "fups": 57,
    "prop": 1,
    "link": 2,
    "badlink": 0,
    "agendas": 4,
-   "resp_min": 28,
+   "resp_min": 18,
    "nodata": false
   }
  ],
@@ -26868,6 +26868,12 @@
   },
   {
    "dia": "2026-08-30",
+   "in": 1788105052,
+   "rep": 1788106113,
+   "s": ""
+  },
+  {
+   "dia": "2026-08-30",
    "in": 1788078362,
    "rep": 1788080964,
    "s": ""
@@ -30253,7 +30259,7 @@
    "etapa": "🔹 Tri. Saludo Enviado",
    "tel": "+5594992497618",
    "email": "silvia.acs@hotmail.com",
-   "wsp": "2026-08-28",
+   "wsp": "2026-08-30",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/dHYH9IUpQ2vyoH4deq0z",
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "300€ - 600€",
@@ -30263,7 +30269,7 @@
    "restri_ia": "",
    "ult": "2026-08-30",
    "ultdir": "outbound",
-   "ulttxt": "¡Hey Silvia!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en e...",
+   "ulttxt": "¡Hey Silvia!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y...",
    "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
@@ -30287,10 +30293,10 @@
    "prof": "Médica recem graduada ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔹 Tri. Saludo Enviado",
+   "etapa": "🔴🔸Clos. No cualifica/Descartado",
    "tel": "+5548996496056",
    "email": "lorenafloripa@hotmail.com",
-   "wsp": "2026-08-28",
+   "wsp": "2026-08-30",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/n2wtBDs7owsUWrqJcALD",
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "300€ - 600€",
@@ -30298,10 +30304,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-08-29",
-   "ultdir": "outbound",
-   "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "2026-08-30",
+   "ultdir": "inbound",
+   "ulttxt": "Si, puede ser",
+   "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
   {
@@ -30327,7 +30333,7 @@
    "etapa": "🔹 Tri. Saludo Enviado",
    "tel": "+5545988256922",
    "email": "camilahellmann1@gmail.com",
-   "wsp": "2026-08-28",
+   "wsp": "2026-08-30",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/SSokcOthSKOApPTMw8ep",
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "300€ - 600€",
@@ -30335,10 +30341,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-08-29",
-   "ultdir": "outbound",
-   "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "2026-08-30",
+   "ultdir": "inbound",
+   "ulttxt": "Gracias",
+   "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
   {
@@ -43746,7 +43752,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-02-05",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -43766,10 +43772,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-09",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Miguel!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -43820,7 +43826,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-02-05",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -43840,10 +43846,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-09",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Carolina!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -43894,7 +43900,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-02-05",
+   "d0": "2026-02-04",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -43914,10 +43920,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-09",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Melanie!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones ...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -44198,6 +44204,36 @@
  },
  "pipeline_leads": [
   {
+   "cid": "13JLuSYv8J6Qr4rTvqf3",
+   "nombre": "Willians Colina",
+   "etapa": "🔹 Triage Agendado",
+   "desde": "2026-08-30",
+   "fuente": "Outbound",
+   "prox": "2026-09-01",
+   "wsp": "2026-08-30",
+   "setter": "Sary",
+   "cta": "",
+   "prof": "Independiente ",
+   "restri": "",
+   "resclo": "",
+   "ticket": "",
+   "pagado": "",
+   "motivo": "",
+   "tel": "+56923835647",
+   "email": "colinawillians@gmail.com",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "urg": "",
+   "nivel": "🔹 No tengo conocimientos",
+   "ss": 38,
+   "stri": null,
+   "sc": null,
+   "ult": "2026-08-30",
+   "ultdir": "inbound",
+   "ulttxt": "Hola! Ya agendé mi llamada. Mi nombre es [Willians Colina ]",
+   "ulttipo": "TYPE_WHATSAPP",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/13JLuSYv8J6Qr4rTvqf3"
+  },
+  {
    "cid": "5wbBDohyfQssFyeAaFkO",
    "nombre": "José Angel Córdova Paredes",
    "etapa": "🔹 Triage Agendado",
@@ -44205,7 +44241,7 @@
    "fuente": "Otros",
    "prox": "2026-09-01",
    "wsp": "2026-08-30",
-   "setter": "",
+   "setter": "Sary",
    "cta": "",
    "prof": "Médico especialista ",
    "restri": "",
@@ -44218,7 +44254,7 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "urg": "",
    "nivel": "🔹 Conocimientos básicos",
-   "ss": null,
+   "ss": 72,
    "stri": null,
    "sc": null,
    "ult": "2026-08-30",
@@ -44234,7 +44270,7 @@
    "desde": "2026-08-29",
    "fuente": "",
    "prox": "2026-08-30",
-   "wsp": "2026-08-28",
+   "wsp": "2026-08-30",
    "setter": "",
    "cta": "",
    "prof": "Estudiante",
@@ -44251,10 +44287,10 @@
    "ss": 20,
    "stri": null,
    "sc": null,
-   "ult": "2026-08-29",
-   "ultdir": "outbound",
-   "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "2026-08-30",
+   "ultdir": "inbound",
+   "ulttxt": "Gracias",
+   "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/SSokcOthSKOApPTMw8ep"
   },
   {
@@ -44294,7 +44330,7 @@
    "desde": "2026-08-29",
    "fuente": "",
    "prox": "2026-08-30",
-   "wsp": "2026-08-28",
+   "wsp": "2026-08-30",
    "setter": "",
    "cta": "",
    "prof": "Médico general ",
@@ -44313,39 +44349,9 @@
    "sc": null,
    "ult": "2026-08-30",
    "ultdir": "outbound",
-   "ulttxt": "¡Hey Silvia!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en e...",
+   "ulttxt": "¡Hey Silvia!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y...",
    "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/dHYH9IUpQ2vyoH4deq0z"
-  },
-  {
-   "cid": "n2wtBDs7owsUWrqJcALD",
-   "nombre": "Lorena Camila da Silva De Madrignac",
-   "etapa": "🔹 Tri. Saludo Enviado",
-   "desde": "2026-08-29",
-   "fuente": "",
-   "prox": "2026-08-30",
-   "wsp": "2026-08-28",
-   "setter": "",
-   "cta": "",
-   "prof": "Médica recem graduada ",
-   "restri": "",
-   "resclo": "",
-   "ticket": "",
-   "pagado": "",
-   "motivo": "",
-   "tel": "+5548996496056",
-   "email": "lorenafloripa@hotmail.com",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "urg": "",
-   "nivel": "🔹 No tengo conocimientos",
-   "ss": 25,
-   "stri": null,
-   "sc": null,
-   "ult": "2026-08-29",
-   "ultdir": "outbound",
-   "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
-   "ulttipo": "TYPE_EMAIL",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/n2wtBDs7owsUWrqJcALD"
   },
   {
    "cid": "lcLzmvUTOBVunvc8zYBg",
@@ -47905,36 +47911,6 @@
  "horas": [
   {
    "dia": "2026-08-20",
-   "s": "Sary",
-   "h": [
-    2,
-    0,
-    1,
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    0,
-    5,
-    5,
-    0,
-    1,
-    0,
-    1,
-    9,
-    0,
-    11,
-    0,
-    1,
-    1,
-    3,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-20",
    "s": "",
    "h": [
     20,
@@ -47961,6 +47937,36 @@
     50,
     9,
     17
+   ]
+  },
+  {
+   "dia": "2026-08-20",
+   "s": "Sary",
+   "h": [
+    2,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    5,
+    5,
+    0,
+    1,
+    0,
+    1,
+    9,
+    0,
+    11,
+    0,
+    1,
+    1,
+    3,
+    0
    ]
   },
   {
@@ -48025,36 +48031,6 @@
   },
   {
    "dia": "2026-08-24",
-   "s": "Sary",
-   "h": [
-    2,
-    0,
-    1,
-    0,
-    0,
-    6,
-    0,
-    0,
-    0,
-    7,
-    21,
-    0,
-    2,
-    2,
-    0,
-    0,
-    0,
-    2,
-    0,
-    4,
-    3,
-    1,
-    3,
-    28
-   ]
-  },
-  {
-   "dia": "2026-08-24",
    "s": "",
    "h": [
     27,
@@ -48078,9 +48054,39 @@
     21,
     10,
     4,
-    29,
+    28,
     42,
     26
+   ]
+  },
+  {
+   "dia": "2026-08-24",
+   "s": "Sary",
+   "h": [
+    2,
+    0,
+    1,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0,
+    7,
+    21,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    4,
+    3,
+    2,
+    3,
+    28
    ]
   },
   {
@@ -48152,7 +48158,7 @@
     13,
     5,
     4,
-    24,
+    23,
     0,
     0,
     0,
@@ -48165,12 +48171,42 @@
     46,
     0,
     4,
-    18,
+    4,
     34,
     19,
     70,
     1,
     14
+   ]
+  },
+  {
+   "dia": "2026-08-25",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    6,
+    10,
+    0,
+    0,
+    0,
+    0,
+    12,
+    0,
+    0,
+    21,
+    8,
+    17,
+    1,
+    0,
+    1
    ]
   },
   {
@@ -48231,36 +48267,6 @@
     0,
     0,
     0
-   ]
-  },
-  {
-   "dia": "2026-08-25",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    6,
-    10,
-    0,
-    0,
-    0,
-    0,
-    12,
-    0,
-    0,
-    7,
-    8,
-    17,
-    1,
-    0,
-    1
    ]
   },
   {
@@ -57908,7 +57914,7 @@
     0,
     0,
     7,
-    2,
+    3,
     4,
     0,
     2,
@@ -57938,7 +57944,7 @@
     1,
     0,
     34,
-    46,
+    45,
     15,
     20,
     32,
@@ -62995,36 +63001,6 @@
   },
   {
    "dia": "2026-08-26",
-   "s": "Sary",
-   "h": [
-    5,
-    4,
-    0,
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    0,
-    4,
-    0,
-    0,
-    0,
-    2,
-    1,
-    0,
-    0,
-    7,
-    14,
-    2,
-    0,
-    3,
-    1
-   ]
-  },
-  {
-   "dia": "2026-08-26",
    "s": "",
    "h": [
     7,
@@ -63037,12 +63013,12 @@
     0,
     1,
     1,
-    29,
+    28,
     2,
     1,
     17,
     7,
-    31,
+    27,
     12,
     22,
     27,
@@ -63051,6 +63027,36 @@
     34,
     11,
     3
+   ]
+  },
+  {
+   "dia": "2026-08-26",
+   "s": "Sary",
+   "h": [
+    5,
+    4,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    0,
+    0,
+    2,
+    5,
+    0,
+    0,
+    7,
+    14,
+    2,
+    0,
+    3,
+    1
    ]
   },
   {
@@ -63115,36 +63121,6 @@
   },
   {
    "dia": "2026-08-27",
-   "s": "Sary",
-   "h": [
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    0,
-    0,
-    5,
-    0,
-    3,
-    0,
-    0,
-    0,
-    4,
-    0,
-    0,
-    6,
-    1,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-27",
    "s": "",
    "h": [
     14,
@@ -63170,6 +63146,36 @@
     6,
     17,
     11,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-27",
+   "s": "Sary",
+   "h": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    0,
+    5,
+    0,
+    3,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    6,
+    1,
     0
    ]
   },
@@ -63427,13 +63433,13 @@
     0,
     0,
     56,
-    32,
+    30,
     0,
+    7,
+    0,
+    3,
+    35,
     5,
-    0,
-    0,
-    0,
-    0,
     0,
     0,
     0,
@@ -63457,7 +63463,7 @@
     0,
     0,
     10,
-    1,
+    3,
     0,
     0,
     0,
@@ -63546,7 +63552,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sary",
    "d0": "2026-08-19",
    "dp": "2026-08-26"
   },
@@ -131548,6 +131554,141 @@
   {
    "s": "",
    "d0": "2026-08-29",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-30",
    "dp": ""
   },
   {
