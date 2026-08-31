@@ -1,6 +1,6 @@
 {
- "generado": "2026-08-30 23:09",
- "rango": "2026-02-01 a 2026-08-30",
+ "generado": "2026-08-31 01:38",
+ "rango": "2026-02-01 a 2026-08-31",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -2945,15 +2945,29 @@
   {
    "dia": "2026-08-30",
    "inb": 6,
-   "out": 130,
-   "nuevas": 136,
-   "total": 207,
-   "fups": 110,
+   "out": 131,
+   "nuevas": 137,
+   "total": 211,
+   "fups": 111,
    "prop": 2,
    "link": 3,
    "badlink": 0,
    "agendas": 4,
    "resp_min": 31,
+   "nodata": false
+  },
+  {
+   "dia": "2026-08-31",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 5,
+   "fups": 1,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 1,
+   "resp_min": null,
    "nodata": false
   }
  ],
@@ -5486,6 +5500,18 @@
    "noconfirma": 0,
    "cancelled": 0,
    "confirmed": 4,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-08-31",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 1,
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
@@ -13525,6 +13551,38 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Ty4Vy9yKkoYW44j5E3of"
   },
   {
+   "nombre": "Melissa Rodríguez Suárez",
+   "setter": "Sary",
+   "origen": "propio",
+   "prof": "Enfermera ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "univ": "Universidad del Cauca ",
+   "urg": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "Idioma",
+   "canal": "",
+   "ig": "",
+   "email": "melissaro@unicauca.edu.co",
+   "tf": "+573135754479",
+   "fagenda": "2026-08-31",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": 18,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "cta": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/HFX6PJ4ueocC7IdYBdpd"
+  },
+  {
    "nombre": "Michael GONZALEZ",
    "setter": "Sary",
    "origen": "propio",
@@ -16965,7 +17023,7 @@
    "reag": "",
    "agendada": "2026-08-28",
    "cta": "",
-   "asistio": false,
+   "asistio": true,
    "fuente": "",
    "resclo": "",
    "sc": null,
@@ -20914,6 +20972,17 @@
    "noshow": 0,
    "cancelled": 0,
    "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
+  },
+  {
+   "dia": "2026-08-31",
+   "agendados": 1,
+   "showed": 1,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 1,
    "vendido": 0,
    "facturacion": 0.0,
    "cash": 0.0
@@ -26804,7 +26873,7 @@
    "dia": "2026-08-26",
    "in": 1787770262,
    "rep": 1787770334,
-   "s": ""
+   "s": "Jesmary"
   },
   {
    "dia": "2026-08-26",
@@ -26850,6 +26919,12 @@
   },
   {
    "dia": "2026-08-29",
+   "in": 1787981479,
+   "rep": 1788131486,
+   "s": "Jesmary"
+  },
+  {
+   "dia": "2026-08-29",
    "in": 1788012696,
    "rep": 1788012856,
    "s": ""
@@ -26892,6 +26967,28 @@
   }
  ],
  "kpis": [
+  {
+   "dia": "2026-08-30",
+   "setter": "Jesmary",
+   "fu": 4,
+   "inb": 2,
+   "out": 70,
+   "prop": 0,
+   "book": 0,
+   "wel": 1,
+   "notas": ""
+  },
+  {
+   "dia": "2026-08-29",
+   "setter": "Jesmary",
+   "fu": 6,
+   "inb": 2,
+   "out": 28,
+   "prop": 1,
+   "book": 0,
+   "wel": 2,
+   "notas": ""
+  },
   {
    "dia": "2026-08-30",
    "setter": "Sara",
@@ -30193,7 +30290,7 @@
    "kpis": {
     "Sary": false,
     "Sara": true,
-    "Jesmary": false
+    "Jesmary": true
    }
   },
   {
@@ -30206,6 +30303,19 @@
    "kpis": {
     "Sary": false,
     "Sara": true,
+    "Jesmary": true
+   }
+  },
+  {
+   "dia": "2026-08-31",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
     "Jesmary": false
    }
   }
@@ -30216,6 +30326,43 @@
   "Jesmary"
  ],
  "triage_leads": [
+  {
+   "nombre": "Melissa Rodríguez Suárez",
+   "fecha": "2026-08-31",
+   "hora": "20:00",
+   "estado": "confirmed",
+   "reag": "",
+   "agendada": "2026-08-30",
+   "cta": "",
+   "asistio": false,
+   "fclo": "",
+   "fuente": "",
+   "d0": "2026-08-28",
+   "restri": "",
+   "stri": null,
+   "ss": 18,
+   "setter": "Sary",
+   "triager": "",
+   "prof": "Enfermera ",
+   "motivo": "",
+   "objtri": "",
+   "etapa": "🔹 Triage Agendado",
+   "tel": "+573135754479",
+   "email": "melissaro@unicauca.edu.co",
+   "wsp": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/HFX6PJ4ueocC7IdYBdpd",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "nivel": "🔹 No tengo conocimientos",
+   "urg": "",
+   "infotri": "",
+   "restri_ia": "",
+   "ult": "2026-08-30",
+   "ultdir": "outbound",
+   "ulttxt": "Hola Melissa Rodríguez Suárez,\n\nTe dejo aquí los detalles de la reunión.\nMelissa Rodríguez Suárez - Reunión de Introducción - Validación\n\n\nFecha y ...",
+   "ulttipo": "TYPE_EMAIL",
+   "tiene_closing": false
+  },
   {
    "nombre": "Laura Franciely Vargas",
    "fecha": "2026-08-30",
@@ -44221,6 +44368,36 @@
  },
  "pipeline_leads": [
   {
+   "cid": "HFX6PJ4ueocC7IdYBdpd",
+   "nombre": "Melissa Rodríguez Suárez",
+   "etapa": "🔹 Triage Agendado",
+   "desde": "2026-08-30",
+   "fuente": "",
+   "prox": "2026-08-31",
+   "wsp": "",
+   "setter": "Sary",
+   "cta": "",
+   "prof": "Enfermera ",
+   "restri": "",
+   "resclo": "",
+   "ticket": "",
+   "pagado": "",
+   "motivo": "",
+   "tel": "+573135754479",
+   "email": "melissaro@unicauca.edu.co",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "urg": "",
+   "nivel": "🔹 No tengo conocimientos",
+   "ss": 18,
+   "stri": null,
+   "sc": null,
+   "ult": "2026-08-30",
+   "ultdir": "outbound",
+   "ulttxt": "Hola Melissa Rodríguez Suárez,\n\nTe dejo aquí los detalles de la reunión.\nMelissa Rodríguez Suárez - Reunión de Introducción - Validación\n\n\nFecha y ...",
+   "ulttipo": "TYPE_EMAIL",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/HFX6PJ4ueocC7IdYBdpd"
+  },
+  {
    "cid": "d3JyZNhrAMSn9AinGrIn",
    "nombre": "Andrea Martínez",
    "etapa": "🔹 Triage Agendado",
@@ -44316,7 +44493,7 @@
    "etapa": "🔹 Tri. Saludo Enviado",
    "desde": "2026-08-29",
    "fuente": "",
-   "prox": "2026-08-30",
+   "prox": "",
    "wsp": "2026-08-30",
    "setter": "",
    "cta": "",
@@ -44376,7 +44553,7 @@
    "etapa": "🔹 Tri. Saludo Enviado",
    "desde": "2026-08-29",
    "fuente": "",
-   "prox": "2026-08-30",
+   "prox": "",
    "wsp": "2026-08-30",
    "setter": "",
    "cta": "",
@@ -63068,7 +63245,7 @@
     27,
     12,
     22,
-    27,
+    26,
     38,
     38,
     34,
@@ -63158,7 +63335,7 @@
     0,
     0,
     0,
-    0,
+    1,
     0,
     0,
     0,
@@ -63188,7 +63365,7 @@
     3,
     11,
     23,
-    33,
+    32,
     3,
     6,
     17,
@@ -63248,7 +63425,7 @@
     0,
     0,
     0,
-    0,
+    1,
     0,
     8,
     1,
@@ -63301,19 +63478,49 @@
     6,
     10,
     52,
-    67,
+    66,
     2,
     13,
     39,
     8,
     5,
-    74,
-    31,
+    68,
+    29,
     26,
     23,
     0,
     16,
     3
+   ]
+  },
+  {
+   "dia": "2026-08-28",
+   "s": "Sary",
+   "h": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    6,
+    2,
+    0,
+    0,
+    0,
+    3,
+    1
    ]
   },
   {
@@ -63344,36 +63551,6 @@
     0,
     0,
     0
-   ]
-  },
-  {
-   "dia": "2026-08-28",
-   "s": "Sary",
-   "h": [
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    1
    ]
   },
   {
@@ -63425,7 +63602,7 @@
     1,
     13,
     30,
-    11,
+    10,
     35,
     17,
     0,
@@ -63467,6 +63644,126 @@
    ]
   },
   {
+   "dia": "2026-08-29",
+   "s": "Jesmary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-30",
+   "s": "",
+   "h": [
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    54,
+    29,
+    0,
+    2,
+    0,
+    3,
+    31,
+    4,
+    0,
+    0,
+    23,
+    138,
+    36,
+    4,
+    3
+   ]
+  },
+  {
+   "dia": "2026-08-30",
+   "s": "Sary",
+   "h": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    11,
+    3,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-30",
+   "s": "Jesmary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1
+   ]
+  },
+  {
    "dia": "2026-08-30",
    "s": "Sara",
    "h": [
@@ -63497,39 +63794,9 @@
    ]
   },
   {
-   "dia": "2026-08-30",
+   "dia": "2026-08-31",
    "s": "",
    "h": [
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    55,
-    30,
-    0,
-    7,
-    0,
-    3,
-    31,
-    4,
-    0,
-    0,
-    23,
-    141,
-    36,
-    4,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-30",
-   "s": "Sary",
-   "h": [
     1,
     0,
     0,
@@ -63539,27 +63806,6 @@
     0,
     0,
     0,
-    10,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-30",
-   "s": "Jesmary",
-   "h": [
     0,
     0,
     0,
@@ -63572,15 +63818,6 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    4,
-    0,
-    0,
-    0,
-    0,
-    1,
     0,
     0,
     0
@@ -129329,7 +129566,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Jesmary",
    "d0": "2026-08-26",
    "dp": ""
   },
@@ -130549,7 +130786,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sary",
    "d0": "2026-08-28",
    "dp": "2026-08-30"
   },
@@ -131319,7 +131556,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Jesmary",
    "d0": "2026-08-29",
    "dp": ""
   },
@@ -131384,7 +131621,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Jesmary",
    "d0": "2026-08-29",
    "dp": ""
   },
@@ -131910,6 +132147,11 @@
   },
   {
    "s": "Sary",
+   "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
    "d0": "2026-08-30",
    "dp": ""
   },
