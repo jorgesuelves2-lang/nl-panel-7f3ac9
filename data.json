@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-31 15:27",
+ "generado": "2026-08-31 21:08",
  "rango": "2026-02-01 a 2026-08-31",
  "setting": [
   {
@@ -2958,13 +2958,13 @@
   },
   {
    "dia": "2026-08-31",
-   "inb": 3,
-   "out": 43,
-   "nuevas": 46,
-   "total": 82,
-   "fups": 13,
-   "prop": 0,
-   "link": 0,
+   "inb": 4,
+   "out": 77,
+   "nuevas": 81,
+   "total": 137,
+   "fups": 47,
+   "prop": 1,
+   "link": 1,
    "badlink": 0,
    "agendas": 3,
    "resp_min": 236,
@@ -5923,7 +5923,7 @@
    "restri": "",
    "resclo": "",
    "estado": "",
-   "ss": 20,
+   "ss": 50,
    "stri": null,
    "sclo": null,
    "ticket": "",
@@ -6691,7 +6691,7 @@
    "restri": "",
    "resclo": "",
    "estado": "",
-   "ss": 22,
+   "ss": 50,
    "stri": null,
    "sclo": null,
    "ticket": "",
@@ -7076,13 +7076,13 @@
    "resclo": "",
    "estado": "",
    "ss": 20,
-   "stri": null,
+   "stri": 28,
    "sclo": null,
    "ticket": "",
    "pagado": "",
    "objtri": "",
    "objclo": "",
-   "infocloser": "",
+   "infocloser": "PERFIL: Camila Talau Hellmann, Paraguay/Brasil. Medica recien graduada (diciembre, hace muy poco). Titulo de Universidad Central del Paraguay (UCP - LATAM). Vive con sus padres en Brasil (Cabeu, Parana). Tiene pareja/novio con quien planea emigrar juntos. Sin hijos.\n\nOBJETIVO: Emigrar a Alemania para ejercer medicina, hacer residencia y construir futuro con su pareja. Plazo estimado: 2 anos. Nivel de aleman: cero. Horas de estudio: no constan.\n\nDOLORES: Techo salarial en Brasil/Paraguay; falta de oportunidades de crecimiento; desea ejercer en un sistema de salud de primer mundo; motivacion adicional por raices europeas (bisabuelos migrantes).\n\nINVERSION: Sin recursos economicos propios en este momento. Vive con sus padres, sin ingresos. Necesita empezar a trabajar en Brasil primero para ahorrar. No sabe si padres podrian apoyar. Horizonte de inversion: 2 anos. Capacidad actual: 0.\n\nRUTA: Titulo LATAM (Paraguay) - proceso de homologacion mas largo y complejo. Necesita B2 de aleman medico + FSP en Alemania. Ruta realista en 3-4 anos desde cero, no 2. Primer paso bloqueado por idioma y por falta de dinero.\n\nOBJECIONES: No tiene dinero ahora; nunca habia pensado en Alemania hasta hace dias; necesita primero trabajar en Brasil; pareja no evaluada como decisor; miedo al desconocido (lo menciono ella misma).\n\nRECOMENDACION: Perfil con motivacion genuina pero sin capacidad economica inmediata - NO es un perfil para cerrar hoy. Si se quiere trabajar este lead, proponer seguimiento a 6-12 meses cuando empiece a trabajar en Brasil y tenga primeros ahorros. Alternativamente, explorar si los padres podrian financiar como inversion en el futuro de su hija. Proximo paso: nurturing, no closing.",
    "cta": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/SSokcOthSKOApPTMw8ep"
   },
@@ -7171,7 +7171,7 @@
    "restri": "",
    "resclo": "",
    "estado": "",
-   "ss": 38,
+   "ss": 22,
    "stri": null,
    "sclo": null,
    "ticket": "",
@@ -8035,7 +8035,7 @@
    "restri": "Cualifica",
    "resclo": "",
    "estado": "",
-   "ss": 70,
+   "ss": 72,
    "stri": null,
    "sclo": 42,
    "ticket": "",
@@ -11119,6 +11119,38 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/SCPtgl2uuOmjC53Bbt4E"
   },
   {
+   "nombre": "José Angel Córdova Paredes",
+   "setter": "Sary",
+   "origen": "propio",
+   "prof": "Médico especialista ",
+   "nivel": "🔹 Conocimientos básicos",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "univ": "UCLA Venezuela y MIR España",
+   "urg": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Idioma",
+   "canal": "",
+   "ig": "joseacp",
+   "email": "joseacp.es@gmail.com",
+   "tf": "+34613614181",
+   "fagenda": "2026-09-01",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": 72,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "cta": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/5wbBDohyfQssFyeAaFkO"
+  },
+  {
    "nombre": "José Daniel convers",
    "setter": "Sary",
    "origen": "propio",
@@ -11715,7 +11747,7 @@
    "restri": "",
    "resclo": "",
    "estado": "",
-   "ss": 30,
+   "ss": 18,
    "stri": null,
    "sclo": null,
    "ticket": "",
@@ -14467,7 +14499,7 @@
    "restri": "",
    "resclo": "",
    "estado": "",
-   "ss": 22,
+   "ss": 18,
    "stri": null,
    "sclo": null,
    "ticket": "",
@@ -14691,14 +14723,14 @@
    "restri": "",
    "resclo": "",
    "estado": "",
-   "ss": 15,
-   "stri": 42,
+   "ss": 52,
+   "stri": 45,
    "sclo": null,
    "ticket": "",
    "pagado": "",
    "objtri": "",
    "objclo": "",
-   "infocloser": "PERFIL: Paola Lucila Paniagua Ferreira, edad no consta, Paraguay, medica en formacion (internado, ultimo semestre). Titulo de medicina pendiente, lo obtiene en aprox. 2-3 meses. Universidad Central del Paraguay. Tiene pareja e hija. Unica paraguaya en su clase.\n\nOBJETIVO: Migrar a Alemania para ejercer medicina con mejor remuneracion y calidad de vida. Quiere empezar con el idioma de inmediato y gestionar papeles al obtener el titulo. Nivel de aleman: cero. Horas/semana disponibles: no consta.\n\nDOLORES: Situacion economica muy precaria en Paraguay, familia de bajos recursos, sueldo medico ~800 USD, poca valoracion profesional. Quiere dar mejor vida a su hija y pareja.\n\nINVERSION: Sin recursos actuales. Ingresos 300-600 EUR/mes segun formulario. Planea solicitar prestamo bancario local; estima tener fondos en 4-6 meses. Acepto el rango de 3.500-5.000 EUR sin rechazo fuerte.\n\nRUTA: Perfil LATAM (Paraguay), homologacion compleja y larga (apostillas, traducciones, reconocimiento de titulo). Titulo aun no en mano. Proceso realista: idioma primero, papeles al obtener titulo, llegada a Alemania en 18-24 meses vista. Christian ya explico estructura de precios (3.500 idioma / 5.000 completo).\n\nOBJECIONES: Barrera economica principal y explicita. No manifesto dudas sobre el proyecto en si, solo sobre el dinero y los plazos para conseguirlo.\n\nRECOMENDACION: Trabajar urgencia economica (costo de oportunidad de cada mes de retraso vs sueldo en Alemania). Explorar si hay apoyo familiar o de pareja para acortar plazo. Anclar fecha concreta para sesion con Nati; no dejar el seguimiento en '4-6 meses indefinidos'. No revelar mas precios: ya conoce el rango, el closer debe enfocarse en el valor y en el plan de accion.",
+   "infocloser": "PERFIL: Paola Paniagua, edad no consta, Paraguay, estudiante de medicina en internado (ultimo ano), titulo propio de universidad privada paraguaya esperado en 2-3 meses. Tiene pareja e hija.\n\nOBJETIVO: Migrar a Alemania en 12-15 meses. Quiere empezar con el idioma de inmediato y avanzar con homologacion cuando tenga el titulo. Nivel de aleman: no consta. Horas/semana disponibles: no consta.\n\nDOLORES: Salario medico en Paraguay de aprox. 800 USD. Familia con escasos recursos. Quiere darle mejor vida a su hija y apoyar a su familia. Siente que en Paraguay los medicos estan poco valorados y mal pagados.\n\nINVERSION: Sin liquidez inmediata. Planea solicitar un prestamo en su ciudad. Estima tener el dinero en 4-6 meses. El setter ya le informo de precios: 3.500 euros (solo idioma, 6 meses 1-a-1 + 1 ano grupal) y 5.000 euros (programa integral). Lead dijo que si puede financiar pero necesita tiempo.\n\nRUTA: Perfil LATAM (Paraguay), titulo no UE. Proceso de homologacion largo (Berufserlaubnis + Approbation). Primera fase: idioma (puede empezar ya). Segunda fase: homologacion cuando tenga titulo. Tiempos realistas de llegada a Alemania: 18-24 meses desde hoy.\n\nOBJECIONES: No tiene dinero ahora (prestamo en 4-6 meses); titulo aun no en mano; pareja no cualificada como decisor; setter ya quemo precios en triaje.\n\nRECOMENDACION: Validar si la pareja esta alineada y si el prestamo es viable antes de la llamada de closing. No presionar en precio (ya lo conoce); centrar el closing en la urgencia de empezar el idioma ya y en el coste de esperar. Proximo paso: seguimiento activo en 3-4 semanas, no esperar 4-6 meses.",
    "cta": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/lcLzmvUTOBVunvc8zYBg"
   },
@@ -16751,6 +16783,38 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/bJMuhAAyfzTqIC2Gxqe1"
   },
   {
+   "nombre": "Willians Colina",
+   "setter": "Sary",
+   "origen": "propio",
+   "prof": "Independiente ",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "univ": "Universidad Nacional Francisco De Miranda ",
+   "urg": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "El idioma ",
+   "canal": "",
+   "ig": "Will_colina",
+   "email": "colinawillians@gmail.com",
+   "tf": "+56923835647",
+   "fagenda": "2026-09-01",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": 38,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "cta": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/13JLuSYv8J6Qr4rTvqf3"
+  },
+  {
    "nombre": "XIMENA MARTINEZ OSPINA",
    "setter": "Sara",
    "origen": "propio",
@@ -17078,7 +17142,7 @@
    "ulttipo": "TYPE_EMAIL",
    "infoclo": "",
    "restri": "Cualifica",
-   "ss": 70,
+   "ss": 72,
    "stri": null,
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "1.000€ - 3.000€",
@@ -17230,7 +17294,7 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/n2NcqBPVozQmhmGqOCfe",
    "ult": "2026-08-31",
    "ultdir": "inbound",
-   "ulttxt": "Un saludo",
+   "ulttxt": "mensaje,\n\n¡Hola! Muchas gracias por contactar conmigo. En este momento, estoy fuera del horario de consulta, pero te responderé tan pronto como me sea posible. Si necesitas información sobre la consulta, o quieres reserv",
    "ulttipo": "TYPE_WHATSAPP",
    "infoclo": "",
    "restri": "Cualifica",
@@ -26947,13 +27011,13 @@
    "dia": "2026-08-28",
    "in": 1787925663,
    "rep": 1787926435,
-   "s": ""
+   "s": "Sary"
   },
   {
    "dia": "2026-08-29",
    "in": 1787992185,
    "rep": 1787992241,
-   "s": ""
+   "s": "Sara"
   },
   {
    "dia": "2026-08-29",
@@ -27007,7 +27071,7 @@
    "dia": "2026-08-31",
    "in": 1788160097,
    "rep": 1788168051,
-   "s": ""
+   "s": "Sara"
   }
  ],
  "kpis": [
@@ -30393,6 +30457,80 @@
  ],
  "triage_leads": [
   {
+   "nombre": "José Angel Córdova Paredes",
+   "fecha": "2026-09-01",
+   "hora": "23:00",
+   "estado": "confirmed",
+   "reag": "",
+   "agendada": "2026-08-30",
+   "cta": "",
+   "asistio": false,
+   "fclo": "",
+   "fuente": "Otros",
+   "d0": "2026-08-19",
+   "restri": "",
+   "stri": null,
+   "ss": 72,
+   "setter": "Sary",
+   "triager": "",
+   "prof": "Médico especialista ",
+   "motivo": "",
+   "objtri": "",
+   "etapa": "🔹 Triage Confirmado",
+   "tel": "+34613614181",
+   "email": "joseacp.es@gmail.com",
+   "wsp": "2026-08-31",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/5wbBDohyfQssFyeAaFkO",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "nivel": "🔹 Conocimientos básicos",
+   "urg": "",
+   "infotri": "",
+   "restri_ia": "",
+   "ult": "2026-08-31",
+   "ultdir": "inbound",
+   "ulttxt": "Pues que desconfío un poco del futuro en España, como están las cosas jeje",
+   "ulttipo": "TYPE_WHATSAPP",
+   "tiene_closing": false
+  },
+  {
+   "nombre": "Willians Colina",
+   "fecha": "2026-09-01",
+   "hora": "00:30",
+   "estado": "confirmed",
+   "reag": "",
+   "agendada": "2026-08-30",
+   "cta": "",
+   "asistio": false,
+   "fclo": "",
+   "fuente": "Outbound",
+   "d0": "2026-08-19",
+   "restri": "",
+   "stri": null,
+   "ss": 38,
+   "setter": "Sary",
+   "triager": "",
+   "prof": "Independiente ",
+   "motivo": "",
+   "objtri": "",
+   "etapa": "🔷 Triage Seguimiento",
+   "tel": "+56923835647",
+   "email": "colinawillians@gmail.com",
+   "wsp": "2026-08-31",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/13JLuSYv8J6Qr4rTvqf3",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "nivel": "🔹 No tengo conocimientos",
+   "urg": "",
+   "infotri": "",
+   "restri_ia": "",
+   "ult": "2026-08-31",
+   "ultdir": "inbound",
+   "ulttxt": "",
+   "ulttipo": "TYPE_WHATSAPP",
+   "tiene_closing": false
+  },
+  {
    "nombre": "Fonseca",
    "fecha": "2026-08-31",
    "hora": "21:00",
@@ -30424,9 +30562,9 @@
    "infotri": "",
    "restri_ia": "",
    "ult": "2026-08-31",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Fonseca!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en ...",
-   "ulttipo": "TYPE_EMAIL",
+   "ultdir": "inbound",
+   "ulttxt": "No tengo auriculares",
+   "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
   {
@@ -30442,7 +30580,7 @@
    "fuente": "",
    "d0": "2026-08-28",
    "restri": "",
-   "stri": null,
+   "stri": 28,
    "ss": 20,
    "setter": "Sary",
    "triager": "",
@@ -30458,8 +30596,8 @@
    "ingresos": "300€ - 600€",
    "nivel": "🔹 No tengo conocimientos",
    "urg": "",
-   "infotri": "",
-   "restri_ia": "",
+   "infotri": "PERFIL: Camila Talau Hellmann, Paraguay/Brasil. Medica recien graduada (diciembre, hace muy poco). Titulo de Universidad Central del Paraguay (UCP - LATAM). Vive con sus padres en Brasil (Cabeu, Parana). Tiene pareja/novio con quien planea emigrar juntos. Sin hijos.\n\nOBJETIVO: Emigrar a Alemania para ejercer medicina, hacer residencia y construir futuro con su pareja. Plazo estimado: 2 anos. Nivel de aleman: cero. Horas de estudio: no constan.\n\nDOLORES: Techo salarial en Brasil/Paraguay; falta de oportunidades de crecimiento; desea ejercer en un sistema de salud de primer mundo; motivacion adicional por raices europeas (bisabuelos migrantes).\n\nINVERSION: Sin recursos economicos propios en este momento. Vive con sus padres, sin ingresos. Necesita empezar a trabajar en Brasil primero para ahorrar. No sabe si padres podrian apoyar. Horizonte de inversion: 2 anos. Capacidad actual: 0.\n\nRUTA: Titulo LATAM (Paraguay) - proceso de homologacion mas largo y complejo. Necesita B2 de aleman medico + FSP en Alemania. Ruta realista en 3-4 anos desde cero, no 2. Primer paso bloqueado por idioma y por falta de dinero.\n\nOBJECIONES: No tiene dinero ahora; nunca habia pensado en Alemania hasta hace dias; necesita primero trabajar en Brasil; pareja no evaluada como decisor; miedo al desconocido (lo menciono ella misma).\n\nRECOMENDACION: Perfil con motivacion genuina pero sin capacidad economica inmediata - NO es un perfil para cerrar hoy. Si se quiere trabajar este lead, proponer seguimiento a 6",
+   "restri_ia": "PERFIL: Camila Talau Hellmann, Paraguay/Brasil (vive en Brasil, Cabeu - Parana, sur de Brasil). Medica recien graduada en diciembre (hace muy poco). Titulo obtenido en Universidad Central del Paraguay (UCP). Vive con sus padres, tiene pareja (novio), sin hijos. No tiene ingresos propios; depende economicamente de sus padres mientras prepara el G-Valida para Brasil.\n\nDINERO: Sin capacidad economica actual. No trabaja, ingresos cero propios. Vive con los padres para no tener gastos. Declara que necesita empezar a ahorrar cuando empiece a trabajar. Plazo estimado de inversion: 2 anos. No sabe si sus padres podrian ayudar porque nunca habian contemplado esta opcion. RIESGO ALTO: sin dinero en este momento y sin plan concreto de financiacion.\n\nPLAZO/URGENCIA: Se ve en Alemania en unos 2 anos. Primero quiere juntar el dinero, luego invertir. Urgencia real: baja. No esta en condiciones de empezar ahora.\n\nCOMPROMISO: Energia positiva y curiosidad genuina, hace muchas preguntas del proceso (visa, cambio migratorio, costos de alquiler, etc.). Sin embargo, el compromiso economico es inexistente en este momento. No hay senal de que pueda cerrar pronto.\n\nCALIDAD DEL TRIAJE: Christian hizo una l",
    "ult": "2026-08-31",
    "ultdir": "inbound",
    "ulttxt": "O puedo buscar sin problema",
@@ -30489,7 +30627,7 @@
    "etapa": "🔹 Tri. Saludo Enviado",
    "tel": "+573135754479",
    "email": "melissaro@unicauca.edu.co",
-   "wsp": "",
+   "wsp": "2026-08-31",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/HFX6PJ4ueocC7IdYBdpd",
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "1.000€ - 3.000€",
@@ -30498,9 +30636,9 @@
    "infotri": "",
    "restri_ia": "",
    "ult": "2026-08-31",
-   "ultdir": "outbound",
-   "ulttxt": "Hola Julian buen día, pudiste agendar?",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ultdir": "inbound",
+   "ulttxt": "A las 11",
+   "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
   {
@@ -30550,7 +30688,7 @@
    "cta": "",
    "asistio": false,
    "fclo": "",
-   "fuente": "",
+   "fuente": "Outbound",
    "d0": "2026-08-28",
    "restri": "",
    "stri": null,
@@ -30661,7 +30799,7 @@
    "cta": "",
    "asistio": true,
    "fclo": "",
-   "fuente": "",
+   "fuente": "Inbound",
    "d0": "2026-08-28",
    "restri": "",
    "stri": 28,
@@ -30775,8 +30913,8 @@
    "fuente": "",
    "d0": "2026-08-28",
    "restri": "",
-   "stri": 42,
-   "ss": 15,
+   "stri": 45,
+   "ss": 52,
    "setter": "",
    "triager": "",
    "prof": "Estética ",
@@ -30791,8 +30929,8 @@
    "ingresos": "300€ - 600€",
    "nivel": "🔹 No tengo conocimientos",
    "urg": "",
-   "infotri": "PERFIL: Paola Lucila Paniagua Ferreira, edad no consta, Paraguay, medica en formacion (internado, ultimo semestre). Titulo de medicina pendiente, lo obtiene en aprox. 2-3 meses. Universidad Central del Paraguay. Tiene pareja e hija. Unica paraguaya en su clase.\n\nOBJETIVO: Migrar a Alemania para ejercer medicina con mejor remuneracion y calidad de vida. Quiere empezar con el idioma de inmediato y gestionar papeles al obtener el titulo. Nivel de aleman: cero. Horas/semana disponibles: no consta.\n\nDOLORES: Situacion economica muy precaria en Paraguay, familia de bajos recursos, sueldo medico ~800 USD, poca valoracion profesional. Quiere dar mejor vida a su hija y pareja.\n\nINVERSION: Sin recursos actuales. Ingresos 300-600 EUR/mes segun formulario. Planea solicitar prestamo bancario local; estima tener fondos en 4-6 meses. Acepto el rango de 3.500-5.000 EUR sin rechazo fuerte.\n\nRUTA: Perfil LATAM (Paraguay), homologacion compleja y larga (apostillas, traducciones, reconocimiento de titulo). Titulo aun no en mano. Proceso realista: idioma primero, papeles al obtener titulo, llegada a Alemania en 18-24 meses vista. Christian ya explico estructura de precios (3.500 idioma / 5.000 completo).\n\nOBJECIONES: Barrera economica principal y explicita. No manifesto dudas sobre el proyecto en si, solo sobre el dinero y los plazos para conseguirlo.\n\nRECOMENDACION: Trabajar urgencia economica (costo de oportunidad de cada mes de retraso vs sueldo en Alemania). Explorar si hay apoyo familiar o d",
-   "restri_ia": "PERFIL: Paola Lucila Paniagua Ferreira, pais Paraguay, medica en formacion (internado, ultimo año). Unica paraguaya en su clase (resto son brasileños). Tiene pareja e hija. Titulo aun no obtenido, lo espera en 2-3 meses tras terminar internado.\n\nMOTIVACIONES PRINCIPALES:\n- Salir de situacion economica muy precaria (familia de bajos recursos, paso necesidades).\n- Dar mejor vida a su hija y pareja.\n- Crecer profesionalmente en lo que ama: la medicina.\n- Fue a una charla organizada por su facultad con la doctora Nathalie, lo que reforzo su interes ya existente.\n\nDOLORES PRINCIPALES:\n- Remuneracion medica en Paraguay muy baja (~800 USD equivalente en guaranies).\n- Poca valoracion del medico en su pais.\n- Trabajo extenuante con escasa recompensa economica.\n- No puede dar el nivel de vida que desea a su familia.\n\nOBJETIVOS:\n- Migrar a Alemania una vez obtenga el titulo (horizonte: 12-15 meses desde la llamada).\n- Aprender aleman como primer paso.\n- Homologar titulo y trabajar como medico en Alemania.\n\nEJES DE CUALIFICACION:\n1. PERFIL: Medica en formacion, titulo pendiente en 2-3 meses. Encaja con el avatar objetivo aunque aun no es graduada. LATAM, por lo que el proceso de homologacion e",
+   "infotri": "PERFIL: Paola Paniagua, edad no consta, Paraguay, estudiante de medicina en internado (ultimo ano), titulo propio de universidad privada paraguaya esperado en 2-3 meses. Tiene pareja e hija.\n\nOBJETIVO: Migrar a Alemania en 12-15 meses. Quiere empezar con el idioma de inmediato y avanzar con homologacion cuando tenga el titulo. Nivel de aleman: no consta. Horas/semana disponibles: no consta.\n\nDOLORES: Salario medico en Paraguay de aprox. 800 USD. Familia con escasos recursos. Quiere darle mejor vida a su hija y apoyar a su familia. Siente que en Paraguay los medicos estan poco valorados y mal pagados.\n\nINVERSION: Sin liquidez inmediata. Planea solicitar un prestamo en su ciudad. Estima tener el dinero en 4-6 meses. El setter ya le informo de precios: 3.500 euros (solo idioma, 6 meses 1-a-1 + 1 ano grupal) y 5.000 euros (programa integral). Lead dijo que si puede financiar pero necesita tiempo.\n\nRUTA: Perfil LATAM (Paraguay), titulo no UE. Proceso de homologacion largo (Berufserlaubnis + Approbation). Primera fase: idioma (puede empezar ya). Segunda fase: homologacion cuando tenga titulo. Tiempos realistas de llegada a Alemania: 18-24 meses desde hoy.\n\nOBJECIONES: No tiene dinero ahora (prestamo en 4-6 meses); titulo aun no en mano; pareja no cualificada como decisor; setter ya quemo precios en triaje.\n\nRECOMENDACION: Validar si la pareja esta alineada y si el prestamo es viable antes de la llamada de closing. No presionar en precio (ya lo conoce); centrar el closing en la urge",
+   "restri_ia": "PERFIL:\nPaola es estudiante de medicina en Paraguay, en fase de internado. Titulo esperado en 2-3 meses. Tiene pareja e hija. Perfil LATAM, lo que implica homologacion larga. Entro por charla en su facultad con la doctora Nathalie.\n\nMOTIVACION:\nMotivacion genuina y emocional muy alta: quiere salir de la pobreza, darle mejor vida a su hija y crecer profesionalmente. Desde el decimo semestre ya tenia clara la meta de Alemania. Decision tomada, no es solo evaluacion.\n\nOBJECIONES:\n- Sin dinero ahora, depende de un prestamo que puede tardar 4-6 meses\n- Titulo aun no obtenido\n- Pareja no mencionada como coparticipe de la decision\n- El setter ya dio precios en el triaje, lo que puede complicar el closing\n\nCALIDAD DE LA LLAMADA DE TRIAJE:\nEl setter mezclo roles: dio precios detallados (3.500 y 5.000 euros), hablo extensamente de su historia personal (Dubai, infancia) y no cerro con un paso claro hacia closing. Reagendo en 4-6 meses, lo que es demasiado tiempo sin seguimiento activo. Se confirma que la llamada de triaje funciono mas como primera llamada de venta que como cualificacion.",
    "ult": "2026-08-29",
    "ultdir": "outbound",
    "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
@@ -30813,7 +30951,7 @@
    "d0": "2026-08-28",
    "restri": "",
    "stri": null,
-   "ss": 38,
+   "ss": 22,
    "setter": "Sary",
    "triager": "",
    "prof": "soy medica interna",
@@ -30887,7 +31025,7 @@
    "d0": "2025-01-04",
    "restri": "Cualifica",
    "stri": null,
-   "ss": 70,
+   "ss": 72,
    "setter": "Sara",
    "triager": "",
    "prof": "Ingeniero en Mecatrónica ",
@@ -30924,7 +31062,7 @@
    "d0": "2026-08-28",
    "restri": "",
    "stri": null,
-   "ss": 20,
+   "ss": 50,
    "setter": "",
    "triager": "",
    "prof": "Medicina ",
@@ -30961,7 +31099,7 @@
    "d0": "2026-08-28",
    "restri": "",
    "stri": null,
-   "ss": 22,
+   "ss": 50,
    "setter": "",
    "triager": "",
    "prof": "MEdicina",
@@ -30998,7 +31136,7 @@
    "d0": "2026-08-28",
    "restri": "",
    "stri": null,
-   "ss": 22,
+   "ss": 18,
    "setter": "",
    "triager": "",
    "prof": "Médico interno ",
@@ -31146,7 +31284,7 @@
    "d0": "2025-04-24",
    "restri": "",
    "stri": null,
-   "ss": 30,
+   "ss": 18,
    "setter": "",
    "triager": "",
    "prof": "Enfermera ",
@@ -31646,7 +31784,7 @@
    "restri_ia": "NO HAY GRABACION",
    "ult": "2026-08-31",
    "ultdir": "inbound",
-   "ulttxt": "Un saludo",
+   "ulttxt": "mensaje,\n\n¡Hola! Muchas gracias por contactar conmigo. En este momento, estoy fuera del horario de consulta, pero te responderé tan pronto como me sea posible. Si necesitas información sobre la consulta, o quieres reserv",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": true
   },
@@ -40466,7 +40604,7 @@
    "cta": "",
    "asistio": false,
    "fclo": "",
-   "fuente": "",
+   "fuente": "Outbound",
    "d0": "2026-05-01",
    "restri": "",
    "stri": null,
@@ -41317,7 +41455,7 @@
    "cta": "",
    "asistio": false,
    "fclo": "",
-   "fuente": "",
+   "fuente": "Outbound",
    "d0": "2026-04-06",
    "restri": "",
    "stri": null,
@@ -44495,9 +44633,9 @@
    "stri": null,
    "sc": null,
    "ult": "2026-08-31",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Fonseca!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en ...",
-   "ulttipo": "TYPE_EMAIL",
+   "ultdir": "inbound",
+   "ulttxt": "No tengo auriculares",
+   "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/A6VupS54eB6O7Zj3IeGD"
   },
   {
@@ -44507,7 +44645,7 @@
    "desde": "2026-08-31",
    "fuente": "",
    "prox": "2026-08-31",
-   "wsp": "",
+   "wsp": "2026-08-31",
    "setter": "Sary",
    "cta": "",
    "prof": "Enfermera ",
@@ -44525,9 +44663,9 @@
    "stri": null,
    "sc": null,
    "ult": "2026-08-31",
-   "ultdir": "outbound",
-   "ulttxt": "Hola Julian buen día, pudiste agendar?",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ultdir": "inbound",
+   "ulttxt": "A las 11",
+   "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/HFX6PJ4ueocC7IdYBdpd"
   },
   {
@@ -44555,15 +44693,15 @@
    "stri": null,
    "sc": null,
    "ult": "2026-08-31",
-   "ultdir": "inbound",
-   "ulttxt": "Pk",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ultdir": "outbound",
+   "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
+   "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/d3JyZNhrAMSn9AinGrIn"
   },
   {
    "cid": "13JLuSYv8J6Qr4rTvqf3",
    "nombre": "Willians Colina",
-   "etapa": "🔹 Tri. Saludo Enviado",
+   "etapa": "🔷 Triage Seguimiento",
    "desde": "2026-08-31",
    "fuente": "Outbound",
    "prox": "2026-09-01",
@@ -44586,8 +44724,8 @@
    "sc": null,
    "ult": "2026-08-31",
    "ultdir": "inbound",
-   "ulttxt": "Hoy a las 4:30",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ulttxt": "",
+   "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/13JLuSYv8J6Qr4rTvqf3"
   },
   {
@@ -44625,7 +44763,7 @@
    "nombre": "VITORIA ORTIZ BERNARDES",
    "etapa": "🔶 Seguimiento Futuro",
    "desde": "2026-08-29",
-   "fuente": "",
+   "fuente": "Inbound",
    "prox": "",
    "wsp": "2026-08-29",
    "setter": "",
@@ -44671,8 +44809,8 @@
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "urg": "",
    "nivel": "🔹 No tengo conocimientos",
-   "ss": 15,
-   "stri": 42,
+   "ss": 52,
+   "stri": 45,
    "sc": null,
    "ult": "2026-08-29",
    "ultdir": "outbound",
@@ -44701,7 +44839,7 @@
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "urg": "",
    "nivel": "🔹 No tengo conocimientos",
-   "ss": 38,
+   "ss": 22,
    "stri": null,
    "sc": null,
    "ult": "2026-08-29",
@@ -44761,7 +44899,7 @@
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "urg": "",
    "nivel": "🔹 B1",
-   "ss": 70,
+   "ss": 72,
    "stri": null,
    "sc": 42,
    "ult": "2026-08-28",
@@ -45186,7 +45324,7 @@
    "sc": null,
    "ult": "2026-08-31",
    "ultdir": "inbound",
-   "ulttxt": "Un saludo",
+   "ulttxt": "mensaje,\n\n¡Hola! Muchas gracias por contactar conmigo. En este momento, estoy fuera del horario de consulta, pero te responderé tan pronto como me sea posible. Si necesitas información sobre la consulta, o quieres reserv",
    "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/n2NcqBPVozQmhmGqOCfe"
   },
@@ -47505,7 +47643,7 @@
    "nombre": "Richard",
    "etapa": "🔶 Seguimiento Caliente",
    "desde": "2026-04-21",
-   "fuente": "",
+   "fuente": "Outbound",
    "prox": "",
    "wsp": "",
    "setter": "",
@@ -48238,36 +48376,6 @@
   },
   {
    "dia": "2026-08-24",
-   "s": "",
-   "h": [
-    27,
-    12,
-    7,
-    0,
-    0,
-    9,
-    0,
-    0,
-    0,
-    46,
-    62,
-    5,
-    2,
-    33,
-    59,
-    2,
-    0,
-    4,
-    21,
-    10,
-    4,
-    28,
-    42,
-    26
-   ]
-  },
-  {
-   "dia": "2026-08-24",
    "s": "Sary",
    "h": [
     2,
@@ -48280,7 +48388,7 @@
     0,
     0,
     7,
-    21,
+    22,
     0,
     2,
     2,
@@ -48294,6 +48402,36 @@
     2,
     3,
     28
+   ]
+  },
+  {
+   "dia": "2026-08-24",
+   "s": "",
+   "h": [
+    27,
+    12,
+    7,
+    0,
+    0,
+    9,
+    0,
+    0,
+    0,
+    46,
+    61,
+    5,
+    2,
+    33,
+    59,
+    2,
+    0,
+    4,
+    21,
+    10,
+    4,
+    28,
+    42,
+    26
    ]
   },
   {
@@ -48391,7 +48529,7 @@
    "s": "",
    "h": [
     0,
-    17,
+    16,
     13,
     5,
     4,
@@ -48451,7 +48589,7 @@
    "s": "Sara",
    "h": [
     0,
-    0,
+    1,
     0,
     0,
     0,
@@ -58108,36 +58246,6 @@
   },
   {
    "dia": "2026-08-19",
-   "s": "",
-   "h": [
-    3,
-    21,
-    8,
-    1,
-    5,
-    3,
-    8,
-    1,
-    1,
-    0,
-    34,
-    45,
-    15,
-    20,
-    32,
-    37,
-    44,
-    14,
-    17,
-    16,
-    48,
-    31,
-    0,
-    3
-   ]
-  },
-  {
-   "dia": "2026-08-19",
    "s": "Sary",
    "h": [
     0,
@@ -58164,6 +58272,36 @@
     0,
     0,
     2
+   ]
+  },
+  {
+   "dia": "2026-08-19",
+   "s": "",
+   "h": [
+    3,
+    21,
+    8,
+    1,
+    5,
+    3,
+    8,
+    1,
+    1,
+    0,
+    34,
+    45,
+    15,
+    20,
+    32,
+    37,
+    44,
+    14,
+    17,
+    16,
+    48,
+    31,
+    0,
+    3
    ]
   },
   {
@@ -63220,7 +63358,7 @@
     0,
     1,
     1,
-    28,
+    27,
     2,
     1,
     17,
@@ -63231,7 +63369,7 @@
     26,
     38,
     38,
-    34,
+    33,
     11,
     3
    ]
@@ -63250,7 +63388,7 @@
     0,
     0,
     0,
-    5,
+    6,
     0,
     0,
     0,
@@ -63291,7 +63429,7 @@
     13,
     3,
     1,
-    1,
+    2,
     0,
     0
    ]
@@ -63339,7 +63477,7 @@
     0,
     7,
     1,
-    12,
+    9,
     3,
     0,
     61,
@@ -63429,7 +63567,7 @@
     0,
     0,
     0,
-    2,
+    5,
     0,
     0,
     1,
@@ -63460,20 +63598,50 @@
     2,
     6,
     10,
-    52,
-    66,
+    51,
+    64,
     2,
     13,
-    39,
+    36,
     8,
     5,
-    68,
-    29,
+    54,
+    22,
     26,
     23,
     0,
-    16,
+    15,
     3
+   ]
+  },
+  {
+   "dia": "2026-08-28",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ]
   },
   {
@@ -63490,19 +63658,19 @@
     0,
     0,
     0,
+    4,
     3,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    6,
-    2,
-    0,
     0,
     0,
     3,
+    0,
+    0,
+    14,
+    7,
+    0,
+    0,
+    0,
+    4,
     1
    ]
   },
@@ -63527,38 +63695,8 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-28",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
+    4,
+    2,
     0,
     0,
     0,
@@ -63570,7 +63708,7 @@
    "dia": "2026-08-29",
    "s": "",
    "h": [
-    41,
+    39,
     9,
     0,
     0,
@@ -63578,22 +63716,52 @@
     0,
     0,
     0,
-    6,
+    4,
     0,
     0,
-    22,
+    17,
     1,
-    13,
+    12,
     30,
     9,
     15,
-    11,
+    12,
     0,
     0,
     12,
     12,
     40,
     4
+   ]
+  },
+  {
+   "dia": "2026-08-29",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ]
   },
   {
@@ -63628,16 +63796,8 @@
   },
   {
    "dia": "2026-08-29",
-   "s": "Sara",
+   "s": "Sary",
    "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     2,
     0,
     0,
@@ -63646,12 +63806,50 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-30",
+   "s": "Sary",
+   "h": [
     1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    11,
+    4,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
     1,
-    0,
-    0,
-    0,
-    0,
     0,
     0
    ]
@@ -63669,8 +63867,8 @@
     0,
     0,
     0,
-    54,
-    29,
+    53,
+    28,
     0,
     2,
     0,
@@ -63680,10 +63878,40 @@
     0,
     0,
     22,
-    136,
+    134,
     36,
     4,
     3
+   ]
+  },
+  {
+   "dia": "2026-08-30",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    4,
+    1,
+    27,
+    1,
+    0
    ]
   },
   {
@@ -63710,69 +63938,39 @@
     0,
     0,
     1,
-    3,
+    5,
     0,
     0,
     1
    ]
   },
   {
-   "dia": "2026-08-30",
+   "dia": "2026-08-31",
    "s": "Sary",
    "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     1,
     0,
     0,
     0,
     0,
+    1,
     0,
     0,
     0,
-    0,
-    11,
-    3,
     0,
     5,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    4,
-    1,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-30",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
     1,
     0,
     0,
-    4,
-    1,
-    27,
-    1,
     0
    ]
   },
@@ -63782,8 +63980,8 @@
    "h": [
     1,
     0,
-    15,
-    3,
+    14,
+    2,
     0,
     0,
     0,
@@ -63793,14 +63991,14 @@
     16,
     0,
     3,
-    7,
     6,
-    14,
-    0,
-    0,
-    0,
-    0,
-    0,
+    4,
+    38,
+    7,
+    17,
+    23,
+    17,
+    8,
     0,
     0,
     0
@@ -63823,14 +64021,14 @@
     0,
     1,
     0,
-    0,
+    1,
     0,
     1,
     0,
+    1,
+    4,
     0,
-    0,
-    0,
-    0,
+    1,
     0,
     0,
     0
@@ -63838,17 +64036,11 @@
   },
   {
    "dia": "2026-08-31",
-   "s": "Sary",
+   "s": "Jesmary",
    "h": [
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    1,
     1,
     0,
     0,
@@ -63859,6 +64051,12 @@
     0,
     0,
     0,
+    0,
+    1,
+    5,
+    0,
+    0,
+    1,
     0,
     0,
     0,
@@ -64074,7 +64272,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sara",
    "d0": "2026-06-11",
    "dp": ""
   },
@@ -65069,9 +65267,9 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sary",
    "d0": "2026-08-24",
-   "dp": ""
+   "dp": "2026-08-31"
   },
   {
    "s": "",
@@ -75009,7 +75207,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sara",
    "d0": "2026-08-08",
    "dp": ""
   },
@@ -129794,7 +129992,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sara",
    "d0": "2026-08-26",
    "dp": ""
   },
@@ -130754,7 +130952,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sary",
    "d0": "2026-08-28",
    "dp": ""
   },
@@ -130779,7 +130977,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sary",
    "d0": "2026-08-28",
    "dp": ""
   },
@@ -131039,7 +131237,97 @@
    "dp": ""
   },
   {
+   "s": "Sary",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
    "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "Sary",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "Sary",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "Jesmary",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-28",
+   "dp": ""
+  },
+  {
+   "s": "Sara",
    "d0": "2026-08-28",
    "dp": ""
   },
@@ -131184,97 +131472,7 @@
    "dp": ""
   },
   {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
-   "d0": "2026-08-28",
-   "dp": ""
-  },
-  {
-   "s": "",
+   "s": "Sary",
    "d0": "2026-08-28",
    "dp": ""
   },
@@ -131594,7 +131792,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sara",
    "d0": "2026-08-29",
    "dp": ""
   },
@@ -132594,6 +132792,186 @@
    "dp": ""
   },
   {
+   "s": "Sara",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "Jesmary",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "Jesmary",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "Sara",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "Jesmary",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
    "s": "",
    "d0": "2026-08-31",
    "dp": ""
@@ -132814,12 +133192,7 @@
    "dp": ""
   },
   {
-   "s": "",
-   "d0": "2026-08-31",
-   "dp": ""
-  },
-  {
-   "s": "",
+   "s": "Jesmary",
    "d0": "2026-08-31",
    "dp": ""
   }
