@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-31 01:38",
+ "generado": "2026-08-31 07:19",
  "rango": "2026-02-01 a 2026-08-31",
  "setting": [
   {
@@ -2958,11 +2958,11 @@
   },
   {
    "dia": "2026-08-31",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 5,
-   "fups": 1,
+   "inb": 2,
+   "out": 8,
+   "nuevas": 10,
+   "total": 26,
+   "fups": 5,
    "prop": 0,
    "link": 0,
    "badlink": 0,
@@ -8037,11 +8037,11 @@
    "estado": "",
    "ss": 70,
    "stri": null,
-   "sclo": null,
+   "sclo": 42,
    "ticket": "",
    "pagado": "",
    "objtri": "",
-   "objclo": "",
+   "objclo": "Escepticismo sobre velocidad de aprendizaje (B2 en seis meses le parece ambicioso); falta de tiempo disponible para estudiar (trabaja mucho y prepara papeles en paralelo); expectativa desalineada latente (busca asesoria de homologacion y maestria, la llamada pivoto hacia mentoria de idioma); precio no llegó a presentarse según transcripcion disponible.",
    "infocloser": "",
    "cta": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/GHJzMRAsCPGwOiUIFAYH"
@@ -17026,7 +17026,7 @@
    "asistio": true,
    "fuente": "",
    "resclo": "",
-   "sc": null,
+   "sc": 42,
    "cash": "",
    "ticket": "",
    "pagado": "",
@@ -17034,8 +17034,8 @@
    "closer": "Natalie",
    "prof": "Ingeniero en Mecatrónica ",
    "estadoclo": "",
-   "motivo": "",
-   "objclo": "",
+   "motivo": "Otro",
+   "objclo": "Escepticismo sobre velocidad de aprendizaje (B2 en seis meses le parece ambicioso); falta de tiempo disponible para estudiar (trabaja mucho y prepara papeles en paralelo); expectativa desalineada latente (busca asesoria de homologacion y maestria, la llamada pivoto hacia mentoria de idioma); precio no llegó a presentarse según transcripcion disponible.",
    "etapa": "🔸Closing Agendado",
    "tel": "+525527450614",
    "email": "daniel203ccm@gmail.com",
@@ -44682,7 +44682,7 @@
    "resclo": "",
    "ticket": "",
    "pagado": "",
-   "motivo": "",
+   "motivo": "Otro",
    "tel": "+525527450614",
    "email": "daniel203ccm@gmail.com",
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
@@ -44690,7 +44690,7 @@
    "nivel": "🔹 B1",
    "ss": 70,
    "stri": null,
-   "sc": null,
+   "sc": 42,
    "ult": "2026-08-28",
    "ultdir": "outbound",
    "ulttxt": "Hola Daniel Aranda,\n\nTe dejo aquí los detalles de la reunión.\nDaniel Aranda - Reunión de Planificación Estratégica\n\n\nFehca y Hora: domingo, 30 de a...",
@@ -63799,8 +63799,8 @@
    "h": [
     1,
     0,
-    0,
-    0,
+    15,
+    3,
     0,
     0,
     0,
@@ -132548,6 +132548,56 @@
   {
    "s": "",
    "d0": "2026-08-30",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-08-31",
    "dp": ""
   }
  ]
