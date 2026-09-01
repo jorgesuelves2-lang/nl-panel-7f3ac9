@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-01 06:49",
+ "generado": "2026-09-01 12:48",
  "rango": "2026-02-01 a 2026-09-01",
  "setting": [
   {
@@ -2972,16 +2972,16 @@
   },
   {
    "dia": "2026-09-01",
-   "inb": 0,
+   "inb": 1,
    "out": 1,
-   "nuevas": 1,
-   "total": 27,
-   "fups": 9,
+   "nuevas": 2,
+   "total": 40,
+   "fups": 29,
    "prop": 0,
    "link": 0,
    "badlink": 0,
    "agendas": 2,
-   "resp_min": null,
+   "resp_min": 3,
    "nodata": false
   }
  ],
@@ -11786,7 +11786,7 @@
   },
   {
    "nombre": "Laura Franciely Vargas",
-   "setter": "",
+   "setter": "Sary",
    "origen": "propio",
    "prof": "Estudiante ",
    "nivel": "🔹 No tengo conocimientos",
@@ -15242,7 +15242,7 @@
   },
   {
    "nombre": "Richard",
-   "setter": "",
+   "setter": "Sara",
    "origen": "propio",
    "prof": "Administrativo ",
    "nivel": "🔹 No tengo conocimientos",
@@ -15370,7 +15370,7 @@
   },
   {
    "nombre": "Rodrigo Howell Gutierrez ormachea",
-   "setter": "",
+   "setter": "Sara",
    "origen": "propio",
    "prof": "Medico general ",
    "nivel": "🔹 B1",
@@ -27121,9 +27121,26 @@
    "in": 1788160097,
    "rep": 1788168051,
    "s": "Sara"
+  },
+  {
+   "dia": "2026-09-01",
+   "in": 1788264322,
+   "rep": 1788264522,
+   "s": ""
   }
  ],
  "kpis": [
+  {
+   "dia": "2026-08-31",
+   "setter": "Sary",
+   "fu": 79,
+   "inb": 0,
+   "out": 56,
+   "prop": 2,
+   "book": 2,
+   "wel": 2,
+   "notas": "Ob frío a Angie Bru y Mariana "
+  },
   {
    "dia": "2026-08-31",
    "setter": "Jesmary",
@@ -27133,17 +27150,6 @@
    "prop": 0,
    "book": 0,
    "wel": 1,
-   "notas": ""
-  },
-  {
-   "dia": "2026-08-31",
-   "setter": "Sary",
-   "fu": 22,
-   "inb": 0,
-   "out": 25,
-   "prop": 2,
-   "book": 3,
-   "wel": 0,
    "notas": ""
   },
   {
@@ -30729,7 +30735,7 @@
    "restri": "",
    "stri": null,
    "ss": 45,
-   "setter": "",
+   "setter": "Sary",
    "triager": "",
    "prof": "Estudiante ",
    "motivo": "",
@@ -30811,7 +30817,7 @@
    "etapa": "🔴🔸Clos. No cualifica/Descartado",
    "tel": "+5548996496056",
    "email": "lorenafloripa@hotmail.com",
-   "wsp": "2026-08-30",
+   "wsp": "2026-09-01",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/n2wtBDs7owsUWrqJcALD",
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "300€ - 600€",
@@ -30819,9 +30825,9 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-08-30",
+   "ult": "2026-09-01",
    "ultdir": "inbound",
-   "ulttxt": "Si, puede ser",
+   "ulttxt": "Confirmado nuestra reunión hoy?",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
@@ -38203,7 +38209,7 @@
    "restri": "",
    "stri": null,
    "ss": null,
-   "setter": "",
+   "setter": "Sara",
    "triager": "",
    "prof": "Medico general ",
    "motivo": "",
@@ -41533,7 +41539,7 @@
    "restri": "",
    "stri": null,
    "ss": null,
-   "setter": "",
+   "setter": "Sara",
    "triager": "",
    "prof": "Administrativo ",
    "motivo": "",
@@ -48569,36 +48575,6 @@
   },
   {
    "dia": "2026-08-25",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0,
-    0,
-    6,
-    10,
-    0,
-    0,
-    0,
-    0,
-    12,
-    0,
-    0,
-    21,
-    8,
-    17,
-    1,
-    0,
-    1
-   ]
-  },
-  {
-   "dia": "2026-08-25",
    "s": "",
    "h": [
     0,
@@ -48625,6 +48601,36 @@
     70,
     1,
     14
+   ]
+  },
+  {
+   "dia": "2026-08-25",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    6,
+    10,
+    0,
+    0,
+    0,
+    0,
+    12,
+    0,
+    0,
+    21,
+    8,
+    17,
+    1,
+    0,
+    1
    ]
   },
   {
@@ -48689,36 +48695,6 @@
   },
   {
    "dia": "2026-08-23",
-   "s": "",
-   "h": [
-    0,
-    9,
-    5,
-    0,
-    0,
-    0,
-    0,
-    6,
-    2,
-    19,
-    81,
-    4,
-    7,
-    3,
-    11,
-    2,
-    0,
-    0,
-    16,
-    38,
-    38,
-    7,
-    8,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-23",
    "s": "Sary",
    "h": [
     0,
@@ -48745,6 +48721,36 @@
     0,
     0,
     1
+   ]
+  },
+  {
+   "dia": "2026-08-23",
+   "s": "",
+   "h": [
+    0,
+    9,
+    5,
+    0,
+    0,
+    0,
+    0,
+    6,
+    2,
+    19,
+    81,
+    4,
+    7,
+    3,
+    11,
+    2,
+    0,
+    0,
+    16,
+    38,
+    38,
+    7,
+    8,
+    0
    ]
   },
   {
@@ -63659,36 +63665,6 @@
   },
   {
    "dia": "2026-08-28",
-   "s": "Sary",
-   "h": [
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    4,
-    3,
-    0,
-    0,
-    3,
-    0,
-    0,
-    14,
-    7,
-    0,
-    0,
-    0,
-    4,
-    1
-   ]
-  },
-  {
-   "dia": "2026-08-28",
    "s": "",
    "h": [
     0,
@@ -63715,6 +63691,36 @@
     0,
     15,
     3
+   ]
+  },
+  {
+   "dia": "2026-08-28",
+   "s": "Sary",
+   "h": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    3,
+    0,
+    0,
+    3,
+    0,
+    0,
+    14,
+    7,
+    0,
+    0,
+    0,
+    4,
+    1
    ]
   },
   {
@@ -63899,6 +63905,36 @@
   },
   {
    "dia": "2026-08-30",
+   "s": "Sary",
+   "h": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    11,
+    4,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-30",
    "s": "",
    "h": [
     3,
@@ -63954,36 +63990,6 @@
     1,
     27,
     1,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-30",
-   "s": "Sary",
-   "h": [
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    11,
-    4,
-    0,
-    5,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    4,
-    1,
-    0,
     0
    ]
   },
@@ -64148,12 +64154,12 @@
     0,
     2,
     0,
+    17,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
+    16,
+    4,
+    5,
     0,
     0,
     0,
@@ -64181,7 +64187,37 @@
     0,
     0,
     0,
+    2,
     0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-01",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
     0,
     0,
     0,
@@ -133497,6 +133533,11 @@
   {
    "s": "",
    "d0": "2026-08-31",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-01",
    "dp": ""
   },
   {
