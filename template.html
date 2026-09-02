@@ -1098,8 +1098,14 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    if(/faltan pagos/i.test(et)) A.push({t:'Cobrar la cuota pendiente'+(pend>0&&!window.TEAM?' ('+Math.round(pend)+' €)':''),u:1,d:'El lead compró y tiene pagos pendientes. Revisar cuotas y fechas de vencimiento.'});
    if(/agendado|confirmado/i.test(et)){
      var _re=/re-?agend/i.test(et);
-     if(r.prox) A.push({t:'Cita el '+r.prox.slice(8,10)+'/'+r.prox.slice(5,7),u:3,d:_re?'El triaje se reagendó a esta nueva fecha. Confirmar asistencia el día antes.':'Tiene la llamada agendada. Confirmar asistencia el día antes.'});
-     else A.push({t:'Sin cita futura a la vista',u:1,d:_re?'La tarjeta está en Triage RE-agendado pero no hay cita futura en el calendario: el reagendamiento no llegó a cerrarse. Proponer nueva fecha ya.':'La etapa dice agendado/confirmado pero no hay ninguna cita futura en el calendario. Reagendar o mover de etapa.'});
+     // 31-ago-2026: ya hay DOS columnas de reagenda (Triage RE-agendado y Closing RE-agendado),
+     // asi que el aviso dice de que llamada habla en vez de asumir siempre triaje.
+     var _tipoLlam=/clos/i.test(et)?'closing':'triaje';
+     if(r.prox) A.push({t:'Cita el '+r.prox.slice(8,10)+'/'+r.prox.slice(5,7),u:3,
+        d:_re?('El '+_tipoLlam+' se reagendó a esta nueva fecha. Confirmar asistencia el día antes.'):'Tiene la llamada agendada. Confirmar asistencia el día antes.'});
+     else A.push({t:'Sin cita futura a la vista',u:1,
+        d:_re?('La tarjeta está en '+(_tipoLlam==='closing'?'Closing RE-agendado':'Triage RE-agendado')+' pero no hay cita futura en el calendario: el reagendamiento no llegó a cerrarse. Proponer nueva fecha ya.')
+             :'La etapa dice agendado/confirmado pero no hay ninguna cita futura en el calendario. Reagendar o mover de etapa.'});
    }
    if(o.turno==='NOSOTROS' && d!=null && d>=1) A.push({t:'Responder al lead',u:1,d:'Escribió hace '+d+' día'+(d===1?'':'s')+' y sigue sin respuesta nuestra.'});
    else if(/seguimiento/i.test(et) && o.turno!=='NOSOTROS' && (d==null||d>=3)) A.push({t:'Retomar el contacto',u:1,d:(d==null?'No consta conversación en el CRM':'Llevamos '+d+' días sin escribirle')+'. Un seguimiento sin contacto es un lead que se enfría.'});
