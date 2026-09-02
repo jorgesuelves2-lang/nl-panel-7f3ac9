@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-02 11:45",
+ "generado": "2026-09-02 16:54",
  "rango": "2026-02-01 a 2026-09-02",
  "setting": [
   {
@@ -2987,11 +2987,11 @@
   {
    "dia": "2026-09-02",
    "inb": 1,
-   "out": 69,
-   "nuevas": 70,
-   "total": 137,
-   "fups": 81,
-   "prop": 2,
+   "out": 89,
+   "nuevas": 90,
+   "total": 165,
+   "fups": 93,
+   "prop": 3,
    "link": 2,
    "badlink": 0,
    "agendas": 2,
@@ -27232,6 +27232,17 @@
  ],
  "kpis": [
   {
+   "dia": "2026-09-01",
+   "setter": "Sary",
+   "fu": 102,
+   "inb": 0,
+   "out": 57,
+   "prop": 2,
+   "book": 0,
+   "wel": 0,
+   "notas": "Angie Bru \nRecontacto, Closing, no, Show"
+  },
+  {
    "dia": "2026-08-31",
    "setter": "Sary",
    "fu": 79,
@@ -30624,7 +30635,7 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Sary": true,
     "Sara": false,
     "Jesmary": false
    }
@@ -30680,10 +30691,10 @@
    "urg": "",
    "infotri": "PERFIL: Monica Jimenez, pais actual Espana (8 meses), origen Venezuela. Medica radiologo con titulo venezolano. Contrato indefinido con empresa Afidea haciendo ecografias. Esposo comerciante, no medico, co-decisor.\n\nOBJETIVO: Llegar a Alemania para ejercer radiologia o hacer residencia nueva (abierta a intervencionismo radiologico). Plazo estimado por ella: 1 a 1.5 anos. Nivel de aleman actual A1; habia llegado a A2 en el pasado.\n\nDOLORES: Alemania es su meta real desde hace anos, postergada por pandemia y circunstancias. En Espana solo hace ecografias y tendria que rehacer el MIR para ejercer plena. Siente que su formacion no esta siendo valorada.\n\nINVERSION: Prefiere cuotas de ~300 EUR/mes (12 cuotas, paquete idioma 3.500). Reconoce que es una inversion fuerte en este momento; recien mudada, unica ingreso del hogar. Necesita alinear con esposo antes de confirmar. Ha comparado con Angie (~15.000) y Mariana (precio tambien alto); ve la propuesta de NatschoLibre como competitiva y accesible en cuotas.\n\nRUTA: Titulo LATAM (Venezuela), por lo que requiere proceso de homologacion. Abierta a hacer residencia desde cero en Alemania. Plazo realista: 12-18 meses para llegar, comenzando por idioma.\n\nOBJECIONES: (1) Necesita hablar con esposo antes de decidir (co-decisor economico). (2) Momento economico ajustado por reciente mudanza. (3) Esposo tenia dudas iniciales sobre el idioma (hoy mas alineado). (4) Inseguridad propia sobre el aprendizaje del aleman dado nivel A1.\n\nRECOMENDACION",
    "restri_ia": "PERFIL: Medica radiologo, venezolana, 8 meses en Espana, contrato indefinido con Afidea (ecografias). Titulo de Venezuela. Esposo comerciante, no medico, co-decisor economico.\n\nDINERO: Abierta a cuotas de ~300 EUR/mes (12 cuotas sobre 3.500). Reconoce que es una inversion fuerte porque recien se mudaron y ella es la unica que trabaja. No descarta, pero necesita alinear con el esposo. No hay ahorro declarado ni capacidad de pago unico.\n\nCOMPROMISO: Agendo segunda llamada para el miercoles 2. Entro en grupo de WhatsApp con Christian y Nati. Tono positivo y abierto durante toda la llamada. Menciono competidores (Angie, Mariana) de forma comparativa, lo que indica que ha investigado el mercado y ve la propuesta como competitiva en precio.\n\nOBJECIONES DETECTADAS: (1) Necesita hablar con el esposo antes de decidir. (2) Situacion economica ajustada por reciente mudanza. (3) Esposo era renuente al inicio por el tema del idioma (aunque ya esta de acuerdo en principio). (4) Nivel de aleman A1, lo que puede generar inseguridad sobre el plazo.\n\nCALIDAD DEL TRIAJE: Christian cualifica bien motivacion, plazo, perfil y situacion familiar. Explica el precio y las cuotas con claridad. Detecta y ges",
-   "ult": "2026-08-25",
+   "ult": "2026-09-02",
    "ultdir": "outbound",
-   "ulttxt": "Perfecto! Mi equipo está súper atento de ti. Quería pasar por acá para ver si tenias alguna duda adicional. 🙌🏼 Un abrazo. Nos vemos en Alemania muy pronto.",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ulttxt": "¡Hey Monica!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y...",
+   "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
   {
@@ -31449,7 +31460,7 @@
    "etapa": "🔴🔸Clos. No cualifica/Descartado",
    "tel": "+573103686425",
    "email": "thaliaregino123@hmail.com",
-   "wsp": "2026-08-26",
+   "wsp": "2026-09-02",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/NUo77MuCtbQu3eGTBGCs",
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "600€- 1.000€",
@@ -31457,9 +31468,9 @@
    "urg": "",
    "infotri": "PERFIL: Thalia Gissela Regino Ospina. Edad: no consta. Colombia, Monteria (costa colombiana). Medico general, titulo obtenido en Colombia, ejerce desde hace unos dos anos en consulta externa con fuerte carga administrativa; antes trabajo en urgencias y UCI. Perfil LATAM, medico general sin especialidad.\n\nOBJETIVO: hacer la residencia medica, especialidad quirurgica, Urologia, y de paso mejorar salario y calidad de vida. Quiere avanzar cuanto antes, sin fecha limite concreta; su alternativa activa es el MIR de Espania el ano que viene. Aleman: nivel cero funcional, solo vocabulario suelto de un libro de aleman medico. Horas semanales disponibles: no consta.\n\nDOLORES: no consigue entrar a la residencia en Colombia pese a haberse presentado varias veces; siente que esta lista para especializarse y no puede; el tramite por Argentina se eterniza; su trabajo actual es muy administrativo y no la hace crecer; dice que seguir igual en ano y medio la haria sentir \"super mal\".\n\nINVERSION: gana 6.500.000 pesos colombianos al mes, unos 2.000 dolares. Considera el programa de 3.500 euros caro y la cuota de unos 580 euros al mes inasumible, porque es casi la mitad de su sueldo sin contar gastos. Ahorro, apoyo familiar o plan de financiacion alternativo: no consta. Ya gasto dinero en asesorias previas sin resultado.\n\nRUTA: titulo LATAM, ruta larga: aleman medico de cero hasta B2 mas FSP antes de poder ejercer y entrar a la especialidad via hospital. Realista contar con al menos 6 meses de id",
    "restri_ia": "NOTA DE FUENTE: analisis hecho solo con la transcripcion de Fathom. La transcripcion tiene las etiquetas de hablante cruzadas en varios tramos (frases del closer aparecen bajo el nombre del lead y al reves), asi que se ha reconstruido por contenido; los datos citados son los que se dicen literalmente en la llamada.\n\nRESULTADO DE LA LLAMADA: no cierra. Al presentarle la inversion responde de forma directa que es \"bastante caro\" y, preguntada si es un proceso que se puede permitir ahora mismo, contesta que con ese valor no.\n\nLO QUE CONTA DE SU SITUACION: medico general de Monteria, costa colombiana. Termino el pregrado hace unos dos anos. Su objetivo no es emigrar sino conseguir la residencia medica: se ha presentado a la residencia en Colombia (menciona examenes que llama UDOM y UNAL) y no ha pasado. Ya tramito papeles para Argentina, \"se demora una eternidad\", y esta homologada en Espania, donde se ha postulado a ofertas y quiere presentarse al MIR el ano que viene. Trabaja en un solo sitio, en consulta externa con mucha carga administrativa; antes estuvo en urgencias y UCI ganando casi la mitad. Le interesa ademas la parte investigativa.\n\nMOTIVACION REAL: la residencia medica en p",
-   "ult": "2026-08-26",
+   "ult": "2026-09-02",
    "ultdir": "inbound",
-   "ulttxt": "Si ya tuve la llamada",
+   "ulttxt": "si",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
@@ -44165,7 +44176,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-02-16",
+   "d0": "2026-02-12",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -44185,10 +44196,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-19",
-   "ultdir": "outbound",
-   "ulttxt": "[https://storage.googleapis.com/revex-communities-production/DulDza0paBCXhgzFi9gG/groups/1234c305-fa3e-4c9e-a44e-0186f3f74fdc]\n\nALEMANIA PRO MEMBER...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -44202,7 +44213,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "Outbound",
-   "d0": "2026-02-14",
+   "d0": "2026-02-11",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -44222,10 +44233,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-19",
-   "ultdir": "outbound",
-   "ulttxt": "[https://storage.googleapis.com/revex-communities-production/DulDza0paBCXhgzFi9gG/groups/1234c305-fa3e-4c9e-a44e-0186f3f74fdc]\n\nALEMANIA PRO MEMBER...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -44878,10 +44889,10 @@
   {
    "cid": "MUBISpNWBMC3Vml8SGB8",
    "nombre": "Tatiana Orozco Orozco",
-   "etapa": "🔹 Triage Agendado",
+   "etapa": "🔹 Tri. Saludo Enviado",
    "desde": "2026-09-02",
    "fuente": "",
-   "prox": "2026-09-03",
+   "prox": "2026-10-06",
    "wsp": "",
    "setter": "",
    "cta": "",
@@ -44901,7 +44912,7 @@
    "sc": null,
    "ult": "2026-09-02",
    "ultdir": "outbound",
-   "ulttxt": "Estás en el lugar correcto.\n\nYa estás dentro, Tatiana.\n\nY de verdad, me alegra mucho tenerte aquí.\n\nEl alemán no es la parte más difícil de Alemani...",
+   "ulttxt": "¡Hola Tatiana!\n\n\n\nEsta es tu confirmación para la cita que has agendado con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Sa...",
    "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/MUBISpNWBMC3Vml8SGB8"
   },
@@ -45259,9 +45270,9 @@
    "ss": 38,
    "stri": 42,
    "sc": null,
-   "ult": "2026-08-26",
+   "ult": "2026-09-02",
    "ultdir": "outbound",
-   "ulttxt": "¡Hola María!\n\n\n\nEsta es tu confirmación para la cita que has agendado con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Chri...",
+   "ulttxt": "¡Hola María!\n\n\n\nEsta es tu confirmación para la cita que has agendado con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Sara...",
    "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ZozZsUdaW8m163j4TEfE"
   },
@@ -45379,10 +45390,10 @@
    "ss": 72,
    "stri": 68,
    "sc": null,
-   "ult": "2026-08-25",
+   "ult": "2026-09-02",
    "ultdir": "outbound",
-   "ulttxt": "Perfecto! Mi equipo está súper atento de ti. Quería pasar por acá para ver si tenias alguna duda adicional. 🙌🏼 Un abrazo. Nos vemos en Alemania muy pronto.",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ulttxt": "¡Hey Monica!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y...",
+   "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/WhZJwMe36WH4w2iEO07t"
   },
   {
@@ -48674,6 +48685,66 @@
   },
   {
    "dia": "2026-08-24",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    3,
+    1,
+    5,
+    2,
+    0,
+    5,
+    0,
+    0,
+    4,
+    0,
+    2
+   ]
+  },
+  {
+   "dia": "2026-08-24",
+   "s": "Jesmary",
+   "h": [
+    5,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    6,
+    24,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-24",
    "s": "",
    "h": [
     27,
@@ -48733,10 +48804,15 @@
    ]
   },
   {
-   "dia": "2026-08-24",
+   "dia": "2026-08-25",
    "s": "Sara",
    "h": [
     0,
+    1,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -48745,30 +48821,22 @@
     0,
     0,
     0,
-    1,
-    1,
-    1,
-    1,
-    3,
-    1,
-    5,
-    2,
     0,
-    5,
+    1,
+    0,
+    8,
+    6,
+    1,
     0,
     0,
-    4,
     0,
-    2
+    0
    ]
   },
   {
-   "dia": "2026-08-24",
+   "dia": "2026-08-25",
    "s": "Jesmary",
    "h": [
-    5,
-    0,
-    3,
     0,
     0,
     0,
@@ -48776,18 +48844,21 @@
     0,
     0,
     0,
-    5,
     0,
-    6,
-    24,
+    0,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
     10,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    2,
+    3,
     0,
     0
    ]
@@ -48853,7 +48924,37 @@
    ]
   },
   {
-   "dia": "2026-08-25",
+   "dia": "2026-08-23",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    3,
+    1,
+    0,
+    0,
+    10,
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-23",
    "s": "Jesmary",
    "h": [
     0,
@@ -48865,47 +48966,17 @@
     0,
     0,
     0,
-    1,
-    2,
     0,
     0,
     0,
     0,
-    1,
-    1,
-    0,
-    1,
-    10,
-    2,
-    3,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-25",
-   "s": "Sara",
-   "h": [
-    0,
-    1,
+    11,
+    9,
     0,
     0,
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    8,
-    6,
-    1,
     0,
     0,
     0,
@@ -48970,66 +49041,6 @@
     0,
     0,
     1
-   ]
-  },
-  {
-   "dia": "2026-08-23",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    3,
-    1,
-    0,
-    0,
-    10,
-    11,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-23",
-   "s": "Jesmary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    11,
-    9,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
    ]
   },
   {
@@ -49154,6 +49165,36 @@
   },
   {
    "dia": "2026-08-22",
+   "s": "Jesmary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-22",
    "s": "",
    "h": [
     7,
@@ -49240,36 +49281,6 @@
     0,
     2,
     1
-   ]
-  },
-  {
-   "dia": "2026-08-22",
-   "s": "Jesmary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    2,
-    0,
-    0,
-    1,
-    0,
-    0,
-    2,
-    0,
-    1,
-    0,
-    0,
-    0
    ]
   },
   {
@@ -63644,36 +63655,6 @@
   },
   {
    "dia": "2026-08-26",
-   "s": "Sary",
-   "h": [
-    5,
-    4,
-    0,
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    0,
-    6,
-    0,
-    0,
-    0,
-    2,
-    5,
-    0,
-    0,
-    12,
-    14,
-    2,
-    0,
-    3,
-    1
-   ]
-  },
-  {
-   "dia": "2026-08-26",
    "s": "",
    "h": [
     7,
@@ -63700,6 +63681,36 @@
     32,
     11,
     3
+   ]
+  },
+  {
+   "dia": "2026-08-26",
+   "s": "Sary",
+   "h": [
+    5,
+    4,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0,
+    2,
+    5,
+    0,
+    0,
+    12,
+    14,
+    2,
+    0,
+    3,
+    1
    ]
   },
   {
@@ -64394,6 +64405,36 @@
   },
   {
    "dia": "2026-09-01",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    2,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-01",
    "s": "Sary",
    "h": [
     0,
@@ -64423,36 +64464,6 @@
    ]
   },
   {
-   "dia": "2026-09-01",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    2,
-    0,
-    0,
-    1,
-    2,
-    1,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
    "dia": "2026-09-02",
    "s": "",
    "h": [
@@ -64468,6 +64479,36 @@
     6,
     83,
     36,
+    1,
+    8,
+    7,
+    10,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-02",
+   "s": "Sara",
+   "h": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
     0,
     0,
     0,
@@ -64497,36 +64538,6 @@
     0,
     1,
     4,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-09-02",
-   "s": "Sara",
-   "h": [
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    1,
     0,
     0,
     0,
@@ -132807,7 +132818,7 @@
   {
    "s": "",
    "d0": "2026-08-30",
-   "dp": ""
+   "dp": "2026-09-02"
   },
   {
    "s": "",
@@ -134482,6 +134493,106 @@
   {
    "s": "",
    "d0": "2025-03-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
    "dp": ""
   },
   {
