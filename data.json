@@ -1,6 +1,6 @@
 {
- "generado": "2026-09-01 22:52",
- "rango": "2026-02-01 a 2026-09-01",
+ "generado": "2026-09-02 01:23",
+ "rango": "2026-02-01 a 2026-09-02",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -2975,13 +2975,27 @@
    "inb": 1,
    "out": 71,
    "nuevas": 72,
-   "total": 144,
-   "fups": 79,
+   "total": 147,
+   "fups": 91,
    "prop": 1,
    "link": 1,
    "badlink": 0,
    "agendas": 2,
    "resp_min": 3,
+   "nodata": false
+  },
+  {
+   "dia": "2026-09-02",
+   "inb": 0,
+   "out": 1,
+   "nuevas": 1,
+   "total": 27,
+   "fups": 29,
+   "prop": 2,
+   "link": 2,
+   "badlink": 0,
+   "agendas": 2,
+   "resp_min": null,
    "nodata": false
   }
  ],
@@ -5534,6 +5548,18 @@
    "dia": "2026-09-01",
    "agendados": 2,
    "showed": 0,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 2,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-09-02",
+   "agendados": 2,
+   "showed": 1,
    "noshow": 0,
    "noconfirma": 0,
    "cancelled": 0,
@@ -17495,7 +17521,7 @@
    "estadoclo": "",
    "motivo": "",
    "objclo": "",
-   "etapa": "🔴🔸Clos. No Show",
+   "etapa": "🔴🔹 Tri. No Cualifica",
    "tel": "+18092836038",
    "email": "afontinbrandy@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ZXmX8RV6QQa4EBAB6X5c",
@@ -21175,6 +21201,17 @@
   },
   {
    "dia": "2026-09-01",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
+  },
+  {
+   "dia": "2026-09-02",
    "agendados": 0,
    "showed": 0,
    "noshow": 0,
@@ -30591,6 +30628,19 @@
     "Sara": false,
     "Jesmary": false
    }
+  },
+  {
+   "dia": "2026-09-02",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Jesmary": false
+   }
   }
  ],
  "setters": [
@@ -30841,7 +30891,7 @@
    "prof": "Enfermera ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔹 Tri. Saludo Enviado",
+   "etapa": "🔴🔹 Tri. No Cualifica",
    "tel": "+573135754479",
    "email": "melissaro@unicauca.edu.co",
    "wsp": "2026-08-31",
@@ -30852,10 +30902,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-08-31",
+   "ult": "2026-09-01",
    "ultdir": "inbound",
-   "ulttxt": "A las 11",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ulttxt": "Muchas gracias",
+   "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
   {
@@ -31951,7 +32001,7 @@
    "prof": "Enfermera en hospital turístico, médico recién graduado. ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔴🔸Clos. No Show",
+   "etapa": "🔴🔹 Tri. No Cualifica",
    "tel": "+18092836038",
    "email": "afontinbrandy@gmail.com",
    "wsp": "2026-08-19",
@@ -40165,10 +40215,10 @@
    "prof": "Médica general ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔴🔸Clos. No Show",
+   "etapa": "🔴🔸Clos. No cualifica/Descartado",
    "tel": "+542616568443",
    "email": "pereiralalii.92@gmail.com",
-   "wsp": "",
+   "wsp": "2026-09-02",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Ty4Vy9yKkoYW44j5E3of",
    "presup": "",
    "ingresos": "600$ - 1.000$",
@@ -40176,10 +40226,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-05-15",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Melisa!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "2026-09-02",
+   "ultdir": "inbound",
+   "ulttxt": "",
+   "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
   {
@@ -43967,7 +44017,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "",
+   "d0": "2026-02-10",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -43976,10 +44026,10 @@
    "prof": "Médico ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔴🔸Clos. No Show",
+   "etapa": "🔴🔸Clos. No cualifica/Descartado",
    "tel": "+543875632594",
    "email": "carlita20vz@gmail.com",
-   "wsp": "",
+   "wsp": "2026-09-01",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Bwrw9FCcpUZBg3Jt9fnN",
    "presup": "",
    "ingresos": "",
@@ -43987,10 +44037,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "",
-   "ultdir": "",
-   "ulttxt": "",
-   "ulttipo": "",
+   "ult": "2026-09-01",
+   "ultdir": "inbound",
+   "ulttxt": "Sería el 16 ?",
+   "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
   {
@@ -44226,7 +44276,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "",
+   "d0": "2026-02-10",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -44235,10 +44285,10 @@
    "prof": "Médico ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔴🔸Clos. No Show",
+   "etapa": "🔴🔸Clos. No cualifica/Descartado",
    "tel": "+543875632594",
    "email": "carlita20vz@gmail.com",
-   "wsp": "",
+   "wsp": "2026-09-01",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/Bwrw9FCcpUZBg3Jt9fnN",
    "presup": "",
    "ingresos": "",
@@ -44246,10 +44296,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "",
-   "ultdir": "",
-   "ulttxt": "",
-   "ulttipo": "",
+   "ult": "2026-09-01",
+   "ultdir": "inbound",
+   "ulttxt": "Sería el 16 ?",
+   "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
   {
@@ -44856,36 +44906,6 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/A6VupS54eB6O7Zj3IeGD"
   },
   {
-   "cid": "HFX6PJ4ueocC7IdYBdpd",
-   "nombre": "Melissa Rodríguez Suárez",
-   "etapa": "🔹 Tri. Saludo Enviado",
-   "desde": "2026-08-31",
-   "fuente": "",
-   "prox": "",
-   "wsp": "2026-08-31",
-   "setter": "Sary",
-   "cta": "",
-   "prof": "Enfermera ",
-   "restri": "",
-   "resclo": "",
-   "ticket": "",
-   "pagado": "",
-   "motivo": "",
-   "tel": "+573135754479",
-   "email": "melissaro@unicauca.edu.co",
-   "presup": "Actualmente no tengo con recursos económicos para el proceso",
-   "urg": "",
-   "nivel": "🔹 No tengo conocimientos",
-   "ss": 18,
-   "stri": null,
-   "sc": null,
-   "ult": "2026-08-31",
-   "ultdir": "inbound",
-   "ulttxt": "A las 11",
-   "ulttipo": "TYPE_WHATSAPP",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/HFX6PJ4ueocC7IdYBdpd"
-  },
-  {
    "cid": "d3JyZNhrAMSn9AinGrIn",
    "nombre": "Andrea Martínez",
    "etapa": "🔹 Tri. Saludo Enviado",
@@ -44921,7 +44941,7 @@
    "etapa": "🔷 Triage Seguimiento",
    "desde": "2026-08-31",
    "fuente": "Outbound",
-   "prox": "2026-09-01",
+   "prox": "",
    "wsp": "2026-08-31",
    "setter": "Sary",
    "cta": "",
@@ -44951,7 +44971,7 @@
    "etapa": "🔹 Triage Confirmado",
    "desde": "2026-08-31",
    "fuente": "Otros",
-   "prox": "2026-09-01",
+   "prox": "",
    "wsp": "2026-08-31",
    "setter": "Sary",
    "cta": "",
@@ -48623,36 +48643,6 @@
   },
   {
    "dia": "2026-08-24",
-   "s": "Sary",
-   "h": [
-    2,
-    0,
-    1,
-    0,
-    0,
-    6,
-    0,
-    0,
-    0,
-    7,
-    22,
-    0,
-    2,
-    2,
-    0,
-    0,
-    0,
-    2,
-    0,
-    4,
-    3,
-    2,
-    3,
-    28
-   ]
-  },
-  {
-   "dia": "2026-08-24",
    "s": "",
    "h": [
     27,
@@ -48679,6 +48669,36 @@
     28,
     42,
     26
+   ]
+  },
+  {
+   "dia": "2026-08-24",
+   "s": "Sary",
+   "h": [
+    2,
+    0,
+    1,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0,
+    7,
+    22,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    4,
+    3,
+    2,
+    3,
+    28
    ]
   },
   {
@@ -48743,36 +48763,6 @@
   },
   {
    "dia": "2026-08-25",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0,
-    0,
-    6,
-    10,
-    0,
-    0,
-    0,
-    0,
-    12,
-    0,
-    0,
-    21,
-    8,
-    17,
-    1,
-    0,
-    1
-   ]
-  },
-  {
-   "dia": "2026-08-25",
    "s": "",
    "h": [
     0,
@@ -48799,6 +48789,36 @@
     70,
     1,
     14
+   ]
+  },
+  {
+   "dia": "2026-08-25",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    6,
+    10,
+    0,
+    0,
+    0,
+    0,
+    12,
+    0,
+    0,
+    21,
+    8,
+    17,
+    1,
+    0,
+    1
    ]
   },
   {
@@ -49103,36 +49123,6 @@
   },
   {
    "dia": "2026-08-22",
-   "s": "Sary",
-   "h": [
-    6,
-    5,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    3,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-22",
    "s": "",
    "h": [
     7,
@@ -49159,6 +49149,36 @@
     2,
     1,
     1
+   ]
+  },
+  {
+   "dia": "2026-08-22",
+   "s": "Sary",
+   "h": [
+    6,
+    5,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    3,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0
    ]
   },
   {
@@ -49223,36 +49243,6 @@
   },
   {
    "dia": "2026-08-21",
-   "s": "Sary",
-   "h": [
-    4,
-    1,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    14,
-    4,
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    4,
-    0,
-    0,
-    1,
-    0,
-    7
-   ]
-  },
-  {
-   "dia": "2026-08-21",
    "s": "",
    "h": [
     20,
@@ -49279,6 +49269,36 @@
     5,
     5,
     9
+   ]
+  },
+  {
+   "dia": "2026-08-21",
+   "s": "Sary",
+   "h": [
+    4,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    14,
+    4,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    1,
+    0,
+    7
    ]
   },
   {
@@ -63833,36 +63853,6 @@
   },
   {
    "dia": "2026-08-28",
-   "s": "Sary",
-   "h": [
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    3,
-    1,
-    0,
-    3,
-    0,
-    0,
-    14,
-    7,
-    0,
-    0,
-    0,
-    6,
-    1
-   ]
-  },
-  {
-   "dia": "2026-08-28",
    "s": "",
    "h": [
     0,
@@ -63889,6 +63879,36 @@
     0,
     13,
     3
+   ]
+  },
+  {
+   "dia": "2026-08-28",
+   "s": "Sary",
+   "h": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    3,
+    1,
+    0,
+    3,
+    0,
+    0,
+    14,
+    7,
+    0,
+    0,
+    0,
+    6,
+    1
    ]
   },
   {
@@ -64313,36 +64333,6 @@
   },
   {
    "dia": "2026-09-01",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    2,
-    0,
-    3,
-    7,
-    0,
-    2,
-    1,
-    1,
-    0,
-    0,
-    0,
-    2,
-    1,
-    0
-   ]
-  },
-  {
-   "dia": "2026-09-01",
    "s": "",
    "h": [
     6,
@@ -64368,7 +64358,7 @@
     6,
     15,
     1,
-    0
+    15
    ]
   },
   {
@@ -64394,6 +64384,126 @@
     0,
     1,
     1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-01",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    3,
+    7,
+    0,
+    2,
+    1,
+    1,
+    0,
+    0,
+    0,
+    2,
+    1,
+    7
+   ]
+  },
+  {
+   "dia": "2026-09-02",
+   "s": "",
+   "h": [
+    49,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-02",
+   "s": "Sara",
+   "h": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-02",
+   "s": "Sary",
+   "h": [
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -133296,7 +133406,7 @@
   {
    "s": "",
    "d0": "2026-08-31",
-   "dp": ""
+   "dp": "2026-09-02"
   },
   {
    "s": "",
@@ -133656,7 +133766,7 @@
   {
    "s": "",
    "d0": "2026-08-31",
-   "dp": ""
+   "dp": "2026-09-02"
   },
   {
    "s": "",
@@ -134071,6 +134181,11 @@
   {
    "s": "",
    "d0": "2026-09-01",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-02",
    "dp": ""
   }
  ]
