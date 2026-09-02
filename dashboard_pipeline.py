@@ -250,7 +250,10 @@ for _tc in TRIAGE_CALS:
 t_status=defaultdict(Counter)
 for e in ev: t_status[str(e.get("startTime"))[:10]][e.get("appointmentStatus","?")]+=1
 # contactos que pasaron a CLOSING (calendarios de Planificación Estratégica)
-endf=now+30*86400*1000; closing_contacts=set()
+# 31-ago-2026: 45 dias igual que triaje. Con la columna 'Closing RE-agendado' una llamada de venta
+# se puede reprogramar mas alla de un mes, y con 30 dias esa cita no se descargaba y la tarjeta
+# salia como 'sin cita futura a la vista' siendo falso.
+endf=now+45*86400*1000; closing_contacts=set()
 for cal in ["VRaGr4KGSZNiuDamyV4q","998ij1w7jUrmPqJZu43V"]:
     for e in evs(cal,cutoff,endf):
         if e.get("contactId"): closing_contacts.add(e["contactId"])
