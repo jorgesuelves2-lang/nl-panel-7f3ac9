@@ -1,6 +1,6 @@
 {
- "generado": "2026-09-02 22:54",
- "rango": "2026-02-01 a 2026-09-02",
+ "generado": "2026-09-03 01:29",
+ "rango": "2026-02-01 a 2026-09-03",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -2997,6 +2997,20 @@
    "agendas": 2,
    "resp_min": null,
    "nodata": false
+  },
+  {
+   "dia": "2026-09-03",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 32,
+   "fups": 30,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 0,
+   "resp_min": null,
+   "nodata": false
   }
  ],
  "triage": [
@@ -5564,6 +5578,18 @@
    "noconfirma": 0,
    "cancelled": 0,
    "confirmed": 2,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-09-03",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 0,
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
@@ -21220,6 +21246,17 @@
    "vendido": 0,
    "facturacion": 0.0,
    "cash": 0.0
+  },
+  {
+   "dia": "2026-09-03",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 1,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
   }
  ],
  "gaps": [
@@ -30663,6 +30700,19 @@
     "Sara": false,
     "Jesmary": false
    }
+  },
+  {
+   "dia": "2026-09-03",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Jesmary": false
+   }
   }
  ],
  "setters": [
@@ -31471,7 +31521,7 @@
    "etapa": "🔴🔸Clos. No cualifica/Descartado",
    "tel": "+573103686425",
    "email": "thaliaregino123@hmail.com",
-   "wsp": "2026-09-02",
+   "wsp": "2026-09-03",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/NUo77MuCtbQu3eGTBGCs",
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "600€- 1.000€",
@@ -31479,9 +31529,9 @@
    "urg": "",
    "infotri": "PERFIL: Thalia Gissela Regino Ospina. Edad: no consta. Colombia, Monteria (costa colombiana). Medico general, titulo obtenido en Colombia, ejerce desde hace unos dos anos en consulta externa con fuerte carga administrativa; antes trabajo en urgencias y UCI. Perfil LATAM, medico general sin especialidad.\n\nOBJETIVO: hacer la residencia medica, especialidad quirurgica, Urologia, y de paso mejorar salario y calidad de vida. Quiere avanzar cuanto antes, sin fecha limite concreta; su alternativa activa es el MIR de Espania el ano que viene. Aleman: nivel cero funcional, solo vocabulario suelto de un libro de aleman medico. Horas semanales disponibles: no consta.\n\nDOLORES: no consigue entrar a la residencia en Colombia pese a haberse presentado varias veces; siente que esta lista para especializarse y no puede; el tramite por Argentina se eterniza; su trabajo actual es muy administrativo y no la hace crecer; dice que seguir igual en ano y medio la haria sentir \"super mal\".\n\nINVERSION: gana 6.500.000 pesos colombianos al mes, unos 2.000 dolares. Considera el programa de 3.500 euros caro y la cuota de unos 580 euros al mes inasumible, porque es casi la mitad de su sueldo sin contar gastos. Ahorro, apoyo familiar o plan de financiacion alternativo: no consta. Ya gasto dinero en asesorias previas sin resultado.\n\nRUTA: titulo LATAM, ruta larga: aleman medico de cero hasta B2 mas FSP antes de poder ejercer y entrar a la especialidad via hospital. Realista contar con al menos 6 meses de id",
    "restri_ia": "NOTA DE FUENTE: analisis hecho solo con la transcripcion de Fathom. La transcripcion tiene las etiquetas de hablante cruzadas en varios tramos (frases del closer aparecen bajo el nombre del lead y al reves), asi que se ha reconstruido por contenido; los datos citados son los que se dicen literalmente en la llamada.\n\nRESULTADO DE LA LLAMADA: no cierra. Al presentarle la inversion responde de forma directa que es \"bastante caro\" y, preguntada si es un proceso que se puede permitir ahora mismo, contesta que con ese valor no.\n\nLO QUE CONTA DE SU SITUACION: medico general de Monteria, costa colombiana. Termino el pregrado hace unos dos anos. Su objetivo no es emigrar sino conseguir la residencia medica: se ha presentado a la residencia en Colombia (menciona examenes que llama UDOM y UNAL) y no ha pasado. Ya tramito papeles para Argentina, \"se demora una eternidad\", y esta homologada en Espania, donde se ha postulado a ofertas y quiere presentarse al MIR el ano que viene. Trabaja en un solo sitio, en consulta externa con mucha carga administrativa; antes estuvo en urgencias y UCI ganando casi la mitad. Le interesa ademas la parte investigativa.\n\nMOTIVACION REAL: la residencia medica en p",
-   "ult": "2026-09-02",
+   "ult": "2026-09-03",
    "ultdir": "inbound",
-   "ulttxt": "si",
+   "ulttxt": "Si",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
@@ -44921,10 +44971,10 @@
    "ss": 78,
    "stri": null,
    "sc": null,
-   "ult": "2026-09-02",
+   "ult": "2026-09-03",
    "ultdir": "inbound",
-   "ulttxt": "Ok ok",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ulttxt": "Gracias 🫂",
+   "ulttipo": "TYPE_INSTAGRAM",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/NMvx6GPfi6uZREZvP3GH"
   },
   {
@@ -45383,7 +45433,7 @@
    "etapa": "🔹®️ Triage RE-agendado",
    "desde": "2026-08-26",
    "fuente": "Outbound",
-   "prox": "2026-09-02",
+   "prox": "",
    "wsp": "",
    "setter": "Jesmary",
    "cta": "",
@@ -48816,6 +48866,36 @@
   },
   {
    "dia": "2026-08-25",
+   "s": "",
+   "h": [
+    0,
+    16,
+    13,
+    5,
+    4,
+    23,
+    0,
+    0,
+    0,
+    11,
+    54,
+    6,
+    15,
+    2,
+    50,
+    46,
+    0,
+    4,
+    4,
+    34,
+    19,
+    70,
+    1,
+    14
+   ]
+  },
+  {
+   "dia": "2026-08-25",
    "s": "Sara",
    "h": [
     0,
@@ -48872,36 +48952,6 @@
     3,
     0,
     0
-   ]
-  },
-  {
-   "dia": "2026-08-25",
-   "s": "",
-   "h": [
-    0,
-    16,
-    13,
-    5,
-    4,
-    23,
-    0,
-    0,
-    0,
-    11,
-    54,
-    6,
-    15,
-    2,
-    50,
-    46,
-    0,
-    4,
-    4,
-    34,
-    19,
-    70,
-    1,
-    14
    ]
   },
   {
@@ -64176,36 +64226,6 @@
   },
   {
    "dia": "2026-08-30",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    4,
-    1,
-    27,
-    1,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-30",
    "s": "Sary",
    "h": [
     1,
@@ -64231,6 +64251,36 @@
     4,
     1,
     0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-30",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    4,
+    1,
+    27,
+    1,
     0
    ]
   },
@@ -64262,6 +64312,36 @@
     0,
     0,
     1
+   ]
+  },
+  {
+   "dia": "2026-08-31",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    8,
+    1,
+    0,
+    0,
+    8
    ]
   },
   {
@@ -64296,36 +64376,6 @@
   },
   {
    "dia": "2026-08-31",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    8,
-    1,
-    0,
-    0,
-    8
-   ]
-  },
-  {
-   "dia": "2026-08-31",
    "s": "Sara",
    "h": [
     0,
@@ -64386,36 +64436,6 @@
   },
   {
    "dia": "2026-09-01",
-   "s": "",
-   "h": [
-    6,
-    5,
-    1,
-    0,
-    0,
-    2,
-    0,
-    14,
-    0,
-    0,
-    13,
-    3,
-    4,
-    28,
-    69,
-    19,
-    4,
-    3,
-    6,
-    3,
-    6,
-    15,
-    1,
-    14
-   ]
-  },
-  {
-   "dia": "2026-09-01",
    "s": "Sary",
    "h": [
     0,
@@ -64446,6 +64466,36 @@
   },
   {
    "dia": "2026-09-01",
+   "s": "",
+   "h": [
+    6,
+    5,
+    1,
+    0,
+    0,
+    2,
+    0,
+    14,
+    0,
+    0,
+    13,
+    3,
+    4,
+    28,
+    69,
+    19,
+    4,
+    3,
+    6,
+    3,
+    6,
+    15,
+    1,
+    14
+   ]
+  },
+  {
+   "dia": "2026-09-01",
    "s": "Sara",
    "h": [
     0,
@@ -64467,6 +64517,36 @@
     0,
     1,
     1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-02",
+   "s": "Sary",
+   "h": [
+    8,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    7,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -64501,37 +64581,7 @@
     5,
     4,
     5,
-    0
-   ]
-  },
-  {
-   "dia": "2026-09-02",
-   "s": "Sary",
-   "h": [
-    8,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    7,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    2
    ]
   },
   {
@@ -64549,6 +64599,96 @@
     0,
     1,
     1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-03",
+   "s": "Sary",
+   "h": [
+    4,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-03",
+   "s": "",
+   "h": [
+    30,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-03",
+   "s": "Sara",
+   "h": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
