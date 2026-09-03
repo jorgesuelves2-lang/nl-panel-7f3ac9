@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-03 06:31",
+ "generado": "2026-09-03 11:45",
  "rango": "2026-02-01 a 2026-09-03",
  "setting": [
   {
@@ -3000,12 +3000,12 @@
   },
   {
    "dia": "2026-09-03",
-   "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 41,
-   "fups": 40,
-   "prop": 1,
+   "inb": 1,
+   "out": 73,
+   "nuevas": 74,
+   "total": 127,
+   "fups": 70,
+   "prop": 2,
    "link": 1,
    "badlink": 0,
    "agendas": 0,
@@ -27269,6 +27269,50 @@
  ],
  "kpis": [
   {
+   "dia": "2026-09-02",
+   "setter": "Sary",
+   "fu": 96,
+   "inb": 0,
+   "out": 57,
+   "prop": 2,
+   "book": 1,
+   "wel": 0,
+   "notas": "Angie Bru \nAlemania con Mariana"
+  },
+  {
+   "dia": "2026-09-02",
+   "setter": "Jesmary",
+   "fu": 4,
+   "inb": 0,
+   "out": 40,
+   "prop": 0,
+   "book": 0,
+   "wel": 0,
+   "notas": ""
+  },
+  {
+   "dia": "2026-09-02",
+   "setter": "Sara",
+   "fu": 26,
+   "inb": 0,
+   "out": 55,
+   "prop": 0,
+   "book": 0,
+   "wel": 1,
+   "notas": "@medicosenalemania"
+  },
+  {
+   "dia": "2026-09-01",
+   "setter": "Sara",
+   "fu": 35,
+   "inb": 1,
+   "out": 40,
+   "prop": 1,
+   "book": 0,
+   "wel": 0,
+   "notas": "@medicosenalemania"
+  },
+  {
    "dia": "2026-09-01",
    "setter": "Jesmary",
    "fu": 5,
@@ -30684,7 +30728,7 @@
    "retraso_medio": null,
    "kpis": {
     "Sary": true,
-    "Sara": false,
+    "Sara": true,
     "Jesmary": true
    }
   },
@@ -30696,9 +30740,9 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
-    "Sara": false,
-    "Jesmary": false
+    "Sary": true,
+    "Sara": true,
+    "Jesmary": true
    }
   },
   {
@@ -31531,7 +31575,7 @@
    "restri_ia": "NOTA DE FUENTE: analisis hecho solo con la transcripcion de Fathom. La transcripcion tiene las etiquetas de hablante cruzadas en varios tramos (frases del closer aparecen bajo el nombre del lead y al reves), asi que se ha reconstruido por contenido; los datos citados son los que se dicen literalmente en la llamada.\n\nRESULTADO DE LA LLAMADA: no cierra. Al presentarle la inversion responde de forma directa que es \"bastante caro\" y, preguntada si es un proceso que se puede permitir ahora mismo, contesta que con ese valor no.\n\nLO QUE CONTA DE SU SITUACION: medico general de Monteria, costa colombiana. Termino el pregrado hace unos dos anos. Su objetivo no es emigrar sino conseguir la residencia medica: se ha presentado a la residencia en Colombia (menciona examenes que llama UDOM y UNAL) y no ha pasado. Ya tramito papeles para Argentina, \"se demora una eternidad\", y esta homologada en Espania, donde se ha postulado a ofertas y quiere presentarse al MIR el ano que viene. Trabaja en un solo sitio, en consulta externa con mucha carga administrativa; antes estuvo en urgencias y UCI ganando casi la mitad. Le interesa ademas la parte investigativa.\n\nMOTIVACION REAL: la residencia medica en p",
    "ult": "2026-09-03",
    "ultdir": "inbound",
-   "ulttxt": "Si",
+   "ulttxt": "Hola buenos días me quedé esperando el documento anoche",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
@@ -44015,7 +44059,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-02-20",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -44035,10 +44079,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-20",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hola Andrea!\n\nParece que has reservado una cita con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Natalie. Es quién va a to...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -45001,9 +45045,9 @@
    "ss": 50,
    "stri": null,
    "sc": null,
-   "ult": "2026-09-02",
+   "ult": "2026-09-03",
    "ultdir": "outbound",
-   "ulttxt": "¡Hola Tatiana!\n\n\n\nEsta es tu confirmación para la cita que has agendado con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Sa...",
+   "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña.\n\nLlegué con un título de ingeniería…\n\naños de experiencia real… \n\ny unas ga...",
    "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/MUBISpNWBMC3Vml8SGB8"
   },
@@ -48746,36 +48790,6 @@
   },
   {
    "dia": "2026-08-24",
-   "s": "",
-   "h": [
-    27,
-    12,
-    7,
-    0,
-    0,
-    9,
-    0,
-    0,
-    0,
-    46,
-    61,
-    5,
-    2,
-    33,
-    59,
-    2,
-    0,
-    4,
-    21,
-    10,
-    4,
-    28,
-    42,
-    26
-   ]
-  },
-  {
-   "dia": "2026-08-24",
    "s": "Sara",
    "h": [
     0,
@@ -48802,6 +48816,36 @@
     4,
     0,
     2
+   ]
+  },
+  {
+   "dia": "2026-08-24",
+   "s": "",
+   "h": [
+    27,
+    12,
+    7,
+    0,
+    0,
+    9,
+    0,
+    0,
+    0,
+    46,
+    61,
+    5,
+    2,
+    33,
+    59,
+    2,
+    0,
+    4,
+    21,
+    10,
+    4,
+    28,
+    42,
+    26
    ]
   },
   {
@@ -48866,36 +48910,6 @@
   },
   {
    "dia": "2026-08-25",
-   "s": "",
-   "h": [
-    0,
-    16,
-    13,
-    5,
-    4,
-    23,
-    0,
-    0,
-    0,
-    11,
-    54,
-    6,
-    15,
-    2,
-    50,
-    46,
-    0,
-    4,
-    4,
-    34,
-    19,
-    70,
-    1,
-    14
-   ]
-  },
-  {
-   "dia": "2026-08-25",
    "s": "Sara",
    "h": [
     0,
@@ -48922,6 +48936,36 @@
     0,
     0,
     0
+   ]
+  },
+  {
+   "dia": "2026-08-25",
+   "s": "",
+   "h": [
+    0,
+    16,
+    13,
+    5,
+    4,
+    23,
+    0,
+    0,
+    0,
+    11,
+    54,
+    6,
+    15,
+    2,
+    50,
+    46,
+    0,
+    4,
+    4,
+    34,
+    19,
+    70,
+    1,
+    14
    ]
   },
   {
@@ -48986,36 +49030,6 @@
   },
   {
    "dia": "2026-08-23",
-   "s": "",
-   "h": [
-    0,
-    9,
-    5,
-    0,
-    0,
-    0,
-    0,
-    6,
-    2,
-    19,
-    80,
-    4,
-    7,
-    3,
-    11,
-    2,
-    0,
-    0,
-    16,
-    38,
-    38,
-    7,
-    8,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-23",
    "s": "Sara",
    "h": [
     0,
@@ -49041,6 +49055,36 @@
     3,
     0,
     0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-23",
+   "s": "",
+   "h": [
+    0,
+    9,
+    5,
+    0,
+    0,
+    0,
+    0,
+    6,
+    2,
+    19,
+    80,
+    4,
+    7,
+    3,
+    11,
+    2,
+    0,
+    0,
+    16,
+    38,
+    38,
+    7,
+    8,
     0
    ]
   },
@@ -64346,36 +64390,6 @@
   },
   {
    "dia": "2026-08-31",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    8,
-    1,
-    0,
-    0,
-    8
-   ]
-  },
-  {
-   "dia": "2026-08-31",
    "s": "Sara",
    "h": [
     0,
@@ -64406,6 +64420,36 @@
   },
   {
    "dia": "2026-08-31",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    8,
+    1,
+    0,
+    0,
+    8
+   ]
+  },
+  {
+   "dia": "2026-08-31",
    "s": "Jesmary",
    "h": [
     0,
@@ -64426,6 +64470,36 @@
     5,
     0,
     0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-01",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    2,
+    1,
+    0,
+    1,
     1,
     0,
     0,
@@ -64462,36 +64536,6 @@
     15,
     1,
     14
-   ]
-  },
-  {
-   "dia": "2026-09-01",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    2,
-    0,
-    0,
-    1,
-    2,
-    1,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0
    ]
   },
   {
@@ -64616,18 +64660,18 @@
   },
   {
    "dia": "2026-09-03",
-   "s": "",
+   "s": "Sara",
    "h": [
-    30,
-    22,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
     1,
     0,
     0,
-    6,
-    7,
-    0,
-    0,
-    0,
+    2,
     0,
     0,
     0,
@@ -64646,20 +64690,20 @@
   },
   {
    "dia": "2026-09-03",
-   "s": "Sara",
+   "s": "",
    "h": [
-    0,
-    2,
-    0,
-    0,
-    0,
-    0,
+    30,
+    22,
     1,
     0,
     0,
+    6,
+    14,
     0,
-    0,
-    0,
+    4,
+    86,
+    10,
+    14,
     0,
     0,
     0,
@@ -64687,7 +64731,7 @@
     0,
     0,
     0,
-    0,
+    1,
     0,
     0,
     0,
@@ -133799,7 +133843,7 @@
   {
    "s": "",
    "d0": "2026-08-31",
-   "dp": ""
+   "dp": "2026-09-03"
   },
   {
    "s": "",
@@ -134879,6 +134923,376 @@
   {
    "s": "",
    "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
    "dp": ""
   }
  ]
