@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-03 21:56",
+ "generado": "2026-09-03 22:52",
  "rango": "2026-02-01 a 2026-09-03",
  "setting": [
   {
@@ -3001,10 +3001,10 @@
   {
    "dia": "2026-09-03",
    "inb": 2,
-   "out": 127,
-   "nuevas": 129,
-   "total": 217,
-   "fups": 161,
+   "out": 166,
+   "nuevas": 168,
+   "total": 262,
+   "fups": 169,
    "prop": 3,
    "link": 1,
    "badlink": 0,
@@ -27262,6 +27262,12 @@
   },
   {
    "dia": "2026-08-27",
+   "in": 1787789809,
+   "rep": 1787792152,
+   "s": "Sary"
+  },
+  {
+   "dia": "2026-08-27",
    "in": 1787797761,
    "rep": 1787851157,
    "s": "Jesmary"
@@ -27271,12 +27277,6 @@
    "in": 1787820562,
    "rep": 1787821485,
    "s": "Sara"
-  },
-  {
-   "dia": "2026-08-27",
-   "in": 1787789809,
-   "rep": 1787792152,
-   "s": "Sary"
   },
   {
    "dia": "2026-08-28",
@@ -43865,7 +43865,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-02-25",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -43885,10 +43885,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-25",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hola Heidi!\n\nParece que has reservado una cita con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Natalie. Es quién va a tom...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -43902,7 +43902,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-02-25",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -43922,10 +43922,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-25",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hola Maria!\n\nParece que has reservado una cita con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Natalie. Es quién va a tom...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -43976,7 +43976,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-02-20",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -43996,10 +43996,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-25",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Luis!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y c...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -44087,7 +44087,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-02-19",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -44107,10 +44107,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-25",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Carlos!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -48588,10 +48588,10 @@
    "ss": null,
    "stri": null,
    "sc": null,
-   "ult": "2026-02-25",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hola Maria!\n\nParece que has reservado una cita con nuestro equipo\n\n\n\nTe cuento los siguientes pasos para tu llamada con Natalie. Es quién va a tom...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/SwB1h4pEGlO3dK5x4sSk"
   },
   {
@@ -64093,36 +64093,6 @@
   },
   {
    "dia": "2026-08-27",
-   "s": "Sara",
-   "h": [
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    1,
-    6,
-    2,
-    0,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-27",
    "s": "Sary",
    "h": [
     3,
@@ -64148,6 +64118,36 @@
     0,
     6,
     1,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-27",
+   "s": "Sara",
+   "h": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    6,
+    2,
+    0,
+    0,
+    0,
+    0,
     0
    ]
   },
@@ -64603,36 +64603,6 @@
   },
   {
    "dia": "2026-08-31",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    8,
-    1,
-    0,
-    0,
-    8
-   ]
-  },
-  {
-   "dia": "2026-08-31",
    "s": "Sara",
    "h": [
     0,
@@ -64659,6 +64629,36 @@
     3,
     0,
     1
+   ]
+  },
+  {
+   "dia": "2026-08-31",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    8,
+    1,
+    0,
+    0,
+    8
    ]
   },
   {
@@ -64897,37 +64897,7 @@
     26,
     49,
     27,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-09-03",
-   "s": "Sary",
-   "h": [
-    4,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0,
-    1,
-    3,
-    0,
-    0,
+    50,
     0
    ]
   },
@@ -64956,6 +64926,36 @@
     0,
     0,
     2,
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-03",
+   "s": "Sary",
+   "h": [
+    4,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    1,
+    3,
     0,
     0,
     0
@@ -135166,6 +135166,201 @@
   {
    "s": "",
    "d0": "2026-09-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
    "dp": ""
   },
   {
