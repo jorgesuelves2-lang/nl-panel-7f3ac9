@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-04 21:12",
+ "generado": "2026-09-04 21:21",
  "rango": "2026-02-01 a 2026-09-04",
  "setting": [
   {
@@ -3015,10 +3015,10 @@
   {
    "dia": "2026-09-04",
    "inb": 1,
-   "out": 31,
-   "nuevas": 32,
-   "total": 89,
-   "fups": 61,
+   "out": 33,
+   "nuevas": 34,
+   "total": 91,
+   "fups": 64,
    "prop": 1,
    "link": 1,
    "badlink": 0,
@@ -46036,36 +46036,6 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/rkDJpWVqRAwMmdzJbsOA"
   },
   {
-   "cid": "RGsdbbS0dmNJpzAvhX5o",
-   "nombre": "Carla (DUPLICADO post-triaje - fusionar)",
-   "etapa": "🔸Closing Agendado",
-   "desde": "2026-08-14",
-   "fuente": "",
-   "prox": "",
-   "wsp": "",
-   "setter": "",
-   "cta": "",
-   "prof": "",
-   "restri": "Cualifica",
-   "resclo": "",
-   "ticket": "",
-   "pagado": "",
-   "motivo": "",
-   "tel": "",
-   "email": "",
-   "presup": "",
-   "urg": "",
-   "nivel": "",
-   "ss": 0,
-   "stri": null,
-   "sc": null,
-   "ult": "2026-08-14",
-   "ultdir": "outbound",
-   "ulttxt": "Hola ,\n\nTe dejo aquí los detalles de la reunión.\n- Reunión de Planificación Estratégica\n\n\nFehca y Hora: lunes, 17 de agosto de 2026 6:15 (-04)\n\n\nLi...",
-   "ulttipo": "TYPE_EMAIL",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/RGsdbbS0dmNJpzAvhX5o"
-  },
-  {
    "cid": "LBASK2ND27WKzUA6FOks",
    "nombre": "Hosmerin Andreina Hernández Matheus",
    "etapa": "🔶 Seguimiento Futuro",
@@ -65097,7 +65067,7 @@
     9,
     2,
     22,
-    9,
+    16,
     0,
     0
    ]
@@ -136227,6 +136197,16 @@
   {
    "s": "",
    "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-04",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-04",
    "dp": ""
   },
   {
