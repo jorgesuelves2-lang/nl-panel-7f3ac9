@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-04 11:46",
+ "generado": "2026-09-04 16:40",
  "rango": "2026-02-01 a 2026-09-04",
  "setting": [
   {
@@ -3015,10 +3015,10 @@
   {
    "dia": "2026-09-04",
    "inb": 1,
-   "out": 0,
-   "nuevas": 1,
-   "total": 37,
-   "fups": 39,
+   "out": 11,
+   "nuevas": 12,
+   "total": 55,
+   "fups": 44,
    "prop": 1,
    "link": 1,
    "badlink": 0,
@@ -27408,6 +27408,17 @@
  ],
  "kpis": [
   {
+   "dia": "2026-09-03",
+   "setter": "Jesmary",
+   "fu": 15,
+   "inb": 0,
+   "out": 60,
+   "prop": 1,
+   "book": 0,
+   "wel": 0,
+   "notas": ""
+  },
+  {
    "dia": "2026-09-02",
    "setter": "Sary",
    "fu": 96,
@@ -30894,7 +30905,7 @@
    "kpis": {
     "Sary": false,
     "Sara": false,
-    "Jesmary": false
+    "Jesmary": true
    }
   },
   {
@@ -30950,7 +30961,7 @@
    "restri_ia": "PERFIL: Estudiante de medicina en Colombia (Barranquilla), 6 anos de carrera, le falta un ano y medio para graduarse (internado el ano proximo). Soltera, iria sola a Alemania. Hermano en Hamburgo. Decision economica depende de los padres (madre principal decisora).\n\nDINERO: Christian menciono rango de 3.500 a 8.000 euros y le ofrece el modulo de idioma a 3.500 euros con opcion de financiacion. El lead dice que preferiria financiado e indica que tiene que hablarlo con su madre. No consta ahorro propio ni capacidad economica independiente.\n\nDECISION: No es decisora unica. Necesita el visto bueno de su madre, que llega la semana siguiente. Christian acepta incluir a la madre en la segunda llamada.\n\nPLAZO/URGENCIA: Quiere emigrar al terminar la carrera. Urgencia baja-media: puede empezar el idioma ya, pero la homologacion queda a mas de un ano vista.\n\nCOMPROMISO: Respondio positivamente durante toda la llamada, acepto reagendar, mostro interes genuino. Sin embargo, tono muy exploratorio ('queria empaparme') y condiciona todo a la madre.\n\nCALIDAD DEL TRIAJE: Christian descubrio correctamente que es estudiante y ajusto la oferta al modulo de idioma. Explico bien la ruta y los pasos. Desv",
    "ult": "2026-09-04",
    "ultdir": "outbound",
-   "ulttxt": "¡Hey María!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
+   "ulttxt": "¡Hey María!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y ...",
    "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
@@ -45262,7 +45273,7 @@
    "fuente": "Outbound",
    "prox": "2026-09-06",
    "wsp": "2026-09-04",
-   "setter": "",
+   "setter": "Sary",
    "cta": "",
    "prof": "Médico general",
    "restri": "",
@@ -45275,13 +45286,13 @@
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "urg": "",
    "nivel": "🔹 B2",
-   "ss": null,
+   "ss": 28,
    "stri": null,
    "sc": null,
    "ult": "2026-09-04",
    "ultdir": "outbound",
-   "ulttxt": "Comprendo. En que fecha vuelves para coordinar la sesión?",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ulttxt": "Hola Tania te habla Sary, un gusto conocerte, Natalie me habló de ti y te felicito por avanzar en tu meta profesional.",
+   "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/13hWousp63yBe8yCxhNb"
   },
   {
@@ -45670,7 +45681,7 @@
    "sc": null,
    "ult": "2026-09-04",
    "ultdir": "outbound",
-   "ulttxt": "¡Hey María!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
+   "ulttxt": "¡Hey María!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y ...",
    "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ZozZsUdaW8m163j4TEfE"
   },
@@ -49083,36 +49094,6 @@
   },
   {
    "dia": "2026-08-24",
-   "s": "Sary",
-   "h": [
-    2,
-    0,
-    1,
-    0,
-    0,
-    6,
-    0,
-    0,
-    0,
-    7,
-    22,
-    0,
-    2,
-    2,
-    0,
-    0,
-    0,
-    2,
-    0,
-    4,
-    3,
-    2,
-    3,
-    28
-   ]
-  },
-  {
-   "dia": "2026-08-24",
    "s": "Jesmary",
    "h": [
     5,
@@ -49173,6 +49154,36 @@
   },
   {
    "dia": "2026-08-24",
+   "s": "Sary",
+   "h": [
+    2,
+    0,
+    1,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0,
+    7,
+    22,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    4,
+    3,
+    2,
+    3,
+    28
+   ]
+  },
+  {
+   "dia": "2026-08-24",
    "s": "Sara",
    "h": [
     0,
@@ -49203,36 +49214,6 @@
   },
   {
    "dia": "2026-08-25",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0,
-    0,
-    6,
-    10,
-    0,
-    0,
-    0,
-    0,
-    12,
-    0,
-    0,
-    21,
-    8,
-    17,
-    1,
-    0,
-    1
-   ]
-  },
-  {
-   "dia": "2026-08-25",
    "s": "",
    "h": [
     0,
@@ -49259,6 +49240,36 @@
     70,
     1,
     14
+   ]
+  },
+  {
+   "dia": "2026-08-25",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    6,
+    10,
+    0,
+    0,
+    0,
+    0,
+    12,
+    0,
+    0,
+    21,
+    8,
+    17,
+    1,
+    0,
+    1
    ]
   },
   {
@@ -64053,36 +64064,6 @@
   },
   {
    "dia": "2026-08-26",
-   "s": "Sary",
-   "h": [
-    5,
-    4,
-    0,
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    0,
-    6,
-    0,
-    0,
-    0,
-    2,
-    5,
-    0,
-    0,
-    12,
-    14,
-    2,
-    0,
-    3,
-    1
-   ]
-  },
-  {
-   "dia": "2026-08-26",
    "s": "",
    "h": [
     7,
@@ -64109,6 +64090,36 @@
     32,
     11,
     3
+   ]
+  },
+  {
+   "dia": "2026-08-26",
+   "s": "Sary",
+   "h": [
+    5,
+    4,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0,
+    2,
+    5,
+    0,
+    0,
+    12,
+    14,
+    2,
+    0,
+    3,
+    1
    ]
   },
   {
@@ -64173,6 +64184,36 @@
   },
   {
    "dia": "2026-08-27",
+   "s": "",
+   "h": [
+    13,
+    6,
+    0,
+    0,
+    2,
+    0,
+    0,
+    7,
+    1,
+    9,
+    3,
+    0,
+    60,
+    60,
+    20,
+    3,
+    11,
+    6,
+    32,
+    3,
+    6,
+    17,
+    11,
+    0
+   ]
+  },
+  {
+   "dia": "2026-08-27",
    "s": "Sary",
    "h": [
     3,
@@ -64228,36 +64269,6 @@
     0,
     0,
     0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-27",
-   "s": "",
-   "h": [
-    13,
-    6,
-    0,
-    0,
-    2,
-    0,
-    0,
-    7,
-    1,
-    9,
-    3,
-    0,
-    60,
-    60,
-    20,
-    3,
-    11,
-    6,
-    32,
-    3,
-    6,
-    17,
-    11,
     0
    ]
   },
@@ -65086,12 +65097,12 @@
     2,
     3,
     30,
-    23,
+    27,
+    13,
+    2,
     0,
-    0,
-    0,
-    0,
-    0,
+    4,
+    3,
     0,
     0,
     0,
@@ -136226,6 +136237,61 @@
   {
    "s": "",
    "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-04",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-04",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-04",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-04",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-04",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-04",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-04",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-04",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-04",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-04",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-04",
    "dp": ""
   },
   {
