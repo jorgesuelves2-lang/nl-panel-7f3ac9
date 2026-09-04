@@ -254,8 +254,8 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
       <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
         <h3 style="margin:0">Embudo completo <span style="font-weight:400;color:var(--mut);font-size:13px">— conversaciones va fuera de escala; el resto de barras son comparables entre sí</span></h3>
         <div style="display:flex;gap:6px">
-          <button class="tab on" data-emb="caida" style="font-size:12.5px;padding:4px 14px">Caída</button>
-          <button class="tab" data-emb="conv" style="font-size:12.5px;padding:4px 14px">Conversión</button>
+          <button class="tab" data-emb="caida" style="font-size:12.5px;padding:4px 14px">Caída</button>
+          <button class="tab on" data-emb="conv" style="font-size:12.5px;padding:4px 14px">Conversión</button>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px;font-size:13px">
@@ -367,7 +367,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
   return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;"><span style="width:100px;font-size:13px;color:var(--mut)">'+lbl+'</span><div style="flex:1;background:#eef1f5;border-radius:8px;height:28px"><div style="width:'+w+'%;background:'+col+';height:28px;border-radius:8px"></div></div><span style="width:90px;text-align:right;font-weight:500;font-size:13px">'+val+(extra?' · '+extra:'')+'</span></div>';}
  // Embudo de Control como MATRIZ: barra | Total | Caída/Conversión | Esperada, todo en columnas
  // fijas para que las tarjetas queden alineadas en vertical. El conmutador del panel cambia la vista.
- var EMB_VISTA='caida'; var _EMB_ROWS=null; var _EMB_META=null;
+ var EMB_VISTA='conv'; var _EMB_ROWS=null; var _EMB_META=null;   // 05-sep-2026: Jorge prefiere ver Conversion por defecto
  var EMB_INB=0;
  try{ EMB_INB=parseInt(localStorage.getItem('emb_inb')||'0',10)||0; }catch(e){}
  function pintarEmbudo(){
