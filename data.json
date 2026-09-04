@@ -1,6 +1,6 @@
 {
- "generado": "2026-09-03 22:52",
- "rango": "2026-02-01 a 2026-09-03",
+ "generado": "2026-09-04 01:22",
+ "rango": "2026-02-01 a 2026-09-04",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -3001,15 +3001,29 @@
   {
    "dia": "2026-09-03",
    "inb": 2,
-   "out": 166,
-   "nuevas": 168,
-   "total": 262,
-   "fups": 169,
-   "prop": 3,
-   "link": 1,
+   "out": 176,
+   "nuevas": 178,
+   "total": 282,
+   "fups": 185,
+   "prop": 4,
+   "link": 2,
    "badlink": 0,
    "agendas": 0,
    "resp_min": 54,
+   "nodata": false
+  },
+  {
+   "dia": "2026-09-04",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 6,
+   "fups": 0,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 3,
+   "resp_min": null,
    "nodata": false
   }
  ],
@@ -5590,6 +5604,18 @@
    "noconfirma": 0,
    "cancelled": 0,
    "confirmed": 0,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-09-04",
+   "agendados": 3,
+   "showed": 1,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 3,
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
@@ -21353,6 +21379,17 @@
    "vendido": 0,
    "facturacion": 0.0,
    "cash": 0.0
+  },
+  {
+   "dia": "2026-09-04",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
   }
  ],
  "gaps": [
@@ -30859,6 +30896,19 @@
     "Sara": false,
     "Jesmary": false
    }
+  },
+  {
+   "dia": "2026-09-04",
+   "triages": 3,
+   "con_form": 0,
+   "sin_form": 3,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Jesmary": false
+   }
   }
  ],
  "setters": [
@@ -32526,9 +32576,9 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-08-18",
+   "ult": "2026-09-03",
    "ultdir": "outbound",
-   "ulttxt": "Estoy muy atenta a tu respuesta. 🫶🏻",
+   "ulttxt": "Hola no he tenido respuesta de tu parte, me podrías comentar si aún te interesa que agendemos? \nSi ya no es tu prioridad, me conformo con tu respuesta. 🙏",
    "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
@@ -44013,7 +44063,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "CTA comentario",
-   "d0": "2026-02-22",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -44033,10 +44083,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-26",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Daphne!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -45450,7 +45500,7 @@
    "etapa": "🔸Closing Agendado",
    "desde": "2026-08-29",
    "fuente": "Outbound",
-   "prox": "2026-09-03",
+   "prox": "",
    "wsp": "",
    "setter": "Jesmary",
    "cta": "",
@@ -49003,36 +49053,6 @@
   },
   {
    "dia": "2026-08-24",
-   "s": "",
-   "h": [
-    27,
-    12,
-    7,
-    0,
-    0,
-    9,
-    0,
-    0,
-    0,
-    46,
-    61,
-    5,
-    2,
-    33,
-    59,
-    2,
-    0,
-    4,
-    21,
-    10,
-    4,
-    28,
-    42,
-    26
-   ]
-  },
-  {
-   "dia": "2026-08-24",
    "s": "Sary",
    "h": [
     2,
@@ -49059,6 +49079,36 @@
     2,
     3,
     28
+   ]
+  },
+  {
+   "dia": "2026-08-24",
+   "s": "",
+   "h": [
+    27,
+    12,
+    7,
+    0,
+    0,
+    9,
+    0,
+    0,
+    0,
+    46,
+    61,
+    5,
+    2,
+    33,
+    59,
+    2,
+    0,
+    4,
+    21,
+    10,
+    4,
+    28,
+    42,
+    26
    ]
   },
   {
@@ -49123,6 +49173,36 @@
   },
   {
    "dia": "2026-08-25",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    6,
+    10,
+    0,
+    0,
+    0,
+    0,
+    12,
+    0,
+    0,
+    21,
+    8,
+    17,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "dia": "2026-08-25",
    "s": "",
    "h": [
     0,
@@ -49179,36 +49259,6 @@
     3,
     0,
     0
-   ]
-  },
-  {
-   "dia": "2026-08-25",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0,
-    0,
-    6,
-    10,
-    0,
-    0,
-    0,
-    0,
-    12,
-    0,
-    0,
-    21,
-    8,
-    17,
-    1,
-    0,
-    1
    ]
   },
   {
@@ -64003,36 +64053,6 @@
   },
   {
    "dia": "2026-08-26",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    2,
-    4,
-    4,
-    13,
-    3,
-    1,
-    2,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-26",
    "s": "Sary",
    "h": [
     5,
@@ -64059,6 +64079,36 @@
     0,
     3,
     1
+   ]
+  },
+  {
+   "dia": "2026-08-26",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    2,
+    4,
+    4,
+    13,
+    3,
+    1,
+    2,
+    0,
+    0
    ]
   },
   {
@@ -64897,8 +64947,38 @@
     26,
     49,
     27,
-    50,
-    0
+    59,
+    22
+   ]
+  },
+  {
+   "dia": "2026-09-03",
+   "s": "Sary",
+   "h": [
+    4,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    1,
+    3,
+    0,
+    0,
+    2
    ]
   },
   {
@@ -64933,36 +65013,6 @@
   },
   {
    "dia": "2026-09-03",
-   "s": "Sary",
-   "h": [
-    4,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0,
-    1,
-    3,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-09-03",
    "s": "Jesmary",
    "h": [
     0,
@@ -64985,6 +65035,36 @@
     0,
     0,
     1,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-04",
+   "s": "",
+   "h": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -135322,6 +135402,56 @@
    "s": "",
    "d0": "2026-09-03",
    "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-03",
+   "dp": "2026-09-03"
   },
   {
    "s": "",
