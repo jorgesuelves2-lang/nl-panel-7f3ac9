@@ -60,7 +60,8 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <button class="qb" data-d="9999">Todo</button>
   </div>
   <div class="tabs">
-    <button class="tab on" data-t="global">Control</button>
+    <button class="tab on" data-t="hoy">Hoy <span id="hoy_badge" style="background:var(--red);color:#fff;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px"></span></button>
+    <button class="tab" data-t="global">Control</button>
     <button class="tab" data-t="dia">Día</button>
     <button class="tab" data-t="pipeline">Pipeline</button>
     <button class="tab" data-t="incoh">Incoherencias <span id="incoh_badge" style="background:var(--red);color:#fff;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px"></span></button>
@@ -101,6 +102,19 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <div class="cards" id="pl_cards"></div>
     <div id="pl_wsp" style="margin-bottom:18px"></div>
     <div id="pl_grupos"></div>
+  </section>
+
+  <section id="hoy">
+    <div class="panel">
+      <h3 style="margin:0 0 4px">Bandeja de hoy
+        <span style="font-weight:400;color:var(--mut);font-size:13px">— todo lo que está esperando una acción nuestra, ordenado por lo que más cuesta dejarlo pasar.</span></h3>
+      <div id="hoy_cards" class="cards" style="margin-top:12px"></div>
+      <div id="hoy_body" style="margin-top:6px"></div>
+      <div style="font-size:12px;color:var(--mut);margin-top:12px">
+        El orden combina cuatro cosas: <b>urgencia</b> de lo que toca hacer, <b>días parado</b>, <b>dinero en juego</b>
+        y <b>fase del embudo</b> (un closing pesa más que un lead frío). Se recalcula en cada refresco del panel.
+      </div>
+    </div>
   </section>
 
   <section id="incoh" class="hide">
@@ -246,7 +260,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <div class="panel" style="border-left:3px solid var(--amber);border-radius:0"><div style="font-size:13px;color:var(--mut)"><b style="color:var(--tx)">Cómo leer esto:</b> las filas marcadas <b style="color:var(--red)">SIN REGISTRAR</b> son llamadas cuya fecha ya pasó y nadie anotó qué ocurrió. Se rellenan con el <b style="color:var(--tx)">formulario post-closing</b> o editando el resultado en la ficha del lead.</div></div>
   </section>
 
-  <section id="global">
+  <section id="global" class="hide">
     <div class="sub" style="margin-bottom:10px">Control del negocio: el embudo completo con la caída entre pasos, alertas, tiempos e inversión, sobre el rango de fechas de arriba.</div>
     <div class="panel" style="border-left:3px solid var(--red);border-radius:0"><h3>Alertas — qué requiere acción</h3><div class="cards" id="g_alertas"></div></div>
     <div class="cards" id="g_cards"></div>
@@ -595,6 +609,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    renderDia();
    renderPipeline();
    renderIncoherencias();
+   renderHoy();
    renderKset();
    charts.c1=new Chart(document.getElementById('c_estado'),{type:'bar',data:{labels:labels,datasets:[
      {label:'Asistió',data:CDf.map(function(r){return r.showed;}),backgroundColor:'#1D9E75'},
@@ -674,7 +689,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  fromEl.onchange=toEl.onchange=function(){document.querySelectorAll('.qb').forEach(function(b){b.classList.remove('on');});render();};
  bhOn.onchange=bhTz.onchange=bhA.onchange=bhB.onchange=function(){render();};
  document.querySelectorAll('.qb').forEach(function(b){b.onclick=function(){document.querySelectorAll('.qb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');if(b.dataset.d==='mes'){var h=hoyISO(); fromEl.value=h.slice(0,8)+'01'; toEl.value=h;}else{setRange(+b.dataset.d);}render();};});
- var SECTIONS=['dia','pipeline','incoh','setting','triage','closing','global','leads','clientes','cash','antonie','cumpl'];
+ var SECTIONS=['hoy','dia','pipeline','incoh','setting','triage','closing','global','leads','clientes','cash','antonie','cumpl'];
  document.querySelectorAll('.tab[data-t]').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');SECTIONS.forEach(function(s){document.getElementById(s).classList.toggle('hide',s!==b.dataset.t);});};});
  function num(v){return parseFloat(String(v||'').replace(/[^0-9.]/g,''))||0;}
  // ---- Tabla de closings del periodo: una fila por llamada agendada, con que paso con cada lead ----
@@ -1118,6 +1133,125 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    o.acciones=A;
    return o;
  }
+
+ // ===== BANDEJA DE HOY (05-sep-2026) =====
+ // Una sola lista con TODO lo que espera una accion nuestra. Nace de un problema real: la informacion
+ // ya estaba en el panel (Incoherencias, Pipeline, pop-ups) pero repartida, y habia que ir a buscarla.
+ // Martin Burgos estuvo 11 dias parado y el sistema lo sabia. Esto lo pone delante sin buscar nada.
+ function renderHoy(){
+   var cont=document.getElementById('hoy_body'); if(!cont) return;
+   var hoy=hoyISO();
+   var P=(DATA.pipeline_leads||[]), C=(DATA.closing||[]);
+   var T=[];   // tareas
+
+   function dinero(r){ var t=num(r.ticket); return t>0?t:0; }
+   // peso de la fase: cuanto mas abajo en el embudo, mas caro es dejarlo parar
+   function fase(et){
+     et=String(et||'').toLowerCase();
+     if(et.indexOf('faltan pagos')>=0) return 60;
+     if(et.indexOf('clos')>=0)         return 50;
+     if(et.indexOf('reserva')>=0)      return 45;
+     if(et.indexOf('caliente')>=0)     return 35;
+     if(et.indexOf('triage')>=0||et.indexOf('triaje')>=0) return 30;
+     return 15;
+   }
+   function add(r,tipo,que,porque,urg,dias){
+     var pts = (urg===1?100:urg===2?50:12)
+             + Math.min(40, (dias||0)*3)
+             + Math.min(50, dinero(r)/100)
+             + fase(r.etapa);
+     T.push({r:r,tipo:tipo,que:que,porque:porque,urg:urg,dias:dias||0,pts:pts});
+   }
+
+   // --- 1) dice "agendado" y no existe la cita
+   P.forEach(function(r){
+     var e=String(r.etapa||'').toLowerCase();
+     if((e.indexOf('agendado')>=0||e.indexOf('confirmado')>=0) && !String(r.prox||'').trim())
+       add(r,'Cita','Agendar la cita: el CRM la da por hecha y no existe',
+           'Lleva parado en esa etapa sin ninguna cita en el calendario.',1,diasDesde(r.desde));
+   });
+   // --- 2) el lead escribio y no contestamos
+   P.forEach(function(r){
+     var d=diasDesde(r.ult);
+     if(r.ultdir==='inbound' && d>=2){
+       // la urgencia sube con los dias... hasta cierto punto. Pasadas ~6 semanas ya no es "contestar
+       // hoy", es reactivar un lead frio: sigue en la lista pero deja de competir con lo caliente.
+       var u = d>=45 ? 3 : (d>=5 ? 1 : 2);
+       var txt = d>=45 ? 'Lead frio: escribio hace '+d+' dias y nunca se le contesto. Decidir si se reactiva o se cierra.'
+                       : 'Escribio el ultimo y sigue esperando: "'+String(r.ulttxt||'').slice(0,70)+'"';
+       add(r,'Responder',d>=45?'Reactivar o cerrar':'Responder al lead',txt,u,d);
+     }
+   });
+   // --- 3) vendido sin cobro registrado
+   C.forEach(function(r){
+     if(r.resclo==='Vendido' && num(r.ticket)>0 && num(r.pagado)===0 && num(r.cash)===0)
+       add(r,'Cobro','Confirmar el cobro de '+Math.round(num(r.ticket))+' EUR',
+           'Marcado como vendido y sin ningun importe pagado registrado.',1,diasDesde(r.fecha));
+   });
+   // --- 4) cobro parcial pendiente
+   P.forEach(function(r){
+     var pend=num(r.ticket)-num(r.pagado);
+     if(/faltan pagos/i.test(String(r.etapa||'')) && pend>0)
+       add(r,'Cobro','Cobrar '+Math.round(pend)+' EUR pendientes','Venta cerrada con importe sin cobrar.',2,diasDesde(r.desde));
+   });
+   // --- 5) cita proxima y nunca nos ha escrito
+   P.forEach(function(r){
+     if(r.prox && r.prox>=hoy && !String(r.wsp||'').trim()){
+       var dd=Math.round((new Date(r.prox)-new Date(hoy))/86400000);
+       add(r,'WhatsApp','Escribirle antes de la llamada ('+(dd===0?'HOY':dd===1?'manana':'en '+dd+' dias')+')',
+           'Agendo pero nunca pulso el boton de WhatsApp: son los que mas no-show hacen.',dd<=1?1:2,0);
+     }
+   });
+   // --- 6) cualifico en triaje y no tiene closing
+   P.forEach(function(r){
+     if(String(r.restri||'').toLowerCase().indexOf('cualifica')>=0 && String(r.restri||'').toLowerCase().indexOf('no cualifica')<0
+        && !r.resclo && !String(r.prox||'').trim() && !/clos/i.test(String(r.etapa||'')))
+       add(r,'Closing','Agendar la llamada de venta','Cualifico en el triaje y no tiene ninguna cita de closing.',1,diasDesde(r.desde));
+   });
+
+   // dedup: una tarea por lead (la de mas peso), para que la lista no se repita
+   // dedup por NOMBRE normalizado: un mismo lead llega por dos fuentes (pipeline_leads y closing)
+   // y sin esto aparecia dos veces en la lista.
+   var porLead={};
+   T.forEach(function(t){
+     var k=String(t.r.nombre||t.r.cid||'').toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,26);
+     if(!k) return;
+     if(!porLead[k] || t.pts>porLead[k].pts) porLead[k]=t;
+   });
+   var L=Object.keys(porLead).map(function(k){return porLead[k];}).sort(function(a,b){return b.pts-a.pts;});
+
+   var rojas=L.filter(function(t){return t.urg===1;}).length;
+   var b=document.getElementById('hoy_badge'); if(b) b.textContent=L.length?L.length:'';
+   document.getElementById('hoy_cards').innerHTML=
+     card('Tareas pendientes',L.length)
+     +card('Urgentes',rojas,'no pueden esperar a manana')
+     +card('Dinero en juego','€'+Math.round(L.reduce(function(a,t){return a+dinero(t.r);},0)).toLocaleString('es-ES'),'suma de los tickets implicados')
+     +card('Lo mas parado',(L[0]&&L[0].dias)?L[0].dias+' dias':'—',L[0]?String(L[0].r.nombre||'').slice(0,22):'');
+
+   if(!L.length){ cont.innerHTML='<div style="font-size:13px;color:var(--teal)">Nada pendiente. Todo lo que el sistema sabe detectar esta al dia.</div>'; return; }
+
+   var corte=L.filter(function(t){return t.urg===1;}).length;
+   var filas=L.map(function(t,i){
+     var sep=(i===corte&&corte>0)?'<tr><td colspan="8" style="padding:10px 4px 4px;font-size:11.5px;color:var(--mut);border-top:1px solid rgba(128,128,128,.25)">Puede esperar</td></tr>':'';
+     var key='hoy_'+i; LM_DATA[key]={r:t.r,tipo:(t.r.cid?'pipe':'clo')};
+     var col=t.urg===1?'var(--red)':t.urg===2?'var(--amber)':'var(--mut)';
+     var punto='<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:'+col+'"></span>';
+     var din=dinero(t.r)?('<b>'+Math.round(dinero(t.r)).toLocaleString('es-ES')+' €</b>'):'—';
+     return sep+'<tr>'
+      +'<td style="text-align:center">'+punto+'</td>'
+      +'<td><b>'+esc(t.r.nombre)+'</b><div style="font-size:11.5px;color:var(--mut)">'+esc(String(t.r.etapa||t.r.resclo||'').slice(0,30))+'</div></td>'
+      +'<td>'+esc(t.tipo)+'</td>'
+      +'<td>'+esc(t.que)+'<div style="font-size:11.5px;color:var(--mut)">'+esc(String(t.porque).slice(0,110))+'</div></td>'
+      +'<td style="text-align:right">'+(t.dias?t.dias+' d':'—')+'</td>'
+      +'<td style="text-align:right">'+din+'</td>'
+      +'<td><button onclick="abrirLead(\''+key+'\')" style="border:1px solid var(--blue);background:transparent;color:var(--blue);border-radius:6px;padding:3px 12px;font-size:12px;cursor:pointer">Ver</button></td>'
+      +'<td><a href="'+esc(t.r.ficha)+'" target="_blank">abrir</a></td></tr>';
+   }).join('');
+   cont.innerHTML='<div style="overflow-x:auto"><table><thead><tr>'
+     +'<th></th><th>Lead</th><th>Tipo</th><th>Qué toca hacer</th><th style="text-align:right">Parado</th>'
+     +'<th style="text-align:right">Ticket</th><th></th><th>Ficha</th></tr></thead><tbody>'+filas+'</tbody></table></div>';
+ }
+
  // ===== INCOHERENCIAS (31-ago-2026) =====
  // Casos donde el CRM dice una cosa y la realidad dice otra. Cada regla nacio de un caso real:
  // Martin Alejandro Burgos (closing "confirmado" que nunca ocurrio), Olga y Carla (vendidas sin cobro
