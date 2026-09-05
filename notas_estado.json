@@ -1,0 +1,1630 @@
+{
+"lHwjlhLLUVUzbqwKcqZs": {
+"estado": "PENDIENTE",
+"categoria": "NO_SHOW"
+},
+"EZPbEjd6ZU76yiWihqUO": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"FWAlMzjaouDhtlhC0N9t": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"Dujoe7u47w3mvXI8ZLiT": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"qqTpSiUWz2Ybxe2yyAhj": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"zsq1Ng09rhbVeKr6E8Bi": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "OTRO"
+},
+"NCGELHPEvjjaaElaMtbw": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"wC8ATtJB4nUVAhN87jhj": {
+"estado": "PENDIENTE",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"bn2bet97Li12ZyPzHPmO": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"7emSZ7yjib97dqwaEjsT": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"kRu6KWB1R3qqpWYMypI7": {
+"estado": "RESUELTO",
+"categoria": "CITA_AGENDADA"
+},
+"D5c9Yg9zT8Hayht714xP": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "OTRO"
+},
+"L8reoYVPjQFw0IAyVpQn": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"mZCze2Sez07YlMBuuH9d": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"e8nWRNaw8qyt2lGsNz0M": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"vcuyiCuK1bdmH0Xg0CGm": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"68znjxfIqne6zwQFvmqz": {
+"estado": "RESUELTO",
+"categoria": "PAGO_HECHO"
+},
+"K9M5NMhj2zfgoRxiuRSe": {
+"estado": "PENDIENTE",
+"categoria": "NO_SHOW"
+},
+"qYKFSjM9EdyRNSlotbpo": {
+"estado": "PENDIENTE",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"VnwGj6ScMYuHWFtBQ1vZ": {
+"estado": "PENDIENTE",
+"categoria": "NO_SHOW"
+},
+"sivncMe01ksc7J0vCfkN": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"FgsYRdA8l70g63eB9R1Q": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"OgYfA4foL4duvzAsxDyc": {
+"estado": "PENDIENTE",
+"categoria": "NO_SHOW"
+},
+"41MiQZxXvrHeK416lKih": {
+"estado": "MUERTO",
+"categoria": "NO_SHOW"
+},
+"BZRCswhTicA4946sljtd": {
+"estado": "PENDIENTE",
+"categoria": "CONTACTO_INTENTADO"
+},
+"LabSPrevvOus3EvYPp95": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"hWCIS1qBQUEvV39nEpIK": {
+"estado": "MUERTO",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"1T8EmhtkKzHfqC0Ug9hK": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"tGGcV1PfaYmc6GO0d727": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"KeMV7T5f0zD9RqWAhm7p": {
+"estado": "PENDIENTE",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"LuTWYLJfaETJvA3FTpS7": {
+"estado": "PENDIENTE",
+"categoria": "CONTACTO_INTENTADO"
+},
+"b9pgMNlTdAc1BP9JFY7D": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"HpnnUjH5caGJfm0pU0b1": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"PSWNjmZqa7qeu9f02NoG": {
+"estado": "PENDIENTE",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"hWojYDvPVsFrk0nKI9Wo": {
+"estado": "PENDIENTE",
+"categoria": "ESPERANDO_DINERO"
+},
+"6WntDYDuLGxHv4uSAZca": {
+"estado": "PENDIENTE",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"ULgSwTNavFtmzpaysPRn": {
+"estado": "PENDIENTE",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"NytifBPQPeE5ngHYfdaW": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"3fYgqo6yV4uiEJPRkD0u": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"3j4pIiAe2qbsS25CAdbK": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"AicqIgkNvnZkXHKUMLcA": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"3dp3kCaiwvu1sOUrNiwU": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"uthvmC6sTFU62cACO1tW": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"1XrzUELUI2LMg7PgVQXi": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"jCNwZSzHxNyKx2LA0pFL": {
+"estado": "PENDIENTE",
+"categoria": "OTRO"
+},
+"rd984W6iB29MAo3hLC62": {
+"estado": "PENDIENTE",
+"categoria": "NO_SHOW"
+},
+"CDC7dQaXJ7ZaZCKKgbvd": {
+"estado": "PENDIENTE",
+"categoria": "NO_SHOW"
+},
+"JfGNewoBxVr7c444fsqE": {
+"estado": "PENDIENTE",
+"categoria": "CONTACTO_INTENTADO"
+},
+"AZsQmY1t4RBu9YgTs9kt": {
+"estado": "PENDIENTE",
+"categoria": "CONTACTO_INTENTADO"
+},
+"z9QAuUWEMJSqwz6QlGFB": {
+"estado": "PENDIENTE",
+"categoria": "NO_SHOW"
+},
+"xlZvfk7K7Fcu4Z6snyED": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"JY8fU9XniUEhwa7Hdubf": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"sHpknFXB71XYfWuDMgYZ": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"KgrPou5GKYlcuKGElTgp": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"N5rxZqbevpbem3j9jn0B": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"JuepNJm3IHTZwk5CTQLK": {
+"estado": "PENDIENTE",
+"categoria": "CONTACTO_INTENTADO"
+},
+"PDKPidy1FAQzgAqokljz": {
+"estado": "PENDIENTE",
+"categoria": "CITA_AGENDADA"
+},
+"vpViW90rs1kA1iCf9jo4": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"NI2eGlhlP9vCJklejj5d": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"Uplh6JhqrWcf76JVTgic": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"JK1PVzREJLdKIDPwF4Fk": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"5YlbBDnkCBi8BwYEw5wr": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"jed6dqT6WuRBIlXXMXpr": {
+"estado": "MUERTO",
+"categoria": "NO_SHOW"
+},
+"2CXtQf1u0tmyoljO5fbd": {
+"estado": "RESUELTO",
+"categoria": "PAGO_HECHO"
+},
+"vkWJQKblaN53IsoTduNQ": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"79nFIYS6YXbskSpj6reE": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"8YwJwpUvCT70vO7Pzzeu": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"7fSaxFsZxHM4VCMbKY7X": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"pV3WiCxmfCjCVah5xSuu": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"DhdR9gHcsug187knm3Ze": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"RNVp4KPvj2jzLbjnDUND": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"wSsVrQi5G4btkvk9bFND": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"aBNaKTiD0PG7aq0tbu4m": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"F1y8LygPsLn5s0mEX5sC": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"xAosav0608ccINL0ffYP": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"TZuf8ZaM4X9dowf7UmK3": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"Emq8cALwtKw2jVtU8l5s": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"AdrUYq1Oau7OfYleUKi5": {
+"estado": "PENDIENTE",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"Jucv0Lv9XfK9uHzFLC2e": {
+"estado": "PENDIENTE",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"CSKUjtHx6DaMHbEqYMjq": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"chp9ACxgsvB1eDPwHzLm": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"jesftLgwvvbjl1ZxCKgg": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"9WQdAUkOB1YFyb0ZURBr": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"S7NOftW3uVKAPGbCfUdJ": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"zVwKQbOoNkdRcii4M1pG": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"cLzdF2Mwb4BDcCHuhKwU": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"BHXezAtAh8gTaW1bpA5z": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"2sFPv9Pqy2jnBDArxjTe": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"54pGKd3X4YG7gqEKiEwz": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"N6iCEktuBH4GKli7rwYh": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "OTRO"
+},
+"nG54bY4jjL5sBnEzAcNR": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"qeGxdzJmomhiHkqxTNSk": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"VtNB39Up9qTH4dgxw3BY": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"0GX5AlVILs83bpRRmwzd": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "OTRO"
+},
+"WhDVWE4L3JLGqXU39pDm": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"fCTlxpKgdCRijDe8kezw": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"VuHoRl7CApJFvS3333b7": {
+"estado": "PENDIENTE",
+"categoria": "OTRO"
+},
+"i0gS0qxInDTI8BYEeahA": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"K3RpeQ70MBVGWmQLsG0d": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"FobJvI4Qr8gY8l2MOvHT": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"fnx4CGeczgde4S3pgrw0": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"t8VqulIuT0y5NCuzHmAu": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"coDE3nUsPeHS0vZzKprP": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"VRwLiha2s3h8K7CaHAHe": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"UwWQNeFhkq4Jm1NUy3p9": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"3q2qNz1qp3DQvb8wkUMM": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"7bdW6GKjmArp30oPFAC3": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"Bf0dxEJgS4zhZWj163si": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"k57cOteOk2RwcbfThY6q": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"hzJU7x29CgstgHc6T7PX": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"EaERPRfM3hNjq4yL5vXi": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"EUb5PlpAqa4ZAPNTh5Bi": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"HjTSkXWJFk9lDYqplhIt": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"UuZ1gzVmF5VRPjGR0uKB": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"E1izA4y9V03JYhollzhT": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"xnxkilvaQ91Q1wR7q3Uy": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"4UiMS39JUMRLI730Upx3": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"Wbo05k69DTL2v7IW7F8p": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"BuMWMkGiSmDx3nci0bS0": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"ZUkmwki8J2mVqupio9fl": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"Adm0VutphoRZpZ0Xe8yX": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"FoZsSxjQP0x87Nrd1G0c": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"8h8bSwMx4yAz3CyOKgav": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"SbWcEYTfm8Nn7wYwkC7A": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"LQTRTYi2ypaMLANiwAmK": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"MCRJu92U5Xeoi6oVsGqA": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"sfYzRYv7ZILvzMxzsHXq": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"RB7E9RJcrh4ZQHpA0I6e": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"Oeja07EydMXLUm5LaFRq": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"hiEZHCQCyq07x64xRjhk": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"ZZn6IeUBgNJkcm9kbLUl": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"5nlaPTgcBDKOp5LPi2NL": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"JFL1abILx7A8mvi9M0pb": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"a3B9OnbJzZK416NZ7gIX": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"5sBD58fhjNpSnO6hiZU1": {
+"estado": "PENDIENTE",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"B2htqAGk8DLBTyTOXxHW": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"pV7MBcuVsygrihEdphSl": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"u9Oij55lABNeQZrwIPbO": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"uJE1uYcVWRn1lOWqkKKz": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"NkcMXD2GJLk60UpMMSpo": {
+"estado": "PENDIENTE",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"hWGcZb4Rv1EOp20f4Xbb": {
+"estado": "PENDIENTE",
+"categoria": "CITA_AGENDADA"
+},
+"SFrEspdMn9thR6G9IrNh": {
+"estado": "PENDIENTE",
+"categoria": "CONTACTO_INTENTADO"
+},
+"BbZzqG0ZPy8lk7febwUF": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"g7Zg1e9MCGK74TvQMmKd": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"4g6tv7Rsim6sApX46fms": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"SgM9kWxLyzYwJg4YdIIw": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"CDAMsnriQ3wep0okImSi": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"FS97XyGuE55Bth0rCIYw": {
+"estado": "MUERTO",
+"categoria": "NO_SHOW"
+},
+"vOfkpBlbzJjcFBuHJJEI": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"cuPVJxL07GLj2jAlkCBm": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"2HRqb4AFYUcUZ6Z0saui": {
+"estado": "PENDIENTE",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"p7GBOI5dQRGsHdAXnddJ": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"vXGgtK2uwJcoL12VXsXi": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"48hfcVp7R1bO7Xj0ftv2": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"8gFlVO6xFfafAJo7FEkg": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"GPLB9RiC9I8VEmcCZ2b9": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"OUVUqRjtxJgFfX4NHzbF": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"CPk2Oh8Ed0KldZLHBjuE": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "NO_SHOW"
+},
+"4uiuuUPbzy04nQ83c0UW": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"H2XEyza2ZSXlNrulDnWV": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"dxZstiZwthSqYdgQqKHl": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "OTRO"
+},
+"GyaOd1fJtXEWH7l0ONMm": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"9pPjmNNWrih4h8y0GqMi": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"XTf35MbAT1C8Ju4L0ShE": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "NO_SHOW"
+},
+"m3lviQNoJLdfa1ICVndO": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"EoKGIbOka4DVN5rnly7N": {
+"estado": "PENDIENTE",
+"categoria": "CITA_AGENDADA"
+},
+"9pVSbvM7ucssP0RHbsCX": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"msHkHrZewpu43ivNL1Nh": {
+"estado": "MUERTO",
+"categoria": "NO_SHOW"
+},
+"BHWqIektMbipYVHuUq7d": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"0S4P3lo4fUTANp10WKCV": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"0Ge62aHswXP9A8WgZYUj": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"DMVDFayC7ruDAQH84iRL": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"soTiidbzqkPJ21a9dys5": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"Cp2oXtoN6aOkvP5GJ3mF": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"pWwX4hnIHoOHzqbXE898": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"ThSUCf0Ypruh0Lw32olV": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"NevTMYwkC8T4hULtWHKy": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"51DjGKVme6rU4SNDAp9u": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"Db6jHlphmVqbGbrl6nae": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"zmtg5iKERM7FsWKfsIFj": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"KFvCOck7vsWJ65LBtlIN": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"y4S8zwGcwWTewrbhkATu": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"c0UqqF5CTCap7L2hXHAR": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"utFkpB03bOLeCnWXH2hU": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"TCfggH0lfsQbOzQiLqvT": {
+"estado": "PENDIENTE",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"z6kIPtPiFw4Icehl6bBq": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"CO5Z8dkt80gOQqeP68Mj": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"AHx5OgVqiGaWGeqW4P1S": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"kap2snYjutARO5WzepHz": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"lfUD6Yzrr0Is2cQO0K67": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"7vut8IJBBEkIcqxWIK26": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"2agrYd0yEJFaQjZDRSAH": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"yuIEHSrHZigMtQ8SYrSp": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"UMmMjGodepDv0YNb3jyV": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"az6Cr39pheGbFhLzovML": {
+"estado": "PENDIENTE",
+"categoria": "CONTACTO_INTENTADO"
+},
+"N73A8hj7ZfM0HPT4mp9o": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"SVL4stD4LfAMm1mlq0Cn": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"hWFgWRo6oys87016QVZQ": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"wK6zLmRzFM2FOMXJi8cl": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"Xy4oeATZ1bNd5hEubiYX": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"cLIcEYDOTqjFdVmKLizz": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"5b5wLic7oLIoPyAulHNR": {
+"estado": "PENDIENTE",
+"categoria": "ESPERANDO_DINERO"
+},
+"I57d3zUjbwPdrnVRQj2D": {
+"estado": "PENDIENTE",
+"categoria": "PAGO_HECHO"
+},
+"f7tJzFwo0q8oKlt874oF": {
+"estado": "PENDIENTE",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"BB8oep8aHZGryvlUvqqO": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"y1Lk3wCFzGxwThFI2fDV": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"QHoaOgZNMYsw3nPjFPlY": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"8sR0gcoxkBBDaNqfExJJ": {
+"estado": "MUERTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"BZebtmTtetLcMlnM0hbU": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"WrRyJuSvvT7GfRqraoRe": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"Yu9pOogyBK5DzEEQIIBa": {
+"estado": "RESUELTO",
+"categoria": "PAGO_HECHO"
+},
+"9OHRs2vMNaVzMAHvOnc9": {
+"estado": "PENDIENTE",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"cOueKmzoapRu0G0FLNZB": {
+"estado": "PENDIENTE",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"VEsxlldrUtEtlfCzXKBW": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"ygHXa10hjRXhoz32bUI9": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"XJmm8BGtd0fDAzKX7Tb3": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"gRWnUERDm1UQ0Ld6PBDn": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"Kyc2Lv8ibnJw4enyHhB0": {
+"estado": "PENDIENTE",
+"categoria": "CONTACTO_INTENTADO"
+},
+"HYUDieu6VksDGhFKT3bO": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"khPLiMufgpDSVzoBFj5J": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"Fs18ELGP72aUt2xb9OQU": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"ws7H27dzsG8rKOlFuHdr": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"0hzJFspmaOZoE0nuZZmP": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "NO_SHOW"
+},
+"GcWuBmyksQ1tkfPRGOj8": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"c3FxHzvCmPtkQSnEY9X9": {
+"estado": "PENDIENTE",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"olAAxWmjkw4tjUjmW11I": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"J7xM7hjOkjWRHSqiDP61": {
+"estado": "MUERTO",
+"categoria": "NO_SHOW"
+},
+"3a6SJoPGNRNxLPQXLY9T": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"nC3H1cAl7ZOXy73SqFXH": {
+"estado": "PENDIENTE",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"cW1mh5xISRkrLmblx7YN": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"nEGVSxSuCP6838EYA40I": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"PQl6bwsJ4oH8VyEMytue": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"QYdPF08GYJrGNEpyCCAw": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"ShbhaWlzvf7XhY7VC8jv": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"k1dtSiwEeo6qNAB2jZjc": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"3HzlyCcXxocKF3cDu9ji": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"AIpDVA9Xw1kt0EtSoKSA": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"xCRu5xuZfWABAeteZ8yz": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"uwlU0XCy0ttvR7jTf1Gb": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"LLXw5bG57ZiT6kA8LlcB": {
+"estado": "MUERTO",
+"categoria": "NO_SHOW"
+},
+"xX81aUpPSquYraNzaGAx": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"e3nOnNzkLu3wU0KGHJIu": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"reIdaOOswj6cvrvhUQ3Q": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"OMEdFPnjymowXfnCB5GX": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"gfJr9UGGQZNW0eICWMxO": {
+"estado": "PENDIENTE",
+"categoria": "CITA_AGENDADA"
+},
+"Hr3OhcTVOLfJ5qQaj7Yj": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"JS5M7dOy7unMbfQgxGWJ": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"el2PWvL5PocYKpLXXnOJ": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"ciXlYozmrnsxBGt3DmsR": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"37UxQN3w0NM7PmHdATkv": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"fwySvfW9kVlUeordrDpQ": {
+"estado": "PENDIENTE",
+"categoria": "ESPERANDO_DINERO"
+},
+"zwMRWyzkukoMIZZJ1G98": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"XInF53eXlVuufcOULjsS": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_HECHO"
+},
+"I0djn5sUyWqVEjJNZ6r1": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"3vx1ZhqtVvLZE98sgDHj": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"DGKpLqYo5WIC83GQV4Nd": {
+"estado": "PENDIENTE",
+"categoria": "NO_SHOW"
+},
+"KwdhcZKzSCVLkNPL4tVU": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"LsD0MeCqINjeJ2VG7Ech": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"y6gp8CC7fzri0x9vHvgK": {
+"estado": "PENDIENTE",
+"categoria": "ESPERANDO_DINERO"
+},
+"isA0ULUfAhf9t9FRBa8k": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"B56cL0vM52ZL6xzEWnoo": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"4O0EkLQSDE7Xc8PE3flz": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"SbRpKfS3PPXrr2yJCx7g": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"awPUgw4MXDYwO8ppeHUa": {
+"estado": "RESUELTO",
+"categoria": "PAGO_HECHO"
+},
+"GnNtoXLQbMXgvqkdvvZk": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"IaMHu3XJQ5xctDmsPHu9": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"7bkXqERAAfjGjkHPjLxM": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"vv0sICVHeOdmdqaCRCwv": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"MNqiZqshIrP2nvOCr2RL": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"v24FvpkgK136QMqXzlDG": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "NO_SHOW"
+},
+"LN5D77f2OI3HuKbf3D8v": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"CWxomlqSTTI9M7TfdsmI": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"dmSz8p8R4L1Sok4eUfhC": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"UDnYeZW0TTuOIffzlaRE": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"ppnsFpRgVRPOItPer6rQ": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"V247VY6aa6AqiN54KqT4": {
+"estado": "PENDIENTE",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"9AM5YLfl74QoT3gO3rKH": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"z1qv06Ndtchn26cBDQQ4": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"6xDkgx1Pb5ELnkeyaIYb": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"EuEcyyNef5IPh7uIUQmr": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"vdjJVpiCuiKYs105dWmh": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"kUQnihYumvVOY5nI0hpe": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"FKeNbbg0C1zCZ9no0PCr": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"x5OdM2EDVynNjJOD7NIG": {
+"estado": "PENDIENTE",
+"categoria": "CONTACTO_INTENTADO"
+},
+"mNyRjhFMe2MQNZefQZTi": {
+"estado": "MUERTO",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"nW1cmhNeVgyflNV4dBN1": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"wBF71eanaswl85963gou": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"XgM3cJKsSMa4KxAUHRqy": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"poFPzgNs54xHZIEqzJY7": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"rtYR41mkFk77OazwbEPb": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"0dEhh9fpI14upXzZKXCY": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"qXeAC3pi1sZjDIHsQJ8G": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"MPhmZcMdKMz06zJl1tgI": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"J1Nx728GbGqQt4F1sItf": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"64cjOZtmoAcNFNmSW0qe": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"AxjQKaBLqZJeIZQZT3cy": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"XDg3naR4dENbRLBhOlgw": {
+"estado": "MUERTO",
+"categoria": "CONTACTO_INTENTADO"
+},
+"YjmrJjyeQVcVxfVSKGB0": {
+"estado": "MUERTO",
+"categoria": "NO_SHOW"
+},
+"EKbLvg2ZeceagYQ8ZBiV": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"uAQK5waML4XUf0CemkD2": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"m08RDFF1qqsV0pjZclkP": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"3377Xb3I4u7bJ9cnWUWX": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"KPZY4345DPgwAxEUyqrl": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"r0GiuN0eIZFBV7UBFxMB": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"a09oYrNj07yifxdLSwga": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"zSo8kXxmtbJj76Ig8dWX": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"3zUcoNVbs9DNtHIaY7XO": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"Ww8cdCeqNTwzhtyeE6Ze": {
+"estado": "MUERTO",
+"categoria": "NO_SHOW"
+},
+"gaf3rgN6IL4k8Os1f3NS": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"waaIDnjBnOvna2pDZR9t": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"mDTqWB3soiL1rjnc3Mru": {
+"estado": "PENDIENTE",
+"categoria": "OTRO"
+},
+"heBDWzcxV4Cgu16vQ2fH": {
+"estado": "RESUELTO",
+"categoria": "PAGO_HECHO"
+},
+"Pwc0qZYVhah5c3qybELo": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "OTRO"
+},
+"FZLG8nIZXr2m6LbNIUZV": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"EpFVh2Dc0Un5kEhkXOKL": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"6Gy5nJkzT64i8wn5xbY6": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"L91Rn7nBg9xICVe4o9UQ": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"kAOLtqgbZAknagPQwrap": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"RUL07qIPdiEwmEXyGQHl": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"7Qcx926wSOYjbtkHe90l": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"wwM6LV7YS8kJIU9OXFNq": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"aa71W1JeNR5kYbGdNe3R": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"8YnfSlkH597bxKKM46j1": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"TvKx19XP70t4PCFS2unO": {
+"estado": "PENDIENTE",
+"categoria": "CITA_AGENDADA"
+},
+"U6nMaGmj6gRMmHfMWDMr": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"YBmhixjSJkzgRftCwSVz": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"sBGZCrAP8VyxwQXybrB1": {
+"estado": "MUERTO",
+"categoria": "NO_SHOW"
+},
+"q3ARpdTqq8jZCyAcuu4G": {
+"estado": "PENDIENTE",
+"categoria": "NO_SHOW"
+},
+"tdQkIUSMfRfzqKOlszGC": {
+"estado": "MUERTO",
+"categoria": "NO_SHOW"
+},
+"euv05auB07FRCS0Mkuxy": {
+"estado": "PENDIENTE",
+"categoria": "CITA_AGENDADA"
+},
+"rlA0ImYMWnCPMZ0Supdt": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"X0AeXWCjubtnFwXymnXg": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"mcYtyicWRJsljgq3iCPF": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "NO_SHOW"
+},
+"B3lwcq0zUrp9jauZpq2I": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"mO6CXcZ6fIRpYU5GBjob": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"7CN8G3v8HiezlnXYZ6WL": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"pic1qsOyvRhv27OszZ1b": {
+"estado": "RESUELTO",
+"categoria": "PAGO_HECHO"
+},
+"j8221TW1EY3dmz2Etzgf": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"Oyrdr1XROdJ9LMbkRrL4": {
+"estado": "PENDIENTE",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"Bm6RR2wcQed5fjzJHWwT": {
+"estado": "MUERTO",
+"categoria": "NO_SHOW"
+},
+"acVsACUCIitOu1bGAOeD": {
+"estado": "PENDIENTE",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"bHZd8rIeSbJ5kkTsIkyx": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"WJkV6bDR046eG5NF17mo": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"C2MMcOPWVgqDxiOfzr5R": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"2rZEK5Qk5cp323ccQG6s": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CONTACTO_INTENTADO"
+},
+"y2qeFSk4BDyAr3AXpP2g": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"5AGJjfKbmnjny24fn1yi": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"HO8Q0bYZQ1uQFXnNMdsf": {
+"estado": "PENDIENTE",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"JaoqMzwQT2xO5R1hbTEq": {
+"estado": "PENDIENTE",
+"categoria": "NO_SHOW"
+},
+"aGuPBDGdWeeMHlfFV1Sf": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"MybypEZc8fAleam6gY7Z": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"im09LiHu66sweuXmkEji": {
+"estado": "MUERTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"J7x8si1DMNxQpqBU7B7n": {
+"estado": "PENDIENTE",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"1kl7JzDvzIUZkXS3pcKe": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"NSKiqxBqQTVF9vOUql5b": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"RslkGO6nJUtyz3e9ZQyo": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"FSQVd5UA6tiHwoqI4mNW": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"3NtJaMidZ1XJyW1MDVSc": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"oGm4UCXXcoGS8IQmH6H6": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"BdJxaEIeP8IHAaK6vXuq": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"WPr65QOYiVwobZRt0Nno": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"kZszCpm3dtQgILeabwQr": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"bgxTcxIIXmsoharnanZR": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"iZwqCqO7XD1GivNsYWlk": {
+"estado": "RESUELTO",
+"categoria": "PAGO_HECHO"
+},
+"0PPqCSXmvl3pLYChX67J": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"89D7hNa0dvbg04hIGSXz": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "NO_SHOW"
+},
+"YFDAbLoHdR57hIXF6UXe": {
+"estado": "MUERTO",
+"categoria": "NO_SHOW"
+},
+"5P6zWEXLi36vn40LybzC": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"FiA3ZE7hKyOVNlpHbAIA": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"e2Ic9TcoRUf0dDnCqqDI": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"CaouUZh0ZMJ7ZlXW5MVa": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"PYdNwjqDqDC1Ijxxu5sf": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"KQrXm2EeDwK3rSqhPFhV": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"dUZgNFe26oFS1BzK4Toy": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"GagU2H3jJ1bCAY4K1EtK": {
+"estado": "MUERTO",
+"categoria": "NO_SHOW"
+},
+"8wMEUe9lAWGTjfJqQaxp": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "OTRO"
+},
+"16yveBdNJU5U7ubDgjmJ": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"gXzetCkzjot7i8cxCXGA": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"fHsi79Snjy13HJejYOOS": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"2wjMGgmGd3BZ6Ofog5ZP": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"JdSL16hNuW5fzhfNhUMl": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"s9Alelx5lRzKGHcndrKF": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"odL0Kh3CPADk6eczaMme": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"ct9KdLD4BjYfGIR82AfD": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"kX8aRBRNVoKOkX3sOPDl": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "ESPERANDO_DINERO"
+},
+"eSIdzrsARkuMQdNZqg7z": {
+"estado": "PENDIENTE",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"hk8vk8Mlpgh7dtfIt2Ik": {
+"estado": "PENDIENTE",
+"categoria": "OTRO"
+},
+"CwKeLpKN8HNxivSmXdEN": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"oule4uNFO4kegqzLbYSn": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"xpILRCxft67ZHS5llslZ": {
+"estado": "MUERTO",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"e5L7kSKp5zPwVoIWpjAh": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"rmc9w0BSXboquib6jEPm": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"E3hTCdjagMyjriLHEsKt": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"JATw0GoVaVnbJglz054h": {
+"estado": "PENDIENTE",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"NTLo02AEwk1TrDYPMgHW": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"OUyEnKmDj0hLssBEeeGV": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"4UerA7GveYa6YRytL1O1": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"Chp14flOPgPS5IMPRpOi": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"UryylqL1ZqwKoOSrIyLJ": {
+"estado": "PENDIENTE",
+"categoria": "NO_SHOW"
+},
+"C6Y7IeSx2kTJwMMK7DLG": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"tC3Z6wuTqRYfHBI6D9RU": {
+"estado": "SOLO_CONTEXTO",
+"categoria": "PERFIL_DEL_LEAD"
+},
+"cIxYfv2qCeZWEQGjiHWZ": {
+"estado": "PENDIENTE",
+"categoria": "REAGENDA_PENDIENTE"
+},
+"ov0BJbW6KMlE1RQ74Nbq": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "PAGO_COMPROMETIDO"
+},
+"PhYa7a0jUXyNE8AWHOBU": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "SEGUIMIENTO_FUTURO"
+},
+"sKJLRAnnqgCBZVa6sR85": {
+"estado": "MUERTO",
+"categoria": "DESCARTADO"
+},
+"8h3HuRJVEmJ9v8yrzEFi": {
+"estado": "ESPERANDO_AL_LEAD",
+"categoria": "CITA_AGENDADA"
+},
+"HOPQwSjjWVB6JvVsds2u": {
+"estado": "PENDIENTE",
+"categoria": "PERFIL_DEL_LEAD"
+}
+}
