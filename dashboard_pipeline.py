@@ -349,7 +349,11 @@ print("citas futuras de triaje:",sum(len(v) for v in FUT_TRI.values()),flush=Tru
 # Se baja TODO el pipeline de una vez (paginado) en lugar de preguntar oportunidad por oportunidad:
 # son ~250 llamadas menos y esta cuenta ya sufre rate-limit.
 # nombre del usuario asignado a la cita (closer de respaldo cuando el formulario no lo registro)
-_USER_NOMBRE={"J4UXESeEUJxZNpPkYrIu":"Natalie","hyiIfpfoUHIOyLuclKPM":"Christian"}  # fallback fijo 26-ago
+_USER_NOMBRE={"J4UXESeEUJxZNpPkYrIu":"Natalie","hyiIfpfoUHIOyLuclKPM":"Christian",
+  # 5-sep-2026: autores de notas. David ya no esta en la cuenta y la API no resuelve su id,
+  # pero es quien mas notas escribio (55): sin este fallback salian como "luJ5mV".
+  "H4cQvxb8oNJzMDCMAKEd":"Sary","9wqAsILF3LKM6quwY9is":"Sara","le1bUY5SJqY0hbLq8Aqh":"Jesmary",
+  "s5HhPWOKi5kO1kWzsgQn":"Alejandra","luJ5mVK8iHGRdp6gp33E":"David (ya no esta)"}  # fallback fijo 26-ago
 def user_nombre(uid):
     if not uid: return ""
     if uid not in _USER_NOMBRE:
@@ -359,6 +363,9 @@ def user_nombre(uid):
         except Exception: _USER_NOMBRE[uid]=uid[:6]
     return _USER_NOMBRE[uid]
 ETAPA_DE={}
+# 5-sep-2026: cuando entro el lead en su columna actual, para CUALQUIER pipeline (no solo LEADS).
+# Sin esto, en la pestana de closing no sabiamos si Sary ya lo habia movido despues del disparo.
+ETAPA_DESDE={}
 # 25-ago: ademas del nombre de etapa, guardamos la oportunidad completa del pipeline "LEADS"
 # (etapa, cuando entro en ella, estado) para la pestana Pipeline: leads vivos en el embudo.
 LEADS_PIPE="mW4ZfvQnRARhIlgmpj6e"   # pipeline "LEADS" de FunnelUp
@@ -384,6 +391,7 @@ try:
             _c=_ct.get("id")
             if not _c: continue
             ETAPA_DE[_c]=_stages.get(_o.get("pipelineStageId"),"")
+            ETAPA_DESDE[_c]=str(_o.get("lastStageChangeAt") or _o.get("createdAt") or "")[:10]
             if _o.get("pipelineId")==LEADS_PIPE and _o.get("status")=="open":
                 _en=_stages.get(_o.get("pipelineStageId"),"")
                 OPPS[_c]={"etapa":_en,"viva":_etapa_viva(_en),
@@ -418,6 +426,51 @@ cmap={}
 with ThreadPoolExecutor(max_workers=4) as ex:
     for cid,c in ex.map(fc,list(cids)): cmap[cid]=c
 
+# ===== NOTAS DE LA FICHA (5-sep-2026) =====
+# Sary mantiene el CRM al dia y deja el "que ha pasado" escrito EN NOTAS, no en campos. Hasta hoy el
+# panel no leia ni una: por eso reclamaba el cobro de Carla, cuya nota dice "Hizo 2000 eur por Revolut
+# y 1.500 por SEQURA", y perseguia a leads que ya habian dicho que no. Medido el 5-sep sobre las 26
+# tareas de la Bandeja: 58% eran falsas por esto y otro 31% solo se resolvian leyendo el texto.
+import html as _html
+def _nota_limpia(b):
+    t=re.sub(r"<br\s*/?>","\n",str(b or ""))
+    t=re.sub(r"</p>","\n",t); t=re.sub(r"<[^>]+>"," ",t)
+    t=_html.unescape(t); t=re.sub(r"[ \t]+"," ",t)
+    return re.sub(r"\n{2,}","\n",t).strip()
+def fn(cid):
+    d=cg(f"https://services.leadconnectorhq.com/contacts/{cid}/notes",headers=H21)
+    ns=[n for n in (d.get("notes") or []) if _nota_limpia(n.get("body"))]
+    ns.sort(key=lambda n:str(n.get("dateAdded") or ""),reverse=True)
+    return cid,ns
+NOTAS={}
+with ThreadPoolExecutor(max_workers=4) as ex:
+    for cid,ns in ex.map(fn,list(cids)): NOTAS[cid]=ns
+print("fichas con notas:",sum(1 for v in NOTAS.values() if v),
+      "| notas totales:",sum(len(v) for v in NOTAS.values()),flush=True)
+
+# El TEXTO de las notas es informacion personal sensible (situacion economica, familiar, carrera de
+# medicos con nombre y apellidos). El repo del panel es PUBLICO, asi que por defecto NO se publica:
+# solo van los metadatos (quien, cuando, cuantas) y el estado deducido, que es lo que hace falta para
+# no dar la lata con tareas ya resueltas. Con el repo en privado, poner NOTAS_TEXTO=1.
+NOTAS_TEXTO=os.environ.get("NOTAS_TEXTO","")=="1"
+_EST=os.path.join(os.path.dirname(os.path.abspath(__file__)),"notas_estado.json")
+try: NOTAS_EST=json.load(open(_EST))
+except Exception: NOTAS_EST={}
+
+def notas_de(cid, desde=""):
+    """Lo que el equipo ha escrito a mano sobre este lead, mas la fecha del ultimo toque humano.
+    'tocado' = lo mas reciente entre la ultima nota y el ultimo movimiento de columna. Es la senal
+    que distingue "nadie se ha ocupado" de "Sary ya lo trabajo y lo dejo donde toca"."""
+    ns=NOTAS.get(cid) or []
+    n0=ns[0] if ns else {}
+    f=str(n0.get("dateAdded") or "")[:10]
+    e=NOTAS_EST.get(str(n0.get("id") or "")) or {}
+    return {"nota":(_nota_limpia(n0.get("body"))[:600] if (ns and NOTAS_TEXTO) else ""),
+            "nota_f":f,"nota_por":user_nombre(n0.get("userId")) if ns else "",
+            "notas_n":len(ns),
+            "nota_est":e.get("estado",""),"nota_cat":e.get("categoria",""),
+            "tocado":max([x for x in (f,str(desde or "")[:10]) if x] or [""])}
+
 # setter por contactId, leido de la FICHA (campo "Setter asignada" o etiqueta): atribucion exacta,
 # sin cruzar nombres. Cubre a todos los leads con cita; Kommo cubre el resto por nombre.
 GSET={}
@@ -436,7 +489,7 @@ print("setter por ficha (GSET):",len(GSET),flush=True)
 # Sirve para saber DE QUIEN ES EL TURNO en cada lead: si el ultimo mensaje es del lead, la pelota
 # esta en nuestro tejado; si es nuestro, estamos esperando respuesta. Se saca del listado de
 # conversaciones (una pasada paginada), sin bajar los mensajes uno a uno.
-ULT={}; CONV_D0={}; CONV_D0N={}   # D0 por contactId y, de respaldo, por NOMBRE normalizado:
+ULT={}; CONV_IDS=defaultdict(list); CONV_D0={}; CONV_D0N={}   # D0 por contactId y, de respaldo, por NOMBRE normalizado:
 # 28-ago-2026: al agendar, el lead aterriza en la landing post-agenda con un boton de WhatsApp, pero
 # NO todos lo pulsan. Saber quien nos ha escrito y quien no es lo que permite perseguir a los mudos
 # antes de la llamada. El listado de conversaciones ya trae la fecha del ultimo entrante de WhatsApp.
@@ -466,6 +519,7 @@ try:
             if _da0 and _nm0 and len(_nm0)>4:
                 for _k0 in {_nm0," ".join(_nm0.split()[:2])}:
                     if len(_k0)>4 and (_k0 not in CONV_D0N or _da0<CONV_D0N[_k0]): CONV_D0N[_k0]=_da0
+            if _c.get("id"): CONV_IDS[_cid].append(_c["id"])
             _wi=_c.get("lastInboundWhatsappMessageDate")
             if _wi:
                 _wf=dms(int(_wi) if str(_wi).isdigit() else 0) or ""
@@ -480,6 +534,46 @@ try:
     print("ultimo mensaje mapeado para",len(ULT),"contactos",flush=True)
 except Exception as _e:
     print("AVISO: no se pudo mapear el ultimo mensaje:",str(_e)[:70],flush=True)
+
+# ===== DE QUIEN ES EL TURNO, DE VERDAD (5-sep-2026) =====
+# conversations/search NO refresca lastMessageDate/lastMessageDirection cuando el mensaje SALE por
+# WhatsApp: el registro se queda congelado en el ultimo mensaje del lead. Caso Olga Magaly: el indice
+# decia "inbound 25-ago" y en la conversacion habia respuesta nuestra del 3-sep. Medido sobre los 121
+# leads del pipeline: 11 con el turno al reves, 10 de ellos acusandonos de no contestar.
+# Arreglo: para los leads que pintamos, leer la lista real de mensajes, que si esta al dia.
+# La pagina 1 del endpoint es la MAS RECIENTE (verificado con una conversacion de 110 mensajes),
+# asi que no hace falta paginar para saber cual es el ultimo.
+CANAL_REAL={"TYPE_WHATSAPP","TYPE_INSTAGRAM","TYPE_EMAIL","TYPE_SMS","TYPE_FACEBOOK","TYPE_LIVE_CHAT","TYPE_CALL"}
+def _ultimo_real(cid):
+    mejor=None
+    for _ci in (CONV_IDS.get(cid) or [])[:4]:
+        _box=cg(f"https://services.leadconnectorhq.com/conversations/{_ci}/messages",["limit=100"]).get("messages") or {}
+        _ms=_box.get("messages") if isinstance(_box,dict) else _box
+        # fuera TYPE_ACTIVITY_* (eventos del CRM, no mensajes) y los TYPE_EMAIL sin direccion
+        # (registros vacios de automatizaciones: ni cuerpo ni asunto)
+        _ms=[x for x in (_ms or []) if (x.get("messageType") or x.get("type")) in CANAL_REAL
+             and x.get("direction") in ("inbound","outbound")]
+        if not _ms: continue
+        _ms.sort(key=lambda x:str(x.get("dateAdded") or ""))
+        _u=_ms[-1]; _f=str(_u.get("dateAdded") or "")
+        if not mejor or _f>mejor["_f"]:
+            mejor={"_f":_f,"fecha":_f[:10],"dir":_u.get("direction") or "",
+                   "txt":re.sub(r"\s+"," ",str(_u.get("body") or ""))[:220],
+                   "tipo":_u.get("messageType") or _u.get("type") or ""}
+    return cid,mejor
+try:
+    _obj=[c for c in cids if CONV_IDS.get(c)]
+    _corr=0
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        for _c9,_v9 in ex.map(_ultimo_real,_obj):
+            if not _v9: continue
+            _ant=ULT.get(_c9) or {}
+            if _ant.get("dir")!=_v9["dir"] or _ant.get("fecha")!=_v9["fecha"]: _corr+=1
+            ULT[_c9]={"ts":_ant.get("ts",0),"fecha":_v9["fecha"],"dir":_v9["dir"],
+                      "txt":_v9["txt"],"tipo":_v9["tipo"]}
+    print("turno corregido leyendo los mensajes reales:",_corr,"de",len(_obj),"leads",flush=True)
+except Exception as _e:
+    print("AVISO: no se pudo corregir el turno:",str(_e)[:70],flush=True)
 F={"prof":"I3MgyLftSnsPLPShebZH","setter":"lcFBOFN6VjZhvTgMFvuf","sf":"m7Sypf2v0DsMUl5EDv9D",
    "st":"BAdbcKq3A7Ks4kiaE9Vf","sc":"Gw71M4thYl2f0qTewdnV","rc":"dQQq7OBT7if2KbQv3mrx","cash":"fjnYS3QQDnOAhwa1je51",
    "ticket":"qSSpqvVhQqBMd01jwaiB","pagado":"Atuyg9PkXzUA0Na2OOxQ",
@@ -490,7 +584,42 @@ F={"prof":"I3MgyLftSnsPLPShebZH","setter":"lcFBOFN6VjZhvTgMFvuf","sf":"m7Sypf2v0
    "infolead":"FoBSAwhN7pZ9bRVk9h3o","objtri":"3adftx5fU0SS60Z9HfL7","objclo":"irbogxFInHAcRdPZuEPM",
    "estado":"3se8LQQqUMP1wp6CwXSZ","linktri":"EC5k5nHjjV9E5Vj6kkgp","linkclo":"EZqcLopGWnk2nUfMR5Yz",
    "motivo":"hTpq3AySxQLimEIlMKGp",   # Motivo principal (no cierre)
-   "cta":"ycjnCtvt5bkIvlWzCO4v"}      # CTA Comentario (link del reel): de que reel/anuncio/cuenta vino el lead
+   "cta":"ycjnCtvt5bkIvlWzCO4v",     # CTA Comentario (link del reel): de que reel/anuncio/cuenta vino el lead
+   # 5-sep-2026: Jorge colapso las 3 columnas de "Faltan pagos 3,5k / 5k / 8k" en una sola.
+   # El importe ya no lo dice la columna, asi que tiene que verse DENTRO del lead.
+   "pendiente":"RrCBDAhnUxtjhrboFMHP","ncuotas":"erT6M2HhHNJ63JfjrHYI","cuotaspag":"YG00awT7pbsbzVfXBK3v"}
+# las 4 cuotas del plan de pago: (importe, estado, fecha de pago, fecha PREVISTA)
+CUOTAS=[("5LO6PkpFI44RmDDrmDkZ","cNLjCi5SyEiB0PLXOHBM","b9Zf3kUeNl8Mr58nl9JV","ZKAfOAlFKt3Jf9kr1PbX"),
+        ("rhC4f2kI2RXkBE74ESQx","03xXAimLdWvMAkJiwqse","wS6UCCFCAVaRfhH5wdop","pr8fMlsTofnt2hVvLDj6"),
+        ("qLWxtVHOchsja9INUiFH","ilrDZ9au5TinLOrMbZ6R","qm0mtykxIlsT5yZW2fdp","wxoXnICwRTBwPPJnI6ml"),
+        ("19CsJ0ee2bH789jRh5aw","sta9Gni4Fm3bswwAD6tM","lX1jqu36PG5fDkz2rZNT","pwciTPMzeuHZJxcJDgLy")]
+F_FORMAPAGO="EtiHTwYcsR9qT62Al2Rv"; F_MONEDA="4uEvawiUjRHedLeiIWls"
+F_FVENTA="53dKXbFnAPYVwDCehbOL"; F_RESERVA="jToVR0gHETt9eGyUMrW4"
+F_NOTASFORM="iMPcUTCSsJwA2PNbimMa"
+def plan_pago(cm):
+    """Que compro y cuanto le queda. Devuelve el desglose de cuotas para pintarlo en la ficha."""
+    tk=_num(cm.get(F["ticket"])); pg=_num(cm.get(F["pagado"]))
+    cu=[]
+    for i,(fi,fe,ff,fp) in enumerate(CUOTAS,1):
+        imp=_num(cm.get(fi)); est=str(cm.get(fe) or "").strip()
+        prev=str(cm.get(fp) or "")[:10]
+        if imp<=0 and not est and not prev: continue
+        cu.append({"n":i,"imp":imp,"estado":est,"fecha":str(cm.get(ff) or "")[:10],
+                   "prev":prev,"pagada":bool(re.search("pagad",est,re.I))})
+    # el campo Pendiente de la ficha manda; si esta vacio se deduce del ticket menos lo pagado
+    pend=_num(cm.get(F["pendiente"]))
+    if pend<=0 and tk>0: pend=max(tk-pg,0.0)
+    # la proxima cuota que toca cobrar: la primera sin pagar, por fecha prevista
+    _pend=[c for c in cu if not c["pagada"] and c["imp"]>0]
+    _prox=sorted([c for c in _pend if c["prev"]],key=lambda c:c["prev"])
+    _p=(_prox[0] if _prox else (_pend[0] if _pend else None))
+    return {"pendiente":pend,"cuotas":cu,
+            "ncuotas":str(cm.get(F["ncuotas"]) or ""),"cuotaspag":str(cm.get(F["cuotaspag"]) or ""),
+            "formapago":str(cm.get(F_FORMAPAGO) or ""),"moneda":str(cm.get(F_MONEDA) or ""),
+            "fventa":str(cm.get(F_FVENTA) or "")[:10],"reserva":_num(cm.get(F_RESERVA)),
+            "notasform":(str(cm.get(F_NOTASFORM) or "")[:400] if NOTAS_TEXTO else ""),
+            "prox_cuota":(_p["n"] if _p else 0),"prox_imp":(_p["imp"] if _p else 0.0),
+            "prox_fecha":(_p["prev"] if _p else "")}
 def _num(v):
     try: return float(re.sub(r'[^0-9.]','',str(v))) if v not in (None,'') else 0.0
     except: return 0.0
@@ -577,6 +706,8 @@ for cid,info in cids.items():
             "estadoclo":cm.get(F["estado"]) or "","motivo":cm.get(F["motivo"]) or "",
             "objclo":(cm.get(F["objclo"]) or "")[:400],"etapa":ETAPA_DE.get(cid,""),
             "tel":c.get("phone") or "","email":c.get("email") or "","ficha":ficha,
+            **notas_de(cid,ETAPA_DESDE.get(cid,"")),
+            **plan_pago(cm),
             # contexto del hilo: de quien es el turno ahora mismo
             "ult":(ULT.get(cid) or {}).get("fecha",""),"ultdir":(ULT.get(cid) or {}).get("dir",""),
             "ulttxt":(ULT.get(cid) or {}).get("txt",""),"ulttipo":(ULT.get(cid) or {}).get("tipo",""),
@@ -637,7 +768,9 @@ for _c,_o in OPPS.items():
         "presup":_cm.get(F["presup"]) or "","urg":_cm.get(F["urg"]) or "",
         "nivel":_cm.get(F["nivel"]) or "","ss":_cm.get(F["ss"]),"stri":_cm.get(F["st"]),"sc":_cm.get(F["sc"]),
         "ult":_u.get("fecha",""),"ultdir":_u.get("dir",""),"ulttxt":_u.get("txt",""),"ulttipo":_u.get("tipo",""),
-        "ficha":f"https://app.funnelup.io/v2/location/{LOC}/contacts/detail/{_c}"})
+        "ficha":f"https://app.funnelup.io/v2/location/{LOC}/contacts/detail/{_c}",
+        "closer":_cm.get(F["closer"]) or "","triager":_cm.get("HOpZ4zQsnwEs70pJSzea") or "",
+        **notas_de(_c,_o["desde"]),**plan_pago(_cm)})
 print("pipeline_leads:",len(pipeline_leads),flush=True)
 
 leads.sort(key=lambda r:(r["nombre"] or "").lower())
@@ -649,13 +782,20 @@ for r in closing:
     d=r["fecha"]
     # flag explicito de venta (mismo criterio que closing_daily) para la tabla de vendidos;
     # sobrevive a la version EQUIPO, que elimina ticket/pagado
-    r["venta"]=1 if ((r.get("resclo")=="Vendido") or _num(r.get("ticket"))>0) else 0
+    # 5-sep-2026: nuevo resultado "Reserva" (senal de dinero, NO venta cerrada). Antes bastaba con
+    # tener ticket para contar como venta, asi que una reserva de 100 EUR con ticket 3.500 habria
+    # inflado la facturacion en 3.500. Ahora una reserva nunca cuenta como venta.
+    _rc=str(r.get("resclo") or "").strip().lower()
+    r["reserva"]=1 if _rc.startswith("reserva") else 0
+    r["venta"]=0 if r["reserva"] else (1 if (_rc=="vendido" or _num(r.get("ticket"))>0) else 0)
     if d not in cd: continue
     cd[d]["agendados"]+=1
     if r["estado"] in cd[d] and r["estado"]!="showed": cd[d][r["estado"]]+=1
     # asistencia inferida como en triaje: grabacion de la llamada o resultado registrado
     if r["estado"]=="showed" or r.get("asistio") or (r.get("resclo") or "").strip(): cd[d]["showed"]+=1
-    vend=(r.get("resclo")=="Vendido") or _num(r.get("ticket"))>0
+    # una reserva NO es una venta: no suma ni a "vendido" ni a facturacion. El dinero que si
+    # ha entrado (la senal) sigue contando en cash, porque ese euro esta en la cuenta.
+    vend=bool(r.get("venta"))
     if vend: cd[d]["vendido"]+=1; cd[d]["facturacion"]+=_num(r.get("ticket"))
     cd[d]["cash"]+=_num(r.get("pagado")) or _num(r.get("cash"))
 closing_daily=[dict(dia=d,**cd[d]) for d in days]
@@ -836,7 +976,31 @@ for d in days:
         "estado_triage":("No hubo llamadas" if _n==0 else ("Completo" if _f>=_n else ("Parcial" if _f>0 else "Sin registrar"))),
         "retraso_medio":(round(sum(_lags)/len(_lags),1) if _lags else None),
         "kpis":{s:(s in _kpi_dias.get(d,set())) for s in SETTERS_ACT}})
-data={"generado":datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),"rango":f"{days[0]} a {days[-1]}","setting":setting,"triage":triage,"leads":leads,"closing":closing,"closing_daily":closing_daily,"gaps":gaps,"resp_pairs":resp_pairs,"kpis":kpis,"cumplimiento":cumplimiento,"setters":SETTERS_ACT,"triage_leads":triage_leads,"targets":TARGETS,"pipeline_leads":pipeline_leads,"etapas_orden":ETAPAS_ORDEN,"horas":[{"dia":d,"s":st,"h":h} for d,m in _cache["horas"].items() for st,h in m.items()],"convprop":[{"s":v.get("s",""),"d0":v.get("d0",""),"dp":v.get("dp","")} for v in _cache["convs"].values()]}
+# ===== PAGOS PENDIENTES (5-sep-2026) =====
+# Lista propia, porque ninguna de las que ya habia sirve: pipeline_leads solo trae oportunidades
+# con status "open", y en cuanto un closer marca la venta como ganada el lead desaparece de ahi.
+# Danny Vargas es el caso: esta en "Faltan Pagos" debiendo 3.192 EUR y no aparecia en pipeline_leads.
+# Aqui se mira a TODO contacto descargado, con deuda o con cuotas sin pagar, sea cual sea su columna.
+pagos=[]
+for _cp,_cc in cmap.items():
+    if not _cc: continue
+    _cm=({x.get("id"):x.get("value") for x in _cc.get("customFields",[])})
+    _pp=plan_pago(_cm)
+    _sinpagar=[c for c in _pp["cuotas"] if not c["pagada"] and c["imp"]>0]
+    if _pp["pendiente"]<=0 and not _sinpagar: continue
+    _nm=(_cc.get("contactName") or " ".join(x for x in [_cc.get("firstName"),_cc.get("lastName")] if x).strip()
+         or (OPPS.get(_cp) or {}).get("nombre") or "(sin nombre)")
+    pagos.append({"cid":_cp,"nombre":_nm,"etapa":ETAPA_DE.get(_cp,""),
+        "ticket":_cm.get(F["ticket"]) or "","pagado":_cm.get(F["pagado"]) or "",
+        "resclo":_cm.get(F["rc"]) or "","setter":GSET.get(_cp) or _cm.get(F["setter"]) or "",
+        "triager":_cm.get("HOpZ4zQsnwEs70pJSzea") or "","closer":_cm.get(F["closer"]) or "",
+        "prof":_cm.get(F["prof"]) or "","tel":_cc.get("phone") or "","email":_cc.get("email") or "",
+        "ficha":f"https://app.funnelup.io/v2/location/{LOC}/contacts/detail/{_cp}",
+        **notas_de(_cp,ETAPA_DESDE.get(_cp,"")),**_pp})
+pagos.sort(key=lambda r:(r.get("prox_fecha") or "9999", -_num(r.get("pendiente"))))
+print("pagos pendientes:",len(pagos),"| deuda total:",round(sum(_num(r["pendiente"]) for r in pagos)),flush=True)
+
+data={"generado":datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),"rango":f"{days[0]} a {days[-1]}","setting":setting,"triage":triage,"leads":leads,"closing":closing,"closing_daily":closing_daily,"gaps":gaps,"resp_pairs":resp_pairs,"kpis":kpis,"cumplimiento":cumplimiento,"setters":SETTERS_ACT,"triage_leads":triage_leads,"targets":TARGETS,"pipeline_leads":pipeline_leads,"pagos":pagos,"etapas_orden":ETAPAS_ORDEN,"horas":[{"dia":d,"s":st,"h":h} for d,m in _cache["horas"].items() for st,h in m.items()],"convprop":[{"s":v.get("s",""),"d0":v.get("d0",""),"dp":v.get("dp","")} for v in _cache["convs"].values()]}
 json.dump(data,open(os.path.join(OUTDIR,"data.json"),"w"),ensure_ascii=False,indent=1)
 tpl=open(os.path.join(HERE,"template.html")).read()
 html=tpl.replace("/*DATA*/","const DATA = "+json.dumps(data,ensure_ascii=False)+";")
@@ -848,7 +1012,13 @@ for l in td["leads"]: l["ticket"]=""; l["pagado"]=""
 for r in td["closing"]: r["cash"]=""; r["ticket"]=""; r["pagado"]=""
 for r in td["closing_daily"]: r["facturacion"]=0; r["cash"]=0
 td["targets"]={k:v for k,v in TARGETS.items() if k not in ("facturacion","cash")}
-for r in td.get("pipeline_leads",[]): r["ticket"]=""; r["pagado"]=""
+for r in td.get("pipeline_leads",[]): r["ticket"]=""; r["pagado"]=""; r["pendiente"]=0; r["cuotas"]=[]
+# la lista de pagos es toda dinero: en la version de EQUIPO se vacian los importes pero se
+# conserva quien debe, con que fecha y de quien es (para que puedan perseguir el cobro sin ver cifras)
+for r in td.get("pagos",[]):
+    r["ticket"]=""; r["pagado"]=""; r["pendiente"]=0; r["prox_imp"]=0
+    r["cuotas"]=[{"n":c["n"],"imp":0,"estado":c["estado"],"fecha":c["fecha"],"prev":c["prev"],"pagada":c["pagada"]}
+                 for c in (r.get("cuotas") or [])]
 thtml=tpl.replace("/*DATA*/","window.TEAM=true; const DATA = "+json.dumps(td,ensure_ascii=False)+";")
 open(os.path.join(OUTDIR,"equipo.html"),"w").write(thtml)
 print("OK dashboard.html + equipo.html generados",flush=True)
