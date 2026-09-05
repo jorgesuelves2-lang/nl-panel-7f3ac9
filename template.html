@@ -61,6 +61,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
   </div>
   <div class="tabs">
     <button class="tab on" data-t="hoy">Hoy <span id="hoy_badge" style="background:var(--red);color:#fff;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px"></span></button>
+    <button class="tab" data-t="pagos">Pagos pendientes <span id="pagos_badge" style="background:var(--amber);color:#fff;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px"></span></button>
     <button class="tab" data-t="global">Control</button>
     <button class="tab" data-t="dia">Día</button>
     <button class="tab" data-t="pipeline">Pipeline</button>
@@ -117,6 +118,14 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     </div>
   </section>
 
+  <section id="pagos" class="hide">
+    <div class="panel">
+      <h3 style="margin:0 0 4px">Pagos pendientes
+        <span style="font-weight:400;color:var(--mut);font-size:13px">— quién debe dinero, cuánto, cuándo y quién lo trajo. Sale de las cuotas de la ficha.</span></h3>
+      <div id="pagos_cards" class="cards" style="margin-top:12px"></div>
+      <div id="pagos_body" style="margin-top:14px"></div>
+    </div>
+  </section>
   <section id="incoh" class="hide">
     <div class="panel">
       <h3 style="margin:0 0 4px">Incoherencias del sistema
@@ -609,6 +618,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    renderDia();
    renderPipeline();
    renderIncoherencias();
+   renderPagos();
    renderHoy();
    renderKset();
    charts.c1=new Chart(document.getElementById('c_estado'),{type:'bar',data:{labels:labels,datasets:[
@@ -689,7 +699,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  fromEl.onchange=toEl.onchange=function(){document.querySelectorAll('.qb').forEach(function(b){b.classList.remove('on');});render();};
  bhOn.onchange=bhTz.onchange=bhA.onchange=bhB.onchange=function(){render();};
  document.querySelectorAll('.qb').forEach(function(b){b.onclick=function(){document.querySelectorAll('.qb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');if(b.dataset.d==='mes'){var h=hoyISO(); fromEl.value=h.slice(0,8)+'01'; toEl.value=h;}else{setRange(+b.dataset.d);}render();};});
- var SECTIONS=['hoy','dia','pipeline','incoh','setting','triage','closing','global','leads','clientes','cash','antonie','cumpl'];
+ var SECTIONS=['hoy','pagos','dia','pipeline','incoh','setting','triage','closing','global','leads','clientes','cash','antonie','cumpl'];
  document.querySelectorAll('.tab[data-t]').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});b.classList.add('on');SECTIONS.forEach(function(s){document.getElementById(s).classList.toggle('hide',s!==b.dataset.t);});};});
  function num(v){return parseFloat(String(v||'').replace(/[^0-9.]/g,''))||0;}
  // ---- Tabla de closings del periodo: una fila por llamada agendada, con que paso con cada lead ----
@@ -793,6 +803,42 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      +'<h4 style="margin:18px 0 6px;font-size:14px">Estado de la conversación</h4>'
      +'<div style="color:var(--mut)">'+s.turnoTxt+'</div>'
      +(r.ulttxt?'<div style="background:rgba(128,128,128,.08);padding:9px 12px;border-radius:8px;margin-top:8px;font-size:12.5px"><b>Último mensaje</b> ('+esc(r.ulttipo||'').replace('TYPE_','').toLowerCase()+'): «'+esc(r.ulttxt)+'»</div>':'')
+     // 5-sep-2026: la nota de la ficha. Sary escribe aqui lo que ha pasado de verdad y el panel
+     // no la leia: mostraba "cobro pendiente" de gente cuya nota decia que ya habia pagado.
+     +((!r.nota&&r.notas_n)?'<h4 style="margin:18px 0 6px;font-size:14px">Lo que ha escrito el equipo</h4>'
+        +'<div style="background:rgba(90,160,255,.10);padding:10px 12px;border-radius:8px;font-size:12.5px">'
+        +'<b>'+esc(r.nota_por||'alguien del equipo')+'</b> dejó una nota el '+esc(r.nota_f||'')
+        +(r.nota_est?' y el lead quedó en <b>'+esc(EST_TXT(r.nota_est))+'</b>':'')+'.'
+        +'<div style="color:var(--mut);margin-top:4px">El texto no se publica aquí por privacidad: está en la ficha.</div></div>':'')
+     +(r.nota?'<h4 style="margin:18px 0 6px;font-size:14px">Lo que ha escrito el equipo</h4>'
+        +'<div style="background:rgba(90,160,255,.10);padding:10px 12px;border-radius:8px;font-size:12.5px;white-space:pre-wrap">'
+        +esc(r.nota)+'</div>'
+        +'<div style="color:var(--mut);font-size:11.5px;margin-top:5px">'+esc(r.nota_por||'alguien del equipo')+' · '+esc(r.nota_f||'')
+        +(r.notas_n>1?' · '+r.notas_n+' notas en la ficha':'')+'</div>':'')
+     // 5-sep-2026: al fusionarse las columnas de "Faltan pagos" por importe, QUE compro y CUANTO
+     // le queda tiene que verse aqui dentro, con el detalle de cuotas.
+     +(function(){
+        var tk=num(r.ticket), pg=num(r.pagado), pe=num(r.pendiente)>0?num(r.pendiente):Math.max(tk-pg,0);
+        if(!tk && !pg && !(r.cuotas&&r.cuotas.length)) return '';
+        var eur=function(v){ return Math.round(v).toLocaleString('es-ES')+' €'; };
+        var barra = tk>0 ? '<div style="height:7px;border-radius:4px;background:rgba(128,128,128,.2);overflow:hidden;margin:8px 0">'
+              +'<div style="height:100%;width:'+Math.min(100,Math.round(pg/tk*100))+'%;background:var(--teal)"></div></div>' : '';
+        var cu=(r.cuotas||[]).map(function(c){
+          var pagada=/pagad/i.test(c.estado||'');
+          return '<tr><td style="padding:2px 12px 2px 0;color:var(--mut)">Cuota '+c.n+'</td>'
+            +'<td style="padding:2px 12px 2px 0"><b>'+eur(c.imp)+'</b></td>'
+            +'<td style="padding:2px 12px 2px 0;color:'+(pagada?'var(--teal)':'var(--amber)')+'">'+esc(c.estado||'pendiente')+'</td>'
+            +'<td style="padding:2px 0;color:var(--mut)">'+esc(c.fecha||'')+'</td></tr>';
+        }).join('');
+        return '<h4 style="margin:18px 0 6px;font-size:14px">Plan de pago</h4>'
+          +'<div style="display:flex;gap:22px;flex-wrap:wrap;font-size:13px">'
+          +'<div>Ticket<div style="font-size:17px;font-weight:700">'+eur(tk)+'</div></div>'
+          +'<div>Pagado<div style="font-size:17px;font-weight:700;color:var(--teal)">'+eur(pg)+'</div></div>'
+          +'<div>Pendiente<div style="font-size:17px;font-weight:700;color:'+(pe>0?'var(--red)':'var(--teal)')+'">'+eur(pe)+'</div></div>'
+          +(r.ncuotas?'<div>Cuotas<div style="font-size:17px;font-weight:700">'+esc(r.cuotaspag||'0')+' / '+esc(r.ncuotas)+'</div></div>':'')
+          +'</div>'+barra
+          +(cu?'<table style="font-size:12.5px;margin-top:4px">'+cu+'</table>':'');
+      })()
      +'<h4 style="margin:18px 0 6px;font-size:14px">Ficha del lead</h4><table style="font-size:13px">'
       +fila('Profesión',esc(r.prof))+fila('Setter',esc(r.setter))
       +fila(tipo==='clo'?'Closer':'Triager',esc(tipo==='clo'?r.closer:r.triager))
@@ -1138,6 +1184,98 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
  // Una sola lista con TODO lo que espera una accion nuestra. Nace de un problema real: la informacion
  // ya estaba en el panel (Incoherencias, Pipeline, pop-ups) pero repartida, y habia que ir a buscarla.
  // Martin Burgos estuvo 11 dias parado y el sistema lo sabia. Esto lo pone delante sin buscar nada.
+ // 5-sep-2026: lo que la nota de Sary dice que pasa con el lead, en cristiano.
+ function EST_TXT(e){
+   return {RESUELTO:'ya resuelto',ESPERANDO_AL_LEAD:'esperando al lead',MUERTO:'caído',
+           PENDIENTE:'pendiente',SOLO_CONTEXTO:'solo contexto'}[e]||e;
+ }
+ // Una tarea NO se muestra como urgente si despues del disparo hubo trabajo humano (nota nueva o
+ // movimiento de columna) o si la nota dice que la pelota no esta en nuestro tejado.
+ // Medido el 5-sep: de 26 tareas, 15 eran falsas por esto y 8 mas se resolvian leyendo la nota.
+ function yaTrabajado(r,disparo){
+   var t=String(r.tocado||''), d=String(disparo||'');
+   if(t && d && t>d) return 'lo trabajó '+(r.nota_por||'el equipo')+' el '+(r.nota_f||t);
+   if(r.nota_est==='RESUELTO')          return 'la nota dice que ya está hecho';
+   if(r.nota_est==='MUERTO')            return 'la nota dice que el lead se cayó';
+   if(r.nota_est==='ESPERANDO_AL_LEAD') return 'estamos esperando al lead, no al revés';
+   return '';
+ }
+
+ // ===== PAGOS PENDIENTES (5-sep-2026) =====
+ // Nace de fusionar las 3 columnas de "Faltan pagos" en una sola: el importe ya no lo dice la
+ // columna, asi que hace falta un sitio donde se vea quien debe cuanto, con que fecha y quien
+ // lo trajo. Todo sale de las 4 cuotas de la ficha (importe / estado / fecha prevista).
+ function renderPagos(){
+   var cont=document.getElementById('pagos_body'); if(!cont) return;
+   var hoy=hoyISO();
+   // la lista la arma el pipeline mirando a TODOS los contactos, no solo a los del embudo vivo:
+   // en cuanto un closer marca la venta como ganada, el lead se cae de pipeline_leads aunque siga
+   // debiendo dinero (paso con Danny Vargas, 3.192 EUR pendientes).
+   var L=(DATA.pagos||[]).map(function(r){
+     var tk=num(r.ticket), pg=num(r.pagado);
+     var pe=num(r.pendiente)>0?num(r.pendiente):Math.max(tk-pg,0);
+     return {r:r,tk:tk,pg:pg,pe:pe};
+   }).filter(function(x){ return x.pe>0 || (x.r.cuotas||[]).some(function(c){return !c.pagada&&c.imp>0;}); });
+   // vencido = la proxima cuota tenia fecha prevista y ya paso
+   L.forEach(function(x){
+     x.f = x.r.prox_fecha||'';
+     x.venc = (x.f && x.f < hoy) ? Math.round((new Date(hoy)-new Date(x.f))/86400000) : 0;
+   });
+   L.sort(function(a,b){
+     if(b.venc!==a.venc) return b.venc-a.venc;          // lo vencido primero, lo mas viejo arriba
+     if(a.f&&b.f) return a.f<b.f?-1:1;                  // luego por fecha mas cercana
+     if(a.f) return -1; if(b.f) return 1;
+     return b.pe-a.pe;
+   });
+   var totPe=L.reduce(function(a,x){return a+x.pe;},0);
+   var totVe=L.filter(function(x){return x.venc>0;}).reduce(function(a,x){return a+num(x.r.prox_imp)||x.pe;},0);
+   var pr7=L.filter(function(x){return x.f&&x.f>=hoy&&(new Date(x.f)-new Date(hoy))<=7*86400000;});
+   var b=document.getElementById('pagos_badge'); if(b) b.textContent=L.length?L.length:'';
+   document.getElementById('pagos_cards').innerHTML=
+     card('Clientes debiendo',L.length)
+     +(window.TEAM?'':card('Total pendiente','€'+Math.round(totPe).toLocaleString('es-ES')))
+     +card('Cuotas vencidas',L.filter(function(x){return x.venc>0;}).length,
+           window.TEAM?'':'€'+Math.round(totVe).toLocaleString('es-ES')+' sin cobrar')
+     +card('Vencen en 7 días',pr7.length);
+
+   if(!L.length){ cont.innerHTML='<div style="font-size:13px;color:var(--teal)">Nadie debe nada. Todas las cuotas al día.</div>'; return; }
+
+   var eur=function(v){ return Math.round(v).toLocaleString('es-ES')+' €'; };
+   var filas=L.map(function(x,i){
+     var r=x.r;
+     var key='pag_'+i; LM_DATA[key]={r:r,tipo:'pipe'};
+     var estado = x.venc>0
+        ? '<b style="color:var(--red)">Vencida hace '+x.venc+' d</b>'
+        : (x.f ? '<span style="color:var(--amber)">vence '+x.f.slice(8,10)+'/'+x.f.slice(5,7)+'</span>'
+               : '<span style="color:var(--mut)">sin fecha puesta</span>');
+     // el desglose de cuotas, en pequeño debajo del nombre
+     var cuo=(r.cuotas||[]).map(function(c){
+       var col=c.pagada?'var(--teal)':(c.prev&&c.prev<hoy?'var(--red)':'var(--mut)');
+       return '<span style="color:'+col+'">'+c.n+') '+eur(c.imp)+(c.prev?' · '+c.prev.slice(8,10)+'/'+c.prev.slice(5,7):'')
+              +(c.pagada?' ✓':'')+'</span>';
+     }).join(' &nbsp;·&nbsp; ');
+     var prox = num(r.prox_imp)>0 ? '<b>'+eur(num(r.prox_imp))+'</b><div style="font-size:11.5px;color:var(--mut)">cuota '+r.prox_cuota+' de '+(r.ncuotas||(r.cuotas||[]).length||'?')+'</div>' : '—';
+     return '<tr>'
+      +'<td><b>'+esc(r.nombre)+'</b>'+(cuo?'<div style="font-size:11px;margin-top:2px">'+cuo+'</div>':'')+'</td>'
+      +(window.TEAM?'':'<td style="text-align:right">'+eur(x.tk)+(r.moneda&&r.moneda!=='EUR'?'<div style="font-size:11px;color:var(--mut)">'+esc(r.moneda)+'</div>':'')+'</td>')
+      +'<td>'+(esc(r.formapago)||'<span style="color:var(--mut)">sin indicar</span>')+'</td>'
+      +(window.TEAM?'':'<td style="text-align:right;color:var(--teal)">'+eur(x.pg)+'</td>')
+      +(window.TEAM?'':'<td style="text-align:right"><b style="color:var(--red)">'+eur(x.pe)+'</b></td>')
+      +(window.TEAM?'':'<td style="text-align:right">'+prox+'</td>')
+      +'<td>'+estado+'</td>'
+      +'<td>'+esc(r.setter||'—')+'</td><td>'+esc(r.triager||'—')+'</td><td>'+esc(r.closer||'—')+'</td>'
+      +'<td>'+(r.nota_est?'<span style="font-size:11.5px;color:var(--mut)">'+esc(EST_TXT(r.nota_est))+'</span>':'')
+        +(r.notasform?'<div style="font-size:11.5px">'+esc(r.notasform.slice(0,90))+'</div>':'')+'</td>'
+      +'<td><button onclick="abrirLead(\''+key+'\')" style="border:1px solid var(--blue);background:transparent;color:var(--blue);border-radius:6px;padding:3px 12px;font-size:12px;cursor:pointer">Ver</button></td>'
+      +'<td><a href="'+esc(r.ficha)+'" target="_blank">ficha</a></td></tr>';
+   }).join('');
+   cont.innerHTML='<div style="overflow-x:auto"><table><thead><tr>'
+     +'<th>Cliente y cuotas</th>'+(window.TEAM?'':'<th style="text-align:right">Plan</th>')
+     +'<th>Método</th>'+(window.TEAM?'':'<th style="text-align:right">Pagado</th><th style="text-align:right">Pendiente</th><th style="text-align:right">Próxima cuota</th>')
+     +'<th>Estado</th><th>Setter</th><th>Triage</th><th>Closer</th><th>Contexto</th><th></th><th></th>'
+     +'</tr></thead><tbody>'+filas+'</tbody></table></div>';
+ }
+
  function renderHoy(){
    var cont=document.getElementById('hoy_body'); if(!cont) return;
    var hoy=hoyISO();
@@ -1155,7 +1293,9 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      if(et.indexOf('triage')>=0||et.indexOf('triaje')>=0) return 30;
      return 15;
    }
-   function add(r,tipo,que,porque,urg,dias){
+   function add(r,tipo,que,porque,urg,dias,disparo){
+     var yt=yaTrabajado(r,disparo);
+     if(yt){ urg=3; porque=porque+' — pero '+yt+'.'; }   // baja a "puede esperar", no desaparece
      var pts = (urg===1?100:urg===2?50:12)
              + Math.min(40, (dias||0)*3)
              + Math.min(50, dinero(r)/100)
@@ -1168,7 +1308,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
      var e=String(r.etapa||'').toLowerCase();
      if((e.indexOf('agendado')>=0||e.indexOf('confirmado')>=0) && !String(r.prox||'').trim())
        add(r,'Cita','Agendar la cita: el CRM la da por hecha y no existe',
-           'Lleva parado en esa etapa sin ninguna cita en el calendario.',1,diasDesde(r.desde));
+           'Lleva parado en esa etapa sin ninguna cita en el calendario.',1,diasDesde(r.desde),r.desde);
    });
    // --- 2) el lead escribio y no contestamos
    P.forEach(function(r){
@@ -1179,20 +1319,32 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
        var u = d>=45 ? 3 : (d>=5 ? 1 : 2);
        var txt = d>=45 ? 'Lead frio: escribio hace '+d+' dias y nunca se le contesto. Decidir si se reactiva o se cierra.'
                        : 'Escribio el ultimo y sigue esperando: "'+String(r.ulttxt||'').slice(0,70)+'"';
-       add(r,'Responder',d>=45?'Reactivar o cerrar':'Responder al lead',txt,u,d);
+       add(r,'Responder',d>=45?'Reactivar o cerrar':'Responder al lead',txt,u,d,r.ult);
      }
    });
    // --- 3) vendido sin cobro registrado
    C.forEach(function(r){
      if(r.resclo==='Vendido' && num(r.ticket)>0 && num(r.pagado)===0 && num(r.cash)===0)
        add(r,'Cobro','Confirmar el cobro de '+Math.round(num(r.ticket))+' EUR',
-           'Marcado como vendido y sin ningun importe pagado registrado.',1,diasDesde(r.fecha));
+           'Marcado como vendido y sin ningun importe pagado registrado.',1,diasDesde(r.fecha),r.fecha);
    });
    // --- 4) cobro parcial pendiente
+   // 5-sep-2026: Jorge fusiono las 3 columnas de "Faltan pagos 3,5k / 5k / 8k" en una sola, asi que
+   // el importe ya no lo dice la columna: sale del campo Pendiente de la ficha (que cuenta las cuotas).
    P.forEach(function(r){
-     var pend=num(r.ticket)-num(r.pagado);
+     var pend=num(r.pendiente)>0?num(r.pendiente):(num(r.ticket)-num(r.pagado));
      if(/faltan pagos/i.test(String(r.etapa||'')) && pend>0)
-       add(r,'Cobro','Cobrar '+Math.round(pend)+' EUR pendientes','Venta cerrada con importe sin cobrar.',2,diasDesde(r.desde));
+       add(r,'Cobro','Cobrar '+Math.round(pend)+' EUR pendientes',
+           'Compro un ticket de '+Math.round(num(r.ticket))+' EUR y lleva pagados '+Math.round(num(r.pagado))+'.',2,diasDesde(r.desde),r.desde);
+   });
+   // --- leads en RE-agendANDO: estan EN PROCESO de reagenda, no son un olvido. Solo molestan
+   // cuando la reagenda se enquista sin cita nueva.
+   P.forEach(function(r){
+     if(!/re-?agendando/i.test(String(r.etapa||''))) return;
+     if(String(r.prox||'').trim()) return;              // ya tiene cita nueva: reagenda cerrada
+     var d=diasDesde(r.desde);
+     if(d<3) return;                                    // dale margen, se esta trabajando
+     add(r,'Reagenda','Cerrar la reagenda','Lleva '+d+' dias en RE-agendANDO y sigue sin cita nueva.',d>=14?2:3,d,r.desde);
    });
    // --- 5) cita proxima y nunca nos ha escrito
    P.forEach(function(r){
@@ -1206,7 +1358,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    P.forEach(function(r){
      if(String(r.restri||'').toLowerCase().indexOf('cualifica')>=0 && String(r.restri||'').toLowerCase().indexOf('no cualifica')<0
         && !r.resclo && !String(r.prox||'').trim() && !/clos/i.test(String(r.etapa||'')))
-       add(r,'Closing','Agendar la llamada de venta','Cualifico en el triaje y no tiene ninguna cita de closing.',1,diasDesde(r.desde));
+       add(r,'Closing','Agendar la llamada de venta','Cualifico en el triaje y no tiene ninguna cita de closing.',1,diasDesde(r.desde),r.desde);
    });
 
    // dedup: una tarea por lead (la de mas peso), para que la lista no se repita
