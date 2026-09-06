@@ -1,6 +1,6 @@
 {
- "generado": "2026-09-05 23:21",
- "rango": "2026-02-01 a 2026-09-05",
+ "generado": "2026-09-06 01:24",
+ "rango": "2026-02-01 a 2026-09-06",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -3029,15 +3029,29 @@
   {
    "dia": "2026-09-05",
    "inb": 4,
-   "out": 101,
-   "nuevas": 105,
-   "total": 142,
-   "fups": 108,
+   "out": 114,
+   "nuevas": 118,
+   "total": 156,
+   "fups": 111,
    "prop": 3,
    "link": 3,
    "badlink": 0,
    "agendas": 1,
    "resp_min": 1,
+   "nodata": false
+  },
+  {
+   "dia": "2026-09-06",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 4,
+   "fups": 22,
+   "prop": 1,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 1,
+   "resp_min": null,
    "nodata": false
   }
  ],
@@ -5638,6 +5652,18 @@
    "dia": "2026-09-05",
    "agendados": 1,
    "showed": 1,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 1,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-09-06",
+   "agendados": 1,
+   "showed": 0,
    "noshow": 0,
    "noconfirma": 0,
    "cancelled": 0,
@@ -22509,6 +22535,17 @@
    "vendido": 0,
    "facturacion": 0.0,
    "cash": 0.0
+  },
+  {
+   "dia": "2026-09-06",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
   }
  ],
  "gaps": [
@@ -32076,6 +32113,19 @@
   },
   {
    "dia": "2026-09-05",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Jesmary": false
+   }
+  },
+  {
+   "dia": "2026-09-06",
    "triages": 1,
    "con_form": 0,
    "sin_form": 1,
@@ -45092,7 +45142,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "CTA comentario",
-   "d0": "2026-02-25",
+   "d0": "2026-03-26",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -45112,10 +45162,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-03-03",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey José!\n\nSolo quería recordarte que tu llamada es ahora mismo. Te están esperando!\n\nAsegúrate también de estar en un lugar sin distracciones y c...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -46525,7 +46575,7 @@
    "etapa": "🔷 Triage Seguimiento",
    "desde": "2026-09-05",
    "fuente": "",
-   "prox": "2026-09-05",
+   "prox": "",
    "wsp": "",
    "setter": "Jesmary",
    "cta": "",
@@ -68912,36 +68962,6 @@
   },
   {
    "dia": "2026-09-04",
-   "s": "Jesmary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    26,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-09-04",
    "s": "",
    "h": [
     1,
@@ -68968,6 +68988,36 @@
     17,
     10,
     85
+   ]
+  },
+  {
+   "dia": "2026-09-04",
+   "s": "Jesmary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    26,
+    0,
+    0
    ]
   },
   {
@@ -69057,7 +69107,7 @@
     9,
     36,
     41,
-    0
+    26
    ]
   },
   {
@@ -69144,6 +69194,36 @@
     0,
     0,
     3,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-06",
+   "s": "",
+   "h": [
+    34,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -140590,7 +140670,7 @@
   {
    "s": "",
    "d0": "2026-09-05",
-   "dp": ""
+   "dp": "2026-09-06"
   },
   {
    "s": "",
@@ -140840,6 +140920,71 @@
   {
    "s": "",
    "d0": "2025-01-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-05",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-05",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-05",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-05",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-05",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-05",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-05",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-05",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-05",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-05",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-05",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-05",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-05",
    "dp": ""
   },
   {
