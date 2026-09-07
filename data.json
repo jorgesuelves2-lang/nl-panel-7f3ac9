@@ -1,6 +1,6 @@
 {
- "generado": "2026-09-06 21:45",
- "rango": "2026-02-01 a 2026-09-06",
+ "generado": "2026-09-07 00:24",
+ "rango": "2026-02-01 a 2026-09-07",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -3042,15 +3042,29 @@
   },
   {
    "dia": "2026-09-06",
-   "inb": 4,
-   "out": 118,
-   "nuevas": 122,
-   "total": 160,
+   "inb": 7,
+   "out": 119,
+   "nuevas": 126,
+   "total": 166,
    "fups": 79,
    "prop": 3,
    "link": 1,
    "badlink": 0,
    "agendas": 1,
+   "resp_min": 46,
+   "nodata": false
+  },
+  {
+   "dia": "2026-09-07",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 0,
+   "fups": 0,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 4,
    "resp_min": null,
    "nodata": false
   }
@@ -5669,6 +5683,18 @@
    "cancelled": 0,
    "confirmed": 1,
    "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-09-07",
+   "agendados": 4,
+   "showed": 1,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 4,
+   "cualifica": 1,
    "nocualifica": 0,
    "seguimiento": 0
   }
@@ -16651,6 +16677,38 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/8fep778WLPZ6GRWmfEDi"
   },
   {
+   "nombre": "Valeria Encalada",
+   "setter": "Sara",
+   "origen": "propio",
+   "prof": "Fisioterapeuta ",
+   "nivel": "🔹 Conocimientos básicos",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "600€- 1.000€",
+   "univ": "Ecotec ",
+   "urg": "",
+   "comp": "Estoy listo/a para empezar ahora mismo si soy aceptado/a.",
+   "obst": "Familia ",
+   "canal": "",
+   "ig": "Valeria encalada ",
+   "email": "valeriaencalada21@gmail.com",
+   "tf": "+593961607918",
+   "fagenda": "2026-09-07",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": 50,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "cta": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/EXh95SUCvWoQUUScgKuT"
+  },
+  {
    "nombre": "Valeria Gutierrez",
    "setter": "Sary",
    "origen": "propio",
@@ -22570,6 +22628,17 @@
   },
   {
    "dia": "2026-09-06",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
+  },
+  {
+   "dia": "2026-09-07",
    "agendados": 0,
    "showed": 0,
    "noshow": 0,
@@ -28604,6 +28673,12 @@
    "in": 1788626853,
    "rep": 1788626894,
    "s": ""
+  },
+  {
+   "dia": "2026-09-06",
+   "in": 1788736036,
+   "rep": 1788738807,
+   "s": ""
   }
  ],
  "kpis": [
@@ -32212,6 +32287,19 @@
     "Sara": true,
     "Jesmary": false
    }
+  },
+  {
+   "dia": "2026-09-07",
+   "triages": 4,
+   "con_form": 1,
+   "sin_form": 3,
+   "estado_triage": "Parcial",
+   "retraso_medio": -12.0,
+   "kpis": {
+    "Sary": false,
+    "Sara": false,
+    "Jesmary": false
+   }
   }
  ],
  "setters": [
@@ -32329,6 +32417,43 @@
    "ultdir": "outbound",
    "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña. Llegué con un título de ingeniería… años de experiencia real… y unas ganas enormes de hacerlo funcionar. Pero en el momento en que abrí la boca para",
    "ulttipo": "TYPE_EMAIL",
+   "tiene_closing": false
+  },
+  {
+   "nombre": "Valeria Encalada",
+   "fecha": "2026-09-07",
+   "hora": "19:45",
+   "estado": "confirmed",
+   "reag": "",
+   "agendada": "2026-09-06",
+   "cta": "",
+   "asistio": false,
+   "fclo": "",
+   "fuente": "",
+   "d0": "2026-09-05",
+   "restri": "",
+   "stri": null,
+   "ss": 50,
+   "setter": "Sara",
+   "triager": "",
+   "prof": "Fisioterapeuta ",
+   "motivo": "",
+   "objtri": "",
+   "etapa": "🔹 Triage Agendado",
+   "tel": "+593961607918",
+   "email": "valeriaencalada21@gmail.com",
+   "wsp": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/EXh95SUCvWoQUUScgKuT",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "600€- 1.000€",
+   "nivel": "🔹 Conocimientos básicos",
+   "urg": "",
+   "infotri": "",
+   "restri_ia": "",
+   "ult": "2026-09-07",
+   "ultdir": "outbound",
+   "ulttxt": "me confirmas tu asistencia?",
+   "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
   {
@@ -46706,6 +46831,57 @@
  },
  "pipeline_leads": [
   {
+   "cid": "EXh95SUCvWoQUUScgKuT",
+   "nombre": "Valeria Encalada",
+   "etapa": "🔹 Triage Agendado",
+   "desde": "2026-09-06",
+   "fuente": "",
+   "prox": "2026-09-07",
+   "wsp": "",
+   "setter": "Sara",
+   "cta": "",
+   "prof": "Fisioterapeuta ",
+   "restri": "",
+   "resclo": "",
+   "ticket": "",
+   "pagado": "",
+   "motivo": "",
+   "tel": "+593961607918",
+   "email": "valeriaencalada21@gmail.com",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "urg": "",
+   "nivel": "🔹 Conocimientos básicos",
+   "ss": 50,
+   "stri": null,
+   "sc": null,
+   "ult": "2026-09-07",
+   "ultdir": "outbound",
+   "ulttxt": "me confirmas tu asistencia?",
+   "ulttipo": "TYPE_WHATSAPP",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/EXh95SUCvWoQUUScgKuT",
+   "closer": "",
+   "triager": "",
+   "nota": "",
+   "nota_f": "",
+   "nota_por": "",
+   "notas_n": 0,
+   "nota_est": "",
+   "nota_cat": "",
+   "tocado": "2026-09-06",
+   "pendiente": 0.0,
+   "cuotas": [],
+   "ncuotas": "",
+   "cuotaspag": "",
+   "formapago": "",
+   "moneda": "",
+   "fventa": "",
+   "reserva": 0.0,
+   "notasform": "",
+   "prox_cuota": 0,
+   "prox_imp": 0.0,
+   "prox_fecha": ""
+  },
+  {
    "cid": "lb1CphLDZYLNyIYYLTeC",
    "nombre": "Massiel salazar",
    "etapa": "🔹 Triage Confirmado",
@@ -46813,7 +46989,7 @@
    "etapa": "🔶 Seguimiento Futuro",
    "desde": "2026-09-06",
    "fuente": "Outbound",
-   "prox": "2026-09-06",
+   "prox": "",
    "wsp": "2026-09-06",
    "setter": "Sary",
    "cta": "",
@@ -68876,36 +69052,6 @@
   },
   {
    "dia": "2026-09-03",
-   "s": "",
-   "h": [
-    30,
-    21,
-    1,
-    0,
-    0,
-    6,
-    13,
-    0,
-    4,
-    84,
-    10,
-    16,
-    2,
-    0,
-    33,
-    35,
-    24,
-    7,
-    0,
-    25,
-    49,
-    27,
-    57,
-    20
-   ]
-  },
-  {
-   "dia": "2026-09-03",
    "s": "Sary",
    "h": [
     4,
@@ -68932,6 +69078,36 @@
     0,
     1,
     2
+   ]
+  },
+  {
+   "dia": "2026-09-03",
+   "s": "",
+   "h": [
+    30,
+    21,
+    1,
+    0,
+    0,
+    6,
+    13,
+    0,
+    4,
+    84,
+    10,
+    16,
+    2,
+    0,
+    33,
+    35,
+    24,
+    7,
+    0,
+    25,
+    49,
+    27,
+    57,
+    20
    ]
   },
   {
@@ -69116,6 +69292,36 @@
   },
   {
    "dia": "2026-09-05",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    2,
+    0,
+    4,
+    4,
+    3,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-05",
    "s": "",
    "h": [
     9,
@@ -69132,11 +69338,11 @@
     0,
     8,
     11,
-    11,
-    20,
+    10,
+    19,
     40,
-    47,
-    9,
+    45,
+    5,
     8,
     9,
     31,
@@ -69205,36 +69411,6 @@
    ]
   },
   {
-   "dia": "2026-09-05",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    1,
-    1,
-    0,
-    2,
-    0,
-    3,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
    "dia": "2026-09-06",
    "s": "",
    "h": [
@@ -69248,18 +69424,48 @@
     1,
     0,
     0,
-    16,
+    15,
     22,
     28,
     37,
-    4,
+    3,
     1,
-    5,
-    28,
+    4,
+    27,
     33,
+    11,
+    45,
     12,
-    47,
-    14,
+    1,
+    2
+   ]
+  },
+  {
+   "dia": "2026-09-06",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    2,
+    2,
     0,
     0
    ]
@@ -140752,7 +140958,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sara",
    "d0": "2026-09-05",
    "dp": "2026-09-06"
   },
@@ -141275,6 +141481,26 @@
    "s": "",
    "d0": "2026-09-06",
    "dp": "2026-09-06"
+  },
+  {
+   "s": "",
+   "d0": "2026-09-06",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-06",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-06",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-06",
+   "dp": ""
   },
   {
    "s": "",
