@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-07 05:16",
+ "generado": "2026-09-07 10:47",
  "rango": "2026-02-01 a 2026-09-07",
  "setting": [
   {
@@ -3057,10 +3057,10 @@
   {
    "dia": "2026-09-07",
    "inb": 0,
-   "out": 13,
-   "nuevas": 13,
-   "total": 22,
-   "fups": 1,
+   "out": 14,
+   "nuevas": 14,
+   "total": 38,
+   "fups": 21,
    "prop": 0,
    "link": 0,
    "badlink": 0,
@@ -28684,6 +28684,17 @@
  "kpis": [
   {
    "dia": "2026-09-06",
+   "setter": "Sary",
+   "fu": 50,
+   "inb": 0,
+   "out": 12,
+   "prop": 2,
+   "book": 0,
+   "wel": 0,
+   "notas": "Llamada de triage "
+  },
+  {
+   "dia": "2026-09-06",
    "setter": "Sara",
    "fu": 26,
    "inb": 1,
@@ -32283,7 +32294,7 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Sary": true,
     "Sara": true,
     "Jesmary": false
    }
@@ -33413,8 +33424,8 @@
    "infotri": "PERFIL: Thalia Regino, medica general, Colombia (Monteria). Titulo LATAM. Homologada en Espana segun declara. 2 anos de experiencia post-grado. Actualmente en consulta externa con carga administrativa. Sin aleman ni ingles.\n\nOBJETIVO: Hacer la residencia medica en urologia (especialidad quirurgica). Quiere avanzar lo mas pronto posible. Evalua Alemania, Espana (MIR) y Argentina en paralelo. Nivel de aleman: cero (solo palabras basicas de un libro de idioma medico que leyo por cuenta propia).\n\nDOLORES: No ha podido acceder a la residencia en Colombia. Se siente preparada para especializarse pero el sistema no se lo permite. Frustrada con el trabajo actual (muy administrativo, poco quirurgico). Ha gastado dinero en asesorias sin resultados concretos.\n\nINVERSION: Gana aprox. 6.5 millones COP/mes (~2.000 USD). Declaro que 3.500 euros (~12-13 millones COP) es muy caro, equivale a tres meses de sueldo integros. La cuota de ~580 euros/mes (~2.1 millones COP) le parece la mitad de su sueldo sin contar gastos fijos. No menciono ahorro disponible, credito ni apoyo familiar. Resistencia de precio explicita y sostenida durante la llamada.\n\nRUTA: Titulo LATAM, requiere proceso de reconocimiento en Alemania. Necesita B2 aleman medico para ejercer y pasar el FSP. Desde cero en idioma: minimo 6-9 meses de preparacion antes de poder postular. La residencia en Alemania se hace dentro del hospital como medico contratado (Weiterbildung), no como en Latinoamerica.\n\nOBJECIONES: Precio muy elevado ",
    "restri_ia": "MOTIVACIONES PRINCIPALES:\n- Residencia medica en urologia (especialidad quirurgica): su objetivo numero uno\n- Mejora salarial y calidad de vida respecto a Colombia\n- Interes en investigacion y crecimiento academico continuo\n\nDOLORES PRINCIPALES:\n- No ha pasado examenes de residencia en Colombia (UDOM, UNAL)\n- Siente que ya esta lista para especializarse pero el sistema no se lo permite\n- Experiencias negativas previas con asesorias costosas sin resultados (pago procesos y no obtuvo nada)\n- Frustracion con el sistema colombiano de salud (trabajo muy administrativo, poco quirurgico)\n\nOBJETIVOS/METAS:\n- Hacer la residencia en urologia, idealmente en Alemania, pero tambien evalua Espana (MIR) y Argentina\n- Mejorar calidad de vida, ahorrar, viajar, apoyar a su familia\n\nPERFIL: Medica general, Colombia (Monteria), 2 anos de experiencia. Trabaja en consulta externa con carga administrativa. Sin aleman ni ingles. Titulo colombiano (LATAM). Homologada en Espana segun ella misma declara en el triaje.\n\nEJES DE CUALIFICACION:\n1. PERFIL: Muy buen perfil medico. Motivacion clara hacia la residencia. Pero no es una decision exclusiva por Alemania: evalua Espana y Argentina en paralelo.\n2. DINERO:",
    "ult": "2026-09-07",
-   "ultdir": "inbound",
-   "ulttxt": "Hola buenas noches por whasap se estuviero contactando contigo un chico Santiago para el proceso con usted sin embargo su proceso tiene un costo de 3500 euros y se me sale de mi presupuesto y él me sugiero otra empresa c",
+   "ultdir": "outbound",
+   "ulttxt": "Hola Thalia, te refieres a Christian?",
    "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
@@ -68152,6 +68163,36 @@
   },
   {
    "dia": "2026-08-26",
+   "s": "",
+   "h": [
+    7,
+    5,
+    0,
+    0,
+    0,
+    9,
+    2,
+    0,
+    1,
+    1,
+    27,
+    2,
+    1,
+    17,
+    7,
+    27,
+    12,
+    22,
+    21,
+    38,
+    38,
+    32,
+    11,
+    3
+   ]
+  },
+  {
+   "dia": "2026-08-26",
    "s": "Sary",
    "h": [
     5,
@@ -68208,36 +68249,6 @@
     1,
     0,
     0
-   ]
-  },
-  {
-   "dia": "2026-08-26",
-   "s": "",
-   "h": [
-    7,
-    5,
-    0,
-    0,
-    0,
-    9,
-    2,
-    0,
-    1,
-    1,
-    27,
-    2,
-    1,
-    17,
-    7,
-    27,
-    12,
-    22,
-    21,
-    38,
-    38,
-    32,
-    11,
-    3
    ]
   },
   {
@@ -69172,36 +69183,6 @@
   },
   {
    "dia": "2026-09-04",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    5,
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    2,
-    66
-   ]
-  },
-  {
-   "dia": "2026-09-04",
    "s": "",
    "h": [
     1,
@@ -69228,6 +69209,36 @@
     17,
     7,
     20
+   ]
+  },
+  {
+   "dia": "2026-09-04",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    5,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    2,
+    66
    ]
   },
   {
@@ -69322,36 +69333,6 @@
   },
   {
    "dia": "2026-09-05",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    2,
-    2,
-    0,
-    4,
-    4,
-    3,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-09-05",
    "s": "Sary",
    "h": [
     1,
@@ -69378,6 +69359,36 @@
     0,
     2,
     2
+   ]
+  },
+  {
+   "dia": "2026-09-05",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    2,
+    0,
+    4,
+    4,
+    3,
+    0,
+    0,
+    0,
+    0
    ]
   },
   {
@@ -69442,36 +69453,6 @@
   },
   {
    "dia": "2026-09-06",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    1,
-    0,
-    1,
-    1,
-    0,
-    1,
-    2,
-    2,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-09-06",
    "s": "Sary",
    "h": [
     0,
@@ -69496,6 +69477,36 @@
     0,
     0,
     0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-06",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    2,
+    2,
     0,
     0
    ]
@@ -69539,11 +69550,71 @@
     0,
     0,
     0,
+    1,
+    5,
+    25,
+    0,
+    9,
     0,
     0,
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-07",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-07",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    5,
     0,
     0,
     0,
@@ -142030,6 +142101,11 @@
   {
    "s": "",
    "d0": "2026-09-06",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-07",
    "dp": ""
   },
   {
