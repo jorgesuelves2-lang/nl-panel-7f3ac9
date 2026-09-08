@@ -142,9 +142,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
       <h3>Reportado por el equipo <span style="font-weight:400;color:var(--mut);font-size:13px">— del formulario diario de KPIs</span></h3>
       <div style="margin:10px 0 14px">
         <button class="tab on" data-setter="TOTAL" style="font-size:13px;padding:5px 12px">Total</button>
-        <button class="tab" data-setter="Sary" style="font-size:13px;padding:5px 12px">Sary</button>
-        <button class="tab" data-setter="Sara" style="font-size:13px;padding:5px 12px">Sara</button>
-        <button class="tab" data-setter="Jesmary" style="font-size:13px;padding:5px 12px">Jesmary</button>
+        <span class="setter-tabs" data-attr="setter"></span>
       </div>
       <div id="k_ambito"></div>
       <div class="cards" id="k_cards"></div>
@@ -186,9 +184,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
       <div style="margin:8px 0 12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap">
         <span style="font-size:13px;color:var(--mut)">Setter:</span>
         <button class="tab on" data-kset="TOTAL" style="font-size:13px;padding:5px 12px">Total</button>
-        <button class="tab" data-kset="Sary" style="font-size:13px;padding:5px 12px">Sary</button>
-        <button class="tab" data-kset="Sara" style="font-size:13px;padding:5px 12px">Sara</button>
-        <button class="tab" data-kset="Jesmary" style="font-size:13px;padding:5px 12px">Jesmary</button>
+        <span class="setter-tabs" data-attr="kset"></span>
         <span style="font-size:13px;color:var(--mut);margin-left:14px">Hora local:</span>
         <select id="ks_tz" style="padding:4px 8px;border:1px solid rgba(128,128,128,.35);border-radius:8px;background:transparent;color:var(--tx);font-size:13px">
           <option value="-5" selected>Bogotá (UTC-5)</option>
@@ -230,9 +226,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:4px 0 16px">
       <span style="font-size:13px;color:var(--mut)">Filtrar por setter:</span>
       <button class="tab on" data-tset="TOTAL" style="font-size:13px;padding:5px 12px">Total</button>
-      <button class="tab" data-tset="Sary" style="font-size:13px;padding:5px 12px">Sary</button>
-      <button class="tab" data-tset="Sara" style="font-size:13px;padding:5px 12px">Sara</button>
-      <button class="tab" data-tset="Jesmary" style="font-size:13px;padding:5px 12px">Jesmary</button>
+        <span class="setter-tabs" data-attr="tset"></span>
       <button class="tab" data-tset="SIN" style="font-size:13px;padding:5px 12px">Sin asignar</button>
     </div>
 
@@ -309,7 +303,7 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
     <div class="sub" style="margin-bottom:10px">Una fila por lead que llegó al triaje/closing (desde febrero). Filtra por setter y busca por nombre. Click en cabeceras para ordenar. "Ficha" abre el lead en Funnel Up.</div>
     <div class="bhctrl">
       <span>Setter:
-        <select id="lf_setter"><option value="">Todos</option><option value="Sara">Sara</option><option value="Sary">Sary</option><option value="__none">Sin asignar</option></select>
+        <select id="lf_setter"><option value="">Todos</option><option value="__none">Sin asignar</option></select>
       </span>
       <span>Buscar: <input id="lf_q" type="text" placeholder="nombre, profesión…" style="width:160px"></span>
       <span id="l_resumen" style="color:var(--mut)"></span>
@@ -617,6 +611,23 @@ table.leadtbl{font-size:12px;} table.leadtbl th{cursor:pointer;white-space:nowra
    renderTiempos(from,to);
    renderDia();
    renderPipeline();
+   // 8-sep-2026: las pestañas de setter se generan desde DATA.setters, que sale de quien ha
+   // enviado el formulario. Antes estaban escritas a mano en cuatro sitios y dar de alta a
+   // alguien obligaba a tocar el HTML (se vio al entrar Carlos).
+   (function(){
+     var L=(DATA.setters||[]);
+     [].forEach.call(document.querySelectorAll('.setter-tabs'),function(sp){
+       var at=sp.getAttribute('data-attr');
+       sp.outerHTML=L.map(function(n){
+         return '<button class="tab" data-'+at+'="'+esc(n)+'" style="font-size:13px;padding:5px 12px">'+esc(n)+'</button>';
+       }).join('');
+     });
+     var sel=document.getElementById('lf_setter');
+     if(sel) L.forEach(function(n){
+       var o=document.createElement('option'); o.value=n; o.textContent=n;
+       sel.insertBefore(o, sel.lastElementChild);
+     });
+   })();
    renderIncoherencias();
    renderPagos();
    renderHoy();
