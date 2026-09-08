@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-08 10:11",
+ "generado": "2026-09-08 14:52",
  "rango": "2026-02-01 a 2026-09-08",
  "setting": [
   {
@@ -3071,10 +3071,10 @@
   {
    "dia": "2026-09-08",
    "inb": 0,
-   "out": 16,
-   "nuevas": 16,
-   "total": 60,
-   "fups": 43,
+   "out": 44,
+   "nuevas": 44,
+   "total": 113,
+   "fups": 62,
    "prop": 0,
    "link": 0,
    "badlink": 0,
@@ -16629,11 +16629,11 @@
    "estado": "",
    "ss": 10,
    "stri": 72,
-   "sclo": null,
+   "sclo": 18,
    "ticket": "",
    "pagado": "",
    "objtri": "",
-   "objclo": "",
+   "objclo": "Decisor ausente (marido no pudo estar por rotativo); dificultad real de coordinacion de agenda familiar; curiosidad sobre metodologia vs academias (resuelta parcialmente).",
    "infocloser": "PERFIL: Tatiana Orozco Orozco. Medica colombiana. Titulo homologado en Espana desde 2019, mas de 3 anos ejerciendo en la UE (FUCS, Colombia). Vive en Espana con su pareja (no medico) e hijos de 5 y 2 anos. Perfil UE: exenta de FSP.\n\nOBJETIVO: Emigrar a Alemania con toda la familia. Plazo abierto, condicionado al nivel de aleman (horizonte 1-1,5 anios aceptado). Nivel de aleman: cero actual (tuvo exposicion hace anos, un anio en Alemania, pero lo perdio). Disponibilidad horaria: 1 hora diaria nocturna (ej. 21-22h).\n\nDOLORES: Mejora economica y de carrera son el motor principal. Ha postergado el proyecto varias veces por logistica familiar. No quiere irse sin hablar el idioma ni sin seguridad economica. Desconfianza inicial por el contacto frio de Instagram.\n\nINVERSION: Ingresos 1.000-3.000 EUR/mes (formulario). Presupuesto declarado 3.500-5.000 EUR. No rechaza el precio pero necesita financiacion: pregunta por cuotas y convenios. Sequra u otro plan hasta 12 meses puede ser la palanca de cierre.\n\nRUTA: Perfil UE de alta viabilidad. Exenta de FSP por ejercicio en UE mas de 3 anios. Ruta: aleman B2/C1 (1 anio aprox.) + certificaciones + FSP eximida + agencia de empleo. Puede llegar con contrato.\n\nOBJECIONES: Pareja debe estar en la llamada (codecisora, condicion que ella misma puso). Urgencia baja y patron de postergacion. Precio necesita fraccionamiento. Desconfianza residual (no habia revisado casos de exito antes de la llamada).\n\nRECOMENDACION: Confirmar asistencia del marido antes de iniciar el closing; sin el no hay decision. Anclar el coste de la inaccion (anios de salario aleman perdidos). Tener lista la opcion de financiacion en cuotas como primer recurso, no como ultimo.",
    "cta": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/MUBISpNWBMC3Vml8SGB8"
@@ -17634,10 +17634,10 @@
    "reag": "",
    "agendada": "2026-09-05",
    "cta": "",
-   "asistio": false,
+   "asistio": true,
    "fuente": "",
    "resclo": "",
-   "sc": null,
+   "sc": 18,
    "cash": "",
    "ticket": "",
    "pagado": "",
@@ -17645,9 +17645,9 @@
    "closer": "Natalie",
    "prof": "Médico ",
    "estadoclo": "",
-   "motivo": "",
-   "objclo": "",
-   "etapa": "🔸Closing Agendado",
+   "motivo": "Decisor",
+   "objclo": "Decisor ausente (marido no pudo estar por rotativo); dificultad real de coordinacion de agenda familiar; curiosidad sobre metodologia vs academias (resuelta parcialmente).",
+   "etapa": "🔸®️ Closing RE-agendANDO",
    "tel": "+34633096862",
    "email": "tata.orozco@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/MUBISpNWBMC3Vml8SGB8",
@@ -17657,7 +17657,7 @@
    "notas_n": 3,
    "nota_est": "PENDIENTE",
    "nota_cat": "NO_SHOW",
-   "tocado": "2026-09-04",
+   "tocado": "2026-09-08",
    "pendiente": 0.0,
    "cuotas": [],
    "ncuotas": "",
@@ -17672,7 +17672,7 @@
    "prox_fecha": "",
    "ult": "2026-09-08",
    "ultdir": "inbound",
-   "ulttxt": "Si",
+   "ulttxt": "Si. Pero como te dije los horarios que tenías. No era posible. Y la idea era aprovecharla.",
    "ulttipo": "TYPE_WHATSAPP",
    "infoclo": "PERFIL: Tatiana Orozco Orozco. Medica colombiana. Titulo homologado en Espana desde 2019, mas de 3 anos ejerciendo en la UE (FUCS, Colombia). Vive en Espana con su pareja (no medico) e hijos de 5 y 2 anos. Perfil UE: exenta de FSP.\n\nOBJETIVO: Emigrar a Alemania con toda la familia. Plazo abierto, condicionado al nivel de aleman (horizonte 1-1,5 anios aceptado). Nivel de aleman: cero actual (tuvo exposicion hace anos, un anio en Alemania, pero lo perdio). Disponibilidad horaria: 1 hora diaria nocturna (ej. 21-22h).\n\nDOLORES: Mejora economica y de carrera son el motor principal. Ha postergado el proyecto varias veces por logistica familiar. No quiere irse sin hablar el idioma ni sin seguridad economica. Desconfianza inicial por el contacto frio de Instagram.\n\nINVERSION: Ingresos 1.000-3.000 EUR/mes (formulario). Presupuesto declarado 3.500-5.000 EUR. No rechaza el precio pero necesita financiacion: pregunta por cuotas y convenios. Sequra u otro plan hasta 12 meses puede ser la palanca de cierre.\n\nRUTA: Perfil UE de alta viabilidad. Exenta de FSP por ejercicio en UE mas de 3 anios. Ruta: aleman B2/C1 (1 anio aprox.) + certificaciones + FSP eximida + agencia de empleo. Puede llegar con contrato.\n\nOBJECIONES: Pareja debe estar en la llamada (codecisora, condicion que ella misma puso). Urgencia baja y patron de postergacion. Precio necesita fraccionamiento. Desconfianza residual (no habia revisado casos de exito antes de la llamada).\n\nRECOMENDACION: Confirmar asistencia del marido ",
    "restri": "Cualifica",
@@ -17692,10 +17692,10 @@
    "reag": "",
    "agendada": "2026-09-04",
    "cta": "",
-   "asistio": false,
+   "asistio": true,
    "fuente": "",
    "resclo": "",
-   "sc": null,
+   "sc": 18,
    "cash": "",
    "ticket": "",
    "pagado": "",
@@ -17703,9 +17703,9 @@
    "closer": "Natalie  Kusnik 2",
    "prof": "Médico ",
    "estadoclo": "",
-   "motivo": "",
-   "objclo": "",
-   "etapa": "🔸Closing Agendado",
+   "motivo": "Decisor",
+   "objclo": "Decisor ausente (marido no pudo estar por rotativo); dificultad real de coordinacion de agenda familiar; curiosidad sobre metodologia vs academias (resuelta parcialmente).",
+   "etapa": "🔸®️ Closing RE-agendANDO",
    "tel": "+34633096862",
    "email": "tata.orozco@gmail.com",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/MUBISpNWBMC3Vml8SGB8",
@@ -17715,7 +17715,7 @@
    "notas_n": 3,
    "nota_est": "PENDIENTE",
    "nota_cat": "NO_SHOW",
-   "tocado": "2026-09-04",
+   "tocado": "2026-09-08",
    "pendiente": 0.0,
    "cuotas": [],
    "ncuotas": "",
@@ -17730,7 +17730,7 @@
    "prox_fecha": "",
    "ult": "2026-09-08",
    "ultdir": "inbound",
-   "ulttxt": "Si",
+   "ulttxt": "Si. Pero como te dije los horarios que tenías. No era posible. Y la idea era aprovecharla.",
    "ulttipo": "TYPE_WHATSAPP",
    "infoclo": "PERFIL: Tatiana Orozco Orozco. Medica colombiana. Titulo homologado en Espana desde 2019, mas de 3 anos ejerciendo en la UE (FUCS, Colombia). Vive en Espana con su pareja (no medico) e hijos de 5 y 2 anos. Perfil UE: exenta de FSP.\n\nOBJETIVO: Emigrar a Alemania con toda la familia. Plazo abierto, condicionado al nivel de aleman (horizonte 1-1,5 anios aceptado). Nivel de aleman: cero actual (tuvo exposicion hace anos, un anio en Alemania, pero lo perdio). Disponibilidad horaria: 1 hora diaria nocturna (ej. 21-22h).\n\nDOLORES: Mejora economica y de carrera son el motor principal. Ha postergado el proyecto varias veces por logistica familiar. No quiere irse sin hablar el idioma ni sin seguridad economica. Desconfianza inicial por el contacto frio de Instagram.\n\nINVERSION: Ingresos 1.000-3.000 EUR/mes (formulario). Presupuesto declarado 3.500-5.000 EUR. No rechaza el precio pero necesita financiacion: pregunta por cuotas y convenios. Sequra u otro plan hasta 12 meses puede ser la palanca de cierre.\n\nRUTA: Perfil UE de alta viabilidad. Exenta de FSP por ejercicio en UE mas de 3 anios. Ruta: aleman B2/C1 (1 anio aprox.) + certificaciones + FSP eximida + agencia de empleo. Puede llegar con contrato.\n\nOBJECIONES: Pareja debe estar en la llamada (codecisora, condicion que ella misma puso). Urgencia baja y patron de postergacion. Precio necesita fraccionamiento. Desconfianza residual (no habia revisado casos de exito antes de la llamada).\n\nRECOMENDACION: Confirmar asistencia del marido ",
    "restri": "Cualifica",
@@ -22709,7 +22709,7 @@
   {
    "dia": "2026-09-08",
    "agendados": 2,
-   "showed": 0,
+   "showed": 2,
    "noshow": 0,
    "cancelled": 1,
    "confirmed": 1,
@@ -32491,9 +32491,9 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-09-07",
+   "ult": "2026-09-08",
    "ultdir": "outbound",
-   "ulttxt": "¡Hola Massiel! Esta es tu confirmación para la cita que has agendado con nuestro equipo Te cuento los siguientes pasos para tu llamada con Sarahi. Es quién va a tomar esta llamada contigo para ver si realmente este progr",
+   "ulttxt": "¡Hey Massiel! Solo quería recordarte que tu llamada es en 30 minutos Asegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el botón de abajo para que así puedas aprovechar la llamada al máximo. 🎦 ",
    "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
@@ -32776,7 +32776,7 @@
    "prof": "Médico ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔸Closing Agendado",
+   "etapa": "🔸®️ Closing RE-agendANDO",
    "tel": "+34633096862",
    "email": "tata.orozco@gmail.com",
    "wsp": "2026-09-08",
@@ -32789,7 +32789,7 @@
    "restri_ia": "PERFIL: Tatiana Orozco Orozco. Medica colombiana, titulo homologado en Espana desde 2019 (mas de 3 anos ejerciendo en la UE). Graduada en FUCS, Colombia. Vive en Espana. Tiene pareja e hijos de 5 y 2 anos. Perfil solido y bien encajado con el avatar de medico LATAM en Europa.\n\nMOTIVACIONES PRINCIPALES:\n- Mejora economica: el tema economico es la motivacion declarada principal.\n- Crecimiento profesional: quiere seguir avanzando en su carrera.\n- Decision consensuada con pareja: ya han hablado del tema y quieren hacerlo, pero no saben como.\n\nDOLORES PRINCIPALES:\n- No sabe como dar el paso concreto: tiene la idea desde hace tiempo pero la va posponiendo.\n- Miedo a lanzarse sin seguridad: con hijos pequenos y familia no quiere arriesgarse sin hablar el idioma.\n- Desconfianza inicial: le genero desconfianza el contacto por Instagram sin contexto previo.\n- Incertidumbre economica: la inversion es un freno real; necesita saber costes y formas de pago antes de decidir.\n\nOBJETIVOS/METAS:\n- Llegar a Alemania con el idioma adquirido y con contrato.\n- Ir con pareja e hijos desde el principio.\n- Plazo condicionado al aprendizaje del aleman: no fija fecha concreta pero acepta el horizonte de 1 a ",
    "ult": "2026-09-08",
    "ultdir": "inbound",
-   "ulttxt": "Si",
+   "ulttxt": "Si. Pero como te dije los horarios que tenías. No era posible. Y la idea era aprovecharla.",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": true
   },
@@ -47173,9 +47173,9 @@
    "ss": 62,
    "stri": null,
    "sc": null,
-   "ult": "2026-09-07",
+   "ult": "2026-09-08",
    "ultdir": "outbound",
-   "ulttxt": "¡Hola Massiel! Esta es tu confirmación para la cita que has agendado con nuestro equipo Te cuento los siguientes pasos para tu llamada con Sarahi. Es quién va a tomar esta llamada contigo para ver si realmente este progr",
+   "ulttxt": "¡Hey Massiel! Solo quería recordarte que tu llamada es en 30 minutos Asegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el botón de abajo para que así puedas aprovechar la llamada al máximo. 🎦 ",
    "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/lb1CphLDZYLNyIYYLTeC",
    "closer": "",
@@ -47305,8 +47305,8 @@
   {
    "cid": "MUBISpNWBMC3Vml8SGB8",
    "nombre": "Tatiana Orozco Orozco",
-   "etapa": "🔸Closing Agendado",
-   "desde": "2026-09-04",
+   "etapa": "🔸®️ Closing RE-agendANDO",
+   "desde": "2026-09-08",
    "fuente": "",
    "prox": "2026-09-08",
    "wsp": "2026-09-08",
@@ -47317,7 +47317,7 @@
    "resclo": "",
    "ticket": "",
    "pagado": "",
-   "motivo": "",
+   "motivo": "Decisor",
    "tel": "+34633096862",
    "email": "tata.orozco@gmail.com",
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
@@ -47325,10 +47325,10 @@
    "nivel": "🔹 No tengo conocimientos",
    "ss": 10,
    "stri": 72,
-   "sc": null,
+   "sc": 18,
    "ult": "2026-09-08",
    "ultdir": "inbound",
-   "ulttxt": "Si",
+   "ulttxt": "Si. Pero como te dije los horarios que tenías. No era posible. Y la idea era aprovecharla.",
    "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/MUBISpNWBMC3Vml8SGB8",
    "closer": "",
@@ -47339,7 +47339,7 @@
    "notas_n": 3,
    "nota_est": "PENDIENTE",
    "nota_cat": "NO_SHOW",
-   "tocado": "2026-09-04",
+   "tocado": "2026-09-08",
    "pendiente": 0.0,
    "cuotas": [],
    "ncuotas": "",
@@ -68918,36 +68918,6 @@
   },
   {
    "dia": "2026-08-31",
-   "s": "",
-   "h": [
-    1,
-    0,
-    14,
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    24,
-    15,
-    0,
-    3,
-    6,
-    4,
-    37,
-    7,
-    16,
-    23,
-    14,
-    8,
-    31,
-    1,
-    70
-   ]
-  },
-  {
-   "dia": "2026-08-31",
    "s": "Sary",
    "h": [
     0,
@@ -68974,6 +68944,36 @@
     0,
     0,
     8
+   ]
+  },
+  {
+   "dia": "2026-08-31",
+   "s": "",
+   "h": [
+    1,
+    0,
+    14,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    24,
+    15,
+    0,
+    3,
+    6,
+    4,
+    37,
+    7,
+    16,
+    23,
+    14,
+    8,
+    31,
+    1,
+    70
    ]
   },
   {
@@ -69038,36 +69038,6 @@
   },
   {
    "dia": "2026-09-01",
-   "s": "",
-   "h": [
-    6,
-    5,
-    1,
-    0,
-    0,
-    2,
-    0,
-    14,
-    0,
-    0,
-    13,
-    3,
-    4,
-    28,
-    69,
-    19,
-    5,
-    4,
-    6,
-    3,
-    6,
-    15,
-    1,
-    14
-   ]
-  },
-  {
-   "dia": "2026-09-01",
    "s": "Sary",
    "h": [
     0,
@@ -69094,6 +69064,36 @@
     2,
     1,
     8
+   ]
+  },
+  {
+   "dia": "2026-09-01",
+   "s": "",
+   "h": [
+    6,
+    5,
+    1,
+    0,
+    0,
+    2,
+    0,
+    14,
+    0,
+    0,
+    13,
+    3,
+    4,
+    28,
+    69,
+    19,
+    5,
+    4,
+    6,
+    3,
+    6,
+    15,
+    1,
+    14
    ]
   },
   {
@@ -69338,6 +69338,36 @@
   },
   {
    "dia": "2026-09-04",
+   "s": "Jesmary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    26,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-04",
    "s": "",
    "h": [
     1,
@@ -69398,36 +69428,6 @@
   },
   {
    "dia": "2026-09-04",
-   "s": "Jesmary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    26,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-09-04",
    "s": "Sara",
    "h": [
     0,
@@ -69453,6 +69453,36 @@
     0,
     0,
     1,
+    1
+   ]
+  },
+  {
+   "dia": "2026-09-05",
+   "s": "Jesmary",
+   "h": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    0,
+    22,
+    12,
+    0,
+    0,
+    0,
+    0,
+    5,
+    17,
     1
    ]
   },
@@ -69544,36 +69574,6 @@
     0,
     2,
     3
-   ]
-  },
-  {
-   "dia": "2026-09-05",
-   "s": "Jesmary",
-   "h": [
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    0,
-    0,
-    22,
-    12,
-    0,
-    0,
-    0,
-    0,
-    5,
-    17,
-    1
    ]
   },
   {
@@ -69800,11 +69800,11 @@
     0,
     2,
     2,
-    0,
-    0,
-    0,
-    0,
-    0,
+    14,
+    32,
+    9,
+    3,
+    20,
     0,
     0,
     0,
@@ -69830,9 +69830,9 @@
     0,
     0,
     0,
+    1,
     0,
-    0,
-    0,
+    1,
     0,
     0,
     0,
@@ -143081,6 +143081,146 @@
   {
    "s": "",
    "d0": "2026-09-07",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
    "dp": ""
   },
   {
