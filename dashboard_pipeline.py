@@ -94,6 +94,23 @@ except Exception as _e:
     print("   [aviso] formulario post-triaje:",str(_e)[:70],flush=True)
 print("   post-triaje: %d envios" % len(post_by_cid),flush=True)
 
+# ===== NOMBRES DE SETTER (8-sep-2026) =====
+# Antes esto era un diccionario cerrado con tres nombres: cualquier setter que no estuviera en
+# la lista veia su envio del formulario DESCARTADO EN SILENCIO. Al dar de alta a Carlos se vio.
+# Ahora los alias conocidos se normalizan y CUALQUIER nombre nuevo se acepta tal cual, para que
+# dar de alta a alguien sea anadirlo al desplegable del formulario y nada mas.
+ALIAS_SETTER={"sary":"Sary","sarahi":"Sary","sarahimijares":"Sary",
+              "sara":"Sara","sarisa":"Sara","saras":"Sara",
+              "jesmary":"Jesmary","jes":"Jesmary","jess":"Jesmary","jesmaryj":"Jesmary",
+              "carlos":"Carlos"}
+def norm_setter(crudo):
+    """'4 - Carlos' -> 'Carlos'. Un nombre desconocido NO se descarta: se acepta capitalizado."""
+    nom=re.sub(r"^\s*\d+\s*[-.)]?\s*","",str(crudo or "")).strip()
+    if not nom: return ""
+    k=re.sub(r"[^a-z]","",nom.lower())
+    if k in ALIAS_SETTER: return ALIAS_SETTER[k]
+    return nom.split()[0].capitalize()
+
 kpis=[]
 try:
     _pg=1
@@ -105,9 +122,7 @@ try:
         for s in _subs:
             o=s.get("others") or {}
             crudo=str(o.get(KF["setter"]) or "")
-            nom=re.sub(r"^\s*\d+\s*-\s*","",crudo).strip().lower()
-            setter={"sary":"Sary","sara":"Sara","sarisa":"Sara",
-                    "jesmary":"Jesmary"}.get(nom)
+            setter=norm_setter(crudo)
             fecha=str(o.get(KF["fecha"]) or s.get("createdAt") or "")[:10]
             if not setter or not re.match(r"\d{4}-\d{2}-\d{2}",fecha): continue
             kpis.append({"dia":fecha,"setter":setter,"_env":str(s.get("createdAt") or ""),
@@ -160,7 +175,8 @@ try:
                 _tg=[(x.get("name") or "").lower().strip() for x in ((_l.get("_embedded") or {}).get("tags") or [])]
                 _st=("Sary" if "sary" in _tg else
                      "Sara" if any(t=="sara" or t.startswith("sara ") for t in _tg) else
-                     "Jesmary" if "jes" in _tg or "jesmary" in _tg else "")
+                     "Jesmary" if "jes" in _tg or "jesmary" in _tg else
+                     "Carlos" if any("carlos" in t for t in _tg) else "")
                 _or=next((t for t in _tg if t in ("outbound frio","ads","cta comentario","inbound","outbound seguidores","skool","poll historia")),"")
                 if not (_st or _or): continue
                 for _ct in ((_l.get("_embedded") or {}).get("contacts") or []):
@@ -287,7 +303,17 @@ def _fkeys():
     seen=set(); out=[]
     for k in ks:
         if k and k not in seen: seen.add(k); out.append(k)
-    return out
+    # 5-sep-2026: la clave de Christian devuelve 401 desde que dejo el equipo, y cada llamada se
+    # reintentaba 5 veces antes de rendirse -> minutos perdidos y "mapa Fathom parcial" en cada
+    # ejecucion. Se descartan las claves muertas de una sola comprobacion barata.
+    vivas=[]
+    for k in out:
+        _c=subprocess.run(["curl","-s","-o","/dev/null","-m","20","-w","%{http_code}",
+            "https://api.fathom.ai/external/v1/meetings?limit=1","-H","X-Api-Key: "+k],
+            capture_output=True,text=True).stdout.strip()
+        if _c=="200": vivas.append(k)
+        else: print(f"AVISO Fathom: clave ...{k[-6:]} descartada (HTTP {_c})",flush=True)
+    return vivas
 for _fk in _fkeys():
     try:
         _ca=_sdt.strftime('%Y-%m-%dT%H:%M:%SZ'); _cur=None; _f=0
@@ -477,11 +503,12 @@ GSET={}
 for _c3,_cc3 in cmap.items():
     _cm3={x.get("id"):x.get("value") for x in (_cc3 or {}).get("customFields",[])}
     _v3=str(_cm3.get("lcFBOFN6VjZhvTgMFvuf") or "").strip().capitalize()
-    if _v3 not in ("Sary","Sara","Jesmary"):
+    if _v3 not in ("Sary","Sara","Jesmary","Carlos"):
         _tl3=[str(t).lower() for t in ((_cc3 or {}).get("tags") or [])]
         _v3=("Sary" if any("sary" in t for t in _tl3) else
              "Sara" if any(t=="sara" or "setter: sara" in t for t in _tl3) else
-             "Jesmary" if any("jesmary" in t for t in _tl3) else "")
+             "Jesmary" if any("jesmary" in t for t in _tl3) else
+             "Carlos" if any("carlos" in t for t in _tl3) else "")
     if _v3: GSET[_c3]=_v3
 print("setter por ficha (GSET):",len(GSET),flush=True)
 
@@ -666,7 +693,8 @@ for cid,info in cids.items():
         _tl=[str(t).lower() for t in tags]
         setter=("Sara" if ("sara" in _tl or "setter: sara" in _tl) else
                 ("Sary" if ("sary" in _tl or "setter: sary" in _tl) else
-                 ("Jesmary" if ("jesmary" in _tl or "setter: jesmary" in _tl) else (cm.get(F["setter"]) or ""))))
+                 ("Jesmary" if ("jesmary" in _tl or "setter: jesmary" in _tl) else
+                  ("Carlos" if ("carlos" in _tl or "setter: carlos" in _tl) else (cm.get(F["setter"]) or "")))))
     fagenda=str((info.get("tri") or {}).get("startTime") or (info.get("clo") or {}).get("startTime") or "")[:10]
     # solo leads REALES en la tabla (fichas fantasma/duplicadas sin nombre ni datos => fuera)
     es_real=(nombre and nombre!="(sin nombre)") or c.get("email") or c.get("phone") or cm.get(F["prof"])
@@ -953,7 +981,7 @@ if prev:
     if len(triage_leads)==0 and prev.get("triage_leads"):
         print("AVISO: 0 llamadas de triaje -> conservo las anteriores",flush=True)
         triage_leads=prev["triage_leads"]
-SETTERS_ACT=["Sary","Sara","Jesmary"]
+
 # ---- OBJETIVOS DIARIOS (pestana "Dia"): estandar de calidad del funnel, fijado con Jorge 26-ago.
 # Tasas fijadas por Jorge (26-ago; base bajada a 150 = 50/setter sin inbound, decidido 26-ago tarde): 3% conv->prop (subir a 4% el 1-oct si mejora el inbound) ->
 # 60% prop->agenda -> 75% asistencia triaje -> 67% cualifica -> 85% asistencia closing -> 50% cierre.
@@ -967,6 +995,12 @@ SETTERS_ACT=["Sary","Sara","Jesmary"]
 TARGETS={"conversaciones": 250, "propuestas": 7.5, "agendas": 4.5, "triajes_hechos": 3.38, "cualifica": 2.26, "closings": 1.92, "ventas": 0.96, "facturacion": 1700, "cash": 1300, "setters_peso": {"Sary": 1, "Jes": 1, "Sara": 0.5}}
 try: TARGETS.update({k:v for k,v in json.load(open(os.path.join(HERE,"targets.json"))).items() if k in TARGETS})
 except Exception: pass
+
+# 8-sep-2026: la lista de setters sale de QUIEN HA ENVIADO el formulario mas quien tenga peso en
+# targets.json. Antes estaba escrita a mano y habia que tocar el codigo cada vez que entraba alguien.
+SETTERS_ACT=sorted({r["setter"] for r in kpis if r.get("setter")}
+                   | set((TARGETS.get("setters_peso") or {}).keys()))
+print("setters activos:",", ".join(SETTERS_ACT),flush=True)
 _kpi_dias=defaultdict(set)
 for _k in kpis: _kpi_dias[_k["dia"]].add(_k["setter"])
 cumplimiento=[]
