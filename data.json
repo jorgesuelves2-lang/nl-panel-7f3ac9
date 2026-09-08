@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-08 14:52",
+ "generado": "2026-09-08 15:37",
  "rango": "2026-02-01 a 2026-09-08",
  "setting": [
   {
@@ -3071,10 +3071,10 @@
   {
    "dia": "2026-09-08",
    "inb": 0,
-   "out": 44,
-   "nuevas": 44,
-   "total": 113,
-   "fups": 62,
+   "out": 63,
+   "nuevas": 63,
+   "total": 134,
+   "fups": 68,
    "prop": 0,
    "link": 0,
    "badlink": 0,
@@ -5715,7 +5715,7 @@
   {
    "dia": "2026-09-08",
    "agendados": 4,
-   "showed": 0,
+   "showed": 1,
    "noshow": 0,
    "noconfirma": 0,
    "cancelled": 0,
@@ -17671,8 +17671,8 @@
    "prox_imp": 0.0,
    "prox_fecha": "",
    "ult": "2026-09-08",
-   "ultdir": "inbound",
-   "ulttxt": "Si. Pero como te dije los horarios que tenías. No era posible. Y la idea era aprovecharla.",
+   "ultdir": "outbound",
+   "ulttxt": "",
    "ulttipo": "TYPE_WHATSAPP",
    "infoclo": "PERFIL: Tatiana Orozco Orozco. Medica colombiana. Titulo homologado en Espana desde 2019, mas de 3 anos ejerciendo en la UE (FUCS, Colombia). Vive en Espana con su pareja (no medico) e hijos de 5 y 2 anos. Perfil UE: exenta de FSP.\n\nOBJETIVO: Emigrar a Alemania con toda la familia. Plazo abierto, condicionado al nivel de aleman (horizonte 1-1,5 anios aceptado). Nivel de aleman: cero actual (tuvo exposicion hace anos, un anio en Alemania, pero lo perdio). Disponibilidad horaria: 1 hora diaria nocturna (ej. 21-22h).\n\nDOLORES: Mejora economica y de carrera son el motor principal. Ha postergado el proyecto varias veces por logistica familiar. No quiere irse sin hablar el idioma ni sin seguridad economica. Desconfianza inicial por el contacto frio de Instagram.\n\nINVERSION: Ingresos 1.000-3.000 EUR/mes (formulario). Presupuesto declarado 3.500-5.000 EUR. No rechaza el precio pero necesita financiacion: pregunta por cuotas y convenios. Sequra u otro plan hasta 12 meses puede ser la palanca de cierre.\n\nRUTA: Perfil UE de alta viabilidad. Exenta de FSP por ejercicio en UE mas de 3 anios. Ruta: aleman B2/C1 (1 anio aprox.) + certificaciones + FSP eximida + agencia de empleo. Puede llegar con contrato.\n\nOBJECIONES: Pareja debe estar en la llamada (codecisora, condicion que ella misma puso). Urgencia baja y patron de postergacion. Precio necesita fraccionamiento. Desconfianza residual (no habia revisado casos de exito antes de la llamada).\n\nRECOMENDACION: Confirmar asistencia del marido ",
    "restri": "Cualifica",
@@ -17729,8 +17729,8 @@
    "prox_imp": 0.0,
    "prox_fecha": "",
    "ult": "2026-09-08",
-   "ultdir": "inbound",
-   "ulttxt": "Si. Pero como te dije los horarios que tenías. No era posible. Y la idea era aprovecharla.",
+   "ultdir": "outbound",
+   "ulttxt": "",
    "ulttipo": "TYPE_WHATSAPP",
    "infoclo": "PERFIL: Tatiana Orozco Orozco. Medica colombiana. Titulo homologado en Espana desde 2019, mas de 3 anos ejerciendo en la UE (FUCS, Colombia). Vive en Espana con su pareja (no medico) e hijos de 5 y 2 anos. Perfil UE: exenta de FSP.\n\nOBJETIVO: Emigrar a Alemania con toda la familia. Plazo abierto, condicionado al nivel de aleman (horizonte 1-1,5 anios aceptado). Nivel de aleman: cero actual (tuvo exposicion hace anos, un anio en Alemania, pero lo perdio). Disponibilidad horaria: 1 hora diaria nocturna (ej. 21-22h).\n\nDOLORES: Mejora economica y de carrera son el motor principal. Ha postergado el proyecto varias veces por logistica familiar. No quiere irse sin hablar el idioma ni sin seguridad economica. Desconfianza inicial por el contacto frio de Instagram.\n\nINVERSION: Ingresos 1.000-3.000 EUR/mes (formulario). Presupuesto declarado 3.500-5.000 EUR. No rechaza el precio pero necesita financiacion: pregunta por cuotas y convenios. Sequra u otro plan hasta 12 meses puede ser la palanca de cierre.\n\nRUTA: Perfil UE de alta viabilidad. Exenta de FSP por ejercicio en UE mas de 3 anios. Ruta: aleman B2/C1 (1 anio aprox.) + certificaciones + FSP eximida + agencia de empleo. Puede llegar con contrato.\n\nOBJECIONES: Pareja debe estar en la llamada (codecisora, condicion que ella misma puso). Urgencia baja y patron de postergacion. Precio necesita fraccionamiento. Desconfianza residual (no habia revisado casos de exito antes de la llamada).\n\nRECOMENDACION: Confirmar asistencia del marido ",
    "restri": "Cualifica",
@@ -28752,6 +28752,28 @@
  ],
  "kpis": [
   {
+   "dia": "2026-09-04",
+   "setter": "Sary",
+   "fu": 69,
+   "inb": 0,
+   "out": 50,
+   "prop": 2,
+   "book": 1,
+   "wel": 0,
+   "notas": "AngieBru"
+  },
+  {
+   "dia": "2026-09-07",
+   "setter": "Sary",
+   "fu": 50,
+   "inb": 0,
+   "out": 64,
+   "prop": 1,
+   "book": 0,
+   "wel": 0,
+   "notas": "Angie Bru"
+  },
+  {
    "dia": "2026-09-07",
    "setter": "Sara",
    "fu": 16,
@@ -29511,6 +29533,17 @@
    "notas": ""
   },
   {
+   "dia": "2026-08-10",
+   "setter": "Yexsander",
+   "fu": 7,
+   "inb": 0,
+   "out": 14,
+   "prop": 0,
+   "book": 0,
+   "wel": 0,
+   "notas": ""
+  },
+  {
    "dia": "2026-08-09",
    "setter": "Sary",
    "fu": 37,
@@ -29544,6 +29577,17 @@
    "notas": "@rema_alemania"
   },
   {
+   "dia": "2026-08-09",
+   "setter": "Yexsander",
+   "fu": 3,
+   "inb": 5,
+   "out": 24,
+   "prop": 0,
+   "book": 0,
+   "wel": 0,
+   "notas": ""
+  },
+  {
    "dia": "2026-08-08",
    "setter": "Sary",
    "fu": 39,
@@ -29564,9 +29608,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29577,9 +29623,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29590,9 +29638,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29603,9 +29653,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29616,9 +29668,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29629,9 +29683,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29642,9 +29698,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29655,9 +29713,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29668,9 +29728,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29681,9 +29743,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29694,9 +29758,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29707,9 +29773,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29720,9 +29788,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29733,9 +29803,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29746,9 +29818,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29759,9 +29833,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29772,9 +29848,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29785,9 +29863,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29798,9 +29878,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29811,9 +29893,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29824,9 +29908,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29837,9 +29923,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29850,9 +29938,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29863,9 +29953,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29876,9 +29968,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29889,9 +29983,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29902,9 +29998,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29915,9 +30013,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29928,9 +30028,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29941,9 +30043,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29954,9 +30058,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29967,9 +30073,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29980,9 +30088,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -29993,9 +30103,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30006,9 +30118,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30019,9 +30133,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30032,9 +30148,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30045,9 +30163,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30058,9 +30178,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30071,9 +30193,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30084,9 +30208,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30097,9 +30223,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30110,9 +30238,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30123,9 +30253,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30136,9 +30268,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30149,9 +30283,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30162,9 +30298,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30175,9 +30313,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30188,9 +30328,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30201,9 +30343,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30214,9 +30358,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30227,9 +30373,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30240,9 +30388,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30253,9 +30403,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30266,9 +30418,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30279,9 +30433,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30292,9 +30448,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30305,9 +30463,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30318,9 +30478,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30331,9 +30493,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30344,9 +30508,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30357,9 +30523,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30370,9 +30538,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30383,9 +30553,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30396,9 +30568,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30409,9 +30583,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30422,9 +30598,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30435,9 +30613,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30448,9 +30628,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30461,9 +30643,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30474,9 +30658,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30487,9 +30673,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30500,9 +30688,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30513,9 +30703,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30526,9 +30718,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30539,9 +30733,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30552,9 +30748,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30565,9 +30763,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30578,9 +30778,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30591,9 +30793,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30604,9 +30808,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30617,9 +30823,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30630,9 +30838,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30643,9 +30853,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30656,9 +30868,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30669,9 +30883,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30682,9 +30898,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30695,9 +30913,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30708,9 +30928,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30721,9 +30943,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30734,9 +30958,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30747,9 +30973,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30760,9 +30988,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30773,9 +31003,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30786,9 +31018,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30799,9 +31033,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30812,9 +31048,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30825,9 +31063,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30838,9 +31078,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30851,9 +31093,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30864,9 +31108,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30877,9 +31123,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30890,9 +31138,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30903,9 +31153,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30916,9 +31168,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30929,9 +31183,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30942,9 +31198,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30955,9 +31213,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30968,9 +31228,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30981,9 +31243,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -30994,9 +31258,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31007,9 +31273,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31020,9 +31288,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31033,9 +31303,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31046,9 +31318,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31059,9 +31333,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31072,9 +31348,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31085,9 +31363,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31098,9 +31378,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31111,9 +31393,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31124,9 +31408,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31137,9 +31423,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31150,9 +31438,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31163,9 +31453,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31176,9 +31468,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31189,9 +31483,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31202,9 +31498,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31215,9 +31513,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31228,9 +31528,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31241,9 +31543,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31254,9 +31558,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31267,9 +31573,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31280,9 +31588,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31293,9 +31603,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31306,9 +31618,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31319,9 +31633,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31332,9 +31648,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31345,9 +31663,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31358,9 +31678,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31371,9 +31693,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31384,9 +31708,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31397,9 +31723,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31410,9 +31738,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31423,9 +31753,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31436,9 +31768,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31449,9 +31783,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31462,9 +31798,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31475,9 +31813,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31488,9 +31828,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31501,9 +31843,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31514,9 +31858,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31527,9 +31873,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31540,9 +31888,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31553,9 +31903,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31566,9 +31918,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31579,9 +31933,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31592,9 +31948,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31605,9 +31963,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31618,9 +31978,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31631,9 +31993,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31644,9 +32008,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31657,9 +32023,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31670,9 +32038,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31683,9 +32053,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31696,9 +32068,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31709,9 +32083,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31722,9 +32098,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31735,9 +32113,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31748,9 +32128,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31761,9 +32143,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31774,9 +32158,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31787,9 +32173,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31800,9 +32188,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31813,9 +32203,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31826,9 +32218,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31839,9 +32233,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31852,9 +32248,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31865,9 +32263,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31878,9 +32278,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31891,9 +32293,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31904,9 +32308,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31917,9 +32323,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31930,9 +32338,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31943,9 +32353,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31956,9 +32368,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31969,9 +32383,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31982,9 +32398,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -31995,9 +32413,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -32008,9 +32428,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": true,
-    "Jesmary": false
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32021,9 +32443,11 @@
    "estado_triage": "Completo",
    "retraso_medio": -1.0,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": true,
-    "Jesmary": false
+    "Sary": true,
+    "Yexsander": true
    }
   },
   {
@@ -32034,9 +32458,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": true,
-    "Jesmary": false
+    "Sary": true,
+    "Yexsander": true
    }
   },
   {
@@ -32047,9 +32473,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": true,
-    "Jesmary": false
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32060,9 +32488,11 @@
    "estado_triage": "Parcial",
    "retraso_medio": 0.0,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": true,
-    "Jesmary": false
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32073,9 +32503,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": true,
-    "Jesmary": false
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32086,9 +32518,11 @@
    "estado_triage": "Completo",
    "retraso_medio": 0.0,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": true,
-    "Jesmary": false
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32099,9 +32533,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": true,
-    "Jesmary": false
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32112,9 +32548,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": true,
-    "Jesmary": false
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32125,9 +32563,11 @@
    "estado_triage": "Parcial",
    "retraso_medio": 0.0,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": true,
-    "Jesmary": false
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32138,9 +32578,11 @@
    "estado_triage": "Completo",
    "retraso_medio": 0.0,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32151,9 +32593,11 @@
    "estado_triage": "Completo",
    "retraso_medio": 0.0,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32164,9 +32608,11 @@
    "estado_triage": "Parcial",
    "retraso_medio": 0.0,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32177,9 +32623,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": false,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32190,9 +32638,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32203,9 +32653,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32216,9 +32668,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32229,9 +32683,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -32242,9 +32698,11 @@
    "estado_triage": "Completo",
    "retraso_medio": 0.0,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": false,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32255,9 +32713,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -32268,9 +32728,11 @@
    "estado_triage": "Parcial",
    "retraso_medio": 0.0,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32281,9 +32743,11 @@
    "estado_triage": "Parcial",
    "retraso_medio": 0.0,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32294,9 +32758,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -32307,9 +32773,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": false,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32320,9 +32788,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32333,9 +32803,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32346,9 +32818,11 @@
    "estado_triage": "No hubo llamadas",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": false,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32359,9 +32833,11 @@
    "estado_triage": "Completo",
    "retraso_medio": 0.5,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32372,9 +32848,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": false,
+    "Yexsander": false
    }
   },
   {
@@ -32385,9 +32863,11 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": true,
+    "Carlos": false,
+    "Jesmary": true,
     "Sara": true,
-    "Jesmary": true
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32398,9 +32878,11 @@
    "estado_triage": "Parcial",
    "retraso_medio": -12.0,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": true,
-    "Jesmary": false
+    "Sary": true,
+    "Yexsander": false
    }
   },
   {
@@ -32411,16 +32893,20 @@
    "estado_triage": "Sin registrar",
    "retraso_medio": null,
    "kpis": {
-    "Sary": false,
+    "Carlos": false,
+    "Jesmary": false,
     "Sara": false,
-    "Jesmary": false
+    "Sary": false,
+    "Yexsander": false
    }
   }
  ],
  "setters": [
-  "Sary",
+  "Carlos",
+  "Jesmary",
   "Sara",
-  "Jesmary"
+  "Sary",
+  "Yexsander"
  ],
  "triage_leads": [
   {
@@ -32468,7 +32954,7 @@
    "reag": "",
    "agendada": "2026-09-05",
    "cta": "",
-   "asistio": false,
+   "asistio": true,
    "fclo": "",
    "fuente": "",
    "d0": "2026-09-04",
@@ -32480,7 +32966,7 @@
    "prof": "Medico general",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔹 Triage Confirmado",
+   "etapa": "🔴🔹 Tri. No Cualifica",
    "tel": "+34603937985",
    "email": "massielestefania@hotmail.com",
    "wsp": "2026-09-05",
@@ -32493,7 +32979,7 @@
    "restri_ia": "",
    "ult": "2026-09-08",
    "ultdir": "outbound",
-   "ulttxt": "¡Hey Massiel! Solo quería recordarte que tu llamada es en 30 minutos Asegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el botón de abajo para que así puedas aprovechar la llamada al máximo. 🎦 ",
+   "ulttxt": "¡Hey Massiel! Solo quería recordarte que tu llamada es ahora mismo. Te están esperando! Asegúrate también de estar en un lugar sin distracciones y con buena conexión para que puedas prender tu micrófono y tu cámara duran",
    "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
@@ -32528,10 +33014,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-09-07",
+   "ult": "2026-09-08",
    "ultdir": "outbound",
-   "ulttxt": "Excelente estamos en contacto por aquí",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ulttxt": "¡Hey Derlis! Solo quería recordarte que tu llamada es en 2 horas. Asegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el botón de abajo para que así puedas aprovechar la llamada al máximo. 🎦 Ver",
+   "ulttipo": "TYPE_EMAIL",
    "tiene_closing": false
   },
   {
@@ -32788,8 +33274,8 @@
    "infotri": "PERFIL: Tatiana Orozco Orozco. Medica colombiana. Titulo homologado en Espana desde 2019, mas de 3 anos ejerciendo en la UE (FUCS, Colombia). Vive en Espana con su pareja (no medico) e hijos de 5 y 2 anos. Perfil UE: exenta de FSP.\n\nOBJETIVO: Emigrar a Alemania con toda la familia. Plazo abierto, condicionado al nivel de aleman (horizonte 1-1,5 anios aceptado). Nivel de aleman: cero actual (tuvo exposicion hace anos, un anio en Alemania, pero lo perdio). Disponibilidad horaria: 1 hora diaria nocturna (ej. 21-22h).\n\nDOLORES: Mejora economica y de carrera son el motor principal. Ha postergado el proyecto varias veces por logistica familiar. No quiere irse sin hablar el idioma ni sin seguridad economica. Desconfianza inicial por el contacto frio de Instagram.\n\nINVERSION: Ingresos 1.000-3.000 EUR/mes (formulario). Presupuesto declarado 3.500-5.000 EUR. No rechaza el precio pero necesita financiacion: pregunta por cuotas y convenios. Sequra u otro plan hasta 12 meses puede ser la palanca de cierre.\n\nRUTA: Perfil UE de alta viabilidad. Exenta de FSP por ejercicio en UE mas de 3 anios. Ruta: aleman B2/C1 (1 anio aprox.) + certificaciones + FSP eximida + agencia de empleo. Puede llegar con contrato.\n\nOBJECIONES: Pareja debe estar en la llamada (codecisora, condicion que ella misma puso). Urgencia baja y patron de postergacion. Precio necesita fraccionamiento. Desconfianza residual (no habia revisado casos de exito antes de la llamada).\n\nRECOMENDACION: Confirmar asistencia del marido ",
    "restri_ia": "PERFIL: Tatiana Orozco Orozco. Medica colombiana, titulo homologado en Espana desde 2019 (mas de 3 anos ejerciendo en la UE). Graduada en FUCS, Colombia. Vive en Espana. Tiene pareja e hijos de 5 y 2 anos. Perfil solido y bien encajado con el avatar de medico LATAM en Europa.\n\nMOTIVACIONES PRINCIPALES:\n- Mejora economica: el tema economico es la motivacion declarada principal.\n- Crecimiento profesional: quiere seguir avanzando en su carrera.\n- Decision consensuada con pareja: ya han hablado del tema y quieren hacerlo, pero no saben como.\n\nDOLORES PRINCIPALES:\n- No sabe como dar el paso concreto: tiene la idea desde hace tiempo pero la va posponiendo.\n- Miedo a lanzarse sin seguridad: con hijos pequenos y familia no quiere arriesgarse sin hablar el idioma.\n- Desconfianza inicial: le genero desconfianza el contacto por Instagram sin contexto previo.\n- Incertidumbre economica: la inversion es un freno real; necesita saber costes y formas de pago antes de decidir.\n\nOBJETIVOS/METAS:\n- Llegar a Alemania con el idioma adquirido y con contrato.\n- Ir con pareja e hijos desde el principio.\n- Plazo condicionado al aprendizaje del aleman: no fija fecha concreta pero acepta el horizonte de 1 a ",
    "ult": "2026-09-08",
-   "ultdir": "inbound",
-   "ulttxt": "Si. Pero como te dije los horarios que tenías. No era posible. Y la idea era aprovecharla.",
+   "ultdir": "outbound",
+   "ulttxt": "",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": true
   },
@@ -44421,7 +44907,7 @@
    "cta": "",
    "asistio": false,
    "fclo": "",
-   "fuente": "",
+   "fuente": "Outbound",
    "d0": "2026-03-24",
    "restri": "",
    "stri": null,
@@ -46940,8 +47426,9 @@
   "cash": 1300,
   "setters_peso": {
    "Sary": 1,
-   "Jes": 1,
-   "Sara": 0.5
+   "Sara": 0.5,
+   "Jesmary": 1,
+   "Carlos": 1
   }
  },
  "pipeline_leads": [
@@ -47071,10 +47558,10 @@
    "ss": 52,
    "stri": null,
    "sc": null,
-   "ult": "2026-09-07",
+   "ult": "2026-09-08",
    "ultdir": "outbound",
-   "ulttxt": "Excelente estamos en contacto por aquí",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ulttxt": "¡Hey Derlis! Solo quería recordarte que tu llamada es en 2 horas. Asegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el botón de abajo para que así puedas aprovechar la llamada al máximo. 🎦 Ver",
+   "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/PB8wL9s38uZucZN48Hoi",
    "closer": "",
    "triager": "",
@@ -47136,57 +47623,6 @@
    "nota_est": "",
    "nota_cat": "",
    "tocado": "2026-09-07",
-   "pendiente": 0.0,
-   "cuotas": [],
-   "ncuotas": "",
-   "cuotaspag": "",
-   "formapago": "",
-   "moneda": "",
-   "fventa": "",
-   "reserva": 0.0,
-   "notasform": "",
-   "prox_cuota": 0,
-   "prox_imp": 0.0,
-   "prox_fecha": ""
-  },
-  {
-   "cid": "lb1CphLDZYLNyIYYLTeC",
-   "nombre": "Massiel salazar",
-   "etapa": "🔹 Triage Confirmado",
-   "desde": "2026-09-05",
-   "fuente": "",
-   "prox": "2026-09-08",
-   "wsp": "2026-09-05",
-   "setter": "Jesmary",
-   "cta": "",
-   "prof": "Medico general",
-   "restri": "",
-   "resclo": "",
-   "ticket": "",
-   "pagado": "",
-   "motivo": "",
-   "tel": "+34603937985",
-   "email": "massielestefania@hotmail.com",
-   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
-   "urg": "",
-   "nivel": "🔹 No tengo conocimientos",
-   "ss": 62,
-   "stri": null,
-   "sc": null,
-   "ult": "2026-09-08",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Massiel! Solo quería recordarte que tu llamada es en 30 minutos Asegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el botón de abajo para que así puedas aprovechar la llamada al máximo. 🎦 ",
-   "ulttipo": "TYPE_EMAIL",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/lb1CphLDZYLNyIYYLTeC",
-   "closer": "",
-   "triager": "",
-   "nota": "",
-   "nota_f": "",
-   "nota_por": "",
-   "notas_n": 0,
-   "nota_est": "",
-   "nota_cat": "",
-   "tocado": "2026-09-05",
    "pendiente": 0.0,
    "cuotas": [],
    "ncuotas": "",
@@ -47327,8 +47763,8 @@
    "stri": 72,
    "sc": 18,
    "ult": "2026-09-08",
-   "ultdir": "inbound",
-   "ulttxt": "Si. Pero como te dije los horarios que tenías. No era posible. Y la idea era aprovecharla.",
+   "ultdir": "outbound",
+   "ulttxt": "",
    "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/MUBISpNWBMC3Vml8SGB8",
    "closer": "",
@@ -69218,6 +69654,36 @@
   },
   {
    "dia": "2026-09-03",
+   "s": "Sary",
+   "h": [
+    4,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    4,
+    1,
+    3,
+    2,
+    0,
+    2,
+    11,
+    6,
+    1,
+    6
+   ]
+  },
+  {
+   "dia": "2026-09-03",
    "s": "",
    "h": [
     30,
@@ -69274,36 +69740,6 @@
     0,
     2,
     2
-   ]
-  },
-  {
-   "dia": "2026-09-03",
-   "s": "Sary",
-   "h": [
-    4,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    4,
-    0,
-    0,
-    0,
-    0,
-    4,
-    1,
-    3,
-    2,
-    0,
-    2,
-    11,
-    6,
-    1,
-    6
    ]
   },
   {
@@ -69722,8 +70158,38 @@
     19,
     10,
     29,
-    103,
+    102,
     25
+   ]
+  },
+  {
+   "dia": "2026-09-07",
+   "s": "Carlos",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
    ]
   },
   {
@@ -69804,7 +70270,37 @@
     32,
     9,
     3,
-    20,
+    37,
+    13,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-08",
+   "s": "Carlos",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
     0,
     0,
     0,
@@ -142799,7 +143295,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Carlos",
    "d0": "2026-09-07",
    "dp": ""
   },
@@ -143081,6 +143577,101 @@
   {
    "s": "",
    "d0": "2026-09-07",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
    "dp": ""
   },
   {
