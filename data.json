@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-09 18:55",
+ "generado": "2026-09-09 22:01",
  "rango": "2026-02-01 a 2026-09-09",
  "setting": [
   {
@@ -3085,10 +3085,10 @@
   {
    "dia": "2026-09-09",
    "inb": 2,
-   "out": 110,
-   "nuevas": 112,
-   "total": 175,
-   "fups": 88,
+   "out": 151,
+   "nuevas": 153,
+   "total": 222,
+   "fups": 99,
    "prop": 1,
    "link": 1,
    "badlink": 0,
@@ -15129,6 +15129,38 @@
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/wcSGSbXTCjvb63oGkFed"
   },
   {
+   "nombre": "Pablo Maria Peralta Lorca",
+   "setter": "Jesmary",
+   "origen": "propio",
+   "prof": "Mastología y cirugía mamaria, medicina del dolor y clínica médica",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "univ": "Universidad del Aconcagua de Argentina y Universidad de Barcelona de España",
+   "urg": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "El idioma Y ser aceptado por las políticas de migración que no conozco",
+   "canal": "",
+   "ig": "dr.peraltalorca",
+   "email": "drperaltalorca@gmail.com",
+   "tf": "+542612193590",
+   "fagenda": "2026-09-10",
+   "closer": "Natalie",
+   "restri": "Cualifica",
+   "resclo": "",
+   "estado": "",
+   "ss": 52,
+   "stri": 55,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "PERFIL: Pablo Maria Peralta Lorca, medico argentino, especialista en mastologia, cirugia mamaria y medicina del dolor. Titulo en Universidad del Aconcagua (Argentina) y Universidad de Barcelona (Espana). Actualmente en ejercicio activo con cirugias programadas. Sin conocimiento de aleman (nivel 0).\n\nOBJETIVO: Emigrar a Alemania para ejercer su especialidad. Lo ve como un sueno posible, no como urgencia inmediata. Sin plazo concreto definido. Horas semanales disponibles: noches y fines de semana (mananas ocupadas por cirugia).\n\nDOLORES: Argentina economicamente inviable. Busca entorno de alta exigencia tecnica y cientifica. Quiere estabilidad y futuro profesional real.\n\nINVERSION: Ingresos declarados 1.000-3.000 EUR/mes. Sin liquidez inmediata para pago completo. Abrio la puerta a comenzar con ~2.000 EUR si hay facilidades. Necesita plan de cuotas claro y sin presion. No tiene tarjeta internacional confirmada; verificar antes del closing.\n\nRUTA: Titulo argentino apostillado (hecho en Barcelona). No tiene homologacion espanola formal pero Argentina tiene tratado con Europa. Ruta LATAM con posible ventaja por experiencia en Espana. Estimar si aplica ACP (exoneracion de homologacion por titulo homologado en Espana + 3 anos de ejercicio). Verificar si tiene o puede tramitar doble nacionalidad (lo menciono como posibilidad). Tiempo estimado hasta B2: 8 meses desde cero.\n\nOBJECIONES: Falta de liquidez inmediata; aversion a la presion y a decisiones rapidas ('lo hago tranquilo'); agenda muy ocupada entre semana; no conoce bien el sistema migratorio aleman.\n\nRECOMENDACION: Llegar con plan de cuotas concreto y atractivo (primera cuota de 1.500-2.000 EUR); no presionar en caliente, darle logica de inversion vs retorno (primer salario en Alemania cubre la inversion). Explorar si tiene tarjeta internacional o acceso a transferencia en euros. Confirmar asistencia el viernes por WhatsApp antes del sabado. Proximo paso: closing sabado a las 10 AM (Argentina) / 14:00 CET aprox.",
+   "cta": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/o8BsZHJlGHkpanRmKoao"
+  },
+  {
    "nombre": "Paola Lucila Paniagua Ferreira",
    "setter": "",
    "origen": "propio",
@@ -17595,6 +17627,64 @@
  ],
  "closing": [
   {
+   "nombre": "Pablo Maria Peralta Lorca",
+   "fecha": "2026-09-12",
+   "hora": "17:00",
+   "estado": "confirmed",
+   "reag": "",
+   "agendada": "2026-09-09",
+   "cta": "",
+   "asistio": false,
+   "fuente": "",
+   "resclo": "",
+   "sc": null,
+   "cash": "",
+   "ticket": "",
+   "pagado": "",
+   "setter": "Jesmary",
+   "closer": "Natalie",
+   "prof": "Mastología y cirugía mamaria, medicina del dolor y clínica médica",
+   "estadoclo": "",
+   "motivo": "",
+   "objclo": "",
+   "etapa": "🔸Closing Agendado",
+   "tel": "+542612193590",
+   "email": "drperaltalorca@gmail.com",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/o8BsZHJlGHkpanRmKoao",
+   "nota": "",
+   "nota_f": "",
+   "nota_por": "",
+   "notas_n": 0,
+   "nota_est": "",
+   "nota_cat": "",
+   "tocado": "2026-09-09",
+   "pendiente": 0.0,
+   "cuotas": [],
+   "ncuotas": "",
+   "cuotaspag": "",
+   "formapago": "",
+   "moneda": "",
+   "fventa": "",
+   "reserva": 0,
+   "notasform": "",
+   "prox_cuota": 0,
+   "prox_imp": 0.0,
+   "prox_fecha": "",
+   "ult": "2026-09-09",
+   "ultdir": "outbound",
+   "ulttxt": "Hola Pablo Maria Peralta Lorca, Te dejo aquí los detalles de la reunión. Pablo Maria Peralta Lorca - Reunión de Planificación Estratégica Fehca y Hora: sábado, 12 de septiembre de 2026 10:00 (-03) Link para la Reunión:ht",
+   "ulttipo": "TYPE_EMAIL",
+   "infoclo": "PERFIL: Pablo Maria Peralta Lorca, medico argentino, especialista en mastologia, cirugia mamaria y medicina del dolor. Titulo en Universidad del Aconcagua (Argentina) y Universidad de Barcelona (Espana). Actualmente en ejercicio activo con cirugias programadas. Sin conocimiento de aleman (nivel 0).\n\nOBJETIVO: Emigrar a Alemania para ejercer su especialidad. Lo ve como un sueno posible, no como urgencia inmediata. Sin plazo concreto definido. Horas semanales disponibles: noches y fines de semana (mananas ocupadas por cirugia).\n\nDOLORES: Argentina economicamente inviable. Busca entorno de alta exigencia tecnica y cientifica. Quiere estabilidad y futuro profesional real.\n\nINVERSION: Ingresos declarados 1.000-3.000 EUR/mes. Sin liquidez inmediata para pago completo. Abrio la puerta a comenzar con ~2.000 EUR si hay facilidades. Necesita plan de cuotas claro y sin presion. No tiene tarjeta internacional confirmada; verificar antes del closing.\n\nRUTA: Titulo argentino apostillado (hecho en Barcelona). No tiene homologacion espanola formal pero Argentina tiene tratado con Europa. Ruta LATAM con posible ventaja por experiencia en Espana. Estimar si aplica ACP (exoneracion de homologacion por titulo homologado en Espana + 3 anos de ejercicio). Verificar si tiene o puede tramitar doble nacionalidad (lo menciono como posibilidad). Tiempo estimado hasta B2: 8 meses desde cero.\n\nOBJECIONES: Falta de liquidez inmediata; aversion a la presion y a decisiones rapidas ('lo hago tranquilo'); age",
+   "restri": "Cualifica",
+   "ss": 52,
+   "stri": 55,
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "nivel": "🔹 No tengo conocimientos",
+   "urg": "",
+   "venta": 0
+  },
+  {
    "nombre": "Renzo Condo Palomino",
    "fecha": "2026-09-10",
    "hora": "15:30",
@@ -17696,9 +17786,9 @@
    "prox_cuota": 0,
    "prox_imp": 0.0,
    "prox_fecha": "",
-   "ult": "2026-09-08",
+   "ult": "2026-09-09",
    "ultdir": "outbound",
-   "ulttxt": "👤 Lead: Renzo Condo Palomino 📅 Fecha: jueves, 10 de septiembre de 2026 15:30 (+04) 🔗 Link: https://meet.google.com/boc-tjjs-gxj ━━━━━━━━━━━━━━━━━━━━━━ ⭐ Score del triaje: 72 / 100 📝 Resumen llamada Triaje con IA: PERFIL:",
+   "ulttxt": "👤 Lead: Pablo Maria Peralta Lorca 📅 Fecha: sábado, 12 de septiembre de 2026 17:00 (+04) 🔗 Link: https://meet.google.com/bcp-qhkt-trw ━━━━━━━━━━━━━━━━━━━━━━ ⭐ Score del triaje: 55 / 100 📝 Resumen llamada Triaje con IA: PE",
    "ulttipo": "TYPE_EMAIL",
    "infoclo": "-",
    "restri": "Cualifica",
@@ -28847,6 +28937,17 @@
  ],
  "kpis": [
   {
+   "dia": "2026-09-08",
+   "setter": "Sary",
+   "fu": 56,
+   "inb": 0,
+   "out": 64,
+   "prop": 1,
+   "book": 0,
+   "wel": 0,
+   "notas": ""
+  },
+  {
    "dia": "2026-09-07",
    "setter": "Jesmary",
    "fu": 0,
@@ -32991,7 +33092,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
+    "Sary": true,
     "Yexsander": false
    }
   },
@@ -33020,6 +33121,43 @@
  ],
  "triage_leads": [
   {
+   "nombre": "Pablo Maria Peralta Lorca",
+   "fecha": "2026-09-10",
+   "hora": "00:15",
+   "estado": "confirmed",
+   "reag": "",
+   "agendada": "2026-09-08",
+   "cta": "",
+   "asistio": true,
+   "fclo": "2026-09-12",
+   "fuente": "",
+   "d0": "2026-08-31",
+   "restri": "Cualifica",
+   "stri": 55,
+   "ss": 52,
+   "setter": "Jesmary",
+   "triager": "",
+   "prof": "Mastología y cirugía mamaria, medicina del dolor y clínica médica",
+   "motivo": "",
+   "objtri": "",
+   "etapa": "🔸Closing Agendado",
+   "tel": "+542612193590",
+   "email": "drperaltalorca@gmail.com",
+   "wsp": "2026-09-09",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/o8BsZHJlGHkpanRmKoao",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "ingresos": "1.000€ - 3.000€",
+   "nivel": "🔹 No tengo conocimientos",
+   "urg": "",
+   "infotri": "PERFIL: Pablo Maria Peralta Lorca, medico argentino, especialista en mastologia, cirugia mamaria y medicina del dolor. Titulo en Universidad del Aconcagua (Argentina) y Universidad de Barcelona (Espana). Actualmente en ejercicio activo con cirugias programadas. Sin conocimiento de aleman (nivel 0).\n\nOBJETIVO: Emigrar a Alemania para ejercer su especialidad. Lo ve como un sueno posible, no como urgencia inmediata. Sin plazo concreto definido. Horas semanales disponibles: noches y fines de semana (mananas ocupadas por cirugia).\n\nDOLORES: Argentina economicamente inviable. Busca entorno de alta exigencia tecnica y cientifica. Quiere estabilidad y futuro profesional real.\n\nINVERSION: Ingresos declarados 1.000-3.000 EUR/mes. Sin liquidez inmediata para pago completo. Abrio la puerta a comenzar con ~2.000 EUR si hay facilidades. Necesita plan de cuotas claro y sin presion. No tiene tarjeta internacional confirmada; verificar antes del closing.\n\nRUTA: Titulo argentino apostillado (hecho en Barcelona). No tiene homologacion espanola formal pero Argentina tiene tratado con Europa. Ruta LATAM con posible ventaja por experiencia en Espana. Estimar si aplica ACP (exoneracion de homologacion por titulo homologado en Espana + 3 anos de ejercicio). Verificar si tiene o puede tramitar doble nacionalidad (lo menciono como posibilidad). Tiempo estimado hasta B2: 8 meses desde cero.\n\nOBJECIONES: Falta de liquidez inmediata; aversion a la presion y a decisiones rapidas ('lo hago tranquilo'); age",
+   "restri_ia": "PERFIL: Pablo Maria Peralta Lorca, medico argentino especialista en mastologia, cirugia mamaria y medicina del dolor. Titulo de Universidad del Aconcagua (Argentina) y Universidad de Barcelona (Espana). Ejerce actualmente en Argentina con agenda quirurgica activa (opera los miercoles por la manana). Cero conocimiento de aleman.\n\nMOTIVACIONES / DOLORES: Considera Argentina inviable economicamente. Le atrae Alemania por su nivel tecnico-cientifico y su futuro. Tiene referentes de europa (profesor neurologo en Suiza, amigo suizo). Quiere ejercer su especialidad en un entorno de alta exigencia medica.\n\nDINERO: Perfil economico ajustado. En el formulario declaro ingresos de 1.000-3.000 EUR/mes y sin recursos para invertir en este momento. En el triaje confirmo que no puede hacer un pago inmediato ('seria casi el 100% de mis ingresos'), pero abrio la puerta a empezar con ~2.000 EUR si hay facilidades de pago. Necesita cuotas claras y no siente urgencia de pago inmediato. Riesgo real de que el dia del closing no cierre por falta de liquidez.\n\nDECISION: Parece decidir solo, no menciona pareja ni familia. Sin embargo, su lenguaje es exploratorio ('habria que charlarlo', 'lo hago tranquilo, ",
+   "ult": "2026-09-09",
+   "ultdir": "outbound",
+   "ulttxt": "Hola Pablo Maria Peralta Lorca, Te dejo aquí los detalles de la reunión. Pablo Maria Peralta Lorca - Reunión de Planificación Estratégica Fehca y Hora: sábado, 12 de septiembre de 2026 10:00 (-03) Link para la Reunión:ht",
+   "ulttipo": "TYPE_EMAIL",
+   "tiene_closing": true
+  },
+  {
    "nombre": "Antonine De Amorim Rego",
    "fecha": "2026-09-09",
    "hora": "22:15",
@@ -33039,7 +33177,7 @@
    "prof": "Médico/a",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔹 Tri. Saludo Enviado",
+   "etapa": "",
    "tel": "+34685429005",
    "email": "antoninedeveloper@gmail.com",
    "wsp": "2026-09-09",
@@ -47543,60 +47681,9 @@
  },
  "pipeline_leads": [
   {
-   "cid": "QAnWx7fddBY2m9RRjROB",
-   "nombre": "Antonine De Amorim Rego",
-   "etapa": "🔹 Tri. Saludo Enviado",
-   "desde": "2026-09-09",
-   "fuente": "",
-   "prox": "2026-09-09",
-   "wsp": "2026-09-09",
-   "setter": "",
-   "cta": "",
-   "prof": "Médico/a",
-   "restri": "",
-   "resclo": "",
-   "ticket": "",
-   "pagado": "",
-   "motivo": "",
-   "tel": "+34685429005",
-   "email": "antoninedeveloper@gmail.com",
-   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
-   "urg": "",
-   "nivel": "🔹 No tengo conocimientos",
-   "ss": 50,
-   "stri": null,
-   "sc": null,
-   "ult": "2026-09-09",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Antonine! Solo quería recordarte que tu llamada es ahora mismo. Te están esperando! Asegúrate también de estar en un lugar sin distracciones y con buena conexión para que puedas prender tu micrófono y tu cámara dura",
-   "ulttipo": "TYPE_EMAIL",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/QAnWx7fddBY2m9RRjROB",
-   "closer": "",
-   "triager": "",
-   "nota": "",
-   "nota_f": "",
-   "nota_por": "",
-   "notas_n": 0,
-   "nota_est": "",
-   "nota_cat": "",
-   "tocado": "2026-09-09",
-   "pendiente": 0.0,
-   "cuotas": [],
-   "ncuotas": "",
-   "cuotaspag": "",
-   "formapago": "",
-   "moneda": "",
-   "fventa": "",
-   "reserva": 0.0,
-   "notasform": "",
-   "prox_cuota": 0,
-   "prox_imp": 0.0,
-   "prox_fecha": ""
-  },
-  {
    "cid": "o8BsZHJlGHkpanRmKoao",
    "nombre": "Pablo Maria Peralta Lorca",
-   "etapa": "🔹 Triage Confirmado",
+   "etapa": "🔸Closing Agendado",
    "desde": "2026-09-09",
    "fuente": "",
    "prox": "2026-09-10",
@@ -47604,7 +47691,7 @@
    "setter": "Jesmary",
    "cta": "",
    "prof": "Mastología y cirugía mamaria, medicina del dolor y clínica médica",
-   "restri": "",
+   "restri": "Cualifica",
    "resclo": "",
    "ticket": "",
    "pagado": "",
@@ -47615,11 +47702,11 @@
    "urg": "",
    "nivel": "🔹 No tengo conocimientos",
    "ss": 52,
-   "stri": null,
+   "stri": 55,
    "sc": null,
    "ult": "2026-09-09",
    "ultdir": "outbound",
-   "ulttxt": "¡Hey Pablo! Solo quería recordarte que tu llamada es en 2 horas. Asegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el botón de abajo para que así puedas aprovechar la llamada al máximo. 🎦 Ver ",
+   "ulttxt": "Hola Pablo Maria Peralta Lorca, Te dejo aquí los detalles de la reunión. Pablo Maria Peralta Lorca - Reunión de Planificación Estratégica Fehca y Hora: sábado, 12 de septiembre de 2026 10:00 (-03) Link para la Reunión:ht",
    "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/o8BsZHJlGHkpanRmKoao",
    "closer": "",
@@ -47719,9 +47806,9 @@
    "ss": 50,
    "stri": null,
    "sc": null,
-   "ult": "2026-09-08",
+   "ult": "2026-09-09",
    "ultdir": "outbound",
-   "ulttxt": "👤 Lead: Renzo Condo Palomino 📅 Fecha: jueves, 10 de septiembre de 2026 15:30 (+04) 🔗 Link: https://meet.google.com/boc-tjjs-gxj ━━━━━━━━━━━━━━━━━━━━━━ ⭐ Score del triaje: 72 / 100 📝 Resumen llamada Triaje con IA: PERFIL:",
+   "ulttxt": "👤 Lead: Pablo Maria Peralta Lorca 📅 Fecha: sábado, 12 de septiembre de 2026 17:00 (+04) 🔗 Link: https://meet.google.com/bcp-qhkt-trw ━━━━━━━━━━━━━━━━━━━━━━ ⭐ Score del triaje: 55 / 100 📝 Resumen llamada Triaje con IA: PE",
    "ulttipo": "TYPE_EMAIL",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/HFFxJbUV383A5a6LsE9c",
    "closer": "",
@@ -69566,36 +69653,6 @@
   },
   {
    "dia": "2026-08-31",
-   "s": "",
-   "h": [
-    1,
-    0,
-    14,
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    24,
-    15,
-    0,
-    3,
-    6,
-    4,
-    35,
-    7,
-    16,
-    23,
-    14,
-    8,
-    31,
-    1,
-    70
-   ]
-  },
-  {
-   "dia": "2026-08-31",
    "s": "Jesmary",
    "h": [
     0,
@@ -69622,6 +69679,36 @@
     0,
     0,
     0
+   ]
+  },
+  {
+   "dia": "2026-08-31",
+   "s": "",
+   "h": [
+    1,
+    0,
+    14,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    24,
+    15,
+    0,
+    3,
+    6,
+    4,
+    35,
+    7,
+    16,
+    23,
+    14,
+    8,
+    31,
+    1,
+    70
    ]
   },
   {
@@ -69686,36 +69773,6 @@
   },
   {
    "dia": "2026-09-01",
-   "s": "",
-   "h": [
-    6,
-    5,
-    1,
-    0,
-    0,
-    2,
-    0,
-    13,
-    0,
-    0,
-    13,
-    3,
-    4,
-    28,
-    69,
-    19,
-    5,
-    4,
-    6,
-    3,
-    6,
-    15,
-    1,
-    14
-   ]
-  },
-  {
-   "dia": "2026-09-01",
    "s": "Jesmary",
    "h": [
     0,
@@ -69742,6 +69799,36 @@
     0,
     0,
     0
+   ]
+  },
+  {
+   "dia": "2026-09-01",
+   "s": "",
+   "h": [
+    6,
+    5,
+    1,
+    0,
+    0,
+    2,
+    0,
+    13,
+    0,
+    0,
+    13,
+    3,
+    4,
+    28,
+    69,
+    19,
+    5,
+    4,
+    6,
+    3,
+    6,
+    15,
+    1,
+    14
    ]
   },
   {
@@ -69806,36 +69893,6 @@
   },
   {
    "dia": "2026-09-02",
-   "s": "",
-   "h": [
-    44,
-    0,
-    6,
-    0,
-    1,
-    1,
-    6,
-    1,
-    0,
-    6,
-    78,
-    35,
-    0,
-    6,
-    7,
-    10,
-    8,
-    7,
-    1,
-    0,
-    5,
-    4,
-    4,
-    2
-   ]
-  },
-  {
-   "dia": "2026-09-02",
    "s": "Jesmary",
    "h": [
     0,
@@ -69862,6 +69919,36 @@
     0,
     1,
     0
+   ]
+  },
+  {
+   "dia": "2026-09-02",
+   "s": "",
+   "h": [
+    44,
+    0,
+    6,
+    0,
+    1,
+    1,
+    6,
+    1,
+    0,
+    6,
+    78,
+    35,
+    0,
+    6,
+    7,
+    10,
+    8,
+    7,
+    1,
+    0,
+    5,
+    4,
+    4,
+    2
    ]
   },
   {
@@ -69926,36 +70013,6 @@
   },
   {
    "dia": "2026-09-03",
-   "s": "",
-   "h": [
-    30,
-    21,
-    1,
-    0,
-    0,
-    6,
-    13,
-    0,
-    4,
-    83,
-    9,
-    10,
-    2,
-    0,
-    33,
-    35,
-    24,
-    7,
-    0,
-    25,
-    40,
-    21,
-    57,
-    16
-   ]
-  },
-  {
-   "dia": "2026-09-03",
    "s": "Jesmary",
    "h": [
     0,
@@ -69982,6 +70039,36 @@
     0,
     0,
     0
+   ]
+  },
+  {
+   "dia": "2026-09-03",
+   "s": "",
+   "h": [
+    30,
+    21,
+    1,
+    0,
+    0,
+    6,
+    13,
+    0,
+    4,
+    83,
+    9,
+    10,
+    2,
+    0,
+    33,
+    35,
+    24,
+    7,
+    0,
+    25,
+    40,
+    21,
+    57,
+    16
    ]
   },
   {
@@ -70424,7 +70511,7 @@
     0,
     25,
     0,
-    27,
+    26,
     38,
     10,
     19,
@@ -70432,6 +70519,36 @@
     29,
     102,
     25
+   ]
+  },
+  {
+   "dia": "2026-09-07",
+   "s": "Jesmary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ]
   },
   {
@@ -70692,14 +70809,14 @@
     12,
     1,
     39,
-    23,
+    22,
     1,
     10,
-    29,
-    93,
-    0,
-    0,
-    0,
+    21,
+    92,
+    49,
+    8,
+    10,
     0,
     0
    ]
@@ -70722,11 +70839,11 @@
     0,
     0,
     0,
-    0,
-    0,
     1,
     0,
-    0,
+    1,
+    8,
+    9,
     0,
     0,
     0,
@@ -143442,7 +143559,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Jesmary",
    "d0": "2026-09-07",
    "dp": ""
   },
@@ -144557,7 +144674,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Jesmary",
    "d0": "2026-09-09",
    "dp": ""
   },
@@ -144879,6 +144996,216 @@
   {
    "s": "",
    "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2024-10-31",
    "dp": ""
   },
   {
