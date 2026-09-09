@@ -1,6 +1,6 @@
 {
- "generado": "2026-09-08 22:05",
- "rango": "2026-02-01 a 2026-09-08",
+ "generado": "2026-09-09 00:36",
+ "rango": "2026-02-01 a 2026-09-09",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -3070,15 +3070,29 @@
   },
   {
    "dia": "2026-09-08",
-   "inb": 0,
-   "out": 74,
-   "nuevas": 74,
-   "total": 169,
-   "fups": 105,
+   "inb": 1,
+   "out": 94,
+   "nuevas": 95,
+   "total": 207,
+   "fups": 120,
    "prop": 0,
    "link": 1,
    "badlink": 0,
    "agendas": 3,
+   "resp_min": null,
+   "nodata": false
+  },
+  {
+   "dia": "2026-09-09",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 3,
+   "fups": 0,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 1,
    "resp_min": null,
    "nodata": false
   }
@@ -5723,6 +5737,18 @@
    "cualifica": 1,
    "nocualifica": 0,
    "seguimiento": 0
+  },
+  {
+   "dia": "2026-09-09",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 1,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
   }
  ],
  "leads": [
@@ -6941,6 +6967,38 @@
    "infocloser": "",
    "cta": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/LynJBboZfR2wi3mQDvn1"
+  },
+  {
+   "nombre": "Antonine de Amorim Rego",
+   "setter": "",
+   "origen": "propio",
+   "prof": "Médico/a general",
+   "nivel": "🔹 No tengo conocimientos",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "más de 3.000€",
+   "univ": "Universidad Central del Paraguay",
+   "urg": "",
+   "comp": "Estoy listo/a, pero necesito coordinar mis tiempos para empezar en los próximos 7-14 días",
+   "obst": "La metodologia de estudio.",
+   "canal": "",
+   "ig": "@antonine.amorim",
+   "email": "antoninedeveloper@gmail.com",
+   "tf": "+34685429005",
+   "fagenda": "2026-09-09",
+   "closer": "",
+   "restri": "",
+   "resclo": "",
+   "estado": "",
+   "ss": 50,
+   "stri": null,
+   "sclo": null,
+   "ticket": "",
+   "pagado": "",
+   "objtri": "",
+   "objclo": "",
+   "infocloser": "",
+   "cta": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/QAnWx7fddBY2m9RRjROB"
   },
   {
    "nombre": "Argenis salazar jaspe",
@@ -22742,6 +22800,17 @@
    "vendido": 0,
    "facturacion": 0.0,
    "cash": 0.0
+  },
+  {
+   "dia": "2026-09-09",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 1,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
   }
  ],
  "gaps": [
@@ -32464,10 +32533,10 @@
   {
    "dia": "2026-08-09",
    "triages": 1,
-   "con_form": 1,
-   "sin_form": 0,
-   "estado_triage": "Completo",
-   "retraso_medio": -1.0,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
    "kpis": {
     "Carlos": false,
     "Jesmary": false,
@@ -32925,6 +32994,21 @@
     "Sary": false,
     "Yexsander": false
    }
+  },
+  {
+   "dia": "2026-09-09",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Carlos": false,
+    "Jesmary": false,
+    "Sara": false,
+    "Sary": false,
+    "Yexsander": false
+   }
   }
  ],
  "setters": [
@@ -32935,6 +33019,43 @@
   "Yexsander"
  ],
  "triage_leads": [
+  {
+   "nombre": "Antonine de Amorim Rego",
+   "fecha": "2026-09-09",
+   "hora": "22:15",
+   "estado": "confirmed",
+   "reag": "",
+   "agendada": "2026-09-08",
+   "cta": "",
+   "asistio": false,
+   "fclo": "",
+   "fuente": "",
+   "d0": "2026-09-08",
+   "restri": "",
+   "stri": null,
+   "ss": 50,
+   "setter": "",
+   "triager": "",
+   "prof": "Médico/a general",
+   "motivo": "",
+   "objtri": "",
+   "etapa": "🔹 Triage Agendado",
+   "tel": "+34685429005",
+   "email": "antoninedeveloper@gmail.com",
+   "wsp": "",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/QAnWx7fddBY2m9RRjROB",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "ingresos": "más de 3.000€",
+   "nivel": "🔹 No tengo conocimientos",
+   "urg": "",
+   "infotri": "",
+   "restri_ia": "",
+   "ult": "2026-09-08",
+   "ultdir": "outbound",
+   "ulttxt": "Estás en el lugar correcto. Ya estás dentro, Antonine. Y de verdad, me alegra mucho tenerte aquí. El alemán no es la parte más difícil de Alemania. Suena raro, lo sé. Pero llega un momento en el que el alemán tiene que s",
+   "ulttipo": "TYPE_EMAIL",
+   "tiene_closing": false
+  },
   {
    "nombre": "María Camila Andrade Andrade",
    "fecha": "2026-09-08",
@@ -47080,7 +47201,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-02-07",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -47100,10 +47221,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-02-07",
-   "ultdir": "inbound",
-   "ulttxt": "Ya me contacté con ella",
-   "ulttipo": "TYPE_INSTAGRAM",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -47422,6 +47543,57 @@
  },
  "pipeline_leads": [
   {
+   "cid": "QAnWx7fddBY2m9RRjROB",
+   "nombre": "Antonine de Amorim Rego",
+   "etapa": "🔹 Triage Agendado",
+   "desde": "2026-09-08",
+   "fuente": "",
+   "prox": "2026-09-09",
+   "wsp": "",
+   "setter": "",
+   "cta": "",
+   "prof": "Médico/a general",
+   "restri": "",
+   "resclo": "",
+   "ticket": "",
+   "pagado": "",
+   "motivo": "",
+   "tel": "+34685429005",
+   "email": "antoninedeveloper@gmail.com",
+   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
+   "urg": "",
+   "nivel": "🔹 No tengo conocimientos",
+   "ss": 50,
+   "stri": null,
+   "sc": null,
+   "ult": "2026-09-08",
+   "ultdir": "outbound",
+   "ulttxt": "Estás en el lugar correcto. Ya estás dentro, Antonine. Y de verdad, me alegra mucho tenerte aquí. El alemán no es la parte más difícil de Alemania. Suena raro, lo sé. Pero llega un momento en el que el alemán tiene que s",
+   "ulttipo": "TYPE_EMAIL",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/QAnWx7fddBY2m9RRjROB",
+   "closer": "",
+   "triager": "",
+   "nota": "",
+   "nota_f": "",
+   "nota_por": "",
+   "notas_n": 0,
+   "nota_est": "",
+   "nota_cat": "",
+   "tocado": "2026-09-08",
+   "pendiente": 0.0,
+   "cuotas": [],
+   "ncuotas": "",
+   "cuotaspag": "",
+   "formapago": "",
+   "moneda": "",
+   "fventa": "",
+   "reserva": 0.0,
+   "notasform": "",
+   "prox_cuota": 0,
+   "prox_imp": 0.0,
+   "prox_fecha": ""
+  },
+  {
    "cid": "o8BsZHJlGHkpanRmKoao",
    "nombre": "Pablo Maria Peralta Lorca",
    "etapa": "🔹 Triage Agendado",
@@ -47478,7 +47650,7 @@
    "etapa": "🔸Closing Agendado",
    "desde": "2026-09-08",
    "fuente": "",
-   "prox": "2026-09-08",
+   "prox": "2026-09-10",
    "wsp": "",
    "setter": "Sara",
    "cta": "",
@@ -47784,7 +47956,7 @@
    "etapa": "🔸®️ Closing RE-agendANDO",
    "desde": "2026-09-08",
    "fuente": "",
-   "prox": "2026-09-08",
+   "prox": "",
    "wsp": "2026-09-08",
    "setter": "Sara",
    "cta": "",
@@ -69394,6 +69566,66 @@
   },
   {
    "dia": "2026-08-31",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    2,
+    4,
+    0,
+    1,
+    3,
+    0,
+    1
+   ]
+  },
+  {
+   "dia": "2026-08-31",
+   "s": "",
+   "h": [
+    1,
+    0,
+    14,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    24,
+    15,
+    0,
+    3,
+    6,
+    4,
+    35,
+    7,
+    16,
+    23,
+    14,
+    8,
+    31,
+    1,
+    70
+   ]
+  },
+  {
+   "dia": "2026-08-31",
    "s": "Jesmary",
    "h": [
     0,
@@ -69453,37 +69685,7 @@
    ]
   },
   {
-   "dia": "2026-08-31",
-   "s": "",
-   "h": [
-    1,
-    0,
-    14,
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    24,
-    15,
-    0,
-    3,
-    6,
-    4,
-    35,
-    7,
-    16,
-    23,
-    14,
-    8,
-    31,
-    1,
-    70
-   ]
-  },
-  {
-   "dia": "2026-08-31",
+   "dia": "2026-09-01",
    "s": "Sara",
    "h": [
     0,
@@ -69493,23 +69695,23 @@
     0,
     0,
     0,
-    0,
-    0,
-    3,
-    0,
     1,
     0,
-    1,
-    0,
-    1,
     0,
     2,
-    4,
+    0,
     0,
     1,
-    3,
+    2,
+    1,
     0,
-    1
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
    ]
   },
   {
@@ -69603,28 +69805,28 @@
    ]
   },
   {
-   "dia": "2026-09-01",
+   "dia": "2026-09-02",
    "s": "Sara",
    "h": [
-    0,
-    0,
+    2,
     0,
     0,
     0,
     0,
     0,
     1,
-    0,
-    0,
-    2,
     0,
     0,
     1,
     2,
     1,
     0,
-    1,
-    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -69723,36 +69925,6 @@
    ]
   },
   {
-   "dia": "2026-09-02",
-   "s": "Sara",
-   "h": [
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    2,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
    "dia": "2026-09-03",
    "s": "",
    "h": [
@@ -69780,36 +69952,6 @@
     21,
     57,
     16
-   ]
-  },
-  {
-   "dia": "2026-09-03",
-   "s": "Jesmary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    6,
-    0,
-    0,
-    0,
-    0,
-    2,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0
    ]
   },
   {
@@ -69873,6 +70015,36 @@
    ]
   },
   {
+   "dia": "2026-09-03",
+   "s": "Jesmary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    6,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
    "dia": "2026-09-04",
    "s": "",
    "h": [
@@ -69900,36 +70072,6 @@
     17,
     7,
     20
-   ]
-  },
-  {
-   "dia": "2026-09-04",
-   "s": "Jesmary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    26,
-    0,
-    0
    ]
   },
   {
@@ -69993,6 +70135,36 @@
    ]
   },
   {
+   "dia": "2026-09-04",
+   "s": "Jesmary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    26,
+    0,
+    0
+   ]
+  },
+  {
    "dia": "2026-09-05",
    "s": "",
    "h": [
@@ -70020,36 +70192,6 @@
     31,
     22,
     22
-   ]
-  },
-  {
-   "dia": "2026-09-05",
-   "s": "Jesmary",
-   "h": [
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    0,
-    0,
-    22,
-    12,
-    0,
-    0,
-    0,
-    0,
-    5,
-    17,
-    1
    ]
   },
   {
@@ -70110,6 +70252,36 @@
     0,
     2,
     3
+   ]
+  },
+  {
+   "dia": "2026-09-05",
+   "s": "Jesmary",
+   "h": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    0,
+    22,
+    12,
+    0,
+    0,
+    0,
+    0,
+    5,
+    17,
+    1
    ]
   },
   {
@@ -70264,6 +70436,36 @@
   },
   {
    "dia": "2026-09-07",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-07",
    "s": "Carlos",
    "h": [
     0,
@@ -70323,36 +70525,6 @@
    ]
   },
   {
-   "dia": "2026-09-07",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    5,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    1,
-    2,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
    "dia": "2026-09-08",
    "s": "",
    "h": [
@@ -70378,8 +70550,68 @@
     22,
     30,
     8,
+    13,
+    18
+   ]
+  },
+  {
+   "dia": "2026-09-08",
+   "s": "Sary",
+   "h": [
     0,
-    0
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3
+   ]
+  },
+  {
+   "dia": "2026-09-08",
+   "s": "Sara",
+   "h": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
    ]
   },
   {
@@ -70443,22 +70675,22 @@
    ]
   },
   {
-   "dia": "2026-09-08",
-   "s": "Sary",
+   "dia": "2026-09-09",
+   "s": "",
    "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0,
-    0,
-    0,
     1,
     0,
-    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -70473,8 +70705,8 @@
    ]
   },
   {
-   "dia": "2026-09-08",
-   "s": "Sara",
+   "dia": "2026-09-09",
+   "s": "Sary",
    "h": [
     1,
     0,
@@ -144082,6 +144314,111 @@
   {
    "s": "",
    "d0": "2025-09-14",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-08",
    "dp": ""
   }
  ]
