@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-10 05:15",
+ "generado": "2026-09-10 10:06",
  "rango": "2026-02-01 a 2026-09-10",
  "setting": [
   {
@@ -3098,16 +3098,16 @@
   },
   {
    "dia": "2026-09-10",
-   "inb": 0,
+   "inb": 1,
    "out": 0,
-   "nuevas": 0,
-   "total": 64,
-   "fups": 48,
+   "nuevas": 1,
+   "total": 83,
+   "fups": 74,
    "prop": 0,
    "link": 0,
    "badlink": 0,
    "agendas": 1,
-   "resp_min": null,
+   "resp_min": 15,
    "nodata": false
   }
  ],
@@ -28970,6 +28970,12 @@
    "in": 1788736036,
    "rep": 1788738807,
    "s": ""
+  },
+  {
+   "dia": "2026-09-10",
+   "in": 1789031082,
+   "rep": 1789031972,
+   "s": ""
   }
  ],
  "kpis": [
@@ -29819,28 +29825,6 @@
    "book": 1,
    "wel": 0,
    "notas": "Domingo "
-  },
-  {
-   "dia": "2026-08-09",
-   "setter": "Sara",
-   "fu": 25,
-   "inb": 2,
-   "out": 50,
-   "prop": 1,
-   "book": 0,
-   "wel": 0,
-   "notas": "@alemanlaspalmas"
-  },
-  {
-   "dia": "2026-08-08",
-   "setter": "Sara",
-   "fu": 62,
-   "inb": 10,
-   "out": 50,
-   "prop": 0,
-   "book": 0,
-   "wel": 2,
-   "notas": "@rema_alemania"
   }
  ],
  "cumplimiento": [
@@ -32674,7 +32658,7 @@
    "kpis": {
     "Carlos": false,
     "Jesmary": false,
-    "Sara": true,
+    "Sara": false,
     "Sary": false,
     "Yexsander": false
    }
@@ -32689,7 +32673,7 @@
    "kpis": {
     "Carlos": false,
     "Jesmary": false,
-    "Sara": true,
+    "Sara": false,
     "Sary": true,
     "Yexsander": false
    }
@@ -33251,10 +33235,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-09-09",
+   "ult": "2026-09-10",
    "ultdir": "outbound",
-   "ulttxt": "La primera vez que entré a una oficina alemana, me sentí como una niña. Llegué con un título de ingeniería… años de experiencia real… y unas ganas enormes de hacerlo funcionar. Pero en el momento en que abrí la boca para",
-   "ulttipo": "TYPE_EMAIL",
+   "ulttxt": "Hola Antonine, hay un cambio en el webinar de Aprobamed al que te inscribiste. Nueva fecha y hora: el domingo 20 de septiembre a las 16:00 (hora de Alemania). El enlace de acceso es este: https://meet.google.com/rcj-vdfx",
+   "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
   {
@@ -33473,10 +33457,10 @@
    "urg": "",
    "infotri": "PERFIL: Valeria Encalada, 25 anos, Ecuador (Guayaquil). Fisioterapeuta graduada (Universidad Ecotec). Trabaja de forma independiente, 10h/dia. Tiene negocio propio de fisioterapia. NO es medico.\n\nOBJETIVO: Ejercer fisioterapia en Alemania, eventualmente emprender. Plazo: 2027. Plan previo: voluntariado de 1 ano en Alemania (ya tiene cita, esperando papeles). Ve el voluntariado como paso previo para 'probar' antes de comprometerse del todo.\n\nDOLORES: Sin perspectiva de crecimiento en Ecuador. Frustrada con academia actual (mezcla de niveles, ritmo desordenado). Dependencia familiar que quiere superar. Indecision propia que reconoce.\n\nINVERSION: Dice costear sola. Ingresos estimados 600-1000 EUR/mes (formulario). Presupuesto declarado: 3.500-5.000 EUR. Cifra no confirmada en triaje (transcripcion cortada antes de cerrar ese punto). Riesgo de capacidad ajustada.\n\nRUTA: Fisioterapeuta LATAM (Ecuador) requiere homologacion en Alemania: proceso diferente al de medicos, el closer debe conocerlo. Nivel aleman: A1 real, tercera semana en academia basica. Perfil auditivo, aprende rapido.\n\nOBJECIONES: Voluntariado inminente puede actuar como freno de compra ('ya voy de todas formas'). Indecision estructural reconocida. Plazo 2027 reduce urgencia percibida. Ingresos ajustados.\n\nRECOMENDACION: Convertir el voluntariado en argumento de venta: ir con aleman solido y proceso guiado maximiza ese ano, no lo reemplaza. Confirmar cifra real de inversion disponible (quedó incompleto en triaje). M",
    "restri_ia": "PERFIL: Valeria Encalada, 25 anos, Ecuador (Guayaquil). Fisioterapeuta graduada en Universidad Ecotec. Trabaja 10 horas diarias de forma independiente y en consulta, con negocio propio de fisioterapia. NO es medico: es fisioterapeuta. Encaja con el avatar de profesional de salud LATAM, aunque con matices importantes (ver riesgos).\n\nMOTIVACIONES: Quiere ejercer en Alemania, expandirse profesionalmente, emprender, aprender idiomas. Le atrae Alemania por la demanda de salud y porque lo ve mas viable que EEUU post-Trump. Es viajera, inquieta, con vision europea.\n\nDOLORES: Siente que en Ecuador no tiene vision de crecimiento ('no me da ganas de aprender absolutamente nada aqui'). Frustrada con su academia actual (ritmo desordenado, mezcla de niveles). Dependencia familiar que reconoce como freno. Indecision propia que quiere superar.\n\nOBJETIVOS: Ejercer fisioterapia en Alemania, eventualmente abrir su propio negocio. Plazo: 2027 aprox. Plan inmediato: voluntariado en Alemania de 1 ano (con cita ya gestionada, esperando papeles), como 'prueba de fuego' antes de comprometerse del todo. Quiere irse 'decidida' y con el idioma avanzado.\n\nNIVEL ALEMAN: A1 incipiente, tercera semana en academi",
-   "ult": "2026-09-07",
+   "ult": "2026-09-10",
    "ultdir": "outbound",
-   "ulttxt": "https://meet.google.com/ojy-jjgx-cee",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ulttxt": "Buenos días Vale, cómo estás? Avísame cómo estás está semana para coordinar 🙌🏼",
+   "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
   {
@@ -47920,10 +47904,10 @@
    "ss": 50,
    "stri": 62,
    "sc": null,
-   "ult": "2026-09-07",
+   "ult": "2026-09-10",
    "ultdir": "outbound",
-   "ulttxt": "https://meet.google.com/ojy-jjgx-cee",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ulttxt": "Buenos días Vale, cómo estás? Avísame cómo estás está semana para coordinar 🙌🏼",
+   "ulttipo": "TYPE_INSTAGRAM",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/EXh95SUCvWoQUUScgKuT",
    "closer": "",
    "triager": "",
@@ -69665,36 +69649,6 @@
   },
   {
    "dia": "2026-08-31",
-   "s": "",
-   "h": [
-    1,
-    0,
-    14,
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    24,
-    15,
-    0,
-    3,
-    6,
-    4,
-    35,
-    7,
-    16,
-    23,
-    14,
-    8,
-    31,
-    1,
-    70
-   ]
-  },
-  {
-   "dia": "2026-08-31",
    "s": "Sary",
    "h": [
     0,
@@ -69721,6 +69675,36 @@
     0,
     0,
     8
+   ]
+  },
+  {
+   "dia": "2026-08-31",
+   "s": "",
+   "h": [
+    1,
+    0,
+    14,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    24,
+    15,
+    0,
+    3,
+    6,
+    4,
+    35,
+    7,
+    16,
+    23,
+    14,
+    8,
+    31,
+    1,
+    70
    ]
   },
   {
@@ -69785,36 +69769,6 @@
   },
   {
    "dia": "2026-09-01",
-   "s": "",
-   "h": [
-    6,
-    5,
-    1,
-    0,
-    0,
-    2,
-    0,
-    13,
-    0,
-    0,
-    13,
-    3,
-    4,
-    28,
-    69,
-    19,
-    5,
-    4,
-    6,
-    3,
-    6,
-    15,
-    1,
-    14
-   ]
-  },
-  {
-   "dia": "2026-09-01",
    "s": "Sary",
    "h": [
     0,
@@ -69841,6 +69795,36 @@
     2,
     1,
     8
+   ]
+  },
+  {
+   "dia": "2026-09-01",
+   "s": "",
+   "h": [
+    6,
+    5,
+    1,
+    0,
+    0,
+    2,
+    0,
+    13,
+    0,
+    0,
+    13,
+    3,
+    4,
+    28,
+    69,
+    19,
+    5,
+    4,
+    6,
+    3,
+    6,
+    15,
+    1,
+    14
    ]
   },
   {
@@ -70145,36 +70129,6 @@
   },
   {
    "dia": "2026-09-04",
-   "s": "Sary",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    5,
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    0,
-    0,
-    0,
-    2,
-    66
-   ]
-  },
-  {
-   "dia": "2026-09-04",
    "s": "",
    "h": [
     1,
@@ -70201,6 +70155,36 @@
     17,
     7,
     20
+   ]
+  },
+  {
+   "dia": "2026-09-04",
+   "s": "Sary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    5,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    2,
+    66
    ]
   },
   {
@@ -70295,6 +70279,36 @@
   },
   {
    "dia": "2026-09-05",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    2,
+    0,
+    4,
+    4,
+    3,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-05",
    "s": "Sary",
    "h": [
     1,
@@ -70354,7 +70368,7 @@
    ]
   },
   {
-   "dia": "2026-09-05",
+   "dia": "2026-09-06",
    "s": "Sara",
    "h": [
     0,
@@ -70367,18 +70381,18 @@
     0,
     0,
     0,
-    0,
-    0,
+    1,
+    1,
+    1,
+    1,
     1,
     0,
+    1,
     2,
     2,
-    0,
-    4,
-    4,
-    3,
-    0,
-    0,
+    1,
+    2,
+    8,
     0,
     0
    ]
@@ -70469,36 +70483,6 @@
     0,
     0,
     0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-09-06",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    1,
-    1,
-    1,
-    1,
-    0,
-    1,
-    2,
-    2,
-    1,
-    2,
-    8,
     0,
     0
    ]
@@ -70655,36 +70639,6 @@
   },
   {
    "dia": "2026-09-08",
-   "s": "",
-   "h": [
-    48,
-    11,
-    0,
-    11,
-    0,
-    7,
-    0,
-    0,
-    2,
-    2,
-    14,
-    32,
-    9,
-    3,
-    37,
-    13,
-    11,
-    0,
-    5,
-    22,
-    30,
-    8,
-    12,
-    18
-   ]
-  },
-  {
-   "dia": "2026-09-08",
    "s": "Sary",
    "h": [
     0,
@@ -70711,6 +70665,36 @@
     0,
     0,
     3
+   ]
+  },
+  {
+   "dia": "2026-09-08",
+   "s": "",
+   "h": [
+    48,
+    11,
+    0,
+    11,
+    0,
+    7,
+    0,
+    0,
+    2,
+    2,
+    14,
+    32,
+    9,
+    3,
+    37,
+    13,
+    11,
+    0,
+    5,
+    22,
+    30,
+    8,
+    12,
+    18
    ]
   },
   {
@@ -70962,11 +70946,41 @@
     7,
     19,
     11,
-    7,
+    21,
+    0,
+    0,
+    3,
+    33,
+    1,
     0,
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-10",
+   "s": "Sary",
+   "h": [
+    4,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
     0,
     0,
     0,
@@ -70992,37 +71006,7 @@
     0,
     1,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-09-10",
-   "s": "Sary",
-   "h": [
-    4,
     1,
-    0,
-    0,
-    0,
-    0,
     0,
     0,
     0,
@@ -145558,6 +145542,11 @@
   {
    "s": "",
    "d0": "2026-09-09",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-10",
    "dp": ""
   }
  ]
