@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-11 06:41",
+ "generado": "2026-09-11 11:52",
  "rango": "2026-02-01 a 2026-09-11",
  "setting": [
   {
@@ -3113,11 +3113,11 @@
   {
    "dia": "2026-09-11",
    "inb": 0,
-   "out": 0,
-   "nuevas": 0,
-   "total": 46,
-   "fups": 41,
-   "prop": 1,
+   "out": 2,
+   "nuevas": 2,
+   "total": 68,
+   "fups": 81,
+   "prop": 2,
    "link": 0,
    "badlink": 0,
    "agendas": 2,
@@ -7886,7 +7886,7 @@
   },
   {
    "nombre": "Carmen Joanna González",
-   "setter": "",
+   "setter": "Sary",
    "origen": "propio",
    "prof": "Medico general",
    "nivel": "🔹 B1",
@@ -11630,7 +11630,7 @@
   },
   {
    "nombre": "JUAN CARLOS CÁCERES",
-   "setter": "Sary",
+   "setter": "Sara",
    "origen": "propio",
    "prof": "MÉDICO URGENCIAS",
    "nivel": "🔹 A1",
@@ -17722,9 +17722,9 @@
    "prox_cuota": 0,
    "prox_imp": 0.0,
    "prox_fecha": "",
-   "ult": "2026-09-10",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "Quedo atenta por aquí",
+   "ulttxt": "hola Pablo, me confirmas que nos vemos mañana?",
    "ulttipo": "TYPE_INSTAGRAM",
    "infoclo": "PERFIL: Pablo Maria Peralta Lorca, medico argentino, especialista en mastologia, cirugia mamaria y medicina del dolor. Titulo en Universidad del Aconcagua (Argentina) y Universidad de Barcelona (Espana). Actualmente en ejercicio activo con cirugias programadas. Sin conocimiento de aleman (nivel 0).\n\nOBJETIVO: Emigrar a Alemania para ejercer su especialidad. Lo ve como un sueno posible, no como urgencia inmediata. Sin plazo concreto definido. Horas semanales disponibles: noches y fines de semana (mananas ocupadas por cirugia).\n\nDOLORES: Argentina economicamente inviable. Busca entorno de alta exigencia tecnica y cientifica. Quiere estabilidad y futuro profesional real.\n\nINVERSION: Ingresos declarados 1.000-3.000 EUR/mes. Sin liquidez inmediata para pago completo. Abrio la puerta a comenzar con ~2.000 EUR si hay facilidades. Necesita plan de cuotas claro y sin presion. No tiene tarjeta internacional confirmada; verificar antes del closing.\n\nRUTA: Titulo argentino apostillado (hecho en Barcelona). No tiene homologacion espanola formal pero Argentina tiene tratado con Europa. Ruta LATAM con posible ventaja por experiencia en Espana. Estimar si aplica ACP (exoneracion de homologacion por titulo homologado en Espana + 3 anos de ejercicio). Verificar si tiene o puede tramitar doble nacionalidad (lo menciono como posibilidad). Tiempo estimado hasta B2: 8 meses desde cero.\n\nOBJECIONES: Falta de liquidez inmediata; aversion a la presion y a decisiones rapidas ('lo hago tranquilo'); age",
    "restri": "Cualifica",
@@ -17780,10 +17780,10 @@
    "prox_cuota": 0,
    "prox_imp": 0.0,
    "prox_fecha": "",
-   "ult": "2026-09-08",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "Hola Renzo Condo Palomino, Te dejo aquí los detalles de la reunión. Renzo Condo Palomino - Reunión de Planificación Estratégica Fehca y Hora: jueves, 10 de septiembre de 2026 6:30 (-05) Link para la Reunión:https://meet.",
-   "ulttipo": "TYPE_EMAIL",
+   "ulttxt": "Hola Renzo, me comentó Sary que no quisiste avanzar cuéntame qué pasó que no te gustó el acompañamiento?",
+   "ulttipo": "TYPE_INSTAGRAM",
    "infoclo": "PERFIL: Renzo Condo, 28 anos, Peru, ingeniero industrial con 5 anos de experiencia en sistemas integrados de gestion. Titulo peruano (LATAM). Actualmente trabajando en proyecto activo. Va solo a Alemania.\n\nOBJETIVO: Trabajar y radicar en Alemania, plazo febrero 2027. Sin ciudad fija (conoce Berlin, abierto a cualquier ciudad). Nivel de aleman A1 (cuarto mes de seis en Euroidiomas). Dispuesto a dedicar 1 hora diaria al acompañamiento.\n\nDOLORES: Inestabilidad politica en Peru, techo de crecimiento profesional, deseo de calidad de vida y desarrollo real que percibio en su visita a Berlin a inicios de 2026.\n\nINVERSION: Tiene fondos en dolares en cuenta bancaria peruana. No dispone de euros ni medios de pago internacionales habituales (no usa Revolut). Ya conoce el rango de precio (3.800-4.000 euros mencionados en triaje) y no se echo atras. Hay que resolver la via de pago antes o al inicio del closing.\n\nRUTA: Titulo LATAM, requiere proceso de reconocimiento en Alemania para ingenieros. Plazo febrero 2027 viable si empieza de inmediato (necesita alcanzar B1-B2). Bolsa de trabajo colaboradora enfocada en medicos; para ingenieros no hay oferta garantizada aun, solo posibilidad futura.\n\nOBJECIONES: Sin objeciones de fondo. Duda logistica sobre metodo de pago (solo dolares). Menciono que evalua varias opciones, lo que indica posible comparacion con otras alternativas.\n\nRECOMENDACION: Lead caliente, dio 10/10, urgencia real, decisor unico. Ir directo al cierre. Resolver via de pago en ",
    "restri": "Cualifica",
    "ss": 62,
@@ -20420,7 +20420,7 @@
    "cash": "",
    "ticket": "",
    "pagado": "",
-   "setter": "",
+   "setter": "Sary",
    "closer": "Natalie",
    "prof": "Medico general",
    "estadoclo": "",
@@ -29047,6 +29047,17 @@
  ],
  "kpis": [
   {
+   "dia": "2026-09-10",
+   "setter": "Sary",
+   "fu": 63,
+   "inb": 0,
+   "out": 47,
+   "prop": 3,
+   "book": 0,
+   "wel": 0,
+   "notas": ""
+  },
+  {
    "dia": "2026-09-09",
    "setter": "Sara",
    "fu": 25,
@@ -33022,7 +33033,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": true,
-    "Sary": false
+    "Sary": true
    }
   },
   {
@@ -33152,9 +33163,9 @@
    "urg": "",
    "infotri": "PERFIL: Pablo Maria Peralta Lorca, medico argentino, especialista en mastologia, cirugia mamaria y medicina del dolor. Titulo en Universidad del Aconcagua (Argentina) y Universidad de Barcelona (Espana). Actualmente en ejercicio activo con cirugias programadas. Sin conocimiento de aleman (nivel 0).\n\nOBJETIVO: Emigrar a Alemania para ejercer su especialidad. Lo ve como un sueno posible, no como urgencia inmediata. Sin plazo concreto definido. Horas semanales disponibles: noches y fines de semana (mananas ocupadas por cirugia).\n\nDOLORES: Argentina economicamente inviable. Busca entorno de alta exigencia tecnica y cientifica. Quiere estabilidad y futuro profesional real.\n\nINVERSION: Ingresos declarados 1.000-3.000 EUR/mes. Sin liquidez inmediata para pago completo. Abrio la puerta a comenzar con ~2.000 EUR si hay facilidades. Necesita plan de cuotas claro y sin presion. No tiene tarjeta internacional confirmada; verificar antes del closing.\n\nRUTA: Titulo argentino apostillado (hecho en Barcelona). No tiene homologacion espanola formal pero Argentina tiene tratado con Europa. Ruta LATAM con posible ventaja por experiencia en Espana. Estimar si aplica ACP (exoneracion de homologacion por titulo homologado en Espana + 3 anos de ejercicio). Verificar si tiene o puede tramitar doble nacionalidad (lo menciono como posibilidad). Tiempo estimado hasta B2: 8 meses desde cero.\n\nOBJECIONES: Falta de liquidez inmediata; aversion a la presion y a decisiones rapidas ('lo hago tranquilo'); age",
    "restri_ia": "PERFIL: Pablo Maria Peralta Lorca, medico argentino especialista en mastologia, cirugia mamaria y medicina del dolor. Titulo de Universidad del Aconcagua (Argentina) y Universidad de Barcelona (Espana). Ejerce actualmente en Argentina con agenda quirurgica activa (opera los miercoles por la manana). Cero conocimiento de aleman.\n\nMOTIVACIONES / DOLORES: Considera Argentina inviable economicamente. Le atrae Alemania por su nivel tecnico-cientifico y su futuro. Tiene referentes de europa (profesor neurologo en Suiza, amigo suizo). Quiere ejercer su especialidad en un entorno de alta exigencia medica.\n\nDINERO: Perfil economico ajustado. En el formulario declaro ingresos de 1.000-3.000 EUR/mes y sin recursos para invertir en este momento. En el triaje confirmo que no puede hacer un pago inmediato ('seria casi el 100% de mis ingresos'), pero abrio la puerta a empezar con ~2.000 EUR si hay facilidades de pago. Necesita cuotas claras y no siente urgencia de pago inmediato. Riesgo real de que el dia del closing no cierre por falta de liquidez.\n\nDECISION: Parece decidir solo, no menciona pareja ni familia. Sin embargo, su lenguaje es exploratorio ('habria que charlarlo', 'lo hago tranquilo, ",
-   "ult": "2026-09-10",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "Quedo atenta por aquí",
+   "ulttxt": "hola Pablo, me confirmas que nos vemos mañana?",
    "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": true
   },
@@ -33300,10 +33311,10 @@
    "urg": "",
    "infotri": "PERFIL: Renzo Condo, 28 anos, Peru, ingeniero industrial con 5 anos de experiencia en sistemas integrados de gestion. Titulo peruano (LATAM). Actualmente trabajando en proyecto activo. Va solo a Alemania.\n\nOBJETIVO: Trabajar y radicar en Alemania, plazo febrero 2027. Sin ciudad fija (conoce Berlin, abierto a cualquier ciudad). Nivel de aleman A1 (cuarto mes de seis en Euroidiomas). Dispuesto a dedicar 1 hora diaria al acompañamiento.\n\nDOLORES: Inestabilidad politica en Peru, techo de crecimiento profesional, deseo de calidad de vida y desarrollo real que percibio en su visita a Berlin a inicios de 2026.\n\nINVERSION: Tiene fondos en dolares en cuenta bancaria peruana. No dispone de euros ni medios de pago internacionales habituales (no usa Revolut). Ya conoce el rango de precio (3.800-4.000 euros mencionados en triaje) y no se echo atras. Hay que resolver la via de pago antes o al inicio del closing.\n\nRUTA: Titulo LATAM, requiere proceso de reconocimiento en Alemania para ingenieros. Plazo febrero 2027 viable si empieza de inmediato (necesita alcanzar B1-B2). Bolsa de trabajo colaboradora enfocada en medicos; para ingenieros no hay oferta garantizada aun, solo posibilidad futura.\n\nOBJECIONES: Sin objeciones de fondo. Duda logistica sobre metodo de pago (solo dolares). Menciono que evalua varias opciones, lo que indica posible comparacion con otras alternativas.\n\nRECOMENDACION: Lead caliente, dio 10/10, urgencia real, decisor unico. Ir directo al cierre. Resolver via de pago en ",
    "restri_ia": "PERFIL:\nRenzo Condo, 28 anos, ingeniero industrial peruano con 5 anos de experiencia en sistemas integrados de gestion. Actualmente trabajando en un proyecto (se conecta desde la camioneta de camino al trabajo). Titulo universitario en ingenieria. Va solo a Alemania.\n\nOBJETIVO/PLAZO:\nQuiere estar en Alemania en febrero 2027. No tiene ciudad fija aunque conoce Berlin y le gusto. Abierto a cualquier ciudad. Nivel de aleman: A1 (cuarto mes de seis en Euroidiomas). Dispuesto a dedicar al menos una hora diaria.\n\nDOLORES:\nInestabilidad politica en Peru. Techo profesional. Ha visitado Berlin y la experiencia le reafirmo el deseo de emigrar. Busca calidad de vida y crecimiento profesional real.\n\nINVERSION:\nTiene fondos en dolares en cuenta bancaria peruana. No tiene euros ni medios de pago internacionales (no usa Revolut ni similares). Sary menciono precio de 3.800-4.000 euros en la llamada y el lead no se echo atras. Dijo 'la posibilidad de iniciar si la tengo' pero sin confirmar monto concreto disponible. Hay que confirmar si puede hacer el pago en dolares y por que via.\n\nRUTA:\nTitulo LATAM (Peru), no UE. Requiere proceso de reconocimiento de titulo en Alemania para ingenieros. No es med",
-   "ult": "2026-09-08",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "Hola Renzo Condo Palomino, Te dejo aquí los detalles de la reunión. Renzo Condo Palomino - Reunión de Planificación Estratégica Fehca y Hora: jueves, 10 de septiembre de 2026 6:30 (-05) Link para la Reunión:https://meet.",
-   "ulttipo": "TYPE_EMAIL",
+   "ulttxt": "Hola Renzo, me comentó Sary que no quisiste avanzar cuéntame qué pasó que no te gustó el acompañamiento?",
+   "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": true
   },
   {
@@ -33411,9 +33422,9 @@
    "urg": "",
    "infotri": "PERFIL: Valeria Encalada, 25 anos, Ecuador (Guayaquil). Fisioterapeuta graduada (Universidad Ecotec). Trabaja de forma independiente, 10h/dia. Tiene negocio propio de fisioterapia. NO es medico.\n\nOBJETIVO: Ejercer fisioterapia en Alemania, eventualmente emprender. Plazo: 2027. Plan previo: voluntariado de 1 ano en Alemania (ya tiene cita, esperando papeles). Ve el voluntariado como paso previo para 'probar' antes de comprometerse del todo.\n\nDOLORES: Sin perspectiva de crecimiento en Ecuador. Frustrada con academia actual (mezcla de niveles, ritmo desordenado). Dependencia familiar que quiere superar. Indecision propia que reconoce.\n\nINVERSION: Dice costear sola. Ingresos estimados 600-1000 EUR/mes (formulario). Presupuesto declarado: 3.500-5.000 EUR. Cifra no confirmada en triaje (transcripcion cortada antes de cerrar ese punto). Riesgo de capacidad ajustada.\n\nRUTA: Fisioterapeuta LATAM (Ecuador) requiere homologacion en Alemania: proceso diferente al de medicos, el closer debe conocerlo. Nivel aleman: A1 real, tercera semana en academia basica. Perfil auditivo, aprende rapido.\n\nOBJECIONES: Voluntariado inminente puede actuar como freno de compra ('ya voy de todas formas'). Indecision estructural reconocida. Plazo 2027 reduce urgencia percibida. Ingresos ajustados.\n\nRECOMENDACION: Convertir el voluntariado en argumento de venta: ir con aleman solido y proceso guiado maximiza ese ano, no lo reemplaza. Confirmar cifra real de inversion disponible (quedó incompleto en triaje). M",
    "restri_ia": "PERFIL: Valeria Encalada, 25 anos, Ecuador (Guayaquil). Fisioterapeuta graduada en Universidad Ecotec. Trabaja 10 horas diarias de forma independiente y en consulta, con negocio propio de fisioterapia. NO es medico: es fisioterapeuta. Encaja con el avatar de profesional de salud LATAM, aunque con matices importantes (ver riesgos).\n\nMOTIVACIONES: Quiere ejercer en Alemania, expandirse profesionalmente, emprender, aprender idiomas. Le atrae Alemania por la demanda de salud y porque lo ve mas viable que EEUU post-Trump. Es viajera, inquieta, con vision europea.\n\nDOLORES: Siente que en Ecuador no tiene vision de crecimiento ('no me da ganas de aprender absolutamente nada aqui'). Frustrada con su academia actual (ritmo desordenado, mezcla de niveles). Dependencia familiar que reconoce como freno. Indecision propia que quiere superar.\n\nOBJETIVOS: Ejercer fisioterapia en Alemania, eventualmente abrir su propio negocio. Plazo: 2027 aprox. Plan inmediato: voluntariado en Alemania de 1 ano (con cita ya gestionada, esperando papeles), como 'prueba de fuego' antes de comprometerse del todo. Quiere irse 'decidida' y con el idioma avanzado.\n\nNIVEL ALEMAN: A1 incipiente, tercera semana en academi",
-   "ult": "2026-09-10",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "Hola Valeria, cómo estás? Quedo atenta",
+   "ulttxt": "Hola Valeria, cómo estás? Te cuento que tenemos pocos espacios este mes y me gustaría que puedas apartar el tuyo El día de hoy tienes unos minutos para que puedas hablar con la prof Sary mi directora y veamos si podemos ",
    "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
@@ -34624,7 +34635,7 @@
    "etapa": "🟢  Pago Completo",
    "tel": "+34603276571",
    "email": "ludovica948102@gmail.com",
-   "wsp": "2026-09-10",
+   "wsp": "2026-09-11",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/yCKR9tlzdscSvllsSMHE",
    "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
    "ingresos": "600€- 1.000€",
@@ -34633,8 +34644,8 @@
    "infotri": "PERFIL: Brenda Michell Riascos Mosquera. Edad no consta. Colombia, vive en Espana desde hace 6 anos. Auxiliar de enfermeria, titulo obtenido en Colombia. Tiene nacionalidad espanola y homologacion en Espana. Proceso de homologacion en Alemania ya iniciado con agencia Enfymed (Johanna).\n\nOBJETIVO: Trabajar en Alemania como auxiliar/enfermera. Proceso de homologacion en curso (aprox 4 meses para terminar). Necesita aleman desde cero. Disponibilidad de 45-60 min/dia. Plazo de inicio: finales de septiembre / pago el 31 de agosto.\n\nDOLORES: Nivel de aleman 0 y miedo a no pasar la entrevista de homologacion en aleman. Ya ha invertido 4.000 euros en traducciones y proceso; no quiere perder lo avanzado. Siente que en Espana los caminos son largos (FP 2 anos o volver 4 anos a Colombia).\n\nINVERSION: Trabaja en Espana. Ha invertido ya ~4.000 euros en homologacion. Tiene pendiente pago final a otra agencia. Acordado producto solo idioma: 3.500 euros en 6 cuotas de ~580/mes, con primer pago de 297 el dia 31. No pago en el momento de la llamada.\n\nRUTA: Titulo LATAM con homologacion en Espana (UE). Nacionalidad espanola facilita mucho la movilidad a Alemania. Homologacion en Alemania ya en marcha con otra agencia. Solo falta el idioma segun el estado actual. Verificar si el titulo de auxiliar es reconocido en Alemania como Pflegefachkraft.\n\nOBJECIONES: Miedo al idioma (nivel 0, nunca ha estudiado aleman); liquidez ajustada (pago diferido al 31); tiene otra agencia activa para homologacion (",
    "restri_ia": "PERFIL: Auxiliar de enfermeria colombiana, 6 anos viviendo en Espana, nacionalidad espanola. Titulo obtenido en Colombia, con homologacion en Espana y proceso de homologacion en Alemania ya iniciado con otra agencia (Enfymed/Johanna). Nivel de aleman 0.\n\nDINERO: Ha invertido ya unos 4.000 euros en traducciones y proceso de homologacion. Trabaja en Espana actualmente. Quiere empezar a finales de septiembre porque tiene pendiente un pago final a la otra agencia. Le cobran a fin de mes (el 31). En el triaje se nego a pagar en el momento y propuso el 31. Acordaron primer pago de 297 euros con cuotas de 580/mes en 6 cuotas (total 3.500 euros solo idioma). Capacidad de pago ajustada pero presente.\n\nDECISION: Decide sola. Va sola a Alemania. No hay pareja ni familia que condicione.\n\nPLAZO/URGENCIA: Urgencia media-baja. Proceso de homologacion casi terminado (4 meses mas segun Johanna). Quiere empezar el idioma pero prefiere esperar a pagar el ultimo tramo de homologacion primero. Pago acordado para el 31.\n\nCOMPROMISO: Alto en actitud pero con freno economico real (pago diferido al 31). En el triaje acepto los terminos, dijo 'empecemos' y se unio al grupo de WhatsApp con Nati. Señales posi",
    "ult": "2026-09-11",
-   "ultdir": "outbound",
-   "ulttxt": "Hola Brenda te habla Sary del equipo de Nat disculpa fue un mensaje automático",
+   "ultdir": "inbound",
+   "ulttxt": "Vale",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
@@ -35467,7 +35478,7 @@
    "restri": "",
    "stri": null,
    "ss": 72,
-   "setter": "Sary",
+   "setter": "Sara",
    "triager": "",
    "prof": "MÉDICO URGENCIAS",
    "motivo": "",
@@ -41498,7 +41509,7 @@
    "restri": "",
    "stri": null,
    "ss": null,
-   "setter": "",
+   "setter": "Sary",
    "triager": "",
    "prof": "Medico general",
    "motivo": "",
@@ -47705,9 +47716,9 @@
    "ss": 52,
    "stri": 55,
    "sc": null,
-   "ult": "2026-09-10",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "Quedo atenta por aquí",
+   "ulttxt": "hola Pablo, me confirmas que nos vemos mañana?",
    "ulttipo": "TYPE_INSTAGRAM",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/o8BsZHJlGHkpanRmKoao",
    "closer": "",
@@ -47858,9 +47869,9 @@
    "ss": 50,
    "stri": 62,
    "sc": null,
-   "ult": "2026-09-10",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "Hola Valeria, cómo estás? Quedo atenta",
+   "ulttxt": "Hola Valeria, cómo estás? Te cuento que tenemos pocos espacios este mes y me gustaría que puedas apartar el tuyo El día de hoy tienes unos minutos para que puedas hablar con la prof Sary mi directora y veamos si podemos ",
    "ulttipo": "TYPE_INSTAGRAM",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/EXh95SUCvWoQUUScgKuT",
    "closer": "",
@@ -70272,36 +70283,6 @@
   },
   {
    "dia": "2026-09-06",
-   "s": "",
-   "h": [
-    34,
-    5,
-    12,
-    7,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    14,
-    21,
-    27,
-    36,
-    3,
-    1,
-    4,
-    26,
-    31,
-    11,
-    44,
-    6,
-    1,
-    2
-   ]
-  },
-  {
-   "dia": "2026-09-06",
    "s": "Sara",
    "h": [
     0,
@@ -70328,6 +70309,36 @@
     8,
     0,
     0
+   ]
+  },
+  {
+   "dia": "2026-09-06",
+   "s": "",
+   "h": [
+    34,
+    5,
+    12,
+    7,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    14,
+    21,
+    27,
+    36,
+    3,
+    1,
+    4,
+    26,
+    31,
+    11,
+    44,
+    6,
+    1,
+    2
    ]
   },
   {
@@ -70572,36 +70583,6 @@
   },
   {
    "dia": "2026-09-08",
-   "s": "Sara",
-   "h": [
-    1,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0,
-    0,
-    0,
-    2,
-    2,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    1
-   ]
-  },
-  {
-   "dia": "2026-09-08",
    "s": "Jesmary",
    "h": [
     0,
@@ -70628,6 +70609,36 @@
     0,
     0,
     0
+   ]
+  },
+  {
+   "dia": "2026-09-08",
+   "s": "Sara",
+   "h": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1
    ]
   },
   {
@@ -70692,36 +70703,6 @@
   },
   {
    "dia": "2026-09-09",
-   "s": "",
-   "h": [
-    5,
-    1,
-    4,
-    0,
-    0,
-    0,
-    6,
-    0,
-    1,
-    26,
-    52,
-    12,
-    1,
-    36,
-    22,
-    1,
-    10,
-    21,
-    92,
-    47,
-    7,
-    10,
-    0,
-    1
-   ]
-  },
-  {
-   "dia": "2026-09-09",
    "s": "Sara",
    "h": [
     0,
@@ -70748,6 +70729,36 @@
     0,
     0,
     0
+   ]
+  },
+  {
+   "dia": "2026-09-09",
+   "s": "",
+   "h": [
+    5,
+    1,
+    4,
+    0,
+    0,
+    0,
+    6,
+    0,
+    1,
+    26,
+    52,
+    12,
+    1,
+    36,
+    22,
+    1,
+    10,
+    21,
+    92,
+    47,
+    7,
+    10,
+    0,
+    1
    ]
   },
   {
@@ -70842,36 +70853,6 @@
   },
   {
    "dia": "2026-09-10",
-   "s": "",
-   "h": [
-    25,
-    4,
-    7,
-    19,
-    10,
-    21,
-    0,
-    0,
-    3,
-    30,
-    45,
-    3,
-    2,
-    7,
-    54,
-    65,
-    23,
-    6,
-    16,
-    19,
-    23,
-    17,
-    3,
-    16
-   ]
-  },
-  {
-   "dia": "2026-09-10",
    "s": "Sara",
    "h": [
     1,
@@ -70898,6 +70879,36 @@
     5,
     0,
     0
+   ]
+  },
+  {
+   "dia": "2026-09-10",
+   "s": "",
+   "h": [
+    25,
+    4,
+    7,
+    19,
+    10,
+    21,
+    0,
+    0,
+    3,
+    30,
+    45,
+    3,
+    2,
+    7,
+    54,
+    65,
+    23,
+    6,
+    16,
+    19,
+    23,
+    17,
+    3,
+    16
    ]
   },
   {
@@ -70992,19 +71003,19 @@
   },
   {
    "dia": "2026-09-11",
-   "s": "",
+   "s": "Sara",
    "h": [
-    21,
+    2,
+    0,
+    2,
+    5,
+    0,
     1,
-    27,
-    23,
-    0,
-    16,
     0,
     0,
     0,
     0,
-    0,
+    2,
     0,
     0,
     0,
@@ -71022,19 +71033,49 @@
   },
   {
    "dia": "2026-09-11",
-   "s": "Sara",
+   "s": "",
    "h": [
-    2,
-    0,
-    2,
-    5,
-    0,
+    21,
     1,
+    27,
+    23,
+    0,
+    16,
+    0,
+    0,
+    4,
+    3,
+    51,
+    6,
     0,
     0,
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-11",
+   "s": "Jesmary",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
     0,
     0,
     0,
@@ -144190,7 +144231,7 @@
   {
    "s": "",
    "d0": "2026-09-07",
-   "dp": ""
+   "dp": "2026-09-11"
   },
   {
    "s": "",
@@ -146005,6 +146046,16 @@
   {
    "s": "",
    "d0": "2026-09-10",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
    "dp": ""
   }
  ]
