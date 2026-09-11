@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-11 01:30",
+ "generado": "2026-09-11 06:41",
  "rango": "2026-02-01 a 2026-09-11",
  "setting": [
   {
@@ -3115,8 +3115,8 @@
    "inb": 0,
    "out": 0,
    "nuevas": 0,
-   "total": 18,
-   "fups": 6,
+   "total": 46,
+   "fups": 41,
    "prop": 1,
    "link": 0,
    "badlink": 0,
@@ -29010,6 +29010,12 @@
   },
   {
    "dia": "2026-09-10",
+   "in": 1789064578,
+   "rep": 1789065186,
+   "s": ""
+  },
+  {
+   "dia": "2026-09-10",
    "in": 1789078653,
    "rep": 1789078655,
    "s": ""
@@ -29019,12 +29025,6 @@
    "in": 1789031082,
    "rep": 1789031972,
    "s": "Sara"
-  },
-  {
-   "dia": "2026-09-10",
-   "in": 1789064578,
-   "rep": 1789065186,
-   "s": ""
   },
   {
    "dia": "2026-09-10",
@@ -29046,6 +29046,50 @@
   }
  ],
  "kpis": [
+  {
+   "dia": "2026-09-09",
+   "setter": "Sara",
+   "fu": 25,
+   "inb": 1,
+   "out": 50,
+   "prop": 0,
+   "book": 0,
+   "wel": 0,
+   "notas": "@enfermeroenalemania "
+  },
+  {
+   "dia": "2026-09-10",
+   "setter": "Sara",
+   "fu": 26,
+   "inb": 1,
+   "out": 62,
+   "prop": 1,
+   "book": 0,
+   "wel": 0,
+   "notas": "@medicosenalemania"
+  },
+  {
+   "dia": "2026-09-11",
+   "setter": "Sara",
+   "fu": 41,
+   "inb": 2,
+   "out": 50,
+   "prop": 1,
+   "book": 0,
+   "wel": 0,
+   "notas": "@medicoenalemania"
+  },
+  {
+   "dia": "2026-09-09",
+   "setter": "Sary",
+   "fu": 69,
+   "inb": 0,
+   "out": 60,
+   "prop": 2,
+   "book": 0,
+   "wel": 0,
+   "notas": "Angie Bru \nAlemaniciA\nMariana \n"
+  },
   {
    "dia": "2026-09-09",
    "setter": "Jesmary",
@@ -29870,17 +29914,6 @@
    "book": 0,
    "wel": 1,
    "notas": ""
-  },
-  {
-   "dia": "2026-08-10",
-   "setter": "Yexsander",
-   "fu": 7,
-   "inb": 0,
-   "out": 14,
-   "prop": 0,
-   "book": 0,
-   "wel": 0,
-   "notas": ""
   }
  ],
  "cumplimiento": [
@@ -29895,8 +29928,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -29910,8 +29942,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -29925,8 +29956,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -29940,8 +29970,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -29955,8 +29984,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -29970,8 +29998,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -29985,8 +30012,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30000,8 +30026,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30015,8 +30040,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30030,8 +30054,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30045,8 +30068,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30060,8 +30082,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30075,8 +30096,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30090,8 +30110,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30105,8 +30124,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30120,8 +30138,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30135,8 +30152,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30150,8 +30166,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30165,8 +30180,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30180,8 +30194,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30195,8 +30208,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30210,8 +30222,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30225,8 +30236,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30240,8 +30250,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30255,8 +30264,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30270,8 +30278,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30285,8 +30292,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30300,8 +30306,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30315,8 +30320,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30330,8 +30334,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30345,8 +30348,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30360,8 +30362,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30375,8 +30376,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30390,8 +30390,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30405,8 +30404,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30420,8 +30418,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30435,8 +30432,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30450,8 +30446,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30465,8 +30460,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30480,8 +30474,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30495,8 +30488,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30510,8 +30502,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30525,8 +30516,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30540,8 +30530,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30555,8 +30544,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30570,8 +30558,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30585,8 +30572,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30600,8 +30586,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30615,8 +30600,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30630,8 +30614,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30645,8 +30628,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30660,8 +30642,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30675,8 +30656,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30690,8 +30670,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30705,8 +30684,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30720,8 +30698,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30735,8 +30712,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30750,8 +30726,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30765,8 +30740,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30780,8 +30754,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30795,8 +30768,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30810,8 +30782,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30825,8 +30796,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30840,8 +30810,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30855,8 +30824,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30870,8 +30838,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30885,8 +30852,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30900,8 +30866,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30915,8 +30880,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30930,8 +30894,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30945,8 +30908,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30960,8 +30922,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30975,8 +30936,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -30990,8 +30950,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31005,8 +30964,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31020,8 +30978,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31035,8 +30992,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31050,8 +31006,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31065,8 +31020,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31080,8 +31034,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31095,8 +31048,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31110,8 +31062,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31125,8 +31076,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31140,8 +31090,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31155,8 +31104,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31170,8 +31118,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31185,8 +31132,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31200,8 +31146,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31215,8 +31160,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31230,8 +31174,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31245,8 +31188,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31260,8 +31202,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31275,8 +31216,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31290,8 +31230,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31305,8 +31244,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31320,8 +31258,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31335,8 +31272,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31350,8 +31286,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31365,8 +31300,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31380,8 +31314,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31395,8 +31328,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31410,8 +31342,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31425,8 +31356,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31440,8 +31370,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31455,8 +31384,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31470,8 +31398,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31485,8 +31412,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31500,8 +31426,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31515,8 +31440,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31530,8 +31454,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31545,8 +31468,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31560,8 +31482,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31575,8 +31496,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31590,8 +31510,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31605,8 +31524,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31620,8 +31538,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31635,8 +31552,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31650,8 +31566,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31665,8 +31580,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31680,8 +31594,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31695,8 +31608,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31710,8 +31622,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31725,8 +31636,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31740,8 +31650,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31755,8 +31664,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31770,8 +31678,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31785,8 +31692,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31800,8 +31706,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31815,8 +31720,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31830,8 +31734,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31845,8 +31748,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31860,8 +31762,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31875,8 +31776,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31890,8 +31790,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31905,8 +31804,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31920,8 +31818,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31935,8 +31832,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31950,8 +31846,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31965,8 +31860,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31980,8 +31874,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -31995,8 +31888,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32010,8 +31902,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32025,8 +31916,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32040,8 +31930,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32055,8 +31944,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32070,8 +31958,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32085,8 +31972,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32100,8 +31986,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32115,8 +32000,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32130,8 +32014,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32145,8 +32028,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32160,8 +32042,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32175,8 +32056,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32190,8 +32070,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32205,8 +32084,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32220,8 +32098,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32235,8 +32112,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32250,8 +32126,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32265,8 +32140,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32280,8 +32154,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32295,8 +32168,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32310,8 +32182,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32325,8 +32196,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32340,8 +32210,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32355,8 +32224,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32370,8 +32238,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32385,8 +32252,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32400,8 +32266,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32415,8 +32280,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32430,8 +32294,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32445,8 +32308,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32460,8 +32322,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32475,8 +32336,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32490,8 +32350,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32505,8 +32364,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32520,8 +32378,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32535,8 +32392,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32550,8 +32406,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32565,8 +32420,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32580,8 +32434,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32595,8 +32448,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32610,8 +32462,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32625,8 +32476,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32640,8 +32490,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32655,8 +32504,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32670,8 +32518,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32685,8 +32532,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32700,8 +32546,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32715,8 +32560,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32730,8 +32574,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32745,8 +32588,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": true
+    "Sary": true
    }
   },
   {
@@ -32760,8 +32602,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32775,8 +32616,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32790,8 +32630,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32805,8 +32644,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32820,8 +32658,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32835,8 +32672,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32850,8 +32686,7 @@
     "Carlos": false,
     "Jesmary": false,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32865,8 +32700,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32880,8 +32714,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32895,8 +32728,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32910,8 +32742,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": false,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32925,8 +32756,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32940,8 +32770,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32955,8 +32784,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -32970,8 +32798,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -32985,8 +32812,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": false,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -33000,8 +32826,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -33015,8 +32840,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -33030,8 +32854,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -33045,8 +32868,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -33060,8 +32882,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": false,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -33075,8 +32896,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -33090,8 +32910,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -33105,8 +32924,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": false,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -33120,8 +32938,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -33135,8 +32952,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": false,
-    "Yexsander": false
+    "Sary": false
    }
   },
   {
@@ -33150,8 +32966,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -33165,8 +32980,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": true,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -33180,8 +32994,7 @@
     "Carlos": false,
     "Jesmary": true,
     "Sara": false,
-    "Sary": true,
-    "Yexsander": false
+    "Sary": true
    }
   },
   {
@@ -33194,9 +33007,8 @@
    "kpis": {
     "Carlos": false,
     "Jesmary": true,
-    "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sara": true,
+    "Sary": true
    }
   },
   {
@@ -33209,9 +33021,8 @@
    "kpis": {
     "Carlos": false,
     "Jesmary": false,
-    "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sara": true,
+    "Sary": false
    }
   },
   {
@@ -33224,9 +33035,8 @@
    "kpis": {
     "Carlos": false,
     "Jesmary": false,
-    "Sara": false,
-    "Sary": false,
-    "Yexsander": false
+    "Sara": true,
+    "Sary": false
    }
   }
  ],
@@ -33234,8 +33044,7 @@
   "Carlos",
   "Jesmary",
   "Sara",
-  "Sary",
-  "Yexsander"
+  "Sary"
  ],
  "triage_leads": [
   {
@@ -71187,10 +70996,10 @@
    "h": [
     21,
     1,
+    27,
+    23,
     0,
-    0,
-    0,
-    0,
+    16,
     0,
     0,
     0,
@@ -71217,10 +71026,10 @@
    "h": [
     2,
     0,
+    2,
+    5,
     0,
-    0,
-    0,
-    0,
+    1,
     0,
     0,
     0,
@@ -119564,7 +119373,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sara",
    "d0": "2026-04-05",
    "dp": ""
   },
