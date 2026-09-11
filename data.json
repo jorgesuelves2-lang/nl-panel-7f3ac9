@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-11 16:50",
+ "generado": "2026-09-11 20:06",
  "rango": "2026-02-01 a 2026-09-11",
  "setting": [
   {
@@ -3112,16 +3112,16 @@
   },
   {
    "dia": "2026-09-11",
-   "inb": 0,
-   "out": 2,
-   "nuevas": 2,
-   "total": 83,
-   "fups": 115,
+   "inb": 1,
+   "out": 30,
+   "nuevas": 31,
+   "total": 160,
+   "fups": 172,
    "prop": 5,
    "link": 4,
    "badlink": 0,
    "agendas": 2,
-   "resp_min": null,
+   "resp_min": 0,
    "nodata": false
   }
  ],
@@ -17724,7 +17724,7 @@
    "prox_fecha": "",
    "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "hola Pablo, me confirmas que nos vemos mañana?",
+   "ulttxt": "Hola Pablo cómo estás? Sary me ha dicho que no le has respondido la confirmación y tampoco he tenido respuesta de tu parte. Por favor me confirmas que nos vemos mañana?",
    "ulttipo": "TYPE_INSTAGRAM",
    "infoclo": "PERFIL: Pablo Maria Peralta Lorca, medico argentino, especialista en mastologia, cirugia mamaria y medicina del dolor. Titulo en Universidad del Aconcagua (Argentina) y Universidad de Barcelona (Espana). Actualmente en ejercicio activo con cirugias programadas. Sin conocimiento de aleman (nivel 0).\n\nOBJETIVO: Emigrar a Alemania para ejercer su especialidad. Lo ve como un sueno posible, no como urgencia inmediata. Sin plazo concreto definido. Horas semanales disponibles: noches y fines de semana (mananas ocupadas por cirugia).\n\nDOLORES: Argentina economicamente inviable. Busca entorno de alta exigencia tecnica y cientifica. Quiere estabilidad y futuro profesional real.\n\nINVERSION: Ingresos declarados 1.000-3.000 EUR/mes. Sin liquidez inmediata para pago completo. Abrio la puerta a comenzar con ~2.000 EUR si hay facilidades. Necesita plan de cuotas claro y sin presion. No tiene tarjeta internacional confirmada; verificar antes del closing.\n\nRUTA: Titulo argentino apostillado (hecho en Barcelona). No tiene homologacion espanola formal pero Argentina tiene tratado con Europa. Ruta LATAM con posible ventaja por experiencia en Espana. Estimar si aplica ACP (exoneracion de homologacion por titulo homologado en Espana + 3 anos de ejercicio). Verificar si tiene o puede tramitar doble nacionalidad (lo menciono como posibilidad). Tiempo estimado hasta B2: 8 meses desde cero.\n\nOBJECIONES: Falta de liquidez inmediata; aversion a la presion y a decisiones rapidas ('lo hago tranquilo'); age",
    "restri": "Cualifica",
@@ -18534,10 +18534,10 @@
    "prox_cuota": 0,
    "prox_imp": 0.0,
    "prox_fecha": "",
-   "ult": "2026-08-31",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ulttxt": "¡Hola, Brandy! Espero que estés muy bien. Te escribo rápidamente porque estoy organizando las evaluaciones de perfil de médicos para este mes y seleccionando a los profesionales a los que acompañaremos en su proceso de h",
+   "ulttipo": "TYPE_INSTAGRAM",
    "infoclo": "PERFIL: Brandi Afontin (en la llamada la llaman Brandy). Edad: no consta; vive sola desde los 17. Republica Dominicana. Trabaja como enfermera en una clinica privada de primeros auxilios para hoteles y termino la carrera de medicina (cinco anos) en Republica Dominicana; el titulo de medico no se lo entregan hasta noviembre. Titulo obtenido en Republica Dominicana. Llego por Instagram.\n\nOBJETIVO: hacer la especialidad en Alemania por las oportunidades de investigacion y desarrollo academico, y ejercer alli. Quiere irse \"lo mas rapido posible\" en cuanto se gradue. Nivel de aleman: no consta (nunca se pregunto en la llamada). Horas por semana disponibles: no consta.\n\nDOLORES: en Dominicana las plazas de especialidad estan copadas y siente que no entraria; no quiere hacer una especialidad que no le guste solo por vivir de ello. Salario de 350 a 450 dolares al mes. Jornada muy dura: de 8 a 17 h fija mas emergencias despues, \"como trabajar las 24 horas\", y en los hospitales publicos turnos de 24 h para medicos. Le pesa la falta de oportunidades de investigacion en su pais.\n\nINVERSION: salario de 350 a 450 dolares; dice que consume poco y \"trata de ahorrar todo lo que pueda\". Ante los 3.500 euros responde: \"creo que tendria la opcion de financiarlo o algo asi, pero buscaria la forma\". Monto de entrada, ahorro concreto y apoyo de terceros: no consta (la transcripcion se corta justo en esa pregunta).\n\nRUTA: titulo LATAM, no UE, por lo que toca homologacion, traduccion y examen FSP en ",
    "restri": "Cualifica",
    "ss": 62,
@@ -29043,6 +29043,12 @@
    "in": 1789060405,
    "rep": 1789060408,
    "s": "Sara"
+  },
+  {
+   "dia": "2026-09-11",
+   "in": 1789151542,
+   "rep": 1789151570,
+   "s": ""
   }
  ],
  "kpis": [
@@ -33126,7 +33132,7 @@
    "prof": "Médico especialista ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔹 Triage Confirmado",
+   "etapa": "🔶 Seguimiento Futuro",
    "tel": "+34613614181",
    "email": "joseacp.es@gmail.com",
    "wsp": "2026-09-11",
@@ -33139,7 +33145,7 @@
    "restri_ia": "",
    "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "Vale",
+   "ulttxt": "hola",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
@@ -33176,7 +33182,7 @@
    "restri_ia": "PERFIL: Pablo Maria Peralta Lorca, medico argentino especialista en mastologia, cirugia mamaria y medicina del dolor. Titulo de Universidad del Aconcagua (Argentina) y Universidad de Barcelona (Espana). Ejerce actualmente en Argentina con agenda quirurgica activa (opera los miercoles por la manana). Cero conocimiento de aleman.\n\nMOTIVACIONES / DOLORES: Considera Argentina inviable economicamente. Le atrae Alemania por su nivel tecnico-cientifico y su futuro. Tiene referentes de europa (profesor neurologo en Suiza, amigo suizo). Quiere ejercer su especialidad en un entorno de alta exigencia medica.\n\nDINERO: Perfil economico ajustado. En el formulario declaro ingresos de 1.000-3.000 EUR/mes y sin recursos para invertir en este momento. En el triaje confirmo que no puede hacer un pago inmediato ('seria casi el 100% de mis ingresos'), pero abrio la puerta a empezar con ~2.000 EUR si hay facilidades de pago. Necesita cuotas claras y no siente urgencia de pago inmediato. Riesgo real de que el dia del closing no cierre por falta de liquidez.\n\nDECISION: Parece decidir solo, no menciona pareja ni familia. Sin embargo, su lenguaje es exploratorio ('habria que charlarlo', 'lo hago tranquilo, ",
    "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "hola Pablo, me confirmas que nos vemos mañana?",
+   "ulttxt": "Hola Pablo cómo estás? Sary me ha dicho que no le has respondido la confirmación y tampoco he tenido respuesta de tu parte. Por favor me confirmas que nos vemos mañana?",
    "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": true
   },
@@ -33681,7 +33687,7 @@
    "prof": "Médico especialista ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔹 Triage Confirmado",
+   "etapa": "🔶 Seguimiento Futuro",
    "tel": "+34613614181",
    "email": "joseacp.es@gmail.com",
    "wsp": "2026-09-11",
@@ -33694,7 +33700,7 @@
    "restri_ia": "",
    "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "Vale",
+   "ulttxt": "hola",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
@@ -34913,10 +34919,10 @@
    "urg": "",
    "infotri": "PERFIL: Brandi Afontin (en la llamada la llaman Brandy). Edad: no consta; vive sola desde los 17. Republica Dominicana. Trabaja como enfermera en una clinica privada de primeros auxilios para hoteles y termino la carrera de medicina (cinco anos) en Republica Dominicana; el titulo de medico no se lo entregan hasta noviembre. Titulo obtenido en Republica Dominicana. Llego por Instagram.\n\nOBJETIVO: hacer la especialidad en Alemania por las oportunidades de investigacion y desarrollo academico, y ejercer alli. Quiere irse \"lo mas rapido posible\" en cuanto se gradue. Nivel de aleman: no consta (nunca se pregunto en la llamada). Horas por semana disponibles: no consta.\n\nDOLORES: en Dominicana las plazas de especialidad estan copadas y siente que no entraria; no quiere hacer una especialidad que no le guste solo por vivir de ello. Salario de 350 a 450 dolares al mes. Jornada muy dura: de 8 a 17 h fija mas emergencias despues, \"como trabajar las 24 horas\", y en los hospitales publicos turnos de 24 h para medicos. Le pesa la falta de oportunidades de investigacion en su pais.\n\nINVERSION: salario de 350 a 450 dolares; dice que consume poco y \"trata de ahorrar todo lo que pueda\". Ante los 3.500 euros responde: \"creo que tendria la opcion de financiarlo o algo asi, pero buscaria la forma\". Monto de entrada, ahorro concreto y apoyo de terceros: no consta (la transcripcion se corta justo en esa pregunta).\n\nRUTA: titulo LATAM, no UE, por lo que toca homologacion, traduccion y examen FSP en ",
    "restri_ia": "RESUMEN DE LA LLAMADA: llamada de triaje con Christian Rojas (director) el 19 de agosto de 2026. La lead atiende desde su puesto de trabajo, avisa que puede dar 10 o 15 minutos y la conversacion transcurre completa y en buen clima. La transcripcion disponible se corta justo cuando Christian pregunta el monto de entrada en caso de financiar, asi que el cierre economico no consta.\n\nPERFIL SEGUN LA LLAMADA: mujer, Republica Dominicana (aclara que el +1 es codigo dominicano, no Estados Unidos). Actualmente trabaja como enfermera en una clinica privada que da primeros auxilios a hoteles. Estudio medicina cinco anos en Republica Dominicana y el titulo de medico no lo tiene hasta noviembre. Vive sola desde los 17 anos. Edad: no consta. Conocio a Natalie por Instagram.\n\nEJES DE CUALIFICACION SEGUN LA LLAMADA:\n1. PERFIL: encaja de lleno. Doble via: ya ejerce como enfermera (ruta mas rapida a Alemania segun le explico Christian) y sera medica en noviembre. Titulo LATAM, por lo que requiere homologacion, traduccion y FSP.\n2. DINERO: es el punto debil. Declara que el salario en Dominicana ronda los 350 a 450 dolares y que ella \"no consume tanto\" y trata de ahorrar todo lo que puede. Ante los 3",
-   "ult": "2026-08-31",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ulttxt": "¡Hola, Brandy! Espero que estés muy bien. Te escribo rápidamente porque estoy organizando las evaluaciones de perfil de médicos para este mes y seleccionando a los profesionales a los que acompañaremos en su proceso de h",
+   "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": true
   },
   {
@@ -35357,10 +35363,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-09-10",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "Hola Cristhian, soy del equipo de Natalie Kusnik. Hace un tiempo hablamos de tu proceso para ejercer en Alemania y quedó a medio camino. Ya tenemos tus datos, así que si sigues con la idea solo eliges el día y la hora aq",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ulttxt": "¡Hola, Daniel! Espero que estés muy bien. Te escribo rápidamente porque estoy organizando las evaluaciones de perfil de profesional técnico para este mes y seleccionando a aquellos que acompañaremos en su proceso de homo",
+   "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
   {
@@ -35690,10 +35696,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-09-10",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "del equipo de Natalie para tu camino a Alemania, cómo estás?",
-   "ulttipo": "TYPE_WHATSAPP",
+   "ulttxt": "¡Hola, Pablo! Espero que estés muy bien. Te escribo rápidamente porque estoy organizando las evaluaciones de perfil de médicos para este mes y seleccionando a los profesionales a los que acompañaremos en su proceso de ho",
+   "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
   {
@@ -36282,9 +36288,9 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "NO HAY GRABACION",
-   "ult": "2026-07-25",
-   "ultdir": "inbound",
-   "ulttxt": "Fue bueno. Estoy a esperar los emails de Christian o Cristian (no sé como escribir).",
+   "ult": "2026-09-11",
+   "ultdir": "outbound",
+   "ulttxt": "¡Hola, Tiago! Espero que estés muy bien. Te escribo rápidamente porque estoy organizando las evaluaciones de perfil de ingenieros para este mes y seleccionando a los profesionales a los que acompañaremos en su proceso de",
    "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
@@ -36985,9 +36991,9 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "NO HAY GRABACION",
-   "ult": "2026-07-08",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "",
+   "ulttxt": "¡Hola, Jesús! Espero que estés muy bien. Te escribo rápidamente porque estoy organizando las evaluaciones de perfil en ingeniería para este mes y seleccionando a aquellos que acompañaremos en su proceso de homologación h",
    "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
@@ -37244,10 +37250,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-07-06",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "¡Hey Silvana! Solo quería recordarte que tu llamada es ahora mismo. Te están esperando! Asegúrate también de estar en un lugar sin distracciones y con buena conexión para que puedas prender tu micrófono y tu cámara duran",
-   "ulttipo": "TYPE_EMAIL",
+   "ulttxt": "¡Hola, Silvana! Espero que estés muy bien. Te escribo rápidamente porque estoy organizando las evaluaciones de perfil de profesional técnico para este mes y seleccionando a aquellos que acompañaremos en su proceso de hom",
+   "ulttipo": "TYPE_INSTAGRAM",
    "tiene_closing": false
   },
   {
@@ -46141,7 +46147,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-03-07",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -46161,10 +46167,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-03-10",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hey Moira!\n\nSolo quería recordarte que tu llamada es en 2 horas.\n\nAsegúrate de ver mas detalles sobre la formación que te dejo haciendo clic en el...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -47704,6 +47710,57 @@
  },
  "pipeline_leads": [
   {
+   "cid": "CI7tS6J19zhHsA3Bro66",
+   "nombre": "Inrid Alvarez",
+   "etapa": "🔹 Triage Agendado",
+   "desde": "2026-09-11",
+   "fuente": "",
+   "prox": "2026-09-12",
+   "wsp": "2026-09-11",
+   "setter": "Sara",
+   "cta": "",
+   "prof": "Médico General ",
+   "restri": "",
+   "resclo": "",
+   "ticket": "",
+   "pagado": "",
+   "motivo": "",
+   "tel": "+527471923571",
+   "email": "inrid.2000@gmail.com",
+   "presup": "Actualmente no tengo con recursos económicos para el proceso",
+   "urg": "",
+   "nivel": "🔹 Conocimientos básicos",
+   "ss": 28,
+   "stri": null,
+   "sc": null,
+   "ult": "2026-09-11",
+   "ultdir": "outbound",
+   "ulttxt": "",
+   "ulttipo": "TYPE_WHATSAPP",
+   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/CI7tS6J19zhHsA3Bro66",
+   "closer": "",
+   "triager": "",
+   "nota": "",
+   "nota_f": "",
+   "nota_por": "",
+   "notas_n": 0,
+   "nota_est": "",
+   "nota_cat": "",
+   "tocado": "2026-09-11",
+   "pendiente": 0.0,
+   "cuotas": [],
+   "ncuotas": "",
+   "cuotaspag": "",
+   "formapago": "",
+   "moneda": "",
+   "fventa": "",
+   "reserva": 0.0,
+   "notasform": "",
+   "prox_cuota": 0,
+   "prox_imp": 0.0,
+   "prox_fecha": ""
+  },
+  {
    "cid": "o8BsZHJlGHkpanRmKoao",
    "nombre": "Pablo Maria Peralta Lorca",
    "etapa": "🔸Closing Agendado",
@@ -47729,7 +47786,7 @@
    "sc": null,
    "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "hola Pablo, me confirmas que nos vemos mañana?",
+   "ulttxt": "Hola Pablo cómo estás? Sary me ha dicho que no le has respondido la confirmación y tampoco he tenido respuesta de tu parte. Por favor me confirmas que nos vemos mañana?",
    "ulttipo": "TYPE_INSTAGRAM",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/o8BsZHJlGHkpanRmKoao",
    "closer": "",
@@ -48114,8 +48171,8 @@
   {
    "cid": "5wbBDohyfQssFyeAaFkO",
    "nombre": "José Angel Córdova Paredes",
-   "etapa": "🔹 Triage Confirmado",
-   "desde": "2026-09-07",
+   "etapa": "🔶 Seguimiento Futuro",
+   "desde": "2026-09-11",
    "fuente": "Otros",
    "prox": "2026-09-11",
    "wsp": "2026-09-11",
@@ -48137,18 +48194,18 @@
    "sc": null,
    "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "Vale",
+   "ulttxt": "hola",
    "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/5wbBDohyfQssFyeAaFkO",
    "closer": "",
    "triager": "",
    "nota": "",
-   "nota_f": "2026-09-07",
+   "nota_f": "2026-09-11",
    "nota_por": "Sary",
-   "notas_n": 2,
+   "notas_n": 4,
    "nota_est": "",
    "nota_cat": "",
-   "tocado": "2026-09-07",
+   "tocado": "2026-09-11",
    "pendiente": 0.0,
    "cuotas": [],
    "ncuotas": "",
@@ -48594,10 +48651,10 @@
    "ss": 72,
    "stri": null,
    "sc": null,
-   "ult": "2026-09-07",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "¡Hola Tanya! Esta es tu confirmación para la cita que has agendado con nuestro equipo Te cuento los siguientes pasos para tu llamada con Sarahi. Es quién va a tomar esta llamada contigo para ver si realmente este program",
-   "ulttipo": "TYPE_EMAIL",
+   "ulttxt": "¡Hola, Denisse! Espero que estés muy bien. Te escribo rápidamente porque estoy organizando las evaluaciones de perfil de médicos para este mes y seleccionando a los profesionales a los que acompañaremos en su proceso de ",
+   "ulttipo": "TYPE_INSTAGRAM",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/pmOabvNl3kMI6qBFU405",
    "closer": "",
    "triager": "",
@@ -49767,9 +49824,9 @@
    "ss": 48,
    "stri": null,
    "sc": null,
-   "ult": "2026-07-25",
-   "ultdir": "inbound",
-   "ulttxt": "Fue bueno. Estoy a esperar los emails de Christian o Cristian (no sé como escribir).",
+   "ult": "2026-09-11",
+   "ultdir": "outbound",
+   "ulttxt": "¡Hola, Tiago! Espero que estés muy bien. Te escribo rápidamente porque estoy organizando las evaluaciones de perfil de ingenieros para este mes y seleccionando a los profesionales a los que acompañaremos en su proceso de",
    "ulttipo": "TYPE_INSTAGRAM",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/ks5w9NhFdWU3OuiAvE9j",
    "closer": "",
@@ -50379,10 +50436,10 @@
    "ss": 58,
    "stri": null,
    "sc": null,
-   "ult": "2026-07-06",
+   "ult": "2026-09-11",
    "ultdir": "outbound",
-   "ulttxt": "¡Hey Silvana! Solo quería recordarte que tu llamada es ahora mismo. Te están esperando! Asegúrate también de estar en un lugar sin distracciones y con buena conexión para que puedas prender tu micrófono y tu cámara duran",
-   "ulttipo": "TYPE_EMAIL",
+   "ulttxt": "¡Hola, Silvana! Espero que estés muy bien. Te escribo rápidamente porque estoy organizando las evaluaciones de perfil de profesional técnico para este mes y seleccionando a aquellos que acompañaremos en su proceso de hom",
+   "ulttipo": "TYPE_INSTAGRAM",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/BaO7lFlfhb0EXvFD3vTY",
    "closer": "",
    "triager": "",
@@ -69454,36 +69511,6 @@
   },
   {
    "dia": "2026-08-30",
-   "s": "Sary",
-   "h": [
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    11,
-    5,
-    0,
-    5,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    4,
-    1,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-30",
    "s": "",
    "h": [
     3,
@@ -69510,6 +69537,36 @@
     36,
     4,
     3
+   ]
+  },
+  {
+   "dia": "2026-08-30",
+   "s": "Sary",
+   "h": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    11,
+    5,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    1,
+    0,
+    0
    ]
   },
   {
@@ -69574,36 +69631,6 @@
   },
   {
    "dia": "2026-08-31",
-   "s": "",
-   "h": [
-    1,
-    0,
-    14,
-    2,
-    0,
-    0,
-    0,
-    0,
-    0,
-    24,
-    15,
-    0,
-    3,
-    6,
-    4,
-    35,
-    7,
-    16,
-    23,
-    14,
-    8,
-    31,
-    1,
-    70
-   ]
-  },
-  {
-   "dia": "2026-08-31",
    "s": "Jesmary",
    "h": [
     0,
@@ -69630,6 +69657,36 @@
     0,
     0,
     0
+   ]
+  },
+  {
+   "dia": "2026-08-31",
+   "s": "",
+   "h": [
+    1,
+    0,
+    14,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    24,
+    15,
+    0,
+    3,
+    6,
+    4,
+    35,
+    7,
+    16,
+    23,
+    14,
+    8,
+    31,
+    1,
+    70
    ]
   },
   {
@@ -69694,36 +69751,6 @@
   },
   {
    "dia": "2026-09-01",
-   "s": "",
-   "h": [
-    6,
-    5,
-    1,
-    0,
-    0,
-    2,
-    0,
-    13,
-    0,
-    0,
-    13,
-    3,
-    4,
-    28,
-    69,
-    19,
-    5,
-    4,
-    6,
-    3,
-    6,
-    15,
-    1,
-    14
-   ]
-  },
-  {
-   "dia": "2026-09-01",
    "s": "Jesmary",
    "h": [
     0,
@@ -69750,6 +69777,36 @@
     0,
     0,
     0
+   ]
+  },
+  {
+   "dia": "2026-09-01",
+   "s": "",
+   "h": [
+    6,
+    5,
+    1,
+    0,
+    0,
+    2,
+    0,
+    13,
+    0,
+    0,
+    13,
+    3,
+    4,
+    28,
+    69,
+    19,
+    5,
+    4,
+    6,
+    3,
+    6,
+    15,
+    1,
+    14
    ]
   },
   {
@@ -69814,36 +69871,6 @@
   },
   {
    "dia": "2026-09-02",
-   "s": "",
-   "h": [
-    44,
-    0,
-    6,
-    0,
-    1,
-    1,
-    6,
-    1,
-    0,
-    6,
-    78,
-    35,
-    0,
-    6,
-    7,
-    10,
-    8,
-    7,
-    1,
-    0,
-    5,
-    4,
-    4,
-    2
-   ]
-  },
-  {
-   "dia": "2026-09-02",
    "s": "Jesmary",
    "h": [
     0,
@@ -69870,6 +69897,36 @@
     0,
     1,
     0
+   ]
+  },
+  {
+   "dia": "2026-09-02",
+   "s": "",
+   "h": [
+    44,
+    0,
+    6,
+    0,
+    1,
+    1,
+    6,
+    1,
+    0,
+    6,
+    78,
+    35,
+    0,
+    6,
+    7,
+    10,
+    8,
+    7,
+    1,
+    0,
+    5,
+    4,
+    4,
+    2
    ]
   },
   {
@@ -69934,36 +69991,6 @@
   },
   {
    "dia": "2026-09-03",
-   "s": "",
-   "h": [
-    30,
-    21,
-    1,
-    0,
-    0,
-    6,
-    13,
-    0,
-    4,
-    83,
-    9,
-    10,
-    2,
-    0,
-    33,
-    35,
-    24,
-    7,
-    0,
-    25,
-    40,
-    21,
-    57,
-    16
-   ]
-  },
-  {
-   "dia": "2026-09-03",
    "s": "Jesmary",
    "h": [
     0,
@@ -70020,6 +70047,36 @@
     6,
     1,
     6
+   ]
+  },
+  {
+   "dia": "2026-09-03",
+   "s": "",
+   "h": [
+    30,
+    21,
+    1,
+    0,
+    0,
+    6,
+    13,
+    0,
+    4,
+    83,
+    9,
+    10,
+    2,
+    0,
+    33,
+    35,
+    24,
+    7,
+    0,
+    25,
+    40,
+    21,
+    57,
+    16
    ]
   },
   {
@@ -70564,36 +70621,6 @@
   },
   {
    "dia": "2026-09-08",
-   "s": "",
-   "h": [
-    48,
-    11,
-    0,
-    11,
-    0,
-    4,
-    0,
-    0,
-    2,
-    2,
-    12,
-    30,
-    9,
-    3,
-    36,
-    13,
-    11,
-    0,
-    5,
-    21,
-    30,
-    8,
-    12,
-    18
-   ]
-  },
-  {
-   "dia": "2026-09-08",
    "s": "Jesmary",
    "h": [
     0,
@@ -70620,6 +70647,36 @@
     0,
     0,
     0
+   ]
+  },
+  {
+   "dia": "2026-09-08",
+   "s": "",
+   "h": [
+    48,
+    11,
+    0,
+    11,
+    0,
+    4,
+    0,
+    0,
+    2,
+    2,
+    12,
+    30,
+    9,
+    3,
+    36,
+    13,
+    11,
+    0,
+    5,
+    21,
+    30,
+    8,
+    12,
+    18
    ]
   },
   {
@@ -70735,41 +70792,11 @@
     10,
     21,
     92,
-    47,
-    7,
-    10,
+    46,
+    6,
+    8,
     0,
     1
-   ]
-  },
-  {
-   "dia": "2026-09-09",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    3,
-    2,
-    0,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    1,
-    0,
-    0,
-    0
    ]
   },
   {
@@ -70798,6 +70825,36 @@
     0,
     0,
     0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-09",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    3,
+    2,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    2,
+    2,
     0,
     0
    ]
@@ -70871,7 +70928,7 @@
     7,
     19,
     10,
-    21,
+    20,
     0,
     0,
     3,
@@ -70890,36 +70947,6 @@
     17,
     3,
     16
-   ]
-  },
-  {
-   "dia": "2026-09-10",
-   "s": "Sara",
-   "h": [
-    1,
-    0,
-    0,
-    1,
-    1,
-    1,
-    0,
-    0,
-    0,
-    3,
-    0,
-    3,
-    3,
-    2,
-    2,
-    1,
-    2,
-    3,
-    2,
-    1,
-    0,
-    5,
-    0,
-    0
    ]
   },
   {
@@ -70948,6 +70975,36 @@
     0,
     0,
     0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-10",
+   "s": "Sara",
+   "h": [
+    1,
+    0,
+    0,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    3,
+    0,
+    3,
+    3,
+    2,
+    2,
+    1,
+    2,
+    3,
+    2,
+    1,
+    0,
+    5,
     0,
     0
    ]
@@ -71016,27 +71073,27 @@
    "dia": "2026-09-11",
    "s": "",
    "h": [
-    21,
+    19,
     1,
-    27,
-    23,
+    26,
+    21,
     0,
-    13,
+    11,
     0,
     0,
     4,
-    3,
+    2,
     51,
     6,
     13,
     2,
     3,
-    11,
-    30,
-    0,
-    0,
-    0,
-    0,
+    7,
+    38,
+    22,
+    10,
+    47,
+    1,
     0,
     0,
     0
@@ -71044,28 +71101,28 @@
   },
   {
    "dia": "2026-09-11",
-   "s": "Sara",
+   "s": "Sary",
    "h": [
-    2,
     0,
-    2,
-    5,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10,
     4,
-    0,
-    0,
-    0,
-    0,
-    2,
-    0,
-    2,
-    1,
-    0,
-    0,
     4,
-    0,
-    0,
-    0,
     0,
     0,
     0,
@@ -71095,6 +71152,36 @@
     0,
     0,
     0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-11",
+   "s": "Sara",
+   "h": [
+    4,
+    0,
+    3,
+    7,
+    0,
+    6,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    2,
+    1,
+    0,
+    4,
+    5,
+    2,
+    3,
     0,
     0,
     0,
@@ -88435,7 +88522,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sara",
    "d0": "2026-04-22",
    "dp": ""
   },
@@ -145355,7 +145442,7 @@
    "dp": ""
   },
   {
-   "s": "",
+   "s": "Sara",
    "d0": "2026-09-09",
    "dp": "2026-09-11"
   },
@@ -146073,6 +146160,156 @@
    "s": "Sara",
    "d0": "2025-10-10",
    "dp": "2026-01-25"
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2025-01-23",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-11",
+   "dp": ""
   }
  ]
 }
