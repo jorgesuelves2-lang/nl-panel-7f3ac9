@@ -1,6 +1,6 @@
 {
- "generado": "2026-09-10 23:28",
- "rango": "2026-02-01 a 2026-09-10",
+ "generado": "2026-09-11 01:30",
+ "rango": "2026-02-01 a 2026-09-11",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -3099,15 +3099,29 @@
   {
    "dia": "2026-09-10",
    "inb": 6,
-   "out": 86,
-   "nuevas": 92,
-   "total": 252,
-   "fups": 204,
-   "prop": 1,
-   "link": 0,
+   "out": 92,
+   "nuevas": 98,
+   "total": 259,
+   "fups": 207,
+   "prop": 2,
+   "link": 1,
    "badlink": 0,
    "agendas": 1,
    "resp_min": 0,
+   "nodata": false
+  },
+  {
+   "dia": "2026-09-11",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 18,
+   "fups": 6,
+   "prop": 1,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 2,
+   "resp_min": null,
    "nodata": false
   }
  ],
@@ -5773,6 +5787,18 @@
    "cancelled": 0,
    "confirmed": 1,
    "cualifica": 1,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-09-11",
+   "agendados": 2,
+   "showed": 0,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 2,
+   "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
   }
@@ -22938,6 +22964,17 @@
    "vendido": 0,
    "facturacion": 0.0,
    "cash": 0.0
+  },
+  {
+   "dia": "2026-09-11",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
   }
  ],
  "gaps": [
@@ -33176,6 +33213,21 @@
     "Sary": false,
     "Yexsander": false
    }
+  },
+  {
+   "dia": "2026-09-11",
+   "triages": 2,
+   "con_form": 0,
+   "sin_form": 2,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Carlos": false,
+    "Jesmary": false,
+    "Sara": false,
+    "Sary": false,
+    "Yexsander": false
+   }
   }
  ],
  "setters": [
@@ -34760,7 +34812,7 @@
    "prof": "Auxiliar de enfermeria ",
    "motivo": "",
    "objtri": "",
-   "etapa": "🔶 Seguimiento Caliente",
+   "etapa": "🟢  Pago Completo",
    "tel": "+34603276571",
    "email": "ludovica948102@gmail.com",
    "wsp": "2026-09-10",
@@ -34771,9 +34823,9 @@
    "urg": "",
    "infotri": "PERFIL: Brenda Michell Riascos Mosquera. Edad no consta. Colombia, vive en Espana desde hace 6 anos. Auxiliar de enfermeria, titulo obtenido en Colombia. Tiene nacionalidad espanola y homologacion en Espana. Proceso de homologacion en Alemania ya iniciado con agencia Enfymed (Johanna).\n\nOBJETIVO: Trabajar en Alemania como auxiliar/enfermera. Proceso de homologacion en curso (aprox 4 meses para terminar). Necesita aleman desde cero. Disponibilidad de 45-60 min/dia. Plazo de inicio: finales de septiembre / pago el 31 de agosto.\n\nDOLORES: Nivel de aleman 0 y miedo a no pasar la entrevista de homologacion en aleman. Ya ha invertido 4.000 euros en traducciones y proceso; no quiere perder lo avanzado. Siente que en Espana los caminos son largos (FP 2 anos o volver 4 anos a Colombia).\n\nINVERSION: Trabaja en Espana. Ha invertido ya ~4.000 euros en homologacion. Tiene pendiente pago final a otra agencia. Acordado producto solo idioma: 3.500 euros en 6 cuotas de ~580/mes, con primer pago de 297 el dia 31. No pago en el momento de la llamada.\n\nRUTA: Titulo LATAM con homologacion en Espana (UE). Nacionalidad espanola facilita mucho la movilidad a Alemania. Homologacion en Alemania ya en marcha con otra agencia. Solo falta el idioma segun el estado actual. Verificar si el titulo de auxiliar es reconocido en Alemania como Pflegefachkraft.\n\nOBJECIONES: Miedo al idioma (nivel 0, nunca ha estudiado aleman); liquidez ajustada (pago diferido al 31); tiene otra agencia activa para homologacion (",
    "restri_ia": "PERFIL: Auxiliar de enfermeria colombiana, 6 anos viviendo en Espana, nacionalidad espanola. Titulo obtenido en Colombia, con homologacion en Espana y proceso de homologacion en Alemania ya iniciado con otra agencia (Enfymed/Johanna). Nivel de aleman 0.\n\nDINERO: Ha invertido ya unos 4.000 euros en traducciones y proceso de homologacion. Trabaja en Espana actualmente. Quiere empezar a finales de septiembre porque tiene pendiente un pago final a la otra agencia. Le cobran a fin de mes (el 31). En el triaje se nego a pagar en el momento y propuso el 31. Acordaron primer pago de 297 euros con cuotas de 580/mes en 6 cuotas (total 3.500 euros solo idioma). Capacidad de pago ajustada pero presente.\n\nDECISION: Decide sola. Va sola a Alemania. No hay pareja ni familia que condicione.\n\nPLAZO/URGENCIA: Urgencia media-baja. Proceso de homologacion casi terminado (4 meses mas segun Johanna). Quiere empezar el idioma pero prefiere esperar a pagar el ultimo tramo de homologacion primero. Pago acordado para el 31.\n\nCOMPROMISO: Alto en actitud pero con freno economico real (pago diferido al 31). En el triaje acepto los terminos, dijo 'empecemos' y se unio al grupo de WhatsApp con Nati. Señales posi",
-   "ult": "2026-09-10",
-   "ultdir": "inbound",
-   "ulttxt": "Inicie hace una semana",
+   "ult": "2026-09-11",
+   "ultdir": "outbound",
+   "ulttxt": "Hola Brenda te habla Sary del equipo de Nat disculpa fue un mensaje automático",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
@@ -46110,7 +46162,7 @@
    "asistio": false,
    "fclo": "",
    "fuente": "",
-   "d0": "2026-03-10",
+   "d0": "",
    "restri": "",
    "stri": null,
    "ss": null,
@@ -46130,10 +46182,10 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-03-10",
-   "ultdir": "outbound",
-   "ulttxt": "Hi Óliver Jiménez,\n\nYour appointment has been scheduled. Here are the details of your upcoming appointment:\n\nAppointment Title: Óliver Jiménez - Re...",
-   "ulttipo": "TYPE_EMAIL",
+   "ult": "",
+   "ultdir": "",
+   "ulttxt": "",
+   "ulttipo": "",
    "tiene_closing": false
   },
   {
@@ -47826,7 +47878,7 @@
    "etapa": "🔸Closing Agendado",
    "desde": "2026-09-09",
    "fuente": "",
-   "prox": "2026-09-10",
+   "prox": "2026-09-12",
    "wsp": "2026-09-09",
    "setter": "Jesmary",
    "cta": "",
@@ -48827,57 +48879,6 @@
    "nota_est": "ESPERANDO_AL_LEAD",
    "nota_cat": "REAGENDA_PENDIENTE",
    "tocado": "2026-09-07",
-   "pendiente": 0.0,
-   "cuotas": [],
-   "ncuotas": "",
-   "cuotaspag": "",
-   "formapago": "",
-   "moneda": "",
-   "fventa": "",
-   "reserva": 0.0,
-   "notasform": "",
-   "prox_cuota": 0,
-   "prox_imp": 0.0,
-   "prox_fecha": ""
-  },
-  {
-   "cid": "yCKR9tlzdscSvllsSMHE",
-   "nombre": "Brenda Riascos",
-   "etapa": "🔶 Seguimiento Caliente",
-   "desde": "2026-08-26",
-   "fuente": "Outbound",
-   "prox": "",
-   "wsp": "2026-09-10",
-   "setter": "Sary",
-   "cta": "Outbound seguidores, esta con enfymed",
-   "prof": "Auxiliar de enfermeria ",
-   "restri": "",
-   "resclo": "",
-   "ticket": "",
-   "pagado": "",
-   "motivo": "",
-   "tel": "+34603276571",
-   "email": "ludovica948102@gmail.com",
-   "presup": "Cuento con entre 3.500€ a 5.000€ para mi proceso",
-   "urg": "",
-   "nivel": "🔹 No tengo conocimientos",
-   "ss": 52,
-   "stri": 60,
-   "sc": null,
-   "ult": "2026-09-10",
-   "ultdir": "inbound",
-   "ulttxt": "Inicie hace una semana",
-   "ulttipo": "TYPE_WHATSAPP",
-   "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/yCKR9tlzdscSvllsSMHE",
-   "closer": "",
-   "triager": "",
-   "nota": "",
-   "nota_f": "2026-08-26",
-   "nota_por": "Christian",
-   "notas_n": 1,
-   "nota_est": "ESPERANDO_AL_LEAD",
-   "nota_cat": "PAGO_COMPROMETIDO",
-   "tocado": "2026-08-26",
    "pendiente": 0.0,
    "cuotas": [],
    "ncuotas": "",
@@ -69742,36 +69743,6 @@
   },
   {
    "dia": "2026-08-31",
-   "s": "Jesmary",
-   "h": [
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    7,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-08-31",
    "s": "",
    "h": [
     1,
@@ -69798,6 +69769,36 @@
     31,
     1,
     70
+   ]
+  },
+  {
+   "dia": "2026-08-31",
+   "s": "Jesmary",
+   "h": [
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    7,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
    ]
   },
   {
@@ -70582,36 +70583,6 @@
   },
   {
    "dia": "2026-09-07",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    8,
-    0,
-    1,
-    0,
-    0,
-    3,
-    4,
-    0,
-    2,
-    0
-   ]
-  },
-  {
-   "dia": "2026-09-07",
    "s": "",
    "h": [
     0,
@@ -70638,6 +70609,36 @@
     29,
     102,
     25
+   ]
+  },
+  {
+   "dia": "2026-09-07",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    8,
+    0,
+    1,
+    0,
+    0,
+    3,
+    4,
+    0,
+    2,
+    0
    ]
   },
   {
@@ -70895,7 +70896,7 @@
     1,
     26,
     52,
-    11,
+    12,
     1,
     36,
     22,
@@ -71057,7 +71058,7 @@
     23,
     17,
     3,
-    3
+    16
    ]
   },
   {
@@ -71169,6 +71170,66 @@
     0,
     0,
     1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-11",
+   "s": "",
+   "h": [
+    21,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-11",
+   "s": "Sara",
+   "h": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -72435,7 +72496,7 @@
   {
    "s": "",
    "d0": "2025-04-27",
-   "dp": ""
+   "dp": "2026-09-11"
   },
   {
    "s": "",
@@ -137315,7 +137376,7 @@
   {
    "s": "",
    "d0": "2026-08-27",
-   "dp": ""
+   "dp": "2026-09-10"
   },
   {
    "s": "",
@@ -146040,6 +146101,36 @@
   {
    "s": "",
    "d0": "2025-11-02",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-10",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-10",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-10",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-10",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-10",
+   "dp": ""
+  },
+  {
+   "s": "",
+   "d0": "2026-09-10",
    "dp": ""
   },
   {
