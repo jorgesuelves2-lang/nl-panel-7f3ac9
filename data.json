@@ -1,6 +1,6 @@
 {
- "generado": "2026-09-11 22:51",
- "rango": "2026-02-01 a 2026-09-11",
+ "generado": "2026-09-12 01:34",
+ "rango": "2026-02-01 a 2026-09-12",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -3116,12 +3116,26 @@
    "out": 86,
    "nuevas": 87,
    "total": 231,
-   "fups": 205,
+   "fups": 211,
    "prop": 5,
    "link": 4,
    "badlink": 0,
    "agendas": 2,
    "resp_min": 0,
+   "nodata": false
+  },
+  {
+   "dia": "2026-09-12",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 7,
+   "fups": 0,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 1,
+   "resp_min": null,
    "nodata": false
   }
  ],
@@ -5797,6 +5811,18 @@
    "noshow": 0,
    "noconfirma": 0,
    "cancelled": 1,
+   "confirmed": 1,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
+  },
+  {
+   "dia": "2026-09-12",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
    "confirmed": 1,
    "cualifica": 0,
    "nocualifica": 0,
@@ -23007,6 +23033,17 @@
    "vendido": 0,
    "facturacion": 0.0,
    "cash": 0.0
+  },
+  {
+   "dia": "2026-09-12",
+   "agendados": 1,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
+   "confirmed": 1,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
   }
  ],
  "gaps": [
@@ -29952,28 +29989,6 @@
    "book": 0,
    "wel": 0,
    "notas": "los propuesta 2 indicaron no tener la inversión"
-  },
-  {
-   "dia": "2026-08-11",
-   "setter": "Sara",
-   "fu": 68,
-   "inb": 1,
-   "out": 55,
-   "prop": 0,
-   "book": 0,
-   "wel": 0,
-   "notas": ""
-  },
-  {
-   "dia": "2026-08-10",
-   "setter": "Sara",
-   "fu": 20,
-   "inb": 4,
-   "out": 45,
-   "prop": 0,
-   "book": 0,
-   "wel": 1,
-   "notas": ""
   }
  ],
  "cumplimiento": [
@@ -32647,7 +32662,7 @@
    "kpis": {
     "Carlos": false,
     "Jesmary": false,
-    "Sara": true,
+    "Sara": false,
     "Sary": true
    }
   },
@@ -32661,15 +32676,15 @@
    "kpis": {
     "Carlos": false,
     "Jesmary": false,
-    "Sara": true,
+    "Sara": false,
     "Sary": true
    }
   },
   {
    "dia": "2026-08-12",
    "triages": 3,
-   "con_form": 2,
-   "sin_form": 1,
+   "con_form": 1,
+   "sin_form": 2,
    "estado_triage": "Parcial",
    "retraso_medio": 0.0,
    "kpis": {
@@ -33098,6 +33113,20 @@
     "Sara": true,
     "Sary": false
    }
+  },
+  {
+   "dia": "2026-09-12",
+   "triages": 1,
+   "con_form": 0,
+   "sin_form": 1,
+   "estado_triage": "Sin registrar",
+   "retraso_medio": null,
+   "kpis": {
+    "Carlos": false,
+    "Jesmary": false,
+    "Sara": false,
+    "Sary": false
+   }
   }
  ],
  "setters": [
@@ -33130,7 +33159,7 @@
    "etapa": "🔹 Tri. Saludo Enviado",
    "tel": "+527471923571",
    "email": "inrid.2000@gmail.com",
-   "wsp": "2026-09-11",
+   "wsp": "2026-09-12",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/CI7tS6J19zhHsA3Bro66",
    "presup": "Actualmente no tengo con recursos económicos para el proceso",
    "ingresos": "300€ - 600€",
@@ -33138,9 +33167,9 @@
    "urg": "",
    "infotri": "",
    "restri_ia": "",
-   "ult": "2026-09-11",
+   "ult": "2026-09-12",
    "ultdir": "outbound",
-   "ulttxt": "quedo atenta",
+   "ulttxt": "Excelente!!",
    "ulttipo": "TYPE_WHATSAPP",
    "tiene_closing": false
   },
@@ -47785,7 +47814,7 @@
    "desde": "2026-09-11",
    "fuente": "",
    "prox": "2026-09-12",
-   "wsp": "2026-09-11",
+   "wsp": "2026-09-12",
    "setter": "Sara",
    "cta": "",
    "prof": "Médico General ",
@@ -47802,9 +47831,9 @@
    "ss": 28,
    "stri": null,
    "sc": null,
-   "ult": "2026-09-11",
+   "ult": "2026-09-12",
    "ultdir": "outbound",
-   "ulttxt": "quedo atenta",
+   "ulttxt": "Excelente!!",
    "ulttipo": "TYPE_WHATSAPP",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/CI7tS6J19zhHsA3Bro66",
    "closer": "",
@@ -48243,7 +48272,7 @@
    "etapa": "🔶 Seguimiento Futuro",
    "desde": "2026-09-11",
    "fuente": "Otros",
-   "prox": "2026-09-11",
+   "prox": "",
    "wsp": "2026-09-11",
    "setter": "Sary",
    "cta": "",
@@ -48699,8 +48728,8 @@
   {
    "cid": "pmOabvNl3kMI6qBFU405",
    "nombre": "Tanya Denisse Urquides Rico",
-   "etapa": "🔹 Triage Confirmado",
-   "desde": "2026-09-07",
+   "etapa": "🔷 Triage Seguimiento",
+   "desde": "2026-09-12",
    "fuente": "Outbound",
    "prox": "2026-10-01",
    "wsp": "2026-09-03",
@@ -48720,9 +48749,9 @@
    "ss": 72,
    "stri": null,
    "sc": null,
-   "ult": "2026-09-11",
-   "ultdir": "outbound",
-   "ulttxt": "¡Hola, Denisse! Espero que estés muy bien. Te escribo rápidamente porque estoy organizando las evaluaciones de perfil de médicos para este mes y seleccionando a los profesionales a los que acompañaremos en su proceso de ",
+   "ult": "2026-09-12",
+   "ultdir": "inbound",
+   "ulttxt": "Hola! buenas tardes justo creo que el dia de antier hable con alguien de tu equipo y le comente que si podiamos iniciar el proceso en el mes de octubre",
    "ulttipo": "TYPE_INSTAGRAM",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/pmOabvNl3kMI6qBFU405",
    "closer": "",
@@ -48733,7 +48762,7 @@
    "notas_n": 4,
    "nota_est": "",
    "nota_cat": "",
-   "tocado": "2026-09-07",
+   "tocado": "2026-09-12",
    "pendiente": 0.0,
    "cuotas": [],
    "ncuotas": "",
@@ -52935,7 +52964,7 @@
    "etapa": "🔶 Seguimiento Futuro",
    "desde": "2026-09-11",
    "fuente": "Inbound",
-   "prox": "2026-09-11",
+   "prox": "",
    "wsp": "2026-09-11",
    "setter": "Sary",
    "cta": "",
@@ -70840,6 +70869,36 @@
   },
   {
    "dia": "2026-09-09",
+   "s": "Sara",
+   "h": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    3,
+    2,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    2,
+    2,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-09",
    "s": "",
    "h": [
     5,
@@ -70894,36 +70953,6 @@
     0,
     0,
     0,
-    0,
-    0
-   ]
-  },
-  {
-   "dia": "2026-09-09",
-   "s": "Sara",
-   "h": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2,
-    3,
-    2,
-    0,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    2,
-    2,
     0,
     0
    ]
@@ -71164,8 +71193,8 @@
     48,
     67,
     24,
-    17,
-    0
+    19,
+    9
    ]
   },
   {
@@ -71252,6 +71281,36 @@
     0,
     0,
     1,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "dia": "2026-09-12",
+   "s": "",
+   "h": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
