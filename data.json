@@ -1,6 +1,6 @@
 {
- "generado": "2026-09-12 23:24",
- "rango": "2026-02-01 a 2026-09-12",
+ "generado": "2026-09-13 01:29",
+ "rango": "2026-02-01 a 2026-09-13",
  "setting": [
   {
    "dia": "2026-02-01",
@@ -3137,6 +3137,20 @@
    "agendas": 1,
    "resp_min": 78,
    "nodata": false
+  },
+  {
+   "dia": "2026-09-13",
+   "inb": 0,
+   "out": 0,
+   "nuevas": 0,
+   "total": 4,
+   "fups": 0,
+   "prop": 0,
+   "link": 0,
+   "badlink": 0,
+   "agendas": 0,
+   "resp_min": null,
+   "nodata": false
   }
  ],
  "triage": [
@@ -5827,6 +5841,18 @@
    "cualifica": 0,
    "nocualifica": 0,
    "seguimiento": 0
+  },
+  {
+   "dia": "2026-09-13",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "noconfirma": 0,
+   "cancelled": 0,
+   "confirmed": 0,
+   "cualifica": 0,
+   "nocualifica": 0,
+   "seguimiento": 0
   }
  ],
  "leads": [
@@ -7067,7 +7093,7 @@
    "restri": "",
    "resclo": "",
    "estado": "",
-   "ss": 50,
+   "ss": 0,
    "stri": null,
    "sclo": null,
    "ticket": "",
@@ -13820,13 +13846,13 @@
    "resclo": "",
    "estado": "",
    "ss": 62,
-   "stri": 15,
+   "stri": 35,
    "sclo": null,
    "ticket": "",
    "pagado": "",
    "objtri": "",
    "objclo": "",
-   "infocloser": "PERFIL: Massiel Salazar, venezolana, medico general, titulada en UNEFM (Venezuela). Actualmente ejerciendo en Andalucia, Espana, desde hace 4 meses. Vive con su hermano. Tiene familia venezolana con 16 anos en Alemania (Baden-Baden).\n\nOBJETIVO: Emigrar a Alemania, potencialmente especializarse (anestesia o pediatria). Plazo estimado: aproximadamente 1 ano. Nivel de aleman: cero. Horas/semana disponibles: no consta.\n\nDOLORES: Ambiente hostil en Espana (agresiones de pacientes, racismo pasivo, crisis migratoria en zona); descarto el MIR por exigencia sin garantias; ve Espana como paso, no como destino.\n\nINVERSION: SIN capacidad economica actual. Declaro explicitamente estar 'en cero' de ahorros. Formulario indica 3.500-5.000 euros pero la llamada contradice esto: priorizar lo dicho en triaje. Horizonte de ahorro: aproximadamente 1 ano.\n\nRUTA: Titulo venezolano, homologacion LATAM (mas compleja, necesita acompañamiento). Paso critico: nivel B2-C1 de aleman + FSP (aleman medico) antes de cualquier tramite. Contacto familiar en Alemania puede ser recurso de apoyo logistico.\n\nOBJECIONES: No tiene dinero ahora; TIE pendiente en Espana; sin aleman; no sabe si podra ahorrar en el plazo estimado.\n\nRECOMENDACION: No apta para cierre de programa completo hoy. Unico cierre viable ahora: plataforma de aleman (~50 euros) y/o asesoria migratoria con doctora Laura (100 euros). Mantener en nurturing y hacer seguimiento en 3-4 meses para reevaluar capacidad economica.",
+   "infocloser": "PERFIL: Massiel Salazar, edad no consta, venezolana, medico general con titulo de Venezuela. Lleva 4 meses en Andalucia (Espana) ejerciendo. Vive con su hermano.\n\nOBJETIVO: Llegar a Alemania, homologar y especializarse (anestesia o pediatria). Plazo estimado: no antes del proximo ano. Nivel de aleman: cero (ninguna mencion de conocimientos previos). Horas disponibles: no constan.\n\nDOLORES: Maltrato de pacientes en Espana (episodio de violencia el viernes previo). Racismo pasivo. MIR descartado por dureza e incertidumbre. Quiere crecer profesionalmente y tener estabilidad real. Le encanto Alemania en visita reciente y tiene referentes de familia venezolana que lleva 16 anos alla.\n\nINVERSION: Sin ahorros actuales. Declaro explicitamente estar en cero. Espera estabilizarse laboralmente en Espana para ahorrar. No menciona apoyo familiar economico para el programa.\n\nRUTA: Titulo venezolano (LATAM): ruta mas larga, requiere mas documentacion y pasos de homologacion. Actualmente sin TIE (en periodo de prueba laboral). Con TIE podra moverse con mas libertad. Necesita B2-C1 de aleman + FSP (aleman medico) antes de poder avanzar a Alemania.\n\nOBJECIONES: Sin dinero ahora. Plazo indefinido. Situacion migratoria en Espana aun no consolidada (espera TIE). No ve urgencia inmediata.\n\nRECOMENDACION: Lead no cualificada economicamente para el programa principal en este momento. Si el equipo quiere mantenerla caliente, ofrecer la asesoria migratoria de 100 euros (Laura) como primer paso de bajo ticket. Hacer seguimiento en 3-4 meses para reevaluar capacidad de inversion.",
    "cta": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/lb1CphLDZYLNyIYYLTeC"
   },
@@ -15074,7 +15100,7 @@
    "pagado": "",
    "objtri": "",
    "objclo": "",
-   "infocloser": "PERFIL: Omar Cuberos, Venezuela (Caracas), neurocirujano con 10 anos de experiencia y dos maestrias (una en medicina regenerativa y molecular). Planea emigrar solo. Sin viajes previos a Europa. Titulo LATAM (requiere homologacion completa).\n\nOBJETIVO: Llegar a Alemania en aproximadamente 2 anos, trabajando como neurocirujano y eventualmente en investigacion. Quiere salir ya con el idioma y la homologacion en marcha. Nivel de aleman: cero. Disponibilidad horaria: al menos 1 hora diaria si se organiza.\n\nDOLORES: Situacion economica insostenible en Venezuela ('puro solventar'). Intento anterior de emigracion sin planificacion que fallo. Busca crecer profesionalmente, no solo sobrevivir.\n\nINVERSION: No tiene claridad sobre costos. Sabe que hay un costo en euros. No tiene metodos de pago internacionales activos pero dice que 'se busca'. Capacidad real de pago: no cualificada. Es el punto mas fragil.\n\nRUTA: Titulo venezolano (no-UE), requiere proceso completo de homologacion (Approbation). Plazo realista con buen nivel de aleman (B2-C1 medico + FSP): 2-3 anos desde cero. El plazo que el mismo menciona (2 anos) es ajustado pero posible si empieza ya.\n\nOBJECIONES: Necesita ver toda la informacion (garantias, estructura, casos de exito) antes de decidir. No puede comprometerse en el momento. Sin metodos de pago configurados. Pide tiempo para analizar.\n\nRECOMENDACION: Presentar proceso paso a paso con casos de exito de medicos venezolanos. Resolver la objecion de pago con opciones concretas (PayPal, transferencia, cuotas). Cualificar capacidad real de inversion al inicio de la llamada antes de presentar precio. Proximo paso: llamada de closing ya agendada con Natalie.",
+   "infocloser": "PERFIL: Omar Cuberos, edad no consta, Caracas (Venezuela), neurocirujano especialista con 10 anos de experiencia y dos maestrias (una en medicina regenerativa/celulas madre). Titulo obtenido en Venezuela (LATAM). Planea emigrar solo.\n\nOBJETIVO: Llegar a Alemania en aproximadamente dos anos, con el idioma aprendido y la homologacion en proceso antes de salir. Aleman en nivel cero. Dispuesto a dedicar al menos una hora diaria si organiza su tiempo. Quiere ejercer y tambien dedicarse a investigacion en medicina regenerativa.\n\nDOLORES: Situacion en Venezuela solo le permite sobrevivir economicamente, sin crecimiento real. Tiene experiencia previa de emigracion fallida por falta de planificacion y quiere hacerlo bien esta vez. Busca calidad de vida, mejores ingresos y desarrollo profesional genuino.\n\nINVERSION: No tiene claridad sobre montos exactos. Conoce que implica un costo en euros. La setter menciono rango de 3.800 a 8.000 euros en triaje. No rechazo el precio pero dijo que necesita organizar el presupuesto antes de comprometerse. Menciono no manejar pagos internacionales pero lo ve como algo resoluble. Capacidad real de pago no confirmada.\n\nRUTA: Titulo LATAM, ruta larga. Necesita aleman B2-C1 medico (FSP), reconocimiento de titulo y Approbation. Plazo real para ejercer: 2,5 a 3 anos desde cero. Su plazo de 2 anos es ajustado; urgencia de inicio inmediato con el idioma es real.\n\nOBJECIONES: Quiere ver informacion completa por escrito (garantias, metodo de pago, estructura del programa) antes de decidir. No cierra en el momento. Dudas sobre como pagar desde Venezuela en euros. Pide casos de exito como referencia.\n\nRECOMENDACION: Llevar a la llamada propuesta clara por escrito, opciones de pago fraccionado y metodos accesibles desde Venezuela (Zelle, PayPal, cripto si aplica). Mostrar casos de exito de venezolanos o medicos LATAM similares. Reforzar que su plazo de 2 anos exige empezar el idioma ya: cada mes que pasa reduce su margen. Buscar cierre en sesion una vez despejadas las dudas sobre garantias y metodo de pago.",
    "cta": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/NMvx6GPfi6uZREZvP3GH"
   },
@@ -16770,7 +16796,7 @@
    "pagado": "",
    "objtri": "",
    "objclo": "Decisor ausente (marido no pudo estar por rotativo); dificultad real de coordinacion de agenda familiar; curiosidad sobre metodologia vs academias (resuelta parcialmente).",
-   "infocloser": "PERFIL: Tatiana Orozco, edad no consta, Colombia (residente en Espana desde 2017). Medica general con titulo homologado en Espana, ejerciendo desde 2019 (mas de 3 anos en la UE). Tiene dos hijos (5 y 2 anos) y pareja no sanitaria.\n\nOBJETIVO: Emigrar a Alemania con su familia completa (pareja e hijos). Plazo no definido, condicionado al aprendizaje del aleman. Nivel actual de aleman: estuvo un ano en Alemania, hablo y escribio, pero lo abandono al volver a Colombia. Se considera 'casi desde cero'. Horas disponibles: aproximadamente 1 hora diaria (mencionada como posible franja nocturna, 21-22h).\n\nDOLORES: Estancamiento economico y profesional en Espana. Deseo de crecer y de dar un mejor futuro a su familia. Ha postergado el paso varias veces por los hijos y la logistica familiar.\n\nINVERSION: Reconoce que la posibilidad existe. No revela cifra de ahorro. Pregunto por cuotas y financiacion. Reacciono sin rechazo al rango 3.800-8.000 euros. Posiblemente necesita financiacion (Cofidis u otro convenio en Espana).\n\nRUTA: Titulo homologado en UE + mas de 3 anos de ejercicio = exenta de FSP (Kenntnisprufung). Ruta muy favorable. Estimacion: B1 en 4 meses, B2 en 8-12 meses, llegada a Alemania en 12-18 meses si cumple el plan.\n\nOBJECIONES: Desconfianza inicial por contacto frio en Instagram; necesita entender el precio total y las formas de pago; quiere que su pareja valide la decision (co-decisor clave); pregunto expresamente que ocurre si no supera el nivel en el plazo previsto (miedo al riesgo); sin urgencia concreta.\n\nRECOMENDACION: Confirmar que la pareja asiste a la llamada (ella lo pidio). Abrir con la garantia de continuidad para desarmar el miedo al riesgo. Presentar la financiacion como palanca de cierre. Anclar un plazo concreto para crear urgencia: 'si empiezas en octubre, en el verano del ano que viene ya puedes tener el B2'.",
+   "infocloser": "PERFIL: Tatiana Orozco, medica colombiana, en Espana desde 2017 y ejerciendo como medica desde 2019 con titulo homologado en la UE. Tiene esposo (no profesional de la salud) e hijos de 2 y 5 anos. Fue contactada por outbound en Instagram.\n\nOBJETIVO: Emigrar a Alemania con su familia (esposo e hijos). Plazo indefinido, condicionado al aprendizaje del aleman. Tuvo exposicion previa al aleman (vivio un ano en Alemania), lo considera casi desde cero. Disponibilidad de aproximadamente 1 hora diaria (noche, tras acostar a los ninos).\n\nDOLORES: Mejora economica y crecimiento profesional como motores principales. Lleva anos posponiendo la idea por la situacion con los hijos. Desconfianza inicial por el contacto frio via Instagram.\n\nINVERSION: Reconoce que la posibilidad existe. Pregunto por precio total, cuotas y financiacion. No cerro ante el rango 3.800-8.000 euros mencionado. Interesada en financiacion a plazos (hasta 12 meses). No aporto cifra propia de ahorro disponible.\n\nRUTA: Perfil muy favorable. Titulo homologado en Espana, mas de 3 anos de experiencia en la UE: exenta de la prueba FSP (Fachsprachpruefung). Ruta directa desde Espana a Alemania. Tiempo estimado: 1 ano para B2 si cumple con el estudio diario.\n\nOBJECIONES: Baja urgencia (ha pospuesto varias veces); decision conjunta con esposo aun no cualificado; necesita claridad total sobre precio y condiciones antes de comprometerse; preocupacion por el impacto en los hijos durante el proceso.\n\nRECOMENDACION: Asegurarse de que el esposo asista a la llamada de cierre. Atacar la urgencia: tiene el perfil ideal y cada ano que espera es un ano menos de salario aleman. Confirmar capacidad de financiacion real y presentar opciones de pago desde el inicio de la llamada.",
    "cta": "",
    "ficha": "https://app.funnelup.io/v2/location/DulDza0paBCXhgzFi9gG/contacts/detail/MUBISpNWBMC3Vml8SGB8"
   },
@@ -17926,7 +17952,7 @@
    "ultdir": "outbound",
    "ulttxt": "",
    "ulttipo": "TYPE_WHATSAPP",
-   "infoclo": "PERFIL: Tatiana Orozco, edad no consta, Colombia (residente en Espana desde 2017). Medica general con titulo homologado en Espana, ejerciendo desde 2019 (mas de 3 anos en la UE). Tiene dos hijos (5 y 2 anos) y pareja no sanitaria.\n\nOBJETIVO: Emigrar a Alemania con su familia completa (pareja e hijos). Plazo no definido, condicionado al aprendizaje del aleman. Nivel actual de aleman: estuvo un ano en Alemania, hablo y escribio, pero lo abandono al volver a Colombia. Se considera 'casi desde cero'. Horas disponibles: aproximadamente 1 hora diaria (mencionada como posible franja nocturna, 21-22h).\n\nDOLORES: Estancamiento economico y profesional en Espana. Deseo de crecer y de dar un mejor futuro a su familia. Ha postergado el paso varias veces por los hijos y la logistica familiar.\n\nINVERSION: Reconoce que la posibilidad existe. No revela cifra de ahorro. Pregunto por cuotas y financiacion. Reacciono sin rechazo al rango 3.800-8.000 euros. Posiblemente necesita financiacion (Cofidis u otro convenio en Espana).\n\nRUTA: Titulo homologado en UE + mas de 3 anos de ejercicio = exenta de FSP (Kenntnisprufung). Ruta muy favorable. Estimacion: B1 en 4 meses, B2 en 8-12 meses, llegada a Alemania en 12-18 meses si cumple el plan.\n\nOBJECIONES: Desconfianza inicial por contacto frio en Instagram; necesita entender el precio total y las formas de pago; quiere que su pareja valide la decision (co-decisor clave); pregunto expresamente que ocurre si no supera el nivel en el plazo previsto (miedo",
+   "infoclo": "PERFIL: Tatiana Orozco, medica colombiana, en Espana desde 2017 y ejerciendo como medica desde 2019 con titulo homologado en la UE. Tiene esposo (no profesional de la salud) e hijos de 2 y 5 anos. Fue contactada por outbound en Instagram.\n\nOBJETIVO: Emigrar a Alemania con su familia (esposo e hijos). Plazo indefinido, condicionado al aprendizaje del aleman. Tuvo exposicion previa al aleman (vivio un ano en Alemania), lo considera casi desde cero. Disponibilidad de aproximadamente 1 hora diaria (noche, tras acostar a los ninos).\n\nDOLORES: Mejora economica y crecimiento profesional como motores principales. Lleva anos posponiendo la idea por la situacion con los hijos. Desconfianza inicial por el contacto frio via Instagram.\n\nINVERSION: Reconoce que la posibilidad existe. Pregunto por precio total, cuotas y financiacion. No cerro ante el rango 3.800-8.000 euros mencionado. Interesada en financiacion a plazos (hasta 12 meses). No aporto cifra propia de ahorro disponible.\n\nRUTA: Perfil muy favorable. Titulo homologado en Espana, mas de 3 anos de experiencia en la UE: exenta de la prueba FSP (Fachsprachpruefung). Ruta directa desde Espana a Alemania. Tiempo estimado: 1 ano para B2 si cumple con el estudio diario.\n\nOBJECIONES: Baja urgencia (ha pospuesto varias veces); decision conjunta con esposo aun no cualificado; necesita claridad total sobre precio y condiciones antes de comprometerse; preocupacion por el impacto en los hijos durante el proceso.\n\nRECOMENDACION: Asegurarse de q",
    "restri": "Cualifica",
    "ss": 62,
    "stri": 65,
@@ -17984,7 +18010,7 @@
    "ultdir": "outbound",
    "ulttxt": "",
    "ulttipo": "TYPE_WHATSAPP",
-   "infoclo": "PERFIL: Tatiana Orozco, edad no consta, Colombia (residente en Espana desde 2017). Medica general con titulo homologado en Espana, ejerciendo desde 2019 (mas de 3 anos en la UE). Tiene dos hijos (5 y 2 anos) y pareja no sanitaria.\n\nOBJETIVO: Emigrar a Alemania con su familia completa (pareja e hijos). Plazo no definido, condicionado al aprendizaje del aleman. Nivel actual de aleman: estuvo un ano en Alemania, hablo y escribio, pero lo abandono al volver a Colombia. Se considera 'casi desde cero'. Horas disponibles: aproximadamente 1 hora diaria (mencionada como posible franja nocturna, 21-22h).\n\nDOLORES: Estancamiento economico y profesional en Espana. Deseo de crecer y de dar un mejor futuro a su familia. Ha postergado el paso varias veces por los hijos y la logistica familiar.\n\nINVERSION: Reconoce que la posibilidad existe. No revela cifra de ahorro. Pregunto por cuotas y financiacion. Reacciono sin rechazo al rango 3.800-8.000 euros. Posiblemente necesita financiacion (Cofidis u otro convenio en Espana).\n\nRUTA: Titulo homologado en UE + mas de 3 anos de ejercicio = exenta de FSP (Kenntnisprufung). Ruta muy favorable. Estimacion: B1 en 4 meses, B2 en 8-12 meses, llegada a Alemania en 12-18 meses si cumple el plan.\n\nOBJECIONES: Desconfianza inicial por contacto frio en Instagram; necesita entender el precio total y las formas de pago; quiere que su pareja valide la decision (co-decisor clave); pregunto expresamente que ocurre si no supera el nivel en el plazo previsto (miedo",
+   "infoclo": "PERFIL: Tatiana Orozco, medica colombiana, en Espana desde 2017 y ejerciendo como medica desde 2019 con titulo homologado en la UE. Tiene esposo (no profesional de la salud) e hijos de 2 y 5 anos. Fue contactada por outbound en Instagram.\n\nOBJETIVO: Emigrar a Alemania con su familia (esposo e hijos). Plazo indefinido, condicionado al aprendizaje del aleman. Tuvo exposicion previa al aleman (vivio un ano en Alemania), lo considera casi desde cero. Disponibilidad de aproximadamente 1 hora diaria (noche, tras acostar a los ninos).\n\nDOLORES: Mejora economica y crecimiento profesional como motores principales. Lleva anos posponiendo la idea por la situacion con los hijos. Desconfianza inicial por el contacto frio via Instagram.\n\nINVERSION: Reconoce que la posibilidad existe. Pregunto por precio total, cuotas y financiacion. No cerro ante el rango 3.800-8.000 euros mencionado. Interesada en financiacion a plazos (hasta 12 meses). No aporto cifra propia de ahorro disponible.\n\nRUTA: Perfil muy favorable. Titulo homologado en Espana, mas de 3 anos de experiencia en la UE: exenta de la prueba FSP (Fachsprachpruefung). Ruta directa desde Espana a Alemania. Tiempo estimado: 1 ano para B2 si cumple con el estudio diario.\n\nOBJECIONES: Baja urgencia (ha pospuesto varias veces); decision conjunta con esposo aun no cualificado; necesita claridad total sobre precio y condiciones antes de comprometerse; preocupacion por el impacto en los hijos durante el proceso.\n\nRECOMENDACION: Asegurarse de q",
    "restri": "Cualifica",
    "ss": 62,
    "stri": 65,
@@ -18042,7 +18068,7 @@
    "ultdir": "outbound",
    "ulttxt": "por favor me confirmas tu asistencia a la llamada el día de hoy?",
    "ulttipo": "TYPE_WHATSAPP",
-   "infoclo": "PERFIL: Omar Cuberos, Venezuela (Caracas), neurocirujano con 10 anos de experiencia y dos maestrias (una en medicina regenerativa y molecular). Planea emigrar solo. Sin viajes previos a Europa. Titulo LATAM (requiere homologacion completa).\n\nOBJETIVO: Llegar a Alemania en aproximadamente 2 anos, trabajando como neurocirujano y eventualmente en investigacion. Quiere salir ya con el idioma y la homologacion en marcha. Nivel de aleman: cero. Disponibilidad horaria: al menos 1 hora diaria si se organiza.\n\nDOLORES: Situacion economica insostenible en Venezuela ('puro solventar'). Intento anterior de emigracion sin planificacion que fallo. Busca crecer profesionalmente, no solo sobrevivir.\n\nINVERSION: No tiene claridad sobre costos. Sabe que hay un costo en euros. No tiene metodos de pago internacionales activos pero dice que 'se busca'. Capacidad real de pago: no cualificada. Es el punto mas fragil.\n\nRUTA: Titulo venezolano (no-UE), requiere proceso completo de homologacion (Approbation). Plazo realista con buen nivel de aleman (B2-C1 medico + FSP): 2-3 anos desde cero. El plazo que el mismo menciona (2 anos) es ajustado pero posible si empieza ya.\n\nOBJECIONES: Necesita ver toda la informacion (garantias, estructura, casos de exito) antes de decidir. No puede comprometerse en el momento. Sin metodos de pago configurados. Pide tiempo para analizar.\n\nRECOMENDACION: Presentar proceso paso a paso con casos de exito de medicos venezolanos. Resolver la objecion de pago con opciones conc",
+   "infoclo": "PERFIL: Omar Cuberos, edad no consta, Caracas (Venezuela), neurocirujano especialista con 10 anos de experiencia y dos maestrias (una en medicina regenerativa/celulas madre). Titulo obtenido en Venezuela (LATAM). Planea emigrar solo.\n\nOBJETIVO: Llegar a Alemania en aproximadamente dos anos, con el idioma aprendido y la homologacion en proceso antes de salir. Aleman en nivel cero. Dispuesto a dedicar al menos una hora diaria si organiza su tiempo. Quiere ejercer y tambien dedicarse a investigacion en medicina regenerativa.\n\nDOLORES: Situacion en Venezuela solo le permite sobrevivir economicamente, sin crecimiento real. Tiene experiencia previa de emigracion fallida por falta de planificacion y quiere hacerlo bien esta vez. Busca calidad de vida, mejores ingresos y desarrollo profesional genuino.\n\nINVERSION: No tiene claridad sobre montos exactos. Conoce que implica un costo en euros. La setter menciono rango de 3.800 a 8.000 euros en triaje. No rechazo el precio pero dijo que necesita organizar el presupuesto antes de comprometerse. Menciono no manejar pagos internacionales pero lo ve como algo resoluble. Capacidad real de pago no confirmada.\n\nRUTA: Titulo LATAM, ruta larga. Necesita aleman B2-C1 medico (FSP), reconocimiento de titulo y Approbation. Plazo real para ejercer: 2,5 a 3 anos desde cero. Su plazo de 2 anos es ajustado; urgencia de inicio inmediato con el idioma es real.\n\nOBJECIONES: Quiere ver informacion completa por escrito (garantias, metodo de pago, estructura d",
    "restri": "Cualifica",
    "ss": 72,
    "stri": 68,
@@ -23008,6 +23034,17 @@
    "showed": 0,
    "noshow": 0,
    "cancelled": 1,
+   "confirmed": 0,
+   "vendido": 0,
+   "facturacion": 0.0,
+   "cash": 0.0
+  },
+  {
+   "dia": "2026-09-13",
+   "agendados": 0,
+   "showed": 0,
+   "noshow": 0,
+   "cancelled": 0,
    "confirmed": 0,
    "vendido": 0,
    "facturacion": 0.0,
@@ -33107,6 +33144,20 @@
     "Sara": false,
     "Sary": false
    }
+  },
+  {
+   "dia": "2026-09-13",
+   "triages": 0,
+   "con_form": 0,
+   "sin_form": 0,
+   "estado_triage": "No hubo llamadas",
+   "retraso_medio": null,
+   "kpis": {
+    "Carlos": false,
+    "Jesmary": false,
+    "Sara": false,
+    "Sary": false
+   }
   }
  ],
  "setters": [
@@ -33278,7 +33329,7 @@
    "d0": "2026-09-08",
    "restri": "",
    "stri": null,
-   "ss": 50,
+   "ss": 0,
    "setter": "Sara",
    "triager": "",
    "prof": "Médico/a",
@@ -33351,7 +33402,7 @@
    "fuente": "",
    "d0": "2026-09-04",
    "restri": "",
-   "stri": 15,
+   "stri": 35,
    "ss": 62,
    "setter": "Jesmary",
    "triager": "",
@@ -33367,8 +33418,8 @@
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 No tengo conocimientos",
    "urg": "",
-   "infotri": "PERFIL: Massiel Salazar, venezolana, medico general, titulada en UNEFM (Venezuela). Actualmente ejerciendo en Andalucia, Espana, desde hace 4 meses. Vive con su hermano. Tiene familia venezolana con 16 anos en Alemania (Baden-Baden).\n\nOBJETIVO: Emigrar a Alemania, potencialmente especializarse (anestesia o pediatria). Plazo estimado: aproximadamente 1 ano. Nivel de aleman: cero. Horas/semana disponibles: no consta.\n\nDOLORES: Ambiente hostil en Espana (agresiones de pacientes, racismo pasivo, crisis migratoria en zona); descarto el MIR por exigencia sin garantias; ve Espana como paso, no como destino.\n\nINVERSION: SIN capacidad economica actual. Declaro explicitamente estar 'en cero' de ahorros. Formulario indica 3.500-5.000 euros pero la llamada contradice esto: priorizar lo dicho en triaje. Horizonte de ahorro: aproximadamente 1 ano.\n\nRUTA: Titulo venezolano, homologacion LATAM (mas compleja, necesita acompañamiento). Paso critico: nivel B2-C1 de aleman + FSP (aleman medico) antes de cualquier tramite. Contacto familiar en Alemania puede ser recurso de apoyo logistico.\n\nOBJECIONES: No tiene dinero ahora; TIE pendiente en Espana; sin aleman; no sabe si podra ahorrar en el plazo estimado.\n\nRECOMENDACION: No apta para cierre de programa completo hoy. Unico cierre viable ahora: plataforma de aleman (~50 euros) y/o asesoria migratoria con doctora Laura (100 euros). Mantener en nurturing y hacer seguimiento en 3-4 meses para reevaluar capacidad economica.",
-   "restri_ia": "PERFIL: Massiel Salazar, venezolana, medico general, titulada en UNEFM (Venezuela), actualmente ejerciendo en Andalucia (Espana) desde hace 4 meses. Lleva poco tiempo en Espana, esta con su hermano, y visito Alemania hace dos meses (Baden-Baden) donde tiene familia con 16 anos residiendo alli.\n\nMOTIVACIONES: Tiene familia en Alemania que ya llego sin hablar el idioma y prosperaron; visito Alemania y le encanto; no quiere hacer el MIR; ve Espana como paso intermedio, no como destino final; siente atraccion real por Alemania como proyecto de vida.\n\nDOLORES: Ambiente laboral hostil en Espana (racismo pasivo, pacientes agresivos, presion migratoria constante con pateras); situacion laboral inestable (aun en periodo de prueba, sin TIE); ve el MIR como opcion descartada por exigencia y riesgo sin garantias.\n\nSITUACION ECONOMICA (CRITICA): En la llamada declara explicitamente que NO tiene ahorros: 'No, la verdad que no. Estoy en cero.' Estima poder empezar 'para el otro ano' cuando se estabilice. DISCREPANCIA con el formulario donde marco 3.500-5.000 euros de presupuesto. La conversacion es mas reciente y fiable: no tiene dinero ahora. La triajista Sary lo confirmo, registro esto y le ofr",
+   "infotri": "PERFIL: Massiel Salazar, edad no consta, venezolana, medico general con titulo de Venezuela. Lleva 4 meses en Andalucia (Espana) ejerciendo. Vive con su hermano.\n\nOBJETIVO: Llegar a Alemania, homologar y especializarse (anestesia o pediatria). Plazo estimado: no antes del proximo ano. Nivel de aleman: cero (ninguna mencion de conocimientos previos). Horas disponibles: no constan.\n\nDOLORES: Maltrato de pacientes en Espana (episodio de violencia el viernes previo). Racismo pasivo. MIR descartado por dureza e incertidumbre. Quiere crecer profesionalmente y tener estabilidad real. Le encanto Alemania en visita reciente y tiene referentes de familia venezolana que lleva 16 anos alla.\n\nINVERSION: Sin ahorros actuales. Declaro explicitamente estar en cero. Espera estabilizarse laboralmente en Espana para ahorrar. No menciona apoyo familiar economico para el programa.\n\nRUTA: Titulo venezolano (LATAM): ruta mas larga, requiere mas documentacion y pasos de homologacion. Actualmente sin TIE (en periodo de prueba laboral). Con TIE podra moverse con mas libertad. Necesita B2-C1 de aleman + FSP (aleman medico) antes de poder avanzar a Alemania.\n\nOBJECIONES: Sin dinero ahora. Plazo indefinido. Situacion migratoria en Espana aun no consolidada (espera TIE). No ve urgencia inmediata.\n\nRECOMENDACION: Lead no cualificada economicamente para el programa principal en este momento. Si el equipo quiere mantenerla caliente, ofrecer la asesoria migratoria de 100 euros (Laura) como primer paso de bajo",
+   "restri_ia": "PERFIL: Medico general venezolana, lleva 4 meses en Andalucia (Espana). Titulo de Venezuela. Vive con su hermano. Visito Baden-Baden hace 2 meses y tiene familia venezolana con 16 anos en Alemania.\n\nMOTIVACION: Mal ambiente laboral en Espana (agresividad de pacientes, episodio de violencia el viernes previo a la llamada, mucha presion). El MIR no le atrae. Le encanto Alemania en su visita y quiere especializarse (anestesia o pediatria).\n\nDINERO: Sin ahorros en este momento. Ella misma lo dice claramente: 'No, la verdad que no. Estoy en cero.' Apunta a empezar el ano que viene cuando se estabilice. Lead NO cualificada economicamente en este momento.\n\nCOMPROMISO: Actitud positiva, tono abierto, participa bien en la llamada. Sin embargo no hay urgencia real ni dinero disponible. Acepta la info pero cierra con 'mas adelante lo investigo'.\n\nMANEJO DEL TRIAJE: Sary hizo una sesion informativa pero no fue un triaje de cualificacion: no presiono en dinero, no exploro si habia apoyo familiar economico, no genero urgencia, no intento cerrar ningun paso de pago real. Le ofrecio la plataforma (50 euros) y la asesoria migratoria (100 euros) como salida de bajo ticket, lo que es correcto para un",
    "ult": "2026-09-08",
    "ultdir": "outbound",
    "ulttxt": "¡Hey Massiel! Solo quería recordarte que tu llamada es ahora mismo. Te están esperando! Asegúrate también de estar en un lugar sin distracciones y con buena conexión para que puedas prender tu micrófono y tu cámara duran",
@@ -33626,8 +33677,8 @@
    "ingresos": "1.000€ - 3.000€",
    "nivel": "🔹 No tengo conocimientos",
    "urg": "",
-   "infotri": "PERFIL: Tatiana Orozco, edad no consta, Colombia (residente en Espana desde 2017). Medica general con titulo homologado en Espana, ejerciendo desde 2019 (mas de 3 anos en la UE). Tiene dos hijos (5 y 2 anos) y pareja no sanitaria.\n\nOBJETIVO: Emigrar a Alemania con su familia completa (pareja e hijos). Plazo no definido, condicionado al aprendizaje del aleman. Nivel actual de aleman: estuvo un ano en Alemania, hablo y escribio, pero lo abandono al volver a Colombia. Se considera 'casi desde cero'. Horas disponibles: aproximadamente 1 hora diaria (mencionada como posible franja nocturna, 21-22h).\n\nDOLORES: Estancamiento economico y profesional en Espana. Deseo de crecer y de dar un mejor futuro a su familia. Ha postergado el paso varias veces por los hijos y la logistica familiar.\n\nINVERSION: Reconoce que la posibilidad existe. No revela cifra de ahorro. Pregunto por cuotas y financiacion. Reacciono sin rechazo al rango 3.800-8.000 euros. Posiblemente necesita financiacion (Cofidis u otro convenio en Espana).\n\nRUTA: Titulo homologado en UE + mas de 3 anos de ejercicio = exenta de FSP (Kenntnisprufung). Ruta muy favorable. Estimacion: B1 en 4 meses, B2 en 8-12 meses, llegada a Alemania en 12-18 meses si cumple el plan.\n\nOBJECIONES: Desconfianza inicial por contacto frio en Instagram; necesita entender el precio total y las formas de pago; quiere que su pareja valide la decision (co-decisor clave); pregunto expresamente que ocurre si no supera el nivel en el plazo previsto (miedo",
-   "restri_ia": "PERFIL: Medica colombiana residente en Espana desde 2017, ejerciendo desde 2019 con titulo homologado. Dos hijos (5 y 2 anos), pareja que no es sanitario. Perfil solido para la ruta UE. Entro por outbound Instagram.\n\nMOTIVACIONES: Mejora economica y crecimiento profesional. Ya habia considerado Alemania antes pero lo postergo por la familia. Ahora lo ve viable si resuelve el idioma.\n\nDINERO: Reconoce que la posibilidad existe pero pide informacion sobre formas de pago y cuotas. No desvela cifra de ahorro. Reaccion positiva al escuchar 3.800 euros como punto de entrada, sin rechazo explicito. Pregunta por financiacion, lo que sugiere que no tiene liquidez inmediata o prefiere no comprometer todo de golpe.\n\nDECISION: Quiere que su pareja este en la segunda llamada. Decision no es unilateral. Riesgo real si la pareja no esta alineada o genera friccion.\n\nPLAZO/URGENCIA: No tiene fecha concreta. Lo condiciona a aprender el idioma y a no aventurarse con hijos sin hablar aleman. Urgencia baja-media.\n\nCOMPROMISO: Fallo a la primera cita pero se disculpo y reagendo. En el triaje hizo preguntas detalladas y pertinentes (tasa de exito, que pasa si no avanza, formas de pago). Senales de intere",
+   "infotri": "PERFIL: Tatiana Orozco, medica colombiana, en Espana desde 2017 y ejerciendo como medica desde 2019 con titulo homologado en la UE. Tiene esposo (no profesional de la salud) e hijos de 2 y 5 anos. Fue contactada por outbound en Instagram.\n\nOBJETIVO: Emigrar a Alemania con su familia (esposo e hijos). Plazo indefinido, condicionado al aprendizaje del aleman. Tuvo exposicion previa al aleman (vivio un ano en Alemania), lo considera casi desde cero. Disponibilidad de aproximadamente 1 hora diaria (noche, tras acostar a los ninos).\n\nDOLORES: Mejora economica y crecimiento profesional como motores principales. Lleva anos posponiendo la idea por la situacion con los hijos. Desconfianza inicial por el contacto frio via Instagram.\n\nINVERSION: Reconoce que la posibilidad existe. Pregunto por precio total, cuotas y financiacion. No cerro ante el rango 3.800-8.000 euros mencionado. Interesada en financiacion a plazos (hasta 12 meses). No aporto cifra propia de ahorro disponible.\n\nRUTA: Perfil muy favorable. Titulo homologado en Espana, mas de 3 anos de experiencia en la UE: exenta de la prueba FSP (Fachsprachpruefung). Ruta directa desde Espana a Alemania. Tiempo estimado: 1 ano para B2 si cumple con el estudio diario.\n\nOBJECIONES: Baja urgencia (ha pospuesto varias veces); decision conjunta con esposo aun no cualificado; necesita claridad total sobre precio y condiciones antes de comprometerse; preocupacion por el impacto en los hijos durante el proceso.\n\nRECOMENDACION: Asegurarse de q",
+   "restri_ia": "PERFIL:\nMedica colombiana, en Espana desde 2017, ejerciendo como medica desde 2019 con titulo homologado. Hijos de 2 y 5 anos. Esposo no es profesional de la salud. Contacto outbound via Instagram, mostro desconfianza inicial.\n\nDINERO:\nReconoce que la posibilidad de invertir existe. Pregunto directamente por precio, cuotas y financiacion. No cerro ante los 3.800 euros mencionados. Menciona querer entender el total y las condiciones de pago. No aporta cifra propia de ahorro.\n\nDECISION:\nDecision conjunta con esposo. Ella es la interlocutora principal pero pide que el esposo este en la siguiente llamada. Riesgo: el esposo no esta cualificado ni comprometido aun.\n\nPLAZO/URGENCIA:\nBaja urgencia. Lo condiciona al aprendizaje del idioma y al bienestar familiar. No da fecha concreta. Ha pospuesto la idea varias veces por la situacion con los hijos.\n\nCOMPROMISO:\nMostrO interes real: hizo preguntas criticas sobre garantias, tasa de exito, precio y condiciones. Se abrio sobre su situacion personal. Llego tarde pero se reconecto. Confirmo segunda llamada.\n\nCALIDAD DEL TRIAJE:\nSary no cualificio dinero ni horas disponibles de forma concreta antes de agendar. El triaje fue mas una presentacion d",
    "ult": "2026-09-10",
    "ultdir": "outbound",
    "ulttxt": "",
@@ -33663,8 +33714,8 @@
    "ingresos": "600€- 1.000€",
    "nivel": "🔹 No tengo conocimientos",
    "urg": "",
-   "infotri": "PERFIL: Omar Cuberos, Venezuela (Caracas), neurocirujano con 10 anos de experiencia y dos maestrias (una en medicina regenerativa y molecular). Planea emigrar solo. Sin viajes previos a Europa. Titulo LATAM (requiere homologacion completa).\n\nOBJETIVO: Llegar a Alemania en aproximadamente 2 anos, trabajando como neurocirujano y eventualmente en investigacion. Quiere salir ya con el idioma y la homologacion en marcha. Nivel de aleman: cero. Disponibilidad horaria: al menos 1 hora diaria si se organiza.\n\nDOLORES: Situacion economica insostenible en Venezuela ('puro solventar'). Intento anterior de emigracion sin planificacion que fallo. Busca crecer profesionalmente, no solo sobrevivir.\n\nINVERSION: No tiene claridad sobre costos. Sabe que hay un costo en euros. No tiene metodos de pago internacionales activos pero dice que 'se busca'. Capacidad real de pago: no cualificada. Es el punto mas fragil.\n\nRUTA: Titulo venezolano (no-UE), requiere proceso completo de homologacion (Approbation). Plazo realista con buen nivel de aleman (B2-C1 medico + FSP): 2-3 anos desde cero. El plazo que el mismo menciona (2 anos) es ajustado pero posible si empieza ya.\n\nOBJECIONES: Necesita ver toda la informacion (garantias, estructura, casos de exito) antes de decidir. No puede comprometerse en el momento. Sin metodos de pago configurados. Pide tiempo para analizar.\n\nRECOMENDACION: Presentar proceso paso a paso con casos de exito de medicos venezolanos. Resolver la objecion de pago con opciones conc",
-   "restri_ia": "PERFIL:\nNeurocirujano venezolano, Caracas, 10 anos de experiencia, dos maestrias (una en medicina regenerativa). Planea emigrar solo. Nivel de aleman: cero. Sin experiencia previa en Europa ni Alemania.\n\nMOTIVACION/DOLORES:\nTrabaja solo para 'solventar', sin posibilidad de crecer profesional ni economicamente en Venezuela. Ya intento emigrar antes sin planificacion y fallo; esta vez quiere hacerlo de forma estructurada. Le motivan la calidad de vida, los pagos y las condiciones laborales en Alemania.\n\nCOMPROMISO Y PLAZO:\nQuiere comenzar ya con el idioma. Plazo estimado para estar en Alemania: 2 anos. Reconoce que el idioma es la barrera principal y que tiene que 'darle duro rapido'. Disponibilidad horaria: confirma que puede organizar al menos una hora diaria si se lo propone.\n\nINVERSION:\nNo tiene claridad sobre cuanto cuesta el proceso. Sabe que 'lleva un costo en euros'. No descarto invertir pero pide informacion completa primero antes de comprometerse. No tiene metodos de pago internacionales configurados ('eso se busca, porque aqui hay muchos metodos'). No confirmo ni nego capacidad real de pago. Es el eje mas debil.\n\nMANEJO DEL TRIAJE (Sary):\nSary revelo precio en el triaje (3",
+   "infotri": "PERFIL: Omar Cuberos, edad no consta, Caracas (Venezuela), neurocirujano especialista con 10 anos de experiencia y dos maestrias (una en medicina regenerativa/celulas madre). Titulo obtenido en Venezuela (LATAM). Planea emigrar solo.\n\nOBJETIVO: Llegar a Alemania en aproximadamente dos anos, con el idioma aprendido y la homologacion en proceso antes de salir. Aleman en nivel cero. Dispuesto a dedicar al menos una hora diaria si organiza su tiempo. Quiere ejercer y tambien dedicarse a investigacion en medicina regenerativa.\n\nDOLORES: Situacion en Venezuela solo le permite sobrevivir economicamente, sin crecimiento real. Tiene experiencia previa de emigracion fallida por falta de planificacion y quiere hacerlo bien esta vez. Busca calidad de vida, mejores ingresos y desarrollo profesional genuino.\n\nINVERSION: No tiene claridad sobre montos exactos. Conoce que implica un costo en euros. La setter menciono rango de 3.800 a 8.000 euros en triaje. No rechazo el precio pero dijo que necesita organizar el presupuesto antes de comprometerse. Menciono no manejar pagos internacionales pero lo ve como algo resoluble. Capacidad real de pago no confirmada.\n\nRUTA: Titulo LATAM, ruta larga. Necesita aleman B2-C1 medico (FSP), reconocimiento de titulo y Approbation. Plazo real para ejercer: 2,5 a 3 anos desde cero. Su plazo de 2 anos es ajustado; urgencia de inicio inmediato con el idioma es real.\n\nOBJECIONES: Quiere ver informacion completa por escrito (garantias, metodo de pago, estructura d",
+   "restri_ia": "PERFIL:\nNeurocirujano venezolano, Caracas, 10 anos de experiencia, dos maestrias. Titulo LATAM (Venezuela). Planea emigrar solo. Perfil tecnico muy solido.\n\nOBJETIVO:\nEstar en Alemania en un plazo de dos anos ('dos mil veintidós' segun lo que dijo, probablemente quiso decir 2027 dado el contexto). Quiere salir con idioma y homologacion iniciada. Alemán en cero. No ha especificado horas al dia aunque reconoce que tiene que organizarse para dedicar al menos una hora diaria.\n\nDOLORES:\nSituacion actual en Venezuela solo le permite sobrevivir ('puro solventar'). Experiencia previa de emigracion sin planificacion que no funciono. Busca calidad de vida, buenos pagos y crecimiento profesional real.\n\nINVERSION:\nNo tiene claridad sobre montos. Sabe que 'lleva un costo en euros'. La setter menciono rango de 3.800 a 8.000 euros en la llamada. El lead no rechazo el precio pero dijo que necesita organizar el presupuesto y no puede comprometerse ese mismo dia. Menciono que no maneja pagos internacionales pero dijo 'eso se busca, eso es lo de menos'. No confirmo tener los fondos disponibles.\n\nRUTA:\nTitulo LATAM (Venezuela): ruta de homologacion larga, requiere Approbation, FSP y nivel de aleman al",
    "ult": "2026-09-05",
    "ultdir": "outbound",
    "ulttxt": "por favor me confirmas tu asistencia a la llamada el día de hoy?",
@@ -47756,7 +47807,7 @@
    "etapa": "🔸Closing Agendado",
    "desde": "2026-09-12",
    "fuente": "",
-   "prox": "2026-09-12",
+   "prox": "2026-10-01",
    "wsp": "2026-09-12",
    "setter": "Sara",
    "cta": "",
